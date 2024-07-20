@@ -1,0 +1,595 @@
+.webdesignSection {
+  margin-top: 5rem;
+}
+
+.webdesignLandingPage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid#dad9ff;
+  background: linear-gradient(269deg, #e6e6ff 1.83%, #fff 57.69%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  /* padding: 190px 96px; */
+}
+
+.webdesignLandingPageContainer {
+  width: 1216px;
+  position: relative;
+  height: 90vh;
+  margin-inline: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* margin-top: 3rem; */
+}
+
+@media (min-width: 1628px) {
+  .webdesignLandingPageContainer {
+    height: 80vh;
+  }
+}
+
+.headerContent {
+  color: var(--blueText);
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.webdesignTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  z-index: 66;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0;
+  top: 15%;
+}
+
+.webdesignTextContainer p {
+  color: var(--blueText);
+  font-family: var(--text-Font-Regular);
+  width: 544px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+}
+
+.webdesignTextContainer h1 {
+  margin: 1rem 0;
+  color: var(--blueText);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  /* width: 40%; */
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -0.48px;
+  /* width: 50%; */
+}
+
+.headerimg {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.butttonBlue {
+  background-color: var(--btn);
+  padding: 0.5rem;
+  border-radius: 50px;
+}
+
+.buttonImg {
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  /* margin-top: 2rem; */
+}
+
+.buttonContainer .pricingbtn {
+  display: flex;
+  width: 184px;
+  height: 55px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 36px;
+  background: var(--btn);
+  border: none;
+  color: #ffff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.buttonContainer .demobtn {
+  display: flex;
+  width: 184px;
+  height: 55px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 36px;
+  background-color: #fff;
+  border: 1px solid var(--btn);
+  color: var(--btn);
+  justify-content: space-around;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.webdesignImageContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+  width: 700px;
+  right: -7%;
+  top: 8%;
+}
+
+.pricingBtn button {
+  border: 3px solid red;
+}
+
+.webimage {
+  position: relative;
+  width: 282px;
+  height: 80px;
+  object-fit: cover;
+  margin-left: 3rem;
+}
+
+.webimage2 {
+  position: relative;
+  width: 649px;
+  height: 365.102px;
+}
+
+.vectorImagetop {
+  right: 40%;
+  top: 10%;
+  width: 124px;
+  height: 124px;
+  position: absolute;
+}
+
+.vectorImagebottom {
+  width: 124px;
+  height: 124px;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+/* WEB DESIGN SECTION */
+
+.webWorksSection {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 6rem;
+}
+
+.webWorksContainer {
+  max-width: 1300px;
+  height: 100%;
+  margin-inline: auto;
+  margin-top: 2.5rem;
+}
+
+.webWorksSection .WebHeader {
+  text-align: center;
+  font-size: 40px;
+  color: var(--blueText);
+  font-family: var(--text-Font-Bold);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+  letter-spacing: -0.4px;
+}
+
+.headerSpan {
+  color: var(--yellow);
+}
+.webWorksShowcase {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5em;
+}
+
+.webworkDesign1 {
+  position: relative;
+  width: 647px;
+  height: 366px;
+}
+
+.webworkDesign2 {
+  width: 633px;
+  height: 366px;
+  position: relative;
+}
+
+.webWorksShowcase2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5em;
+  margin-top: 2.5rem;
+}
+
+.webworkDesign3,
+.webworkDesign4,
+.webworkDesign5 {
+  position: relative;
+  width: 565px;
+  height: 400px;
+}
+
+.webdesignContentsContainer {
+  max-width: 1300px;
+  min-height: 100vh;
+  margin-inline: auto;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+}
+
+.webdesignContents1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webdesignTextContent,
+.webdesignTextContent2 {
+  width: 544px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-self: stretch; */
+  gap: 1.5em;
+  height: fit-content;
+}
+
+.webdesignTextContent {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.webdesignTextContent2 {
+  align-items: flex-start;
+}
+
+.webdesignTextContent button,
+.webdesignTextContent2 button {
+  width: 160px;
+  height: 55px;
+  padding: 8px 12px;
+  justify-content: center;
+  border-radius: 36px;
+  border: 1px solid var(--btn);
+  color: var(--btn);
+  background-color: transparent;
+  font-weight: 600;
+}
+
+.webdesignContents1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.webdesignTextContent h2,
+.webdesignTextContent2 h2 {
+  font-size: 40px;
+  color: var(--blueText);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.48px;
+  text-transform: capitalize;
+  font-family: var(--text-Font-Bold);
+}
+
+.webdesignTextContent p,
+.webdesignTextContent2 p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  font-family: var(--text-Font-Regular);
+  color: var(--blueText);
+}
+
+.webdesignImg {
+  position: relative;
+  width: 562px;
+  height: 400px;
+}
+
+.webdesignContent2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .webdesignTextContent2 {
+  width: 50%;
+} */
+
+/* WEB DESIGN PRICING SECTION */
+
+.WebPricingSection {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 6rem;
+}
+
+.WebPricingSectionHeader {
+  color: var(--blueText);
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.WebPricingSectionHeader p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+}
+
+.WebPricingSectionHeader h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.32px;
+  text-transform: capitalize;
+  margin-bottom: 6px;
+  font-family: var(--text-Font-Bold);
+}
+
+.WebPricingContainer {
+  max-width: 1120px;
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.webpricingSpan {
+  color: var(--btn);
+}
+
+.AnnualPricingContainer {
+  text-align: center;
+  margin-top: 3rem;
+  display: flex;
+  padding: 10.5px 12px;
+  justify-content: center;
+  width: fit-content;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 48px;
+  background-color: var(--blueText);
+  color: #fff;
+  gap: 1.5em;
+}
+
+.annualspan {
+  color: var(--yellow);
+}
+
+.monthlybg {
+  background-color: #fff;
+  color: var(--blueText);
+  padding: 1rem 1.5rem;
+  border-radius: 48px;
+  font-family: var(--text-Font-Bold);
+}
+
+.tickImg {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.tickImgBg {
+  background-color: var(--blueText);
+  border-radius: 50px;
+  padding-right: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+.webPricingContents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 1em; */
+  margin-top: 3rem;
+}
+
+.webBasicPlan {
+  width: 424px;
+  padding: 40px 20px;
+  border-radius: 20px 0 0 20px;
+  border: 1px solid var(--blueText);
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.webBasicPlan h4 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.48px;
+  text-transform: capitalize;
+  color: var(--blueText);
+  font-family: var(--text-Font-Bold);
+}
+
+.webBasicPlan p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.18px;
+  color: var(--blueText);
+  font-family: var(--text-Font-Regular);
+}
+
+.webBasicPlan h3 {
+  color: var(--btn);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+  letter-spacing: -0.4px;
+  font-family: var(--text-Font-Bold);
+}
+
+.webBasicPlan h3 span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.36px;
+}
+
+.webBasicPlan .lineThrough {
+  color: #818185;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.48px;
+  text-decoration: line-through;
+  text-transform: capitalize;
+}
+
+.webBasicPlan button {
+  height: 60px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--btn);
+  background: #fff;
+  color: var(--btn);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.webbasicplanfeatures {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+.webbasicplanfeaturesContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5em;
+}
+
+.webbasicplanfeaturesContent p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  font-family: var(--text-Font-Light);
+}
+
+.webPremiumPlan {
+  background-color: var(--btn);
+  color: #fff;
+  position: relative;
+  border-radius: 20px;
+}
+
+.webPremiumPlan h4 {
+  color: inherit;
+}
+
+.webPremiumPlan p {
+  color: inherit;
+}
+
+.webPremiumPlan h3 {
+  color: #fff;
+}
+
+.webPremiumPlan .lineThrough {
+  color: #fff;
+}
+
+.webStandardPlan {
+  position: relative;
+  margin-top: 4rem;
+  border-radius: 0px 20px 20px 0;
+}
+
+.webStandardPlan::before {
+  content: "Most POPULAR";
+  width: 167px;
+  padding: 8px;
+  position: absolute;
+  top: -10%;
+  right: 5%;
+  border: 2px solid var(--btn);
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.32px;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #fff;
+  color: var(--btn);
+  font-family: "Shadows Into Light", cursive;
+}
+
+.enterprisePlan {
+  background-color: var(--yellow);
+  color: #000000;
+}
+
+.enterprisePlan h3 {
+  color: #000000;
+}
+
+.enterprisePlan .lineThrough {
+  color: #000000;
+}

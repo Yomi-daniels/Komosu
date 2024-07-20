@@ -1,0 +1,217 @@
+.pricingSection {
+  margin-top: 8rem;
+}
+
+.pricingLandingPage {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  margin-top: 6rem;
+}
+
+.pricingLandingPageContainer {
+  max-width: 1120px;
+  height: 100%;
+  margin-inline: auto;
+}
+
+.pricingHeaderContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.pricingHeaderContent h1 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 60px */
+  letter-spacing: -0.5px;
+  color: var(--blueText);
+}
+
+.pricingHeaderContent p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: var(--blueText);
+}
+
+.pricingHeaderContent button {
+  width: 160px;
+  height: 55px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  background: var(--btn);
+  border-radius: 36px;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+  letter-spacing: 0.36px;
+  border: none;
+}
+
+.pricingLandingPageContainer {
+  margin-top: 6rem;
+}
+
+.pricingLandingPageContainerContent {
+  margin-top: 3rem;
+}
+
+.pricingContentWrapper {
+  display: flex;
+}
+
+.pricingLandingPageContainerHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.pricingLandingPageContainerHeader h4 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.48px;
+  text-transform: capitalize;
+  color: var(--blueText);
+  font-family: var(--text-Font-Bold);
+}
+
+.pricingLandingPageContainerHeader p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: var(--blueText);
+}
+
+.pricingContentImg {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.pricingContentHeader {
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-start;
+}
+
+.arrowWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.arrowWrapper h4 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.48px;
+  text-transform: capitalize;
+  font-family: var(--text-Font-Bold);
+}
+
+.pricingContentImgBg {
+  background-color: var(--btn);
+  width: 24px;
+  height: 24px;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  padding: 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricingContent {
+  display: flex;
+  width: 560px;
+  padding: 24px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 20px 0px 0px 0px;
+  border: 1px solid #dad9ff;
+  color: var(--blueText);
+  transition: 0.4s ease;
+}
+
+.pricingContent h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
+  font-family: var(--text-Font-Bold);
+}
+
+.pricingContent:hover {
+  border: 1px solid rgba(2, 2, 85, 0.242);
+  background: linear-gradient(
+    95deg,
+    rgba(197, 196, 196, 0.171),
+    rgba(151, 151, 255, 0.112)
+  );
+  transition: 0.3s ease-in;
+}
+
+.pricingContent:hover .pricingContentImgBg {
+  background-color: #fff;
+}
+
+.pricingContent:hover .pricingContentImgBgblue {
+  background-color: var(--btn);
+}
+
+.pricingContent h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
+  padding-left: 5rem;
+}
+
+.arrowLeft {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.pricingContent2 {
+  border-radius: 0px 20px 0px 0px;
+}
+
+.pricingContent2 .pricingContentImgBg,
+.pricingContent3 .pricingContentImgBg {
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid var(--btn);
+}
+
+.pricingContent3 {
+  border-radius: 0px 0px 0px 20px;
+}
+
+.pricingContentWrapper2 .pricingContent2 {
+  border-radius: 0px 0px 20px 0px;
+}

@@ -1,0 +1,81 @@
+.container {
+  color: black;
+}
+
+.container:hover {
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  background-color: var(--btn);
+  height: 1px;
+  width: 0;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  margin-top: 0.5rem;
+  left: 0;
+}
+
+.container:hover::after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+/* .container:last-of-type {
+  background-color: var(--btn);
+  padding: 0.5rem;
+  border-radius: 10px;
+  border-radius: 36px;
+  transition: 0.1s ease-in;
+} */
+.active::before {
+  content: "";
+  background-color: var(--btn);
+  width: 100%;
+  height: 1px;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  margin-top: 0.5rem;
+  left: 0;
+}
+/* 
+.container:last-child:hover::after {
+  content: "";
+  background-color: transparent;
+  height: 1px;
+  width: 0;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  margin-top: 0.5rem;
+  left: 0;
+} */
+/* 
+.container:last-child:hover {
+  box-shadow: var(--btn-Hover);
+}
+
+.container:last-child::before {
+  content: "";
+  background-color: transparent;
+  height: 1px;
+  width: 0;
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  margin-top: 0.5rem;
+  left: 0;
+} */
+.active {
+  position: relative;
+  font-family: var(--text-Font-Bold);
+}
+
+@media (max-width: 768px) {
+  .container {
+    color: rgb(255, 255, 255);
+  }
+}

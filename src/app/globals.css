@@ -1,0 +1,113 @@
+/* global.css */
+@font-face {
+  font-family: "SatoshiLight";
+  src: url("/fonts/Satoshi-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SatoshiBold";
+  src: url("/fonts/Satoshi-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SatoshiRegular";
+  src: url("/fonts/Satoshi-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SatoshiBlack";
+  src: url("/fonts/Satoshi-Black.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Koulen";
+  src: url("/fonts/AMOQz46as3KIBPeWgnA9kuYMUg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ShadowsIntoLight";
+  src: url("/fonts/ShadowsIntoLight.ttf") format("truetype");
+}
+
+:root {
+  --navbar-bg: #131313;
+  --text-Font-Light: satoshilight;
+  --text-Font-Bold: satoshibold;
+  --text-Font-Regular: satoshiregular;
+  --text-Font-Black: satoshiblack;
+  --Hero-Header: koulen;
+  --custom-Font: shadowsintolight;
+  --bg: #fff;
+  --btn-Gradient: linear-gradient(45deg, #0500ff, #0500e6);
+  --btn-Hover: 1px -2px 2px #ffffffa2, -1px -1px 1px #ffffffa2;
+  --btn: #0500ff;
+  --blueText: #020059;
+  --text: white;
+
+  /* Gradient color */
+  --deepBlue: #3af3ff;
+  --yellow: #ecc601;
+
+  /* Hover color container*/
+  --hover1: #dad9ff;
+  --hover2: #f9edb0;
+  --hover3: #534500;
+
+  /* Testimonials container */
+  --SkyBlue: #e6e6ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: var(--text-Font-Light);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  font-family: var(--text-Font-Light);
+  letter-spacing: 0.125ch;
+}
+
+textarea:focus {
+  border-color: #007bff;
+}
+/* 
+.container {
+  background-color: var(--bg);
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+/* Webkit-based browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

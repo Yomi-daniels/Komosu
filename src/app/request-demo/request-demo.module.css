@@ -1,0 +1,210 @@
+.requestDemosection {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 6rem;
+}
+
+.requestDemocontainer {
+  max-width: 1120px;
+  height: 100%;
+  margin: 5rem auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.requestDemoTextcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5em;
+}
+
+.textheader {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.headerimgbg {
+  position: relative;
+  background-color: var(--hover1);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.textheader h4 {
+  font-family: var(--text-Font-Black);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: var(--blueText);
+}
+
+.requestDemoTextcontainer h1 {
+  max-width: 90%;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 60px */
+  letter-spacing: -0.5px;
+  color: var(--blueText);
+}
+
+.demospan {
+  color: var(--yellow);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  text-transform: capitalize;
+}
+
+.headerimg {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.TickImg {
+  position: relative;
+}
+
+.demoFeaturesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.demoFeatures {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.demoFeatures p {
+  color: var(--blueText);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+}
+
+.demoForm {
+  width: 100%;
+  position: relative;
+  padding: 40px 24px;
+  align-items: center;
+  gap: 24px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(40, 40, 43, 0.2);
+}
+
+.inputflex {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+.formGroup {
+  display: flex;
+  gap: 0.5em;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.name input {
+  height: 50px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #bcbcbc;
+}
+.inputflex input {
+  display: flex;
+  height: 50px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #bcbcbc;
+}
+
+.companyName input {
+  display: flex;
+  height: 50px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #bcbcbc;
+  width: 100%;
+}
+
+.demoForm button {
+  display: flex;
+  height: 50px;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  background: var(--btn);
+  color: #fff;
+  border: none;
+  width: 100%;
+}
+
+.demoForm h1 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  color: var(--blueText);
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.demoForm .formname {
+  margin-top: 0;
+}
+
+.planContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid #bcbcbc;
+  position: relative;
+  width: 100%;
+}
+
+.planContainer i {
+  position: absolute;
+  font-size: 2rem;
+  right: 0;
+}

@@ -1,0 +1,226 @@
+.AiSolutionSection {
+  width: 100%;
+  min-height: 100vh;
+  /* border: 2px solid red; */
+  margin-top: 6rem;
+}
+
+/* AI SOLUTIONS LANDING PAGE SECTION */
+
+.AiLandingPage {
+  background-color: var(--hover2);
+  border-bottom: 1px solid #fcf6d9;
+  border-top: 2px solid #fcf6d9;
+  background: linear-gradient(269deg, #fdf9e6 44.62%, #fff 91.54%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  position: relative;
+  overflow-y: hidden;
+  padding: 0 6rem;
+}
+
+.ailandingpageContainerTextContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.ailandingpageContainerTextContent p {
+  color: var(--blueText);
+  font-family: var(--text-Font-Regular);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+}
+
+.vectorImgtop {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+
+.vectorImgbottom {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  right: 35%;
+  bottom: 15%;
+}
+
+.ailandingpageContainer {
+  max-width: 1400px;
+  height: 100%;
+  margin: 0 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.aiheaderImg {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.AiLandingPageHeader {
+  display: flex;
+  gap: 1em;
+}
+
+.AiLandingPageHeader h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  color: var(--blueText);
+}
+
+.ailandingpageContainer h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -0.48px;
+  color: var(--blueText);
+  width: fit-content;
+}
+
+.ailandingpageImage {
+  position: relative;
+}
+
+.aigirlImg {
+  position: relative;
+  width: 700px;
+  height: 700px;
+}
+
+.ailandingpageImagetop {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  object-fit: contain;
+  top: 25%;
+  left: 10%;
+}
+
+.ailandingpageImagebottom {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  object-fit: contain;
+  bottom: 10%;
+  left: 10%;
+  z-index: 100;
+}
+
+/* AI SOLUTION SERVICES SECTION */
+
+.AisolutionServicesSection {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 6rem;
+}
+
+.AisolutionServicesContainer {
+  max-width: 1120px;
+  height: 100%;
+  margin-inline: auto;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.AisolutionServicesText h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 48px */
+  letter-spacing: -0.4px;
+  align-self: stretch;
+  color: var(--blueText);
+  margin-bottom: 1rem;
+  font-family: var(--text-Font-Bold);
+}
+
+.aiservicesImg {
+  position: relative;
+  width: 478px;
+  height: 403px;
+}
+
+.AisolutionServicesContent {
+  display: flex;
+  align-items: center;
+}
+
+.AisolutionServicesContent2 .AisolutionServicesText {
+  width: 60%;
+  margin-left: 6rem;
+}
+
+.AisolutionServicesContent2 {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+/* AI SOLUTION PRICING SECTION */
+
+.AipricingSection {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.AipricingHeader {
+  text-align: center;
+}
+
+.AipricingHeader h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  letter-spacing: -0.48px;
+  color: var(--blueText);
+}
+
+.AipricingHeader .Aispan {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.48px;
+  text-transform: capitalize;
+  color: var(--yellow);
+}
+
+.AipricingHeader p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: var(--blueText);
+  margin-top: 0.5rem;
+}
+
+.AipricingContainer {
+  max-width: 1300px;
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}

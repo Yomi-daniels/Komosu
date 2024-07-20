@@ -1,0 +1,51 @@
+.formGroup {
+  width: 100%;
+  display: flex;
+  gap: 0.4em;
+  flex-direction: column;
+}
+
+.formGroup input {
+  color: var(--blueText);
+  display: flex;
+  height: 50px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #bcbcbc;
+}
+
+.formGroup label {
+  color: var(--blueText);
+}
+
+.formGroup::placeholder {
+  text-align: center;
+  align-items: center;
+}
+
+.formGroup select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.formGroup select:focus,
+.formGroup input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.formGroup select option:last-child {
+  display: flex;
+}
+.errorText {
+  color: rgb(252, 5, 5);
+  letter-spacing: 0.04ch;
+  font-size: 14px;
+  margin: 6px 0 0 6px;
+}

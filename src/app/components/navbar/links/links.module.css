@@ -1,0 +1,143 @@
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 0 10px;
+  font-size: 0.9rem;
+}
+
+.mobileLinks {
+  display: none;
+}
+.menuButton {
+  display: none;
+}
+
+.linkItem {
+  position: relative;
+}
+
+.servicesContainer {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.subLinks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  width: 260px;
+  padding: 16px;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  margin-top: 3rem;
+  border-radius: 0 20px 20px 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.4s ease-in,
+    visibility 0.4s ease-in;
+  font-family: var(--text-Font-Light);
+  z-index: 55;
+}
+
+.subLinks::before {
+  content: "";
+  position: absolute;
+  top: -14%;
+  left: 0;
+  width: 70px;
+  height: 30px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* transform: rotate(200deg); */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+.customLinkItem:hover .subLinks {
+  opacity: 1;
+  visibility: visible;
+}
+
+.subLinks a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+.dropdownButton img {
+  width: 16px;
+  height: 16px;
+}
+
+.requestDemoLink {
+  display: flex;
+  width: 160px;
+  height: 55px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 36px;
+  z-index: -1;
+  background: var(--btn);
+  cursor: pointer;
+  z-index: 9;
+}
+
+.requestDemoLink:hover {
+  box-shadow: var(--btn-Hover);
+}
+
+.requestDemoLink a {
+  color: white;
+}
+/* .mobileLinks {
+  color: #fff;
+} */
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+    color: #fff;
+  }
+  .menuButton {
+    background-color: transparent;
+    border: none;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .mobileLinks {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    color: #fff;
+  }
+}

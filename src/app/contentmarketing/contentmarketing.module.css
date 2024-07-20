@@ -1,0 +1,190 @@
+.Contentmarketingpage {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 5.6rem;
+}
+
+.contentSection {
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #dad9ff;
+  background: linear-gradient(269deg, #e6e6ff 1.83%, #fff 57.69%);
+  position: relative;
+  overflow-y: hidden;
+  padding: 96px 0;
+}
+
+.contentContainer {
+  max-width: 1120px;
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+}
+
+.contentheaderImg {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.contentheader {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.contentText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.contentheader h4 {
+  color: var(--blueText);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+}
+
+.contentText h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.32px;
+  /* width: 80%; */
+  color: var(--blueText);
+}
+
+.contentText p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: var(--blueText);
+  font-family: var(--text-Font-Regular);
+  width: 75%;
+}
+.contentImages {
+  position: relative;
+  width: 719px;
+  height: 479px;
+}
+
+.vectorbottom {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  bottom: 0;
+  left: 0;
+}
+
+/* CONTENT MARKETING SERVICES SECTION */
+
+.contentservicessection {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  margin: 6rem 0;
+}
+
+.contentservicescontainer {
+  max-width: 1200px;
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  /* padding: 4rem 0; */
+}
+
+.contentservicecontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.contentservicecontent h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  letter-spacing: 0.48px;
+  text-transform: capitalize;
+  font-family: var(--text-Font-Bold);
+  color: var(--blueText);
+  margin-bottom: 1.5rem;
+}
+
+.contentServiceText p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: var(--blueText);
+  margin-bottom: 1.5rem;
+}
+
+.contentServiceText {
+  width: 40%;
+}
+.contentservicesImg {
+  width: 500px;
+  height: 500px;
+  position: relative;
+}
+
+.contentservicesImg2 {
+  border-radius: 20px;
+  width: 671.674px;
+  height: 471px;
+  /* background: var(--hover1); */
+}
+
+/* CONTENT MARKETING PRICING SECTION */
+
+.contentpricingsection {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 2rem;
+}
+
+.ContentPricingHeader {
+  color: var(--blueText);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 2;
+}
+
+.ContentPricingHeader h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+  letter-spacing: -0.32px;
+  font-family: var(--text-Font-Bold);
+}
+
+.contentspan {
+  color: var(--yellow);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.32px;
+  text-transform: capitalize;
+}
+
+.contentpricingcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

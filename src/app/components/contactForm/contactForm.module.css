@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.fullname {
+  display: flex;
+  flex-grow: 1;
+  gap: 0.7em;
+}
+
+.textarea {
+  width: 590px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: var(--blueText);
+  outline: none;
+}
+
+.textarea::placeholder {
+  color: var(--blueText);
+}
+
+.form input {
+  outline: none;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.fullname:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.errorText {
+  color: rgb(252, 5, 5);
+  letter-spacing: 0.04ch;
+  font-size: 14px;
+  margin: 6px 0 0 6px;
+}
