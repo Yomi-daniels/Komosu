@@ -19,6 +19,7 @@
     "react-dom": "^18",
     "react-hook-form": "^7.52.1",
     "react-just-parallax": "^3.1.16",
+    "swr": "^2.2.5",
     "zod": "^3.23.8"
   },
   "devDependencies": {

@@ -4,5 +4,10 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
 };
-
-export default nextConfig;
+module.exports = {
+  //...
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
+};
+module.exports = nextConfig;
