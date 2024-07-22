@@ -5,7 +5,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { supabase } from "../supabaseClient";
 import { schema } from "./validationSchema";
-
 import InputField from "../Fields/InputField";
 import SelectField from "../Fields/SelectField";
 const DemoForm = () => {

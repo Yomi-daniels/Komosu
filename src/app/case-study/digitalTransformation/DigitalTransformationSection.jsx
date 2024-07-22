@@ -1,6 +1,6 @@
 import casestyles from "../casestudy.module.css";
 // import Image from "next/image";
-import TickImg from "@/app/webdesign/components/TickImg";
+import TickImg from "@/app/webdesign/components/Tickimg";
 const DigitalTransformationSection = () => {
   return (
     <section className={casestyles.DigitalTransformationSection}>
