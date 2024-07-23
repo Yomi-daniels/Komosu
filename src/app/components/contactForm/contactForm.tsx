@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { schema } from "./validationSchema";
 import { useState } from "react";
 import { supabase } from "../../../lib/supabaseClient";
-import InputField from "../fields/InputField";
+import InputField from "../Fields/InputField";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -91,8 +91,6 @@ const ContactForm = () => {
             name="message"
             cols={30}
             rows={10}
-            register={register}
-            errors={errors}
             placeholder="Ask Your Question"
             className={`${styles.textarea} ${errors.message ? styles.errorInput : ""}`}
             {...register("message")}
