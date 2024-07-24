@@ -11,64 +11,13 @@ import InputField from "../fields/InputField";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submissionStatus, setSubmissionStatus] = useState(null);
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm({
-    resolver: zodResolver(schema),
-  });
-
-  const onSubmit = async (formData) => {
-    console.log("click");
-    setIsSubmitting(true);
-    try {
-      console.log("Form Data: ", formData);
-      const { firstName, lastName, workEmail, message, phoneNumber } = formData;
-
-      setIsSubmitting(true);
-
-      const { data, error } = await supabase.from("contact_form").insert([
-        {
-          phone_number: phoneNumber,
-          first_name: firstName,
-          last_name: lastName,
-          email: workEmail,
-          message: message,
-        },
-      ]);
-
-      if (error) throw error;
-      console.log("Data inserted successfully: ", data);
-      reset();
-      setSubmissionStatus("success");
-    } catch (error) {
-      console.error("Error inserting data into table: ", error);
-      setSubmissionStatus("error");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const Modal = () => (
-    <div className={styles.modalOverlay}>
-      <div className={styles.modalContent}>
-        {isSubmitting ? (
-          <div className={styles.spinner}></div>
-        ) : (
-          <div>Thank you, the form has been successfully submitted!</div>
-        )}
-      </div>
-    </div>
-  );
+  const [isSubmitted, setIsSubmitted] = useState(false);
   };
 
   return (
     <div>
-      <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+      <form onSubmit={handleSubmit(onSubmit)} className={styles.form} disabled={isSubmitting}>
+        {isSubmitting || isSubmitted ? <Modal /> : null}
         <div className={styles.fullname}>
           <InputField
             label="First Name *"
