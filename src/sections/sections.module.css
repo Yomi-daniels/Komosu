@@ -1576,6 +1576,18 @@
   bottom: 0;
 }
 
+@media (max-width: 450px) {
+  .offerHeader {
+    font-size: 16px;
+  }
+
+  .avatar {
+    position: relative;
+    width: 210px;
+    height: 300px;
+  }
+}
+
 /* FAQ SECTION */
 .FAQSection {
   margin-top: 6rem;
@@ -1818,4 +1830,39 @@
 .TestimonialPage,
 .FAQPage {
   background-color: white;
+}
+
+/* TESTIMONIAL CONTAINER CONTAINER MOBILE SCREEN */
+
+@media (max-width: 450px) {
+  .testimonialSection {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    position: relative;
+  }
+  .testimonialContainer {
+    max-width: 100%;
+  }
+  .testimonialContents {
+    flex-direction: column;
+  }
+
+  .clientCompany {
+    font-size: 1.5rem;
+  }
+
+  .feedbacks {
+    font-size: 0.8rem;
+  }
+
+  .testifierName {
+    font-size: 12.8px;
+  }
+
+  .role {
+    font-size: 0.9rem;
+  }
 }
