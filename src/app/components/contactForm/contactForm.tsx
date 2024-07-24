@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "./contactForm.module.css";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { schema } from "./validationSchema";
@@ -11,6 +12,8 @@ import InputField from "../fields/InputField";
 const Modal = () => <div>Submitting...</div>;
 
 const ContactForm = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [submissionStatus, setSubmissionStatus] = useState(null);
 
   const {
@@ -23,6 +26,7 @@ const ContactForm = () => {
   });
 
   const onSubmit = async (data) => {
+    setIsSubmitting(true);
     try {
       const { error } = await supabase.from("contacts").insert([{ ...data }]);
 
@@ -43,6 +47,7 @@ const ContactForm = () => {
   return (
     <div>
       <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+        {isSubmitting || isSubmitted ? <Modal /> : null}
         <div className={styles.fullname}>
           <InputField
             label="First Name *"
