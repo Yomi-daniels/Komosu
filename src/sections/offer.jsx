@@ -453,11 +453,18 @@ const Offer = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.webDesignCardContainer}>
+                <div
+                  className={`${styles.webDesignCardContainer} ${styles.contentMarketingContainer}`}
+                >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard3}`}
                   >
                     <Image src="/Frame 1618868694.png" fill objectFit="cover" />
+                    <Image
+                      src="/Frame 1618868694.png"
+                      fill
+                      objectFit="contain"
+                    />
                   </div>
                 </div>
               </div>

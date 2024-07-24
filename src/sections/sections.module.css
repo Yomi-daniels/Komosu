@@ -492,6 +492,9 @@
     width: 30px;
     height: 30px;
   }
+  .containerFlexh5 {
+    font-size: 16px;
+  }
 }
 
 /* Video Showcase Section */
@@ -969,6 +972,10 @@
   visibility: visible;
 }
 
+.webDesignCard3 img:nth-child(2) {
+  display: none;
+}
+
 @media (max-width: 450px) {
   .OfferSection .offerHeader {
     font-size: 1.5rem;
@@ -1044,12 +1051,66 @@
     height: 15px;
   }
 
-  /* .OfferOfferContentContainer {
-    border: 2px solid red;
+  .aiSolution,
+  .leadGeneration {
+    flex-direction: column-reverse;
   }
 
-  .webDesignCardContainer1 .webDesignCard1 {
-    border: 2px solid blue;
+  .webDesignCard {
+    width: 270.882px;
+    height: 173.877px;
+  }
+
+  .webDesignCardContainer1 .webDesignCard1::after {
+    content: "";
+    position: absolute;
+    right: -85%;
+    top: 10%;
+    background-color: transparent;
+    width: 684px;
+    height: 406px;
+    z-index: -1;
+    opacity: 0.6;
+    margin-bottom: 3rem;
+  }
+
+  .webDesignCard2 {
+    position: absolute;
+    width: 90.501px;
+    height: 200.219px;
+    top: 30%;
+  }
+
+  .webDesignCardContainer1 .webDesignCard2::after {
+    background-color: transparent;
+  }
+
+  .AisolutionContainer .webDesignCard {
+    width: 335px;
+    height: 349px;
+    flex-shrink: 0;
+  }
+
+  .contentMarketingContainer .webDesignCard {
+    width: 393px;
+    height: 363.915px;
+  }
+
+  .contentMarketingContainer .webDesignCard3 {
+    width: 500px;
+    height: 400px;
+  }
+
+  .webDesignCard3 img:nth-child(1) {
+    display: none;
+  }
+
+  /* .webDesignCard {
+    width: 485.237px;
+    height: 272.976px;
+    border-radius: 20px;
+    position: relative;
+    scale: 1;
   } */
 }
 
@@ -1151,8 +1212,6 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-
-  /* justify-content: space-evenly; */
 }
 
 .offerAnimTextContent {
@@ -1285,7 +1344,7 @@
   height: 205px;
   position: absolute;
   left: 15%;
-  z-index: 100;
+  z-index: 40;
 }
 
 .ImageBoxsec2 {
@@ -1320,6 +1379,81 @@
 
 .ImageBox img {
   border-radius: 8px;
+}
+
+@media (max-width: 450px) {
+  .lineImg,
+  .lineImg2 {
+    width: 64px;
+    height: 4px;
+  }
+
+  .offerAnimHeaderh2 {
+    font-size: 24px;
+  }
+
+  .LineContainer {
+    gap: 0.5em;
+    top: 20%;
+    left: 0;
+  }
+
+  .OfferAnimationContainerContent {
+    max-width: 352px;
+    min-height: 496px;
+    background-color: var(--hover1);
+    /* min-height: 683px; */
+    border-radius: 10px;
+    /* padding: 0 24px; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .OfferAnimationContainer {
+    flex-direction: column;
+    padding: 0 24px;
+    align-items: center;
+  }
+
+  .OfferAnimationContainerContent:first-child {
+    position: relative;
+    bottom: -20%;
+    left: 0;
+    transition: 0.3s ease;
+  }
+
+  .OfferAnimationContainerContent:first-child:hover {
+    position: relative;
+    transform: none;
+  }
+
+  .OfferAnimationContainerContent:first-child:hover
+    ~ .OfferAnimationContainerContent:last-child {
+    transform: none;
+    position: relative;
+  }
+
+  .OfferAnimationContainerContent:last-child {
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: var(--hover2);
+    transition: none;
+  }
+  .OfferAnimationContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+    gap: 3em;
+    max-width: 1120px;
+    margin-inline: auto;
+    min-height: 100vh;
+    position: relative;
+    overflow: none;
+  }
 }
 
 /* TESTIMONIAL SECTION */
