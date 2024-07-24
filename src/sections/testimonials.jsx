@@ -23,16 +23,19 @@ const Testimonials = () => {
   };
 
   const prevTestimonial = () => {
-    const newIndex = currentIndex === 0 ? TestimonialData.length - 1 : currentIndex - 1;
+    const newIndex =
+      currentIndex === 0 ? TestimonialData.length - 1 : currentIndex - 1;
     handleTransition(newIndex);
   };
 
   const nextTestimonial = () => {
-    const newIndex = currentIndex === TestimonialData.length - 1 ? 0 : currentIndex + 1;
+    const newIndex =
+      currentIndex === TestimonialData.length - 1 ? 0 : currentIndex + 1;
     handleTransition(newIndex);
   };
 
-  const { avatar, company, data, username, role } = TestimonialData[currentIndex];
+  const { avatar, company, data, username, role } =
+    TestimonialData[currentIndex];
 
   return (
     <section className={styles.testimonialSection}>
@@ -43,7 +46,9 @@ const Testimonials = () => {
         </span>
         SAY ABOUT US
       </h2>
-      <div className={`${styles.testimonialContainer} ${isTransitioning ? styles.fade : ''}`}>
+      <div
+        className={`${styles.testimonialContainer} ${isTransitioning ? styles.fade : ""}`}
+      >
         <div className={styles.testimonialContents}>
           <div className={styles.avatar}>
             <Image src={avatar} alt={`${company} testimonial`} layout="fill" />
@@ -61,10 +66,18 @@ const Testimonials = () => {
       </div>
       <div className={styles.testimonialButtonDirection}>
         <div className={styles.btnPrev} onClick={prevTestimonial}>
-          <Image src="/View plan button.png" alt="Previous testimonial" layout="fill" />
+          <Image
+            src="/View plan button.png"
+            alt="Previous testimonial"
+            layout="fill"
+          />
         </div>
         <div className={styles.btnNext} onClick={nextTestimonial}>
-          <Image src="/View plan button (1).png" alt="Next testimonial" layout="fill" />
+          <Image
+            src="/View plan button (1).png"
+            alt="Next testimonial"
+            layout="fill"
+          />
         </div>
       </div>
     </section>

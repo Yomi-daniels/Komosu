@@ -63,12 +63,10 @@
   height: 100vh;
 } */
 .herobg {
-  /* border: 3px solid red; */
   width: 100%;
   height: 750px;
   position: relative;
   filter: grayscale(80%);
-  /* z-index: 99; */
 }
 
 .herobg::before {
@@ -220,16 +218,39 @@
 }
 
 @media (max-width: 450px) {
-  .HeroText {
-    top: 20%;
-  }
-  .heroSubText {
-    margin-top: 2rem;
-  }
   .headerbtn {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
     font-weight: 500;
+  }
+
+  .heroHeader {
+    font-size: 2.3rem;
+  }
+
+  .HeroTextContainer {
+    flex-direction: column;
+    /* border: 2px solid #fff; */
+    align-items: center;
+    height: 77dvh;
+  }
+  .HeroText {
+    align-items: center;
+    color: var(--text);
+    margin-left: 0;
+    max-width: 614px;
+    /* border: 3px solid red; */
+  }
+  .HeaderContent {
+    /* border: 3px solid rgb(26, 222, 65); */
+    margin-right: 0;
+  }
+  .heroContainer {
+    top: 10%;
+  }
+  .herobg {
+    width: 100%;
+    height: 710px;
   }
 }
 
@@ -354,11 +375,11 @@
 
 .containerFlex1,
 .containerSubFlex1 {
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
   border: 1px solid #dcdbdb;
   width: 544px;
-  height: 245px;
+  min-height: 245px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -466,6 +487,13 @@
   }
 }
 
+@media (max-width: 450px) {
+  .flexImg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /* Video Showcase Section */
 
 .videoSection {
@@ -562,6 +590,9 @@
   }
 }
 @media (max-width: 900px) {
+  .videoSection {
+    height: 100%;
+  }
   .videoContainer {
     padding: 0 3rem;
     height: 50vh;
@@ -582,18 +613,26 @@
 @media (max-width: 450px) {
   .videoContainer {
     height: 30vh;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   .playContainer,
   .resetContainer {
     width: 50px;
     height: 30px;
   }
+
+  .videoContent {
+    font-size: 0.5rem;
+  }
 }
 @media (max-width: 982px) {
   .videoContent {
     font-size: 0.8rem;
   }
+}
+.playContainer,
+.resetContainer {
+  display: none;
 }
 
 @media (max-width: 714px) {
@@ -887,6 +926,7 @@
 
 .OfferOfferContentContainer {
   position: relative;
+  height: 100%;
   /* overflow: hidden; */
 }
 
@@ -927,6 +967,90 @@
 .leadGeneration.active {
   opacity: 1;
   visibility: visible;
+}
+
+@media (max-width: 450px) {
+  .OfferSection .offerHeader {
+    font-size: 1.5rem;
+    padding: 0 0.7rem;
+  }
+
+  .servicesSpan {
+    font-size: 1.5rem;
+  }
+
+  .offerContainer {
+    padding: 0 0.7rem;
+  }
+
+  .offerSelectProps {
+    max-width: 100%;
+    padding: 0.75rem;
+    flex-wrap: nowrap;
+    gap: 1em;
+  }
+
+  .offerSelectProps .active {
+    padding: 0.5rem;
+    border-radius: 50px;
+  }
+
+  .offerSelectProps li {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 0.75rem;
+    border-radius: 50px;
+  }
+
+  .webDesignContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .WebDesignFeaturesContent {
+    align-items: center;
+  }
+
+  .webDesignh1 {
+    font-size: 1rem;
+    width: 90vw;
+  }
+
+  .WebDesignBtn {
+    display: flex;
+    width: 150px;
+    height: 45px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 36px;
+    background-color: var(--btn);
+    font-size: 14px;
+  }
+  .WebDesignFeaturesContent,
+  .offerFeaturesContent {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .WebDesignFeaturesContent p {
+    font-size: 12px;
+  }
+  .webFeaturesImg,
+  .offerFeaturesImg {
+    position: relative;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* .OfferOfferContentContainer {
+    border: 2px solid red;
+  }
+
+  .webDesignCardContainer1 .webDesignCard1 {
+    border: 2px solid blue;
+  } */
 }
 
 /* OFFER ANIMATION SECTION */
@@ -1427,7 +1551,7 @@
 }
 
 .offerHeader {
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 40px;
 }
 

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
+    "@jdion/tilt-react": "^1.0.0",
     "@next/font": "^14.2.4",
     "@supabase/supabase-js": "^2.44.4",
     "gsap": "^3.12.5",

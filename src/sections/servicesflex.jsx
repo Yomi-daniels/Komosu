@@ -7,7 +7,12 @@ const Servicesflex = () => {
         <div className={styles.containerflex}>
           <div className={styles.containerFlex1}>
             <div className={styles.flexImg}>
-              <Image src="/Vector (1).png" alt="flexImage" fill />
+              <Image
+                src="/Vector (1).png"
+                alt="flexImage"
+                fill
+                objectFit="cover"
+              />
             </div>
             <h5 className={styles.containerFlexh5}>Web Design</h5>
             <p className={styles.containerFlexp}>
@@ -18,7 +23,12 @@ const Servicesflex = () => {
           </div>
           <div className={styles.containerFlex1}>
             <div className={styles.flexImg}>
-              <Image src="/Vector (2).png" alt="flexImage" fill />
+              <Image
+                src="/Vector (2).png"
+                alt="flexImage"
+                fill
+                objectFit="cover"
+              />
             </div>
             <h5 className={styles.containerFlexh5}>Virtual Finance Managers</h5>
             <p className={styles.containerFlexp}>
@@ -31,7 +41,12 @@ const Servicesflex = () => {
         <div className={styles.containerSubFlex}>
           <div className={styles.containerSubFlex1}>
             <div className={styles.flexImg}>
-              <Image src="/Vector (3).png" alt="flexImage" fill />
+              <Image
+                src="/Vector (3).png"
+                alt="flexImage"
+                fill
+                objectFit="cover"
+              />
             </div>
             <h5 className={styles.containerFlexh5}>
               Sales & Appointment Assistants
@@ -45,7 +60,12 @@ const Servicesflex = () => {
 
           <div className={styles.containerSubFlex1}>
             <div className={styles.flexImg}>
-              <Image src="/Vector (4).png" alt="flexImage" fill />
+              <Image
+                src="/Vector (4).png"
+                alt="flexImage"
+                fill
+                objectFit="cover"
+              />
             </div>
             <h5 className={styles.containerFlexh5}>Content that converts</h5>
             <p className={styles.containerFlexp}>

@@ -1,4 +1,6 @@
 # Supabase
 .branches
 .temp
+
+# Ignore environment variables
 .env
