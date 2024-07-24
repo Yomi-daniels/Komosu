@@ -3,6 +3,7 @@
 import { supabase } from "@/app/components/supabaseClient";
 import { useEffect, useState } from "react";
 import styles from "./contactForm.module.css";
+import { useEffect, useState } from "react";
 
 const ContactForm = () => {
   const [formState, setFormState] = useState({
@@ -20,6 +21,9 @@ const ContactForm = () => {
     phoneNumber: "",
     message: "",
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setFormState({
@@ -49,13 +53,29 @@ const ContactForm = () => {
     }
   };
 
+  const Modal = () => (
+    <div className={styles.modalOverlay}>
+      <div className={styles.modalContent}>
+        {isSubmitting ? (
+          <div className={styles.spinner}></div>
+        ) : (
+          <div>Thank you, the form has been successfully submitted!</div>
+        )}
+      </div>
+    </div>
+  );
+  };
+
   const validateFirstName = (firstName) => {
     if (!firstName) {
       setErrors((prevErrors) => ({
         ...prevErrors,
         firstName: "First name is required.",
       }));
+      setIsSubmitting(false);
     } else {
+      setIsSubmitting(false);
+      setIsSubmitted(true);
       setErrors((prevErrors) => ({ ...prevErrors, firstName: "" }));
     }
   };
@@ -135,6 +155,8 @@ const ContactForm = () => {
     }
 
     // Insert data into the Supabase database
+    setIsSubmitting(true);
+
     const { data, error } = await supabase.from("contact_form").insert([
       {
         first_name: firstName,
@@ -163,7 +185,8 @@ const ContactForm = () => {
   //   });
   // }, [formState]);
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={handleSubmit} disabled={isSubmitting}>
+      {isSubmitting || isSubmitted ? <Modal /> : null}
       <div className={styles.fullname}>
         <div className={styles.inputContainer}>
           <input
