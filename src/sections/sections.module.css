@@ -1404,7 +1404,6 @@
     background-color: var(--hover1);
     /* min-height: 683px; */
     border-radius: 10px;
-    /* padding: 0 24px; */
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -1443,16 +1442,34 @@
   }
   .OfferAnimationContainer {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 5rem;
+    padding: 0 2rem;
     padding-bottom: 3rem;
     gap: 3em;
-    max-width: 1120px;
+    max-width: 100%;
     margin-inline: auto;
-    min-height: 100vh;
-    position: relative;
     overflow: none;
+  }
+
+  .ImageBox {
+    width: 396px;
+    height: 259px;
+    margin-inline: auto;
+    position: relative;
+  }
+
+  .ImageBox1 {
+    width: 247.027px;
+    height: 247.663px;
+  }
+
+  .ImageBox1 {
+    position: absolute;
+    left: 5%;
+    width: 187.817px;
+    height: 164.897px;
   }
 }
 
