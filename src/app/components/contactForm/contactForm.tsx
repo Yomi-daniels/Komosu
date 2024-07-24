@@ -1,6 +1,7 @@
 "use client";
 
 import styles from "./contactForm.module.css";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { schema } from "./validationSchema";
@@ -28,6 +29,8 @@ const ContactForm = () => {
       console.log("Form Data: ", formData);
       const { firstName, lastName, workEmail, message, phoneNumber } = formData;
 
+      setIsSubmitting(true);
+
       const { data, error } = await supabase.from("contact_form").insert([
         {
           phone_number: phoneNumber,
@@ -48,6 +51,19 @@ const ContactForm = () => {
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const Modal = () => (
+    <div className={styles.modalOverlay}>
+      <div className={styles.modalContent}>
+        {isSubmitting ? (
+          <div className={styles.spinner}></div>
+        ) : (
+          <div>Thank you, the form has been successfully submitted!</div>
+        )}
+      </div>
+    </div>
+  );
   };
 
   return (
