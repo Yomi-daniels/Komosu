@@ -1,13 +1,8 @@
 "use client";
 
-import styles from "./contactForm.module.css";
-import { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { schema } from "./validationSchema";
 import { useState } from "react";
-import { supabase } from "../../../lib/supabaseClient";
 import InputField from "../fields/InputField";
+import styles from "./constactForm.module.css";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
