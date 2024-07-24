@@ -7,6 +7,7 @@ import { schema } from "./validationSchema";
 import { useState } from "react";
 import { supabase } from "../../../lib/supabaseClient";
 import InputField from "../Fields/InputField";
+import Modal from "../modal/modal";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -47,11 +48,20 @@ const ContactForm = () => {
       setSubmissionStatus("error");
     } finally {
       setIsSubmitting(false);
+      setTimeout(() => {
+        setSubmissionStatus("");
+      }, 2000);
     }
   };
 
   return (
     <div>
+      {isSubmitting || submissionStatus ? (
+        <Modal
+          isSubmitting={isSubmitting}
+          submissionStatus={submissionStatus}
+        />
+      ) : null}
       <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
         <div className={styles.fullname}>
           <InputField
@@ -104,10 +114,10 @@ const ContactForm = () => {
           {isSubmitting ? "Sending..." : "Send message"}
         </button>
       </form>
-      {submissionStatus === "success" && <p>Form submitted successfully!</p>}
+      {/* {submissionStatus === "success" && <p>Form submitted successfully!</p>}
       {submissionStatus === "error" && (
         <p>There was an error submitting the form.</p>
-      )}
+      )} */}
     </div>
   );
 };
