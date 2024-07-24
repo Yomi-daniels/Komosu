@@ -1,22 +1,52 @@
 "use client";
 
-import { useState } from "react";
-import InputField from "../fields/InputField";
 import styles from "./contactForm.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { supabase } from "../supabaseClient";
-import schema from "./validationSchema";
+import { schema } from "./validationSchema";
+import { supabase } from "../../../lib/supabaseClient";
+import InputField from "../fields/InputField";
+
+// Define the modal component (assuming it exists)
+const Modal = () => <div>Submitting...</div>;
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm({
+    resolver: zodResolver(schema),
+  });
+
+  const onSubmit = async (data) => {
+    setIsSubmitting(true);
+    try {
+      const { error } = await supabase.from("contacts").insert([{ ...data }]);
+
+      if (error) {
+        throw error;
+      }
+
+      setIsSubmitted(true);
+      setSubmissionStatus("success");
+      reset();
+    } catch (error) {
+      setSubmissionStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <div>
-      <form onSubmit={handleSubmit(onSubmit)} className={styles.form} disabled={isSubmitting}>
+      <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
         {isSubmitting || isSubmitted ? <Modal /> : null}
         <div className={styles.fullname}>
           <InputField
@@ -61,7 +91,6 @@ const ContactForm = () => {
             {...register("message")}
           ></textarea>
           {errors.message && (
-            //@ts-ignore
             <p className={styles.errorText}>{errors.message.message}</p>
           )}
         </div>
