@@ -1,19 +1,16 @@
 "use client";
 
 import styles from "./contactForm.module.css";
-import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { schema } from "./validationSchema";
+import { useState } from "react";
 import { supabase } from "../../../lib/supabaseClient";
 import InputField from "../fields/InputField";
-
-// Define the modal component (assuming it exists)
-const Modal = () => <div>Submitting...</div>;
+import Modal from "../modal/modal";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [submissionStatus, setSubmissionStatus] = useState(null);
 
   const {
@@ -25,29 +22,47 @@ const ContactForm = () => {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (formData) => {
+    console.log("click");
     setIsSubmitting(true);
     try {
-      const { error } = await supabase.from("contacts").insert([{ ...data }]);
+      console.log("Form Data: ", formData);
+      const { firstName, lastName, workEmail, message, phoneNumber } = formData;
 
-      if (error) {
-        throw error;
-      }
+      const { data, error } = await supabase.from("contact_form").insert([
+        {
+          phone_number: phoneNumber,
+          first_name: firstName,
+          last_name: lastName,
+          email: workEmail,
+          message: message,
+        },
+      ]);
 
-      setIsSubmitted(true);
-      setSubmissionStatus("success");
+      if (error) throw error;
+      console.log("Data inserted successfully: ", data);
       reset();
+      setSubmissionStatus("success");
     } catch (error) {
+      console.error("Error inserting data into table: ", error);
       setSubmissionStatus("error");
     } finally {
       setIsSubmitting(false);
+      setTimeout(() => {
+        setSubmissionStatus("");
+      }, 2000);
     }
   };
 
   return (
     <div>
+      {isSubmitting || submissionStatus ? (
+        <Modal
+          isSubmitting={isSubmitting}
+          submissionStatus={submissionStatus}
+        />
+      ) : null}
       <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
-        {isSubmitting || isSubmitted ? <Modal /> : null}
         <div className={styles.fullname}>
           <InputField
             label="First Name *"
@@ -91,6 +106,7 @@ const ContactForm = () => {
             {...register("message")}
           ></textarea>
           {errors.message && (
+            //@ts-ignore
             <p className={styles.errorText}>{errors.message.message}</p>
           )}
         </div>
@@ -98,10 +114,10 @@ const ContactForm = () => {
           {isSubmitting ? "Sending..." : "Send message"}
         </button>
       </form>
-      {submissionStatus === "success" && <p>Form submitted successfully!</p>}
+      {/* {submissionStatus === "success" && <p>Form submitted successfully!</p>}
       {submissionStatus === "error" && (
         <p>There was an error submitting the form.</p>
-      )}
+      )} */}
     </div>
   );
 };

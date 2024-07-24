@@ -7,6 +7,7 @@ import { supabase } from "../../../lib/supabaseClient";
 import { schema } from "./validationSchema";
 import InputField from "../fields/InputField";
 import SelectField from "../fields/SelectField";
+import Modal from "../modal/modal";
 
 const DemoForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -57,6 +58,9 @@ const DemoForm = () => {
       setSubmissionStatus("error");
     } finally {
       setIsSubmitting(false);
+      setTimeout(() => {
+        setSubmissionStatus("");
+      }, 2000);
     }
   };
 
@@ -64,6 +68,12 @@ const DemoForm = () => {
 
   return (
     <div>
+      {isSubmitting || submissionStatus ? (
+        <Modal
+          isSubmitting={isSubmitting}
+          submissionStatus={submissionStatus}
+        />
+      ) : null}
       <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
         <div className={styles.fullname}>
           <InputField
@@ -129,10 +139,6 @@ const DemoForm = () => {
           {isSubmitting ? "Sending..." : "Send message"}
         </button>
       </form>
-      {submissionStatus === "success" && <p>Form submitted successfully!</p>}
-      {submissionStatus === "error" && (
-        <p>There was an error submitting the form.</p>
-      )}
     </div>
   );
 };
