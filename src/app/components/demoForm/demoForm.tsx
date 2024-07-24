@@ -5,8 +5,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { supabase } from "../../../lib/supabaseClient";
 import { schema } from "./validationSchema";
-import InputField from "../Fields/InputField";
-import SelectField from "../Fields/SelectField";
+import InputField from "../fields/InputField";
+import SelectField from "../fields/SelectField";
 
 const DemoForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);

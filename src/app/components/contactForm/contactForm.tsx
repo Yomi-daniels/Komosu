@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { schema } from "./validationSchema";
 import { useState } from "react";
 import { supabase } from "../../../lib/supabaseClient";
-import InputField from "../Fields/InputField";
+import InputField from "../fields/InputField";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
