@@ -1,12 +1,12 @@
-'use client'
-import { useState } from 'react';
-import styles from './sections.module.css';
-import { Shadows_Into_Light } from 'next/font/google';
-import Image from 'next/image';
+"use client";
+import { useState } from "react";
+import styles from "./sections.module.css";
+import { Shadows_Into_Light } from "next/font/google";
+import Image from "next/image";
 
 const shadow_Font = Shadows_Into_Light({
-  subsets: ['latin'],
-  weight: ['400'],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 const FAQ = () => {
@@ -23,9 +23,16 @@ const FAQ = () => {
           <div className={styles.blueBorder}></div>
           <p className={styles.servicesSubText}>FAQs</p>
         </div>
-        <h2>
-          Got <span className={`${styles.servicesSpan} ${shadow_Font.className}`}>Questions?</span> we have the answers right
-          <span className={`${styles.servicesSpan} ${shadow_Font.className}`}> Here</span>
+        <h2 className={styles.FAQHeader}>
+          Got{" "}
+          <span className={`${styles.servicesSpan} ${shadow_Font.className}`}>
+            Questions?
+          </span>{" "}
+          we have the answers right
+          <span className={`${styles.servicesSpan} ${shadow_Font.className}`}>
+            {" "}
+            Here
+          </span>
         </h2>
       </div>
       <div className={styles.FAQContainer}>
@@ -34,13 +41,18 @@ const FAQ = () => {
         </div>
         {[...Array(3)].map((_, index) => (
           <div key={index} className={styles.FAQContainerContents}>
-            <div className={styles.FAQContents} onClick={() => toggleFAQ(index)}>
+            <div
+              className={styles.FAQContents}
+              onClick={() => toggleFAQ(index)}
+            >
               <h4>What Service Does Komosu Offer?</h4>
               <div className={styles.dropdownImg}>
                 <Image src="/Frame 39.png" alt="Faq image" fill />
               </div>
             </div>
-            <div className={`${styles.FAQAnswer} ${expandedIndex === index ? styles.expanded : ''}`}>
+            <div
+              className={`${styles.FAQAnswer} ${expandedIndex === index ? styles.expanded : ""}`}
+            >
               <p>This is the answer to the question.</p>
             </div>
           </div>

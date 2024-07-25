@@ -297,7 +297,8 @@
 }
 
 .servicesHeader h2,
-.offerHeader {
+.offerHeader,
+.testimonialHeader {
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -494,6 +495,9 @@
   }
   .containerFlexh5 {
     font-size: 16px;
+  }
+  .containerFlex1 {
+    padding: 1rem;
   }
 }
 
@@ -978,12 +982,12 @@
 
 @media (max-width: 450px) {
   .OfferSection .offerHeader {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0 0.7rem;
   }
 
   .servicesSpan {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .offerContainer {
@@ -1588,6 +1592,49 @@
   }
 }
 
+/* TESTIMONIAL CONTAINER CONTAINER MOBILE SCREEN */
+
+@media (max-width: 450px) {
+  .testimonialSection {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    position: relative;
+  }
+  .testimonialContainer {
+    max-width: 100%;
+  }
+  .testimonialContents {
+    flex-direction: column;
+  }
+
+  .clientCompany {
+    font-size: 1.5rem !important;
+  }
+
+  .feedbacks {
+    font-size: 0.8rem !important;
+  }
+
+  .testifierName {
+    font-size: 12.8px !important;
+  }
+
+  .role {
+    font-size: 0.9rem !important;
+  }
+
+  .testimonialHeader {
+    font-size: 1.3rem !important;
+  }
+
+  .testimonialButtonDirection {
+    margin-top: 5px;
+  }
+}
+
 /* FAQ SECTION */
 .FAQSection {
   margin-top: 6rem;
@@ -1603,7 +1650,7 @@
   text-align: center;
 }
 
-.FAQHeaderContents h2 {
+.FAQHeaderContents .FAQHeader {
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -1613,6 +1660,10 @@
   margin-top: 1rem;
   color: var(--blueText);
   font-family: var(--text-Font-Bold);
+}
+
+.FAQHeader .servicesSpan {
+  font-size: 32px;
 }
 
 .FAQContainer {
@@ -1832,37 +1883,27 @@
   background-color: white;
 }
 
-/* TESTIMONIAL CONTAINER CONTAINER MOBILE SCREEN */
+/* FAQ MOBILE SCREEN DEVICE */
 
 @media (max-width: 450px) {
-  .testimonialSection {
-    padding: 0 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-inline: auto;
+  .FAQHeaderContents .FAQHeader {
+    font-size: 24px;
+  }
+
+  .FAQHeader .servicesSpan {
+    font-size: 24px;
+  }
+
+  .FAQContents h4 {
+    font-size: 16px;
+  }
+
+  .dropdownImg {
+    width: 30px;
+    height: 30px;
     position: relative;
   }
-  .testimonialContainer {
-    max-width: 100%;
-  }
-  .testimonialContents {
-    flex-direction: column;
-  }
-
-  .clientCompany {
-    font-size: 1.5rem;
-  }
-
-  .feedbacks {
-    font-size: 0.8rem;
-  }
-
-  .testifierName {
-    font-size: 12.8px;
-  }
-
-  .role {
-    font-size: 0.9rem;
+  .FAQContainer {
+    padding: 4rem 1rem;
   }
 }

@@ -39,7 +39,7 @@ const Testimonials = () => {
 
   return (
     <section className={styles.testimonialSection}>
-      <h2 className={styles.offerHeader}>
+      <h2 className={`${styles.offerHeader} ${styles.testimonialHeader}`}>
         HEAR WHAT OUR{" "}
         <span className={`${styles.offerSpan} ${shadows_Font.className}`}>
           CLIENTS{" "}

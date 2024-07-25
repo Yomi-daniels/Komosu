@@ -10,7 +10,6 @@
   max-width: 1316px;
   height: 100%;
   margin-inline: auto;
-
   border-radius: 36px;
   padding: 6rem 2.8rem;
   position: relative;
@@ -42,7 +41,8 @@
   font-weight: 700;
   line-height: 120%; /* 38.4px */
   letter-spacing: -0.32px;
-  width: 716px;
+  max-width: 716px;
+  text-align: center;
   font-family: var(--text-Font-Bold);
 }
 
@@ -147,4 +147,65 @@
 
 .FooterSocialLink p {
   width: 80%;
+}
+
+/* FOOTER MOBILE DEVICE */
+
+@media (max-width: 900px) {
+  .footerHeader {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .footerBtn {
+    flex-direction: column;
+  }
+
+  .footerBtn button {
+    width: 300px;
+    align-self: stretch;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .footerBtn .footerbtn2 {
+    gap: 1em;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .FooterContentContainer {
+    flex-direction: column;
+  }
+
+  .footerLinks {
+    margin-top: 32px;
+  }
+
+  .footerLinks a {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .TermsCondition {
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .TermsCondition p {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .FooterSocialLink {
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .SocialLink i {
+    font-size: 1.5rem;
+  }
 }
