@@ -254,6 +254,15 @@
   }
 }
 
+@media (max-width: 350px) {
+  .HeroTextContainer {
+    flex-direction: column;
+    /* border: 2px solid #fff; */
+    align-items: center;
+    height: 60dvh;
+  }
+}
+
 /* SERVICES SECTION */
 
 .serviceSection {
@@ -980,6 +989,17 @@
   display: none;
 }
 
+@media (max-width: 600px) {
+  .OfferSection {
+    overflow: hidden;
+  }
+  .webDesignContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
 @media (max-width: 450px) {
   .OfferSection .offerHeader {
     font-size: 1.3rem;
@@ -1017,10 +1037,11 @@
     flex-direction: column;
     align-items: center;
   }
-
+  /* 
   .WebDesignFeaturesContent {
     align-items: center;
-  }
+    width: 100dvw;
+  } */
 
   .webDesignh1 {
     font-size: 1rem;
@@ -1048,6 +1069,10 @@
   .WebDesignFeaturesContent p {
     font-size: 12px;
   }
+
+  .WebDesignFeaturesContent p {
+    padding: 0 1rem;
+  }
   .webFeaturesImg,
   .offerFeaturesImg {
     position: relative;
@@ -1067,12 +1092,12 @@
 
   .webDesignCardContainer1 .webDesignCard1::after {
     content: "";
-    position: absolute;
+    position: relative;
     right: -85%;
     top: 10%;
-    background-color: transparent;
-    width: 684px;
-    height: 406px;
+    background-color: none;
+    width: 0;
+    height: 0;
     z-index: -1;
     opacity: 0.6;
     margin-bottom: 3rem;
@@ -1086,7 +1111,10 @@
   }
 
   .webDesignCardContainer1 .webDesignCard2::after {
-    background-color: transparent;
+    background-color: none;
+    width: 0;
+    height: 0;
+    position: relative;
   }
 
   .AisolutionContainer .webDesignCard {
@@ -1107,6 +1135,10 @@
 
   .webDesignCard3 img:nth-child(1) {
     display: none;
+  }
+
+  .webDesignContainer {
+    padding: 3.5rem 1rem;
   }
 
   /* .webDesignCard {
