@@ -36,7 +36,8 @@
 }
 
 .footerHeader h1 {
-  font-size: 32px;
+  margin-top: 2.5rem;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 38.4px */
@@ -152,17 +153,28 @@
 /* FOOTER MOBILE DEVICE */
 
 @media (max-width: 900px) {
+  .FooterSection {
+    margin-top: 3rem;
+  }
   .footerHeader {
     flex-direction: column;
     gap: 2em;
+    padding: 0 24px;
+  }
+
+  .footerHeader h1 {
+    text-align: left;
   }
 
   .footerBtn {
     flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 24px;
   }
 
   .footerBtn button {
-    width: 300px;
+    width: 90vw;
     align-self: stretch;
     font-size: 16px;
     font-weight: 500;
@@ -207,5 +219,9 @@
 
   .SocialLink i {
     font-size: 1.5rem;
+  }
+
+  .FooterContainer {
+    padding: 3rem 2.8rem;
   }
 }

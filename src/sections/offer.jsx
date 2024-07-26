@@ -1,4 +1,5 @@
 "use client";
+
 import styles from "./sections.module.css";
 import React, { useState } from "react";
 import Image from "next/image";

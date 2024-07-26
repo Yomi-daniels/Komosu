@@ -226,31 +226,47 @@
 
   .heroHeader {
     font-size: 2.3rem;
+    text-align: left;
   }
 
   .HeroTextContainer {
     flex-direction: column;
-    /* border: 2px solid #fff; */
     align-items: center;
-    height: 77dvh;
+    height: 100%;
+    padding-left: 16px;
   }
   .HeroText {
     align-items: center;
     color: var(--text);
     margin-left: 0;
-    max-width: 614px;
-    /* border: 3px solid red; */
   }
   .HeaderContent {
-    /* border: 3px solid rgb(26, 222, 65); */
+    display: none;
     margin-right: 0;
   }
   .heroContainer {
-    top: 10%;
+    bottom: 0%;
+    height: 300px;
+    /* border: 3px solid red; */
   }
+
   .herobg {
     width: 100%;
     height: 710px;
+  }
+
+  .heroSection {
+    margin-bottom: 3rem;
+  }
+
+  .HeroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: var(--text);
+    /* margin-left: 6rem; */
+    /* max-width: 614px; */
   }
 }
 
@@ -363,6 +379,8 @@
   color: var(--blueText);
   margin-top: 2.5rem;
   cursor: pointer;
+  font-weight: 400;
+  font-family: var(--text-Font-Bold);
   margin-bottom: 6rem;
 }
 
@@ -505,8 +523,28 @@
   .containerFlexh5 {
     font-size: 16px;
   }
-  .containerFlex1 {
+  .containerFlex1,
+  .containerSubFlex1 {
     padding: 1rem;
+
+    min-height: 170px;
+  }
+
+  .containerFlexp {
+    margin-top: 0.5rem;
+  }
+
+  .serviceSection {
+    margin-top: 0rem;
+  }
+
+  .servicesContainer {
+    margin-top: 1.5rem;
+  }
+
+  .servicesLastContentText {
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -943,6 +981,7 @@
 .OfferOfferContentContainer {
   position: relative;
   height: 100%;
+
   /* overflow: hidden; */
 }
 
@@ -991,7 +1030,9 @@
 
 @media (max-width: 600px) {
   .OfferSection {
-    overflow: hidden;
+    overflow-x: hidden;
+
+    /* overflow-y: initial; */
   }
   .webDesignContainer {
     flex-direction: column;
@@ -1001,6 +1042,10 @@
 }
 
 @media (max-width: 450px) {
+  .OfferSection {
+    margin-top: 2.5rem;
+    padding-bottom: 3rem;
+  }
   .OfferSection .offerHeader {
     font-size: 1.3rem;
     padding: 0 0.7rem;
@@ -1019,6 +1064,7 @@
     padding: 0.75rem;
     flex-wrap: nowrap;
     gap: 1em;
+    margin-top: 0rem;
   }
 
   .offerSelectProps .active {
@@ -1036,7 +1082,14 @@
   .webDesignContainer {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
   }
+
+  .webDesignContent {
+    max-width: 90vw;
+  }
+
   /* 
   .WebDesignFeaturesContent {
     align-items: center;
@@ -1086,8 +1139,8 @@
   }
 
   .webDesignCard {
-    width: 270.882px;
-    height: 173.877px;
+    width: 369.365px;
+    height: 207.79px;
   }
 
   .webDesignCardContainer1 .webDesignCard1::after {
@@ -1105,8 +1158,8 @@
 
   .webDesignCard2 {
     position: absolute;
-    width: 90.501px;
-    height: 200.219px;
+    width: 282.755px;
+    height: 181.498px;
     top: 30%;
   }
 
@@ -1138,7 +1191,7 @@
   }
 
   .webDesignContainer {
-    padding: 3.5rem 1rem;
+    padding: 0 1rem;
   }
 
   /* .webDesignCard {
@@ -1426,12 +1479,18 @@
 
   .offerAnimHeaderh2 {
     font-size: 24px;
+    width: 398px;
+    padding: 0 1rem;
   }
 
   .LineContainer {
     gap: 0.5em;
     top: 20%;
     left: 0;
+  }
+
+  .OfferAnimationSection {
+    margin-top: 2rem;
   }
 
   .OfferAnimationContainerContent {
@@ -1449,6 +1508,10 @@
     flex-direction: column;
     padding: 0 24px;
     align-items: center;
+  }
+
+  .OfferHeaderButton {
+    font-size: 1rem;
   }
 
   .OfferAnimationContainerContent:first-child {
@@ -1483,7 +1546,7 @@
     margin-top: 5rem;
     padding: 0 2rem;
     padding-bottom: 3rem;
-    gap: 3em;
+    gap: 1.5em;
     max-width: 100%;
     margin-inline: auto;
     overflow: none;
@@ -1612,61 +1675,6 @@
   bottom: 0;
 }
 
-@media (max-width: 450px) {
-  .offerHeader {
-    font-size: 16px;
-  }
-
-  .avatar {
-    position: relative;
-    width: 210px;
-    height: 300px;
-  }
-}
-
-/* TESTIMONIAL CONTAINER CONTAINER MOBILE SCREEN */
-
-@media (max-width: 450px) {
-  .testimonialSection {
-    padding: 0 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-inline: auto;
-    position: relative;
-  }
-  .testimonialContainer {
-    max-width: 100%;
-  }
-  .testimonialContents {
-    flex-direction: column;
-  }
-
-  .clientCompany {
-    font-size: 1.5rem !important;
-  }
-
-  .feedbacks {
-    font-size: 0.8rem !important;
-  }
-
-  .testifierName {
-    font-size: 12.8px !important;
-  }
-
-  .role {
-    font-size: 0.9rem !important;
-  }
-
-  .testimonialHeader {
-    font-size: 1.3rem !important;
-  }
-
-  .testimonialButtonDirection {
-    margin-top: 5px;
-  }
-}
-
 /* FAQ SECTION */
 .FAQSection {
   margin-top: 6rem;
@@ -1707,7 +1715,6 @@
   display: flex;
   flex-direction: column;
   gap: 2em;
-  /* border: 2px solid red; */
   padding: 4rem 0;
   color: var(--blueText);
 }
@@ -1896,6 +1903,65 @@
 .testimonialContainer.fade {
   opacity: 0;
 }
+
+/* TESTIMONIAL CONTAINER CONTAINER MOBILE SCREEN */
+
+@media (max-width: 450px) {
+  .FAQSection {
+    margin-top: 2.5rem;
+  }
+  .offerHeader {
+    font-size: 16px;
+  }
+
+  .avatar {
+    position: relative;
+    width: 280px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .testimonialSection {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    position: relative;
+    margin-top: 1.5rem;
+  }
+  .testimonialContainer {
+    max-width: 100%;
+  }
+  .testimonialContents {
+    flex-direction: column;
+  }
+
+  .clientCompany {
+    font-size: 1.5rem !important;
+  }
+
+  .feedbacks {
+    font-size: 0.8rem !important;
+  }
+
+  .testifierName {
+    font-size: 12.8px !important;
+  }
+
+  .role {
+    font-size: 0.9rem !important;
+  }
+
+  .testimonialHeader {
+    font-size: 1.3rem !important;
+  }
+
+  .testimonialButtonDirection {
+    margin-top: 5px;
+  }
+}
 /* 
 .section {
   height: 100vh;
@@ -1936,6 +2002,12 @@
     position: relative;
   }
   .FAQContainer {
-    padding: 4rem 1rem;
+    padding: 2.5rem 1rem;
+  }
+
+  .FAQline {
+    width: 64px;
+    height: 12px;
+    position: relative;
   }
 }

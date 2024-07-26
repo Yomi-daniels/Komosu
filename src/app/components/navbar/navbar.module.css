@@ -43,3 +43,22 @@
   display: flex;
   gap: 1rem;
 }
+
+/* NAVBAR MOBILE SCREEN */
+
+@media (max-width: 450px) {
+  .logoContainer {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+
+  .parentContainer {
+    height: 64px;
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.188); */
+  }
+
+  .container {
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.049);
+  }
+}

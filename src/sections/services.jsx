@@ -36,7 +36,7 @@ const Services = () => {
       <Servicesflex />
       <div className={styles.servicesLastContentText}>
         <Link href="/about">
-          <p>Learn more</p>
+          <p>Learn more about Komosu</p>
         </Link>
 
         <div className={styles.buttonImage}>
