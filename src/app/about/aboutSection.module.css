@@ -39,6 +39,22 @@
   color: var(--yellow);
 }
 
+/* ABOUT US LANDING PAGE MOBILE SCREEN */
+
+@media (max-width: 450px) {
+  .aboutPageHeader h2 {
+    font-size: 32px;
+  }
+
+  .aboutUsLandingPage {
+    padding: 0 1rem;
+  }
+
+  .aboutUsLandingSection {
+    padding: 1.5rem 1rem;
+  }
+}
+
 /* WHO ARE WE SECTION */
 
 .Whoarewesection {
@@ -155,6 +171,50 @@
 }
 .whoareWeImg2 img {
   border-radius: 10px;
+}
+
+/* WHO ARE WE MOBILE SCREEN */
+
+@media (max-width: 450px) {
+  .Whoarewesection {
+    margin-top: 1.5rem;
+  }
+
+  .whoareweHeader h4 {
+    font-size: 12px;
+  }
+
+  .whoareweHeader h2 {
+    font-size: 24px;
+  }
+
+  .whoareweHeader p {
+    font-size: 14px;
+  }
+
+  .whoareweImageContainer {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    justify-content: center;
+    margin-top: 2rem;
+    margin-inline: auto;
+    gap: 16px;
+  }
+
+  .whoareWeImg {
+    width: 100%;
+    height: 268px;
+  }
+
+  .whoareWeImg2 {
+    width: 100%;
+    height: 275.737px;
+    margin-top: 1.5rem;
+  }
 }
 
 /* OUR VISION SECTION */
@@ -330,4 +390,73 @@
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+}
+
+/* MEET OUR TEAM MOBILE SCREEN */
+
+@media (max-width: 450px) {
+  .MeetOurTeamSection {
+    /* border: 2px solid red; */
+    margin-top: 1.5rem;
+  }
+
+  .MeetOurTeamContainer .aboutPageHeader h2 {
+    font-size: 24px;
+  }
+
+  .MeetOurTeamContainer .aboutPageHeader p {
+    font-size: 0.75rem;
+  }
+
+  .MeetOurTeamHeader {
+    margin-top: 0rem;
+  }
+
+  .teamContainer {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .team1:hover {
+    transform: rotate(0deg);
+    z-index: 0;
+  }
+
+  .team2:hover {
+    transform: rotate(0deg);
+    z-index: 0;
+  }
+  .team3:hover {
+    transform: rotate(0deg);
+    z-index: 0;
+  }
+
+  .team2 {
+    background: var(--yellow);
+    color: #000000;
+    transform: rotate(0);
+  }
+
+  .team3 {
+    background: var(--hover1);
+    color: var(--blueText);
+    z-index: 0;
+  }
+
+  .team4 {
+    background: var(--hover2);
+    color: #534500;
+    transform: rotate(0deg);
+  }
+
+  .team4:hover {
+    transform: rotate(0deg);
+    z-index: 0;
+  }
+
+  .team {
+    transform: rotate(0deg);
+  }
 }
