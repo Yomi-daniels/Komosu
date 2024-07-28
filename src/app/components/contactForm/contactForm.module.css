@@ -49,7 +49,7 @@
 }
 
 .textarea {
-  width: 590px;
+  max-width: 590px;
   padding: 8px 12px;
   border-radius: 10px;
   color: var(--blueText);
@@ -80,3 +80,7 @@
   font-size: 14px;
   margin: 6px 0 0 6px;
 }
+
+
+/* CONTACT FORM MEDIA SCREEN */
+

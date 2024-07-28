@@ -96,7 +96,7 @@
 
 .contactForm button {
   display: flex;
-  width: 590px;
+  max-width: 590px;
   height: 50px;
   padding: 8px 12px;
   justify-content: center;
@@ -116,4 +116,45 @@
 .contactForm button:hover {
   background-color: var(--blueText);
   color: var(--yellow);
+}
+
+/* CONTACT US MEDIA SCREEN */
+
+@media (max-width: 450px) {
+  .contactSection {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .contactHeader h2 {
+    font-size: 32px;
+  }
+  .contactSection {
+    flex-direction: column;
+  }
+
+  .contactLocations a,
+  .contactLocations address {
+    font-size: 12px;
+  }
+
+  .contactLocations {
+    gap: 1em;
+    margin-top: 1rem;
+  }
+  .socialLink {
+    gap: 1em;
+    margin-top: 2rem;
+  }
+
+  .contactForm {
+    width: fit-content;
+    position: relative;
+    max-width: 100%;
+    padding: 24px 16px;
+    align-items: center;
+    gap: 24px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(40, 40, 43, 0.2);
+  }
 }
