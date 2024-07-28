@@ -38,6 +38,24 @@
   color: var(--yellow);
 }
 
+/* CASE STUDY HEADER MEDIA SCREEN */
+
+@media (max-width: 450px) {
+  .CaseStudyHeader {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 1rem;
+  }
+
+  .CaseStudyHeader h5 {
+    font-size: 12px;
+  }
+
+  .CaseStudyHeader h1 {
+    font-size: 32px;
+  }
+}
+
 /* DIGITAL TRANSFORMATION SECTION */
 
 .DigitalTransformationSection {
@@ -201,7 +219,67 @@
   font-family: var(--text-Font-Regular);
   text-align: center;
   margin-top: 6rem;
-  width: 1120px;
+  max-width: 1120px;
+}
+
+/* DIGITAL TRANSFORMATION MEDIA SCREEN */
+
+@media (max-width: 450px) {
+  .DigitalTransformationSection {
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .headingsection h5 {
+    font-size: 12px;
+  }
+
+  .headingsection h2 {
+    font-size: 24px;
+  }
+
+  .headingsection p {
+    font-size: 14px;
+  }
+
+  .secondheadingsection {
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .challangescontent p {
+    font-size: 14px;
+  }
+  .thirdheadingsection {
+    margin-top: 3rem;
+  }
+
+  .thirdsectionheader {
+    text-align: left;
+  }
+
+  .textconent h4 {
+    font-size: 18px;
+  }
+
+  .textconent p {
+    font-size: 14px;
+  }
+
+  .textcontentflex {
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom: 1.5rem;
+  }
+
+  .secondheadingsection {
+    display: none;
+  }
+
+  .lastheadingtext {
+    display: none;
+  }
 }
 
 /* CASE STUDY CONTACT SECTION */
@@ -270,4 +348,29 @@
   height: 36px;
   right: 0;
   top: 10%;
+}
+
+/* CASE STUDY MEDIA SCREEN */
+
+@media (max-width: 450px) {
+  .contactLinksection {
+    margin-top: 3rem;
+    height: 300px;
+  }
+
+  .topimgabsolute,
+  .bottomimgabsolute {
+    display: none;
+  }
+
+  .contactLinkContainer h4 {
+    font-size: 24px;
+  }
+
+  .contactLinkContainer button {
+    width: 139px;
+    height: 44px;
+    padding: 8px;
+    font-size: 14px;
+  }
 }
