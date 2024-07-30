@@ -10,7 +10,6 @@
   max-width: 1316px;
   height: 100%;
   margin-inline: auto;
-  border-radius: 36px;
   padding: 6rem 2.8rem;
   position: relative;
   color: white;
@@ -19,18 +18,17 @@
 
 .footerContentContainer {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
   max-width: 100%;
-  /* gap: 3em; */
+  gap: 3em;
 }
 
 .footerHeader {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 48px 0;
+  justify-content: space-around;
+  padding: 48px 3rem;
   background: #020073;
   color: #fff;
 }
@@ -54,6 +52,7 @@
   display: flex;
   align-items: center;
   gap: 2em;
+  margin-top: 1rem;
 }
 
 .footerBtn button {
@@ -187,12 +186,13 @@
     font-size: 16px;
   }
 
-  .FooterContentContainer {
+  .footerContentContainer {
+    display: flex;
     flex-direction: column;
   }
 
   .footerLinks {
-    margin-top: 32px;
+    margin-top: 24px;
   }
 
   .footerLinks a {
