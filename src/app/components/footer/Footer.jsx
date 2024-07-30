@@ -35,7 +35,7 @@ const Footer = () => {
             <Link href="/case-study">Case Study</Link>
             {/* <Link href="/servicesLink">Services</Link> */}
             {/* <Link href="/pricing">Pricing</Link> */}
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact-us">Contact</Link>
             <Link href="/request-demo">Get Demo</Link>
           </div>
           <div className={styles.TermsCondition}>

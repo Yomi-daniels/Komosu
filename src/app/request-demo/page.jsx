@@ -31,7 +31,7 @@ const RequestDemoPages = () => {
           </div>
           <div className={styles.requestDemoTextcontainer}>
             <h1 className={montserrat.className}>
-              Discover how{" "}
+              Discover how <br />
               <span className={`${styles.demospan} ${shadowsFont.className}`}>
                 Komosu
               </span>{" "}

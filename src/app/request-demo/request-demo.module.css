@@ -208,3 +208,32 @@
   font-size: 2rem;
   right: 0;
 }
+
+/* REQUEST DEMO MOBILE SCREEN */
+
+@media (max-width: 450px) {
+  .requestDemocontainer {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .textheader h4 {
+    font-size: 12px;
+  }
+  .headerimg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .requestDemoTextcontainer h1 {
+    max-width: 100%;
+    font-size: 32px;
+  }
+  .demoFeatures p {
+    font-size: 14px;
+  }
+
+  .requestDemocontainer {
+    gap: 3rem;
+  }
+}

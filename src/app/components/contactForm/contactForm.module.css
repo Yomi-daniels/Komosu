@@ -81,6 +81,10 @@
   margin: 6px 0 0 6px;
 }
 
-
 /* CONTACT FORM MEDIA SCREEN */
 
+/* @media (max-width: 450px) {
+  button {
+    color: red;
+  }
+} */
