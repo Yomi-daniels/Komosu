@@ -24,17 +24,24 @@
   gap: 3em;
 }
 
+.footerHeaderContainer {
+  max-width: 100%;
+  background: #020073;
+}
+
 .footerHeader {
+  position: relative;
+  max-width: 1300px;
+  padding: 48px 3rem;
+  margin-inline: auto;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 48px 3rem;
-  background: #020073;
+  justify-content: space-between;
   color: #fff;
+  /* border: 2px solid red; */
 }
 
 .footerHeader h1 {
-  margin-top: 2.5rem;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -52,7 +59,6 @@
   display: flex;
   align-items: center;
   gap: 2em;
-  margin-top: 1rem;
 }
 
 .footerBtn button {
@@ -159,6 +165,10 @@
     flex-direction: column;
     gap: 2em;
     padding: 0 24px;
+  }
+
+  .footerHeaderContainer {
+    padding: 2rem 0;
   }
 
   .footerHeader h1 {

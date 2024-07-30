@@ -53,7 +53,7 @@ const LandingPage = () => {
     <section className={styles.heroSection}>
       <div className={styles.herobg}>
         {/* <Image src="/landing image.png" layout="fill" objectFit="cover" /> */}
-        <video loop autoPlay muted>
+        <video loop autoPlay muted >
           <source src="/Website Vid.mp4" type="video/mp4"/>
         </video>
       </div>

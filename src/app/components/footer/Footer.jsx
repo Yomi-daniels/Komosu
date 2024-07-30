@@ -4,25 +4,27 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <section className={styles.FooterSection}>
-      <div className={styles.footerHeader}>
-        <h1>Ready to scale up your business growth?</h1>
-        <div className={styles.footerBtn}>
-          <Link href="/request-demo">
-            <button className={styles.footerbtn1}>Get Demo</button>
-          </Link>
-          <Link href="/about">
-            <button className={styles.footerbtn2}>
-              Learn more
-              <div className={styles.buttonImage}>
-                <Image
-                  src="/View plan button (4).png"
-                  alt="vector"
-                  fill
-                  objectFit="contain"
-                />
-              </div>
-            </button>
-          </Link>
+      <div className={styles.footerHeaderContainer}>
+        <div className={styles.footerHeader}>
+          <h1>Ready to scale up your business growth?</h1>
+          <div className={styles.footerBtn}>
+            <Link href="/request-demo">
+              <button className={styles.footerbtn1}>Get Demo</button>
+            </Link>
+            <Link href="/about">
+              <button className={styles.footerbtn2}>
+                Learn more
+                <div className={styles.buttonImage}>
+                  <Image
+                    src="/View plan button (4).png"
+                    alt="vector"
+                    fill
+                    objectFit="contain"
+                  />
+                </div>
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
       <div className={styles.FooterContainer}>
