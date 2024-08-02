@@ -26,12 +26,6 @@
   /* margin-top: 3rem; */
 }
 
-@media (min-width: 1628px) {
-  .webdesignLandingPageContainer {
-    height: 80vh;
-  }
-}
-
 .headerContent {
   color: var(--blueText);
   display: flex;
@@ -179,6 +173,102 @@
   transform: rotate(180deg);
 }
 
+/* WEB DESIGN LANDING PAGE */
+
+@media (min-width: 1628px) {
+  .webdesignLandingPageContainer {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 1279px) {
+  .webdesignLandingPage {
+    padding: 0 1rem;
+  }
+  .webimage2 {
+    position: relative;
+    width: 549px;
+    height: 305.102px;
+  }
+}
+
+@media (max-width: 1238px) {
+  .vectorImagetop {
+    right: 30%;
+    top: 10%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+  }
+  .webimage2 {
+    position: relative;
+    width: 450px;
+    height: 270px;
+  }
+
+  .webdesignImageContainer {
+    right: -40%;
+    top: 10%;
+  }
+
+  .webdesignTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    z-index: 16;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+    top: 15%;
+  }
+
+  .webdesignTextContainer p {
+    max-width: 544px;
+    font-size: 16px;
+  }
+
+  .webdesignTextContainer h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1162px) {
+  .webimage2 {
+    position: relative;
+    width: 450px;
+    height: 270px;
+  }
+
+  .webdesignImageContainer {
+    right: -20%;
+    top: 10%;
+  }
+
+  .vectorImagetop {
+    right: -20%;
+    top: 10%;
+  }
+}
+@media (max-width: 1039px) {
+  .webdesignTextContainer p {
+    max-width: 450px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1017px) {
+  .webdesignImageContainer {
+    right: -25%;
+    top: 10%;
+  }
+}
+
+@media (max-width: 450px) {
+  .webdesignSection {
+    margin-top: 2rem;
+  }
+}
+
 /* WEB DESIGN SECTION */
 
 .webWorksSection {
@@ -250,6 +340,7 @@
   display: flex;
   flex-direction: column;
   gap: 6em;
+  /* border: 2px solid red; */
 }
 
 .webdesignContents1 {
@@ -260,7 +351,7 @@
 
 .webdesignTextContent,
 .webdesignTextContent2 {
-  width: 544px;
+  max-width: 544px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,14 +420,110 @@
   height: 400px;
 }
 
+.webdesignImg img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
 .webdesignContent2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 100%;
 }
 
-/* .webdesignTextContent2 {
-  width: 50%;
+@media (max-width: 1197px) {
+  .webdesignContent2 {
+    gap: 1.5em;
+  }
+
+  .webdesignContents1 {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .webdesignContent2 {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .webdesignContents1 {
+    flex-direction: column-reverse;
+    gap: 2em;
+  }
+
+  .webdesignimgContent .webdesignImg {
+    height: 250px;
+  }
+
+  .webdesignTextContent2,
+  .webdesignTextContent {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 940px) {
+  .webdesignTextContent,
+  .webdesignTextContent2 {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .webdesignContent2 {
+    flex-direction: column;
+  }
+  .webdesignContents1 {
+    flex-direction: column-reverse;
+  }
+
+  .webdesignContent2 {
+    flex-direction: column;
+  }
+
+  .webdesignContentsContainer {
+    gap: 3em;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .webdesignImg {
+    position: relative;
+    max-width: 450px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 490px) {
+  .webdesignImg {
+    position: relative;
+    max-width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 432px) {
+  .webdesignImg {
+    position: relative;
+    max-width: 350px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 398px) {
+  .webdesignImg {
+    position: relative;
+    max-width: 300px;
+    height: 400px;
+  }
+}
+/* 
+.webdesignImg {
+  border: 3px solid red;
+
 } */
 
 /* WEB DESIGN PRICING SECTION */
@@ -434,6 +621,7 @@
   justify-content: space-between;
   /* gap: 1em; */
   margin-top: 3rem;
+  max-width: 100%;
 }
 
 .webBasicPlan {
@@ -445,6 +633,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .webBasicPlan h4 {
   font-size: 24px;
   font-style: normal;
@@ -592,4 +781,55 @@
 
 .enterprisePlan .lineThrough {
   color: #000000;
+}
+
+/* WEB PRICING MEDIA SCREEN */
+
+@media (max-width: 850px) {
+  .webPricingContents {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .webPricingContents .webBasicPlan {
+    border-radius: 20px 20px;
+  }
+
+  .webPricingContents .webStandardPlan {
+    border-radius: 20px 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .webBasicPlan {
+    border-radius: 20px 20px;
+  }
+
+  .webStandardPlan {
+    border-radius: 20px 20px;
+  }
+
+  .webPricingContents {
+    padding: 0 1rem;
+  }
+
+  .webBasicPlan h4 {
+    font-size: 24px;
+  }
+
+  .webBasicPlan p {
+    font-size: 16px;
+  }
+
+  .webBasicPlan {
+    max-width: 100%;
+    padding: 40px 1rem;
+  }
+
+  .webStandardPlan::before {
+    height: 50px;
+    top: -5%;
+    right: 5%;
+    font-size: 1.5rem;
+  }
 }
