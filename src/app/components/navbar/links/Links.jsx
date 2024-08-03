@@ -33,7 +33,10 @@ const links = [
   //   title: "Pricing",
   //   path: "/pricing",
   // },
-
+  {
+    title: "Blog",
+    path: "/blog",
+  },
   {
     title: "Case Study",
     path: "/case-study",
