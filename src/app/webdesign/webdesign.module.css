@@ -37,7 +37,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-  z-index: 66;
+  z-index: 5;
   justify-content: flex-start;
   position: absolute;
   left: 0;
@@ -267,6 +267,74 @@
   .webdesignSection {
     margin-top: 2rem;
   }
+  .vectorImagetop,
+  .vectorImagebottom {
+    display: none;
+  }
+
+  .headerContent h4 {
+    font-size: 0.875rem;
+  }
+
+  .headerContent {
+    gap: 0.5em;
+  }
+
+  .webdesignTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+    top: 15%;
+  }
+
+  .webdesignTextContainer p {
+    max-width: 80vw;
+    font-size: 14px;
+  }
+
+  .webdesignTextContainer h1 {
+    max-width: 100vw;
+    font-size: 32px;
+  }
+
+  .buttonContainer .demobtn {
+    display: flex;
+    width: 280px;
+    height: 55px;
+  }
+
+  .webdesignImageContainer {
+    gap: 2em;
+    width: 300px;
+    height: 300px;
+    right: 13%;
+    top: 60%;
+    bottom: 0;
+  }
+
+  .webimage {
+    position: relative;
+    width: 200px;
+    height: 70px;
+
+    margin-left: 3rem;
+  }
+
+  .webimage2 {
+    width: 354.131px;
+    height: 210.472px;
+  }
+
+  .webdesignLandingPageContainer {
+    height: 150vh;
+  }
+
+  .webdesignTextContainer {
+    top: 7%;
+  }
 }
 
 /* WEB DESIGN SECTION */
@@ -364,6 +432,7 @@
   display: flex;
   flex-flow: column;
   align-items: flex-start;
+  position: relative;
 }
 
 .webdesignTextContent2 {
@@ -497,6 +566,31 @@
   }
 }
 
+@media (max-width: 450px) {
+  .webdesignTextContent2,
+  .webdesignTextContent {
+    align-items: flex-start;
+    text-align: left;
+    gap: 16px;
+    position: relative;
+  }
+
+  .webdesignTextContent2 h2,
+  .webdesignTextContent h2 {
+    font-size: 18px;
+  }
+
+  .webdesignTextContent2 p,
+  .webdesignTextContent p {
+    font-size: 14px;
+  }
+
+  .webdesignTextContent button {
+    align-self: center;
+    width: 280px;
+  }
+}
+
 @media (max-width: 490px) {
   .webdesignImg {
     position: relative;
@@ -508,7 +602,7 @@
 @media (max-width: 432px) {
   .webdesignImg {
     position: relative;
-    max-width: 350px;
+    max-width: 400px;
     height: 400px;
   }
 }

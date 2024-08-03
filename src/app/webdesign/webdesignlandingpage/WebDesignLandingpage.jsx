@@ -26,8 +26,17 @@ const WebDesignLandingpage = () => {
             </div>
             <h4>WEB DESIGN</h4>
           </div>
-          <h1>Driving Dealership Success Through <br />Digital Evolution</h1>
-          <p>Welcome to Komosu Network, where we redefine automotive web design with a focus on digital transformation. Our services are crafted to elevate your dealership's online presence, enhance customer engagement, and streamline operations with integrated digital solutions</p>
+          <h1>
+            Driving Dealership Success Through <br />
+            Digital Evolution
+          </h1>
+          <p>
+            Welcome to Komosu Network, where we redefine automotive web design
+            with a focus on digital transformation. Our services are crafted to
+            elevate your dealership's online presence, enhance customer
+            engagement, and streamline operations with integrated digital
+            solutions
+          </p>
           <LandingPageButtons />
         </div>
         <ScrollParallax isAbsolutelyPositioned>
