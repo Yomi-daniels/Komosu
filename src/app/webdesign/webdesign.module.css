@@ -337,6 +337,15 @@
   }
 }
 
+@media (max-width: 376px) {
+  .webdesignImageContainer {
+    top: 60%;
+  }
+
+  .webdesignLandingPageContainer {
+    height: 110vh;
+  }
+}
 /* WEB DESIGN SECTION */
 
 .webWorksSection {
