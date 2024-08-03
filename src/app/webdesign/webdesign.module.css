@@ -337,9 +337,20 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 391px) {
+  .webdesignImageContainer {
+    top: 63%;
+  }
+
+  .webdesignLandingPageContainer {
+    height: 110vh;
+  }
+}
+
+@media (max-width: 428px) {
   .webdesignImageContainer {
     top: 60%;
+    right: 20%;
   }
 
   .webdesignLandingPageContainer {
@@ -933,6 +944,6 @@
     height: 50px;
     top: -5%;
     right: 5%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
