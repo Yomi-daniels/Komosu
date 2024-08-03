@@ -553,10 +553,15 @@
   }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 950px) {
   .webdesignTextContent,
   .webdesignTextContent2 {
     padding: 0 1rem;
+  }
+
+  .webdesignTextContent button {
+    align-self: flex-start;
+    width: 280px;
   }
 }
 
@@ -583,6 +588,13 @@
     position: relative;
     max-width: 450px;
     height: 400px;
+  }
+}
+
+@media (max-width: 750px) {
+  .webdesignTextContent button {
+    align-self: center;
+    width: 350px;
   }
 }
 

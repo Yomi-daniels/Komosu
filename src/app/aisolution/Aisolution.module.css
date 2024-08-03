@@ -12,7 +12,7 @@
   border-bottom: 1px solid #fcf6d9;
   border-top: 2px solid #fcf6d9;
   background: linear-gradient(269deg, #fdf9e6 44.62%, #fff 91.54%);
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   display: flex;
   justify-content: end;
@@ -26,6 +26,8 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
+  /* border: 3px solid red; */
+  /* max-width: 100%; */
 }
 
 .ailandingpageContainerTextContent p {
@@ -103,6 +105,10 @@
   height: 700px;
 }
 
+.aigirlImg img {
+  max-width: 100%;
+}
+
 .ailandingpageImagetop {
   position: absolute;
   width: 300px;
@@ -122,6 +128,87 @@
   z-index: 100;
 }
 
+/* LANDING PAGE MEDIA SCREEN */
+
+@media (max-width: 950px) {
+  .ailandingpageContainer {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .AiLandingPage {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 450px) {
+  .AiSolutionSection {
+    margin-top: 3rem;
+  }
+
+  .vectorImgtop {
+    display: none;
+  }
+
+  .ailandingpageContainer {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .AiLandingPage {
+    border-bottom: 1px solid #fcf6d9;
+    background: linear-gradient(4deg, #fdf9e6 37.91%, #fff 64.29%);
+    overflow-x: hidden;
+  }
+
+  .ailandingpageContainer {
+    width: 100%;
+  }
+
+  .ailandingpageContainerTextContent {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .ailandingpageContainerTextContent h2 {
+    font-size: 32px;
+  }
+
+  .ailandingpageContainerTextContent h4 {
+    font-size: 12px;
+  }
+
+  .ailandingpageContainerTextContent p {
+    font-size: 14px;
+  }
+
+  .aigirlImg {
+    width: 620px;
+    height: 453.979px;
+  }
+
+  .ailandingpageImagetop {
+    width: 300px;
+    height: 100px;
+    top: 20%;
+    left: 20%;
+  }
+
+  .ailandingpageImagebottom {
+    width: 200px;
+    bottom: 10%;
+    left: 20%;
+  }
+}
+
 /* AI SOLUTION SERVICES SECTION */
 
 .AisolutionServicesSection {
@@ -137,7 +224,8 @@
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  justify-content: center;
+  gap: 7em;
 }
 
 .AisolutionServicesText h3 {
@@ -152,19 +240,36 @@
   font-family: var(--text-Font-Bold);
 }
 
+.AisolutionServicesText p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: var(--blueText);
+  margin-bottom: 1.5rem;
+  max-width: 450px;
+}
+
 .aiservicesImg {
   position: relative;
   width: 478px;
   height: 403px;
 }
 
+.aiservicesImg img {
+  max-width: 100%;
+}
+
 .AisolutionServicesContent {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .AisolutionServicesContent2 .AisolutionServicesText {
-  width: 60%;
+  max-width: 60%;
   margin-left: 6rem;
 }
 
@@ -172,6 +277,97 @@
   justify-content: space-between;
   display: flex;
   align-items: center;
+}
+
+/* AI SERVICES MOBILE SCREEN */
+
+@media (max-width: 1200px) {
+  .AisolutionServicesContainer {
+    max-width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .AisolutionServicesContent {
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 1em;
+  }
+
+  .AisolutionServicesContent2 {
+    /* flex-direction: column-reverse; */
+    gap: 1em;
+  }
+
+  .AisolutionServicesContent .AisolutionServicesText {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .AisolutionServicesText h3 {
+    font-size: 24px;
+  }
+
+  .AisolutionServicesText p {
+    font-size: 16px;
+  }
+
+  .AisolutionServicesContent2 .AisolutionServicesText {
+    max-width: 100%;
+    margin-left: 0rem;
+  }
+
+  .aiservicesImg {
+    width: 336px;
+    height: 288.225px;
+  }
+}
+
+@media (max-width: 750px) {
+  .AisolutionServicesContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .AisolutionServicesText h3 {
+    font-size: 18px;
+  }
+
+  .AisolutionServicesText p {
+    font-size: 14px;
+  }
+
+  .aiservicesImg {
+    height: 334.547px;
+  }
+
+  .AisolutionServicesContent2 {
+    flex-direction: column-reverse;
+    gap: 1em;
+  }
+}
+
+@media (max-width: 450px) {
+  .AisolutionServicesSection {
+    margin-top: 0rem;
+  }
+  .AisolutionServicesContainer {
+    max-width: 1120px;
+    height: 100%;
+    margin-inline: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .AisolutionServicesText2 .AisolutionServicesText {
+    margin-left: 0rem;
+  }
 }
 
 /* AI SOLUTION PRICING SECTION */

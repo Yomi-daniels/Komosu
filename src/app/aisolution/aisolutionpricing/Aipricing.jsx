@@ -5,6 +5,7 @@ import { Shadows_Into_Light } from "next/font/google";
 import AnnualLink from "@/app/webdesign/components/AnnualLink";
 import Testimonials from "@/sections/testimonials";
 import FAQ from "@/sections/faq";
+import Tickimg from "@/app/webdesign/components/Tickimg";
 const shadowsFont = Shadows_Into_Light({
   subsets: ["latin"],
   weight: ["400"],
@@ -37,51 +38,27 @@ const Aipricing = () => {
             <button>GET STARTED</button>
             <div className={webstyle.webbasicplanfeatures}>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Custom website design with up to 5 pages</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Responsive design for mobile and tablet</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Basic SEO setup</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Integration with a user-friendly CMS</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Basic training on how to update content</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>1-month post-launch support for bug fixes</p>
               </div>
             </div>
@@ -101,102 +78,54 @@ const Aipricing = () => {
             <button>GET DEMO</button>
             <div className={webstyle.webbasicplanfeatures}>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Custom website design with up to 20 pages</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Responsive design for mobile and tablet</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Comprehensive SEO setup and optimization</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Contact form and social media integration</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Blog setup with custom design</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>E-commerce functionality (up to 10 products)</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Integration with a user-friendly CMS</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>
                   Extensive training on how to update content and manage
                   features
                 </p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Image gallery or portfolio</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Advanced analytics setup</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Newsletter signup integration</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>
                   6 months post-launch support for bug fixes, updates, and
                   content changes
@@ -219,75 +148,39 @@ const Aipricing = () => {
             <button>GET STARTED</button>
             <div className={webstyle.webbasicplanfeatures}>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Custom website design with up to 10 pages</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Responsive design for mobile and tablet</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Advanced SEO setup</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Contact form and social media integration</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Integration with a user-friendly CMS</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Comprehensive training on how to update content</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Image gallery or portfolio</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>Basic Analytics setup (Google Analytics)</p>
               </div>
               <div className={webstyle.webbasicplanfeaturesContent}>
-                <div className={webstyle.tickImgBg}>
-                  <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
-                  </div>
-                </div>
+                <Tickimg />
                 <p>
                   3 months post-launch support for bug fixes and minor updates
                 </p>
