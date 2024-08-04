@@ -99,8 +99,74 @@
   bottom: 7%;
 }
 
-/* LEAD GENERATION SERVICES SECTION */
+/* LEAD GENERATION MEDIA SCREEN */
 
+@media (max-width: 450px) {
+  .LeadGenerationPage {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .LeadGenContainer {
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .leadGenTextContainer {
+    padding-left: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+  }
+
+  .leadmanImg {
+    width: 620px;
+    height: 457.199px;
+  }
+
+  .leadimgstat {
+    width: 200px;
+    height: 150px;
+  }
+
+  .leadimgstat2 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .leadGenTextContainer h1 {
+    font-size: 32px;
+    align-self: stretch;
+  }
+  .LeadingGenSection {
+    border-bottom: 1px solid var(--foundation-yellow-light-hover, #fcf6d9);
+    background: linear-gradient(4deg, #fdf9e6 18.66%, #fff 73.37%);
+    min-height: 100vh;
+    align-items: center;
+  }
+
+  .leadGenTextContainer {
+    padding-left: 0;
+    padding: 0 1rem;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .leadimgstat {
+    position: absolute;
+    width: 180px;
+    height: 150px;
+    right: 50%;
+    top: 5%;
+  }
+}
+
+/* LEAD GENERATION SERVICES SECTION */
 .leadServicesSection {
   width: 100%;
   height: 100%;
@@ -167,8 +233,108 @@
   height: 340.879px;
 }
 
+/* LEAD GENERATION SERVICES */
+
+@media (max-width: 950px) {
+  .leadservicesImg {
+    width: 261.284px;
+    height: 178.961px;
+  }
+
+  .leadImgabsolute {
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: -30%;
+  }
+
+  .leadImgabsolutebottom {
+    width: 150px;
+    height: 150px;
+    bottom: -10%;
+    right: -20%;
+  }
+}
+
+@media (max-width: 763px) {
+  .leadImgabsolutebottom {
+    right: -10%;
+  }
+}
+
+@media (max-width: 722px) {
+  .leadservicesImg {
+    width: 461.284px;
+    height: 278.961px;
+  }
+
+  .leadImgabsolute {
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: -10%;
+  }
+
+  .leadImgabsolutebottom {
+    width: 200px;
+    height: 200px;
+    bottom: 20%;
+    right: -10%;
+  }
+
+  .leadGenServicesContent {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .leadGenServicesContent:last-of-type {
+    flex-direction: column-reverse;
+  }
+
+  .leadGenServicesContentText {
+    width: 70%;
+  }
+  .leadGenServicesContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .GetStartedbtn {
+    display: flex;
+    align-items: flex-start;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 450px) {
+  .leadservicesImg {
+    width: 261.284px;
+    height: 178.961px;
+  }
+
+  .leadImgabsolute {
+    width: 120px;
+    height: 150px;
+    top: 0;
+    left: -10%;
+  }
+
+  .leadImgabsolutebottom {
+    width: 120px;
+    height: 150px;
+    bottom: -10%;
+    right: -20%;
+  }
+
+  .leadGenServicesContent {
+    gap: 1em;
+  }
+}
+
+/* SERVICES CONTACT SECTION */
+
 .servicesContactSection {
-  width: 100%;
+  max-width: 100%;
   height: 70vh;
   background-color: var(--blueText);
   margin-top: 6rem;
@@ -187,7 +353,7 @@
 }
 
 .servicesContactContainer h2 {
-  width: 730px;
+  max-width: 730px;
   text-align: center;
   font-size: 32px;
   font-style: normal;
@@ -227,4 +393,30 @@
   position: absolute;
   bottom: 40%;
   left: 0;
+}
+
+/* SERVICES CONTACT MEDIA SCREEN */
+
+@media (max-width: 450px) {
+  .servicesContactContainer h2 {
+    font-size: 24px;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .servicesContactSection {
+    height: 50vh;
+  }
+
+  .servicesContactImgtop,
+  .servicesContactImgbottom {
+    display: none;
+  }
+
+  .servicesContactContainer button {
+    width: 180px;
+    height: 50px;
+
+    font-size: 14px;
+  }
 }

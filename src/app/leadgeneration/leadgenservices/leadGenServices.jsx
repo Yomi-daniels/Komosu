@@ -16,7 +16,9 @@ const leadGenServices = () => {
               Seamlessly integrate our AI with your CRM system to manage and
               track leads.
             </h4>
-            <GetStarted />
+            <div className={leadStyles.GetStartedbtn}>
+              <GetStarted />
+            </div>
           </div>
           <div className={leadStyles.leadGenServicesContentImage}>
             <div className={leadStyles.leadImageWrapper}>
@@ -43,7 +45,9 @@ const leadGenServices = () => {
           </div>
           <div className={leadStyles.leadGenServicesContentText}>
             <h4>Provide real-time assistance on your dealership’s website.</h4>
-            <GetStarted />
+            <div className={leadStyles.GetStartedbtn}>
+              <GetStarted />
+            </div>
           </div>
         </div>
       </div>
