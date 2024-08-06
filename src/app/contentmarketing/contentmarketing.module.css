@@ -85,6 +85,41 @@
   left: 0;
 }
 
+/* CONTENT LANDING PAGE MEDIA SCREEN */
+
+@media (max-width: 450px) {
+  .Contentmarketingpage {
+    margin-top: 3rem;
+  }
+
+  .contentSection {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dad9ff;
+    background: linear-gradient(2deg, #e6e6ff 15.91%, #fff 53.63%);
+    overflow-x: hidden;
+    padding: 50px 0;
+  }
+
+  .contentContainer {
+    flex-direction: column;
+    gap: 3.5025em;
+    padding: 0 1rem;
+  }
+
+  .contentText {
+    gap: 1em;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .contentImages {
+    width: 377px;
+    height: 423.929px;
+  }
+}
+
 /* CONTENT MARKETING SERVICES SECTION */
 
 .contentservicessection {
@@ -147,6 +182,60 @@
   width: 671.674px;
   height: 471px;
   /* background: var(--hover1); */
+}
+
+/* CONTENT SERVICES MEDIA SCREEN */
+
+@media (max-width: 450px) {
+  .contentservicessection {
+    padding: 0 1rem;
+  }
+  .contentservicecontent {
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    gap: 1em;
+  }
+
+  .contentservicescontainer {
+    max-width: 1200px;
+    height: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    /* padding: 4rem 0; */
+  }
+
+  .contentservicecontent h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  .contentServiceText p {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+
+  .contentServiceText {
+    width: 100%;
+  }
+
+  .contentservicesImg {
+    width: 350px;
+    height: 350px;
+  }
+
+  .contentservicecontent2 {
+    flex-direction: column-reverse;
+    gap: 1em;
+  }
+
+  .contentservicesImg2 {
+    border-radius: 20px;
+    width: 390px;
+    height: 273.481px;
+  }
 }
 
 /* CONTENT MARKETING PRICING SECTION */
