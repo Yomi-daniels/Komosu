@@ -1,9 +1,14 @@
 "use client";
 import React from "react";
-import LandingPage from "./components/landingPage";
+import BlogPost from "./components/blogPost";
+
+const posts = [
+  { title: "First Post", content: "This is the content of the first post." },
+  { title: "Second Post", content: "This is the content of the second post." },
+];
 
 const BlogPage = () => {
-  return <LandingPage />;
+  return <BlogPost posts={posts} />;
 };
 
 export default BlogPage;
