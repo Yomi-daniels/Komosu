@@ -6,8 +6,10 @@ const Contentmarketing = () => {
   return (
     <section className={contentStyles.Contentmarketingpage}>
       <ContentMarketingLandingPage />
-      <ContentMarketingServices />
-      <ContentPricing />
+      <div className={contentStyles.contentdiv}>
+        <ContentMarketingServices />
+        <ContentPricing />
+      </div>
     </section>
   );
 };

@@ -87,6 +87,16 @@
 
 /* CONTENT LANDING PAGE MEDIA SCREEN */
 
+@media (max-width: 1025px) {
+  .contentdiv {
+    padding: 0 2rem;
+  }
+
+  .contentContainer {
+    padding: 0 2rem;
+  }
+}
+
 @media (max-width: 450px) {
   .Contentmarketingpage {
     margin-top: 3rem;

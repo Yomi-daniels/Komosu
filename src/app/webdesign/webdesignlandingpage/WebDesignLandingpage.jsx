@@ -5,6 +5,7 @@ import LandingPageButtons from "../components/LandingPageButtons";
 import { ScrollParallax } from "react-just-parallax";
 import { Montserrat } from "next/font/google";
 import { useRef } from "react";
+import Magnet from "@/Magnet";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["700"],
@@ -39,6 +40,7 @@ const WebDesignLandingpage = () => {
           </p>
           <LandingPageButtons />
         </div>
+
         <ScrollParallax isAbsolutelyPositioned>
           <div className={webstyle.webdesignImageContainer} ref={parallaxRef}>
             <div className={webstyle.webimage}>

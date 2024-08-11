@@ -211,6 +211,15 @@
 
 /* REQUEST DEMO MOBILE SCREEN */
 
+@media (max-width: 1025px) {
+  .requestDemosection {
+    min-height: 100%;
+  }
+  .requestDemocontainer {
+    padding: 0 2rem;
+  }
+}
+
 @media (max-width: 450px) {
   .requestDemocontainer {
     flex-direction: column;

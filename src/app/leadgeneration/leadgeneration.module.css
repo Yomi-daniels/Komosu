@@ -101,13 +101,51 @@
 
 /* LEAD GENERATION MEDIA SCREEN */
 
+@media (max-width: 1250px) {
+  .LeadingGenSection {
+    min-height: 100%;
+  }
+
+  .leadGenTextContainer {
+    padding-left: 2rem;
+    min-width: 50%;
+  }
+
+  .LeadGenContainer {
+    justify-content: center;
+  }
+  .leadGenaImageContainer {
+    width: 50%;
+  }
+
+  .leadmanImg {
+    position: relative;
+    min-height: 554px;
+    object-fit: cover;
+  }
+
+  .leadimgstat {
+    right: 40%;
+  }
+}
+
+@media (max-width: 950px) {
+  .leadGenTextContainer {
+    margin-left: 4rem;
+    min-width: 40%;
+  }
+  .leadGenaImageContainer {
+    width: 70%;
+  }
+}
+
 @media (max-width: 450px) {
   .LeadGenerationPage {
     margin-top: 3rem;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 450px) {
   .LeadGenContainer {
     justify-content: center;
     overflow: hidden;
@@ -124,8 +162,7 @@
   }
 
   .leadmanImg {
-    width: 620px;
-    height: 457.199px;
+    height: 557.199px;
   }
 
   .leadimgstat {
@@ -153,6 +190,10 @@
     padding-left: 0;
     padding: 0 1rem;
     width: 100vw;
+  }
+
+  .leadGenaImageContainer {
+    width: 200vw;
   }
 }
 
@@ -396,6 +437,12 @@
 }
 
 /* SERVICES CONTACT MEDIA SCREEN */
+
+@media (max-width: 1025px) {
+  .servicesContactSection {
+    height: 50vh;
+  }
+}
 
 @media (max-width: 450px) {
   .servicesContactContainer h2 {

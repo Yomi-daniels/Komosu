@@ -70,11 +70,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.24) -1.53%,
     rgba(0, 0, 0, 0.6) 93.64%
-  );
+  ); */
   z-index: 1;
 }
 
@@ -141,6 +141,12 @@
   color: var(--yellow);
 }
 
+@media (max-width: 4081px) {
+  .herobg {
+    height: 100vh;
+  }
+}
+
 @media (min-width: 1628px) {
   .herobg {
     height: 100vh;
@@ -162,40 +168,65 @@
   }
 } */
 
-@media (max-width: 900px) {
-  .HeroText {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 30%;
-    left: 1%;
+@media (max-width: 1025px) {
+  .heroSection {
+    height: 100%;
+  }
+  .herobg {
+    width: 100%;
+    height: 80vh;
   }
 
-  .heroSub {
-    font-size: 0.9rem;
-    font-weight: 500;
+  .HeroText {
+    text-align: left;
+    justify-content: space-between;
+    align-items: flex-start;
+    top: 30%;
+    left: 1%;
+    margin-left: 0rem;
+    max-width: 100%;
+    padding: 0 2rem;
   }
+
+  .HeaderContent {
+    color: #fff;
+    /* z-index: 100; */
+    max-width: 336px;
+    margin-right: 0rem;
+    padding: 0 2rem;
+  }
+
   .heroSection {
     line-height: 1.2;
   }
+
   .heroHeader {
-    font-size: 4rem;
-    text-align: center;
+    font-size: 36px;
+    text-align: left;
     line-height: 1;
   }
   .heroSubText {
-    text-align: center;
+    text-align: right;
     width: 100%;
-    margin-top: 5rem;
-    font-size: 0.8rem;
+    margin-top: 0rem;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.32px;
+    text-transform: capitalize;
   }
   .heroHeader {
-    font-size: 5.2rem;
-    letter-spacing: 1px;
+    font-size: 36px;
     font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 36px */
+    letter-spacing: -0.36px;
     margin-top: 0.8rem;
+  }
+
+  .heroContainer {
+    justify-content: space-between;
   }
 }
 
@@ -246,7 +277,7 @@
 
   .herobg {
     width: 100%;
-    height: 710px;
+    height: 100dvh;
   }
 
   .heroSection {
@@ -482,6 +513,31 @@
   height: 40px;
 }
 
+@media (max-width: 1025px) {
+  .serviceSection {
+    padding: 0 2rem;
+  }
+  .servicesHeader h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .subContent {
+    width: 100vw;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 2rem;
+  }
+
+  .webDesignCard {
+    width: 300.237px;
+    height: 272.976px;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    scale: 0.7;
+  }
+}
+
 @media (max-width: 740px) {
   .containerflex,
   .containerSubFlex {
@@ -644,7 +700,7 @@
   }
   .videoContainer {
     padding: 0 3rem;
-    height: 50vh;
+    height: 40vh;
   }
   .playContainer,
   .resetContainer {
@@ -1023,6 +1079,62 @@
   display: none;
 }
 
+/* OFFER SECTION MEDIA SCREEN */
+
+@media (max-width: 1025px) {
+  .webDesignContainer {
+    margin-inline: auto;
+    padding: 0 2rem;
+    gap: 2em;
+    justify-content: space-between;
+    width: 100vw;
+  }
+
+  .webDesignContent {
+    width: 40%;
+  }
+
+  .webDesignh1 {
+    max-width: 100%;
+    align-self: stretch;
+    font-size: 24px;
+  }
+
+  .webDesignCard {
+    width: 395.237px;
+    height: 272.976px;
+  }
+
+  .webDesignCard2 {
+    position: absolute;
+    width: 150.438px;
+    height: 330.293px;
+    top: 55%;
+  }
+
+  .webDesignCardContainer1 .webDesignCard1::after {
+    right: -85%;
+    top: 25%;
+    width: 500px;
+    height: 206px;
+  }
+
+  .contentMarketingContainer .webDesignCard {
+    width: 493px;
+    height: 353.915px;
+  }
+
+  .webDesignCard3 {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .webDesignCardContainer1 .webDesignCard1::after {
+    width: 0px;
+  }
+}
+
 @media (max-width: 600px) {
   .OfferSection {
     overflow-x: hidden;
@@ -1037,6 +1149,9 @@
 }
 
 @media (max-width: 450px) {
+  .webDesignContent {
+    width: 100%;
+  }
   .OfferSection {
     margin-top: 2.5rem;
     padding-bottom: 3rem;
@@ -1478,6 +1593,60 @@
   border-radius: 8px;
 }
 
+/* OFFER ANIMATION MEDIA SCREEN */
+
+@media (max-width: 1025px) {
+  .OfferAnimationSection {
+    min-height: 100%;
+  }
+
+  .OfferAnimationContainerContent {
+    max-width: 460px;
+    padding: 40px 1rem;
+  }
+
+  .OfferAnimationContainerContent:first-child {
+    position: absolute;
+    bottom: -20%;
+    left: 32px;
+    transition: 0.3s ease;
+  }
+
+  .OfferAnimationContainerContent:last-child {
+    right: 32px;
+  }
+}
+
+@media (max-width: 850px) {
+  .OfferAnimationContainerContent {
+    max-width: 380px;
+    padding: 40px 1rem;
+  }
+
+  .OfferAnimationContainerContent:first-child {
+    left: 16px;
+  }
+
+  .OfferAnimationContainerContent:last-child {
+    right: 16px;
+  }
+}
+
+@media (max-width: 769px) {
+  .OfferAnimationContainerContent {
+    max-width: 360px;
+    padding: 40px 1rem;
+  }
+
+  .OfferAnimationContainerContent:first-child {
+    left: 16px;
+  }
+
+  .OfferAnimationContainerContent:last-child {
+    right: 16px;
+  }
+}
+
 @media (max-width: 450px) {
   .lineImg,
   .lineImg2 {
@@ -1827,6 +1996,7 @@
   align-items: center;
   border: 1px solid var(--btn);
   max-width: 1216px;
+  height: 100%;
   margin-inline: auto;
   border-radius: 20px;
   border: 1px solid var(--btn);
@@ -1848,6 +2018,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
+  height: 100%;
 }
 
 .clientCompany {
@@ -1913,6 +2085,28 @@
 }
 
 /* TESTIMONIAL CONTAINER CONTAINER MOBILE SCREEN */
+
+@media (max-width: 1025px) {
+  .testimonialSection {
+    padding: 0 2rem;
+  }
+
+  .avatar {
+    position: relative;
+    min-width: 300px;
+    min-height: 200px;
+    /* border: 2px solid red; */
+  }
+
+  .avatar img {
+    height: 100%;
+    /* object-fit: contain; */
+  }
+
+  .feedbacks {
+    margin: 18px 0;
+  }
+}
 
 @media (max-width: 450px) {
   .FAQSection {
@@ -1991,6 +2185,12 @@
 
 /* FAQ MOBILE SCREEN DEVICE */
 
+@media (max-width: 1025px) {
+  .FAQSection {
+    padding: 0 2rem;
+  }
+}
+
 @media (max-width: 450px) {
   .FAQHeaderContents .FAQHeader {
     font-size: 24px;
@@ -2001,7 +2201,7 @@
   }
 
   .FAQContents h4 {
-    font-size: 16px;
+    font-size: 9px;
   }
 
   .dropdownImg {
@@ -2010,7 +2210,8 @@
     position: relative;
   }
   .FAQContainer {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 0rem;
+    max-width: 100%;
   }
 
   .FAQline {

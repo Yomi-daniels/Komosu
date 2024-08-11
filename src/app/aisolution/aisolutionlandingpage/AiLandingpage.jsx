@@ -8,6 +8,7 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["700"],
 });
+
 const AiLandingpage = () => {
   return (
     <section className={Aistyles.AiLandingPage}>
@@ -25,7 +26,12 @@ const AiLandingpage = () => {
             <h4>AI SOLUTIONS</h4>
           </div>
           <h2>Revolutionize Your Dealership's Success</h2>
-          <p>At Komosu Network, we're combining the power of AI and lead generation to transform your dealership's performance. Our innovative solutions ensure your dealership stands out, engages customers, and drives sales like never before</p>
+          <p>
+            At Komosu Network, we're combining the power of AI and lead
+            generation to transform your dealership's performance. Our
+            innovative solutions ensure your dealership stands out, engages
+            customers, and drives sales like never before
+          </p>
           <LandingPageButtons />
         </div>
         <div className={Aistyles.ailandingpageImage}>

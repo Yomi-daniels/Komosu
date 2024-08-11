@@ -5,6 +5,12 @@
   margin-top: 5rem;
 }
 
+@media (max-width: 1025px) {
+  .aboutUsLandingPage {
+    padding: 0 2rem;
+  }
+}
+
 .aboutUsLandingSection {
   max-width: 100%;
   min-height: 100%;
@@ -40,6 +46,12 @@
 }
 
 /* ABOUT US LANDING PAGE MOBILE SCREEN */
+@media (max-width: 1025px) {
+  .aboutUsLandingSection {
+    padding: 0 2rem;
+    padding-top: 2.5rem;
+  }
+}
 
 @media (max-width: 450px) {
   .aboutPageHeader h2 {
@@ -175,6 +187,31 @@
 
 /* WHO ARE WE MOBILE SCREEN */
 
+@media (max-width: 1025px) {
+  .Whoarewesection {
+    margin-top: 2rem;
+    padding: 0 2rem;
+    min-height: 100%;
+  }
+
+  .whoareweImageContainer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .whoareWeImg {
+    width: 389px;
+    height: 268px;
+  }
+
+  .whoareWeImg2 {
+    width: 389px;
+    height: 275.737px;
+    align-self: flex-end;
+    margin-top: 0rem;
+  }
+}
+
 @media (max-width: 450px) {
   .Whoarewesection {
     margin-top: 1.5rem;
@@ -231,6 +268,16 @@
   margin-top: 2rem;
 }
 
+/* OUR VISION MEDIA SCREEN */
+
+@media (max-width: 1025px) {
+  .OurvisionSection {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+  }
+}
+
 /* OUR SOLUTION SECTION */
 
 .OurSolutionSection {
@@ -239,6 +286,14 @@
   margin-inline: auto;
   margin-top: 3rem;
   margin-bottom: 5rem;
+}
+
+/* OUR SOLUTION SECTION MEDIA SCREEN*/
+
+@media (max-width: 1025px) {
+  .OurSolutionSection {
+    padding: 0 2rem;
+  }
 }
 
 /* MEET OUR TEAM SECTION */
@@ -393,6 +448,14 @@
 }
 
 /* MEET OUR TEAM MOBILE SCREEN */
+
+@media (max-width: 1025px) {
+  .teamContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em 0em;
+  }
+}
 
 @media (max-width: 450px) {
   .MeetOurTeamSection {

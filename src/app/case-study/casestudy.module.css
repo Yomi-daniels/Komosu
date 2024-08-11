@@ -40,6 +40,14 @@
 
 /* CASE STUDY HEADER MEDIA SCREEN */
 
+@media (max-width: 1025px) {
+  .CaseStudyHeader {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 2rem;
+  }
+}
+
 @media (max-width: 450px) {
   .CaseStudyHeader {
     padding-left: 1rem;
@@ -223,6 +231,33 @@
 }
 
 /* DIGITAL TRANSFORMATION MEDIA SCREEN */
+
+@media (max-width: 1025px) {
+  .textconent {
+    gap: 2em;
+  }
+
+  .challanges {
+    gap: 2em;
+  }
+
+  .challangescontent {
+    gap: 2em;
+  }
+
+  .textWrapper {
+    gap: 2em;
+  }
+
+  .textcontentflex {
+    gap: 2em;
+  }
+
+  .DigitalTransformationSection {
+    margin-top: 1.5rem;
+    padding: 0 2rem;
+  }
+}
 
 @media (max-width: 450px) {
   .DigitalTransformationSection {

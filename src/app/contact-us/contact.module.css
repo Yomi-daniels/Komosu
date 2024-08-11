@@ -86,7 +86,7 @@
   color: var(--blueText);
   display: flex;
   height: 50px;
-  padding: 8px 12px;
+  padding: 8px 32px;
   align-items: center;
   gap: 8px;
   align-self: stretch;
@@ -119,6 +119,23 @@
 }
 
 /* CONTACT US MEDIA SCREEN */
+
+@media (max-width: 4081.89px) {
+  .contactSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .contactSection {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .contactSection {
+    min-height: 100%;
+  }
+}
 
 @media (max-width: 450px) {
   .contactSection {

@@ -111,7 +111,7 @@
   color: #fff;
 } */
 
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
   .links {
     display: none;
     color: #fff;
