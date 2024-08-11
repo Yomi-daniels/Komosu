@@ -424,13 +424,22 @@
 }
 
 @media (max-width: 428px) {
+  .webdesignImageContainer .webimage2 {
+    max-width: 394.131px;
+    min-height: 200.472px;
+  }
+
   .webdesignImageContainer {
-    top: 60%;
-    right: 0%;
+    top: 80%;
+    right: 23%;
   }
 
   .webdesignLandingPageContainer {
     height: 70vh;
+  }
+
+  .webdesignLandingPage {
+    height: 110vh;
   }
 }
 /* WEB DESIGN SECTION */
