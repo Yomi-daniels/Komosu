@@ -1,21 +1,9 @@
-const BlogPage = () => {
-  return (
-    <div>
-      <h1>testing</h1>
-    </div>
-  );
-};
-
-export default BlogPage;
-import React from 'react';
+"use client";
+import React from "react";
+import LandingPage from "./components/landingPage";
 
 const BlogPage = () => {
-  return (
-    <div>
-      <h1>Blog</h1>
-      <p>Welcome to our blog page!</p>
-    </div>
-  );
+  return <LandingPage />;
 };
 
 export default BlogPage;
