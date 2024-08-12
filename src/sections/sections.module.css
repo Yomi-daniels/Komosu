@@ -542,7 +542,7 @@
   .containerflex,
   .containerSubFlex {
     flex-wrap: wrap;
-    padding: 0 1rem;
+    padding: 0;
   }
   .servicesHeader {
     margin-top: 1rem;
@@ -574,10 +574,11 @@
   .containerFlexh5 {
     font-size: 16px;
   }
+
   .containerFlex1,
   .containerSubFlex1 {
     padding: 1rem;
-
+    width: 100%;
     min-height: 170px;
   }
 
@@ -1913,7 +1914,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   border-radius: 10px;
   /* padding: 1rem 1.5rem; */
   height: 100%;
@@ -2201,12 +2201,16 @@
   }
 
   .FAQContents h4 {
-    font-size: 9px;
+    font-size: 16px;
+  }
+
+  .FAQContents {
+    justify-content: space-between;
   }
 
   .dropdownImg {
-    width: 30px;
-    height: 30px;
+    min-width: 30px;
+    height: 50px;
     position: relative;
   }
   .FAQContainer {

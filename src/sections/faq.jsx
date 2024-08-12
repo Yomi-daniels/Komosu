@@ -16,6 +16,29 @@ const FAQ = () => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
+  const faqs = [
+    {
+      question: "What is Komosu's mission?",
+      answer:
+        "Komosu aims to revolutionize digital services by offering innovative and tailored solutions to businesses of all sizes.",
+    },
+    {
+      question: "How can I get started with Komosu?",
+      answer:
+        "Getting started is easy! Just sign up on our website, choose a plan that suits your needs, and start exploring our services.",
+    },
+    {
+      question: "What support does Komosu offer?",
+      answer:
+        "Komosu provides 24/7 customer support, with dedicated teams available to help you with any issues or questions you may have.",
+    },
+    {
+      question: "What makes Komosu different from other service providers?",
+      answer:
+        "Komosu stands out by offering personalized services, advanced technology integration, and a customer-centric approach that ensures satisfaction.",
+    },
+  ];
+
   return (
     <section className={styles.FAQSection}>
       <div className={styles.FAQHeaderContents}>
@@ -39,21 +62,29 @@ const FAQ = () => {
         <div className={styles.FAQline}>
           <Image src="/Group 2.png" alt="lines" fill />
         </div>
-        {[...Array(3)].map((_, index) => (
+        {faqs.map((faq, index) => (
           <div key={index} className={styles.FAQContainerContents}>
             <div
               className={styles.FAQContents}
               onClick={() => toggleFAQ(index)}
             >
-              <h4>What Service Does Komosu Offer?</h4>
+              <h4>{faq.question}</h4>
+
               <div className={styles.dropdownImg}>
-                <Image src="/Frame 39.png" alt="Faq image" fill />
+                <Image
+                  src="/Frame 39.png"
+                  alt="Faq image"
+                  fill
+                  objectFit="contain"
+                />
               </div>
             </div>
             <div
-              className={`${styles.FAQAnswer} ${expandedIndex === index ? styles.expanded : ""}`}
+              className={`${styles.FAQAnswer} ${
+                expandedIndex === index ? styles.expanded : ""
+              }`}
             >
-              <p>This is the answer to the question.</p>
+              <p>{faq.answer}</p>
             </div>
           </div>
         ))}

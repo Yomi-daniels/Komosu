@@ -2,6 +2,7 @@ import webstyle from "../webdesign.module.css";
 import { Shadows_Into_Light } from "next/font/google";
 import AnnualLink from "../components/AnnualLink";
 import Image from "next/image";
+import Link from "next/link";
 
 const shadowsFont = Shadows_Into_Light({
   subsets: ["latin"],
@@ -34,7 +35,9 @@ const WebDesignPricingPlans = () => {
               $2,000<span>/month</span>
             </h3>
             <span className={webstyle.lineThrough}>$3,000/month</span>
-            <button>GET STARTED</button>
+            <Link href="/request-demo" className={webstyle.linkbtn}>
+              <button>GET STARTED</button>
+            </Link>
             <div className={webstyle.webbasicplanfeatures}>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
@@ -98,7 +101,9 @@ const WebDesignPricingPlans = () => {
               $10,000<span>/month</span>
             </h3>
             <span className={webstyle.lineThrough}>$12,000/month</span>
-            <button>GET STARTED</button>
+            <Link href="/request-demo" className={webstyle.linkbtn}>
+              <button>GET STARTED</button>
+            </Link>
             <div className={webstyle.webbasicplanfeatures}>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
@@ -216,7 +221,9 @@ const WebDesignPricingPlans = () => {
               $5,000<span>/month</span>
             </h3>
             <span className={webstyle.lineThrough}>$6,000/month</span>
-            <button>GET STARTED</button>
+            <Link href="/request-demo" className={webstyle.linkbtn}>
+              <button>GET STARTED</button>
+            </Link>
             <div className={webstyle.webbasicplanfeatures}>
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>

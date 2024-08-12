@@ -7,9 +7,9 @@ import gsap from "gsap";
 import Link from "next/link";
 import { Shadows_Into_Light } from "next/font/google";
 const shadowFont = Shadows_Into_Light({
-  subsets: ['latin'],
-  weight:['400']
-})
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 const LandingPage = () => {
   const videoRef = useRef(null);
@@ -53,24 +53,27 @@ const LandingPage = () => {
     <section className={styles.heroSection}>
       <div className={styles.herobg}>
         {/* <Image src="/landing image.png" layout="fill" objectFit="cover" /> */}
-        <video loop autoPlay muted >
-          <source src="/Website Vid.mp4" type="video/mp4"/>
+        <video loop autoPlay muted>
+          <source src="/Website Vid.mp4" type="video/mp4" />
         </video>
       </div>
       <div className={styles.heroContainer}>
         <div className={styles.HeroTextContainer}>
           <div className={styles.HeroText}>
-          
             <h1 className={styles.heroHeader}>
-            Transform your <span className={`${styles.heroSpan} ${shadowFont.className}`}> dealership </span> with Komosu Network
+              Transform your{" "}
+              <span className={`${styles.heroSpan} ${shadowFont.className}`}>
+                {" "}
+                dealership{" "}
+              </span>{" "}
+              with Komosu Network
             </h1>
             <Link href="/about">
               <button className={styles.headerbtn}>
                 Learn more
-          
-                  <div className={styles.buttonImage}>
-                    <Image src="/View plan button (4).png" alt="vector" fill />
-                  </div>
+                <div className={styles.buttonImage}>
+                  <Image src="/View plan button (4).png" alt="vector" fill />
+                </div>
               </button>
             </Link>
           </div>
@@ -78,7 +81,8 @@ const LandingPage = () => {
             <p className={styles.heroSubText}>
               Our team of experts will help provide long lasting solutions for
               your business through web design, AI Solutions, and other high
-              quality impressions through content marketing and lead generations.
+              quality impressions through content marketing and lead
+              generations.
             </p>
           </div>
         </div>
