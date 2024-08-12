@@ -266,4 +266,22 @@
   .footerHeader h1 {
     font-size: 18px;
   }
+
+  .SocialLink i {
+    font-size: 1.5rem;
+  }
+
+  .TermsCondition p {
+    font-size: 16px;
+  }
+
+  .FooterSocialLink {
+    margin-top: 16px;
+
+    font-size: 16px;
+  }
+
+  .footerHeader h1 {
+    font-size: 24px;
+  }
 }
