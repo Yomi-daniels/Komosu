@@ -14,31 +14,15 @@ const links = [
     path: "/servicesLink",
     subLinks: [
       { title: "Web Design", path: "/webdesign" },
-      {
-        title: "AI Solution",
-        path: "/aisolution",
-      },
-      {
-        title: "Content Marketing",
-        path: "/contentmarketing",
-      },
-      {
-        title: "Lead Generation",
-        path: "/leadgeneration",
-      },
+      { title: "AI Solution", path: "/aisolution" },
+      { title: "Content Marketing", path: "/contentmarketing" },
+      { title: "Lead Generation", path: "/leadgeneration" },
     ],
   },
-
-  // {
-  //   title: "Pricing",
-  //   path: "/pricing",
-  // },
-
   {
     title: "Case Study",
     path: "/case-study",
   },
-
   {
     title: "Contact Us",
     path: "/contact-us",
@@ -54,7 +38,11 @@ const Links = () => {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   const handleServiceClick = () => {
-    setServicesOpen((prev) => !prev);
+    setServicesOpen(prev => !prev);
+  };
+
+  const handleMenuToggle = () => {
+    setOpen(prev => !prev);
   };
 
   return (
@@ -63,28 +51,26 @@ const Links = () => {
         {links.map((link) => (
           <div
             key={link.title}
-            className={`${styles.linkItem} ${link.title === "Services" ? styles.customLinkItem : ""}  ${link.title === "Get Demo" ? styles.requestDemoLink : ""}`}
+            className={`${styles.linkItem} ${link.title === "Services" ? styles.customLinkItem : ""} ${link.title === "Get Demo" ? styles.requestDemoLink : ""}`}
           >
             {link.subLinks ? (
               <>
                 <div className={styles.servicesContainer}>
                   <NavLink item={link} />
-                  {/* <button className={styles.dropdownButton}>
+                  <button className={styles.dropdownButton}>
                     <Image
-                      src="/arrow-drop-down-line.svg"
+                      src="/dropdown.svg"
                       alt="dropdown"
                       width={20}
                       height={20}
                     />
-                  </button> */}
+                  </button>
                 </div>
-                {
-                  <div className={styles.subLinks}>
-                    {link.subLinks.map((subLink) => (
-                      <NavLink item={subLink} key={subLink.title} />
-                    ))}
-                  </div>
-                }
+                <div className={`${styles.subLinks} ${servicesOpen ? styles.subLinksOpen : ''}`}>
+                  {link.subLinks.map((subLink) => (
+                    <NavLink item={subLink} key={subLink.title} />
+                  ))}
+                </div>
               </>
             ) : (
               <NavLink item={link} />
@@ -93,18 +79,22 @@ const Links = () => {
         ))}
       </div>
       <button
-        onClick={() => setOpen((prev) => !prev)}
+        onClick={handleMenuToggle}
         className={styles.menuButton}
       >
-        <Image src="/menu-3-fill.svg" alt="menu" width={24} height={24} />
+        {open ? (
+          <Image src="/closebtn.svg" alt="close" width={24} height={24} className={styles.closeButton} />
+        ) : (
+          <Image src="/openbtn.svg" alt="menu" width={24} height={24} />
+        )}
       </button>
-      {open && (
-        <div className={styles.mobileContainer}>
-          <div className={styles.mobileLinks}>
-            {links.map((link) => (
-              <div key={link.title} className={styles.linkItem}>
-                {link.title === "Services" ? (
-                  <>
+      <div className={`${styles.mobileContainer} ${open ? styles.mobileContainerOpen : ''}`}>
+        <div className={styles.mobileLinks}>
+          {links.map((link) => (
+            <div key={link.title} className={styles.linkItem}>
+              {link.title === "Services" ? (
+                <>
+                  <div className={styles.servicesContainerflex}>
                     <div
                       className={styles.servicesContainer}
                       onClick={handleServiceClick}
@@ -112,29 +102,27 @@ const Links = () => {
                       <NavLink item={link} />
                       <button className={styles.dropdownButton}>
                         <Image
-                          src="/arrow-drop-down-line.svg"
+                          src="/dropdown.svg"
                           alt="dropdown"
-                          width={20}
-                          height={20}
+                          fill
+                          objectFit="contain"
                         />
                       </button>
                     </div>
-                    {servicesOpen && (
-                      <div className={styles.subLinks}>
-                        {link.subLinks.map((subLink) => (
-                          <NavLink item={subLink} key={subLink.title} />
-                        ))}
-                      </div>
-                    )}
-                  </>
-                ) : (
-                  <NavLink item={link} />
-                )}
-              </div>
-            ))}
-          </div>
+                  </div>
+                  <div className={`${styles.servicesLinks} ${servicesOpen ? styles.subLinksOpen : ''}`}>
+                    {link.subLinks.map((subLink) => (
+                      <NavLink item={subLink} key={subLink.title} />
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <NavLink item={link} />
+              )}
+            </div>
+          ))}
         </div>
-      )}
+      </div>
     </div>
   );
 };

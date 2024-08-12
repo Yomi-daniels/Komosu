@@ -21,6 +21,7 @@
   display: flex;
   align-items: flex-start;
   cursor: pointer;
+  align-items: center;
 }
 
 .subLinks {
@@ -72,7 +73,7 @@
 .subLinks a {
   padding: 0.5rem 1rem;
   text-decoration: none;
-  color: #000;
+  color: #000000;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -80,6 +81,19 @@
   letter-spacing: 0.36px;
 }
 
+.servicesContainer {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.dropdownButton {
+  border: none;
+  position: relative;
+  min-width: 16px;
+  min-height: 16px;
+  margin-right: 2rem;
+  background-color: transparent;
+}
 .dropdownButton img {
   width: 16px;
   height: 16px;
@@ -105,26 +119,27 @@
 }
 
 .requestDemoLink a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
-/* .mobileLinks {
-  color: #fff;
-} */
+.mobileLinks {
+  color: #000000;
+}
 
 @media (max-width: 1025px) {
   .links {
     display: none;
-    color: #fff;
+    color: #000000;
   }
+
   .menuButton {
     background-color: transparent;
     border: none;
     display: block;
-    width: 90px;
+    width: 35px;
     height: 100%;
     position: relative;
     cursor: pointer;
-    font-size: 30px;
+    margin-right: 1rem;
   }
 
   .menuButton img {
@@ -132,18 +147,97 @@
     height: 30px;
   }
 
-  .mobileLinks {
+  .mobileContainer {
+    width: 100vw;
+    height: 130vh;
     position: absolute;
-    top: 80px;
-    right: 0;
-    width: 100%;
-    height: calc(100vh - 100px);
-    background-color: black;
+    top: 4rem;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(-100%); /* Initially hidden off-screen */
+    transition: transform 0.5s ease-in-out; /* Smooth slide-in transition */
+    z-index: 100;
+  }
+
+  .mobileContainerOpen {
+    transform: translateX(0);
+  }
+
+  .mobileContainer .mobileLinks {
+    z-index: 100;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    margin-top: 2rem;
+  }
+
+  .mobileLinks a {
+    color: black;
+    height: 70px;
+    display: flex;
+    width: 100%;
+    padding: 12px 16px;
     align-items: center;
-    justify-content: center;
-    gap: 1em;
-    color: #fff;
+    gap: 8px;
+    align-self: stretch;
+    border-bottom: 1px solid var(--Foundation-Blue-Light, #e6e6ff);
+    background: #fff;
+  }
+
+  .linkItem {
+    width: 100vw;
+  }
+
+  .servicesContainerflex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100vw;
+  }
+
+  .servicesContainer {
+    justify-content: space-between;
+    width: 100vw;
+    border-bottom: 1px solid #e6e6ff;
+    background: #fff;
+  }
+
+  .dropdownButton {
+    border: none;
+    position: relative;
+    min-width: 16px;
+    min-height: 16px;
+    margin-right: 2rem;
+    background-color: transparent;
+  }
+
+  .servicesLinks {
+    display: none;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(-20px);
+    transition:
+      max-height 0.5s ease,
+      opacity 0.5s ease,
+      transform 0.5s ease;
+  }
+
+  .servicesLinks.subLinksOpen {
+    display: block;
+    opacity: 1;
+    max-height: 500px;
+    transform: translateY(0);
+  }
+
+  .closeButton {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -1rem;
+    right: 0;
+    cursor: pointer;
   }
 }

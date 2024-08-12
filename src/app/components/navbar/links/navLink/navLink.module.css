@@ -79,3 +79,12 @@
     color: rgb(255, 255, 255);
   }
 }
+
+@media (max-width: 1025px) {
+  .active::before {
+    background-color: transparent;
+  }
+  .container::after {
+    background-color: transparent;
+  }
+}
