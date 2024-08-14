@@ -21,7 +21,7 @@ const BlogPage = () => {
 
   return (
     <section className={styles.container}>
-      <LandingPage blog={post} />
+      <LandingPage blog={post} className={styles.landingPage} />
       <BlogContainer posts={allPosts} />
     </section>
   );
