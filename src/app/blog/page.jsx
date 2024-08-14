@@ -2,7 +2,7 @@
 import React from "react";
 import { allPosts } from "contentlayer/generated";
 import LandingPage from "./components/landingPage";
-import BlogPost from "./components/blogPost";
+import BlogContainer from "./blogContainer";
 
 const BlogPage = () => {
   // Find the specific post you want to highlight
@@ -23,10 +23,8 @@ const BlogPage = () => {
       {/* Pass the specific blog post to the LandingPage component */}
       <LandingPage blog={post} />
 
-      {/* Map through all posts and render a BlogPost component for each */}
-      {allPosts.map((post) => (
-        <BlogPost key={post._id} post={post} />
-      ))}
+      {/* Pass all posts to the BlogContainer component */}
+      <BlogContainer posts={allPosts} />
     </section>
   );
 };
