@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import { allPosts } from "contentlayer/generated";
+import styles from "./blog.module.css";
 import LandingPage from "./components/landingPage";
-import BlogContainer from "./blogContainer";
+import BlogContainer from "./components/blogContainer";
 
 const BlogPage = () => {
   // Find the specific post you want to highlight
@@ -19,11 +20,8 @@ const BlogPage = () => {
   console.log("post", post.image.filePath.replace("../public", ""));
 
   return (
-    <section>
-      {/* Pass the specific blog post to the LandingPage component */}
+    <section className={styles.container}>
       <LandingPage blog={post} />
-
-      {/* Pass all posts to the BlogContainer component */}
       <BlogContainer posts={allPosts} />
     </section>
   );
