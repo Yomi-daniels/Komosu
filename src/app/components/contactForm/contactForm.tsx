@@ -114,10 +114,10 @@ const ContactForm = () => {
           {isSubmitting ? "Sending..." : "Send message"}
         </button>
       </form>
-      {/* {submissionStatus === "success" && <p>Form submitted successfully!</p>}
+      {submissionStatus === "success" && <p>Form submitted successfully!</p>}
       {submissionStatus === "error" && (
         <p>There was an error submitting the form.</p>
-      )} */}
+      )}
     </div>
   );
 };

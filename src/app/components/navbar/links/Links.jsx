@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import styles from "./links.module.css";
 import NavLink from "./navLink/navLink";
@@ -45,6 +44,16 @@ const Links = () => {
     setOpen(prev => !prev);
   };
 
+  const handleLinkClick = () => {
+    if (open) {
+      handleMenuToggle();
+    }
+  };
+
+  const handleSubLinkClick = (e) => {
+    handleLinkClick();
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.links}>
@@ -56,8 +65,8 @@ const Links = () => {
             {link.subLinks ? (
               <>
                 <div className={styles.servicesContainer}>
-                  <NavLink item={link} />
-                  <button className={styles.dropdownButton}>
+                  <NavLink item={link} onClick={handleServiceClick} />
+                  <button className={styles.dropdownButton} onClick={handleServiceClick}>
                     <Image
                       src="/dropdown.svg"
                       alt="dropdown"
@@ -68,12 +77,12 @@ const Links = () => {
                 </div>
                 <div className={`${styles.subLinks} ${servicesOpen ? styles.subLinksOpen : ''}`}>
                   {link.subLinks.map((subLink) => (
-                    <NavLink item={subLink} key={subLink.title} />
+                    <NavLink item={subLink} key={subLink.title} onClick={handleSubLinkClick} />
                   ))}
                 </div>
               </>
             ) : (
-              <NavLink item={link} />
+              <NavLink item={link} onClick={handleLinkClick} />
             )}
           </div>
         ))}
@@ -112,12 +121,12 @@ const Links = () => {
                   </div>
                   <div className={`${styles.servicesLinks} ${servicesOpen ? styles.subLinksOpen : ''}`}>
                     {link.subLinks.map((subLink) => (
-                      <NavLink item={subLink} key={subLink.title} />
+                      <NavLink item={subLink} key={subLink.title} onClick={handleSubLinkClick} />
                     ))}
                   </div>
                 </>
               ) : (
-                <NavLink item={link} />
+                <NavLink item={link} onClick={handleLinkClick} />
               )}
             </div>
           ))}
