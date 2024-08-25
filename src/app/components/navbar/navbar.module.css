@@ -19,7 +19,7 @@
   left: 0;
   top: 0;
   position: fixed;
-  transition: top 0.3s;
+  transition: top 0.1s;
   height: 90px;
   /* border: 2px solid red; */
 }
@@ -42,6 +42,28 @@
 .navbar {
   display: flex;
   gap: 1rem;
+}
+
+.parentContainer {
+  background: rgb(255, 255, 255);
+  z-index: 50;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  position: fixed;
+  transition:
+    top 0.3s,
+    opacity 0.2s ease-in;
+  height: 90px;
+  opacity: 0; /* Start with opacity 0 */
+}
+
+.visible {
+  opacity: 1; /* Opacity 1 when visible */
+}
+
+.hidden {
+  top: -100px;
 }
 
 /* NAVBAR MOBILE SCREEN */

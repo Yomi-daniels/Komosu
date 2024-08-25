@@ -1,65 +1,91 @@
 "use client";
 
-import Image from "next/image";
-import styles from "./sections.module.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import Image from "next/image";
 import Link from "next/link";
+import styles from "./sections.module.css";
 import { Shadows_Into_Light } from "next/font/google";
+
 const shadowFont = Shadows_Into_Light({
   subsets: ["latin"],
   weight: ["400"],
 });
 
 const LandingPage = () => {
-  const videoRef = useRef(null);
-  const heroTextRef = useRef(null);
-  const heroSubRef = useRef(null);
-  const navbarRef = useRef(null);
-  const headerContentRef = useRef(null);
-  const buttonRef = useRef(null);
+  const heroHeaderRef = useRef(null);
+  const heroSubTextRef = useRef(null);
+  const [isInView, setIsInView] = useState(true);
 
   useEffect(() => {
-    gsap.to(headerContentRef.current, {
-      x: 0,
-      opacity: 1,
-      duration: 0.5,
-      ease: "power2.inOut",
-    });
+    // GSAP animation for initial load
     gsap.fromTo(
-      heroTextRef.current,
-      { x: -100, scale: 0.5 },
-      { x: -0, scale: 1, opacity: 1, duration: 1, ease: "power1.inOut" }
-    );
-    gsap.fromTo(
-      heroSubRef.current,
-      { x: -100, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1.3, ease: "elastic.inOut", delay: 0.5 }
+      heroHeaderRef.current,
+      { x: "-100%", opacity: 0 },
+      { x: "0%", opacity: 1, duration: 1.5, ease: "power2.out" }
     );
 
-    gsap.to(
-      buttonRef.current,
+    gsap.fromTo(
+      heroSubTextRef.current,
+      { x: "100%", opacity: 0 },
+      { x: "0%", opacity: 1, duration: 1.5, ease: "power2.out" }
+    );
+  }, []);
 
+  useEffect(() => {
+    // Intersection Observer to detect visibility and apply opacity changes
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Set opacity based on whether the element is in view
+        if (entry.isIntersecting) {
+          gsap.to(entry.target, {
+            opacity: 1,
+            duration: 0.1,
+            ease: "power2.out",
+          });
+        } else {
+          gsap.to(entry.target, {
+            opacity: 0,
+            duration: 0.1,
+            ease: "power2.out",
+          });
+        }
+      },
       {
-        opacity: 1,
-        duration: 1,
-        delay: 1.5,
-        ease: "circ.inOut",
+        threshold: 1, // Adjust this value as needed
       }
     );
+
+    // Observe the elements
+    if (heroHeaderRef.current) {
+      observer.observe(heroHeaderRef.current);
+    }
+
+    if (heroSubTextRef.current) {
+      observer.observe(heroSubTextRef.current);
+    }
+
+    // Clean up observer on component unmount
+    return () => {
+      if (heroHeaderRef.current) {
+        observer.unobserve(heroHeaderRef.current);
+      }
+      if (heroSubTextRef.current) {
+        observer.unobserve(heroSubTextRef.current);
+      }
+    };
   }, []);
 
   return (
     <section className={styles.heroSection}>
       <div className={styles.herobg}>
-        {/* <Image src="/landing image.png" layout="fill" objectFit="cover" /> */}
         <video loop autoPlay muted>
           <source src="/Website Vid.mp4" type="video/mp4" />
         </video>
       </div>
       <div className={styles.heroContainer}>
         <div className={styles.HeroTextContainer}>
-          <div className={styles.HeroText}>
+          <div className={styles.HeroText} ref={heroHeaderRef}>
             <h1 className={styles.heroHeader}>
               Transform your{" "}
               <span className={`${styles.heroSpan} ${shadowFont.className}`}>
@@ -77,12 +103,12 @@ const LandingPage = () => {
               </button>
             </Link>
           </div>
-          <div className={styles.HeaderContent}>
+          <div className={styles.HeaderContent} ref={heroSubTextRef}>
             <p className={styles.heroSubText}>
-              Our team of experts will help provide long lasting solutions for
-              your business through web design, AI Solutions, and other high
-              quality impressions through content marketing and lead
-              generations.
+              Our team of experts will help provide long-lasting solutions for
+              your business through web design, AI Solutions, and other
+              high-quality impressions through content marketing and lead
+              generation.
             </p>
           </div>
         </div>

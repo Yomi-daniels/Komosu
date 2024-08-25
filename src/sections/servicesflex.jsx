@@ -1,8 +1,27 @@
+"use client";
 import Image from "next/image";
 import styles from "./sections.module.css";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
 const Servicesflex = () => {
+  const ref = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.33 1"],
+  });
+
+  // Set a minimum scale value using useTransform
+  const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+
   return (
-    <div className={styles.servicesContainer}>
+    <motion.div
+      ref={ref}
+      style={{ scale, opacity }}
+      className={styles.servicesContainer}
+    >
       <div className={styles.servicesContainerContent}>
         <div className={styles.containerflex}>
           <div className={styles.containerFlex1}>
@@ -76,7 +95,7 @@ const Servicesflex = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

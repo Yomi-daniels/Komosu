@@ -5,6 +5,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Shadows_Into_Light } from "next/font/google";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const shadowFont = Shadows_Into_Light({
   subsets: ["latin"],
@@ -12,6 +14,16 @@ const shadowFont = Shadows_Into_Light({
 });
 
 const Offer = () => {
+  const ref = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.33 1"],
+  });
+
+  const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+
   const [activeSection, setActiveSection] = useState("webDesign");
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -25,8 +37,22 @@ const Offer = () => {
     }
   };
 
+  const contentVariants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  };
+
   return (
-    <section className={styles.OfferSection}>
+    <motion.section
+      className={styles.OfferSection}
+      ref={ref}
+      style={{ scale, opacity }}
+    >
       <h2 className={styles.offerHeader}>
         WHAT WE OFFER OUR{" "}
         <span className={`${styles.servicesSpan} ${shadowFont.className}`}>
@@ -69,7 +95,12 @@ const Offer = () => {
           >
             {activeSection === "webDesign" && (
               <div className={styles.webDesignContainer}>
-                <div className={styles.webDesignContent}>
+                <motion.div
+                  className={styles.webDesignContent}
+                  initial="hidden"
+                  animate="visible"
+                  variants={contentVariants}
+                >
                   <div className={styles.webDesignHeader}>
                     <div className={styles.webHeaderImgBg}>
                       <div className={styles.webHeaderImg}>
@@ -139,9 +170,12 @@ const Offer = () => {
                       <p>Virtual showrooms to display your vehicle lineup.</p>
                     </div>
                   </div>
-                </div>
-                <div
+                </motion.div>
+                <motion.div
                   className={`${styles.webDesignCardContainer} ${styles.webDesignCardContainer1}`}
+                  initial="hidden"
+                  animate="visible"
+                  variants={cardVariants}
                 >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
@@ -161,7 +195,7 @@ const Offer = () => {
                       objectFit="contain"
                     />
                   </div>
-                </div>
+                </motion.div>
               </div>
             )}
           </div>
@@ -173,7 +207,12 @@ const Offer = () => {
               <div
                 className={`${styles.webDesignContainer} ${styles.aiSolution}`}
               >
-                <div className={styles.webDesignContent}>
+                <motion.div
+                  className={styles.webDesignContent}
+                  initial="hidden"
+                  animate="visible"
+                  variants={contentVariants}
+                >
                   <div className={styles.webDesignHeader}>
                     <div className={styles.webHeaderImgBg}>
                       <div className={styles.webHeaderImg}>
@@ -247,9 +286,12 @@ const Offer = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-                <div
+                </motion.div>
+                <motion.div
                   className={`${styles.webDesignCardContainer} ${styles.AisolutionContainer}`}
+                  initial="hidden"
+                  animate="visible"
+                  variants={cardVariants}
                 >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
@@ -260,7 +302,7 @@ const Offer = () => {
                       objectFit="contain"
                     />
                   </div>
-                </div>
+                </motion.div>
               </div>
             )}
           </div>
@@ -272,7 +314,12 @@ const Offer = () => {
               <div
                 className={`${styles.webDesignContainer} ${styles.contentMarketing}`}
               >
-                <div className={styles.webDesignContent}>
+                <motion.div
+                  className={styles.webDesignContent}
+                  initial="hidden"
+                  animate="visible"
+                  variants={contentVariants}
+                >
                   <div className={styles.webDesignHeader}>
                     <div className={styles.webHeaderImgBg}>
                       <div className={styles.webHeaderImg}>
@@ -350,9 +397,12 @@ const Offer = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-                <div
+                </motion.div>
+                <motion.div
                   className={`${styles.webDesignCardContainer} ${styles.contentMarketingContainer}`}
+                  initial="hidden"
+                  animate="visible"
+                  variants={cardVariants}
                 >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
@@ -363,7 +413,7 @@ const Offer = () => {
                       objectFit="contain"
                     />
                   </div>
-                </div>
+                </motion.div>
               </div>
             )}
           </div>
@@ -375,7 +425,12 @@ const Offer = () => {
               <div
                 className={`${styles.webDesignContainer} ${styles.leadGeneration}`}
               >
-                <div className={styles.webDesignContent}>
+                <motion.div
+                  className={styles.webDesignContent}
+                  initial="hidden"
+                  animate="visible"
+                  variants={contentVariants}
+                >
                   <div className={styles.webDesignHeader}>
                     <div className={styles.webHeaderImgBg}>
                       <div className={styles.webHeaderImg}>
@@ -453,9 +508,12 @@ const Offer = () => {
                       </p>
                     </div>
                   </div>
-                </div>
-                <div
+                </motion.div>
+                <motion.div
                   className={`${styles.webDesignCardContainer} ${styles.contentMarketingContainer}`}
+                  initial="hidden"
+                  animate="visible"
+                  variants={cardVariants}
                 >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard3}`}
@@ -467,13 +525,13 @@ const Offer = () => {
                       objectFit="contain"
                     />
                   </div>
-                </div>
+                </motion.div>
               </div>
             )}
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
