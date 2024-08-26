@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./sections.module.css";
 import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
@@ -11,10 +11,42 @@ const shadow_Font = Shadows_Into_Light({
 
 const FAQ = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
+  const faqRefs = useRef([]);
 
   const toggleFAQ = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const element = entry.target;
+
+          if (entry.isIntersecting) {
+            element.classList.add(styles.animateIn);
+            element.classList.remove(styles.animateOut);
+          } else if (entry.boundingClientRect.top > 0) {
+            element.classList.remove(styles.animateIn);
+            element.classList.add(styles.animateOut);
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of the element is in the viewport
+      }
+    );
+
+    faqRefs.current.forEach((faq) => {
+      if (faq) observer.observe(faq);
+    });
+
+    return () => {
+      faqRefs.current.forEach((faq) => {
+        if (faq) observer.unobserve(faq);
+      });
+    };
+  }, []);
 
   const faqs = [
     {
@@ -60,10 +92,19 @@ const FAQ = () => {
       </div>
       <div className={styles.FAQContainer}>
         <div className={styles.FAQline}>
-          <Image src="/Group 2.png" alt="lines" fill />
+          <Image
+            src="/Group 2.png"
+            alt="lines"
+            layout="fill"
+            objectFit="contain"
+          />
         </div>
         {faqs.map((faq, index) => (
-          <div key={index} className={styles.FAQContainerContents}>
+          <div
+            key={index}
+            ref={(el) => (faqRefs.current[index] = el)}
+            className={`${styles.FAQContainerContents} ${styles.hidden}`}
+          >
             <div
               className={styles.FAQContents}
               onClick={() => toggleFAQ(index)}
@@ -74,7 +115,7 @@ const FAQ = () => {
                 <Image
                   src="/Frame 39.png"
                   alt="Faq image"
-                  fill
+                  layout="fill"
                   objectFit="contain"
                 />
               </div>
@@ -89,7 +130,12 @@ const FAQ = () => {
           </div>
         ))}
         <div className={styles.FAQline}>
-          <Image src="/Group 3.png" alt="lines" fill />
+          <Image
+            src="/Group 3.png"
+            alt="lines"
+            layout="fill"
+            objectFit="contain"
+          />
         </div>
       </div>
     </section>

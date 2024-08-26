@@ -14,7 +14,7 @@ const Servicesflex = () => {
 
   // Set a minimum scale value using useTransform
   const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
   return (
     <motion.div

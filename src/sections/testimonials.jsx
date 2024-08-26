@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import TestimonialData from "@/clientTestimonialData/testimonialData";
 import styles from "./sections.module.css";
 import { Shadows_Into_Light } from "next/font/google";
@@ -13,6 +13,27 @@ const shadows_Font = Shadows_Into_Light({
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const testimonialRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 } // Trigger when 10% of the element is visible
+    );
+
+    if (testimonialRef.current) {
+      observer.observe(testimonialRef.current);
+    }
+
+    return () => {
+      if (testimonialRef.current) {
+        observer.unobserve(testimonialRef.current);
+      }
+    };
+  }, []);
 
   const handleTransition = (newIndex) => {
     setIsTransitioning(true);
@@ -38,7 +59,12 @@ const Testimonials = () => {
     TestimonialData[currentIndex];
 
   return (
-    <section className={styles.testimonialSection}>
+    <section
+      ref={testimonialRef}
+      className={`${styles.testimonialSection} ${
+        isVisible ? styles.fadeIn : styles.fadeOut
+      }`}
+    >
       <h2 className={`${styles.offerHeader} ${styles.testimonialHeader}`}>
         HEAR WHAT OUR{" "}
         <span className={`${styles.offerSpan} ${shadows_Font.className}`}>
@@ -47,7 +73,9 @@ const Testimonials = () => {
         SAY ABOUT US
       </h2>
       <div
-        className={`${styles.testimonialContainer} ${isTransitioning ? styles.fade : ""}`}
+        className={`${styles.testimonialContainer} ${
+          isTransitioning ? styles.fade : ""
+        }`}
       >
         <div className={styles.testimonialContents}>
           <div className={styles.avatar}>

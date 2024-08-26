@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <section className={styles.FooterSection}>
+    <section className={styles.FooterSection} >
       <div className={styles.footerHeaderContainer}>
         <div className={styles.footerHeader}>
           <h1>Ready to scale up your business growth?</h1>
