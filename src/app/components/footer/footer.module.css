@@ -3,7 +3,7 @@
   height: auto;
   position: relative;
   background-color: var(--blueText);
-  margin-top: auto;
+  margin-top: 0;
 }
 
 .FooterContainer {

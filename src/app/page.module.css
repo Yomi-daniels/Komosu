@@ -1,8 +1,8 @@
 .landingpagesection {
   /* border: 3px solid red; */
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: auto;
+  height: auto;
 }
 
 .loading {

@@ -1,8 +1,8 @@
 .LeadGenerationPage {
-  width: 100vw;
-  height: 100vh;
+  width: auto;
+  height: auto;
   /* border: 1px solid red; */
-  margin-top: 5rem;
+  margin-top: 0;
 }
 
 .LeadingGenSection {
