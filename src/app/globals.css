@@ -115,6 +115,11 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 /* Webkit-based browsers */
