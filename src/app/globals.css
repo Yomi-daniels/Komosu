@@ -1,4 +1,7 @@
-/* global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "SatoshiLight";
   src: url("/fonts/Satoshi-Light.otf") format("opentype");
@@ -43,6 +46,7 @@
   --btn: #0500ff;
   --blueText: #020059;
   --text: white;
+  --navH: 6rem;
 
   /* Gradient color */
   --deepBlue: #3af3ff;
