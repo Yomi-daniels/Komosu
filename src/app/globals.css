@@ -70,6 +70,7 @@ html,
 body {
   height: auto;
   margin: 0;
+
   overflow-x: visible;
   font-family: var(--text-Font-Light);
 }
