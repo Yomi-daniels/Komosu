@@ -66,14 +66,16 @@
   margin: 0;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   overflow-x: hidden;
   font-family: var(--text-Font-Light);
 }
 
-#root, #__next {
+#root,
+#__next {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -106,7 +108,6 @@ textarea:focus {
   border-color: #007bff;
 }
 
-/* 
 .container {
   background-color: var(--bg);
   margin: 0 auto;
@@ -114,7 +115,7 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-} */
+}
 
 /* Webkit-based browsers */
 ::-webkit-scrollbar {
