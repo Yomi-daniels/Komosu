@@ -125,6 +125,8 @@
 }
 
 .blogPost {
+  display: grid;
+  grid-template-rows: subgrid;
   margin-bottom: 40px;
   grid-column: span 1;
   grid-row: span 1;
