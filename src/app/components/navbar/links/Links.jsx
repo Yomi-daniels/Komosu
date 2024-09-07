@@ -37,7 +37,10 @@ const links = [
     title: "Case Study",
     path: "/case-study",
   },
-
+  {
+    title: "Blog",
+    path: "/blog",
+  },
   {
     title: "Contact Us",
     path: "/contact-us",

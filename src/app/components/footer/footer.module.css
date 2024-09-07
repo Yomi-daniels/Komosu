@@ -1,12 +1,9 @@
 .FooterSection {
   max-width: 100%;
-  height: auto;
+  height: 100%;
+  position: relative;
   bottom: 0;
-  right: 0;
-  left: 0;
-  position: absolute;
   background-color: var(--blueText);
-  margin-top: auto;
 }
 
 .FooterContainer {
@@ -176,6 +173,7 @@
 
   .footerHeader h1 {
     text-align: left;
+    font-size: 32px;
   }
 
   .footerBtn {
@@ -185,6 +183,72 @@
     padding: 24px;
   }
 
+  .footerBtn button {
+    width: 90vw;
+    align-self: stretch;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .footerBtn .footerbtn2 {
+    gap: 1em;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .footerContentContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerLinks {
+    margin-top: 24px;
+  }
+
+  .footerLinks a {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .TermsCondition {
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .TermsCondition p {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .FooterSocialLink {
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .SocialLink i {
+    font-size: 2.5rem;
+  }
+
+  .FooterContainer {
+    padding: 3rem 2.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .footerLinks a {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .footerBtn {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    padding: 24px;
+  }
   .footerBtn button {
     width: 90vw;
     align-self: stretch;
@@ -199,42 +263,25 @@
     font-size: 16px;
   }
 
-  .footerContentContainer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footerLinks {
-    margin-top: 24px;
-  }
-
-  .footerLinks a {
-    font-weight: 500;
-    font-size: 14px;
-  }
-
-  .TermsCondition {
-    margin-top: 32px;
-    font-weight: 500;
-    font-size: 14px;
-  }
-
-  .TermsCondition p {
-    font-weight: 500;
-    font-size: 14px;
-  }
-
-  .FooterSocialLink {
-    margin-top: 32px;
-    font-weight: 500;
-    font-size: 14px;
+  .footerHeader h1 {
+    font-size: 18px;
   }
 
   .SocialLink i {
     font-size: 1.5rem;
   }
 
-  .FooterContainer {
-    padding: 3rem 2.8rem;
+  .TermsCondition p {
+    font-size: 16px;
+  }
+
+  .FooterSocialLink {
+    margin-top: 16px;
+
+    font-size: 16px;
+  }
+
+  .footerHeader h1 {
+    font-size: 24px;
   }
 }

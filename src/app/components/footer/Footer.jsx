@@ -45,10 +45,18 @@ const Footer = () => {
           <div className={styles.FooterSocialLink}>
             <p>Reach out on our Social handles</p>
             <div className={styles.SocialLink}>
-              <i className="ri-instagram-line"></i>
-              <i className="ri-twitter-x-line"></i>
-              <i className="ri-tiktok-fill"></i>
-              <i className="ri-youtube-fill"></i>
+              <i className="ri-instagram-line">
+                <a href="http://instagram.com"></a>
+              </i>
+              <i className="ri-twitter-x-line">
+                <a href="http://twitter.com"></a>
+              </i>
+              <i className="ri-tiktok-fill">
+                <a href="http://tiktok.com"></a>
+              </i>
+              <i className="ri-youtube-fill">
+                <a href="http://youtube.com"></a>
+              </i>
             </div>
           </div>
         </div>

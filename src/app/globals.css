@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom font face declarations */
 @font-face {
   font-family: "SatoshiLight";
   src: url("/fonts/Satoshi-Light.otf") format("opentype");
@@ -32,6 +33,7 @@
   src: url("/fonts/ShadowsIntoLight.ttf") format("truetype");
 }
 
+/* Root variables */
 :root {
   --navbar-bg: #131313;
   --text-Font-Light: satoshilight;
@@ -47,50 +49,41 @@
   --blueText: #020059;
   --text: white;
   --navH: 6rem;
-
-  /* Gradient color */
   --deepBlue: #3af3ff;
   --yellow: #ecc601;
-
-  /* Hover color container*/
   --hover1: #dad9ff;
   --hover2: #f9edb0;
   --hover3: #534500;
-
-  /* Testimonials container */
   --SkyBlue: #e6e6ff;
 }
 
+/* Reset */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 html,
 body {
-  height: auto;
-  margin: 0;
-
-  overflow-x: visible;
+  height: 100%;
   font-family: var(--text-Font-Light);
 }
 
-#root,
-#__next {
-  display: block;
-  flex-direction: row;
-  min-height: auto;
-}
+/* Make sure the layout spans the full viewport height */
 
+/* Ensure the main content takes the available space */
 main {
-  flex: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-@media (max-width: 450px) {
-  body {
-    overflow-x: visible;
-  }
+/* Footer specific styles */
+footer {
 }
+
 a {
   color: inherit;
   text-decoration: none;
@@ -109,21 +102,14 @@ textarea:focus {
   border-color: #007bff;
 }
 
-.container {
-  background-color: var(--bg);
-  min-height: 100vh;
+.layout {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  position: relative;
 }
 
-main {
-  flex: 1;
-}
-
-/* Webkit-based browsers */
+/* Webkit-based browsers scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -140,4 +126,10 @@ main {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@media (max-width: 450px) {
+  body {
+    overflow-x: visible;
+  }
 }

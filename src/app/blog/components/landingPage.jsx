@@ -1,18 +1,9 @@
-"use client";
-import React from "react";
 import Image from "next/image";
 import styles from "../blog.module.css";
-import BlogContainer from "./blogCont";
-import BlogPost from "./blogPost";
 
-const blogPosts = [
-  { id: 1, image: '1', title: 'First Post', content: 'This is the content of the first post.', updatedAt: '2024-08-08', tag: 'Maintaince Tips' },
-  { id: 2,  image: '2', title: 'Second Post', content: 'This is the content of the second post.', updatedAt: '2024-08-08', tag: 'Maintaince Tips' },
-];
-
-const landingPage = () => {
+const LandingPage = ({ blog }) => {
   return (
-    <section className={styles.container}>
+    <section className={styles.landingContainer}>
       <h5>Blog</h5>
       <h1>
         Your <span>Ultimate </span>
@@ -24,13 +15,20 @@ const landingPage = () => {
         automotive, whether you&apos;re a car enthusiast, a dealership owner, or
         simply looking to stay informed about the industry.
       </p>
+
       <div className={styles.article}>
         <div className={styles.articleImg}>
-          <Image src="/Rectangle 74.png" fill />
+          <Image
+            src="/Rectangle 74.png" // Adjust the image path
+            alt={blog.title}
+            placeholder="blur"
+            blurDataURL={blog.image.blurhashDataUrl} // Blur effect for lazy loading
+            fill
+          />
         </div>
         <div className={styles.blogTextWrapper}>
           <div className={styles.blogText}>
-            <p>Industry News</p>
+            <p>{blog.tags.join(", ")}</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="4"
@@ -40,11 +38,10 @@ const landingPage = () => {
             >
               <circle cx="2" cy="2.5" r="2" fill="#0500FF" />
             </svg>
-            <p>7 Min Read</p>
+            <p>3 Min Read</p>
+            {/* Estimated reading time */}
           </div>
-          <h2 className={styles.articleTitle}>
-            The Future of Electric Vehicles - What you need to Know
-          </h2>
+          <h2 className={styles.articleTitle}>{blog.title}</h2>
           <button>
             Read More
             <svg
@@ -63,18 +60,7 @@ const landingPage = () => {
         </div>
       </div>
     </section>
-    <BlogContainer>
-      {blogPosts.map((post) => (
-        <BlogPost key={post.id} image={ post.image }title={post.title} updatedAt={post.updatedAt} tag={post.tag} content={post.content} />
-      ))}
-    </BlogContainer>
   );
 };
 
-export default landingPage;
-
-const SinglePostPage = () => {
-  return <div>SinglePostPage</div>;
-};
-
-export default SinglePostPage;
+export default LandingPage;

@@ -1,12 +1,10 @@
 "use client";
+import { Koulen, Plus_Jakarta_Sans } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import Links from "./links/Links";
 import NavBarstyles from "./navbar.module.css";
-import Image from "next/image";
-import { useState, useEffect } from "react";
-import { Montserrat } from "next/font/google";
-import { Koulen } from "next/font/google";
-import { Plus_Jakarta_Sans } from "next/font/google";
 
 const koulen = Koulen({
   subsets: ["latin"],
