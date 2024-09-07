@@ -1,7 +1,7 @@
 .landingContainer {
   margin-top: var(--navH);
   padding: 96px 196px;
-  background-color: #e6e6ff;
+  background-color: #ffffff; /* Set light background color */
   display: flex;
   width: 100vw;
   flex-direction: column;
