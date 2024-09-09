@@ -1,8 +1,8 @@
 .aboutUsLandingPage {
   /* border: 2px solid black; */
-  width: 100%;
-  min-height: 100vh;
-  margin-top: 5rem;
+  width: auto;
+  height: auto;
+  margin-top: 0;
 }
 
 @media (max-width: 1025px) {

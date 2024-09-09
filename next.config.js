@@ -1,3 +1,13 @@
+import { withContentlayer } from "next-contentlayer";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+};
+export default withContentlayer({
+  nextConfig,
+});
 // /** @type {import('next').NextConfig} */
 // const nextConfig = {
 //   eslint: {
@@ -12,14 +22,3 @@
 //   },
 // };
 // module.exports = nextConfig;
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  reactStrictMode: true,
-};
-
-module.exports = nextConfig;

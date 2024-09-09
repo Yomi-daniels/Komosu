@@ -6,7 +6,7 @@
     "strict": false,
     "noEmit": true,
     "incremental": true,
-    "module": "esnext",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -15,7 +15,8 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
-      "@/sections/*": ["src/sections/*"]
+      "@/sections/*": ["src/sections/*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
     },
     "plugins": [
       {
@@ -23,6 +24,13 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "src"],
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src",
+    "next.config.js"
+  ],
   "exclude": ["node_modules"]
 }

@@ -1,8 +1,8 @@
 .AiSolutionSection {
-  width: 100%;
-  min-height: 100vh;
+  width: auto;
+  height: auto;
   /* border: 2px solid red; */
-  margin-top: 6rem;
+  margin-top: 0;
 }
 
 /* AI SOLUTIONS LANDING PAGE SECTION */

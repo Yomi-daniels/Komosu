@@ -2,6 +2,7 @@
   "name": "komosu-net",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,31 +10,47 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@contentlayer/core": "^0.3.4",
+    "@contentlayer/source-files": "^0.3.4",
     "@hookform/resolvers": "^3.9.0",
     "@jdion/tilt-react": "^1.0.0",
+    "@mdx-js/react": "^3.0.1",
     "@next/font": "^14.2.4",
     "@supabase/supabase-js": "^2.44.4",
     "framer-motion": "^11.3.30",
+    "date-fns": "^3.6.0",
+    "github-slugger": "^2.0.0",
+
     "gsap": "^3.12.5",
     "module-name": "^0.0.1-security",
-    "next": "14.2.4",
+    "next": "^13.5.6",
+    "next-contentlayer": "^0.3.4",
     "next-google-fonts": "^2.2.0",
-    "react": "^18",
-    "react-dom": "^18",
+    "next-sitemap": "^4.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-hook-form": "^7.52.1",
     "react-just-parallax": "^3.1.16",
+    "reading-time": "^1.5.0",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-pretty-code": "^0.13.2",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.0",
+    "shiki": "^1.12.1",
     "some-module": "^0.0.3",
     "swr": "^2.2.5",
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@types/node": "20.14.11",
     "@types/react": "18.3.3",
+    "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react": "^7.34.3",
-    "prettier": "^3.3.2"
+    "postcss": "^8.4.45",
+    "prettier": "^3.3.2",
+    "tailwindcss": "^3.4.10"
   }
 }

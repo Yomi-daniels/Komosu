@@ -18,9 +18,19 @@ const links = [
       { title: "Lead Generation", path: "/leadgeneration" },
     ],
   },
+
+  // {
+  //   title: "Pricing",
+  //   path: "/pricing",
+  // },
   {
     title: "Case Study",
     path: "/case-study",
+  },
+
+  {
+    title: "Blog",
+    path: "/blog",
   },
   {
     title: "Contact Us",

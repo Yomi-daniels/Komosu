@@ -57,9 +57,9 @@ export default function RootLayout({ children }) {
       </head>
 
       <body>
-        <div className="container">
+        <div className="layout">
           <Navbar />
-          {children}
+          <main className="content">{children}</main>
           <Footer />
         </div>
         <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
