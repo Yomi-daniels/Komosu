@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Links from "./links/Links";
 import NavBarstyles from "./navbar.module.css";
-import { useState, useEffect } from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
 const plus_Jakarta_Sans = Plus_Jakarta_Sans({
