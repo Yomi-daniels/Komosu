@@ -1,7 +1,7 @@
 .links {
   display: flex;
   align-items: center;
-  gap: 2em;
+  gap: 4em;
   padding: 0 10px;
   font-size: 0.9rem;
 }
@@ -39,7 +39,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   border-radius: 0 20px 20px 20px;
   opacity: 0;
   visibility: hidden;
@@ -50,20 +50,20 @@
   z-index: 55;
 }
 
-.subLinks::before {
+/* .subLinks::before {
   content: "";
   position: absolute;
-  top: -14%;
+  top: -11%;
   left: 0;
   width: 70px;
   height: 30px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* transform: rotate(200deg); */
+
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   border: 1px solid rgba(0, 0, 0, 0.1);
   z-index: -1;
-}
+} */
 
 .customLinkItem:hover .subLinks {
   opacity: 1;
@@ -73,7 +73,7 @@
 .subLinks a {
   padding: 0.5rem 1rem;
   text-decoration: none;
-  color: #000000;
+  color: #000000 !important;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -112,6 +112,12 @@
   background: var(--btn);
   cursor: pointer;
   z-index: 9;
+  position: absolute;
+  right: 1%;
+}
+
+.requestDemoLink:hover {
+  box-shadow: var(--btn-Hover);
 }
 
 .requestDemoLink:hover {
@@ -119,7 +125,7 @@
 }
 
 .requestDemoLink a {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
 }
 .mobileLinks {
   color: #000000;

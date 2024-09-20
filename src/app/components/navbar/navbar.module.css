@@ -5,23 +5,29 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1512px;
+  max-width: 1120px;
   height: 100%;
   margin: 0 auto;
   padding: 0 1.2rem;
-  /* border: 3px solid blue; */
+  border-radius: 52px;
+  border: 1px solid #eeeded;
+  background: #fbfbfb;
 }
 
 .parentContainer {
-  background: rgb(255, 255, 255);
+  background: transparent;
   z-index: 50;
   width: 100vw;
   left: 0;
-  top: 0;
+  top: 5%;
   position: fixed;
   transition: top 0.1s;
-  height: 90px;
-  /* border: 2px solid red; */
+  height: 80px;
+  border-radius: 30px;
+  transition:
+    top 0.3s,
+    opacity 0.2s ease-in;
+  opacity: 0;
 }
 
 .hidden {
@@ -31,6 +37,8 @@
 .logo {
   font-size: 1.6rem;
   font-weight: 900;
+  position: absolute;
+  left: 0;
 }
 
 .logoContainer {
@@ -41,21 +49,13 @@
 
 .navbar {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
 }
-
-.parentContainer {
-  background: rgb(255, 255, 255);
-  z-index: 50;
-  width: 100vw;
-  left: 0;
-  top: 0;
-  position: fixed;
-  transition:
-    top 0.3s,
-    opacity 0.2s ease-in;
-  height: 90px;
-  opacity: 0; /* Start with opacity 0 */
+.parentContainer .navbar a {
+  color: #000000;
 }
 
 .visible {

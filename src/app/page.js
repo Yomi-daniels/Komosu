@@ -25,7 +25,7 @@ const Home = () => {
       <section className={styles.OfferPage}>
         <Offer />
       </section>
-      <section className={styles.OfferAnimationPage} >
+      <section className={styles.OfferAnimationPage}>
         <OfferAnimation />
       </section>
       <section className={styles.TestimonialPage}>

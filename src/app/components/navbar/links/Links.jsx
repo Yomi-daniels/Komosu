@@ -42,6 +42,7 @@ const links = [
   },
 ];
 
+
 const Links = () => {
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -76,14 +77,14 @@ const Links = () => {
               <>
                 <div className={styles.servicesContainer}>
                   <NavLink item={link} onClick={handleServiceClick} />
-                  <button className={styles.dropdownButton} onClick={handleServiceClick}>
+                  {/* <button className={styles.dropdownButton} onClick={handleServiceClick}>
                     <Image
                       src="/dropdown.svg"
                       alt="dropdown"
                       width={20}
                       height={20}
                     />
-                  </button>
+                  </button> */}
                 </div>
                 <div className={`${styles.subLinks} ${servicesOpen ? styles.subLinksOpen : ''}`}>
                   {link.subLinks.map((subLink) => (

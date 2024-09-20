@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Image from "next/image";
@@ -77,43 +76,57 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <section className={styles.heroSection}>
-      <div className={styles.herobg}>
-        <video loop autoPlay muted>
-          <source src="/Website Vid.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div className={styles.heroContainer}>
-        <div className={styles.HeroTextContainer}>
-          <div className={styles.HeroText} ref={heroHeaderRef}>
-            <h1 className={styles.heroHeader}>
-              Transform your{" "}
-              <span className={`${styles.heroSpan} ${shadowFont.className}`}>
-                {" "}
-                dealership{" "}
-              </span>{" "}
-              with Komosu Network
-            </h1>
-            <Link href="/about">
-              <button className={styles.headerbtn}>
-                Learn more
-                <div className={styles.buttonImage}>
-                  <Image src="/View plan button (4).png" alt="vector" fill />
-                </div>
-              </button>
-            </Link>
+    <div className="min-h-screen w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
+      {/* Radial gradient for the container to give a faded look */}
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <section className={styles.heroSection}>
+        <div className={styles.heroContainer}>
+          <div className={styles.HeroTextContainer}>
+            <div className={styles.HeroText} ref={heroHeaderRef}>
+              <h1 className={styles.heroHeader}>
+                Transform your{" "}
+                <span className={`${styles.heroSpan} ${shadowFont.className}`}>
+                  {" "}
+                  dealership{" "}
+                </span>{" "}
+                with Komosu Network
+              </h1>
+            </div>
+            <div className={styles.HeaderContent} ref={heroSubTextRef}>
+              <p className={styles.heroSubText}>
+                Our team of experts will help provide long-lasting solutions for
+                your business through web design, AI Solutions, and other
+                high-quality impressions through content marketing and lead
+                generation.
+              </p>
+            </div>
+            <div className={styles.landingBtns}>
+           
+      <Link href="/request-demo">
+        <button  className={styles.headerGetStarted}>Get Started</button>
+      </Link>
+   
+                <Link href="/about">
+                <button className={styles.headerbtn}>
+                  Learn more
+                  <div className={styles.buttonImage}>
+                    <Image src="/View plan button (4).png" alt="vector" fill />
+                  </div>
+                </button>
+              </Link>
+            </div>
           </div>
-          <div className={styles.HeaderContent} ref={heroSubTextRef}>
-            <p className={styles.heroSubText}>
-              Our team of experts will help provide long-lasting solutions for
-              your business through web design, AI Solutions, and other
-              high-quality impressions through content marketing and lead
-              generation.
-            </p>
+  
+       <div className={styles.heroImgBg}>
+            <video loop autoPlay muted>
+              <source src="/Website Vid.mp4" type="video/mp4" />
+            </video>
           </div>
+
+        
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
