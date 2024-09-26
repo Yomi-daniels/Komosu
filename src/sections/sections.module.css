@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-inline: auto;
+  /* margin-inline: auto; */
 }
 .heroSection {
   position: relative;
