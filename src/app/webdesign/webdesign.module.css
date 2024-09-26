@@ -1,5 +1,5 @@
 .webdesignSection {
-  margin-top: 5rem;
+  margin-top: 0rem;
 }
 
 .webdesignLandingPage {
@@ -18,7 +18,7 @@
 .webdesignLandingPageContainer {
   width: 1216px;
   position: relative;
-  height: 90vh;
+  height: 100vh;
   margin-inline: auto;
   display: flex;
   align-items: flex-start;
@@ -41,7 +41,7 @@
   justify-content: flex-start;
   position: absolute;
   left: 0;
-  top: 15%;
+  top: 25%;
 }
 
 .webdesignTextContainer p {
@@ -135,12 +135,12 @@
   gap: 2em;
   width: 700px;
   right: -7%;
-  top: 8%;
+  top: 27%;
 }
 
-.pricingBtn button {
+/* .pricingBtn button {
   border: 3px solid red;
-}
+} */
 
 .webimage {
   position: relative;
@@ -158,7 +158,7 @@
 
 .vectorImagetop {
   right: 40%;
-  top: 10%;
+  top: 15%;
   width: 124px;
   height: 124px;
   position: absolute;

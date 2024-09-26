@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef } from "react";
 import styles from "./sections.module.css";
 import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
@@ -16,37 +16,6 @@ const FAQ = () => {
   const toggleFAQ = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const element = entry.target;
-
-          if (entry.isIntersecting) {
-            element.classList.add(styles.animateIn);
-            element.classList.remove(styles.animateOut);
-          } else if (entry.boundingClientRect.top > 0) {
-            element.classList.remove(styles.animateIn);
-            element.classList.add(styles.animateOut);
-          }
-        });
-      },
-      {
-        threshold: 0.5, // Trigger when 50% of the element is in the viewport
-      }
-    );
-
-    faqRefs.current.forEach((faq) => {
-      if (faq) observer.observe(faq);
-    });
-
-    return () => {
-      faqRefs.current.forEach((faq) => {
-        if (faq) observer.unobserve(faq);
-      });
-    };
-  }, []);
 
   const faqs = [
     {
@@ -72,8 +41,19 @@ const FAQ = () => {
   ];
 
   return (
-    <section className={styles.FAQSection}>
-      <div className={styles.FAQHeaderContents}>
+    <section
+      className={styles.FAQSection}
+      style={{
+        position: "sticky",
+        top: "0",
+        zIndex: "2",
+        backgroundColor: "#fff",
+      }}
+    >
+      <div
+        className={styles.FAQHeaderContents}
+        // Sticky Header
+      >
         <div className={styles.servicesSubTextContainer}>
           <div className={styles.blueBorder}></div>
           <p className={styles.servicesSubText}>FAQs</p>
@@ -82,7 +62,7 @@ const FAQ = () => {
           Got{" "}
           <span className={`${styles.servicesSpan} ${shadow_Font.className}`}>
             Questions?
-          </span>{" "}
+          </span>{" "}``
           we have the answers right
           <span className={`${styles.servicesSpan} ${shadow_Font.className}`}>
             {" "}
@@ -103,7 +83,7 @@ const FAQ = () => {
           <div
             key={index}
             ref={(el) => (faqRefs.current[index] = el)}
-            className={`${styles.FAQContainerContents} ${styles.hidden}`}
+            className={`${styles.FAQContainerContents}`}
           >
             <div
               className={styles.FAQContents}

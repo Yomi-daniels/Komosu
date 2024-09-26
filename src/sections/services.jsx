@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { useScroll, useTransform } from "framer-motion";
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./sections.module.css";
 import Servicesflex from "./servicesflex";
 import { Shadows_Into_Light } from "next/font/google";
+import { motion } from "framer-motion";
 
 const shadows = Shadows_Into_Light({
   subsets: ["latin"],
@@ -14,60 +16,24 @@ const shadows = Shadows_Into_Light({
 });
 
 const Services = () => {
-  const servicesTextContainerRef = useRef(null);
+  const ref = useRef(null);
 
-  useEffect(() => {
-    // Initial opacity and scale for page load
-    gsap.set(servicesTextContainerRef.current, {
-      opacity: 0,
-      scale: 0.9,
-      y: 50, // Start from below
-    });
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1.33 1"],
+  });
 
-    // Intersection Observer to detect visibility and apply scale changes
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          gsap.to(entry.target, {
-            opacity: 1,
-            scale: 1,
-            duration: 0.5,
-            ease: "power2.inOut",
-            y: 0,
-          });
-        } else {
-          gsap.to(entry.target, {
-            opacity: 0.2,
-            scale: 0.5,
-            duration: 0.5,
-            ease: "power2.out",
-            y: 50, // Start from below
-          });
-        }
-      },
-      {
-        threshold: 0.5, // Adjust this value as needed
-      }
-    );
-
-    // Observe the servicesTextContainer
-    if (servicesTextContainerRef.current) {
-      observer.observe(servicesTextContainerRef.current);
-    }
-
-    // Clean up observer on component unmount
-    return () => {
-      if (servicesTextContainerRef.current) {
-        observer.unobserve(servicesTextContainerRef.current);
-      }
-    };
-  }, []);
+  // Set a minimum scale value using useTransform
+  const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
   return (
     <section className={styles.serviceSection}>
-      <div
+      <motion.div
+        ref={ref}
+        style={{ scale, opacity }}
         className={styles.ServicesTextContainer}
-        ref={servicesTextContainerRef}
+        // ref={servicesTextContainerRef}
       >
         <div className={styles.servicesSubTextContainer}>
           <div className={styles.blueBorder}></div>
@@ -89,7 +55,7 @@ const Services = () => {
           focuses on building strong relationships with clients, ensuring that
           they have more time to concentrate on what truly matters to them.{" "}
         </p>
-      </div>
+      </motion.div>
       <Servicesflex />
       <div className={styles.servicesLastContentText}>
         <Link href="/about">

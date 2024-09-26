@@ -4,6 +4,7 @@
   position: relative;
   bottom: 0;
   background-color: var(--blueText);
+  margin-top: 6rem;
 }
 
 .FooterContainer {

@@ -18,11 +18,12 @@ const Offer = () => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"],
+    offset: ["-2.5 1.55", "1 1"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [0.4, 1]);
+  // Set a minimum scale value using useTransform
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   const [activeSection, setActiveSection] = useState("webDesign");
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -178,19 +179,10 @@ const Offer = () => {
                   variants={cardVariants}
                 >
                   <div
-                    className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
+                    className={`${styles.webDesignCard} ${styles.webDesignCardfirst}`}
                   >
                     <Image
-                      src="/New Macbook Pro Mockup Front View.png"
-                      fill
-                      objectFit="contain"
-                    />
-                  </div>
-                  <div
-                    className={`${styles.webDesignCard} ${styles.webDesignCard2}`}
-                  >
-                    <Image
-                      src="/Pixel 8 Pro Mockup Obsidian.png"
+                      src="/Frame 1618868652.png"
                       fill
                       objectFit="contain"
                     />

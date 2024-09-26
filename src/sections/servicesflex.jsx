@@ -9,7 +9,7 @@ const Servicesflex = () => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"],
+    offset: ["0 1", "1 1"],
   });
 
   // Set a minimum scale value using useTransform

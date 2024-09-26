@@ -10,7 +10,7 @@
   background: linear-gradient(269deg, #fdf9e6 44.62%, #fff 91.54%);
   position: relative;
   max-width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   /* justify-content: flex-end; */
   align-items: flex-end;
@@ -75,13 +75,14 @@
 }
 .leadGenaImageContainer {
   position: relative;
+  margin-top: 6rem;
 }
 
 .leadmanImg {
   position: relative;
   width: 914px;
   height: 674px;
-}
+} 
 
 .leadimgstat {
   position: absolute;
