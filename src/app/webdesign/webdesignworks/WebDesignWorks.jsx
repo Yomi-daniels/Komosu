@@ -2,7 +2,7 @@ import webstyle from "../webdesign.module.css";
 import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
 import WebDesignPricingPlans from "../webdesignpricing/WebDesignPricingPlans";
-import Link from "next/link";
+// import Link from "next/link";
 import GetStarted from "../components/GetStarted";
 
 const shadowsFont = Shadows_Into_Light({
