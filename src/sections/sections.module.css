@@ -104,8 +104,9 @@
     0px -46px 46px 0px rgba(28, 24, 251, 0.09),
     0px -11px 25px 0px rgba(28, 24, 251, 0.1);
   backdrop-filter: blur(50px);
-
   position: relative;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .heroImgBg video {
@@ -159,6 +160,8 @@
   display: flex;
   align-items: flex-end;
   gap: 2em;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
 .buttonImageBg {

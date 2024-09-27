@@ -1,8 +1,9 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./sections.module.css";
 import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
+import { motion, useInView, useAnimation } from "framer-motion"; // Import Framer Motion
 
 const shadow_Font = Shadows_Into_Light({
   subsets: ["latin"],
@@ -12,9 +13,30 @@ const shadow_Font = Shadows_Into_Light({
 const FAQ = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
   const faqRefs = useRef([]);
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Framer Motion Hooks
+  const faqSectionRef = useRef(null);
+  const inView = useInView(faqSectionRef, { once: true, amount: 0.5 });
+  const animationControls = useAnimation();
 
   const toggleFAQ = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
+  };
+
+  // Trigger animation when section is in view
+  useEffect(() => {
+    if (inView) {
+      animationControls.start("visible");
+    } else {
+      animationControls.start("hidden");
+    }
+  }, [inView, animationControls]);
+
+  // Sticky scroll effect (Framer Motion for fade-in/out)
+  const faqVariants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
   const faqs = [
@@ -41,19 +63,15 @@ const FAQ = () => {
   ];
 
   return (
-    <section
-      className={styles.FAQSection}
-      style={{
-        position: "sticky",
-        top: "0",
-        zIndex: "2",
-        backgroundColor: "#fff",
-      }}
+    <motion.section
+      ref={faqSectionRef}
+      className={`${styles.FAQSection}`}
+      initial="hidden"
+      animate={animationControls}
+      variants={faqVariants}
+      style={{ position: "sticky", top: "0", zIndex: "2" }} // Make FAQ section sticky
     >
-      <div
-        className={styles.FAQHeaderContents}
-        // Sticky Header
-      >
+      <div className={styles.FAQHeaderContents}>
         <div className={styles.servicesSubTextContainer}>
           <div className={styles.blueBorder}></div>
           <p className={styles.servicesSubText}>FAQs</p>
@@ -62,7 +80,7 @@ const FAQ = () => {
           Got{" "}
           <span className={`${styles.servicesSpan} ${shadow_Font.className}`}>
             Questions?
-          </span>{" "}``
+          </span>{" "}
           we have the answers right
           <span className={`${styles.servicesSpan} ${shadow_Font.className}`}>
             {" "}
@@ -80,10 +98,13 @@ const FAQ = () => {
           />
         </div>
         {faqs.map((faq, index) => (
-          <div
+          <motion.div
             key={index}
             ref={(el) => (faqRefs.current[index] = el)}
-            className={`${styles.FAQContainerContents}`}
+            className={`${styles.FAQContainerContents} ${styles.hidden}`}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: index * 0.1 }} // Animate FAQs as they come into view
           >
             <div
               className={styles.FAQContents}
@@ -107,7 +128,7 @@ const FAQ = () => {
             >
               <p>{faq.answer}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
         <div className={styles.FAQline}>
           <Image
@@ -118,7 +139,7 @@ const FAQ = () => {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

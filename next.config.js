@@ -4,6 +4,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  experimental: {
+    appDir: false,
+  },
 };
 export default withContentlayer({
   nextConfig,

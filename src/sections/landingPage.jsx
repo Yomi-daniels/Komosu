@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./sections.module.css";
 import { Shadows_Into_Light } from "next/font/google";
+import Magnet from "@/Magnet";
 
 const shadowFont = Shadows_Into_Light({
   subsets: ["latin"],
@@ -14,7 +15,9 @@ const shadowFont = Shadows_Into_Light({
 const LandingPage = () => {
   const heroHeaderRef = useRef(null);
   const heroSubTextRef = useRef(null);
-  const [isInView, setIsInView] = useState(true);
+  const heroBtnRef = useRef(null);
+  const videoRef = useRef(null);
+  // const [isInView, setIsInView] = useState(true);
 
   useEffect(() => {
     // GSAP animation for initial load
@@ -29,6 +32,17 @@ const LandingPage = () => {
       { x: "100%", opacity: 0 },
       { x: "0%", opacity: 1, duration: 1.5, ease: "power2.out" }
     );
+
+    gsap.fromTo(
+      heroBtnRef.current,
+      {x: "100%", opacity: 0},
+      {x: '0', opacity: 1, duration:1, ease:"power2.out"}
+    )
+
+    gsap.fromTo(videoRef.current,
+      {y:"100%", opacity:0 },
+      {y: "0", opacity: 1,duration:2 ,ease:"power2.inOut"}
+    )
   }, []);
 
   useEffect(() => {
@@ -64,6 +78,10 @@ const LandingPage = () => {
       observer.observe(heroSubTextRef.current);
     }
 
+    if (heroBtnRef.current) {
+      observer.observe(heroBtnRef.current);
+    }
+
     // Clean up observer on component unmount
     return () => {
       if (heroHeaderRef.current) {
@@ -71,6 +89,9 @@ const LandingPage = () => {
       }
       if (heroSubTextRef.current) {
         observer.unobserve(heroSubTextRef.current);
+      }
+      if (heroBtnRef.current) {
+        observer.unobserve(heroBtnRef.current);
       }
     };
   }, []);
@@ -100,7 +121,9 @@ const LandingPage = () => {
                 generation.
               </p>
             </div>
-            <div className={styles.landingBtns}>
+            <div className={styles.landingBtns} 
+            ref={heroBtnRef}
+            >
            
       <Link href="/request-demo">
         <button  className={styles.headerGetStarted}>Get Started</button>
@@ -116,13 +139,15 @@ const LandingPage = () => {
               </Link>
             </div>
           </div>
-  
-       <div className={styles.heroImgBg}>
+      <Magnet
+      padding={50} disabled={false}>
+       <div className={styles.heroImgBg}
+       ref={videoRef}>
             <video loop autoPlay muted>
               <source src="/Website Vid.mp4" type="video/mp4" />
             </video>
           </div>
-
+    </Magnet>
         
         </div>
       </section>
