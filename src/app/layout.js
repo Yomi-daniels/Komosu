@@ -1,6 +1,8 @@
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import MyScript from "@/Script";
+
 // import { Montserrat } from "next/font/google";
 // const montserrat = Montserrat({
 //   subsets: ["latin"],
@@ -62,11 +64,12 @@ export default function RootLayout({ children }) {
           <main className="content">{children}</main>
           <Footer />
         </div>
-        <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+        {/* <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
         <script
           src="https://mediafiles.botpress.cloud/935ec3d1-76db-4b99-ae26-db94d2a39025/webchat/config.js"
           defer
-        ></script>
+        ></script> */}
+        <MyScript />
       </body>
     </html>
   );
