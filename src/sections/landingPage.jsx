@@ -139,15 +139,14 @@ const LandingPage = () => {
               </Link>
             </div>
           </div>
-      <Magnet
-      padding={50} disabled={false}>
+   
        <div className={styles.heroImgBg}
        ref={videoRef}>
             <video loop autoPlay muted>
               <source src="/Website Vid.mp4" type="video/mp4" />
             </video>
           </div>
-    </Magnet>
+  
         
         </div>
       </section>
