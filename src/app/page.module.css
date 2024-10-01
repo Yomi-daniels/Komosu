@@ -16,7 +16,7 @@
   height: 100vh;
   width: 100vw;
   background-color: var(--blueText);
-  overflow: hidden;
+  overflow: hidden !important;
   z-index: 1000;
 }
 
@@ -162,6 +162,6 @@
 
 @media (max-width: 450px) {
   .landingpagesection {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 }

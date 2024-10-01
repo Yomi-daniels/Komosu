@@ -68,6 +68,15 @@
 
 /* NAVBAR MOBILE SCREEN */
 
+@media (max-width: 1164px) {
+  .container {
+    max-width: 1100px;
+  }
+  .parentContainer {
+    padding: 0 2rem;
+  }
+}
+
 @media (max-width: 450px) {
   .logoContainer {
     position: relative;
