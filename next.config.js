@@ -1,4 +1,5 @@
 import { withContentlayer } from "next-contentlayer";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
@@ -8,9 +9,22 @@ const nextConfig = {
     appDir: false,
   },
 };
-export default withContentlayer({
-  nextConfig,
-});
+
+export default withContentlayer(nextConfig);
+
+// import { withContentlayer } from "next-contentlayer";
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   eslint: {
+//     ignoreDuringBuilds: true,
+//   },
+//   experimental: {
+//     appDir: false,
+//   },
+// };
+// export default withContentlayer({
+//   nextConfig,
+// });
 // /** @type {import('next').NextConfig} */
 // const nextConfig = {
 //   eslint: {
