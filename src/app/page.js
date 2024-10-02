@@ -15,16 +15,17 @@ const Home = () => {
       <section className={styles.landingPage}>
         <LandingPage />
       </section>
-      <section className={styles.ServicesPage}>
-        <Services />
-        <section className={styles.Servisesflex}></section>
-      </section>
-      <section className={styles.VideoShowcasePage}>
-        <VideoShowcase />
-      </section>
       <section className={styles.OfferPage}>
         <Offer />
       </section>
+      {/* <section className={styles.ServicesPage}>
+        <Services />
+        <section className={styles.Servisesflex}></section>
+      </section> */}
+      <section className={styles.VideoShowcasePage}>
+        <VideoShowcase />
+      </section>
+
       <section className={styles.OfferAnimationPage}>
         <OfferAnimation />
       </section>

@@ -1,6 +1,5 @@
 "use client";
 import casestyles from "./casestudy.module.css";
-
 import DigitalTransformationSection from "./digitalTransformation/DigitalTransformationSection";
 import CaseStudyContactLink from "./casestudycontact/CaseStudyContactLink";
 import CaseStudyHeader from "./caseStudyHeader/CaseStudyHeader";
