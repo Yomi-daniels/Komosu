@@ -20,7 +20,6 @@ const BlogPostPage = ({ params }) => {
   if (!post) {
     notFound(); // Render a 404 page if the post is not found
   }
-  console.log("post", post[1]);
   const MDXContent = useMDXComponent(post.body.code);
 
   return (
