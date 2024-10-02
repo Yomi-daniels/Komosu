@@ -30,7 +30,8 @@
     "**/*.ts",
     "**/*.tsx",
     "src",
-    "next.config.js"
+    "next.config.js",
+    ".contentlayer/generated"
   ],
   "exclude": ["node_modules"]
 }
