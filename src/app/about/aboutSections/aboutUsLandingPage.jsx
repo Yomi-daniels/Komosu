@@ -1,26 +1,42 @@
-// import aboutstyles from "./aboutSection.module.css";
-// import aboutstyles from "@/app/about/aboutSections/aboutSection.module.css";
-// import NavBarstyles from "@/app/components/navbar/navbar.module.css";
+// Import necessary packages and styles
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap"; // Import GSAP for animations
 import { Shadows_Into_Light } from "next/font/google";
 import aboutstyles from "../aboutSection.module.css";
-const shadows = Shadows_Into_Light ({
+
+// Define the font from Google Fonts
+const shadows = Shadows_Into_Light({
   subsets: ['latin'],
   weight: ['400']
-})
+});
+
 const AboutUsLandingPage = () => {
-  return <section className={aboutstyles.aboutUsLandingSection}>
-    <div className={aboutstyles.aboutPageHeader}>
-    <h2>
-            {" "}
-            Get to know us{" "}
-            <span className={`${aboutstyles.aboutUsSpan} ${shadows.className}`}>
-             Better
-            </span>{" "}
-        
-          </h2>
-      <p>We give your business the push it needs</p>
-    </div>
-  </section>;
+  // Create a ref to the header to animate it
+  const headerRef = useRef(null);
+
+  useEffect(() => {
+    // GSAP animation
+    gsap.fromTo(
+      headerRef.current,
+      { x: -100, opacity: 0 }, // Start position (left and invisible)
+      { x: 0, opacity: 1, duration: 1 } // End position (normal and visible)
+    );
+  }, []);
+
+  return (
+    <section className={aboutstyles.aboutUsLandingSection}>
+      <div className={aboutstyles.aboutPageHeader}
+      ref={headerRef}>
+        <h2 > {/* Attach the ref here */}
+          Get to know us{" "}
+          <span className={`${aboutstyles.aboutUsSpan} ${shadows.className}`}>
+            Better
+          </span>
+        </h2>
+        <p>We give your business the push it needs</p>
+      </div>
+    </section>
+  );
 };
 
 export default AboutUsLandingPage;
