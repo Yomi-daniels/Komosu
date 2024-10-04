@@ -1,23 +1,78 @@
 import aboutstyles from "../aboutSection.module.css";
 import Image from "next/image";
+import { useRef, useEffect } from "react";
+import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
+import gsap from "gsap";
+
 const WhoareweSection = () => {
+  const whoAreWeRef = useRef(null);
+  const whoAreWeHeaderP = useRef(null);
+  const image1Ref = useRef(null);
+  const image2Ref = useRef(null);
+  const imageContainerRef = useRef(null); // Reference for the image container
+
+  // Function to handle animations
+  const animateImages = () => {
+    gsap.fromTo(
+      image1Ref.current,
+      { x: "-30%", opacity: 0 }, // Start completely off the left
+      { x: "0%", opacity: 1, duration: 0.5, ease: "power2.in" } // End at its original position
+    );
+
+    gsap.fromTo(
+      image2Ref.current,
+      { x: "30%", opacity: 0 }, // Start completely off the right
+      { x: "0%", opacity: 1, duration: 0.5, ease: "power2.in" } // End at its original position
+    );
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateImages(); // Trigger animation when the image container is in view
+            observer.unobserve(entry.target); // Stop observing after animation
+          }
+        });
+      },
+      { threshold: 0.1 } // Adjust threshold for when to trigger
+    );
+
+    const currentRef = imageContainerRef.current; // Targeting the image container
+    if (currentRef) {
+      observer.observe(currentRef); // Start observing the image container
+    }
+
+    // Cleanup function to unobserve on unmount
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
+  const words = `Komosu Network is committed to revolutionizing the automotive industry by providing innovative solutions.`;
+
   return (
     <section className={aboutstyles.Whoarewesection}>
       <div className={aboutstyles.whoareweHeader}>
-        <h4>Who are we?</h4>
+        <h4 ref={whoAreWeRef}>Who are we?</h4>
         <h2>
-          Komosu Network is committed to revolutionizing the automotive industry
-          by providing innovative solutions.{" "}
+          <TextGenerateEffect words={words} />
         </h2>
-        <p>
-          our dedicated team of experts focuses on building strong relationships
+        <p ref={whoAreWeHeaderP}>
+          Our dedicated team of experts focuses on building strong relationships
           with clients, ensuring that they have more time to concentrate on what
           truly matters to them. We value hearing about their experiences and
           strive to support their journey every step of the way.
         </p>
       </div>
-      <div className={aboutstyles.whoareweImageContainer}>
-        <div className={aboutstyles.whoareWeImg}>
+      <div
+        ref={imageContainerRef} // Set the ref for the image container
+        className={aboutstyles.whoareweImageContainer}
+      >
+        <div ref={image1Ref} className={aboutstyles.whoareWeImg}>
           <Image
             src="/Rectangle 14 (1).png"
             alt="who are we image"
@@ -25,7 +80,7 @@ const WhoareweSection = () => {
             objectFit="cover"
           />
         </div>
-        <div className={aboutstyles.whoareWeImg2}>
+        <div ref={image2Ref} className={aboutstyles.whoareWeImg2}>
           <Image
             src="/Rectangle 16 (1).png"
             alt="who are we image"
