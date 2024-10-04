@@ -57,6 +57,8 @@ module.exports = {
   },
 
   plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
     addVariablesForColors,
     function ({ matchUtilities, theme }) {
       matchUtilities(

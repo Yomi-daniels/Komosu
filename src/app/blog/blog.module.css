@@ -129,7 +129,6 @@
 }
 
 .blogImage {
-  border-radius: 8px;
   width: 100vw;
   height: 100%;
   aspect-ratio: 16/9;
@@ -163,11 +162,14 @@
 }
 
 .slugArticleTitle {
-  font-size: 24px;
+  font-size: 42px;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  font-weight: 700;
   color: #fff;
 }
 
-.slug
 /* End of Blog/[slug] */
 .articleDescription {
   font-size: 16px;
@@ -206,4 +208,30 @@
 
 .readMoreButton svg {
   margin-left: 5px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.125rem 3rem 0 3rem; /* Adjust padding as needed */
+  border-radius: 9999px; /* Fully rounded corners */
+  text-transform: capitalize;
+  font-weight: 500; /* Semi-bold */
+  border: 1px solid #333;
+  background-color: #0500ff;
+  transition: transform 0.2s ease;
+  font-size: 0.875rem; /* 14px */
+}
+
+.tag:hover {
+  transform: scale(1.05);
+}
+
+.tagSmall {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.875rem; /* 14px */
+}
+
+.tagMedium {
+  padding: 0.75rem 2.5rem;
+  font-size: 1rem; /* 16px */
 }

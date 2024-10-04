@@ -6,6 +6,7 @@ import { useState } from "react";
 import { supabase } from "../../../lib/supabaseClient";
 import { schema } from "./validationSchema";
 import InputField from "../Fields/InputField";
+/** @ts-ignore */
 import SelectField from "../Fields/SelectField";
 import Modal from "../modal/modal";
 
