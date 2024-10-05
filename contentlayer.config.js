@@ -1,7 +1,7 @@
 // contentlayer.config.js
 import { defineDocumentType, makeSource } from "@contentlayer/source-files";
 import readingTime from "reading-time";
-
+import GithubSlugger from "github-slugger";
 export const Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `**/**/*.mdx`,
@@ -33,6 +33,27 @@ export const Post = defineDocumentType(() => ({
     readingTime: {
       type: "json",
       resolve: (doc) => readingTime(doc.body.raw),
+    },
+    toc: {
+      type: "json",
+      resolve: async (doc) => {
+        const regExp = /\n(?<flag>#{1,6})\s+(?<content>.+)/g;
+        const slugger = new GithubSlugger();
+        const headings = Array.from(doc.body.raw.matchAll(regExp)).map(
+          ({ groups }) => {
+            const flag = groups?.flag;
+            const content = groups?.content;
+
+            return {
+              level:
+                flag?.length == 1 ? "one" : flag?.length == 2 ? "two" : "three",
+              text: content,
+              slug: content ? slugger.slug(content) : undefined,
+            };
+          }
+        );
+        return headings;
+      },
     },
   },
 }));
