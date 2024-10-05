@@ -393,6 +393,10 @@
     height: 300px;
   }
 
+  .CaseStudyPage {
+    margin-top: 9rem;
+  }
+
   .topimgabsolute,
   .bottomimgabsolute {
     display: none;
