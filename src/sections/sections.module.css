@@ -13,6 +13,7 @@
 }
 .heroSection {
   position: relative;
+  top: 8em;
 }
 
 .HeroTextContainer {
@@ -65,14 +66,16 @@
 .HeaderContent {
   color: #000000;
   /* z-index: 100; */
-  max-width: 480px;
+  /* max-width: 480px; */
+  max-width: 400px;
+  text-wrap: pretty;
   /* margin-right: 6rem; */
 }
 
 .heroSubText {
   color: #020059;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -154,11 +157,14 @@
   justify-content: center;
   align-items: center;
   border-radius: 36px;
+  letter-spacing: 0.1cap;
+  font-size: 18px;
 }
 
 .landingBtns {
   display: flex;
   align-items: flex-end;
+  margin-top: 1em;
   gap: 2em;
   opacity: 0;
   transition: opacity 1s ease;
@@ -235,7 +241,7 @@
     /* text-align: right; */
     width: 100%;
     margin-top: 0rem;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
