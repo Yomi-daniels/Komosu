@@ -4,6 +4,8 @@ import Image from "next/image";
 import { Shadows_Into_Light, Montserrat } from "next/font/google";
 import TickImg from "../webdesign/components/Tickimg";
 import DemoForm from "../components/demoForm/demoForm";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -16,11 +18,33 @@ const shadowsFont = Shadows_Into_Light({
 
 const RequestDemoPages = () => {
   const plans = ["Web Design", "AI Solutions", "Content Marketing"];
+  const demoTextwrapperRef = useRef(null);
+  const demoFormRef = useRef(null);
 
+  useEffect(() => {
+    if (demoTextwrapperRef.current) {
+      gsap.fromTo(
+        demoTextwrapperRef.current,
+        { x: -300, opacity: 0 },
+        { x: 0, opacity: 1, duration: 1.2, ease: "power3.out" }
+      );
+    }
+
+    if (demoFormRef.current) {
+      gsap.fromTo(
+        demoFormRef.current,
+        {
+          y: 300,
+          opacity: 0,
+        },
+        { y: 0, opacity: 1, duration: 1.2, ease: "power3.out" }
+      );
+    }
+  }, []);
   return (
     <section className={styles.requestDemosection}>
       <div className={styles.requestDemocontainer}>
-        <div className={styles.demoTextwrapper}>
+        <div className={styles.demoTextwrapper} ref={demoTextwrapperRef}>
           <div className={styles.textheader}>
             <div className={styles.headerimgbg}>
               <div className={styles.headerimg}>
@@ -53,7 +77,7 @@ const RequestDemoPages = () => {
             </div>
           </div>
         </div>
-        <div className={styles.demoForm}>
+        <div className={styles.demoForm} ref={demoFormRef}>
           <DemoForm />
         </div>
       </div>

@@ -1,7 +1,10 @@
+"use client";
 import ContactForm from "../components/contactForm/contactForm";
 import { supabase } from "../../lib/supabaseClient.js";
 import styles from "./contact.module.css";
 import { Shadows_Into_Light } from "next/font/google";
+import { useRef, useEffect } from "react";
+import gsap from "gsap";
 
 const shadows = Shadows_Into_Light({
   subsets: ["latin"],
@@ -9,9 +12,30 @@ const shadows = Shadows_Into_Light({
 });
 
 const ContactPage = () => {
+  const contactTextRef = useRef(null);
+  const contactFormRef = useRef(null);
+
+  useEffect(() => {
+    if (contactTextRef.current) {
+      gsap.fromTo(
+        contactTextRef.current,
+        { x: -300, opacity: 0 }, // Start from right with opacity 0
+        { x: 0, opacity: 1, duration: 1.2, ease: "power3.out" } // End at normal position with opacity 1
+      );
+    }
+
+    if (contactFormRef.current) {
+      gsap.fromTo(
+        contactFormRef.current,
+        { y: 300, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1.2, ease: "power3Out" }
+      );
+    }
+  }, []);
+
   return (
     <section className={styles.contactSection}>
-      <div className={styles.ContactText}>
+      <div className={styles.ContactText} ref={contactTextRef}>
         <div className={styles.contactHeader}>
           <h2>
             Get in{" "}
@@ -48,7 +72,7 @@ const ContactPage = () => {
           </a>
         </div>
       </div>
-      <div className={styles.contactForm}>
+      <div className={styles.contactForm} ref={contactFormRef}>
         <ContactForm />
       </div>
     </section>

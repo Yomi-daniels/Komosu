@@ -1,17 +1,24 @@
 "use client";
 
-import styles from "./contactForm.module.css";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { schema } from "./validationSchema";
-import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import { supabase } from "../../../lib/supabaseClient";
+import { schema } from "./validationSchema";
 import InputField from "../Fields/InputField";
 import Modal from "../modal/modal";
+import styles from "./contactForm.module.css";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionStatus, setSubmissionStatus] = useState(null);
+
+  // Intersection observer for animation when form comes into view
+  const { ref: formRef, inView: formInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   const {
     register,
@@ -23,34 +30,29 @@ const ContactForm = () => {
   });
 
   const onSubmit = async (formData) => {
-    console.log("click");
     setIsSubmitting(true);
     try {
-      console.log("Form Data: ", formData);
-      const { firstName, lastName, workEmail, message, phoneNumber } = formData;
+      const { firstName, lastName, workEmail, phoneNumber, message } = formData;
 
-      const { data, error } = await supabase.from("contact_form").insert([
+      const { error } = await supabase.from("contact_form").insert([
         {
-          phone_number: phoneNumber,
           first_name: firstName,
           last_name: lastName,
           email: workEmail,
-          message: message,
+          phone_number: phoneNumber,
+          message,
         },
       ]);
 
       if (error) throw error;
-      console.log("Data inserted successfully: ", data);
+
       reset();
       setSubmissionStatus("success");
     } catch (error) {
-      console.error("Error inserting data into table: ", error);
       setSubmissionStatus("error");
     } finally {
       setIsSubmitting(false);
-      setTimeout(() => {
-        setSubmissionStatus("");
-      }, 2000);
+      setTimeout(() => setSubmissionStatus(null), 2000);
     }
   };
 
@@ -62,7 +64,12 @@ const ContactForm = () => {
           submissionStatus={submissionStatus}
         />
       ) : null}
-      <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+
+      <form
+        ref={formRef}
+        onSubmit={handleSubmit(onSubmit)}
+        className={`${styles.form} ${formInView ? styles.formInView : ""}`}
+      >
         <div className={styles.fullname}>
           <InputField
             label="First Name *"
@@ -79,6 +86,7 @@ const ContactForm = () => {
             placeholder="Last Name"
           />
         </div>
+
         <InputField
           label="Email"
           name="workEmail"
@@ -87,6 +95,7 @@ const ContactForm = () => {
           placeholder="Work Email"
           type="email"
         />
+
         <InputField
           label="Phone Number *"
           name="phoneNumber"
@@ -95,6 +104,7 @@ const ContactForm = () => {
           placeholder="Phone Number"
           type="tel"
         />
+
         <div className={styles.inputContainer}>
           <label htmlFor="message">Message *</label>
           <textarea
@@ -110,10 +120,12 @@ const ContactForm = () => {
             <p className={styles.errorText}>{errors.message.message}</p>
           )}
         </div>
+
         <button type="submit" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Send message"}
         </button>
       </form>
+
       {submissionStatus === "success" && <p>Form submitted successfully!</p>}
       {submissionStatus === "error" && (
         <p>There was an error submitting the form.</p>
