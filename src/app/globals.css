@@ -68,6 +68,7 @@ html,
 body {
   height: 100%;
   font-family: var(--text-Font-Light);
+  overflow-x: hidden;
 }
 
 /* Make sure the layout spans the full viewport height */

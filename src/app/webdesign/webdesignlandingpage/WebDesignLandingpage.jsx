@@ -4,14 +4,37 @@ import Image from "next/image";
 import LandingPageButtons from "../components/LandingPageButtons";
 import { ScrollParallax } from "react-just-parallax";
 import { Montserrat } from "next/font/google";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import Magnet from "@/Magnet";
+import gsap from "gsap";
+import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["700"],
 });
 const WebDesignLandingpage = () => {
+  const webdesignTextContainerRef = useRef(null);
   const parallaxRef = useRef(null);
+  useEffect(() => {
+    if (webdesignTextContainerRef.current)
+      gsap.fromTo(
+        webdesignTextContainerRef.current,
+        {
+          x: -300,
+          opacity: 0,
+        },
+        { x: 0, opacity: 1, duration: 1.2, ease: "power3.out" }
+      );
+    if (parallaxRef.current)
+      gsap.fromTo(
+        parallaxRef.current,
+        { y: 300, opacity: 0 },
+        { y: 0, opacity: 1, duration: 2, ease: "power3.out" }
+      );
+  }, []);
+
+  const words = `Driving Dealership Success Through \n Digital Evolution`;
+
   return (
     <section className={webstyle.webdesignLandingPage}>
       <div className={webstyle.vectorImagetop}>
@@ -20,6 +43,7 @@ const WebDesignLandingpage = () => {
       <div className={webstyle.webdesignLandingPageContainer}>
         <div
           className={`${webstyle.webdesignTextContainer} ${montserrat.className}`}
+          ref={webdesignTextContainerRef}
         >
           <div className={webstyle.headerContent}>
             <div className={webstyle.headerimg}>
@@ -28,8 +52,7 @@ const WebDesignLandingpage = () => {
             <h4>WEB DESIGN</h4>
           </div>
           <h1>
-            Driving Dealership Success Through <br />
-            Digital Evolution
+            <TextGenerateEffect words={words} />
           </h1>
           <p>
             Welcome to Komosu Network, where we redefine automotive web design
