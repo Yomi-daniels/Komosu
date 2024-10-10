@@ -8,13 +8,16 @@ import { useEffect, useRef } from "react";
 import Magnet from "@/Magnet";
 import gsap from "gsap";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["700"],
 });
+
 const WebDesignLandingpage = () => {
   const webdesignTextContainerRef = useRef(null);
   const parallaxRef = useRef(null);
+
   useEffect(() => {
     if (webdesignTextContainerRef.current)
       gsap.fromTo(
@@ -33,7 +36,8 @@ const WebDesignLandingpage = () => {
       );
   }, []);
 
-  const words = `Driving Dealership Success Through \n Digital Evolution`;
+  // Renaming `words` to `message`
+  const message = `Driving Dealership Success Through \n Digital Evolution`;
 
   return (
     <section className={webstyle.webdesignLandingPage}>
@@ -51,15 +55,19 @@ const WebDesignLandingpage = () => {
             </div>
             <h4>WEB DESIGN</h4>
           </div>
-          <h1>
-            <TextGenerateEffect words={words} />
+          {/* Using `message` instead of `words` */}
+          <h1 className="text-sm">
+            <TextGenerateEffect
+              words={message}
+              messageClass="font-[32px] max-sm:text-[30px]"
+            />
           </h1>
           <p>
             Welcome to Komosu Network, where we redefine automotive web design
             with a focus on digital transformation. Our services are crafted to
             elevate your dealership's online presence, enhance customer
             engagement, and streamline operations with integrated digital
-            solutions
+            solutions.
           </p>
           <LandingPageButtons />
         </div>

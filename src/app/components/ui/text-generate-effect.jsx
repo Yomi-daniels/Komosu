@@ -5,16 +5,16 @@ import { cn } from "@/lib/utils";
 
 export const TextGenerateEffect = ({
   words,
-  className,
+  className, // This can be for general styling
+  messageClass, // New prop for styling the message text
   filter = true,
   duration = 0.5,
 }) => {
   const [scope, animate] = useAnimate();
-  // Ensure words is an array or empty string
   const wordsArray = words ? words.split(" ") : [];
 
   useEffect(() => {
-    if (wordsArray.length === 0) return; // Prevent animation if there are no words
+    if (wordsArray.length === 0) return;
     animate(
       "span",
       {
@@ -31,19 +31,17 @@ export const TextGenerateEffect = ({
   const renderWords = () => {
     return (
       <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
-            <motion.span
-              key={word + idx}
-              className="opacity-0"
-              style={{
-                filter: filter ? "blur(10px)" : "none",
-              }}
-            >
-              {word}{" "}
-            </motion.span>
-          );
-        })}
+        {wordsArray.map((word, idx) => (
+          <motion.span
+            key={word + idx}
+            className={`opacity-0 ${messageClass}`} // Apply the messageClass here
+            style={{
+              filter: filter ? "blur(10px)" : "none",
+            }}
+          >
+            {word}{" "}
+          </motion.span>
+        ))}
       </motion.div>
     );
   };
