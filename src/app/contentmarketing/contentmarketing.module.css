@@ -53,7 +53,7 @@
 }
 
 .contentText h2 {
-  font-size: 32px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 38.4px */
@@ -101,7 +101,7 @@
 
 @media (max-width: 450px) {
   .Contentmarketingpage {
-    margin-top: 3rem;
+    margin-top: 0rem;
   }
 
   .contentSection {
@@ -124,6 +124,7 @@
     align-items: flex-start;
     justify-content: center;
     text-align: left;
+    margin-top: 3rem;
   }
 
   .contentImages {

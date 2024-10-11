@@ -165,7 +165,7 @@
     height: 130vh;
     position: absolute;
     top: -3rem;
-    left: -3%;
+    left: 25%;
     background-color: rgb(255, 255, 255);
     transform: translateX(100%);
     transition: transform 0.5s ease-in-out;
@@ -173,7 +173,9 @@
   }
 
   .mobileContainerOpen {
+    max-width: 140vw;
     transform: translateX(0);
+    left: -3%;
   }
 
   .mobileContainer .mobileLinks {
