@@ -3,6 +3,7 @@
   height: auto;
   /* border: 2px solid red; */
   margin-top: 0;
+  overflow-x: hidden;
 }
 
 /* AI SOLUTIONS LANDING PAGE SECTION */
