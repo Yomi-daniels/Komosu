@@ -203,6 +203,8 @@
 @media (max-width: 450px) {
   .contentservicessection {
     padding: 0 1rem;
+    margin-inline: auto;
+    position: relative;
   }
   .contentservicecontent {
     align-items: flex-start;
@@ -236,7 +238,7 @@
   }
 
   .contentservicesImg {
-    width: 350px;
+    width: 100%;
     height: 350px;
   }
 
