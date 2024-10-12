@@ -15,7 +15,7 @@ const leadGenServices = () => {
   const leadGenServicesContentText2Ref = useRef(null);
   const leadGenServicesContentImag1eRef = useRef(null);
   const leadGenServicesContentImag2eRef = useRef(null);
-  const servicesContactSectioneRef = useRef(null);
+  const servicesContactSectionRef = useRef(null);
 
   useEffect(() => {
     //Animate leadGenServicesContentText1Ref from the left
@@ -83,9 +83,9 @@ const leadGenServices = () => {
       }
     );
 
-    if (servicesContactSectioneRef.current)
+    if (servicesContactSectionRef.current)
       gsap.fromTo(
-        servicesContactSectioneRef.current,
+        servicesContactSectionRef.current,
         { y: 200, opacity: 0 },
         {
           y: 0,
@@ -93,7 +93,7 @@ const leadGenServices = () => {
           duration: 1,
           ease: "power3.out",
           scrollTrigger: {
-            trigger: servicesContactSectioneRef.current,
+            trigger: servicesContactSectionRef.current,
             start: "top 100%", //start animation when top of the element is 100% from the top of the viewport
             once: true, //only animate once
           },
@@ -159,7 +159,7 @@ const leadGenServices = () => {
       </div>
       <section
         className={leadStyles.servicesContactSection}
-        ref={servicesContactSectioneRef}
+        ref={servicesContactSectionRef}
       >
         <div className={leadStyles.servicesContactContainer}>
           <div className={leadStyles.servicesContactImgtop}>
