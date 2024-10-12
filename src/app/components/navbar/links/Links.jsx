@@ -42,17 +42,16 @@ const links = [
   },
 ];
 
-
 const Links = () => {
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
 
   const handleServiceClick = () => {
-    setServicesOpen(prev => !prev);
+    setServicesOpen((prev) => !prev);
   };
 
   const handleMenuToggle = () => {
-    setOpen(prev => !prev);
+    setOpen((prev) => !prev);
   };
 
   const handleLinkClick = () => {
@@ -86,9 +85,15 @@ const Links = () => {
                     />
                   </button> */}
                 </div>
-                <div className={`${styles.subLinks} ${servicesOpen ? styles.subLinksOpen : ''}`}>
+                <div
+                  className={`${styles.subLinks} ${servicesOpen ? styles.subLinksOpen : ""}`}
+                >
                   {link.subLinks.map((subLink) => (
-                    <NavLink item={subLink} key={subLink.title} onClick={handleSubLinkClick} />
+                    <NavLink
+                      item={subLink}
+                      key={subLink.title}
+                      onClick={handleSubLinkClick}
+                    />
                   ))}
                 </div>
               </>
@@ -98,17 +103,22 @@ const Links = () => {
           </div>
         ))}
       </div>
-      <button
-        onClick={handleMenuToggle}
-        className={styles.menuButton}
-      >
+      <button onClick={handleMenuToggle} className={styles.menuButton}>
         {open ? (
-          <Image src="/closebtn.svg" alt="close" width={24} height={24} className={styles.closeButton} />
+          <Image
+            src="/closebtn.svg"
+            alt="close"
+            width={24}
+            height={24}
+            className={styles.closeButton}
+          />
         ) : (
           <Image src="/openbtn.svg" alt="menu" width={24} height={24} />
         )}
       </button>
-      <div className={`${styles.mobileContainer} ${open ? styles.mobileContainerOpen : ''}`}>
+      <div
+        className={`${styles.mobileContainer} ${open ? styles.mobileContainerOpen : ""}`}
+      >
         <div className={styles.mobileLinks}>
           {links.map((link) => (
             <div key={link.title} className={styles.linkItem}>
@@ -130,9 +140,15 @@ const Links = () => {
                       </button>
                     </div>
                   </div>
-                  <div className={`${styles.servicesLinks} ${servicesOpen ? styles.subLinksOpen : ''}`}>
+                  <div
+                    className={`${styles.servicesLinks} ${servicesOpen ? styles.subLinksOpen : ""}`}
+                  >
                     {link.subLinks.map((subLink) => (
-                      <NavLink item={subLink} key={subLink.title} onClick={handleSubLinkClick} />
+                      <NavLink
+                        item={subLink}
+                        key={subLink.title}
+                        onClick={handleSubLinkClick}
+                      />
                     ))}
                   </div>
                 </>

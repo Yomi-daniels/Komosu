@@ -160,20 +160,6 @@
   letter-spacing: 0.1cap;
   font-size: 18px;
 }
-
-.navbarButton {
-  background-color: var(--btn);
-  color: #fff;
-  width: 160px;
-  height: 55px;
-  padding: 8px 16px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 36px;
-  letter-spacing: 0.1cap;
-  font-size: 18px;
-}
-
 .landingBtns {
   display: flex;
   align-items: flex-end;

@@ -35,66 +35,67 @@ const LandingPage = () => {
 
     gsap.fromTo(
       heroBtnRef.current,
-      {x: "100%", opacity: 0},
-      {x: '0', opacity: 1, duration:1, ease:"power2.out"}
-    )
-
-    gsap.fromTo(videoRef.current,
-      {y:"100%", opacity:0 },
-      {y: "0", opacity: 1,duration:2 ,ease:"power2.inOut"}
-    )
-  }, []);
-
-  useEffect(() => {
-    // Intersection Observer to detect visibility and apply opacity changes
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        // Set opacity based on whether the element is in view
-        if (entry.isIntersecting) {
-          gsap.to(entry.target, {
-            opacity: 1,
-            duration: 0.1,
-            ease: "power2.out",
-          });
-        } else {
-          gsap.to(entry.target, {
-            opacity: 0,
-            duration: 0.1,
-            ease: "power2.out",
-          });
-        }
-      },
-      {
-        threshold: 1, // Adjust this value as needed
-      }
+      { x: "100%", opacity: 0 },
+      { x: "0", opacity: 1, duration: 1, ease: "power2.out" }
     );
 
-    // Observe the elements
-    if (heroHeaderRef.current) {
-      observer.observe(heroHeaderRef.current);
-    }
-
-    if (heroSubTextRef.current) {
-      observer.observe(heroSubTextRef.current);
-    }
-
-    if (heroBtnRef.current) {
-      observer.observe(heroBtnRef.current);
-    }
-
-    // Clean up observer on component unmount
-    return () => {
-      if (heroHeaderRef.current) {
-        observer.unobserve(heroHeaderRef.current);
-      }
-      if (heroSubTextRef.current) {
-        observer.unobserve(heroSubTextRef.current);
-      }
-      if (heroBtnRef.current) {
-        observer.unobserve(heroBtnRef.current);
-      }
-    };
+    gsap.fromTo(
+      videoRef.current,
+      { y: "100%", opacity: 0 },
+      { y: "0", opacity: 1, duration: 2, ease: "power2.inOut" }
+    );
   }, []);
+
+  // useEffect(() => {
+  //   // Intersection Observer to detect visibility and apply opacity changes
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       // Set opacity based on whether the element is in view
+  //       if (entry.isIntersecting) {
+  //         gsap.to(entry.target, {
+  //           opacity: 1,
+  //           duration: 0.1,
+  //           ease: "power2.out",
+  //         });
+  //       } else {
+  //         gsap.to(entry.target, {
+  //           opacity: 0,
+  //           duration: 0.1,
+  //           ease: "power2.out",
+  //         });
+  //       }
+  //     },
+  //     {
+  //       threshold: 1, // Adjust this value as needed
+  //     }
+  //   );
+
+  //   // Observe the elements
+  //   if (heroHeaderRef.current) {
+  //     observer.observe(heroHeaderRef.current);
+  //   }
+
+  //   if (heroSubTextRef.current) {
+  //     observer.observe(heroSubTextRef.current);
+  //   }
+
+  //   if (heroBtnRef.current) {
+  //     observer.observe(heroBtnRef.current);
+  //   }
+
+  //   // Clean up observer on component unmount
+  //   return () => {
+  //     if (heroHeaderRef.current) {
+  //       observer.unobserve(heroHeaderRef.current);
+  //     }
+  //     if (heroSubTextRef.current) {
+  //       observer.unobserve(heroSubTextRef.current);
+  //     }
+  //     if (heroBtnRef.current) {
+  //       observer.unobserve(heroBtnRef.current);
+  //     }
+  //   };
+  // }, []);
 
   return (
     <div className="min-h-screen w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center mb-0">
@@ -114,40 +115,38 @@ const LandingPage = () => {
               </h1>
             </div>
             <div className={styles.HeaderContent} ref={heroSubTextRef}>
-              <p className={styles.heroSubText}>
+              {/* <p className={styles.heroSubText}>
                 Our team of experts will help provide long-lasting solutions for
                 your business through web design, AI Solutions, and other
                 high-quality impressions through content marketing and lead
                 generation.
+              </p> */}
+              <p className={styles.heroSubText}>
+                Turn your dealership's site into a 24/7 sales pipeline with
+                modern design and integrated AI solutions
               </p>
             </div>
-            <div className={styles.landingBtns} 
-            ref={heroBtnRef}
-            >
-           
-      <Link href="/request-demo">
-        <button  className={styles.headerGetStarted}>Get Started</button>
-      </Link>
-   
-                <Link href="/about">
+            <div className={styles.landingBtns} ref={heroBtnRef}>
+              <Link href="/request-demo">
+                <button className={styles.headerGetStarted}>Get Demo</button>
+              </Link>
+              {/* 
+              <Link href="/about">
                 <button className={styles.headerbtn}>
                   Learn more
                   <div className={styles.buttonImage}>
                     <Image src="/View plan button (4).png" alt="vector" fill />
                   </div>
                 </button>
-              </Link>
+              </Link> */}
             </div>
           </div>
-   
-       <div className={styles.heroImgBg}
-       ref={videoRef}>
+
+          <div className={styles.heroImgBg} ref={videoRef}>
             <video loop autoPlay muted playsInline>
               <source src="/Hero video.mp4" type="video/mp4" />
             </video>
           </div>
-  
-        
         </div>
       </section>
     </div>
