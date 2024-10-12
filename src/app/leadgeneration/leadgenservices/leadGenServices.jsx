@@ -10,7 +10,7 @@ import { useEffect, useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 import { ScrollTrigger } from "gsap/all";
 import gsap from "gsap";
-const leadGenServices = () => {
+const LeadGenServices = () => {
   const leadGenServicesContentText1Ref = useRef(null);
   const leadGenServicesContentText2Ref = useRef(null);
   const leadGenServicesContentImag1eRef = useRef(null);
@@ -182,4 +182,4 @@ const leadGenServices = () => {
   );
 };
 
-export default leadGenServices;
+export default LeadGenServices;
