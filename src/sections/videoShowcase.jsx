@@ -46,7 +46,7 @@ const VideoShowcase = () => {
     >
       <div className={styles.videoContainer}>
         <video className={styles.video} controls>
-          <source src="/Video.MP4" type="video/mp4" />
+          <source src="/Komosu showcase.mov" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className={styles.buttonContainer}>
