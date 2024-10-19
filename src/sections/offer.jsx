@@ -55,9 +55,10 @@ const Offer = () => {
       style={{ scale, opacity }}
     >
       <h2 className={styles.offerHeader}>
-        WHAT WE OFFER OUR{" "}
-        <span className={`${styles.servicesSpan} ${shadowFont.className}`}>
-          CLIENTS
+        What we{" "}
+        <span className={`${styles.offerSpan} ${shadowFont.className}`}>
+          {" "}
+          offer
         </span>
       </h2>
       <div className={styles.offerContainer}>

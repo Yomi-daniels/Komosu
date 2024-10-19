@@ -4,6 +4,7 @@ import TestimonialData from "@/clientTestimonialData/testimonialData";
 import styles from "./sections.module.css";
 import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 const shadows_Font = Shadows_Into_Light({
   subsets: ["latin"],
@@ -65,12 +66,12 @@ const Testimonials = () => {
         isVisible ? styles.fadeIn : styles.fadeOut
       }`}
     >
-      <h2 className={`${styles.offerHeader} ${styles.testimonialHeader}`}>
-        HEAR WHAT OUR{" "}
+      <h2 className={cn(`${styles.offerHeader} ${styles.testimonialHeader}`)}>
+        Hear what our{" "}
         <span className={`${styles.offerSpan} ${shadows_Font.className}`}>
-          CLIENTS{" "}
+          Clients{" "}
         </span>
-        SAY ABOUT US
+        Say about us
       </h2>
       <div
         className={`${styles.testimonialContainer} ${

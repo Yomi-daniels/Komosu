@@ -43,11 +43,11 @@ const Services = () => {
         <div className={styles.servicesHeader}>
           <h2>
             {" "}
-            EMPOWERING YOUR{" "}
+            Empowering your{" "}
             <span className={`${styles.servicesSpan} ${shadows.className}`}>
-              BUSINESS
+              Business
             </span>{" "}
-            TO THRIVE
+            to thrive
           </h2>
         </div>
         {/* <p className={cn(styles.subContent, "max-w-3xl mx-auto text-pretty")}>
@@ -66,8 +66,13 @@ const Services = () => {
           truly drives your success.
         </p>
       </motion.div>
-      <Servicesflex />
-      <div className={styles.servicesLastContentText}>
+      {/* <Servicesflex /> */}
+      <div
+        className={cn(
+          styles.servicesLastContentText,
+          "hover:scale-110 transition-all duration-150"
+        )}
+      >
         <Link href="/about">
           <p>Learn more about Komosu</p>
         </Link>

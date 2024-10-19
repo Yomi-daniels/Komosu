@@ -106,12 +106,12 @@ const LandingPage = () => {
           <div className={styles.HeroTextContainer}>
             <div className={styles.HeroText} ref={heroHeaderRef}>
               <h1 className={styles.heroHeader}>
-                Transform your{" "}
+                Poor Web Design is costing your{" "}
                 <span className={`${styles.heroSpan} ${shadowFont.className}`}>
                   {" "}
-                  dealership{" "}
+                  Dealership{" "}
                 </span>{" "}
-                with Komosu Network
+                Thousands
               </h1>
             </div>
             <div className={styles.HeaderContent} ref={heroSubTextRef}>
@@ -122,8 +122,8 @@ const LandingPage = () => {
                 generation.
               </p> */}
               <p className={styles.heroSubText}>
-                Turn your dealership's site into a 24/7 sales pipeline with
-                modern design and integrated AI solutions
+                Bring Your Dealership Into the Future with AI-Integrated
+                Websites that Strengthen Customer Relationships
               </p>
             </div>
             <div className={styles.landingBtns} ref={heroBtnRef}>
