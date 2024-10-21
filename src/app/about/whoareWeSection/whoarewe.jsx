@@ -15,14 +15,34 @@ const WhoareweSection = () => {
   const animateImages = () => {
     gsap.fromTo(
       image1Ref.current,
-      { x: "-30%", opacity: 0 }, // Start completely off the left
-      { x: "0%", opacity: 1, duration: 0.5, ease: "power2.in" } // End at its original position
+      { x: -300, opacity: 0 }, //start from left
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: image1Ref.current,
+          start: "top 80%", //start animation when top of the element is 80% from the top of the viewport
+          once: true, //only animate once
+        },
+      }
     );
 
     gsap.fromTo(
       image2Ref.current,
-      { x: "30%", opacity: 0 }, // Start completely off the right
-      { x: "0%", opacity: 1, duration: 0.5, ease: "power2.in" } // End at its original position
+      { x: 300, opacity: 0 }, //start from right
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: image2Ref.current,
+          start: "top 80%", //start animation when top of the element is 80% from the top of the viewport
+          once: true, //only animate once
+        },
+      }
     );
   };
 

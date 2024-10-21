@@ -6,7 +6,7 @@
 .webdesignLandingPage {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   border: 1px solid#dad9ff;
   background: linear-gradient(269deg, #e6e6ff 1.83%, #fff 57.69%);
   display: flex;

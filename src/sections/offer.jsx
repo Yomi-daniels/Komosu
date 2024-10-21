@@ -1,12 +1,15 @@
 "use client";
 
 import styles from "./sections.module.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Shadows_Into_Light } from "next/font/google";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+gsap.registerPlugin(ScrollTrigger);
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
 
 const shadowFont = Shadows_Into_Light({
   subsets: ["latin"],
@@ -14,6 +17,78 @@ const shadowFont = Shadows_Into_Light({
 });
 
 const Offer = () => {
+  const cardRef = useRef(null);
+  const contentRef = useRef(null);
+  const offerSelectPropsRef = useRef(null);
+  const offerheaderRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      contentRef.current,
+      { x: -300, opacity: 0 }, //start from left
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: contentRef.current,
+          start: "top 80%", //start animation when top of the element is 80% from the top of the viewport
+          once: true, //only animate once
+        },
+      }
+    );
+    gsap.fromTo(
+      cardRef.current,
+      { x: 300, opacity: 0 }, //start from right
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: cardRef.current,
+          start: "top 80%", //start animation when top of the element is 80% from the top of the viewport
+          once: true, //only animate once
+        },
+      }
+    );
+
+    if (offerheaderRef.current)
+      gsap.fromTo(
+        offerheaderRef.current,
+        { y: 200, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: offerheaderRef.current,
+            start: "top 100%", //start animation when top of the element is 100% from the top of the viewport
+            once: true, //only animate once
+          },
+        }
+      );
+
+    if (offerSelectPropsRef.current)
+      gsap.fromTo(
+        offerSelectPropsRef.current,
+        { y: 50, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 1.5,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: offerSelectPropsRef.current,
+            start: "top 100%", //start animation when top of the element is 100% from the top of the viewport
+            once: true, //only animate once
+          },
+        }
+      );
+  }, []);
+
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -38,23 +113,48 @@ const Offer = () => {
     }
   };
 
-  const contentVariants = {
-    hidden: { opacity: 0, x: -100 },
+  const contentVariants1 = {
+    hidden: { opacity: 0, x: -300 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
   };
 
-  const cardVariants = {
-    hidden: { opacity: 0, x: 100 },
+  const cardVariants1 = {
+    hidden: { opacity: 0, x: 300 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
   };
 
+  const contentVariants2 = {
+    hidden: { opacity: 0, x: 300 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  };
+
+  const cardVariants2 = {
+    hidden: { opacity: 0, x: -300 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  };
+
+  const contentVariants3 = {
+    hidden: { opacity: 0, x: -300 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  };
+
+  const cardVariants3 = {
+    hidden: { opacity: 0, x: 300 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+  };
+
+  const contentVariants4 = {
+    hidden: { opacity: 0, x: 300 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+  };
+
+  const cardVariants4 = {
+    hidden: { opacity: 0, x: -300 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+  };
   return (
-    <motion.section
-      className={styles.OfferSection}
-      ref={ref}
-      style={{ scale, opacity }}
-    >
-      <h2 className={styles.offerHeader}>
+    <section className={styles.OfferSection}>
+      <h2 className={styles.offerHeader} ref={offerheaderRef}>
         What we{" "}
         <span className={`${styles.offerSpan} ${shadowFont.className}`}>
           {" "}
@@ -62,7 +162,7 @@ const Offer = () => {
         </span>
       </h2>
       <div className={styles.offerContainer}>
-        <div className={styles.offerSelectProps}>
+        <div className={styles.offerSelectProps} ref={offerSelectPropsRef}>
           <li
             className={activeSection === "webDesign" ? styles.active : ""}
             onClick={() => handleSectionClick("webDesign")}
@@ -101,7 +201,8 @@ const Offer = () => {
                   className={styles.webDesignContent}
                   initial="hidden"
                   animate="visible"
-                  variants={contentVariants}
+                  variants={contentVariants1}
+                  ref={contentRef}
                 >
                   <div className={styles.webDesignHeader}>
                     <div className={styles.webHeaderImgBg}>
@@ -177,7 +278,8 @@ const Offer = () => {
                   className={`${styles.webDesignCardContainer} ${styles.webDesignCardContainer1}`}
                   initial="hidden"
                   animate="visible"
-                  variants={cardVariants}
+                  variants={cardVariants1}
+                  ref={cardRef}
                 >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCardfirst}`}
@@ -204,7 +306,7 @@ const Offer = () => {
                   className={styles.webDesignContent}
                   initial="hidden"
                   animate="visible"
-                  variants={contentVariants}
+                  variants={contentVariants2}
                 >
                   <div className={styles.webDesignHeader}>
                     <div className={styles.webHeaderImgBg}>
@@ -284,7 +386,7 @@ const Offer = () => {
                   className={`${styles.webDesignCardContainer} ${styles.AisolutionContainer}`}
                   initial="hidden"
                   animate="visible"
-                  variants={cardVariants}
+                  variants={cardVariants2}
                 >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
@@ -311,7 +413,7 @@ const Offer = () => {
                   className={styles.webDesignContent}
                   initial="hidden"
                   animate="visible"
-                  variants={contentVariants}
+                  variants={contentVariants3}
                 >
                   <div className={styles.webDesignHeader}>
                     <div className={styles.webHeaderImgBg}>
@@ -395,7 +497,7 @@ const Offer = () => {
                   className={`${styles.webDesignCardContainer} ${styles.contentMarketingContainer}`}
                   initial="hidden"
                   animate="visible"
-                  variants={cardVariants}
+                  variants={cardVariants3}
                 >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
@@ -422,7 +524,7 @@ const Offer = () => {
                   className={styles.webDesignContent}
                   initial="hidden"
                   animate="visible"
-                  variants={contentVariants}
+                  variants={contentVariants4}
                 >
                   <div className={styles.webDesignHeader}>
                     <div className={styles.webHeaderImgBg}>
@@ -506,7 +608,7 @@ const Offer = () => {
                   className={`${styles.webDesignCardContainer} ${styles.contentMarketingContainer}`}
                   initial="hidden"
                   animate="visible"
-                  variants={cardVariants}
+                  variants={cardVariants4}
                 >
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard3}`}
@@ -524,7 +626,7 @@ const Offer = () => {
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

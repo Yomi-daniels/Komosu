@@ -6,9 +6,8 @@ const OfferAnimation = () => {
     <section className={styles.OfferAnimationSection}>
       <div className={styles.offerAnimHeaderContent}>
         <h2 className={styles.offerAnimHeaderh2}>
-          Drive your forward with{" "}
-          <span className={styles.offerSpan}>business</span> innovative and
-          stunning web design
+          Drive your automotive company forward with innovative and stunning web
+          design
         </h2>
         <Link href="/request-demo">
           <button className={styles.OfferHeaderButton}>Book a Demo</button>
@@ -32,7 +31,8 @@ const OfferAnimation = () => {
               <h6 className={styles.offerH6}>PROMOTIONAL VIDEOS</h6>
             </div>
             <h3>
-              Build trust with your customers using a beautiful landing page.
+              Capture attention with high-quality visuals and engaging content
+              that keeps viewers interested.
             </h3>
           </div>
           <div className={styles.offerAnimationFeatures}>

@@ -7,31 +7,31 @@ import Testimonials from "@/sections/testimonials";
 import VideoShowcase from "@/sections/videoShowcase";
 import styles from "./page.module.css";
 import Navbar from "./components/navbar/Navbar";
-import { cn } from "@/lib/utils";
+
 const Home = () => {
   return (
     <div className={styles.landingpagesection}>
       <Navbar />
-      <section className={cn(styles.landingPage, "h-[100vh]")}>
+      <section className={styles.landingPage}>
         <LandingPage />
       </section>
-      <section className={cn(styles.ServicesPage, "")}>
+      <section className={styles.ServicesPage}>
         <Services />
-        <section className={cn(styles.Servisesflex, "")}></section>
+        <section className={styles.Servisesflex}></section>
       </section>
-      <section className={cn(styles.VideoShowcasePage, "mt-20")}>
+      <section className={styles.VideoShowcasePage}>
         <VideoShowcase />
       </section>
-      <section className={cn(styles.OfferPage, "")}>
+      <section className={styles.OfferPage}>
         <Offer />
       </section>
-      <section className={cn(styles.OfferAnimationPage, " h-[80vh]")}>
+      <section className={styles.OfferAnimationPage}>
         <OfferAnimation />
       </section>
-      <section className={cn(styles.TestimonialPage, "")}>
+      <section className={styles.TestimonialPage}>
         <Testimonials />
       </section>
-      <section className={cn(styles.FAQPage, styles.page)}>
+      <section className={`${styles.FAQPage} ${styles.page}`}>
         <FAQ />
       </section>
     </div>
