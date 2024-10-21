@@ -13,6 +13,7 @@
 }
 .heroSection {
   position: relative;
+  top: 8em;
 }
 
 .HeroTextContainer {
@@ -65,14 +66,16 @@
 .HeaderContent {
   color: #000000;
   /* z-index: 100; */
-  max-width: 480px;
+  /* max-width: 480px; */
+  max-width: 400px;
+  text-wrap: pretty;
   /* margin-right: 6rem; */
 }
 
 .heroSubText {
   color: #020059;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -154,11 +157,13 @@
   justify-content: center;
   align-items: center;
   border-radius: 36px;
+  letter-spacing: 0.1cap;
+  font-size: 18px;
 }
-
 .landingBtns {
   display: flex;
   align-items: flex-end;
+  margin-top: 1em;
   gap: 2em;
   opacity: 0;
   transition: opacity 1s ease;
@@ -183,10 +188,12 @@
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
+  text-transform: capitalize;
   line-height: 120%;
   letter-spacing: -0.36px;
   font-family: var(--text-Font-Black);
-  width: 928px;
+  width: 1190px;
+  /* border: 1px solid #333; */
   text-align: center;
 }
 
@@ -235,7 +242,7 @@
     /* text-align: right; */
     width: 100%;
     margin-top: 0rem;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
@@ -428,7 +435,8 @@
 
 .servicesHeader h2,
 .offerHeader,
-.testimonialHeader {
+.testimonialHeader,
+.hero {
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -864,12 +872,14 @@
 }
 
 .offerHeader {
+  font-size: 50px !important;
   text-align: center;
   color: var(--blueText);
 }
 .offerSpan {
   color: var(--yellow);
   font-style: italic;
+  font-size: 50px;
 }
 
 .offerContainer {
@@ -1089,6 +1099,7 @@
   line-height: 120%; /* 28.8px */
   letter-spacing: -0.24px;
   font-family: var(--text-Font-Black);
+  text-transform: capitalize;
 }
 
 .webFeaturesImgShadow {
@@ -1459,7 +1470,7 @@
 .OfferAnimationSection {
   background-color: var(--blueText);
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin-top: 6rem;
 }
 
@@ -1485,6 +1496,7 @@
   text-align: center;
   width: 60%;
   margin-top: 4rem;
+  text-transform: capitalize;
 }
 
 .OfferHeaderButton {
@@ -2135,6 +2147,7 @@
 
 .offerSpan {
   font-family: "Shadows Into Light", cursive;
+  font-size: 3rem;
 }
 
 /* Testimonial Container Styles */

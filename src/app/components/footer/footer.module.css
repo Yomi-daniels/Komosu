@@ -145,11 +145,31 @@
   line-height: normal;
   letter-spacing: 0.72px;
 }
+.footerLink {
+  @apply transition-all duration-500 ease-in-out transform group-hover:scale-105;
+}
 
+.footerLink:hover {
+  @apply scale-110;
+  background: linear-gradient(
+    to right,
+    hsl(359.6deg 100% 29.61%),
+    hsl(359.6deg 100% 29.61%) 100%,
+    transparent 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .SocialLink {
   display: flex;
   align-items: center;
   gap: 1em;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.SocialLink i {
+  font-size: 1.7rem;
 }
 
 .FooterSocialLink p {
