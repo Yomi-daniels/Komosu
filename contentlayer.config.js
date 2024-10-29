@@ -53,6 +53,9 @@ const Blog = defineDocumentType(() => ({
     toc: {
       type: "json",
       resolve: async (doc) => {
+        if (!doc.body.raw) {
+          return [];
+        }
         const regulrExp = /\n(?<flag>#{1,6})\s+(?<content>.+)/g;
         const slugger = new GithubSlugger();
         const headings = Array.from(doc.body.raw.matchAll(regulrExp)).map(
