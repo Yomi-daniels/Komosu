@@ -3,7 +3,7 @@ import readingTime from "reading-time";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
-import remarkGfm from "remark-gfm";
+// import remarkGfm from "remark-gfm";
 import GithubSlugger from "github-slugger";
 
 const Blog = defineDocumentType(() => ({
@@ -85,12 +85,11 @@ export default makeSource({
   contentDirPath: "content",
   documentTypes: [Blog],
   mdx: {
-    remarkPlugins: [remarkGfm],
     rehypePlugins: [
       rehypeSlug,
       [
         rehypeAutolinkHeadings,
-        { behavior: "wrap", properties: { classname: ["anchor"] } },
+        { behavior: "append", properties: { classname: ["anchor"] } },
       ],
       [rehypePrettyCode, codeOptions],
     ],

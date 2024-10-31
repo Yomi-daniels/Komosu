@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import Image from "next/image";
 
@@ -7,6 +7,16 @@ const mdxComponents = {
   Image,
 };
 const RenderMdx = ({ post }) => {
+  useEffect(() => {
+    const headings = document.querySelectorAll(
+      "article h1, article h2, article h3, article h4, article h5, article h6"
+    );
+
+    headings.forEach((headings) => {
+      console.log(`Heading: ${headings.innerText}, ID: ${headings.id}`);
+    });
+  }, []);
+
   const MDXContent = useMDXComponent(post.body.code);
 
   return (

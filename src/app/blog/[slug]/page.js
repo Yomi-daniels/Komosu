@@ -1,4 +1,4 @@
-import { allPosts } from "contentlayer/generated";
+import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import styles from "../blog.module.css";
 import Image from "next/image";
@@ -11,13 +11,13 @@ import siteMetadata from "@/utils/siteMetaData";
 // Function to generate the static params
 
 export async function generateStaticParams() {
-  return allPosts.map((post) => ({
+  return allBlogs.map((post) => ({
     slug: post._raw.flattenedPath,
   }));
 }
 
 export async function generateMetadata({ params }) {
-  const blog = allPosts.find((blog) => blog._raw.flattenedPath === params.slug);
+  const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
   if (!blog) {
     return;
   }
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }) {
   // Page component
 }
 const BlogPostPage = ({ params }) => {
-  const blog = allPosts.find((blog) => blog._raw.flattenedPath === params.slug);
+  const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
 
   if (!blog) {
     notFound();
@@ -93,19 +93,15 @@ const BlogPostPage = ({ params }) => {
           )}
           <div className={cx("gap-4", styles.slugTitleContainer)}>
             <Tag
-              href="#"
+              href="/"
               size="small"
-              className={cx(
-                "text-white  text-center justify-center",
-                styles.tag
-              )}
+              className={cx("text-white text-center justify-center")}
               name={blog.tags[0]}
             />
 
             <h1 className={styles.slugArticleTitle}>{blog.title}</h1>
           </div>
         </div>
-
         <BlogDetails post={blog} slug={params.slug} />
         <div className="grid grid-cols-12 gap-12 mt-8 px-32">
           <div className="col-span-12  lg:col-span-3">

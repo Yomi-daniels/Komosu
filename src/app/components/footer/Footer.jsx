@@ -10,7 +10,7 @@ const Footer = () => {
           <h1>Ready to scale up your business growth?</h1>
           <div className={styles.footerBtn}>
             <Link href="/request-demo">
-              <button className={styles.footerbtn1}>Get Demo</button>
+              <button className={styles.footerbtn1}>Book a Demo</button>
             </Link>
             <Link href="/about">
               <button className={styles.footerbtn2}>
@@ -44,7 +44,7 @@ const Footer = () => {
               Contact Us
             </Link>
             <Link href="/request-demo" className={styles.footerLink}>
-              Get Demo
+              Book a Demo
             </Link>
           </div>
           <div className={styles.TermsCondition}>

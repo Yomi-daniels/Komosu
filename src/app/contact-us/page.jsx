@@ -37,14 +37,29 @@ const ContactPage = () => {
           </div>
         </div>
         <div className={styles.socialLink}>
-          <a href="http://facebook.com">
+          {/* <a href="https://www.instagram.com/komosunetwork?igsh=cnk4cWVnYTE0azZ5">
             <i className="ri-facebook-fill"></i>
-          </a>
-          <a href="http://twitter.com">
+          </a> */}
+          <a
+            href="https://x.com/KomosuNetwork?t=PG7p0gzDWjBq88o5k_Xe-w&s=08"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="ri-twitter-x-line"></i>
           </a>
-          <a href="http://youtube.com">
-            <i className="ri-youtube-fill"></i>
+          <a
+            href="https://www.instagram.com/komosunetwork?igsh=cnk4cWVnYTE0azZ5"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="ri-instagram-line"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@komosunetwork0?is_from_webapp=1&sender_device=pc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="ri-tiktok-fill"></i>
           </a>
         </div>
       </div>

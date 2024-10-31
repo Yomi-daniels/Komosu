@@ -128,7 +128,7 @@ const LandingPage = () => {
             </div>
             <div className={styles.landingBtns} ref={heroBtnRef}>
               <Link href="/request-demo">
-                <button className={styles.headerGetStarted}>Get Demo</button>
+                <button className={styles.headerGetStarted}>Book a Demo</button>
               </Link>
               {/* 
               <Link href="/about">

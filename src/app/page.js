@@ -12,20 +12,20 @@ const Home = () => {
   return (
     <div className={styles.landingpagesection}>
       <Navbar />
-      <section className={cn(styles.landingPage, "h-[100vh]")}>
+      <section className={cn(styles.landingPage, "")}>
         <LandingPage />
       </section>
       <section className={cn(styles.ServicesPage, "")}>
         <Services />
         <section className={cn(styles.Servisesflex, "")}></section>
       </section>
-      <section className={cn(styles.VideoShowcasePage, "mt-20")}>
+      <section className={cn(styles.VideoShowcasePage, "")}>
         <VideoShowcase />
       </section>
       <section className={cn(styles.OfferPage, "")}>
         <Offer />
       </section>
-      <section className={cn(styles.OfferAnimationPage, " h-[80vh]")}>
+      <section className={cn(styles.OfferAnimationPage, "")}>
         <OfferAnimation />
       </section>
       <section className={cn(styles.TestimonialPage, "")}>

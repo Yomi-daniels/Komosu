@@ -37,7 +37,7 @@ const links = [
     path: "/contact-us",
   },
   {
-    title: "Get Demo",
+    title: "Book a Demo",
     path: "/request-demo",
   },
 ];
@@ -70,7 +70,7 @@ const Links = () => {
         {links.map((link) => (
           <div
             key={link.title}
-            className={`${styles.linkItem} ${link.title === "Services" ? styles.customLinkItem : ""} ${link.title === "Get Demo" ? styles.requestDemoLink : ""}`}
+            className={`${styles.linkItem} ${link.title === "Services" ? styles.customLinkItem : ""} ${link.title === "Book a Demo" ? styles.requestDemoLink : ""}`}
           >
             {link.subLinks ? (
               <>

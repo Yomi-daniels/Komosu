@@ -47,7 +47,6 @@
   font-weight: 400;
   line-height: 150%; /* 27px */
   letter-spacing: 0.36px;
-  text-transform: capitalize;
   font-family: var(--text-Font-Regular);
 }
 

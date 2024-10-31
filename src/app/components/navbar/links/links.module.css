@@ -80,10 +80,7 @@
   line-height: normal;
   letter-spacing: 0.36px;
 }
-/* .requestDemoLink > .subLinks a {
-  letter-spacing: 0.1cap;
-  font-size: 18px;
-} */
+
 .servicesContainer {
   display: flex;
   align-items: center;
@@ -117,7 +114,7 @@
   z-index: 9;
   position: absolute;
   right: 1%;
-  letter-spacing: 0.1cap;
+  letter-spacing: -0.36px;
   font-size: 16px;
 }
 

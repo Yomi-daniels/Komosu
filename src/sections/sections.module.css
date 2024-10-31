@@ -157,7 +157,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 36px;
-  letter-spacing: 0.1cap;
+  letter-spacing: -0.36px;
   font-size: 18px;
 }
 .landingBtns {
