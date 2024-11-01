@@ -8,11 +8,6 @@ import MyScript from "@/Script";
 //   subsets: ["latin"],
 // });
 // import satoshiFont from "@next/font/local";
-export const metadata = {
-  title: "Komosu Network",
-  description:
-    "Komosu Network is committed to revolutionizing the automotive industry by providing innovative solutions. our dedicated team of experts focuses on building strong relationships with clients, ensuring that they have more time to concentrate on what truly matters to them. ",
-};
 
 export default function RootLayout({ children }) {
   return (

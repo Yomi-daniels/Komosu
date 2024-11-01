@@ -1,17 +1,33 @@
-// contentlayer.config.js
-import { defineDocumentType, makeSource } from "@contentlayer/source-files";
+import { makeSource, defineDocumentType } from "@contentlayer/source-files";
 import readingTime from "reading-time";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypePrettyCode from "rehype-pretty-code";
+import rehypeSlug from "rehype-slug";
+// import remarkGfm from "remark-gfm";
 import GithubSlugger from "github-slugger";
-export const Post = defineDocumentType(() => ({
-  name: "Post",
-  filePathPattern: `**/**/*.mdx`,
+
+const Blog = defineDocumentType(() => ({
+  name: "Blog",
+  filePathPattern: "**/**/*.mdx",
   contentType: "mdx",
   fields: {
-    title: { type: "string", required: true },
-    publishedAt: { type: "date", required: true },
-    updatedAt: { type: "date", required: true },
-    description: { type: "string", required: true },
-    image: { type: "image", required: false },
+    title: {
+      type: "string",
+      required: true,
+    },
+    publishedAt: {
+      type: "date",
+      required: true,
+    },
+    updatedAt: {
+      type: "date",
+      required: true,
+    },
+    description: {
+      type: "string",
+      required: true,
+    },
+    image: { type: "image" },
     isPublished: {
       type: "boolean",
       default: true,
@@ -28,7 +44,7 @@ export const Post = defineDocumentType(() => ({
   computedFields: {
     url: {
       type: "string",
-      resolve: (doc) => `/blog/${doc._raw.flattenedPath}`,
+      resolve: (doc) => `/blogs/${doc._raw.flattenedPath}`,
     },
     readingTime: {
       type: "json",
@@ -37,9 +53,9 @@ export const Post = defineDocumentType(() => ({
     toc: {
       type: "json",
       resolve: async (doc) => {
-        const regExp = /\n(?<flag>#{1,6})\s+(?<content>.+)/g;
+        const regulrExp = /\n(?<flag>#{1,6})\s+(?<content>.+)/g;
         const slugger = new GithubSlugger();
-        const headings = Array.from(doc.body.raw.matchAll(regExp)).map(
+        const headings = Array.from(doc.body.raw.matchAll(regulrExp)).map(
           ({ groups }) => {
             const flag = groups?.flag;
             const content = groups?.content;
@@ -52,29 +68,30 @@ export const Post = defineDocumentType(() => ({
             };
           }
         );
+
         return headings;
       },
     },
   },
 }));
 
+const codeOptions = {
+  theme: "github-dark",
+  grid: false,
+};
+
 export default makeSource({
+  /* options */
   contentDirPath: "content",
-  documentTypes: [Post],
-  // mdx: {
-  //   remarkPlugins: [remarkGfm],
-  //   rehypePlugins: [
-  //     rehypeSlug,
-  //     [
-  //       rehypePrettyCode,
-  //       {
-  //         onVisitLine(node) {
-  //           if (node.children.length === 0) {
-  //             node.children = [{ type: "text", value: "" }];
-  //           }
-  //         },
-  //       },
-  //     ],
-  //   ],
-  // },
+  documentTypes: [Blog],
+  mdx: {
+    rehypePlugins: [
+      rehypeSlug,
+      [
+        rehypeAutolinkHeadings,
+        { behavior: "append", properties: { classname: ["anchor"] } },
+      ],
+      [rehypePrettyCode, codeOptions],
+    ],
+  },
 });

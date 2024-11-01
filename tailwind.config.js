@@ -54,6 +54,15 @@ module.exports = {
   darkMode: "class",
   theme: {
     // rest of the code
+    extend: {
+      colors: {
+        dark: "#1b1b1b",
+        light: "#fff",
+        accent: "#7B00D3",
+        accentDark: "#ffdb4d",
+        gray: "#747474",
+      },
+    },
   },
 
   plugins: [

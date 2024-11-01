@@ -7,6 +7,8 @@ import Testimonials from "@/sections/testimonials";
 import VideoShowcase from "@/sections/videoShowcase";
 import styles from "./page.module.css";
 import Navbar from "./components/navbar/Navbar";
+// Import `cn` if you need it for conditional class names
+// import cn from "classnames";
 
 const Home = () => {
   return (

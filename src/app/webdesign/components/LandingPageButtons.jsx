@@ -10,7 +10,7 @@ const LandingPageButtons = () => {
 
       <Link href="/request-demo">
         <button className={webstyle.demobtn}>
-          Get Demo
+          Book a Demo
           <div className={webstyle.butttonBlue}>
             <div className={webstyle.buttonImg}>
               <Image src="/Vector.png" fill />
