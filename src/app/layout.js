@@ -2,42 +2,23 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import MyScript from "@/Script";
+import { Metadata } from "next";
 
-// import { Montserrat } from "next/font/google";
-// const montserrat = Montserrat({
-//   subsets: ["latin"],
-// });
-// import satoshiFont from "@next/font/local";
+// Metadata configuration for favicons and manifest
+export const metadata = {
+  icons: {
+    icon: ["/favicon.png?v=4"],
+    apple: ["/apple-touch-icon.png?v=4"],
+    shortcut: ["/favicon.png"],
+  },
+  manifest: "/site.webmanifest",
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="48x48"
-          href="/favicon-48x48.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="64x64"
-          href="/favicon-64x64.png"
-        />
+        {/* Preconnect and font links */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
@@ -46,7 +27,11 @@ export default function RootLayout({ children }) {
           referrerPolicy="no-referrer"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
           rel="stylesheet"
@@ -59,11 +44,6 @@ export default function RootLayout({ children }) {
           <main className="content">{children}</main>
           <Footer />
         </div>
-        {/* <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-        <script
-          src="https://mediafiles.botpress.cloud/935ec3d1-76db-4b99-ae26-db94d2a39025/webchat/config.js"
-          defer
-        ></script> */}
         <MyScript />
       </body>
     </html>

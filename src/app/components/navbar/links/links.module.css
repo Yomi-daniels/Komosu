@@ -6,6 +6,33 @@
   font-size: 0.9rem;
 }
 
+.links a:hover {
+  position: relative;
+}
+
+.links a::after {
+  content: "";
+  background-color: var(--btn);
+  height: 1px;
+  width: 0;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+
+  margin-top: 0.5rem;
+  left: 0;
+}
+
+.links a:hover::after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.requestDemoLink a::after {
+  border: none;
+  background-color: transparent;
+}
+
 .mobileLinks {
   display: none;
 }
@@ -80,7 +107,10 @@
   line-height: normal;
   letter-spacing: 0.36px;
 }
-
+/* .requestDemoLink > .subLinks a {
+  letter-spacing: 0.1cap;
+  font-size: 18px;
+} */
 .servicesContainer {
   display: flex;
   align-items: center;
@@ -114,7 +144,7 @@
   z-index: 9;
   position: absolute;
   right: 1%;
-  letter-spacing: -0.36px;
+  letter-spacing: 0.1cap;
   font-size: 16px;
 }
 

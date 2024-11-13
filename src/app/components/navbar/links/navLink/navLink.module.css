@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.container::after {
+/* .container::after {
   content: "";
   background-color: var(--btn);
   height: 1px;
@@ -17,7 +17,7 @@
 
   margin-top: 0.5rem;
   left: 0;
-}
+} */
 
 .container:hover::after {
   width: 100%;
