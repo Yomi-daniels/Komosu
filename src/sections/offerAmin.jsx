@@ -6,9 +6,8 @@ const OfferAnimation = () => {
     <section className={styles.OfferAnimationSection}>
       <div className={styles.offerAnimHeaderContent}>
         <h2 className={styles.offerAnimHeaderh2}>
-          Drive your forward with{" "}
-          <span className={styles.offerSpan}>business</span> innovative and
-          stunning web design
+          Drive your <span className={styles.offerSpan}>business</span> forward
+          With Innovative and stunning web design
         </h2>
         <Link href="/request-demo">
           <button className={styles.OfferHeaderButton}>Book a Demo</button>
@@ -29,10 +28,12 @@ const OfferAnimation = () => {
               <div className={styles.OfferAnimationContainerContentSmallImage}>
                 <Image src="/Vector (5).png" alt="offerAnimImg" fill />
               </div>
-              <h6 className={styles.offerH6}>PROMOTIONAL VIDEOS</h6>
+              <h6 className={styles.businessAnalytics}>
+                CAPITALIZING ON THE CREATOR ECONOMY
+              </h6>
             </div>
             <h3>
-              Build trust with your customers using a beautiful landing page.
+              Redirecting Social Media's Engagement Power Back to your site
             </h3>
           </div>
           <div className={styles.offerAnimationFeatures}>
@@ -43,8 +44,9 @@ const OfferAnimation = () => {
                 </div>
               </div>
               <p>
-                Understand past performance through detailed analysis of
-                historical data.
+                <strong>Create a Content Hub </strong>where sales reps can
+                create and share videos, blogs and and posts to engage customers
+                directly
               </p>
             </div>
             <div className={styles.offerFeaturesContent}>
@@ -54,8 +56,21 @@ const OfferAnimation = () => {
                 </div>
               </div>
               <p>
-                Provide data-driven recommendations to support strategic
-                business decisions.
+                <strong>Control your brand</strong> with your own content space
+                within your website to maintain full control over your brand,
+                reducing reliance on social media platforms
+              </p>
+            </div>
+            <div className={styles.offerFeaturesContent}>
+              <div className={styles.offerFeaturesImgShadow}>
+                <div className={styles.offerFeaturesImg}>
+                  <Image src="/Vector (6).png" alt="offerAnimImg" fill />
+                </div>
+              </div>
+              <p>
+                <strong>Leverage Content on Both Platforms</strong> when sales
+                reps use content they post on social media and share it directly
+                with your customers on the dealer hub.
               </p>
             </div>
           </div>

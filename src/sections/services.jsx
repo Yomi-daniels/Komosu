@@ -38,7 +38,7 @@ const Services = () => {
       >
         <div className={styles.servicesSubTextContainer}>
           <div className={styles.blueBorder}></div>
-          <p className={styles.servicesSubText}>WHY KOMOSU?</p>
+          <p className={styles.servicesSubText}>What is Dealer Hub?</p>
         </div>
         <div className={styles.servicesHeader}>
           <h2>
@@ -50,21 +50,19 @@ const Services = () => {
             to thrive
           </h2>
         </div>
-        {/* <p className={cn(styles.subContent, "max-w-3xl mx-auto text-pretty")}>
+        <p className={cn(styles.subContent, "max-w-3xl mx-auto text-pretty")}>
           Komosu Network is committed to revolutionizing the automotive industry
           by providing innovative solutions. our dedicated team of experts
           focuses on building strong relationships with clients, ensuring that
-          they have more time to concentrate on what truly matters to them.{" "}
-        </p> */}
-        <p className={cn(styles.subContent, "max-w-3xl mx-auto text-pretty")}>
-          At Komosu Network, we’re more than just service providers—we’re your
-          partners in revolutionizing the automotive industry. Our innovative
-          solutions give your dealership the push it needs to excel, while our
-          dedicated team builds strong relationships, ensuring that you can
-          focus on growing your business and delivering an exceptional customer
-          experience. Let us handle the details, so you can stay focused on what
-          truly drives your success.
+          they have more time to concentrate on what truly matters to them.
         </p>
+        {/* <p className={cn(styles.subContent, "max-w-3xl mx-auto text-pretty")}>
+          A Dealer Hub is your all-in-one digital platform to engage and build
+          trust with customers. It lets users explore inventory, check financing
+          options, and connect with sales reps—all in one place. With
+          interactive features like community comments on new stock, customers
+          stay engaged, fostering loyalty and repeat visits that drive growth.
+        </p> */}
       </motion.div>
       {/* <Servicesflex /> */}
       <div

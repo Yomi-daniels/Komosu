@@ -106,12 +106,11 @@ const LandingPage = () => {
           <div className={styles.HeroTextContainer}>
             <div className={styles.HeroText} ref={heroHeaderRef}>
               <h1 className={styles.heroHeader}>
-                Poor Web Design is costing your{" "}
+                Poor Online Presence is costly for your{" "}
                 <span className={`${styles.heroSpan} ${shadowFont.className}`}>
                   {" "}
                   Dealership{" "}
                 </span>{" "}
-                Thousands
               </h1>
             </div>
             <div className={styles.HeaderContent} ref={heroSubTextRef}>
@@ -122,8 +121,8 @@ const LandingPage = () => {
                 generation.
               </p> */}
               <p className={styles.heroSubText}>
-                Bring Your Dealership Into the Future with AI-Integrated
-                Websites that Strengthen Customer Relationships
+                Elevate your dealership with a premium dealer hub that captures
+                every opportunity
               </p>
             </div>
             <div className={styles.landingBtns} ref={heroBtnRef}>
