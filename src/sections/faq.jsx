@@ -5,7 +5,7 @@ import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
 import { motion, useInView, useAnimation } from "framer-motion"; // Import Framer Motion
 
-const shadow_Font = Shadows_Into_Light({
+const shadows_Font = Shadows_Into_Light({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -78,11 +78,11 @@ const FAQ = () => {
         </div>
         <h2 className={styles.FAQHeader}>
           Got{" "}
-          <span className={`${styles.servicesSpan} ${shadow_Font.className}`}>
+          <span className={`${styles.servicesSpan} ${shadows_Font.className}`}>
             Questions?
           </span>{" "}
           we have the answers right
-          <span className={`${styles.servicesSpan} ${shadow_Font.className}`}>
+          <span className={`${styles.servicesSpan} ${shadows_Font.className}`}>
             {" "}
             Here
           </span>

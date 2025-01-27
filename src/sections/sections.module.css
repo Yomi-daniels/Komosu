@@ -200,6 +200,7 @@
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(to bottom right, blue, magenta);
+  font-family: "Shadows Into Light", cursive;
 }
 
 @media (min-width: 1628px) {
@@ -480,6 +481,10 @@
   gap: 1.5em;
   width: 100%;
   height: 100%;
+}
+
+.servicesSpan {
+  font-family: "Shadows Into Light", cursive;
 }
 
 .servicesLastContentText {
