@@ -18,68 +18,63 @@ const LandingPage = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    // GSAP animation for initial load
-    gsap.fromTo(
-      heroHeaderRef.current,
-      { x: "-100%", opacity: 0 },
-      { x: "0%", opacity: 1, duration: 1.5, ease: "power2.out" }
-    );
+    const animations = [
+      {
+        ref: heroHeaderRef,
+        from: { x: "-100%", opacity: 0 },
+        to: { x: "0%", opacity: 1 },
+      },
+      {
+        ref: heroSubTextRef,
+        from: { x: "100%", opacity: 0 },
+        to: { x: "0%", opacity: 1 },
+      },
+      {
+        ref: heroBtnRef,
+        from: { x: "100%", opacity: 0 },
+        to: { x: "0", opacity: 1 },
+      },
+      {
+        ref: videoRef,
+        from: { y: "20vh", opacity: 0 },
+        to: { y: "0", opacity: 1 },
+      },
+    ];
 
-    gsap.fromTo(
-      heroSubTextRef.current,
-      { x: "100%", opacity: 0 },
-      { x: "0%", opacity: 1, duration: 1.5, ease: "power2.out" }
-    );
-
-    gsap.fromTo(
-      heroBtnRef.current,
-      { x: "100%", opacity: 0 },
-      { x: "0", opacity: 1, duration: 1, ease: "power2.out" }
-    );
-
-    gsap.fromTo(
-      videoRef.current,
-      { y: "100%", opacity: 0 },
-      { y: "0", opacity: 1, duration: 2, ease: "power2.inOut" }
-    );
+    animations.forEach(({ ref, from, to }) => {
+      gsap.fromTo(ref.current, from, {
+        ...to,
+        duration: 1.5,
+        ease: "power2.out",
+      });
+    });
   }, []);
 
   useEffect(() => {
-    // Intersection Observer to detect visibility and apply opacity changes
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          gsap.to(entry.target, {
-            opacity: 1,
-            duration: 0.1,
-            ease: "power2.out",
-          });
-        } else {
-          gsap.to(entry.target, {
-            opacity: 0,
-            duration: 0.1,
-            ease: "power2.out",
-          });
-        }
-      },
-      {
-        threshold: 1,
-      }
-    );
+    const observerCallback = ([entry]) => {
+      gsap.to(entry.target, {
+        opacity: entry.isIntersecting ? 1 : 0,
+        duration: 0.1,
+        ease: "power2.out",
+      });
+    };
 
-    if (heroHeaderRef.current) observer.observe(heroHeaderRef.current);
-    if (heroSubTextRef.current) observer.observe(heroSubTextRef.current);
-    if (heroBtnRef.current) observer.observe(heroBtnRef.current);
+    const observer = new IntersectionObserver(observerCallback, {
+      threshold: 1,
+    });
+    [heroHeaderRef, heroSubTextRef, heroBtnRef].forEach((ref) => {
+      if (ref.current) observer.observe(ref.current);
+    });
 
     return () => {
-      if (heroHeaderRef.current) observer.unobserve(heroHeaderRef.current);
-      if (heroSubTextRef.current) observer.unobserve(heroSubTextRef.current);
-      if (heroBtnRef.current) observer.unobserve(heroBtnRef.current);
+      [heroHeaderRef, heroSubTextRef, heroBtnRef].forEach((ref) => {
+        if (ref.current) observer.unobserve(ref.current);
+      });
     };
   }, []);
 
   return (
-    <div className="min-h-screen w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center mb-0">
+    <div className="min-h-screen w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center mb- overflow-x-hidden">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <section className={styles.heroSection}>
         <div className={styles.heroContainer}>

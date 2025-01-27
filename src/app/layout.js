@@ -2,23 +2,44 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import MyScript from "@/Script";
-import { Metadata } from "next";
-
-// Metadata configuration for favicons and manifest
-export const metadata = {
-  icons: {
-    icon: ["/favicon.png?v=4"],
-    apple: ["/apple-touch-icon.png?v=4"],
-    shortcut: ["/favicon.png"],
-  },
-  manifest: "/site.webmanifest",
-};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Preconnect and font links */}
+        {/* Add favicon links with cache-busting query parameters */}
+        <link
+          rel="icon"
+          href="/favicon.png?v=4"
+          type="image/png"
+          sizes="32x32"
+        />
+        <link
+          rel="icon"
+          href="/favicon.png?v=4"
+          type="image/png"
+          sizes="16x16"
+        />
+        <link rel="apple-touch-icon" href="/favicon.png?v=4" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        {/* Font and other external links */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"

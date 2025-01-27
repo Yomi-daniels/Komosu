@@ -29,13 +29,13 @@ const FAQ = () => {
     if (inView) {
       animationControls.start("visible");
     } else {
-      animationControls.start("hidden");
+      animationControls.start("visible");
     }
   }, [inView, animationControls]);
 
   // Sticky scroll effect (Framer Motion for fade-in/out)
   const faqVariants = {
-    hidden: { opacity: 0, y: 100 },
+    hidden: { opacity: 0, y: "50vh" },
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 

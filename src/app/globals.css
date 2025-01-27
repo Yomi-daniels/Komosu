@@ -68,7 +68,8 @@ html,
 body {
   height: 100%;
   font-family: var(--text-Font-Light);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  scroll-behavior: smooth;
 }
 html {
   scroll-behavior: smooth;
@@ -82,6 +83,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow-x: hidden !important;
 }
 
 /* Footer specific styles */
@@ -146,8 +148,8 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
 
 /* Webkit-based browsers scrollbar styling */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
