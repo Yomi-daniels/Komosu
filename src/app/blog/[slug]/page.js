@@ -77,7 +77,7 @@ const BlogPostPage = ({ params }) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       /> */}
-
+   
       <article>
         <div className={styles.blogImageBg}>
           {blog.image && (

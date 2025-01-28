@@ -1,29 +1,42 @@
 "use client";
+
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "./sections.module.css";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
 
 const Servicesflex = () => {
-  const ref = useRef(null);
+  const containerRef = useRef(null);
 
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["0 1", "1 1"],
-  });
+  useEffect(() => {
+    const element = containerRef.current;
 
-  // Set a minimum scale value using useTransform
-  const scale = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+    // GSAP animation
+    gsap.fromTo(
+      element,
+      { scale: 0.8, opacity: 0.4 }, // Initial state
+      {
+        scale: 1, // Final scale
+        opacity: 1, // Final opacity
+        scrollTrigger: {
+          trigger: element,
+          start: "top center", // Start animation when the top of the element hits the center of the viewport
+          end: "center center", // End when the element's center aligns with the viewport center
+          scrub: true, // Smooth scrubbing effect
+        },
+      }
+    );
+  }, []);
 
   return (
-    <motion.div
-      ref={ref}
-      style={{ scale, opacity }}
-      className={styles.servicesContainer}
-    >
+    <div ref={containerRef} className={styles.servicesContainer}>
       <div className={styles.servicesContainerContent}>
         <div className={styles.containerflex}>
+          {/* Service 1 */}
           <div className={styles.containerFlex1}>
             <div className={styles.flexImg}>
               <Image
@@ -35,11 +48,12 @@ const Servicesflex = () => {
             </div>
             <h5 className={styles.containerFlexh5}>Web Design</h5>
             <p className={styles.containerFlexp}>
-              We revolutionize web design for dealerships. blending innovative
+              We revolutionize web design for dealerships. Blending innovative
               techniques with strategic planning to elevate online presence and
               drive sales.
             </p>
           </div>
+          {/* Service 2 */}
           <div className={styles.containerFlex1}>
             <div className={styles.flexImg}>
               <Image
@@ -51,13 +65,14 @@ const Servicesflex = () => {
             </div>
             <h5 className={styles.containerFlexh5}>Virtual Finance Managers</h5>
             <p className={styles.containerFlexp}>
-              We help eliminate paper-works and streamline processes with our
-              chatbot, acting as financial managers helping simplify the
-              financial journey.
+              We help eliminate paperwork and streamline processes with our
+              chatbot, acting as financial managers to simplify the financial
+              journey.
             </p>
           </div>
         </div>
         <div className={styles.containerSubFlex}>
+          {/* Service 3 */}
           <div className={styles.containerSubFlex1}>
             <div className={styles.flexImg}>
               <Image
@@ -76,7 +91,7 @@ const Servicesflex = () => {
               conversions.
             </p>
           </div>
-
+          {/* Service 4 */}
           <div className={styles.containerSubFlex1}>
             <div className={styles.flexImg}>
               <Image
@@ -86,16 +101,16 @@ const Servicesflex = () => {
                 objectFit="cover"
               />
             </div>
-            <h5 className={styles.containerFlexh5}>Content that converts</h5>
+            <h5 className={styles.containerFlexh5}>Content that Converts</h5>
             <p className={styles.containerFlexp}>
-              Komosu Network transforms content marketing for dealership,
+              Komosu Network transforms content marketing for dealerships,
               merging innovative tactics with targeted campaigns to enhance car
               sales and optimize ad spending.
             </p>
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
