@@ -48,7 +48,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className={styles.TermsCondition}>
-            <p>Terms & Conditions</p>
+            <Link href="/Terms_condition">Terms & Condition</Link>
             <Link href="/privacy">Privacy Policy</Link>
           </div>
           <div className={styles.FooterSocialLink}>

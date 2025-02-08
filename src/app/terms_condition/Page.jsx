@@ -1,18 +1,15 @@
-import { Montserrat } from "next/font/google";
-  const montserrat = Montserrat ({
-    subsets: ["latin"],
-    weight: ["100","200","500","900"]
+import React from "react";
 
-  })
-const Privacy = () => {
-
+const Terms_condition = () => {
   return (
-    <div className={`${"flex justify-center items-center h-1/2 bg-gray-100 overflow-y-hidden z-20 "} ${montserrat.className}` }>
+    <div
+      className={`${"flex justify-center items-center h-1/2 bg-gray-100 overflow-y-hidden z-20 "} ${montserrat.className}`}
+    >
       <div className="max-w-4xl w-full px-6 py-12 shadow-lg rounded-lg mt-[10rem] bg-blue-800 text-white ">
         <h1 className="text-2xl font-bold mb-6 text-center">Privacy Policy</h1>
         <p className=" text-sm text-center mb-8">
-          Your privacy is important to us. This privacy policy <br /> explains how we
-          collect, use, and protect your personal information.
+          Your privacy is important to us. This privacy policy <br /> explains
+          how we collect, use, and protect your personal information.
         </p>
         <h2 className="text-2xl font-semibold mb-4">Information We Collect</h2>
         <p className="mb-4 text-sm">
@@ -51,4 +48,5 @@ const Privacy = () => {
   );
 };
 
-export default Privacy;
+export default Page;
+Terms_condition;
