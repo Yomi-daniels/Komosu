@@ -36,6 +36,7 @@
 
 .casespan {
   color: var(--yellow);
+  font-family: "ShadowsIntoLight" !important;
 }
 
 /* CASE STUDY HEADER MEDIA SCREEN */

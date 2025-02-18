@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
+import Image from "next/image";
 
 const DigitalTransformationSection = () => {
   const sectionRef = useRef(null);
@@ -45,6 +46,7 @@ const DigitalTransformationSection = () => {
         animate={isInView ? "visible" : "hidden"}
         variants={staggerContainer}
       >
+     
         <motion.h5 variants={fadeInUp}>
           <TextGenerateEffect words={isInView ? words : ""} />
         </motion.h5>

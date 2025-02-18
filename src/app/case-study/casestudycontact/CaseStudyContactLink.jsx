@@ -1,3 +1,4 @@
+"use client";
 import casestyles from "../casestudy.module.css";
 import Link from "next/link";
 import Image from "next/image";

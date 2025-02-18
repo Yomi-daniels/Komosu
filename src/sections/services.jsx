@@ -62,13 +62,9 @@ const Services = () => {
           </h2>
         </div>
         <p className={cn(styles.subContent, "max-w-3xl mx-auto text-pretty")}>
-          At Komosu Network, we’re more than just service providers—we’re your
-          partners in revolutionizing the automotive industry. Our innovative
-          solutions give your dealership the push it needs to excel, while our
-          dedicated team builds strong relationships, ensuring that you can
-          focus on growing your business and delivering an exceptional customer
-          experience. Let us handle the details, so you can stay focused on what
-          truly drives your success.
+          Elevate your dealership’s digital presence with a premium
+          DealerHub—your built in social media tool to capture every sales
+          opportunity and stand apart from the competition.
         </p>
       </div>
 
@@ -78,8 +74,8 @@ const Services = () => {
           "hover:scale-110 transition-all duration-150"
         )}
       >
-        <Link href="/about">
-          <p>Learn more about Komosu</p>
+        <Link href="/dealership_hub">
+          <p>See more</p>
         </Link>
 
         <div className={styles.buttonImage}>

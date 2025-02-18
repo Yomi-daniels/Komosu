@@ -23,9 +23,14 @@ const links = [
   //   title: "Pricing",
   //   path: "/pricing",
   // },
+  // {
+  //   title: "Case Study",
+  //   path: "/case-study",
+  // },
+
   {
-    title: "Case Study",
-    path: "/case-study",
+    title: "Dealership Hub",
+    path: "/dealership_hub",
   },
 
   {
