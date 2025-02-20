@@ -1949,6 +1949,11 @@
   position: relative;
   width: 400px;
   height: 400px;
+  object-fit: cover;
+}
+
+.avatar img {
+  object-fit: cover;
 }
 .testimonialTextContent {
   max-width: 100%;

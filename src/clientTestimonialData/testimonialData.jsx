@@ -1,18 +1,18 @@
 // TestimonialData.js
 const TestimonialData = [
   {
-    avatar: "/Subtract (1).png",
-    company: "Jeep",
-    data: "The team at Komosu Sales is incredibly knowledgeable and dedicated. Their real-time analytics and reporting tools have given us a deeper understanding of our sales performance and customer behavior. This has enabled us to make smarter, data-driven decisions, resulting in a noticeable boost in sales.",
-    username: "David Allen",
-    role: "MD. Jeep",
+    avatar: "/Mary-Barra.jpg",
+    company: "General Motors",
+    data: `“Meet your customers where they’re at—sometimes they’re just browsing, sometimes they want a conversation. By creating a space where they feel safe to explore, interact, and engage. you ensure that when they’re ready to buy, your dealership is the only place they want to be.” — Komosu Network`,
+    username: "Mary Barra",
+    role: "CEO General Motors",
   },
   {
-    avatar: "/Subtract (1).png",
-    company: "Tesla",
-    data: "Komosu Sales has revolutionized our approach to customer engagement. The insights provided have been invaluable in tailoring our strategies to meet customer needs. We’ve seen a significant increase in customer satisfaction and retention.",
-    username: "Elon Musk",
-    role: "CEO. Tesla",
+    avatar: "/Gary Vaynerchuk.jpg",
+    company: "Vaynermedia",
+    data: `"The creator economy is fundamentally changing how businesses reach their customers. It's no longer just about traditional advertising; it's about empowering individuals to create authentic, engaging content that resonates with audiences and drives action."`,
+    username: "Gary Vaynerchuk",
+    role: "CEO. VaynerMedia",
   },
   {
     avatar: "/Subtract (1).png",
