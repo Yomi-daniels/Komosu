@@ -29,7 +29,7 @@ const links = [
   // },
 
   {
-    title: "Dealership Hub",
+    title: "Dealer Hub",
     path: "/dealership_hub",
   },
 

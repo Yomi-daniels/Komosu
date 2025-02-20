@@ -421,15 +421,18 @@
 
 .contactLinksection {
   width: 100%;
-  height: 500px;
+  height: 500px !important;
   margin-top: 6rem;
   background: #e6e6ff;
+  opacity: 1;
+  position: relative;
 }
 
 .PhotoShoot {
   width: 100%;
-  height: 70vh;
+  height: 70vh !important;
   object-fit: cover;
+  object-position: top 30%;
   /* filter: blur(px); */
 }
 
@@ -453,33 +456,13 @@
   line-height: 120%;
   letter-spacing: -0.32px;
   font-family: var(--text-Font-Bold);
-  color: #fff; /* White text */
-  text-shadow:
+  color: #ffffff;
+  /* text-shadow:
     0 0 5px #fff,
     0 0 10px #fff,
     0 0 20px #ccc,
     0 0 40px #bbb,
-    0 0 80px #aaa; /* Soft white glow */
-  animation: neonGlow 1.5s infinite alternate;
-}
-
-@keyframes neonGlow {
-  0% {
-    text-shadow:
-      0 0 5px #fff,
-      0 0 10px #fff,
-      0 0 20px #ccc,
-      0 0 40px #bbb,
-      0 0 80px #aaa;
-  }
-  100% {
-    text-shadow:
-      0 0 10px #fff,
-      0 0 20px #ddd,
-      0 0 30px #ccc,
-      0 0 50px #bbb,
-      0 0 100px #aaa;
-  }
+    0 0 80px #aaa;  */
 }
 
 .contactLinkContainer button {

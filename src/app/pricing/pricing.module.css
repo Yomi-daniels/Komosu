@@ -13,7 +13,6 @@
   max-width: 1120px;
   height: 100%;
   margin-inline: auto;
-  border: 2px solid red;
 }
 
 .pricingHeaderContent {
@@ -76,6 +75,7 @@
 
 .pricingContentWrapper {
   display: flex;
+  max-width: 100%;
 }
 
 .pricingLandingPageContainerHeader {
@@ -150,7 +150,7 @@
 
 .pricingContent {
   display: flex;
-  width: 560px;
+  max-width: 560px;
   padding: 24px 20px;
   flex-direction: column;
   align-items: flex-start;
@@ -231,5 +231,9 @@
   }
   .pricingLandingPageContainerHeader h4 {
     font-size: 17px;
+  }
+
+  .pricingContent {
+    border-radius: 0px !important;
   }
 }
