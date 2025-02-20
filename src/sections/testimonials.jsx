@@ -65,12 +65,15 @@ const Testimonials = () => {
         isVisible ? styles.fadeIn : styles.fadeOut
       }`}
     >
+    <div className={styles.servicesSubTextContainer}>
+          <div className={styles.blueBorder}></div>
+          <p className={styles.servicesSubText}>QUOTES</p>
+        </div>
       <h2 className={`${styles.offerHeader} ${styles.testimonialHeader}`}>
-        HEAR WHAT OUR{" "}
+        The Future of{" "}
         <span className={`${styles.offerSpan} ${shadows_Font.className}`}>
-          CLIENTS{" "}
+          DEALERSHIPS{" "}
         </span>
-        SAY ABOUT US
       </h2>
       <div
         className={`${styles.testimonialContainer} ${
