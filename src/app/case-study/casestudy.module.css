@@ -421,7 +421,7 @@
 
 .contactLinksection {
   width: 100%;
-  min-height: 500px !important;
+  height: 500px !important;
   margin-top: 6rem;
   background: #e6e6ff;
   opacity: 1;
@@ -430,7 +430,7 @@
 
 .PhotoShoot {
   width: 100%;
-  min-height: 500px !important;
+  height: 500px !important;
   object-fit: cover;
   object-position: top 30%;
   /* filter: blur(px); */
@@ -528,5 +528,12 @@
     height: 44px;
     padding: 8px;
     font-size: 14px;
+  }
+  .contactLinksection {
+    min-height: 500px !important;
+  }
+
+  .PhotoShoot {
+    min-height: 500px !important;
   }
 }
