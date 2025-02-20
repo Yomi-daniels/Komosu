@@ -1658,7 +1658,9 @@
 
 .businessAnalytics {
   font-size: 1.1rem;
+  font-weight: 900 !important;
   color: #534500;
+  font-family: var(--text-Font-Bold);
 }
 
 .offerFeaturesContent {

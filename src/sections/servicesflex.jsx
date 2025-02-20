@@ -48,9 +48,9 @@ const Servicesflex = () => {
             </div>
             <h5 className={styles.containerFlexh5}>Web Design</h5>
             <p className={styles.containerFlexp}>
-              We revolutionize web design for dealerships. Blending innovative
-              techniques with strategic planning to elevate online presence and
-              drive sales.
+              Elevate your dealership with sleek, modern web design that
+              enhances user experience, builds trust, and showcases your
+              inventory to drive sales and engagement
             </p>
           </div>
           {/* Service 2 */}
@@ -63,11 +63,11 @@ const Servicesflex = () => {
                 objectFit="cover"
               />
             </div>
-            <h5 className={styles.containerFlexh5}>Virtual Finance Managers</h5>
+            <h5 className={styles.containerFlexh5}>Content</h5>
             <p className={styles.containerFlexp}>
-              We help eliminate paperwork and streamline processes with our
-              chatbot, acting as financial managers to simplify the financial
-              journey.
+              Create high-quality, authentic content that boosts customer
+              engagement, reduces reliance on ads, and strengthens your
+              dealership’s brand through unique storytelling
             </p>
           </div>
         </div>
@@ -82,13 +82,11 @@ const Servicesflex = () => {
                 objectFit="cover"
               />
             </div>
-            <h5 className={styles.containerFlexh5}>
-              Sales & Appointment Assistants
-            </h5>
+            <h5 className={styles.containerFlexh5}>Dealer Hub</h5>
             <p className={styles.containerFlexp}>
-              Komosu Network innovates lead generation for dealerships,
-              combining content marketing and chatbot to boost sales and
-              conversions.
+              Revolutionize your dealership’s website with an integrated Dealer
+              Hub—a social media hub that retains customer attention and
+              nurtures leads directly on your site
             </p>
           </div>
           {/* Service 4 */}
@@ -101,11 +99,11 @@ const Servicesflex = () => {
                 objectFit="cover"
               />
             </div>
-            <h5 className={styles.containerFlexh5}>Content that Converts</h5>
+            <h5 className={styles.containerFlexh5}>More Control</h5>
             <p className={styles.containerFlexp}>
-              Komosu Network transforms content marketing for dealerships,
-              merging innovative tactics with targeted campaigns to enhance car
-              sales and optimize ad spending.
+              Gain autonomy with a platform that centralizes your content,
+              captures valuable data, and reduces dependency on third-party
+              tools for sustained, cost-effective growth.
             </p>
           </div>
         </div>

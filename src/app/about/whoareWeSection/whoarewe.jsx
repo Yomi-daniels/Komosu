@@ -82,10 +82,14 @@ const WhoareweSection = () => {
           <TextGenerateEffect words={words} />
         </h2>
         <p ref={whoAreWeHeaderP}>
-          Our dedicated team of experts focuses on building strong relationships
-          with clients, ensuring that they have more time to concentrate on what
-          truly matters to them. We value hearing about their experiences and
-          strive to support their journey every step of the way.
+          We've been closely following the auto industry, recognizing real
+          opportunities to deliver exceptional value through innovation. Our
+          team of dedicated experts is committed to building strong,
+          long-lasting relationships with each client, helping them focus on
+          what matters most to them. We listen closely, understanding their
+          unique experiences and needs, and provide support every step of the
+          way. At Komosu, we’re not just a service provider; we’re a partner in
+          your dealership’s journey.
         </p>
       </div>
       <div

@@ -78,7 +78,9 @@ const OfferAnimation = () => {
               <div className={styles.OfferAnimationContainerContentSmallImage}>
                 <Image src="/Vector (7).png" alt="offerAnimImg" fill />
               </div>
-              <h6 className={styles.businessAnalytics}>BUSINESS ANALYTICS</h6>
+              <h6 className={`${styles.businessAnalytics} ${"font-black"}`}>
+                BUSINESS ANALYTICS
+              </h6>
             </div>
             <h3>
               Transform your business with data-driven insight. Harness your

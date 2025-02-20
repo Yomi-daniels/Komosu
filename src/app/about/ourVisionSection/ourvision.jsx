@@ -35,7 +35,11 @@ const OurvisionSection = () => {
           animate={isInView ? "visible" : "hidden"}
           variants={sectionVariants}
         >
-          {visionText}
+          Our goal is to build a powerful internal engine that dealerships can
+          leverage and control—enabling them to engage customers, enhance brand
+          presence, and drive growth from within. With our tailored web
+          solutions, we empower dealerships to create meaningful digital
+          experiences that drive trust, loyalty, and long-term success.
         </motion.p>
       </motion.div>
     </section>

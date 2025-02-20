@@ -35,10 +35,16 @@ const OurSolutionSection = () => {
           animate={isInView ? "visible" : "hidden"}
           variants={sectionVariants}
         >
-          Komosu Network innovates lead generation for dealerships, combining
-          content marketing and chatbots to boost sales and conversions. We
-          enhance your online presence with content marketing, in-depth analysis
-          of marketing trends, all in a bid to keep you ahead.
+          At Komosu, we specialize in creating premium web solutions that
+          empower dealerships to elevate their digital presence. Our bespoke
+          online Dealer Hubs go beyond basic websites, offering dealerships a
+          customized platform to enhance their brand, build customer trust, and
+          ultimately increase the value of their digital assets. By centralizing
+          essential content, dealer interactions, and customer engagement tools,
+          we give dealerships more control and insight into their customer
+          relationships. With our innovative approach, Komosu Network is
+          committed to transforming how dealerships connect with customers
+          online, positioning them for growth in a digital-first world.
         </motion.p>
       </motion.div>
     </section>
