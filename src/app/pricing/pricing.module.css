@@ -13,6 +13,7 @@
   max-width: 1120px;
   height: 100%;
   margin-inline: auto;
+  border: 2px solid red;
 }
 
 .pricingHeaderContent {
@@ -29,6 +30,13 @@
   line-height: 120%; /* 60px */
   letter-spacing: -0.5px;
   color: var(--blueText);
+}
+
+@media (max-width: 768px) {
+  .pricingHeaderContent h1 {
+    font-size: 36px;
+    line-height: 120%; /* 43.2px */
+  }
 }
 
 .pricingHeaderContent p {
@@ -214,4 +222,14 @@
 
 .pricingContentWrapper2 .pricingContent2 {
   border-radius: 0px 0px 20px 0px;
+}
+
+@media (max-width: 768px) {
+  .pricingContentWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .pricingLandingPageContainerHeader h4 {
+    font-size: 17px;
+  }
 }

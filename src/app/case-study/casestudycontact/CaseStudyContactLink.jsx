@@ -28,6 +28,7 @@ const CaseStudyContactLink = () => {
       className={casestyles.contactLinksection}
       ref={contactLinkSectionRef}
     >
+      <Image src="/dealerhub-car-shoot.jpg" alt="car image" fill className={casestyles.PhotoShoot} />
       <div className={casestyles.contactLinkContainer}>
         <div className={casestyles.topimgabsolute}>
           <Image src="/Group 2.png" fill alt="Top Image" />

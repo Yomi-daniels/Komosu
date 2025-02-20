@@ -36,7 +36,8 @@ const DealershipHubSection = () => {
   };
 
   const words = `What is a Dealership Hub?`;
-  const challengesText = `It’s more than just a website—it’s a dedicated social media hub where
+  const challengesText = `It’s more than just a website
+   it’s a dedicated social media hub where
         customers can:`;
   const solutionsText = `Why Your Dealership Needs a DealerHub`;
 
@@ -62,97 +63,109 @@ const DealershipHubSection = () => {
         <motion.h5 variants={fadeInUp}>
           <TextGenerateEffect words={isInView ? words : ""} />
         </motion.h5>
-        <motion.h2 variants={fadeInUp}>
+        <motion.p variants={fadeInUp}>
         DealerHub is your all-in-one platform to <br /> engage customers and build trust.
-        </motion.h2>
+        </motion.p>
         <motion.p variants={fadeInUp}>
 
       
         </motion.p>
       </motion.div>
 
-      <motion.div
-        className={casestyles.secondheadingsection}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={staggerContainer}
-      >
-        <motion.h4 variants={fadeInUp}>
-          <TextGenerateEffect words={isInView ? challengesText : ""} />
-        </motion.h4>
-
+      <motion.section className={`${casestyles.secondheadingsectionParent}`}>
         <motion.div
-          className={casestyles.challanges}
+          className={casestyles.secondheadingsection}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
           variants={staggerContainer}
         >
+          <motion.h4 variants={fadeInUp} className="w-[40ch]">
+            <TextGenerateEffect words={isInView ? challengesText : ""} />
+          </motion.h4>
           <motion.div
-            className={casestyles.challangescontent}
-            variants={fadeInUp}
+            className={`${casestyles.challanges}${"w-[40ch]"}`}
+            variants={staggerContainer}
           >
-            <div className={casestyles.TickImg}>
-              <Tickimg />
-            </div>
-            <p>
-            <span className="font-bold">Explore Your Inventory:</span> Browse vehicles, <br /> get details, and stay updated on new arrivals.
-            </p>
+            <motion.div
+              className={casestyles.challangescontent}
+              variants={fadeInUp}
+            >
+              <div className={casestyles.TickImg}>
+                <Tickimg />
+              </div>
+              <p>
+              <span className="font-bold">Explore Your Inventory:</span> Browse vehicles, <br /> get details, and stay updated on new arrivals.
+              </p>
+            </motion.div>
+            <motion.div
+              className={casestyles.challangescontent}
+              variants={fadeInUp}
+            >
+              <div className={casestyles.TickImg}>
+                <Tickimg />
+              </div>
+              <p>
+              <span className="font-bold">Check Financing Options:</span>  Provide easy access to <br /> financing information and pre-approvals.
+              </p>
+            </motion.div>
+            <motion.div
+              className={casestyles.challangescontent}
+              variants={fadeInUp}
+            >
+              <div className={casestyles.TickImg}>
+                <Tickimg />
+              </div>
+              <p>
+              <span className="font-bold">Connect with Your Sales Team:</span> Chat directly with your team <br /> and schedule test drives.
+              </p>
+            </motion.div>
+            <motion.div
+              className={casestyles.challangescontent}
+              variants={fadeInUp}
+            >
+              <div className={casestyles.TickImg}>
+                <Tickimg />
+              </div>
+              <p>
+              <span className="font-bold">Join the Community:</span> Customers can comment, ask questions, <br /> and engage with your dealership.
+              </p>
+            </motion.div>
+            <motion.div
+              className={casestyles.challangescontent}
+              variants={fadeInUp}
+            >
+              <div className={casestyles.TickImg}>
+                <Tickimg />
+              </div>
+              <p>
+              <span className="font-bold">Access Premium Content:</span> Showcase videos, reviews,and exclusive dealership updates.
+              </p>
+            </motion.div>
+            <motion.div
+              className={casestyles.challangescontent}
+              variants={fadeInUp}
+            >
+              <div className={casestyles.TickImg}>
+                <Tickimg />
+              </div>
+              <p>
+              <span className="font-bold">Capture More Leads:</span>   Turn engagement into sales with built-in  lead generation tools.
+              </p>
+            </motion.div>
           </motion.div>
-          <motion.div
-            className={casestyles.challangescontent}
-            variants={fadeInUp}
-          >
-            <div className={casestyles.TickImg}>
-              <Tickimg />
-            </div>
-            <p>
-            <span className="font-bold">Check Financing Options:</span>  Provide easy access to <br /> financing information and pre-approvals.
-            </p>
-          </motion.div>
-          <motion.div
-            className={casestyles.challangescontent}
-            variants={fadeInUp}
-          >
-            <div className={casestyles.TickImg}>
-              <Tickimg />
-            </div>
-            <p>
-            <span className="font-bold">Connect with Your Sales Team:</span>Chat directly with your team <br /> and schedule test drives.
-            </p>
-          </motion.div>
-          <motion.div
-            className={casestyles.challangescontent}
-            variants={fadeInUp}
-          >
-            <div className={casestyles.TickImg}>
-              <Tickimg />
-            </div>
-            <p>
-            <span className="font-bold">Join the Community:</span>Customers can comment, ask questions, <br /> and engage with your dealership.
-            </p>
-          </motion.div>
-          <motion.div
-            className={casestyles.challangescontent}
-            variants={fadeInUp}
-          >
-            <div className={casestyles.TickImg}>
-              <Tickimg />
-            </div>
-            <p>
-            <span className="font-bold">Access Premium Content:</span> Showcase videos, reviews,and exclusive dealership updates.
-            </p>
-          </motion.div>
-          <motion.div
-            className={casestyles.challangescontent}
-            variants={fadeInUp}
-          >
-            <div className={casestyles.TickImg}>
-              <Tickimg />
-            </div>
-            <p>
-            <span className="font-bold">Capture More Leads:</span>   Turn engagement into sales with built-in  lead generation tools.
-            </p>
-          </motion.div>
+        
         </motion.div>
-      </motion.div>
+        
+  <Image 
+    src="/family-vehicle.jpg" 
+    alt="car" 
+    width={700}
+    height={500}
+    className={casestyles.imageSectionImg} 
+  /> 
+
+
+      </motion.section>
 
       <motion.div
         className={casestyles.thirdheadingsection}
@@ -241,7 +254,7 @@ const DealershipHubSection = () => {
       <div>
       <section className={pricingStyles.pricingLandingPage}>
       <div className={pricingStyles.pricingHeaderContent}>
-        <h1 className={`${montserrat.className} ${"text-center"}`}>Advantageous functionalities of a <br /> centralized dealer platform</h1>
+        <h1 className={`${montserrat.className} ${"text-center sm:text-xs"}`}>Advantageous functionalities of a <br /> centralized dealer platform</h1>
       
       </div>
       <div className={pricingStyles.pricingLandingPageContainer}>
@@ -340,7 +353,7 @@ const DealershipHubSection = () => {
         </div>
       </div>
       {/* <Testimonials /> */}
-      <FAQ />
+     
     </section>
       </div>
    
