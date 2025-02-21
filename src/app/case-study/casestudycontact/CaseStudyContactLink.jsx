@@ -29,7 +29,7 @@ const CaseStudyContactLink = () => {
       ref={contactLinkSectionRef}
     >
       <Image
-        src="/dealerhub-car-shoot.jpg"
+        src="/carDealership_img.jpg"
         alt="car image"
         fill
         className={casestyles.PhotoShoot}

@@ -157,9 +157,9 @@ const DealershipHubSection = () => {
         </motion.div>
         
   <Image 
-    src="/family-vehicle.jpg" 
+    src="/dealerhub_img.png" 
     alt="car" 
-    width={700}
+    width={500}
     height={500}
     className={casestyles.imageSectionImg} 
   /> 
@@ -240,7 +240,7 @@ const DealershipHubSection = () => {
         </div>
       </motion.div>
 
-      <motion.p
+      {/* <motion.p
         className={casestyles.lastheadingtext}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -250,7 +250,7 @@ const DealershipHubSection = () => {
         realize their digital transformation, leading to increased sales and a
         stronger market presence. Let Komosu Network help you unlock your
         dealership’s full potential."
-      </motion.p>
+      </motion.p> */}
       <div>
       <section className={pricingStyles.pricingLandingPage}>
       <div className={pricingStyles.pricingHeaderContent}>

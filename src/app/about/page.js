@@ -19,7 +19,7 @@ const AboutPage = () => {
       <VideoShowcase />
       <OurSolutionSection />
       <ServicesFlex />
-      <MeetOurTeam />
+      {/* <MeetOurTeam /> */}
     </section>
   );
 };
