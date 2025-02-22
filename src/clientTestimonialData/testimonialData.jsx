@@ -3,7 +3,7 @@ const TestimonialData = [
   {
     avatar: "/Mary-Barra.jpg",
     company: "General Motors",
-    data: `“Meet your customers where they’re at—sometimes they’re just browsing, sometimes they want a conversation. By creating a space where they feel safe to explore, interact, and engage. you ensure that when they’re ready to buy, your dealership is the only place they want to be.” — Komosu Network`,
+    data: `“Meet your customers where they’re at—sometimes they’re just browsing, sometimes they want a conversation. By creating a space where they feel safe to explore, interact, and engage. you ensure that when they’re ready to buy, your dealership is the only place they want to be.”`,
     username: "Mary Barra",
     role: "CEO General Motors",
   },

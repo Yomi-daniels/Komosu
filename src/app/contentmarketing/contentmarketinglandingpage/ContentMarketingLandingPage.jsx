@@ -35,6 +35,7 @@ const ContentMarketingLandingPage = () => {
       );
   }, []);
   const contentHeaderText = `Next-Gen Content \n Marketing Solutions`;
+  const solutionsText = `Why Your Dealership Needs a DealerHub`;
   return (
     <section className={contentStyles.contentSection}>
       {/* <div className={contentStyles.vectorbottom}>
