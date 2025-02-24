@@ -63,11 +63,14 @@ const WebDesignLandingpage = () => {
             />
           </h1>
           <p>
-            Welcome to Komosu Network, where we redefine automotive web design
-            with a focus on digital transformation. Our services are crafted to
-            elevate your dealership's online presence, enhance customer
-            engagement, and streamline operations with integrated digital
-            solutions.
+            At Komosu Network, we don’t just create websites—we craft digital
+            experiences that embody your brand’s identity and propel your
+            dealership into the future. Our designs are tailored to align
+            seamlessly with your unique brand image, ensuring your online
+            presence resonates with your audience. By integrating cutting-edge
+            technology, intuitive navigation, and visually stunning aesthetics,
+            we elevate your dealership’s digital footprint and set you apart in
+            the competitive automotive space.
           </p>
           <LandingPageButtons />
         </div>

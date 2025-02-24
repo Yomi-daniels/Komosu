@@ -7,6 +7,7 @@ import Testimonials from "@/sections/testimonials";
 import VideoShowcase from "@/sections/videoShowcase";
 import styles from "./page.module.css";
 import Navbar from "./components/navbar/Navbar";
+import WhyKomosu from "@/sections/WhyKomosu";
 // Import `cn` if you need it for conditional class names
 // import cn from "classnames";
 
@@ -27,8 +28,12 @@ const Home = () => {
       <section className={styles.OfferPage}>
         <Offer />
       </section>
+   
       <section className={styles.OfferAnimationPage}>
         <OfferAnimation />
+      </section>
+      <section className={styles.OfferAnimationPage}>
+      <WhyKomosu/> 
       </section>
       <section className={styles.TestimonialPage}>
         <Testimonials />

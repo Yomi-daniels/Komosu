@@ -135,7 +135,7 @@
   border-radius: 10px;
 
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-evenly;
   /* gap: 5em; */
   padding: 0 2rem;
@@ -146,8 +146,27 @@
 }
 
 .imageSectionImg {
-  object-fit: cover;
+  object-fit: contain;
   margin-top: 3rem;
+  border-radius: 10px;
+}
+
+.WhyKomosuImgContainer {
+  max-width: 700px;
+  height: 300px;
+  position: relative;
+  /* margin-top: 3rem; */
+}
+
+.WhyKomosuImg1 {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.whyKomosu2 {
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -157,6 +176,9 @@
   justify-content: space-between;
   flex-direction: column;
   gap: 2em;
+  /* border: 3px solid red; */
+  max-width: 100%;
+  /* align-items: center; */
 }
 
 /* .imageSection {
@@ -252,6 +274,10 @@
 
   transition: opacity 1s ease;
   overflow: hidden;
+}
+
+.whhyKomosuSection {
+  margin-top: 0;
 }
 
 .thirdsectionheader {
