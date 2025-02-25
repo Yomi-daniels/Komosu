@@ -156,7 +156,7 @@ const WhyKomosu = () => {
         variants={staggerContainer}>
           <div className="h-full mx-auto flex flex-wrap items-center justify-center gap-8 p-4">
             <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-md p-6 ">
-            <Image src="/whykomosuImg1.jpg" alt="image" width={380} height={380} objectFit="cover" />
+            <Image src="/whyKomosuimg3.jpg" alt="image" width={380} height={380} objectFit="cover" className="opacity-65" />
             <motion.div className={`${casestyles.textconent} ${"max-sm:gap-0"}`} variants={fadeInUp}>
                 <h4>
                   <TextGenerateEffect
