@@ -82,7 +82,7 @@ const WhyKomosu = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={staggerContainer}>
-          <motion.div className="h-full mx-auto flex flex-wrap items-start justify-center gap-8 p-4">
+          <motion.div className="max-h-full mx-auto flex flex-wrap items-start justify-center gap-8 p-4 ">
             <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-md p-6 ">
             <Image src="/customSolution.jpg" alt="image" width={380} height={380} objectFit="cover" />
             <motion.div className={`${casestyles.textconent} ${"max-sm:gap-0"}`} variants={fadeInUp}>

@@ -73,6 +73,15 @@
   margin-top: 3rem;
 }
 
+.pricingHeaderContent {
+  font-family: var(--text-Font-Regular);
+}
+
+.pricingHeaderContent h1 {
+  font-family: var(--text-Font-Bold);
+  font-weight: 900;
+}
+
 .pricingContentWrapper {
   display: flex;
   max-width: 100%;

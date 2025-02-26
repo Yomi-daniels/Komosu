@@ -77,7 +77,7 @@ const DealershipHubSection = () => {
             animate={isInView ? "visible" : "hidden"}
             variants={staggerContainer}
           >
-            <motion.h4 variants={fadeInUp} className="w-[30ch]">
+            <motion.h4 variants={fadeInUp} className="max-w-[30ch]">
               <TextGenerateEffect words={isInView ? challengesText : ""} />
             </motion.h4>
             <motion.div
@@ -163,97 +163,13 @@ const DealershipHubSection = () => {
         />
       </motion.section>
 
-      {/* <motion.div
-        className={casestyles.thirdheadingsection}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={staggerContainer}
-      >
-        <motion.h4
-          variants={fadeInUp}
-          className={casestyles.thirdsectionheader}
-        >
-          <TextGenerateEffect words={isInView ? solutionsText : ""} />
-        </motion.h4>
-
-        <div className={casestyles.textWrapper}>
-          <motion.div
-            className={casestyles.textcontentflex}
-            variants={staggerContainer}
-          >
-            <motion.div className={casestyles.textconent} variants={fadeInUp}>
-              <h4>
-                <TextGenerateEffect
-                  words={isInView ? h4Texts.DealerHub1 : ""}
-                />
-              </h4>
-              <p>
-                The creator economy empowers sales reps to produce engaging,
-                authentic content that drives customer interest. By integrating
-                this content into your website, you keep customer attention on
-                your dealership, not on third-party platforms.
-              </p>
-            </motion.div>
-
-            <motion.div className={casestyles.textconent} variants={fadeInUp}>
-              <h4>
-                <TextGenerateEffect
-                  words={isInView ? h4Texts.DealerHub2 : ""}
-                />
-              </h4>
-              <p>
-                Showcase your inventory with dynamic visuals and professional
-                edits that elevate your brand image and boost buyer interest.
-              </p>
-            </motion.div>
-          </motion.div>
-
-          <motion.div
-            className={casestyles.textcontentflex}
-            variants={staggerContainer}
-          >
-            <motion.div className={casestyles.textconent} variants={fadeInUp}>
-              <h4>
-                <TextGenerateEffect
-                  words={isInView ? h4Texts.DealerHub3 : ""}
-                />
-              </h4>
-              <p>
-                Stop losing valuable insights to social platforms. The DealerHub
-                lets you manage customer data efficiently, providing actionable
-                insights for improved strategies.
-              </p>
-            </motion.div>
-
-            <motion.div className={casestyles.textconent} variants={fadeInUp}>
-              <h4>
-                <TextGenerateEffect
-                  words={isInView ? h4Texts.DealerHub4 : ""}
-                />
-              </h4>
-              <p>
-                Build an organic traffic engine that attracts leads without
-                constantly relying on expensive ad campaigns
-              </p>
-            </motion.div>
-          </motion.div>
-          <motion.div className={casestyles.textconent} variants={fadeInUp}>
-            <h4>
-              <TextGenerateEffect words={isInView ? h4Texts.DealerHub5 : ""} />
-            </h4>
-            <p>
-              Create a unique customer experience that builds trust and keeps
-              buyers coming back.
-            </p>
-          </motion.div>
-        </div>
-      </motion.div> */}
-      <DealershipPagination/>
+    
+      {/* <DealershipPagination/> */}
     
       <div>
         <section className={pricingStyles.pricingLandingPage}>
           <div className={pricingStyles.pricingHeaderContent}>
-            <h1 className={` ${"text-center sm:text-xs"}`}>
+            <h1 className={` ${"text-center sm:text-xs max-md:text-xs"}`}>
               Advantageous functionalities of a <br /> centralized dealer
               platform
             </h1>
