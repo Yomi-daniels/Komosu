@@ -135,19 +135,19 @@
   border-radius: 10px;
 
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-evenly;
   /* gap: 5em; */
   padding: 0 2rem;
   position: relative;
-
+  margin-bottom: 5rem;
   transition: opacity 1s ease;
   overflow: hidden;
 }
 
 .imageSectionImg {
   object-fit: contain;
-  margin-top: 3rem;
+  margin-top: 7rem !important;
   border-radius: 10px;
 }
 
@@ -358,6 +358,10 @@
   max-width: 1120px;
 }
 
+.carouselHeader {
+  border: 3px solid red !important;
+}
+
 /* DIGITAL TRANSFORMATION MEDIA SCREEN */
 
 @media (max-width: 1025px) {
@@ -384,6 +388,17 @@
   .DigitalTransformationSection {
     margin-top: 1.5rem;
     padding: 0 2rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .secondheadingsectionParent {
+    margin-top: 3rem;
+    flex-direction: column-reverse;
+    gap: 1em;
+    /* border: 3px solid red; */
+    justify-content: center;
+    align-items: center;
   }
 }
 

@@ -24,25 +24,28 @@ const DealershipHeader = () => {
   return (
     <section className={casestyles.CaseStudyHeader} ref={caseStudyHeaderRef}>
       <div className="flex items-center gap-4">
-          <h5>Dealership Hub</h5>
-          <Image src="/car_icon.png" width={30} height={30} 
-            className="max-sm:w-[20px]"
-            alt="car-icon" />
+        <h5>Dealership Hub</h5>
+        <Image
+          src="/car_icon.png"
+          width={30}
+          height={30}
+          className="max-sm:w-[20px]"
+          alt="car-icon"
+        />
       </div>
       <div className="flex justify-between items-center max-sm:flex-col max-sm:w-[250px] max-sm:gap-8">
-          <h1>
-            Poor Online presence is <br /> costly for your{" "}
-            <span className={`${casestyles.casespan} ${shadowFont.className}`}>
-              Dealership
-            </span>
-          </h1>
-          <Image
+        <h1>
+          Your {""}
+          <span className={`${casestyles.casespan} ${shadowFont.className}`}> 
+            Dealership’s{" "} 
+          {""}</span>Social  <br /> Media Website
+        </h1>
+        <Image
           src="/dealership_car.png"
           width={300}
           height={300}
           alt="dealership img"
           objectFit="contain"
-        
         />
       </div>
     </section>

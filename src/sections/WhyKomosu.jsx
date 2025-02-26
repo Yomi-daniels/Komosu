@@ -76,87 +76,15 @@ const WhyKomosu = () => {
       </motion.div>
 
 
-      {/* <motion.div
-        className={` ${casestyles.thirdheadingsection} ${casestyles.whhyKomosuSection}`}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={staggerContainer}>
      
-        <div className={casestyles.textWrapper}>
-          <motion.div
-            className={casestyles.textcontentflex}
-            variants={staggerContainer}
-          >
-            <motion.div className={casestyles.textconent} variants={fadeInUp}>
-              <h4>
-                <TextGenerateEffect
-                  words={isInView ? h4Texts.DealerHub1 : ""}
-                />
-              </h4>
-              <p>
-                 Our designs reflect your unique brand identity while integrating cutting-edge features.
-              </p>
-            </motion.div>
-
-            <motion.div className={casestyles.textconent} variants={fadeInUp}>
-              <h4>
-                <TextGenerateEffect
-                  words={isInView ? h4Texts.DealerHub2 : ""}
-                />
-              </h4>
-              <p>
-         We build a social media hub into your website, offering unparalleled engagement opportunities.
-              </p>
-            </motion.div>
-          </motion.div>
-
-          <motion.div
-            className={casestyles.textcontentflex}
-            variants={staggerContainer}
-          >
-            <motion.div className={casestyles.textconent} variants={fadeInUp}>
-              <h4>
-                <TextGenerateEffect
-                  words={isInView ? h4Texts.DealerHub3 : ""}
-                />
-              </h4>
-              <p>
-                From content creation to advanced functionality, we ensure your site is both stunning and strategic.
-              </p>
-            </motion.div>
-
-            <motion.div className={casestyles.textconent} variants={fadeInUp}>
-              <h4>
-                <TextGenerateEffect
-                  words={isInView ? h4Texts.DealerHub4 : ""}
-                />
-              </h4>
-              <p>
-             Customer reviews and testimonials prominently displayed build trust. Secure, modern design features signal that customers’ data is protected.
-
-              </p>
-            </motion.div>
-          </motion.div>
-          <motion.div className={casestyles.textconent} variants={fadeInUp}>
-            <h4>
-              <TextGenerateEffect words={isInView ? h4Texts.DealerHub5 : ""} />
-            </h4>
-            <p>
-             Unique design elements aligned with your brand identity help your dealership be memorable.
-              A custom-built Dealer Hub integrated into your site gives you a competitive edge by offering features no standard template can match
-
-            </p>
-          </motion.div>
-        </div>
-      </motion.div> */}
       <motion.div
         className={` ${casestyles.thirdheadingsection} ${casestyles.whhyKomosuSection} `}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={staggerContainer}>
-          <div className="h-full mx-auto flex flex-wrap items-center justify-center gap-8 p-4">
+          <motion.div className="h-full mx-auto flex flex-wrap items-start justify-center gap-8 p-4">
             <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-md p-6 ">
-            <Image src="/whyKomosuimg3.jpg" alt="image" width={380} height={380} objectFit="cover" className="opacity-65" />
+            <Image src="/customSolution.jpg" alt="image" width={380} height={380} objectFit="cover" />
             <motion.div className={`${casestyles.textconent} ${"max-sm:gap-0"}`} variants={fadeInUp}>
                 <h4>
                   <TextGenerateEffect
@@ -170,7 +98,7 @@ const WhyKomosu = () => {
               </motion.div>
             </div>
             <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-md p-6 ">
-            <Image src="/whyKomosuimg1.jpg" alt="image" width={380} height={380} objectFit="cover" className="opacity-80"/>
+            <Image src="/DealerIntegration.jpg" alt="image" width={380} height={380} objectFit="cover" />
             <motion.div className={`${casestyles.textconent} ${"max-sm:gap-0"}`} variants={fadeInUp}>
                 <h4>
                   <TextGenerateEffect
@@ -184,7 +112,7 @@ const WhyKomosu = () => {
               </motion.div>
             </div>
             <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-md p-6 ">
-            <Image src="/whyKomosuimg1.jpg" alt="image" width={380} height={380} objectFit="cover" />
+            <Image src="/ExpertSupport.jpg" alt="image" width={380} height={380} objectFit="cover" />
             <motion.div className={`${casestyles.textconent} ${"max-sm:gap-0"}`} variants={fadeInUp}>
                 <h4>
                   <TextGenerateEffect
@@ -198,7 +126,7 @@ const WhyKomosu = () => {
               </motion.div>
             </div>
             <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-md p-6 ">
-            <Image src="/whyKomosuimg1.jpg" alt="image" width={380} height={380} objectFit="cover" />
+            <Image src="/TrustCredible.jpg" alt="image" width={380} height={380} objectFit="cover" />
             <motion.div className={`${casestyles.textconent} ${"max-sm:gap-0"}`} variants={fadeInUp}>
                 <h4>
                   <TextGenerateEffect
@@ -212,7 +140,7 @@ const WhyKomosu = () => {
               </motion.div>
             </div>
             <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-md p-6 ">
-            <Image src="/whyKomosuimg1.jpg" alt="image" width={380} height={380} objectFit="cover" />
+            <Image src="/DifferentiationCompetitor.jpg" alt="image" width={380} height={380} objectFit="cover" />
             <motion.div className={`${casestyles.textconent} ${"max-sm:gap-0"}`} variants={fadeInUp}>
                 <h4>
                   <TextGenerateEffect
@@ -227,7 +155,7 @@ const WhyKomosu = () => {
               </motion.div>
             </div>
           
-          </div>
+          </motion.div>
         </motion.div>
     </section>
   );
