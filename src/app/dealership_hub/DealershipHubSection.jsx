@@ -5,14 +5,16 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
-// import pricingStyles from "../pricing.module.css";
+
 import pricingStyles from "../pricing/pricing.module.css";
 import Image from "next/image";
 import Testimonials from "@/sections/testimonials";
 import FAQ from "@/sections/faq";
 // import { Montserrat } from "next/font/google";
 import Link from "next/link";
-import DealershipPagination from "./DealershipPagination";
+import StackedCards from "./StackedCard";
+import StickyStack from "./StackedCard";
+
 // const montserrat = Montserrat({
 //   subsets: ["latin"],
 //   weight: ["700"],
@@ -164,7 +166,7 @@ const DealershipHubSection = () => {
       </motion.section>
 
     
-      {/* <DealershipPagination/> */}
+      <StackedCards/>
     
       <div>
         <section className={pricingStyles.pricingLandingPage}>
@@ -184,20 +186,18 @@ const DealershipHubSection = () => {
                         className={`${pricingStyles.pricingContentImgBg} ${pricingStyles.pricingContentImgBgblue}`}
                       >
                         <div className={pricingStyles.pricingContentImg}>
-                          <Image src="/Vector.svg" fill objectFit="contain" />
+                          <Image src="/contentImg.png" fill objectFit="contain" />
                         </div>
                       </div>
                       <div className={pricingStyles.arrowWrapper}>
-                        <h4>HIGHER CONVERSIONS</h4>
+                        <h4>POST ENGAGING CONTENTS</h4>
                         <div className={pricingStyles.arrowLeft}>
                           <Image src="/Arrow 1.svg" fill />
                         </div>
                       </div>
                     </div>
                     <h3>
-                      Keep potential buyers engaged with cutting-edge features
-                      that address their needs at every stage of the sales
-                      funnel.
+                     Upload vehicle videos, promotions, and customer stories. Visitors watch, like, and comment—just like social media
                     </h3>
                   </div>
                 </Link>
@@ -209,19 +209,18 @@ const DealershipHubSection = () => {
                       <div className={pricingStyles.pricingContentImgBg}>
                         <div className={pricingStyles.pricingContentImg}>
                           <Image
-                            src="/vector Ai big.png"
+                            src="/captureImg.png"
                             fill
                             objectFit="contain"
                           />
                         </div>
                       </div>
                       <div className={pricingStyles.arrowWrapper}>
-                        <h4>STRONGER BRAND IDENTITY</h4>
+                        <h4> CAPTURE LEAD EFFORTLESSLY</h4>
                       </div>
                     </div>
                     <h3>
-                      Position your dealership as a forward-thinking,
-                      customer-first brand.
+                    Customers sign up with their email to comment or ask questions, building your pipeline of potential buyers
                     </h3>
                   </div>
                 </Link>
@@ -229,6 +228,7 @@ const DealershipHubSection = () => {
               <div
                 className={`${pricingStyles.pricingContentWrapper} ${pricingStyles.pricingContentWrapper2}`}
               >
+            
                 <Link href="/contentmarketing">
                   <div
                     className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent3} ${"h-full"}`}
@@ -237,44 +237,41 @@ const DealershipHubSection = () => {
                       <div className={pricingStyles.pricingContentImgBg}>
                         <div className={pricingStyles.pricingContentImg}>
                           <Image
-                            src="/Vector (4).png"
+                            src="/networkImg.png"
                             fill
                             objectFit="contain"
                           />
                         </div>
                       </div>
                       <div className={pricingStyles.arrowWrapper}>
-                        <h4>COST SAVINGS</h4>
+                        <h4>CONNECT & CONVERT IN REAL TIME</h4>
                       </div>
                     </div>
                     <h3>
-                      Generate leads organically, reducing reliance on paid
-                      advertisements
+                    Your team can chat with interested buyers, answer financing questions, and schedule test drives directly on the platform
                     </h3>
                   </div>
                 </Link>
                 <Link href="/leadgeneration">
                   <div
-                    className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent2}`}
+                    className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent2} ${"h-full"}`}
                   >
                     <div className={pricingStyles.pricingContentHeader}>
                       <div className={pricingStyles.pricingContentImgBg}>
                         <div className={pricingStyles.pricingContentImg}>
                           <Image
-                            src="/Vector (2).png"
+                            src="/closeDeals.png"
                             fill
                             objectFit="contain"
                           />
                         </div>
                       </div>
                       <div className={pricingStyles.arrowWrapper}>
-                        <h4>ENHANCED EFFICIENCY</h4>
+                        <h4> CLOSE DEALS WITHOUT FRICTION</h4>
                       </div>
                     </div>
                     <h3>
-                      Streamline operations with an all-in-one platform that
-                      seamlessly integrates content, inventory, and customer
-                      engagement tools
+                    Integrated financing tools let shoppers start the purchase process immediately—no unnecessary steps or third-party distractions
                     </h3>
                   </div>
                 </Link>
