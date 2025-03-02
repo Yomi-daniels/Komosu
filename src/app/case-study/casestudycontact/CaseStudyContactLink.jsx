@@ -38,11 +38,9 @@ const CaseStudyContactLink = () => {
         <div className={casestyles.topimgabsolute}>
           <Image src="/Group 2.png" fill alt="Top Image" />
         </div>
-        <h4>
-          Transform Your Sales with Our Proven Lead <br /> Generation Solutions
-        </h4>
+        <h4>Get Started Today</h4>
         <Link href="/request-demo">
-          <button>Get Started</button>
+          <button>Book a Demo</button>
         </Link>
         <div className={casestyles.bottomimgabsolute}>
           <Image src="/Group 2.png" fill alt="Bottom Image" />

@@ -43,6 +43,9 @@
 
 .aboutUsSpan {
   color: var(--yellow);
+  font-family: var(--custom-Font);
+  font-weight: 100;
+  font-style: italic;
 }
 
 /* ABOUT US LANDING PAGE MOBILE SCREEN */
@@ -323,10 +326,14 @@
   letter-spacing: -0.4px;
 }
 
+.MeetOurTeamContainer .aboutPageHeader p {
+  color: #000000;
+}
+
 .teamImage {
   position: relative;
   width: 266px;
-  min-height: 241px;
+  min-height: 350px;
   transform: rotate(-1deg);
   flex-shrink: 0;
   margin-top: 1.5rem;
@@ -338,10 +345,11 @@
 }
 
 .teamContainer {
-  margin-top: 6.125rem;
+  margin-top: 8.125rem;
   display: flex;
   position: relative;
-  max-width: 1100px;
+  max-width: 1200px;
+  justify-content: center;
   height: 100%;
 }
 
@@ -350,7 +358,7 @@
   height: 469px;
   transform: rotate(-12deg);
   border-radius: 20px;
-  background: var(--btn);
+  background: rgb(36, 35, 35);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -358,11 +366,14 @@
   position: relative;
   padding: 0 1rem;
   transition: 0.3s ease-in;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: var(--text-Font-Bold);
 }
 
 .team1:hover {
   transform: rotate(0deg);
-  z-index: 5;
+  z-index: 15;
 }
 
 .team2:hover {
@@ -375,13 +386,13 @@
 }
 
 .team2 {
-  background: var(--yellow);
-  color: #000000;
+  background: black;
+  color: #ffffff;
   transform: rotate(0);
 }
 
 .team3 {
-  background: var(--hover1);
+  background: mediumaquamarine;
   color: var(--blueText);
   z-index: 3;
 }
@@ -397,34 +408,88 @@
   z-index: 5;
 }
 .team::before {
-  content: "Tyler";
-  width: 123.051px;
-  height: 60px;
+  content: "";
+  background-image: url("/slider1.jpg");
+  object-fit: contain;
+  object-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 200px;
   background-color: var(--btn);
-  top: -8%;
-  font-size: 1.5rem;
-  left: 0;
+  top: -15%;
+
+  left: -15%;
   position: absolute;
-  border-radius: 20px 20px 0px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   font-family: var(--text-Font-Bold);
+  z-index: 9;
+  background-repeat: no-repeat;
+  border: 10px solid #fff;
+  border-radius: 20px;
 }
+
 .team2::before {
   background: var(--yellow);
-  content: "Sharon";
+  background-image: url("/slider2.jpg");
+  object-fit: contain;
+  object-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 200px;
+  background-color: var(--btn);
+  top: -15%;
+
+  left: -15%;
+  position: absolute;
+
+  font-family: var(--text-Font-Bold);
+  z-index: 9;
+  background-repeat: no-repeat;
+  border: 10px solid #fff;
+  border-radius: 20px;
 }
 
 .team3::before {
   background: var(--hover1);
   color: var(--blueText);
-  content: "Steve";
+  background-image: url("/slider3.jpg");
+  object-fit: contain;
+  object-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 200px;
+  background-color: var(--btn);
+  top: -15%;
+
+  left: -15%;
+  position: absolute;
+
+  font-family: var(--text-Font-Bold);
+  z-index: 9;
+  background-repeat: no-repeat;
+  border: 10px solid #fff;
+  border-radius: 20px;
 }
 .team4::before {
   background: var(--hover2);
   color: #534500;
-  content: "Sharon";
+  background-image: url("/slider4.jpg");
+  object-fit: contain;
+  object-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 200px;
+  background-color: var(--btn);
+  top: -15%;
+
+  left: -15%;
+  position: absolute;
+
+  font-family: var(--text-Font-Bold);
+  z-index: 9;
+  background-repeat: no-repeat;
+  border: 10px solid #fff;
+  border-radius: 20px;
 }
 .TeamRole {
   margin-top: 1rem;

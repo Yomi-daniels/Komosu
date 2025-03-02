@@ -9,6 +9,9 @@ const {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  daisyui: {
+    themes: ["light"],
+  },
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -66,6 +69,7 @@ module.exports = {
   },
 
   plugins: [
+    require("daisyui"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/typography"),
     addVariablesForColors,

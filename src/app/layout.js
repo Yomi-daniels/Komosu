@@ -5,7 +5,7 @@ import MyScript from "@/Script";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en " data-theme="light">
       <head>
         {/* Add favicon links with cache-busting query parameters */}
         <link

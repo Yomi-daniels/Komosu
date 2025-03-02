@@ -70,6 +70,7 @@ body {
   font-family: var(--text-Font-Light);
   overflow-x: hidden !important;
   scroll-behavior: smooth;
+  background-color:#fff;
 }
 html {
   scroll-behavior: smooth;

@@ -12,8 +12,9 @@ import Testimonials from "@/sections/testimonials";
 import FAQ from "@/sections/faq";
 // import { Montserrat } from "next/font/google";
 import Link from "next/link";
-import StackedCards from "./StackedCard";
-import StickyStack from "./StackedCard";
+
+import StackedCard from "./StackedCard";
+import MeetOurTeamSection from "../about/meetOurTeamSection/meetOurTeam";
 
 // const montserrat = Montserrat({
 //   subsets: ["latin"],
@@ -95,8 +96,8 @@ const DealershipHubSection = () => {
                 </div>
                 <p>
                   Your Own Social Media Website Post videos,customer
-                  testimonials, and  promotions directly on your  platform—not just
-                  social media.
+                  testimonials, and promotions directly on your platform—not
+                  just social media.
                 </p>
               </motion.div>
               <motion.div
@@ -121,8 +122,8 @@ const DealershipHubSection = () => {
                 </div>
                 <p>
                   Frictionless Buying Experience Shoppers can message your team,
-                  apply for financing, and even purchase vehicles without leaving
-                  your site.
+                  apply for financing, and even purchase vehicles without
+                  leaving your site.
                 </p>
               </motion.div>
               <motion.div
@@ -133,8 +134,8 @@ const DealershipHubSection = () => {
                   <Tickimg />
                 </div>
                 <p>
-                  More Visibility, Less Reliance on Third Parties Stop paying per
-                  lead on Cars.com or AutoTrader. Drive traffic to your own
+                  More Visibility, Less Reliance on Third Parties Stop paying
+                  per lead on Cars.com or AutoTrader. Drive traffic to your own
                   network and build customer relationships.
                 </p>
               </motion.div>
@@ -151,7 +152,6 @@ const DealershipHubSection = () => {
                   website, where you control the experience.
                 </p>
               </motion.div>
-             
             </motion.div>
           </motion.div>
         </div>
@@ -165,9 +165,8 @@ const DealershipHubSection = () => {
         />
       </motion.section>
 
-    
-      <StackedCards/>
-    
+      <StackedCard />
+
       <div>
         <section className={pricingStyles.pricingLandingPage}>
           <div className={pricingStyles.pricingHeaderContent}>
@@ -186,7 +185,11 @@ const DealershipHubSection = () => {
                         className={`${pricingStyles.pricingContentImgBg} ${pricingStyles.pricingContentImgBgblue}`}
                       >
                         <div className={pricingStyles.pricingContentImg}>
-                          <Image src="/contentImg.png" fill objectFit="contain" />
+                          <Image
+                            src="/contentImg.png"
+                            fill
+                            objectFit="contain"
+                          />
                         </div>
                       </div>
                       <div className={pricingStyles.arrowWrapper}>
@@ -197,7 +200,8 @@ const DealershipHubSection = () => {
                       </div>
                     </div>
                     <h3>
-                     Upload vehicle videos, promotions, and customer stories. Visitors watch, like, and comment—just like social media
+                      Upload vehicle videos, promotions, and customer stories.
+                      Visitors watch, like, and comment—just like social media
                     </h3>
                   </div>
                 </Link>
@@ -220,7 +224,8 @@ const DealershipHubSection = () => {
                       </div>
                     </div>
                     <h3>
-                    Customers sign up with their email to comment or ask questions, building your pipeline of potential buyers
+                      Customers sign up with their email to comment or ask
+                      questions, building your pipeline of potential buyers
                     </h3>
                   </div>
                 </Link>
@@ -228,7 +233,6 @@ const DealershipHubSection = () => {
               <div
                 className={`${pricingStyles.pricingContentWrapper} ${pricingStyles.pricingContentWrapper2}`}
               >
-            
                 <Link href="/contentmarketing">
                   <div
                     className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent3} ${"h-full"}`}
@@ -248,7 +252,9 @@ const DealershipHubSection = () => {
                       </div>
                     </div>
                     <h3>
-                    Your team can chat with interested buyers, answer financing questions, and schedule test drives directly on the platform
+                      Your team can chat with interested buyers, answer
+                      financing questions, and schedule test drives directly on
+                      the platform
                     </h3>
                   </div>
                 </Link>
@@ -271,7 +277,9 @@ const DealershipHubSection = () => {
                       </div>
                     </div>
                     <h3>
-                    Integrated financing tools let shoppers start the purchase process immediately—no unnecessary steps or third-party distractions
+                      Integrated financing tools let shoppers start the purchase
+                      process immediately—no unnecessary steps or third-party
+                      distractions
                     </h3>
                   </div>
                 </Link>
