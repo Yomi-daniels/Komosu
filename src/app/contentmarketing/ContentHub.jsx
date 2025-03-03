@@ -1,6 +1,6 @@
 "use client";
 import Tickimg from "@/app/webdesign/components/Tickimg";
-import casestyles from "../case-study/casestudy.module.css"
+import casestyles from "../case-study/casestudy.module.css";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 });
 
 const ContentHub = () => {
-    const sectionRef = useRef(null);
+  const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true }); // Trigger animations once when in view
 
   // Animation variants
@@ -49,16 +49,15 @@ const ContentHub = () => {
         variants={staggerContainer}
       >
         <motion.h5 variants={fadeInUp}>
-          <TextGenerateEffect words={isInView ? words : ""}
-          className="text-center" />
+          <TextGenerateEffect
+            words={isInView ? words : ""}
+            className="text-center"
+          />
         </motion.h5>
         {/* <motion.p variants={fadeInUp}>
         DealerHub is your all-in-one platform to <br /> engage customers and build trust.
         </motion.p> */}
-        <motion.p variants={fadeInUp}>
-
-      
-        </motion.p>
+        <motion.p variants={fadeInUp}></motion.p>
       </motion.div>
 
       <motion.section className={`${casestyles.secondheadingsectionParent}`}>
@@ -83,7 +82,9 @@ const ContentHub = () => {
                 <Tickimg />
               </div>
               <p>
-              <span className="font-bold">Build Trust:</span> Providing helpful and engaging content positions your dealership <br /> as a reliable authority.
+                <span className="font-bold">Build Trust:</span> Providing
+                helpful and engaging content positions your dealership <br /> as
+                a reliable authority.
               </p>
             </motion.div>
             <motion.div
@@ -94,7 +95,9 @@ const ContentHub = () => {
                 <Tickimg />
               </div>
               <p>
-              <span className="font-bold">Engage Customers: </span>   Tailored content keeps your audience engaged and <br /> connected with your brand.
+                <span className="font-bold">Engage Customers: </span> Tailored
+                content keeps your audience engaged and <br /> connected with
+                your brand.
               </p>
             </motion.div>
             <motion.div
@@ -105,7 +108,9 @@ const ContentHub = () => {
                 <Tickimg />
               </div>
               <p>
-              <span className="font-bold">Reduce Ad Dependence: </span> Over time, effective content marketing builds organic <br /> traction, lowering reliance on costly ad campaigns.
+                <span className="font-bold">Reduce Ad Dependence: </span> Over
+                time, effective content marketing builds organic <br />{" "}
+                traction, lowering reliance on costly ad campaigns.
               </p>
             </motion.div>
             <motion.div
@@ -116,24 +121,21 @@ const ContentHub = () => {
                 <Tickimg />
               </div>
               <p>
-              <span className="font-bold">Drive Differentiation:</span>  Unique and creative content helps your dealership stand out <br /> in a competitive market.
+                <span className="font-bold">Drive Differentiation:</span> Unique
+                and creative content helps your dealership stand out <br /> in a
+                competitive market.
               </p>
             </motion.div>
-        
-        
           </motion.div>
-        
         </motion.div>
-        
-  <Image 
-    src="/dealerhub_img.png" 
-    alt="car" 
-    width={500}
-    height={500}
-    className={casestyles.imageSectionImg} 
-  /> 
 
-
+        <Image
+          src="/ContentMarketingImg.png"
+          alt="car"
+          width={500}
+          height={500}
+          className={casestyles.imageSectionImg}
+        />
       </motion.section>
 
       <motion.div
@@ -148,15 +150,9 @@ const ContentHub = () => {
         >
           <TextGenerateEffect words={isInView ? solutionsText : ""} />
         </motion.h4>
-
-    
       </motion.div>
-      <div>
-  
-      </div>
-   
+      <div></div>
     </section>
-   
   );
 };
 

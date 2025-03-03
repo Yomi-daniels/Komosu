@@ -132,7 +132,7 @@ FIRST IMPRESSIONS MATTER
         </motion.div>
 
         <Image
-          src="/dealerhub_img.png"
+          src="/webdesignImg.png"
           alt="car"
           width={500}
           height={500}

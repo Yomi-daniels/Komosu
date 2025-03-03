@@ -178,111 +178,88 @@ const DealershipHubSection = () => {
           <div className={pricingStyles.pricingLandingPageContainer}>
             <div className={pricingStyles.pricingLandingPageContainerContent}>
               <div className={pricingStyles.pricingContentWrapper}>
-                <Link href="/webdesign">
-                  <div className={pricingStyles.pricingContent}>
-                    <div className={pricingStyles.pricingContentHeader}>
-                      <div
-                        className={`${pricingStyles.pricingContentImgBg} ${pricingStyles.pricingContentImgBgblue}`}
-                      >
-                        <div className={pricingStyles.pricingContentImg}>
-                          <Image
-                            src="/contentImg.png"
-                            fill
-                            objectFit="contain"
-                          />
-                        </div>
-                      </div>
-                      <div className={pricingStyles.arrowWrapper}>
-                        <h4>POST ENGAGING CONTENTS</h4>
-                        <div className={pricingStyles.arrowLeft}>
-                          <Image src="/Arrow 1.svg" fill />
-                        </div>
+                <div className={pricingStyles.pricingContent}>
+                  <div className={pricingStyles.pricingContentHeader}>
+                    <div
+                      className={`${pricingStyles.pricingContentImgBg} ${pricingStyles.pricingContentImgBgblue}`}
+                    >
+                      <div className={pricingStyles.pricingContentImg}>
+                        <Image src="/contentImg.png" fill objectFit="contain" />
                       </div>
                     </div>
-                    <h3>
-                      Upload vehicle videos, promotions, and customer stories.
-                      Visitors watch, like, and comment—just like social media
-                    </h3>
-                  </div>
-                </Link>
-                <Link href="/aisolution">
-                  <div
-                    className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent2} ${"h-full"}`}
-                  >
-                    <div className={pricingStyles.pricingContentHeader}>
-                      <div className={pricingStyles.pricingContentImgBg}>
-                        <div className={pricingStyles.pricingContentImg}>
-                          <Image
-                            src="/captureImg.png"
-                            fill
-                            objectFit="contain"
-                          />
-                        </div>
-                      </div>
-                      <div className={pricingStyles.arrowWrapper}>
-                        <h4> CAPTURE LEAD EFFORTLESSLY</h4>
+                    <div className={pricingStyles.arrowWrapper}>
+                      <h4>POST ENGAGING CONTENTS</h4>
+                      <div className={pricingStyles.arrowLeft}>
+                        <Image src="/Arrow 1.svg" fill />
                       </div>
                     </div>
-                    <h3>
-                      Customers sign up with their email to comment or ask
-                      questions, building your pipeline of potential buyers
-                    </h3>
                   </div>
-                </Link>
+                  <h3>
+                    Upload vehicle videos, promotions, and customer stories.
+                    Visitors watch, like, and comment—just like social media
+                  </h3>
+                </div>
+
+                <div
+                  className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent2} ${"h-full"}`}
+                >
+                  <div className={pricingStyles.pricingContentHeader}>
+                    <div className={pricingStyles.pricingContentImgBg}>
+                      <div className={pricingStyles.pricingContentImg}>
+                        <Image src="/captureImg.png" fill objectFit="contain" />
+                      </div>
+                    </div>
+                    <div className={pricingStyles.arrowWrapper}>
+                      <h4> CAPTURE LEAD EFFORTLESSLY</h4>
+                    </div>
+                  </div>
+                  <h3>
+                    Customers sign up with their email to comment or ask
+                    questions, building your pipeline of potential buyers
+                  </h3>
+                </div>
               </div>
               <div
                 className={`${pricingStyles.pricingContentWrapper} ${pricingStyles.pricingContentWrapper2}`}
               >
-                <Link href="/contentmarketing">
-                  <div
-                    className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent3} ${"h-full"}`}
-                  >
-                    <div className={pricingStyles.pricingContentHeader}>
-                      <div className={pricingStyles.pricingContentImgBg}>
-                        <div className={pricingStyles.pricingContentImg}>
-                          <Image
-                            src="/networkImg.png"
-                            fill
-                            objectFit="contain"
-                          />
-                        </div>
-                      </div>
-                      <div className={pricingStyles.arrowWrapper}>
-                        <h4>CONNECT & CONVERT IN REAL TIME</h4>
+                <div
+                  className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent3} ${"h-full"}`}
+                >
+                  <div className={pricingStyles.pricingContentHeader}>
+                    <div className={pricingStyles.pricingContentImgBg}>
+                      <div className={pricingStyles.pricingContentImg}>
+                        <Image src="/networkImg.png" fill objectFit="contain" />
                       </div>
                     </div>
-                    <h3>
-                      Your team can chat with interested buyers, answer
-                      financing questions, and schedule test drives directly on
-                      the platform
-                    </h3>
+                    <div className={pricingStyles.arrowWrapper}>
+                      <h4>CONNECT & CONVERT IN REAL TIME</h4>
+                    </div>
                   </div>
-                </Link>
-                <Link href="/leadgeneration">
-                  <div
-                    className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent2} ${"h-full"}`}
-                  >
-                    <div className={pricingStyles.pricingContentHeader}>
-                      <div className={pricingStyles.pricingContentImgBg}>
-                        <div className={pricingStyles.pricingContentImg}>
-                          <Image
-                            src="/closeDeals.png"
-                            fill
-                            objectFit="contain"
-                          />
-                        </div>
-                      </div>
-                      <div className={pricingStyles.arrowWrapper}>
-                        <h4> CLOSE DEALS WITHOUT FRICTION</h4>
+                  <h3>
+                    Your team can chat with interested buyers, answer financing
+                    questions, and schedule test drives directly on the platform
+                  </h3>
+                </div>
+
+                <div
+                  className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent2} ${"h-full"}`}
+                >
+                  <div className={pricingStyles.pricingContentHeader}>
+                    <div className={pricingStyles.pricingContentImgBg}>
+                      <div className={pricingStyles.pricingContentImg}>
+                        <Image src="/closeDeals.png" fill objectFit="contain" />
                       </div>
                     </div>
-                    <h3>
-                      Integrated financing tools let shoppers start the purchase
-                      process immediately—no unnecessary steps or third-party
-                      distractions
-                    </h3>
+                    <div className={pricingStyles.arrowWrapper}>
+                      <h4> CLOSE DEALS WITHOUT FRICTION</h4>
+                    </div>
                   </div>
-                </Link>
+                  <h3>
+                    Integrated financing tools let shoppers start the purchase
+                    process immediately—no unnecessary steps or third-party
+                    distractions
+                  </h3>
+                </div>
               </div>
             </div>
           </div>

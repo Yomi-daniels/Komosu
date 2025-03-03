@@ -173,7 +173,7 @@ const Offer = () => {
             className={activeSection === "aiSolutions" ? styles.active : ""}
             onClick={() => handleSectionClick("aiSolutions")}
           >
-            AI Solutions
+            Dealers Hub
           </li>
           <li
             className={
@@ -181,7 +181,7 @@ const Offer = () => {
             }
             onClick={() => handleSectionClick("contentMarketing")}
           >
-            Content Marketing
+            Content Solution
           </li>
           <li
             className={activeSection === "leadGeneration" ? styles.active : ""}
@@ -227,8 +227,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Tailored website designs that reflect your brand's
-                        identity and values.
+                        Seamless Navigation – Intuitive layouts that keep
+                        visitors engaged and exploring.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -238,8 +238,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Secure and efficient online booking and purchasing
-                        systems.
+                        SEO-Optimized – Designed to rank higher and drive
+                        organic traffic.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -249,8 +249,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Comprehensive SEO strategies to improve search engine
-                        rankings.
+                        Future-Ready Features – AI chat, VR showrooms, and other
+                        cutting-edge integrations.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -260,18 +260,18 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Integration with CRM systems for better customer
-                        relationship management.
+                        High-Conversion Structure – Built to turn visitors into
+                        leads and sales.
                       </p>
                     </div>
-                    <div className={styles.WebDesignFeaturesContent}>
+                    {/* <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
                           <Image src="/Vector (6).png" alt="offerImage" fill />
                         </div>
                       </div>
                       <p>Virtual showrooms to display your vehicle lineup.</p>
-                    </div>
+                    </div> */}
                   </div>
                 </motion.div>
                 <motion.div
@@ -311,16 +311,20 @@ const Offer = () => {
                   <div className={styles.webDesignHeader}>
                     <div className={styles.webHeaderImgBg}>
                       <div className={styles.webHeaderImg}>
-                        <Image src="/ai vector.png" alt="offerImage" fill />
+                        <Image
+                          src="/dealerHubCarIcon.png"
+                          alt="offerImage"
+                          fill
+                        />
                       </div>
                     </div>
-                    <h5>AI SOLUTIONS</h5>
+                    <h5>DEALERS HUB</h5>
                   </div>
                   <h1 className={styles.webDesignh1}>
-                    Accelerate your business with auto-pilot efficiency
-                    sponsored by our AI-powered Chatbot
+                    Your Own Social Media Platform – Host and control content
+                    reducing third-party reliance.
                   </h1>
-                  <Link href="/aisolution">
+                  <Link href="/dealership_hub">
                     <button className={styles.WebDesignBtn}>See More</button>
                   </Link>
                   <div className={styles.WebDesignFeatures}>
@@ -331,8 +335,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        24/7 Customer Support. Provide immediate answers to
-                        customer queries, improving satisfaction and engagement.
+                        Customer Engagement – Built-in messaging, comments, and
+                        interactive content.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -342,9 +346,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Automatically qualify leads by asking pre-set questions
-                        and directing them to the appropriate sales
-                        representatives.
+                        Lead Capture & Nurturing – Collect emails, build
+                        relationships, and drive conversions.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -354,8 +357,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Facilitate easy scheduling of maintenance and service
-                        appointments.
+                        Integrated Sales Tools – Customers can browse inventory,
+                        apply for financing, and buy online.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -365,11 +368,11 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Inform customers about ongoing promotions, discounts,
-                        and special events.
+                        Data & Insights – Gain valuable customer behavior
+                        insights to improve marketing.
                       </p>
                     </div>
-                    <div className={styles.WebDesignFeaturesContent}>
+                    {/* <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
                           <Image src="/Vector (6).png" alt="offerImage" fill />
@@ -379,7 +382,7 @@ const Offer = () => {
                         Provide real-time assistance on your dealership’s
                         website.
                       </p>
-                    </div>
+                    </div> */}
                   </div>
                 </motion.div>
                 <motion.div
@@ -391,11 +394,7 @@ const Offer = () => {
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
                   >
-                    <Image
-                      src="/Frame 1618868477.png"
-                      fill
-                      objectFit="contain"
-                    />
+                    <Image src="/webdevimg (2).png" fill objectFit="contain" />
                   </div>
                 </motion.div>
               </div>
@@ -426,11 +425,11 @@ const Offer = () => {
                         />
                       </div>
                     </div>
-                    <h5>CONTENT MARKETING</h5>
+                    <h5>CONTENT SOLUTION</h5>
                   </div>
                   <h1 className={styles.webDesignh1}>
-                    Expand your business reach through dynamic and engaging
-                    content
+                    Premium Video Production – High-quality content for
+                    websites, ads, and social media.
                   </h1>
                   <Link href="/contentmarketing">
                     <button className={styles.WebDesignBtn}>See More</button>
@@ -443,8 +442,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Create high-quality blog posts, articles, and
-                        newsletters that captivate your audience.
+                        Ad Creative That Converts – Engaging assets optimized
+                        for maximum ROI.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -454,8 +453,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Develop engaging social media content that promotes
-                        interaction and brand loyalty.
+                        Consistent Brand Messaging – Professional storytelling
+                        that builds trust and loyalty.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -465,8 +464,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Produce video content that showcases your products and
-                        services.
+                        Organic Growth Strategy – Content designed to attract
+                        and retain customers.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -476,11 +475,11 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Implement email marketing campaigns that nurture leads
-                        and drive conversions.
+                        Seamless Dealer Hub Integration – Host and showcase
+                        content directly on your platform.
                       </p>
                     </div>
-                    <div className={styles.WebDesignFeaturesContent}>
+                    {/* <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
                           <Image src="/Vector (6).png" alt="offerImage" fill />
@@ -490,7 +489,7 @@ const Offer = () => {
                         Utilize SEO best practices to ensure your content
                         reaches the right audience.
                       </p>
-                    </div>
+                    </div> */}
                   </div>
                 </motion.div>
                 <motion.div
@@ -554,8 +553,9 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Capture and nurture leads with targeted campaigns and
-                        personalized messaging.
+                        Drive Traffic from Ad Platforms – Use targeted ad
+                        campaigns to send high-quality leads directly to your
+                        social media website.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -565,8 +565,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Utilize advanced analytics to track and optimize lead
-                        generation efforts.
+                        High-Intent Lead Capture – Distinguish serious prospects
+                        through platform sign-ups and engagement.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -576,8 +576,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Implement CRM systems for seamless lead management and
-                        follow-up.
+                        Community Building – Build a loyal community around your
+                        brand, nurturing leads through authentic interactions.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -587,8 +587,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Engage prospects through automated email marketing
-                        campaigns.
+                        Platform-Specific Insights – Track and analyze sign-ups
+                        to identify and prioritize high-intent leads.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -598,8 +598,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Drive traffic and leads through effective social media
-                        strategies.
+                        Seamless Lead Nurturing – Automate personalized
+                        follow-ups to maintain engagement and boost conversions.
                       </p>
                     </div>
                   </div>

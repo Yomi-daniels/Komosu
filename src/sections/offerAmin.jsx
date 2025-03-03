@@ -42,10 +42,7 @@ const OfferAnimation = () => {
                   <Image src="/Vector (6).png" alt="offerAnimImg" fill />
                 </div>
               </div>
-              <p>
-                Understand past performance through detailed analysis of
-                historical data.
-              </p>
+              <p>host your best content on your website</p>
             </div>
             <div className={styles.offerFeaturesContent}>
               <div className={styles.offerFeaturesImgShadow}>
@@ -53,10 +50,7 @@ const OfferAnimation = () => {
                   <Image src="/Vector (6).png" alt="offerAnimImg" fill />
                 </div>
               </div>
-              <p>
-                Provide data-driven recommendations to support strategic
-                business decisions.
-              </p>
+              <p>Build a strong community that goes beyond transactions</p>
             </div>
           </div>
           <div className={styles.OfferAnimationImageBoxContainer}>
@@ -95,8 +89,8 @@ const OfferAnimation = () => {
                 </div>
               </div>
               <p>
-                Understand past performance through detailed analysis of
-                historical data.
+                Use data-driven recommendations to support strategic business
+                decisions.
               </p>
             </div>
             <div className={styles.offerFeaturesContent}>
@@ -106,8 +100,8 @@ const OfferAnimation = () => {
                 </div>
               </div>
               <p>
-                Provide data-driven recommendations to support strategic
-                business decisions.
+                Understand who your customers are with detailed website
+                analytics.
               </p>
             </div>
           </div>

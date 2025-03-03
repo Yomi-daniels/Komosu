@@ -1,5 +1,7 @@
 .container {
   color: black;
+
+  font-family: var(--text-Font-Regular);
 }
 
 .container:hover {

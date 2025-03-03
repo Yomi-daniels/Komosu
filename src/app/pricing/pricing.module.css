@@ -245,4 +245,13 @@
   .pricingContent {
     border-radius: 0px !important;
   }
+
+  .pricingContent h4 {
+    font-size: 1.25rem;
+  }
+
+  .pricingContent h3 {
+    font-size: 1rem;
+    font-family: var(--text-Font-Regular);
+  }
 }

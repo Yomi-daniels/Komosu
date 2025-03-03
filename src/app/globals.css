@@ -67,10 +67,10 @@
 html,
 body {
   height: 100%;
-  font-family: var(--text-Font-Light);
+  font-family: var(--text-Font-Regular);
   overflow-x: hidden !important;
   scroll-behavior: smooth;
-  background-color:#fff;
+  background-color: #fff;
 }
 html {
   scroll-behavior: smooth;
@@ -91,6 +91,7 @@ main {
 a {
   color: inherit;
   text-decoration: none;
+  font-weight: 100 !important;
 }
 
 button {

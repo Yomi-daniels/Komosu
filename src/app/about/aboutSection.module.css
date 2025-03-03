@@ -605,7 +605,7 @@
     height: 450px;
     transform: rotate(-12deg);
     border-radius: 20px;
-    background: rgb(36, 35, 35);
+
     color: #fff;
     display: flex;
     flex-direction: column;
