@@ -10,7 +10,6 @@ const Dealership_hub = () => {
       <DealershipHeader />
       <DealershipHubSection />
       <CaseStudyContactLink />
-
       <FAQ />
     </section>
   );
