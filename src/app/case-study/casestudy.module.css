@@ -285,7 +285,7 @@
 
 .thirdsectionheader {
   color: var(--blueText);
-  font-size: 24px;
+  /* font-size: 24px; */
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 36px */
@@ -303,8 +303,9 @@
   max-width: 50ch;
   text-align: center;
   margin-inline: auto;
+  font-size: 1.3rem;
   margin-top: 1rem;
-  font-family: var(--text-Font-Regular);
+  font-family: var(--text-Font-Light) !important;
 }
 
 .textWrapper {

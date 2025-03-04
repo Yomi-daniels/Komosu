@@ -30,13 +30,13 @@ const Footer = () => {
       </div>
       <div className={styles.FooterContainer}>
         <div className={styles.footerContentContainer}>
-          <h1 className="text-lg">KOMOSU NETWORK</h1>
+          <h1 className="text-lg font-black">KOMOSU NETWORK</h1>
           <div className={cn(styles.footerLinks, "cursor-pointer group ")}>
             <Link href="/about" className={styles.footerLink}>
               About us
             </Link>
-            <Link href="/case-study" className={styles.footerLink}>
-              Case Study
+            <Link href="/dealership_hub" className={styles.footerLink}>
+              Dealers Hub
             </Link>
             {/* <Link href="/servicesLink">Services</Link> */}
             {/* <Link href="/pricing">Pricing</Link> */}

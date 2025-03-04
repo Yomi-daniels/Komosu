@@ -43,9 +43,9 @@
 }
 
 .footerHeader h1 {
-  font-size: 24px;
+  font-size: 34px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 120%; /* 38.4px */
   letter-spacing: -0.32px;
   max-width: 716px;
@@ -151,14 +151,7 @@
 
 .footerLink:hover {
   @apply scale-110;
-  background: linear-gradient(
-    to right,
-    hsl(359.6deg 100% 29.61%),
-    hsl(359.6deg 100% 29.61%) 100%,
-    transparent 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #f0f0f0;
 }
 .SocialLink {
   display: flex;

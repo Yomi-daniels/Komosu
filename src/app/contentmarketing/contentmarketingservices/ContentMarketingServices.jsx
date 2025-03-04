@@ -121,8 +121,11 @@ const ContentMarketingServices = () => {
             className={contentStyles.contentServiceText}
             ref={contentServiceText1Ref}
           >
-            <h3> Retain Control </h3>
-            <p>Keep your audience engaged on your own website.</p>
+            <h3>All-in-One Solution </h3>
+            <p>
+              No need for multiple tools—manage engagement, leads, and insights
+              in one place.
+            </p>
             <GetStarted />
           </div>
           <div
@@ -139,14 +142,18 @@ const ContentMarketingServices = () => {
             className={`${contentStyles.contentservicesImg} ${contentStyles.contentservicesImg2}`}
             ref={contentservicesImg2Ref}
           >
-            <Image src="/social campaign image.png" fill objectFit="contain" />
+            <Image
+              src="/nextgen landingpage img.png"
+              fill
+              objectFit="contain"
+            />
           </div>
           <div
             className={contentStyles.contentServiceText}
             ref={contentServiceText2Ref}
           >
-            <h3>Leverage Data</h3>
-            <p>Track interactions & optimize marketing strategies</p>
+            <h3>Dealership-Owned Digital Assets</h3>
+            <p>Take control of your audience and brand authority.</p>
             <GetStarted />
           </div>
         </div>
@@ -155,19 +162,36 @@ const ContentMarketingServices = () => {
             className={contentStyles.contentServiceText}
             ref={contentServiceText3Ref}
           >
-            <h3> Foster Loyalty</h3>
-            <p>Build direct relationships with customers.</p>
+            <h3> Long-Term Success</h3>
+            <p> Build a sustainable pipeline of leads and conversions.</p>
             <GetStarted />
           </div>
-          <div
-            className={contentStyles.contentservicesImg}
+
+          <Image
             ref={contentservicesImg3Ref}
+            src="/LongTermSuccessImg.jpg"
+            width={600}
+            height={600}
+            objectFit="cover"
+            className=" rounded-[20px]"
+          />
+        </div>
+        <div
+          className={`${contentStyles.contentservicecontent} ${contentStyles.contentservicecontent2}`}
+        >
+          <div
+            className={`${contentStyles.contentservicesImg} ${contentStyles.contentservicesImg2}`}
+            ref={contentservicesImg2Ref}
           >
-            <Image
-              src="/nextgen landingpage img.png"
-              fill
-              objectFit="contain"
-            />
+            <Image src="/social campaign image.png" fill objectFit="contain" />
+          </div>
+          <div
+            className={contentStyles.contentServiceText}
+            ref={contentServiceText2Ref}
+          >
+            <h3>Data-Driven Growth</h3>
+            <p>Leverage real-time insights to optimize marketing & sales.</p>
+            <GetStarted />
           </div>
         </div>
       </div>
