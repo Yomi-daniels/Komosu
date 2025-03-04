@@ -170,8 +170,6 @@
   border-radius: 10px;
 }
 
-
-
 .secondheadingsection {
   margin-top: 6rem;
   display: flex;
@@ -299,6 +297,14 @@
   display: flex;
   justify-content: center;
   margin-inline: auto;
+}
+
+.solutionsParagraph {
+  max-width: 50ch;
+  text-align: center;
+  margin-inline: auto;
+  margin-top: 1rem;
+  font-family: var(--text-Font-Regular);
 }
 
 .textWrapper {

@@ -171,8 +171,7 @@ const DealershipHubSection = () => {
         <section className={pricingStyles.pricingLandingPage}>
           <div className={pricingStyles.pricingHeaderContent}>
             <h1 className={` ${"text-center sm:text-xs max-md:text-xs"}`}>
-              Advantageous functionalities of a <br /> centralized dealer
-              platform
+              The Komosu Advantage
             </h1>
           </div>
           <div className={pricingStyles.pricingLandingPageContainer}>
@@ -188,15 +187,15 @@ const DealershipHubSection = () => {
                       </div>
                     </div>
                     <div className={pricingStyles.arrowWrapper}>
-                      <h4>POST ENGAGING CONTENTS</h4>
+                      <h4>More Control, Less Dependence</h4>
                       <div className={pricingStyles.arrowLeft}>
                         <Image src="/Arrow 1.svg" fill />
                       </div>
                     </div>
                   </div>
                   <h3>
-                    Upload vehicle videos, promotions, and customer stories.
-                    Visitors watch, like, and comment—just like social media
+                    Reduce reliance on third-party ad platforms by hosting your
+                    own engaging content.
                   </h3>
                 </div>
 
@@ -210,12 +209,11 @@ const DealershipHubSection = () => {
                       </div>
                     </div>
                     <div className={pricingStyles.arrowWrapper}>
-                      <h4> CAPTURE LEAD EFFORTLESSLY</h4>
+                      <h4> Customer Data & Insights</h4>
                     </div>
                   </div>
                   <h3>
-                    Customers sign up with their email to comment or ask
-                    questions, building your pipeline of potential buyers
+                    Track visitor behavior and optimize marketing strategies.
                   </h3>
                 </div>
               </div>
@@ -232,12 +230,12 @@ const DealershipHubSection = () => {
                       </div>
                     </div>
                     <div className={pricingStyles.arrowWrapper}>
-                      <h4>CONNECT & CONVERT IN REAL TIME</h4>
+                      <h4>Long-Term Cost Efficiency</h4>
                     </div>
                   </div>
                   <h3>
-                    Your team can chat with interested buyers, answer financing
-                    questions, and schedule test drives directly on the platform
+                    A high-converting website means less ad spend, more organic
+                    leads.
                   </h3>
                 </div>
 
@@ -251,13 +249,11 @@ const DealershipHubSection = () => {
                       </div>
                     </div>
                     <div className={pricingStyles.arrowWrapper}>
-                      <h4> CLOSE DEALS WITHOUT FRICTION</h4>
+                      <h4>Future-Ready Features</h4>
                     </div>
                   </div>
                   <h3>
-                    Integrated financing tools let shoppers start the purchase
-                    process immediately—no unnecessary steps or third-party
-                    distractions
+                    Stay ahead with adaptable technology & cutting-edge tools.
                   </h3>
                 </div>
               </div>

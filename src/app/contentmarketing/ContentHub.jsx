@@ -35,7 +35,7 @@ const ContentHub = () => {
 
   const words = `Why Content Marketing Matters for Dealerships?`;
   const challengesText = `In today’s digital landscape, Content marketing offers dealerships the opportunity to:`;
-  const solutionsText = `The Role of the Creator Economy`;
+  const solutionsText = `The Power of the Creator Economy`;
 
   return (
     <section
@@ -150,6 +150,11 @@ const ContentHub = () => {
         >
           <TextGenerateEffect words={isInView ? solutionsText : ""} />
         </motion.h4>
+        <motion.p
+          className={casestyles.solutionsParagraph}
+          >
+            Sales reps & dealerships are using social media to reach buyers—but sending <br /> traffic away from their own brand. Why let third-party platforms control your audience?
+          </motion.p>
       </motion.div>
       <div></div>
     </section>

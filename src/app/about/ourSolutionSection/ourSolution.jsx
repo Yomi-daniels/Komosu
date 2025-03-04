@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
+import Image from "next/image";
+import Tickimg from "@/app/webdesign/components/Tickimg";
 
 const OurSolutionSection = () => {
   const solutionRef = useRef(null);
@@ -15,7 +17,7 @@ const OurSolutionSection = () => {
   };
 
   const solutionText =
-    "At Komosu, we offer a wide range of services that are targeted to leverage your company’s performance.";
+    "At Komosu, we specialize in premium web and content solutions designed to help dealerships take control of their digital presence and marketing.";
 
   return (
     <section className={aboutstyles.OurSolutionSection} ref={solutionRef}>
@@ -30,22 +32,56 @@ const OurSolutionSection = () => {
           <TextGenerateEffect words={isInView ? solutionText : ""} />{" "}
           {/* Pass as a string only if in view */}
         </h2>
-        <motion.p
+        <motion.div
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={sectionVariants}
+          className="flex justify-between items-center max-w-[1200px] gap-12 mt-7 max-md:flex-col max-md:justify-center"
         >
-          At Komosu, we specialize in creating premium web solutions that
-          empower dealerships to elevate their digital presence. Our bespoke
-          online Dealer Hubs go beyond basic websites, offering dealerships a
-          customized platform to enhance their brand, build customer trust, and
-          ultimately increase the value of their digital assets. By centralizing
-          essential content, dealer interactions, and customer engagement tools,
-          we give dealerships more control and insight into their customer
-          relationships. With our innovative approach, Komosu Network is
-          committed to transforming how dealerships connect with customers
-          online, positioning them for growth in a digital-first world.
-        </motion.p>
+      
+      <Image
+        src="/aboutdesignImg.jpg" width={600} height={500} alt="image" 
+          className="rounded-md"
+        /> 
+        <div>
+          <div className="flex items-center gap-2">
+          <div >
+            <Tickimg />
+          </div>
+          <p><b>Dealer Hub Websites:</b> Custom-built platforms that go beyond basic websites</p> 
+          </div>
+          <div className="flex items-center gap-2">
+          <div>
+            <Tickimg />
+          </div>
+          <p><b>Stronger Brand Authority:</b> Custom-built platforms that go beyond basic websites</p> 
+          </div>
+          <div className="flex items-center gap-2">
+          <div>
+            <Tickimg />
+          </div>
+          <p><b>Content Solutions:</b> Custom-built platforms that go beyond basic websites</p> 
+          </div>
+          <div className="flex items-center gap-2">
+          <div>
+            <Tickimg />
+          </div>
+          <p><b> Ad Creative & Video Production:</b> Custom-built platforms that go beyond basic websites</p> 
+          </div>
+          <div className="flex items-center gap-2">
+          <div >
+            <Tickimg />
+          </div>
+          <p><b>Customer Relationship Tools:</b> Custom-built platforms that go beyond basic websites</p> 
+          </div>
+          <div className="flex items-center gap-2">
+          <div >
+            <Tickimg />
+          </div>
+          <p><b>Growth-Driven Innovation:</b> Custom-built platforms that go beyond basic websites</p> 
+          </div>
+        </div> 
+        </motion.div>
       </motion.div>
     </section>
   );

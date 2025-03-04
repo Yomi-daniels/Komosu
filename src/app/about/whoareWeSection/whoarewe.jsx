@@ -72,7 +72,7 @@ const WhoareweSection = () => {
     };
   }, []);
 
-  const words = `Komosu Network is committed to revolutionizing the automotive industry by providing innovative solutions.`;
+  const words = `Innovating the Auto Industry, One Dealership at a Time.`;
 
   return (
     <section className={aboutstyles.Whoarewesection}>
@@ -82,14 +82,11 @@ const WhoareweSection = () => {
           <TextGenerateEffect words={words} />
         </h2>
         <p ref={whoAreWeHeaderP}>
-          We've been closely following the auto industry, recognizing real
-          opportunities to deliver exceptional value through innovation. Our
-          team of dedicated experts is committed to building strong,
-          long-lasting relationships with each client, helping them focus on
-          what matters most to them. We listen closely, understanding their
-          unique experiences and needs, and provide support every step of the
-          way. At Komosu, we’re not just a service provider; we’re a partner in
-          your dealership’s journey.
+          At Komosu, we don’t just follow industry trends—we create
+          opportunities for dealerships to thrive in the digital space. Our team
+          of passionate experts is committed to building lasting relationships,
+          understanding each dealership’s unique needs, and providing ongoing
+          support to help them focus on what matters most.
         </p>
       </div>
       <div

@@ -121,14 +121,8 @@ const ContentMarketingServices = () => {
             className={contentStyles.contentServiceText}
             ref={contentServiceText1Ref}
           >
-            <h3>Virtual Content Creator </h3>
-            <p>
-              At Komosu Network, we empower dealerships with a cutting-edge
-              virtual content creator who works tirelessly on your dealership's
-              behalf. This innovative tool transforms your content into
-              compelling narratives that enhance the inherent appeal of each
-              vehicle, making it stand out in the competitive market.
-            </p>
+            <h3> Retain Control </h3>
+            <p>Keep your audience engaged on your own website.</p>
             <GetStarted />
           </div>
           <div
@@ -151,12 +145,8 @@ const ContentMarketingServices = () => {
             className={contentStyles.contentServiceText}
             ref={contentServiceText2Ref}
           >
-            <h3>Social Media Campaigns</h3>
-            <p>
-              Coupled with targeted social media campaigns and strategic
-              advertisements, our solutions are tailored to elevate your
-              dealership's online presence and drive customer engagement.
-            </p>
+            <h3>Leverage Data</h3>
+            <p>Track interactions & optimize marketing strategies</p>
             <GetStarted />
           </div>
         </div>
@@ -165,13 +155,8 @@ const ContentMarketingServices = () => {
             className={contentStyles.contentServiceText}
             ref={contentServiceText3Ref}
           >
-            <h3>Next-Generation Landing Pages</h3>
-            <p>
-              Our expertise extends to creating next-generation landing pages
-              meticulously designed to maximize sales and conversions. We ensure
-              improved performance and increased conversions by transforming
-              your advertisements from low to high content ratings.
-            </p>
+            <h3> Foster Loyalty</h3>
+            <p>Build direct relationships with customers.</p>
             <GetStarted />
           </div>
           <div

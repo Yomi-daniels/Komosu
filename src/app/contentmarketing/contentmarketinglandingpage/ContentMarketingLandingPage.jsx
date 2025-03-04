@@ -34,7 +34,7 @@ const ContentMarketingLandingPage = () => {
         { y: 0, opacity: 1, duration: 2, ease: "power3.out" }
       );
   }, []);
-  const contentHeaderText = `Next-Gen Content \n Marketing Solutions`;
+  const contentHeaderText = `Engage. Convert. Sell.`;
   const solutionsText = `Why Your Dealership Needs a DealerHub`;
   return (
     <section className={contentStyles.contentSection}>
@@ -66,8 +66,9 @@ const ContentMarketingLandingPage = () => {
           </h2>
 
           <p>
-            Transform your dealership&apos;s online presence with Komosu
-            Network&apos;s next-generation content marketing services
+            In today’s digital world, dealerships can’t rely on ads alone.
+            Customers trust brands that provide valuable, engaging content—and
+            that’s where content marketing comes in.
           </p>
           <LandingPageButtons />
         </div>
