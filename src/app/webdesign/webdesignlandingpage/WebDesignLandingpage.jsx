@@ -37,7 +37,7 @@ const WebDesignLandingpage = () => {
   }, []);
 
   // Renaming `words` to `message`
-  const message = `Driving Dealership Success Through \n Digital Evolution`;
+  const message = `First Impressions Matter \n  Make Yours Count`;
 
   return (
     <section className={webstyle.webdesignLandingPage}>
@@ -63,14 +63,9 @@ const WebDesignLandingpage = () => {
             />
           </h1>
           <p>
-            At Komosu Network, we don’t just create websites—we craft digital
-            experiences that embody your brand’s identity and propel your
-            dealership into the future. Our designs are tailored to align
-            seamlessly with your unique brand image, ensuring your online
-            presence resonates with your audience. By integrating cutting-edge
-            technology, intuitive navigation, and visually stunning aesthetics,
-            we elevate your dealership’s digital footprint and set you apart in
-            the competitive automotive space.
+            Your website is the digital storefront of your dealership. A sleek,
+            modern, and user-friendly design isn’t just about aesthetics—it’s
+            about building trust, engaging customers, and driving sales.
           </p>
           <LandingPageButtons />
         </div>

@@ -138,24 +138,17 @@ const WebDesignWorks = () => {
             className={webstyle.webdesignTextContent2}
             ref={textcontentRightRef}
           >
-            <h2>Digital Interaction Enhancements</h2>
-            <p>
-              Redefine customer interactions with innovative digital solutions.
-              From virtual showrooms to online vehicle reservations with
-              refundable fees, we empower your customers while reducing reliance
-              on physical contact.
-            </p>
+            <h2> Integrated Dealer Hub</h2>
+            <p>A built-in social media hub that boosts customer interaction.</p>
             <GetStarted />
           </div>
         </div>
         <div className={webstyle.webdesignContents1}>
           <div className={webstyle.webdesignTextContent} ref={textContentRef}>
-            <h2>Integrated Payment Solutions</h2>
+            <h2>Seamless Navigation</h2>
             <p>
-              Seamlessly integrate secure payment gateways into your
-              dealership's website. Enable customers to make online purchases,
-              deposits, or reservations, transforming the transaction
-              experience.
+              Intuitive layouts that keep visitors engaged and exploring your
+              inventory.
             </p>
             <GetStarted />
           </div>
@@ -172,15 +165,28 @@ const WebDesignWorks = () => {
             </div>
           </div>
           <div className={webstyle.webdesignTextContent2}>
-            <h2>Customized User Experience</h2>
+            <h2> Custom Web Design</h2>
             <p>
-              Tailor-made web interfaces designed for intuitive navigation and
-              engagement. Whether browsing inventory, scheduling services, or
-              seeking information, our designs prioritize user-friendliness.
+              Tailored to your dealership’s brand, ensuring a unique, memorable
+              experience.
             </p>
             <GetStarted />
           </div>
         </div>
+        {/* <div className={webstyle.webdesignContents1}>
+          <div className={webstyle.webdesignTextContent} ref={textContentRef}>
+            <h2>SEO-Optimized Structure</h2>
+            <p>
+              Designed to rank higher on Google and attract organic traffic.
+            </p>
+            <GetStarted />
+          </div>
+          <div className={webstyle.webdesignimgContent}>
+            <div className={webstyle.webdesignImg} ref={webdesignImg2Ref}>
+              <Image src="/webdevimg (1).png" fill />
+            </div>
+          </div>
+        </div> */}
       </div>
       <WebDesignPricingPlans />
     </section>

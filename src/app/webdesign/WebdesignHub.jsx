@@ -34,10 +34,10 @@ const WebdesignHub = () => {
   };
 
   const words = `
-FIRST IMPRESSIONS MATTER
+WHY YOUR DEALERSHIP NEEDS A HIGH \n PERFORMING WEBSITES
 `;
-  const challengesText = `Your website is often the first interaction potential buyers have with your dealership. A sleek, modern, and user-friendly design:`;
-  const solutionsText = `The Role of the Creator Economy`;
+  const challengesText = ` A high-performing website that turns visitors into buyers.`;
+  const solutionsText = `How We Elevate Your Digital Presence`;
 
   return (
     <section
@@ -84,9 +84,8 @@ FIRST IMPRESSIONS MATTER
                 <Tickimg />
               </div>
               <p>
-                <span className="font-bold">Build Trust:</span> Providing
-                helpful and engaging content positions your dealership <br /> as
-                a reliable authority.
+                <span className="font-bold">Instill Trust & Credibility:</span>{" "}
+                A polished, professional design signals reliability.{" "}
               </p>
             </motion.div>
             <motion.div
@@ -97,9 +96,9 @@ FIRST IMPRESSIONS MATTER
                 <Tickimg />
               </div>
               <p>
-                <span className="font-bold">Engage Customers: </span> Tailored
-                content keeps your audience engaged and <br /> connected with
-                your brand.
+                <span className="font-bold">Increase Conversions: </span> Guide
+                visitors to schedule test drives, apply for financing, <br /> and
+                contact sales reps with ease
               </p>
             </motion.div>
             <motion.div
@@ -110,9 +109,7 @@ FIRST IMPRESSIONS MATTER
                 <Tickimg />
               </div>
               <p>
-                <span className="font-bold">Reduce Ad Dependence: </span> Over
-                time, effective content marketing builds organic <br />{" "}
-                traction, lowering reliance on costly ad campaigns.
+                <span className="font-bold">Stand Out from Competitors: </span> A custom-built Dealer Hub offers features no standard <br /> template can match.
               </p>
             </motion.div>
             <motion.div
@@ -123,9 +120,7 @@ FIRST IMPRESSIONS MATTER
                 <Tickimg />
               </div>
               <p>
-                <span className="font-bold">Drive Differentiation:</span> Unique
-                and creative content helps your dealership stand out <br /> in a
-                competitive market.
+                <span className="font-bold">Future-Proof Your Brand:</span> Adapt to emerging trends like VR showrooms & AI chat tools.
               </p>
             </motion.div>
           </motion.div>
