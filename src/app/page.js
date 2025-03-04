@@ -52,7 +52,7 @@ const Home = () => {
       </section>
       <section className={styles.VideoShowcasePage}>
         <div className={casestyles.thirdheadingsection}>
-          <h2 className={`${casestyles.thirdsectionheader} ${"mt-6 text-[2.5rem]"}`}>
+          <h2 className={`${casestyles.thirdsectionheader} ${"mt-6 text-[2.5rem] max-sm:text-[1.5rem]"}`}>
             {solutionsText}
           </h2>
           <p className={casestyles.solutionsParagraph}>
