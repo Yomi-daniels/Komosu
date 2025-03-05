@@ -136,7 +136,7 @@ const ContentMarketingServices = () => {
           </div>
         </div>
         <div
-          className={`${contentStyles.contentservicecontent} ${contentStyles.contentservicecontent2}`}
+          className={`${contentStyles.contentservicecontent}${contentStyles.contentservicecontent2}`}
         >
           <div
             className={`${contentStyles.contentservicesImg} ${contentStyles.contentservicesImg2}`}

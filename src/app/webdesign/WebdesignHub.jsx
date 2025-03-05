@@ -53,7 +53,7 @@ WHY YOUR DEALERSHIP NEEDS A HIGH \n PERFORMING WEBSITES
         <motion.h5 variants={fadeInUp}>
           <TextGenerateEffect
             words={isInView ? words : ""}
-            className="text-center"
+            className="text-center max-sm:text-[1.5rem]"
           />
         </motion.h5>
         {/* <motion.p variants={fadeInUp}>
@@ -69,11 +69,11 @@ WHY YOUR DEALERSHIP NEEDS A HIGH \n PERFORMING WEBSITES
           animate={isInView ? "visible" : "hidden"}
           variants={staggerContainer}
         >
-          <motion.h4 variants={fadeInUp} className="w-[40ch]">
+          <motion.h4 variants={fadeInUp} className="max-w-[40ch]">
             <TextGenerateEffect words={isInView ? challengesText : ""} />
           </motion.h4>
           <motion.div
-            className={`${casestyles.challanges}${"w-[40ch]"}`}
+            className={`${casestyles.challanges}${"max-w-[40ch]"}`}
             variants={staggerContainer}
           >
             <motion.div
