@@ -36,17 +36,18 @@ const DealershipHeader = () => {
       <div className="flex justify-between items-center max-sm:flex-col max-sm:w-[250px] max-sm:gap-8">
         <h1>
           Your {""}
-          <span className={`${casestyles.casespan} ${shadowFont.className}`}> 
-            Dealership’s{" "} 
-          {""}</span>Social  <br /> Media Website
+          <span className={`${casestyles.casespan} ${shadowFont.className}`}>
+            Dealership’s {""}
+          </span>
+          Social <br /> Media Website
         </h1>
-        <Image
+        {/* <Image
           src="/dealership_car.png"
           width={300}
           height={300}
           alt="dealership img"
           objectFit="contain"
-        />
+        /> */}
       </div>
     </section>
   );

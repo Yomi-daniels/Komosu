@@ -65,10 +65,10 @@ const Testimonials = () => {
         isVisible ? styles.fadeIn : styles.fadeOut
       }`}
     >
-    <div className={styles.servicesSubTextContainer}>
-          <div className={styles.blueBorder}></div>
-          <p className={styles.servicesSubText}>QUOTES</p>
-        </div>
+      <div className={styles.servicesSubTextContainer}>
+        <div className={styles.blueBorder}></div>
+        <p className={styles.servicesSubText}>QUOTES</p>
+      </div>
       <h2 className={`${styles.offerHeader} ${styles.testimonialHeader}`}>
         The Future of{" "}
         <span className={`${styles.offerSpan} ${shadows_Font.className}`}>
@@ -86,7 +86,7 @@ const Testimonials = () => {
           </div>
           <div className={styles.testimonialTextContent}>
             <h2 className={styles.clientCompany}>{company}</h2>
-            <p className={styles.feedbacks}>"{data}"</p>
+            <p className={styles.feedbacks}>{data}</p>
             <p className={styles.testifierName}>{username}</p>
             <p className={styles.role}>{role}</p>
           </div>
