@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
           <main className="content">{children}</main>
           <Footer />
         </div>
-        <MyScript />
+        {/* <MyScript /> */}
       </body>
     </html>
   );
