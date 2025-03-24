@@ -136,7 +136,7 @@ const ContentMarketingServices = () => {
           </div>
         </div>
         <div
-          className={`${contentStyles.contentservicecontent}${contentStyles.contentservicecontent2}`}
+          className={`${contentStyles.contentservicecontent} ${contentStyles.contentservicecontent2}`}
         >
           <div
             className={`${contentStyles.contentservicesImg} ${contentStyles.contentservicesImg2}`}
@@ -157,6 +157,28 @@ const ContentMarketingServices = () => {
             <GetStarted />
           </div>
         </div>
+        {/* <div
+          className={`${contentStyles.contentservicecontent}${contentStyles.contentservicecontent2}`}
+        >
+          <div
+            className={`${contentStyles.contentservicesImg} ${contentStyles.contentservicesImg2}`}
+            ref={contentservicesImg2Ref}
+          >
+            <Image
+              src="/nextgen landingpage img.png"
+              fill
+              objectFit="contain"
+            />
+          </div>
+          <div
+            className={contentStyles.contentServiceText}
+            ref={contentServiceText2Ref}
+          >
+            <h3>Dealership-Owned Digital Assets</h3>
+            <p>Take control of your audience and brand authority.</p>
+            <GetStarted />
+          </div>
+        </div> */}
         <div className={contentStyles.contentservicecontent}>
           <div
             className={contentStyles.contentServiceText}
