@@ -19,16 +19,24 @@ export const metadata = {
         width: 1200,
         height: 630,
         alt: "Komosu Network Banner",
+        type: "image/jpeg",
       },
     ],
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary_large_image", // Correct card type
     title: "Komosu Network",
     description:
       "Creating opportunities for dealerships to thrive in the digital space.",
-    images: ["https://komosunetwork.com/og-image.jpg"],
+    images: [
+      {
+        url: "https://komosunetwork.com/twitter-image.jpg", // Different image for Twitter
+        width: 1200, // Adjusted ratio for Twitter
+        height: 675, // Closer to 1.91:1 (Twitter prefers 1200x675)
+        alt: "Komosu Network Twitter Banner",
+      },
+    ],
   },
 };
 
