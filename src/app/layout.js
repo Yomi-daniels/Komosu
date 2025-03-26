@@ -51,6 +51,22 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
           rel="stylesheet"
         />
+        <meta property="og:title" content="Komosu Network" />
+        <meta
+          property="og:description"
+          content="Creating opportunities for dealerships to thrive in the digital space. Our team of passionate experts is committed to building lasting relationships."
+        />
+        <meta
+          property="og:image"
+          content="https://komosunetwork.com/logo.png"
+        />
+        <meta property="og:url" content="https://komosunetwork.com/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:image"
+          content="https://komosunetwork.com/logo.png"
+        />
       </head>
 
       <body data-theme="light">
