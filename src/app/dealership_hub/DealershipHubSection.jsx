@@ -183,13 +183,16 @@ const DealershipHubSection = () => {
                       className={`${pricingStyles.pricingContentImgBg} ${pricingStyles.pricingContentImgBgblue}`}
                     >
                       <div className={pricingStyles.pricingContentImg}>
-                        <Image src="/contentImg.png" fill objectFit="contain" />
+                        <Image src="/contentImg.png" fill objectFit="contain"
+                        alt="content-img" />
                       </div>
                     </div>
                     <div className={pricingStyles.arrowWrapper}>
                       <h4>More Control, Less Dependence</h4>
                       <div className={pricingStyles.arrowLeft}>
-                        <Image src="/Arrow 1.svg" fill />
+                        <Image src="/Arrow 1.svg" fill 
+                          alt="arrow"
+                        />
                       </div>
                     </div>
                   </div>
@@ -205,7 +208,9 @@ const DealershipHubSection = () => {
                   <div className={pricingStyles.pricingContentHeader}>
                     <div className={pricingStyles.pricingContentImgBg}>
                       <div className={pricingStyles.pricingContentImg}>
-                        <Image src="/captureImg.png" fill objectFit="contain" />
+                        <Image src="/captureImg.png" fill objectFit="contain" 
+                          alt="content-img"
+                        />
                       </div>
                     </div>
                     <div className={pricingStyles.arrowWrapper}>
@@ -226,7 +231,9 @@ const DealershipHubSection = () => {
                   <div className={pricingStyles.pricingContentHeader}>
                     <div className={pricingStyles.pricingContentImgBg}>
                       <div className={pricingStyles.pricingContentImg}>
-                        <Image src="/networkImg.png" fill objectFit="contain" />
+                        <Image src="/networkImg.png" fill objectFit="contain" 
+                          alt="content-img"
+                        />
                       </div>
                     </div>
                     <div className={pricingStyles.arrowWrapper}>
@@ -245,7 +252,9 @@ const DealershipHubSection = () => {
                   <div className={pricingStyles.pricingContentHeader}>
                     <div className={pricingStyles.pricingContentImgBg}>
                       <div className={pricingStyles.pricingContentImg}>
-                        <Image src="/closeDeals.png" fill objectFit="contain" />
+                        <Image src="/closeDeals.png" fill objectFit="contain" 
+                          alt="closeImg"
+                        />
                       </div>
                     </div>
                     <div className={pricingStyles.arrowWrapper}>

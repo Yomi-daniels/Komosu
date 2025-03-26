@@ -1,35 +1,32 @@
-
-import aboutstyles from "../about/aboutSection.module.css"
+import aboutstyles from "../about/aboutSection.module.css";
 // import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
 // const shadows = Shadows_Into_Light({
 //   subsets: ["latin"],
 //   weight: ["400"],
 // });
-const StackedCard= () => {
+const StackedCard = () => {
   return (
     <section className={aboutstyles.MeetOurTeamSection}>
       <div className={aboutstyles.MeetOurTeamContainer}>
-      <div
+        <div
           className={`${aboutstyles.aboutPageHeader} ${aboutstyles.MeetOurTeamHeader}`}
         >
           <h2>
-        
-            
-            <span className={`${aboutstyles.aboutUsSpan}`}>
-            Dealer Hub -{" "}
-            </span>{" "}
-
+            <span className={`${aboutstyles.aboutUsSpan}`}>Dealer Hub - </span>{" "}
             Your Dealership’s <br /> Social Media Website
           </h2>
           <p> Own Your Audience. Build Trust. Sell More Cars.</p>
         </div>
         <div className={`${aboutstyles.teamContainer} `}>
-          <div className={`${aboutstyles.team} ${aboutstyles.team1}${aboutstyles.teamCars}`}>
+          <div
+            className={`${aboutstyles.team} ${aboutstyles.team1}${aboutstyles.teamCars}`}
+          >
             <div className={aboutstyles.teamImage}>
               <Image
                 src="/webdevimg (1).png"
                 fill
+                alt="team-img"
                 style={{ borderRadius: "10px" }}
                 objectFit="cover"
               />
@@ -38,14 +35,15 @@ const StackedCard= () => {
               CEO + FOUNDER
             </span> */}
             <p className={aboutstyles.teamcontent}>
-            💬 Engage directly with buyers – no algorithm limits.
+              💬 Engage directly with buyers – no algorithm limits.
             </p>
           </div>
           <div className={`${aboutstyles.team} ${aboutstyles.team2}`}>
             <div className={aboutstyles.teamImage}>
               <Image
-               src="/webdevimg (2).png"
+                src="/webdevimg (2).png"
                 fill
+                alt="team-img"
                 style={{ borderRadius: "10px" }}
                 objectFit="cover"
               />
@@ -54,13 +52,14 @@ const StackedCard= () => {
               HEAD OF MARKETING
             </span> */}
             <p className={aboutstyles.teamcontent}>
-            Grow your own customer network – not Facebook’s.
+              Grow your own customer network – not Facebook’s.
             </p>
           </div>
           <div className={`${aboutstyles.team} ${aboutstyles.team3}`}>
             <div className={aboutstyles.teamImage}>
               <Image
-           src="/webdevimg (3).png"
+                src="/webdevimg (3).png"
+                alt="team-image"
                 fill
                 style={{ borderRadius: "10px" }}
                 objectFit="cover"
@@ -70,7 +69,7 @@ const StackedCard= () => {
               CEO + FOUNDER
             </span> */}
             <p className={aboutstyles.teamcontent}>
-            💰 Turn views into leads & sales – all within your platform.
+              💰 Turn views into leads & sales – all within your platform.
             </p>
           </div>
           {/* <div className={`${aboutstyles.team} ${aboutstyles.team4}`}>

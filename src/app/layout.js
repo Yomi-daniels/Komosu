@@ -5,41 +5,35 @@ import MyScript from "@/Script";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en " data-theme="light">
+    <html lang="en">
       <head>
-        {/* Add favicon links with cache-busting query parameters */}
+        {/* Favicon */}
         <link
           rel="icon"
-          href="/favicon.png?v=4"
+          href="/favicon-512x512.png"
+          type="image/png"
+          sizes="512x512"
+        />
+        {/* <link
+          rel="icon"
+          href="/favicon-32x32.png"
           type="image/png"
           sizes="32x32"
         />
         <link
           rel="icon"
-          href="/favicon.png?v=4"
+          href="/favicon-16x16.png"
           type="image/png"
           sizes="16x16"
-        />
-        <link rel="apple-touch-icon" href="/favicon.png?v=4" />
+        /> */}
         <link
           rel="apple-touch-icon"
-          sizes="180x180"
           href="/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
+          sizes="180x180"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        {/* Font and other external links */}
+
+        {/* Font & Icons */}
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
@@ -59,12 +53,13 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body>
+      <body data-theme="light">
         <div className="layout">
           <Navbar />
           <main className="content">{children}</main>
           <Footer />
         </div>
+        {/* Uncomment when needed */}
         {/* <MyScript /> */}
       </body>
     </html>
