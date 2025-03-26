@@ -82,6 +82,17 @@ export default function RootLayout({ children }) {
           name="twitter:image"
           content="https://komosunetwork.com/og-image.jpg"
         />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Komosu Network" />
+        <meta
+          name="twitter:description"
+          content="Creating opportunities for dealerships to thrive in the digital space. Our team of passionate experts is committed to building lasting relationships."
+        />
+        <meta
+          name="twitter:image"
+          content="https://komosunetwork.com/twitter-image.jpg"
+        />
+        <meta name="twitter:url" content="https://komosunetwork.com/" />
       </head>
 
       <body data-theme="light">
