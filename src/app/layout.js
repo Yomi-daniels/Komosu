@@ -2,11 +2,13 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import MyScript from "@/Script";
+import { title } from "@/utils/siteMetaData";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <title>Komosu Network | Digital Growth for Dealerships</title>
         {/* Favicon */}
         <link
           rel="icon"
@@ -14,7 +16,7 @@ export default function RootLayout({ children }) {
           type="image/png"
           sizes="512x512"
         />
-        {/* <link
+        <link
           rel="icon"
           href="/favicon-32x32.png"
           type="image/png"
@@ -25,7 +27,7 @@ export default function RootLayout({ children }) {
           href="/favicon-16x16.png"
           type="image/png"
           sizes="16x16"
-        /> */}
+        />
         <link
           rel="apple-touch-icon"
           href="/apple-touch-icon.png"
@@ -51,21 +53,33 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
           rel="stylesheet"
         />
-        <meta property="og:title" content="Komosu Network" />
+        <meta
+          property="og:title"
+          content="Komosu Network | Digital Growth for Dealerships"
+        />
         <meta
           property="og:description"
-          content="Creating opportunities for dealerships to thrive in the digital space. Our team of passionate experts is committed to building lasting relationships."
+          content="Expert marketing and technology solutions to grow your dealership in the digital space. Learn more today!"
         />
         <meta
           property="og:image"
-          content="https://komosunetwork.com/logo.png"
+          content="https://komosunetwork.com/og-image.jpg"
         />
         <meta property="og:url" content="https://komosunetwork.com/" />
         <meta property="og:type" content="website" />
+
         <meta name="twitter:card" content="summary_large_image" />
         <meta
+          name="twitter:title"
+          content="Komosu Network | Digital Growth for Dealerships"
+        />
+        <meta
+          name="twitter:description"
+          content="Expert marketing and technology solutions to grow your dealership in the digital space. Learn more today!"
+        />
+        <meta
           name="twitter:image"
-          content="https://komosunetwork.com/logo.png"
+          content="https://komosunetwork.com/og-image.jpg"
         />
       </head>
 
