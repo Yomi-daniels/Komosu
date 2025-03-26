@@ -63,9 +63,10 @@ export default function RootLayout({ children }) {
         />
         <meta
           property="og:image"
-          content="https://komosunetwork.com/og-image.jpg"
+          content="https://komosunetwork.com/logo.png"
         />
-        <meta property="og:url" content="https://komosunetwork.com/" />
+
+        <meta property="og:url" content="https://komosunetwork.com" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
