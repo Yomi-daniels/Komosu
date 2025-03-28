@@ -80,6 +80,10 @@ export default function RootLayout({ children }) {
 
         <title>Komosu Network</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+        />
       </head>
 
       <body data-theme="light">
