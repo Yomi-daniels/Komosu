@@ -653,6 +653,10 @@
   .containerFlexp {
     font-size: 0.8rem;
   }
+
+  .serviceSection {
+    min-height: 50vh;
+  }
 }
 
 @media (max-width: 450px) {
