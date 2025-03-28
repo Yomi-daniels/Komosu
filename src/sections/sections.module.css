@@ -335,14 +335,12 @@
     align-items: center;
     color: var(--text);
   }
-  /* .HeaderContent {
-    display: none;
-  } */
-  /* .heroContainer {
+  .heroImgBg {
+    max-width: 900px;
+  }
 
-    height: 300px;
- 
-  } */
+  .heroImgBg video {
+  }
 
   .heroSection {
     margin-bottom: 0rem;
