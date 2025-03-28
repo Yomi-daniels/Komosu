@@ -66,7 +66,7 @@
 
 html,
 body {
-  height: 100%;
+  /* height: 100%; */
   font-family: var(--text-Font-Regular);
   overflow-x: hidden !important;
   scroll-behavior: smooth;

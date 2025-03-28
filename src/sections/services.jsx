@@ -45,7 +45,7 @@ const Services = () => {
   return (
     <section
       ref={sectionRef}
-      className={cn(styles.serviceSection, "top-20 pb-48")}
+      className={cn(styles.serviceSection, "top-2 pb-48")}
     >
       <div className={styles.ServicesTextContainer}>
         <div className={styles.servicesSubTextContainer}>

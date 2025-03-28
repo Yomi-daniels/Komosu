@@ -13,51 +13,31 @@ const plus_Jakarta_Sans = Plus_Jakarta_Sans({
 });
 
 const Navbar = () => {
-  const [isMounted, setIsMounted] = useState(false);
-  const navbarRef = useRef(null); // Ref to the navbar container
-  const lastScrollY = useRef(0); // Track last scroll position
-
-  const handleScroll = () => {
-    const currentScrollY = window.scrollY;
-
-    // Scroll down: Hide navbar
-    if (currentScrollY > lastScrollY.current && currentScrollY > 50) {
-      gsap.to(navbarRef.current, {
-        opacity: 0,
-        y: -100, // Move navbar up
-        duration: 0.3,
-        ease: "power2.out",
-      });
-    }
-    // Scroll up: Show navbar
-    else if (currentScrollY < lastScrollY.current) {
-      gsap.to(navbarRef.current, {
-        opacity: 1,
-        y: 0, // Move navbar back to original position
-        duration: 0.3,
-        ease: "power2.out",
-      });
-    }
-
-    lastScrollY.current = currentScrollY; // Update last scroll position
-  };
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
 
-    // Set isMounted to true to trigger opacity transition
-    setIsMounted(true);
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setIsVisible(false); // Hide when scrolling down
+      } else {
+        setIsVisible(true); // Show when scrolling up
+      }
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
+      setLastScrollY(currentScrollY);
     };
-  }, []);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   return (
     <div
-      ref={navbarRef}
-      className={`${NavBarstyles.parentContainer} ${plus_Jakarta_Sans.className} 
-      ${isMounted ? NavBarstyles.visible : ""}`}
+      className={`${NavBarstyles.parentContainer} ${plus_Jakarta_Sans.className} ${
+        isVisible ? NavBarstyles.show : NavBarstyles.hide
+      }`}
     >
       <div className={NavBarstyles.container}>
         <Link href="/" className={NavBarstyles.logo}>

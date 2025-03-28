@@ -27,11 +27,14 @@
   transition:
     top 0.3s,
     opacity 0.2s ease-in;
-  opacity: 0;
 }
 
-.hidden {
-  top: -100px;
+.show {
+  transform: translateY(0);
+}
+
+.hide {
+  transform: translateY(-150%);
 }
 
 .logo {
@@ -56,14 +59,6 @@
 }
 .parentContainer .navbar a {
   color: #000000;
-}
-
-.visible {
-  opacity: 1; /* Opacity 1 when visible */
-}
-
-.hidden {
-  top: -100px;
 }
 
 /* NAVBAR MOBILE SCREEN */

@@ -303,9 +303,9 @@
   max-width: 50ch;
   text-align: center;
   margin-inline: auto;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-top: 1rem;
-  font-family: var(--text-Font-Light) !important;
+  font-family: var(--text-Font-Bold) !important;
 }
 
 .textWrapper {
