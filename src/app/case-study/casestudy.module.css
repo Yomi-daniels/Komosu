@@ -90,6 +90,11 @@
   text-transform: uppercase;
   font-family: var(--text-Font-Bold);
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
 }
 
 .headingsection p {

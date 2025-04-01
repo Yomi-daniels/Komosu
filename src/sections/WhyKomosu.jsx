@@ -66,7 +66,7 @@ const WhyKomosu = () => {
         >
           <TextGenerateEffect words={isInView ? words : ""} />
           <span
-            className={`${styles.offerSpan} ${"text-[2rem] mt-2 max-sm:text-[1.5rem]"}`}
+            className={`${styles.offerSpan} ${"text-[2rem] mt-2 max-sm:text-[1.5rem]"}${styles.whySpan}`}
           >
             Network?{" "}
           </span>
