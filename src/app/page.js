@@ -3,7 +3,7 @@ import FAQ from "@/sections/faq";
 import LandingPage from "@/sections/landingPage";
 import Offer from "@/sections/offer";
 import OfferAnimation from "@/sections/offerAmin";
-import Services from "@/sections/services";
+// import Services from "@/sections/services";
 import Testimonials from "@/sections/testimonials";
 import VideoShowcase from "@/sections/videoShowcase";
 import styles from "./page.module.css";
@@ -46,13 +46,15 @@ const Home = () => {
       <section className={styles.landingPage}>
         <LandingPage />
       </section>
-      <section className={styles.ServicesPage}>
+      {/* <section className={styles.ServicesPage}>
         <Services />
         <section className={styles.Servisesflex}></section>
-      </section>
+      </section> */}
       <section className={styles.VideoShowcasePage}>
         <div className={casestyles.thirdheadingsection}>
-          <h2 className={`${casestyles.thirdsectionheader} ${"mt-6 text-[2.5rem] max-sm:text-[1.5rem]"}`}>
+          <h2
+            className={`${casestyles.thirdsectionheader} ${"mt-6 text-[2.5rem] max-sm:text-[1.5rem]"}`}
+          >
             {solutionsText}
           </h2>
           <p className={casestyles.solutionsParagraph}>

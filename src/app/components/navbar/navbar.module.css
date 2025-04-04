@@ -4,6 +4,7 @@
   position: relative;
   display: flex;
   align-items: center;
+
   justify-content: space-between;
   max-width: 1120px;
   height: 100%;
@@ -59,6 +60,7 @@
 }
 .parentContainer .navbar a {
   color: #000000;
+  font-size: 18px;
 }
 
 /* NAVBAR MOBILE SCREEN */
