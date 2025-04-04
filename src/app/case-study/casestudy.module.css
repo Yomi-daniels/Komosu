@@ -316,6 +316,13 @@
   font-weight: 500;
 }
 
+@media (max-width: 750px) {
+  .solutionsParagraph {
+    font-size: 1rem;
+    line-height: 20px;
+    max-width: 40ch;
+  }
+}
 .textWrapper {
   /* border: 2px solid red; */
   margin-top: 1.5rem;
