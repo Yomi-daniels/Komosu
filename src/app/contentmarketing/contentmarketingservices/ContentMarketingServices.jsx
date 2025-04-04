@@ -123,8 +123,8 @@ const ContentMarketingServices = () => {
           >
             <h3>All-in-One Solution </h3>
             <p>
-              No need for multiple tools—manage engagement, leads, and insights
-              in one place.
+              No need for multiple tools — manage engagement, leads, and
+              insights in one place.
             </p>
             <GetStarted />
           </div>
@@ -192,8 +192,8 @@ const ContentMarketingServices = () => {
           <Image
             ref={contentservicesImg3Ref}
             src="/LongTermSuccessImg.jpg"
-            width={600}
-            height={600}
+            width={450}
+            height={500}
             objectFit="cover"
             className=" rounded-[20px]"
           />

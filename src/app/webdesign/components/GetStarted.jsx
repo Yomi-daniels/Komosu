@@ -4,7 +4,12 @@ const GetStarted = () => {
   return (
     <div className={webstyle.webdesignTextContent}>
       <Link href="/request-demo">
-        <button>Get Started</button>
+        <button>
+          <span className={webstyle.text}>Get Started</span>
+          <span>
+            <i class="ri-arrow-right-line"></i>
+          </span>
+        </button>
       </Link>
     </div>
   );

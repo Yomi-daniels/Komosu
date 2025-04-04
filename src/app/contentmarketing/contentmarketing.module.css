@@ -187,8 +187,8 @@
   width: 40%;
 }
 .contentservicesImg {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   position: relative;
 
   /* border: 3px solid red; */
@@ -197,7 +197,7 @@
 
 .contentservicesImg2 {
   border-radius: 20px;
-  width: 601.674px;
+  width: 501.674px;
   height: 471px;
 
   /* background: var(--hover1); */

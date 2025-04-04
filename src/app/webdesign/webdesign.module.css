@@ -555,6 +555,7 @@
 .webdesignTextContent {
   display: flex;
   flex-flow: column;
+
   align-items: flex-start;
   position: relative;
 }
@@ -562,18 +563,93 @@
 .webdesignTextContent2 {
   align-items: flex-start;
 }
+.webdesignTextContent button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid red;
+}
 
 .webdesignTextContent button,
 .webdesignTextContent2 button {
   width: 160px;
-  height: 55px;
-  padding: 8px 12px;
+  height: 45px;
+  padding: 12px 12px;
   justify-content: center;
   border-radius: 36px;
   border: 1px solid var(--btn);
   color: var(--btn);
   background-color: transparent;
   font-weight: 600;
+}
+
+/* From Uiverse.io by e-coders */
+.webdesignTextContent button,
+.webdesignTextContent2 button {
+  position: relative;
+  overflow: hidden;
+
+  /* display: inline-block; */
+  font-size: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.webdesignTextContent button span:first-child,
+.webdesignTextContent2 button span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.webdesignTextContent button span:last-child,
+.webdesignTextContent2 button span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.webdesignTextContent button:after,
+.webdesignTextContent2 button:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--btn);
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.webdesignTextContent button:hover:after,
+.webdesignTextContent2 button:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.webdesignTextContent button:hover span:last-child,
+.webdesignTextContent2 button:hover span:last-child {
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 
 .webdesignContents1 {

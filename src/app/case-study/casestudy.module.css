@@ -310,7 +310,10 @@
   margin-inline: auto;
   font-size: 1.1rem;
   margin-top: 1rem;
-  font-family: var(--text-Font-Bold) !important;
+  font-family: var(--text-Font-Regular) !important;
+  line-height: 26px;
+  letter-spacing: 0.9px;
+  font-weight: 500;
 }
 
 .textWrapper {
@@ -416,6 +419,11 @@
     justify-content: center;
     align-items: center;
   }
+}
+
+.headingsection h5 {
+  font-size: 1rem !important;
+  font-family: var(--text-Font-Bold) !important;
 }
 
 @media (max-width: 450px) {

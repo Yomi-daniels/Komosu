@@ -62,12 +62,10 @@ const WhyKomosu = () => {
       >
         <motion.h5
           variants={fadeInUp}
-          className="flex items-center gap-1 overflow-x-hidden max-sm:text-[1.5rem] max-w-full"
+          className={`${"flex items-center gap-1 overflow-x-hidden max-sm:text-[1.3rem] max-w-full"}${styles.WhyHeader}`}
         >
           <TextGenerateEffect words={isInView ? words : ""} />
-          <span
-            className={`${styles.offerSpan} ${"text-[2rem] mt-2 max-sm:text-[1.5rem]"}${styles.whySpan}`}
-          >
+          <span className={`${styles.offerSpan} ${"mt-2 "}${styles.whySpan}`}>
             Network?{" "}
           </span>
         </motion.h5>

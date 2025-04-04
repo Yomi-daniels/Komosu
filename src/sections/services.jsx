@@ -62,9 +62,9 @@ const Services = () => {
           </h2>
         </div>
         <p className={cn(styles.subContent, "max-w-3xl mx-auto text-pretty")}>
-          Elevate your dealership’s digital presence with a premium
-          DealerHub—your built in social media tool to capture every sales
-          opportunity and stand apart from the competition.
+          Elevate your dealership’s digital presence with a premium DealerHub —
+          your built in social media tool to capture every sales opportunity and
+          stand apart from the competition.
         </p>
       </div>
 

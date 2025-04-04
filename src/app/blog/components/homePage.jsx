@@ -14,7 +14,7 @@ const HomeCoverSection = ({ blogs }) => {
     <div className="w-full inline-block">
       {/* COMMENT THE DIV BELOW WHEN YOU WANT TO EDIT BLOG PAGE!!! */}
 
-      <div className="flex flex-col justify-center fixed top-0 left-0 w-[100vw] h-[100vh] z-30 bg-black opacity-90">
+      {/* <div className="flex flex-col justify-center fixed top-0 left-0 w-[100vw] h-[100vh] z-30 bg-black opacity-90">
         <div className="relative opacity-100 flex flex-col items-center justify-center ">
           <Image
             src="/logo.png"
@@ -50,7 +50,7 @@ const HomeCoverSection = ({ blogs }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <article className="flex flex-col items-start justify-end  relative h-[60vh] sm:h-[85vh]">
         <div
           className="absolute top-0 left-0 bottom-0 right-0 h-full
