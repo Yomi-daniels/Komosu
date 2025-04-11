@@ -6,6 +6,12 @@
   font-size: 0.9rem;
 }
 
+.links a {
+  font-weight: 500;
+  font-family: var(--text-Font-Regular);
+  color: #000000;
+}
+
 .links a:hover {
   position: relative;
 }
@@ -13,11 +19,11 @@
 .links a::after {
   content: "";
   background-color: var(--btn);
-  height: 1px;
+  height: 6px;
   width: 0;
-  border-radius: 10px;
+  border-radius: 20px 20px 0 0;
   position: absolute;
-  top: 40px;
+  top: 25.7px;
 
   margin-top: 0.5rem;
   left: 0;
@@ -161,7 +167,7 @@
 .requestDemoLink {
   display: flex;
   width: 160px;
-  height: 55px;
+  height: 40px;
   padding: 8px;
   justify-content: center;
   align-items: center;
@@ -175,6 +181,37 @@
   right: 1%;
   letter-spacing: 0.1cap;
   font-size: 16px;
+}
+.requestDemoLink {
+  min-width: 120px;
+  /* position: relative; */
+  cursor: pointer;
+  /* padding: 12px 17px; */
+  border: 0;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+
+  /* Updated background gradient with more vibrant colors */
+  background: radial-gradient(
+    ellipse at bottom,
+    #0066ff 0%,
+    /* Brighter blue */ #0056e6 45% /* Slightly darker blue */
+  );
+
+  color: rgb(255, 255, 255, 0.9); /* More visible white text */
+
+  /* Smooth and fast transition effect for hover */
+  transition: all 0.3s ease-in-out;
+}
+
+.requestDemoLink:hover {
+  color: rgb(255, 255, 255, 1);
+  transform: scale(1.05) translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 8px 15px rgba(0, 102, 255, 0.3); /* Subtle shadow for depth */
+}
+
+.requestDemoLink::before {
+  opacity: 1;
 }
 
 /* .requestDemoLink:hover {
@@ -217,7 +254,6 @@
   } */
 
   .mobileContainer {
-    /* border: 2px solid red; */
     max-width: 100vw;
     height: 130vh;
     position: absolute;

@@ -1,10 +1,12 @@
 "use client";
+
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useInView } from "react-intersection-observer";
 import { supabase } from "../../../lib/supabaseClient";
 import { schema } from "./validationSchema";
+/** @ts-ignore */
 import InputField from "../Fields/InputField";
 import Modal from "../modal/modal";
 import styles from "./contactForm.module.css";
@@ -12,7 +14,6 @@ import styles from "./contactForm.module.css";
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionStatus, setSubmissionStatus] = useState(null);
-  const [erroMessage, setErrorMessage] = useState(null);
 
   // Intersection observer for animation when form comes into view
   const { ref: formRef, inView: formInView } = useInView({
@@ -29,73 +30,33 @@ const ContactForm = () => {
     resolver: zodResolver(schema),
   });
 
-  // const onSubmit = async (formData) => {
-  //   setIsSubmitting(true);
-  //   setSubmissionStatus(null);
-  //   try {
-  //     const { firstName, lastName, workEmail, phoneNumber, message } = formData;
-
-  //     const { data, error } = await supabase
-  //       .from("contact_form")
-  //       .insert([
-  //         {
-  //           first_name: firstName,
-  //           last_name: lastName,
-  //           email: workEmail,
-  //           phone_number: phoneNumber,
-  //           message: message,
-  //         },
-  //       ])
-  //       .select();
-
-  //     if (error) throw Error(error.message);
-  //     console.log(error);
-  //     console.log("insert response:", data);
-  //     reset();
-  //     setSubmissionStatus("success");
-  //   } catch (error) {
-  //     setSubmissionStatus("error");
-  //   } finally {
-  //     setIsSubmitting(false);
-  //     setTimeout(() => setSubmissionStatus(null), 2000);
-  //   }
-  // };
   const onSubmit = async (formData) => {
     setIsSubmitting(true);
-    setErrorMessage(null);
     try {
-      console.log("Form data:", formData);
       const { firstName, lastName, workEmail, phoneNumber, message } = formData;
-      const { data, error } = await supabase
-        .from("contact_form")
-        .insert([
-          {
-            first_name: firstName,
-            last_name: lastName,
-            email: workEmail,
-            phone_number: phoneNumber,
-            message: message,
-          },
-        ])
-        .select();
+
+      const { error } = await supabase.from("contact_form").insert([
+        {
+          first_name: firstName,
+          last_name: lastName,
+          email: workEmail,
+          phone_number: phoneNumber,
+          message,
+        },
+      ]);
 
       if (error) throw error;
 
-      console.log("Insert response:", data);
       reset();
       setSubmissionStatus("success");
     } catch (error) {
-      console.error("Detailed error:", error);
       setSubmissionStatus("error");
-      setErrorMessage(error.message || "Could not connect to Supabase");
     } finally {
       setIsSubmitting(false);
-      setTimeout(() => {
-        setSubmissionStatus(null);
-        setErrorMessage(null);
-      }, 3000);
+      setTimeout(() => setSubmissionStatus(null), 2000);
     }
   };
+
   return (
     <div>
       {isSubmitting || submissionStatus ? (
@@ -108,7 +69,7 @@ const ContactForm = () => {
       <form
         ref={formRef}
         onSubmit={handleSubmit(onSubmit)}
-        className={`${styles.form}  ${formInView ? styles.formInView : ""}`}
+        className={`${styles.form} ${formInView ? styles.formInView : ""}`}
       >
         <div className={styles.fullname}>
           <InputField
@@ -168,9 +129,7 @@ const ContactForm = () => {
 
       {submissionStatus === "success" && <p>Form submitted successfully!</p>}
       {submissionStatus === "error" && (
-        <div className="">
-          <p>There was an error submitting the form.</p>
-        </div>
+        <p>There was an error submitting the form.</p>
       )}
     </div>
   );
