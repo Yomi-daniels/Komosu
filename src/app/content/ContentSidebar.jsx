@@ -25,12 +25,7 @@ export default function ContentSidebar() {
    max-sm:z-30
    max-sm:left-0
    max-sm:h-[250px]
-   
-   max-sm:border-gray
-   
-    max-sm:border-b-[1px]
-
-    max-sm:border
+   max-sm:shadow-sm
     
     "
     >
