@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* app/globals.css or styles/globals.css */
+@import "./fonts.css";
 
 /* Custom font face declarations */
 @font-face {

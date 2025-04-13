@@ -13,6 +13,7 @@ import Testimonials from "@/sections/testimonials";
 import FAQ from "@/sections/faq";
 import { Montserrat } from "next/font/google";
 import Link from "next/link";
+import BentoSection from "./BentoSection";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["700"],
@@ -203,6 +204,7 @@ const WhyKomosu = () => {
           </div>
         </motion.div>
       </motion.div>
+      {/* <BentoSection /> */}
     </section>
   );
 };

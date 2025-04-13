@@ -58,12 +58,36 @@ module.exports = {
   theme: {
     // rest of the code
     extend: {
+      fontFamily: {
+        variable: ["satoshilight", "sans-serif"],
+        light: ["satoshilight", "sans-serif"],
+        bold: ["satoshibold", "sans-serif"],
+        regular: ["satoshiregular", "sans-serif"],
+        black: ["satoshiblack", "sans-serif"],
+        medium: ["satoshimedium", "sans-serif"],
+        hero: ["koulen", "sans-serif"],
+        custom: ["shadowsintolight", "cursive"],
+      },
       colors: {
         dark: "#1b1b1b",
         light: "#fff",
         accent: "#7B00D3",
         accentDark: "#ffdb4d",
         gray: "#747474",
+        navbar: "#131313",
+        background: "#ffffff",
+        darkBlueText: "#020059",
+        blueText: "#0400BF",
+        btnHover: "#ffffffa2",
+        btn: "#0500ff",
+
+        lightText: "#ffffff",
+        deepBlue: "#3af3ff",
+        yellow: "#ecc601",
+        hover1: "#dad9ff",
+        hover2: "#f9edb0",
+        hover3: "#534500",
+        skyBlue: "#e6e6ff",
       },
     },
   },
