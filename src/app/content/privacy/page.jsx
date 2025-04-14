@@ -9,17 +9,18 @@ export default function PrivacyPage() {
       </div>
       <div>
         <p className="text-[18px] font-regular leading-[150%] tracking-[2%] mt-[24px]">
-          Your privacy is important to us. This privacy policy explains how we
-          collect, use, and protect your personal information.
+          Your use of our Services is also governed by our Privacy Policy
+          (coming soon). We respect your data and take appropriate steps to
+          protect it.
         </p>
 
         <div className="mt-[24px] text-[18px] relative">
-          <h5 className="font-bold ">Information We Collect</h5>
+          <h5 className="font-bold ">Changes to Terms</h5>
 
           <p>
-            We may collect personal information such as your name, email
-            address, phone number, and other details when you interact with our
-            services.
+            We may update these Terms from time to time. You will be notified of
+            significant changes, and your continued use after updates means you
+            accept the revised Terms.
           </p>
         </div>
 
@@ -34,15 +35,14 @@ export default function PrivacyPage() {
         </div>
 
         <div className="mt-[24px] text-[18px] relative">
-          <h5 className="font-bold ">Sharing Your Information</h5>
+          <h5 className="font-bold ">Governing Law</h5>
 
           <p>
-            We do not share your personal information with third parties without
-            your consent, except as necessary to provide our services or comply
-            with legal obligations.
+            These Terms are governed by the laws of [Your Country or State],
+            without regard to conflict of law principles.
           </p>
         </div>
-        <div className="mt-[24px] text-[18px] relative">
+        {/* <div className="mt-[24px] text-[18px] relative">
           <h5 className="font-bold ">Your Rights</h5>
 
           <p>
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
             information at any time. Please contact us if you have any concerns
             about your privacy.
           </p>
-        </div>
+        </div> */}
 
         <div className="mt-[24px] text-[18px] relative">
           <p>

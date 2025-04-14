@@ -10,26 +10,40 @@ export default function TermsPage() {
     <div>
       <p className="text-[18px] font-regular leading-[150%] tracking-[2%] mt-[24px]">Welcome to Komosu Network (“Company”, “we”, “our”, or “us”). By accessing or using our services, you (“Client”, “you”, or “your”) agree to be bound by the following Terms of Service (“Terms”). If you do not agree with these Terms, please do not use our services.</p>
       <div className="mt-[24px] text-[18px] relative">
-        <h5 className="font-bold ">Services Offered</h5>
+        <h5 className="font-bold ">Who We Are</h5>
+     
+        <p>Komosu Network is a digital innovation studio providing advanced website solutions, content platforms, and AI tools tailored for the automotive dealership industry.</p>
+        </div>
+
+        <div className="mt-[24px] text-[18px] relative">
+        <h5 className="font-bold "> Eligibility</h5>
+     
+        <p>To use our Services, you must be at least 18 years old and legally capable of entering into contracts. You represent that all information you provide is accurate and current.</p>
+        </div>
+      <div className="mt-[24px] text-[18px] relative">
+        <h5 className="font-bold ">Use of Our Services</h5>
         <div className="mt-[7px] font-regular">
-        <p>Komosu Network provides professional digital services including:</p>
+        <p>You agree to use our Services only for lawful purposes. You will not:</p>
         
           
-            <li>Website Design and Development</li>
-            <li>Lead Generation Services</li>
+            <li>Violate any applicable laws or regulations.</li>
+            <li>Use our Services to promote illegal activities.</li>
+            <li>Infringe upon intellectual property rights.</li>
+            <li>Attempt to interfere with our platform’s operations or security.</li>
+
         </div>
         <p className="mt-[18px]">
         All services will be rendered based on a mutually agreed project scope, proposal, or contract.</p>
       </div>
       <div className="mt-[24px] text-[18px] relative">
-        <h5 className="font-bold ">Engagement & Payment</h5>
+        <h5 className="font-bold ">Payment and Services</h5>
         <div className="mt-[7px] font-regular">
-        <p>Komosu Network provides professional digital services including:</p>
+        <p>If you purchase services or subscriptions, you agree to pay all associated fees and taxes. All payments are final unless otherwise stated in a signed service agreement.</p>
         
           
-            <li>Quotes & Proposals: Each project will begin with a written quote or proposal outlining the scope, timeline, and cost. Acceptance of the proposal is required to commence work.</li>
+            {/* <li>Quotes & Proposals: Each project will begin with a written quote or proposal outlining the scope, timeline, and cost. Acceptance of the proposal is required to commence work.</li>
             <li>Payment Terms: A deposit (typically 50%) is required before the start of any project. The remaining balance is due upon completion or as otherwise specified</li>
-            <li>Late Payments: Invoices not paid by the due date may incur a late fee of 5% per month or the maximum permitted by law.</li>
+            <li>Late Payments: Invoices not paid by the due date may incur a late fee of 5% per month or the maximum permitted by law.</li> */}
         </div>
         
       </div>
@@ -39,9 +53,10 @@ export default function TermsPage() {
         <p>You agree to:</p>
         
           
-            <li>Provide all necessary content, assets, access, and feedback in a timely manner.</li>
-            <li>Ensure all materials provided to Komosu Network are either owned by you or properly licensed.</li>
-            <li>Review and approve work within specified timelines to avoid delays.</li>
+            <li>Provide timely feedback, approvals, and content when required.</li>
+            <li>Not misuse or alter provided website frameworks or tools beyond agreed scope.</li>
+            <li>Respect licensing and usage agreements for any third-party tools used in our services
+            .</li>
         </div>
         
       </div>
@@ -86,21 +101,21 @@ export default function TermsPage() {
         
       </div>
       <div className="mt-[24px] text-[18px] relative">
-        <h5 className="font-bold ">Disclaimer of warranties</h5>
+        <h5 className="font-bold ">Accounts and Sign-Ups</h5>
      
-        <p> All services are provided “as-is” without warranties of any kind. Komosu Network does not guarantee that your website or lead generation efforts will be free from errors, interruptions, or meet specific business outcomes.</p>
+        <p> Certain features may require account creation. You are responsible for keeping your login credentials secure and for all activities under your account.</p>
         </div>
 
         <div className="mt-[24px] text-[18px] relative">
         <h5 className="font-bold ">Limitation of Liability</h5>
      
-        <p> To the fullest extent permitted by law, Komosu Network shall not be liable for any indirect, incidental, special, or consequential damages, including but not limited to loss of profits, data, or business opportunities.</p>
+        <p> We provide our Services “as is” and disclaim all warranties. We are not liable for indirect, incidental, or consequential damages arising from your use of our Services.</p>
         </div>
 
         <div className="mt-[24px] text-[18px] relative">
-        <h5 className="font-bold ">Changes to terms</h5>
+        <h5 className="font-bold "> Termination</h5>
      
-        <p>Komosu Network reserves the right to modify these Terms at any time. Changes will become effective upon posting. Continued use of our services after updates constitutes your acceptance of the revised Terms.</p>
+        <p>We reserve the right to suspend or terminate access to our Services at any time if you violate these Terms. Upon termination, any outstanding fees remain payable.</p>
         </div>
 
         
