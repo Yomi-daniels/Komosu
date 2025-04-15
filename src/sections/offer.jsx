@@ -157,7 +157,7 @@ const Offer = () => {
       <h2 className={styles.offerHeader} ref={offerheaderRef}>
         What We Offer Our{" "}
         <span
-          className={`${styles.offerSpan} ${shadowFont.className} ${"font-custom text-xl"}`}
+          className={`${styles.offerSpan} ${shadowFont.className} ${"font-custom text-xl max-sm:-[18px]"}`}
         >
           {" "}
           Clients

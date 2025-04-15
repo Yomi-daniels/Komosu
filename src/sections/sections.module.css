@@ -1420,10 +1420,9 @@
     padding-bottom: 3rem;
   }
   .OfferSection .offerHeader {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     padding: 0 0.7rem;
   }
-
   .servicesSpan {
     font-size: 1.5rem;
   }
@@ -1574,6 +1573,10 @@
 
   .webDesignCard3 img:nth-child(2) {
     display: block;
+  }
+
+  .offerSpan {
+    font-size: 30px;
   }
 
   .webDesignContainer {
@@ -2433,7 +2436,7 @@
     margin-top: 2.5rem;
   }
   .offerHeader {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .avatar {
