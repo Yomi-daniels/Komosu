@@ -71,13 +71,14 @@
 }
 
 .heroSubText {
-  color: #000000;
+  color: var(--blueText);
   text-align: center;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.9px;
+  font-family: var(--text-Font-Medium);
 }
 
 /* .herobg {
@@ -455,8 +456,9 @@
 } */
 
 .serviceSection {
+  margin-inline: auto;
   position: relative;
-  width: 100%;
+  max-width: 926px;
   max-height: 30vh;
   background-color: #ffffff;
   color: #000000;
@@ -506,6 +508,13 @@
   text-transform: capitalize;
   margin-top: 1.2rem;
   font-family: var(--text-Font-Bold);
+}
+
+.servicesHeader h2 {
+  text-align: center;
+  margin-top: 0;
+  line-height: 120%;
+  letter-spacing: -4%;
 }
 
 .servicesSpan {
@@ -671,7 +680,7 @@
     padding: 0 2rem;
   }
   .servicesHeader h2 {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
   }
 
@@ -722,7 +731,7 @@
   }
 
   .serviceSection {
-    min-height: 50vh;
+    min-height: 40vh;
   }
 }
 

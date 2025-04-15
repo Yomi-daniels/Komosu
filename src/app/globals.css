@@ -16,6 +16,12 @@
 }
 
 @font-face {
+  font-family: "satoshimedium";
+  src: url("/fonts/Satoshi-Medium.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
   font-family: "SatoshiRegular";
   src: url("/fonts/Satoshi-Regular.otf") format("opentype");
 }
@@ -42,6 +48,7 @@
   --text-Font-Bold: satoshibold;
   --text-Font-Regular: satoshiregular;
   --text-Font-Black: satoshiblack;
+  --text-Font-Medium: satoshimedium;
   --Hero-Header: koulen;
   --custom-Font: shadowsintolight;
   --bg: #fff;

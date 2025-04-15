@@ -1,223 +1,91 @@
-"use client";
-import contentStyles from "../contentmarketing.module.css";
-import Image from "next/image";
-import GetStarted from "@/app/webdesign/components/GetStarted";
-import gsap from "gsap";
-gsap.registerPlugin(ScrollTrigger);
-import { ScrollTrigger } from "gsap/all";
-import { useEffect, useRef } from "react";
+import { FaTools, FaNetworkWired, FaUserShield, FaCogs, FaHandshake, FaChartBar } from "react-icons/fa";
+
+const features = [
+  {
+    title: "Custom Solutions",
+    description: "Our Designs Reflect Your Unique Brand Identity While Integrating Cutting-Edge Features.",
+    image: "/Custom Solution.png",
+    pill: true,
+  },
+  {
+    title: "Dealer Hub Integration",
+    description: "We Build A Social Media Hub Into Your Website, Offering Unparalleled Engagement Opportunities.",
+    image: "/Integration.png",
+    pill: true,
+  },
+  {
+    title: "Expert Support",
+    description: "From Content Creation To Advanced Functionality, We Ensure Your Site Is Both Stunning And Strategic.",
+    image: "/Support.png",
+    pill: true,
+  },
+  {
+    title: "All-In-One Solution",
+    description: "No Need For Multiple Tools — Manage Engagement, Leads, And Insights In One Place.",
+    image: "/Support.png",
+    pillTop: true,
+  },
+  {
+    title: "Trust & Credibility",
+    description: "With Secure Platforms, Real-Time Support, And A Proven Track Record, We Help You Convert Clicks Into Customers.",
+    image: "/Trust.png",
+    pillTop: true,
+  },
+  {
+    title: "Data-Driven Growth",
+    description: "Leverage Real-Time Insights To Optimize Marketing & Sales.",
+    image: "/Data.png",
+    pillTop: true,
+  },
+];
+
 
 const ContentMarketingServices = () => {
-  const contentServiceText1Ref = useRef(null);
-  const contentServiceText2Ref = useRef(null);
-  const contentServiceText3Ref = useRef(null);
-  const contentservicesImg1Ref = useRef(null);
-  const contentservicesImg2Ref = useRef(null);
-  const contentservicesImg3Ref = useRef(null);
-
-  useEffect(() => {
-    //Animate AisolutionServicesText1 from the left
-    gsap.fromTo(
-      contentServiceText1Ref.current,
-      { x: -300, opacity: 0 }, //start from left
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: contentServiceText1Ref.current,
-          start: "top 80%", //start animation when top of the element is 80% from the top of the viewport
-          once: true, //only animate once
-        },
-      }
-    );
-    //Animate AisolutionServicesText2 from the right
-    gsap.fromTo(
-      contentServiceText2Ref.current,
-      { x: 300, opacity: 0 }, //start from right
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: contentServiceText2Ref.current,
-          start: "top 80%", //start animation when top of the element is 80% from the top of the viewport
-          once: true, //only animate once
-        },
-      }
-    );
-
-    gsap.fromTo(
-      contentServiceText3Ref.current,
-      { x: -300, opacity: 0 }, //start from left
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: contentServiceText3Ref.current,
-          start: "top 80%", //start animation when top of the element is 80% from the top of the viewport
-          once: true, //only animate once
-        },
-      }
-    );
-    //Animate AisolutionServicesImage1Ref from the right
-    gsap.fromTo(
-      contentservicesImg1Ref.current,
-      { x: 300, opacity: 0 }, //start from right
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: contentservicesImg1Ref.current,
-          start: "top 80%", //start animation when top of the element is 80% from the top of the viewport
-          once: true, //only animate once
-        },
-      }
-    );
-    //Animate  AisolutionServicesImage2Ref from the left
-    gsap.fromTo(
-      contentservicesImg2Ref.current,
-      { x: -300, opacity: 0 }, //start from left
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: contentservicesImg2Ref.current,
-          start: "top 80%", //start animation when top of the element is 80% from the top of the viewport
-          once: true, //only animate once
-        },
-      }
-    );
-    //Animate AisolutionServicesImage3Ref from the right
-    gsap.fromTo(
-      contentservicesImg3Ref.current,
-      { x: 300, opacity: 0 }, //start from right
-      {
-        x: 0,
-        opacity: 1,
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: contentservicesImg3Ref.current,
-          start: "top 80%", //start animation when top of the element is 80% from the top of the viewport
-          once: true, //only animate once
-        },
-      }
-    );
-  }, []);
   return (
-    <section className={contentStyles.contentservicessection}>
-      <div className={contentStyles.contentservicescontainer}>
-        <div className={contentStyles.contentservicecontent}>
-          <div
-            className={contentStyles.contentServiceText}
-            ref={contentServiceText1Ref}
-          >
-            <h3>All-in-One Solution </h3>
-            <p>
-              No need for multiple tools — manage engagement, leads, and
-              insights in one place.
-            </p>
-            <GetStarted />
-          </div>
-          <div
-            className={contentStyles.contentservicesImg}
-            ref={contentservicesImg1Ref}
-          >
-            <Image src="/Group 6324.png" fill objectFit="contain" />
-          </div>
-        </div>
-        <div
-          className={`${contentStyles.contentservicecontent} ${contentStyles.contentservicecontent2}`}
-        >
-          <div
-            className={`${contentStyles.contentservicesImg} ${contentStyles.contentservicesImg2}`}
-            ref={contentservicesImg2Ref}
-          >
-            <Image
-              src="/nextgen landingpage img.png"
-              fill
-              objectFit="contain"
-            />
-          </div>
-          <div
-            className={contentStyles.contentServiceText}
-            ref={contentServiceText2Ref}
-          >
-            <h3>Dealership-Owned Digital Assets</h3>
-            <p>Take control of your audience and brand authority.</p>
-            <GetStarted />
-          </div>
-        </div>
-        {/* <div
-          className={`${contentStyles.contentservicecontent}${contentStyles.contentservicecontent2}`}
-        >
-          <div
-            className={`${contentStyles.contentservicesImg} ${contentStyles.contentservicesImg2}`}
-            ref={contentservicesImg2Ref}
-          >
-            <Image
-              src="/nextgen landingpage img.png"
-              fill
-              objectFit="contain"
-            />
-          </div>
-          <div
-            className={contentStyles.contentServiceText}
-            ref={contentServiceText2Ref}
-          >
-            <h3>Dealership-Owned Digital Assets</h3>
-            <p>Take control of your audience and brand authority.</p>
-            <GetStarted />
-          </div>
-        </div> */}
-        <div className={contentStyles.contentservicecontent}>
-          <div
-            className={contentStyles.contentServiceText}
-            ref={contentServiceText3Ref}
-          >
-            <h3> Long-Term Success</h3>
-            <p> Build a sustainable pipeline of leads and conversions.</p>
-            <GetStarted />
-          </div>
+    <section className="py-12 px-4 max-w-6xl mx-auto text-left">
+    <div className="flex flex-wrap relative">
+      {features.map((feature, index) => {
+        const removeTop = index < 3 ? "border-t-0" : "";
+        const removeBottom = index >= 3 ? "border-b-0" : "";
 
-          <Image
-            ref={contentservicesImg3Ref}
-            src="/LongTermSuccessImg.jpg"
-            width={450}
-            height={500}
-            objectFit="cover"
-            className=" rounded-[20px]"
-          />
-        </div>
-        <div
-          className={`${contentStyles.contentservicecontent} ${contentStyles.contentservicecontent2}`}
-        >
+        return (
           <div
-            className={`${contentStyles.contentservicesImg} ${contentStyles.contentservicesImg2}`}
-            ref={contentservicesImg2Ref}
+            key={index}
+            className={`group relative w-full md:w-1/3 border border-[#E6E6FF] p-6 text-left ${removeTop} ${removeBottom} flex flex-col items-start py-12 transition-all duration-300 ease-in-out hover:bg-[#f5f5f5] `}
           >
-            <Image src="/social campaign image.png" fill objectFit="contain" />
+            {/* Top Pill for last 3 */}
+            {feature.pillTop && (
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-bl-full rounded-br-full shadow-sm transition-colors duration-300 group-hover:bg-btn" />
+            )}
+
+            {/* Image/Icon */}
+            {feature.image ? (
+              <img
+                src={feature.image}
+                alt={feature.title}
+                className="w-10 h-10 mb-4 object-contain"
+              />
+            ) : (
+              <feature.icon className="text-3xl text-blue-500 mb-4" />
+            )}
+
+            {/* Bottom Pill for top 3 */}
+            {feature.pill && (
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-tl-full rounded-tr-full shadow-sm transition-colors duration-300 group-hover:bg-btn" />
+            )}
+
+            {/* Text Content */}
+            <h3 className="text-[24px] font-bold text-[#28282B] mb-2 transition-all duration-300 group-hover:text-[24.5px] group-hover:scale-105">
+              {feature.title}
+            </h3>
+            <p className="text-[#585859] font-medium text-[18px] transition-all duration-300 group-hover:text-[18.2px] group-hover:scale-105">
+              {feature.description}
+            </p>
           </div>
-          <div
-            className={contentStyles.contentServiceText}
-            ref={contentServiceText2Ref}
-          >
-            <h3>Data-Driven Growth</h3>
-            <p>Leverage real-time insights to optimize marketing & sales.</p>
-            <GetStarted />
-          </div>
-        </div>
-      </div>
-    </section>
+        );
+      })}
+    </div>
+  </section>
   );
 };
 

@@ -38,7 +38,8 @@ const Home = () => {
 
   const words = `Why Content Marketing Matters for Dealerships?`;
   const challengesText = `In today’s digital landscape, Content marketing offers dealerships the opportunity to:`;
-  const solutionsText = `What Makes Komosu Different?`;
+  const solutionsText = `What Makes`;
+  const otherText = `Different?`
 
   return (
     <div className={styles.landingpagesection}>
@@ -52,13 +53,12 @@ const Home = () => {
       </section>
       <section className={styles.VideoShowcasePage}>
         <div className={casestyles.thirdheadingsection}>
-          <h2 className={`${casestyles.thirdsectionheader} ${"mt-6 text-[2.5rem] max-sm:text-[1.5rem]"}`}>
-            {solutionsText}
+          <h2 className={`${casestyles.thirdsectionheader} ${"mt-6 text-[2.5rem] max-sm:text-[1.5rem] font-variable text-darkBlueText"}`}>
+          {solutionsText}&nbsp;<span className="font-custom text-btn">komosu</span>&nbsp;{otherText}
+
           </h2>
           <p className={casestyles.solutionsParagraph}>
-            Unlike traditional providers, Komosu integrates customer
-            communication, lead generation, and data insights into one seamless
-            platform.
+          At Komosu Network, we don’t just design websites, <br /> we craft digital experiences tailored to your dealership’s needs
           </p>
         </div>
         <ContentMarketingServices />
