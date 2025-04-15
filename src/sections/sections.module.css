@@ -994,7 +994,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1em;
-  margin-top: 2rem;
+  margin-top: 0rem;
   box-sizing: border-box;
 }
 

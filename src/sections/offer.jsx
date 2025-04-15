@@ -155,10 +155,12 @@ const Offer = () => {
   return (
     <section className={styles.OfferSection}>
       <h2 className={styles.offerHeader} ref={offerheaderRef}>
-        What we{" "}
-        <span className={`${styles.offerSpan} ${shadowFont.className}`}>
+        What We Offer Our{" "}
+        <span
+          className={`${styles.offerSpan} ${shadowFont.className} ${"font-custom text-xl"}`}
+        >
           {" "}
-          offer
+          Clients
         </span>
       </h2>
       <div className={styles.offerContainer}>
