@@ -8,7 +8,8 @@ import { useEffect, useRef } from "react";
 import Magnet from "@/Magnet";
 import gsap from "gsap";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
-
+import styles from "@/sections/sections.module.css";
+import Link from "next/link";
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["700"],
@@ -41,7 +42,19 @@ const WebDesignLandingpage = () => {
 
   return (
     <section className={webstyle.webdesignLandingPage}>
-      <div className={webstyle.vectorImagetop}>
+    <div className="max-w-[928px] h-[338px] text-center flex flex-col justify-center items-center gap-6">
+      <h1 className="font-bold leading-[120%]  text-[64px] tracking-[-4%]">
+      First Impression Matters, Make Your Website Count!
+      </h1>
+
+      <p className="max-w-[733px] font-medium text-darkBlueText text-[18px] text-center">Your website is the digital storefront of your dealership. A sleek, modern, and user-friendly design isn’t just about aesthetics—it’s about building trust, engaging customers, and driving sales.</p>
+
+       <Link href="/request-demo">
+                      <button className={styles.headerGetStarted}>Get Started</button>
+                    </Link>
+    </div>
+    
+      {/* <div className={webstyle.vectorImagetop}>
         <Image src="/webdesign vector.png" fill />
       </div>
       <div className={webstyle.webdesignLandingPageContainer}>
@@ -55,7 +68,7 @@ const WebDesignLandingpage = () => {
             </div>
             <h4>WEB DESIGN</h4>
           </div>
-          {/* Using `message` instead of `words` */}
+      
           <h1 className="text-sm">
             <TextGenerateEffect
               words={message}
@@ -84,7 +97,7 @@ const WebDesignLandingpage = () => {
       </div>
       <div className={webstyle.vectorImagebottom}>
         <Image src="/webdesign vector.png" fill />
-      </div>
+      </div> */}
     </section>
   );
 };

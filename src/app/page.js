@@ -70,9 +70,9 @@ const Home = () => {
       <section className={styles.OfferAnimationPage}>
         <OfferAnimation />
       </section>
-      <section className={styles.OfferAnimationPage}>
+      {/* <section className={styles.OfferAnimationPage}>
         <WhyKomosu />
-      </section>
+      </section> */}
       <section className={styles.TestimonialPage}>
         <Testimonials />
       </section>
