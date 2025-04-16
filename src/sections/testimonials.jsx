@@ -71,8 +71,10 @@ const Testimonials = () => {
       </div>
       <h2 className={`${styles.offerHeader} ${styles.testimonialHeader}`}>
         The Future of{" "}
-        <span className={`${styles.offerSpan} ${shadows_Font.className}`}>
-          DEALERSHIPS{" "}
+        <span
+          className={`${styles.offerSpan} ${shadows_Font.className} ${styles.testimonialSpan}`}
+        >
+          dealerships{" "}
         </span>
       </h2>
       <div

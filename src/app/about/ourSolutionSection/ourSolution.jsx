@@ -17,7 +17,7 @@ const OurSolutionSection = () => {
   };
 
   const solutionText =
-    "At Komosu, we specialize in premium web and content solutions designed to help dealerships take control of their digital presence and marketing.";
+    "As we continue to grow and innovate, we invite you to join us on our journey toward a more efficient, digital-first automotive industry";
 
   return (
     <section className={aboutstyles.OurSolutionSection} ref={solutionRef}>
@@ -27,12 +27,21 @@ const OurSolutionSection = () => {
         animate={isInView ? "visible" : "hidden"} // Animate when in view
         variants={sectionVariants}
       >
-        <h4>Our Solution</h4>
+        <h4>JOIN US ON OUR JOURNEY</h4>
         <h2>
           <TextGenerateEffect words={isInView ? solutionText : ""} />{" "}
           {/* Pass as a string only if in view */}
         </h2>
-        <motion.div
+        <motion.p
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={sectionVariants}
+        >
+          Partner with Komosu Network and experience the future of <br />dealership
+          operations today.
+        </motion.p>
+
+        {/* <motion.div
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={sectionVariants}
@@ -81,7 +90,7 @@ const OurSolutionSection = () => {
           <p><b>Growth-Driven Innovation:</b> Custom-built platforms that go beyond basic websites</p> 
           </div>
         </div> 
-        </motion.div>
+        </motion.div> */}
       </motion.div>
     </section>
   );

@@ -48,24 +48,20 @@ const Services = () => {
       className={cn(styles.serviceSection, "top-2 pb-48")}
     >
       <div className={styles.ServicesTextContainer}>
-        <div className={styles.servicesSubTextContainer}>
+        {/* <div className={styles.servicesSubTextContainer}>
           <div className={styles.blueBorder}></div>
           <p className={styles.servicesSubText}>WHY KOMOSU?</p>
-        </div>
+        </div> */}
         <div className={styles.servicesHeader}>
           <h2>
-            Empowering your{" "}
-            <span className={`${styles.servicesSpan} ${shadows.className}`}>
-              Business
-            </span>{" "}
-            to thrive
+          Komosu Network is a dynamic agency specializing in next-generation digital solutions tailored for automotive dealerships 
           </h2>
         </div>
-        <p className={cn(styles.subContent, "max-w-3xl mx-auto text-pretty")}>
-          Elevate your dealership’s digital presence with a premium
-          DealerHub—your built in social media tool to capture every sales
-          opportunity and stand apart from the competition.
-        </p>
+        {/* <p className={cn(styles.subContent, "max-w-3xl mx-auto text-pretty")}>
+          Elevate your dealership’s digital presence with a premium DealerHub —
+          your built in social media tool to capture every sales opportunity and
+          stand apart from the competition.
+        </p> */}
       </div>
 
       <div
@@ -74,8 +70,8 @@ const Services = () => {
           "hover:scale-110 transition-all duration-150"
         )}
       >
-        <Link href="/dealership_hub">
-          <p>See more</p>
+        <Link href="/about">
+          <p>Learn more about Komosu</p>
         </Link>
 
         <div className={styles.buttonImage}>

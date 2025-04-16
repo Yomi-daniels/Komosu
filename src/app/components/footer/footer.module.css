@@ -64,7 +64,7 @@
 
 .footerBtn button {
   width: 170px;
-  height: 55px;
+  height: 45px;
   padding: 8px;
   border-radius: 36px;
   background-color: var(--btn);
@@ -77,9 +77,41 @@
   letter-spacing: 0.36px;
 }
 
+.footerbtn1 {
+  min-width: 120px;
+  position: relative;
+  cursor: pointer;
+  padding: 12px 17px;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+
+  /* Updated background gradient with more vibrant colors */
+  background: radial-gradient(
+    ellipse at bottom,
+    #0066ff 0%,
+    /* Brighter blue */ #0056e6 45% /* Slightly darker blue */
+  );
+
+  color: rgb(255, 255, 255, 0.9); /* More visible white text */
+
+  /* Smooth and fast transition effect for hover */
+  transition: all 0.3s ease-in-out;
+}
+
+.footerbtn1:hover {
+  color: rgb(255, 255, 255, 1);
+  transform: scale(1.1) translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 8px 15px rgba(0, 102, 255, 0.3); /* Subtle shadow for depth */
+}
+
+.footerbtn1::before {
+  opacity: 1;
+}
+
 .footerBtn .footerbtn2 {
   display: flex;
-  height: 55px;
+  height: 45px;
   padding: 8px 12px;
   justify-content: center;
   align-items: center;
@@ -95,6 +127,20 @@
   letter-spacing: 0.36px;
   border: 1px solid var(--btn);
   position: relative;
+}
+.buttonImage {
+  transition: 0.3s ease-in-out;
+}
+.footerbtn2 {
+  transition: 0.2s ease-in-out;
+}
+.footerbtn2:hover {
+  transform: scale(1.05);
+}
+
+.footerbtn2:hover .buttonImage {
+  transform: rotate(45deg);
+  transition: 0.3s ease-in-out;
 }
 
 .buttonImageBg {

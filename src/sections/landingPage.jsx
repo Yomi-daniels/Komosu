@@ -1,11 +1,10 @@
-"use client";
+//"use client";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./sections.module.css";
 import { Shadows_Into_Light } from "next/font/google";
-
 const shadowFont = Shadows_Into_Light({
   subsets: ["latin"],
   weight: ["400"],
@@ -26,17 +25,17 @@ const LandingPage = () => {
       },
       {
         ref: heroSubTextRef,
-        from: { x: "100%", opacity: 0 },
+        from: { x: "100%", opacity: 0.7 },
         to: { x: "0%", opacity: 1 },
       },
       {
         ref: heroBtnRef,
-        from: { x: "100%", opacity: 0 },
+        from: { x: "100%", opacity: "0.7" },
         to: { x: "0", opacity: 1 },
       },
       {
         ref: videoRef,
-        from: { y: "20vh", opacity: 0 },
+        from: { y: "20vh", opacity: "0.7" },
         to: { y: "0", opacity: 1 },
       },
     ];
@@ -55,7 +54,7 @@ const LandingPage = () => {
       gsap.to(entry.target, {
         opacity: entry.isIntersecting ? 1 : 0,
         duration: 0.1,
-        ease: "power2.out",
+        ease: "power2.inOut",
       });
     };
 
