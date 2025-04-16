@@ -6,10 +6,11 @@
 .webdesignLandingPage {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   /* border: 1px solid#dad9ff;
   background: linear-gradient(269deg, #e6e6ff 1.83%, #fff 57.69%); */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -312,6 +313,17 @@
     right: 5%;
     max-width: 352px;
   }
+  .webdesignLandingPage {
+    margin-top: 2rem;
+    height: 90vh;
+    padding: 0 1.4rem;
+  }
+}
+
+@media (max-width: 784px) {
+  .webdesignLandingPage {
+    height: 75vh;
+  }
 }
 
 @media (max-width: 750px) {
@@ -443,7 +455,7 @@
   }
 
   .webdesignLandingPage {
-    height: 110vh;
+    height: 80vh;
   }
 }
 

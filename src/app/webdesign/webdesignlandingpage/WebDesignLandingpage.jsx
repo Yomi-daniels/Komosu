@@ -38,21 +38,29 @@ const WebDesignLandingpage = () => {
   }, []);
 
   // Renaming `words` to `message`
-  const message = `First Impressions Matter \n  Make Yours Count`;
+  const message = `    First Impression Matters, Make Your Website Count!`;
 
   return (
-    <section className={webstyle.webdesignLandingPage}>
-    <div className="max-w-[928px] h-[338px] text-center flex flex-col justify-center items-center gap-6">
-      <h1 className="font-bold leading-[120%]  text-[64px] tracking-[-4%]">
-      First Impression Matters, Make Your Website Count!
-      </h1>
+    <section className={`${webstyle.webdesignLandingPage}${' dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] overflow-x-hidden flex flex-col mt-[2rem]'}`}>
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
-      <p className="max-w-[733px] font-medium text-darkBlueText text-[18px] text-center">Your website is the digital storefront of your dealership. A sleek, modern, and user-friendly design isn’t just about aesthetics—it’s about building trust, engaging customers, and driving sales.</p>
+    <div className="max-w-[928px] h-[338px] text-center flex flex-col justify-center items-center gap-6 z-10">
+      <h1 className="font-bold leading-[120%]  text-[64px] tracking-[-4%] 
+        md:px-[2rem]">
+      <TextGenerateEffect
+              words={message}
+              messageClass=" max-sm:text-[40px] font-bold leading-[120%]  text-[64px] tracking-[-4%] max-md:text-[45px] sm:text-[50px] md:text-[60px] lg:text-[64px]" 
+            />
+          </h1>
+
+
+      <p className="max-w-[733px] font-medium text-darkBlueText text-[18px] text-center md:w-[40ch] max-sm:text-[16px] ">Your website is the digital storefront of your dealership. A sleek, modern, and user-friendly design isn’t just about aesthetics—it’s about building trust, engaging customers, and driving sales.</p>
 
        <Link href="/request-demo">
                       <button className={styles.headerGetStarted}>Get Started</button>
                     </Link>
     </div>
+   
     
       {/* <div className={webstyle.vectorImagetop}>
         <Image src="/webdesign vector.png" fill />
