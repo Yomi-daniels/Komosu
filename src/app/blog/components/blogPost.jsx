@@ -12,7 +12,7 @@ const BlogPost = ({ post }) => {
       {/* Image */}
       {image && (
         <Image
-          src={image.filePath.replace("../public", "")} // Adjust image path
+          src={image} // Adjust image path
           alt={title}
           width={post.image.width} // Set appropriate width
           height={post.image.height} // Set appropriate height

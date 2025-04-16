@@ -11,12 +11,11 @@ const BlogLayoutThree = ({ blog }) => {
         className="h-full rounded-xl overflow-hidden"
       >
         <Image
-          src={blog.image.filePath.replace("../public", "")}
-          placeholder="blur"
-          blurDataURL={blog.image.blurhashDataUrl}
+          src={blog.image}
+          // placeholder="blur"
+          // blurDataURL={blog.image.blurhashDataUrl}
           alt={blog.title}
-          width={blog.image.width}
-          height={blog.image.height}
+          fill
           className=" aspect-[4/3] w-full h-full object-cover object-center  group-hover:scale-105 transition-all ease duration-300 "
           sizes="(max-width: 640px) 100vw,(max-width: 1024px) 50vw, 33vw"
         />
