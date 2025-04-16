@@ -171,10 +171,10 @@ const WebDesignDigital = () => {
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-tl-full rounded-tr-full shadow-sm transition-colors duration-300 group-hover:bg-btn" />
           )}
 
-          <h3 className="text-[20px] md:text-[22px] font-bold text-[#28282B] mb-2 transition-all duration-300 group-hover:text-[24px] group-hover:scale-105 text-center">
+          <h3 className="text-[20px] md:text-[22px] font-bold text-[#28282B] mb-2 transition-all duration-300 group-hover:text-[20.1px] group-hover:scale-100 text-center">
             {elevationFeatures[currentIndex].title}
           </h3>
-          <p className="text-[#585859] font-medium text-[16px] md:text-[17px] text-center transition-all duration-300 group-hover:text-[18px] group-hover:scale-105">
+          <p className="text-[#585859] font-medium text-[16px] md:text-[17px] text-center transition-all duration-300 group-hover:text-[16.1px] group-hover:scale-105">
             {elevationFeatures[currentIndex].description}
           </p>
         </div>
@@ -200,6 +200,12 @@ const WebDesignDigital = () => {
             />
           </button>
         </div>
+      </div>
+      <div className="mt-[5rem] relative ">
+      <Image src="/MF Product Image2 1.png" alt="different cars image"
+        width={1512}
+        height={925}
+      />
       </div>
     </section>
   );
