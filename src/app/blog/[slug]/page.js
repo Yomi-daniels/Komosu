@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
   if (blog.image) {
     imageList =
       typeof blog.image.filePath === "string"
-        ? [siteMetadata.siteUrl + blog.image.filePath.replace("../public", "")]
+        ? [siteMetadata.siteUrl + blog.image]
         : blog.image;
   }
   const ogImages = imageList.map((img) => {
@@ -50,7 +50,7 @@ const BlogPostPage = ({ params }) => {
   if (blog.image) {
     imageList =
       typeof blog.image.filePath === "string"
-        ? [siteMetadata.siteUrl + blog.image.filePath.replace("../public", "")]
+        ? [siteMetadata.siteUrl + blog.image]
         : blog.image;
   }
 
@@ -77,12 +77,12 @@ const BlogPostPage = ({ params }) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       /> */}
-   
+
       <article>
         <div className={styles.blogImageBg}>
           {blog.image && (
             <Image
-              src={blog.image.filePath.replace("../public", "")}
+              src={blog.image}
               placeholder="blur"
               blurDataURL={blog.image.blurhashDataUrl}
               alt={blog.title}

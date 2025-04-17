@@ -22,7 +22,7 @@ const RecentPosts = ({ blogs }) => {
         )}
       >
         {blogs.map((post) => (
-          <article key={post._id} classname="col-span-1 row-span-1 relative">
+          <article key={post._id} className="col-span-1 row-span-1 relative">
             {/* <BlogPost post={post} /> */}
             <BlogLayoutThree blog={post} />
           </article>

@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useInView } from "react-intersection-observer";
 import { supabase } from "../../../lib/supabaseClient";
 import { schema } from "./validationSchema";
+/** @ts-ignore */
 import InputField from "../Fields/InputField";
 import Modal from "../modal/modal";
 import styles from "./contactForm.module.css";

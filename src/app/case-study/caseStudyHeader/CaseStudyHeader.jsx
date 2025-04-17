@@ -18,7 +18,10 @@ const CaseStudyHeader = () => {
   }, []);
 
   return (
-    <section className={casestyles.CaseStudyHeader} ref={caseStudyHeaderRef}>
+    <section
+      className={("pb-14 bg-red", $`{casestyles.CaseStudyHeader}`)}
+      ref={caseStudyHeaderRef}
+    >
       <h5>Case study</h5>
       <h1>
         Digital Transformation with{" "}

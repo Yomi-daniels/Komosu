@@ -62,10 +62,8 @@ const LandingPage = () => {
             </div>
             <div className={styles.HeaderContent} ref={heroSubTextRef}>
               <p className={styles.heroSubText}>
-                Our team of experts will help provide long-lasting solutions for
-                your business through web design, AI Solutions, and other
-                high-quality impressions through content marketing and lead
-                generation.
+                Our experts deliver tailored web design, AI solutions, and
+                impactful marketing to grow your business.
               </p>
             </div>
             <div className={styles.landingBtns} ref={heroBtnRef}>
@@ -74,9 +72,10 @@ const LandingPage = () => {
               </Link>
               <Link href="/about">
                 <button className={styles.headerbtn}>
-                  Learn more
+                  Learn More
                   <div className={styles.buttonImage}>
                     <Image src="/View plan button (4).png" alt="vector" fill />
+                    {/* <Image src="/top-right.png" alt="vector" fill className='' /> */}
                   </div>
                 </button>
               </Link>

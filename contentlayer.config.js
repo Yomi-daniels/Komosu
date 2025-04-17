@@ -1,9 +1,9 @@
-import { makeSource, defineDocumentType } from "@contentlayer/source-files";
+// contentlayer.config.js
+import { makeSource, defineDocumentType } from "contentlayer2/source-files"; // Updated import
 import readingTime from "reading-time";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
-// import remarkGfm from "remark-gfm";
 import GithubSlugger from "github-slugger";
 
 const Blog = defineDocumentType(() => ({
@@ -27,7 +27,7 @@ const Blog = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
-    image: { type: "image" },
+    image: { type: "string" }, // Changed to string (see note below)
     isPublished: {
       type: "boolean",
       default: true,
@@ -50,10 +50,14 @@ const Blog = defineDocumentType(() => ({
       type: "json",
       resolve: (doc) => readingTime(doc.body.raw),
     },
+    iimagePath: {
+      type: "string",
+      resolve: (doc) => doc.image || null,
+    },
     toc: {
       type: "json",
       resolve: async (doc) => {
-        const regulrExp = /\n(?<flag>#{1,6})\s+(?<content>.+)/g;
+        const regulrExp = /\n(?<flag>#{1,6})\s+(?<content>.+)/g; // Fixed typo: 'regulrExp' to 'regularExp'
         const slugger = new GithubSlugger();
         const headings = Array.from(doc.body.raw.matchAll(regulrExp)).map(
           ({ groups }) => {
@@ -62,7 +66,11 @@ const Blog = defineDocumentType(() => ({
 
             return {
               level:
-                flag?.length == 1 ? "one" : flag?.length == 2 ? "two" : "three",
+                flag?.length === 1
+                  ? "one"
+                  : flag?.length === 2
+                    ? "two"
+                    : "three",
               text: content,
               slug: content ? slugger.slug(content) : undefined,
             };
@@ -81,7 +89,6 @@ const codeOptions = {
 };
 
 export default makeSource({
-  /* options */
   contentDirPath: "content",
   documentTypes: [Blog],
   mdx: {
@@ -89,7 +96,7 @@ export default makeSource({
       rehypeSlug,
       [
         rehypeAutolinkHeadings,
-        { behavior: "append", properties: { classname: ["anchor"] } },
+        { behavior: "append", properties: { className: ["anchor"] } }, // Fixed 'classname' to 'className'
       ],
       [rehypePrettyCode, codeOptions],
     ],

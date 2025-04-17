@@ -15,12 +15,12 @@ const BlogPage = () => {
       post._raw.flattenedPath ===
       "automating-repetitive-tasks-productivity-hacks-for-developers"
   );
-  console.log("post", post, "allBlogs", allBlogs);
+  // console.log("post", post, "allBlogs", allBlogs);
   if (!post) {
     return <p>Post not found</p>;
   }
 
-  console.log("post", post.image.filePath.replace("../public", ""));
+  console.log("post", post.image);
 
   return (
     <section className={cn(styles.container, "")}>
