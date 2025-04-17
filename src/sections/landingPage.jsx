@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./sections.module.css";
 import { Shadows_Into_Light } from "next/font/google";
+
 const shadowFont = Shadows_Into_Light({
   subsets: ["latin"],
   weight: ["400"],
@@ -17,63 +18,35 @@ const LandingPage = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    const animations = [
-      {
-        ref: heroHeaderRef,
-        from: { x: "-100%", opacity: 0 },
-        to: { x: "0%", opacity: 1 },
-      },
-      {
-        ref: heroSubTextRef,
-        from: { x: "100%", opacity: 0.7 },
-        to: { x: "0%", opacity: 1 },
-      },
-      {
-        ref: heroBtnRef,
-        from: { x: "100%", opacity: "0.7" },
-        to: { x: "0", opacity: 1 },
-      },
-      {
-        ref: videoRef,
-        from: { y: "20vh", opacity: "0.7" },
-        to: { y: "0", opacity: 1 },
-      },
-    ];
+    const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
-    animations.forEach(({ ref, from, to }) => {
-      gsap.fromTo(ref.current, from, {
-        ...to,
-        duration: 1.5,
-        ease: "power2.out",
-      });
-    });
-  }, []);
-
-  useEffect(() => {
-    const observerCallback = ([entry]) => {
-      gsap.to(entry.target, {
-        opacity: entry.isIntersecting ? 1 : 0,
-        duration: 0.1,
-        ease: "power2.inOut",
-      });
-    };
-
-    const observer = new IntersectionObserver(observerCallback, {
-      threshold: 1,
-    });
-    [heroHeaderRef, heroSubTextRef, heroBtnRef].forEach((ref) => {
-      if (ref.current) observer.observe(ref.current);
-    });
-
-    return () => {
-      [heroHeaderRef, heroSubTextRef, heroBtnRef].forEach((ref) => {
-        if (ref.current) observer.unobserve(ref.current);
-      });
-    };
+    tl.fromTo(
+      heroHeaderRef.current,
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1 }
+    )
+      .fromTo(
+        heroSubTextRef.current,
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1 },
+        "-=0.7"
+      )
+      .fromTo(
+        heroBtnRef.current,
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1 },
+        "-=0.7"
+      )
+      .fromTo(
+        videoRef.current,
+        { scale: 1.1, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 1.2 },
+        "-=0.9"
+      );
   }, []);
 
   return (
-    <div className="min-h-screen w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center mb- overflow-x-hidden">
+    <div className="min-h-screen w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center overflow-x-hidden">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <section className={styles.heroSection}>
         <div className={styles.heroContainer}>

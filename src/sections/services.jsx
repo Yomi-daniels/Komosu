@@ -9,82 +9,155 @@
 // import { Shadows_Into_Light } from "next/font/google";
 // import { cn } from "@/lib/utils";
 
-// // Register GSAP ScrollTrigger
-// gsap.registerPlugin(ScrollTrigger);
+// Register GSAP plugin
+gsap.registerPlugin(ScrollTrigger);
 
 // const shadows = Shadows_Into_Light({
 //   subsets: ["latin"],
 //   weight: ["400"],
 // });
 
-// const Services = () => {
-//   const sectionRef = useRef(null); // Reference to the section
+const Services = () => {
+  const sectionRef = useRef(null);
+  const leftButtonsRef = useRef([]);
+  const rightButtonsRef = useRef([]);
 
-//   useEffect(() => {
-//     // Create the GSAP animation that triggers when the section enters the viewport
-//     gsap.fromTo(
-//       sectionRef.current,
-//       {
-//         scale: 0.6, // Start with a smaller scale
-//         opacity: 0, // Start with lower opacity
-//       },
-//       {
-//         scale: 1, // End with normal scale
-//         opacity: 1, // End with full opacity
-//         duration: 1.2, // Duration of the animation
-//         ease: "power3.out", // Easing function for smooth animation
-//         scrollTrigger: {
-//           trigger: sectionRef.current, // Trigger animation when section is in view
-//           start: "top 108%", // Start animation when the top of the section hits 80% of the viewport
-//           toggleActions: "play none none none", // Only play the animation once when entering
-//         },
-//       }
-//     );
-//   }, []);
+  useEffect(() => {
+    // Animate section scale on scroll
+    gsap.fromTo(
+      sectionRef.current,
+      {
+        scale: 0.6,
+        opacity: 0,
+      },
+      {
+        scale: 1,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 95%",
+          end: "bottom 0%",
+          toggleActions: "play reverse play reverse",
+        },
+      }
+    );
 
-//   return (
-//     <section
-//       ref={sectionRef}
-//       className={cn(styles.serviceSection, "top-2 pb-48")}
-//     >
-//       <div className={styles.ServicesTextContainer}>
-//         <div className={styles.servicesSubTextContainer}>
-//           <div className={styles.blueBorder}></div>
-//           <p className={styles.servicesSubText}>WHY KOMOSU?</p>
-//         </div>
-//         <div className={styles.servicesHeader}>
-//           <h2>
-//             Empowering your{" "}
-//             <span className={`${styles.servicesSpan} ${shadows.className}`}>
-//               Business
-//             </span>{" "}
-//             to thrive
-//           </h2>
-//         </div>
-//         <p className={cn(styles.subContent, "max-w-3xl mx-auto text-pretty")}>
-//           Elevate your dealership’s digital presence with a premium
-//           DealerHub—your built in social media tool to capture every sales
-//           opportunity and stand apart from the competition.
-//         </p>
-//       </div>
+    // Animate left buttons from left to center
+    leftButtonsRef.current.forEach((el) => {
+      gsap.fromTo(
+        el,
+        {
+          x: "-250%",
+          opacity: 0,
+        },
+        {
+          x: "0%",
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 95%",
+            end: "bottom 0%",
+            toggleActions: "play reverse play reverse",
+          },
+        }
+      );
+    });
 
-//       <div
-//         className={cn(
-//           styles.servicesLastContentText,
-//           "hover:scale-110 transition-all duration-150"
-//         )}
-//       >
-//         <Link href="/dealership_hub">
-//           <p>See more</p>
-//         </Link>
+    // Animate right buttons from right to center
+    rightButtonsRef.current.forEach((el) => {
+      gsap.fromTo(
+        el,
+        {
+          x: "250%",
+          opacity: 0,
+        },
+        {
+          x: "0%",
+          opacity: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 95%",
+            end: "bottom 0%",
+            toggleActions: "play reverse play reverse",
+          },
+        }
+      );
+    });
+  }, []);
 
-//         <div className={styles.buttonImage}>
-//           <Image src="/View plan button (4).png" alt="vector" fill />
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
+  return (
+    <section
+      ref={sectionRef}
+      className={cn(styles.serviceSection, "relative top-2 pb-48")}
+    >
+      <div className={styles.ServicesTextContainer}>
+        <div className={styles.servicesHeader}>
+          <h2>
+            Komosu Network is a dynamic agency specializing in next-generation
+            digital solutions tailored for automotive dealerships
+          </h2>
+        </div>
+      </div>
+
+      {/* LEFT BUTTONS */}
+      <div className="absolute left-0 top-0 space-y-6 md:block hidden">
+        <div
+          ref={(el) => (leftButtonsRef.current[0] = el)}
+          className="bg-gray-100 px-4 py-2 rounded-full shadow-lg absolute top-[-1em] left-[-8em] rotate-[-8deg] font-medium"
+        >
+          Web Design
+        </div>
+        <div
+          ref={(el) => (leftButtonsRef.current[1] = el)}
+          className="bg-gray-100 px-6 w-[150px] py-2 rounded-full shadow-lg absolute bottom-[-10em] left-[-8em] rotate-[-8deg] font-medium"
+        >
+          More Control
+        </div>
+      </div>
+
+      {/* RIGHT BUTTONS */}
+      <div className="absolute right-2 top-20 space-y-6 md:block hidden">
+        <div
+          ref={(el) => (rightButtonsRef.current[0] = el)}
+          className="bg-gray-100 px-4 py-2 rounded-full shadow-lg absolute top-[-7em] right-[-8em] rotate-[8deg] font-medium"
+        >
+          Content
+        </div>
+        <div
+          ref={(el) => (rightButtonsRef.current[1] = el)}
+          className="bg-gray-100 px-4 py-2 rounded-full shadow-lg absolute bottom-[-6em] right-[-8em] rotate-[8deg] font-medium"
+        >
+          Dealer Hub
+        </div>
+      </div>
+
+      {/* MOBILE BUTTONS - All hidden */}
+      <div className="md:hidden">
+        {/* Empty or nothing will be rendered here */}
+      </div>
+
+      <div
+        className={cn(
+          styles.servicesLastContentText,
+          "hover:scale-110 transition-all duration-150"
+        )}
+      >
+        <Link href="/about">
+          <p>Learn more about Komosu</p>
+        </Link>
+        <div className={styles.buttonImage}>
+          <Image src="/View plan button (4).png" alt="vector" fill />
+        </div>
+      </div>
+    </section>
+  );
+};
 
 // export default Services;
 // //

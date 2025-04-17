@@ -15,6 +15,9 @@ import { useRef } from "react";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 import casestyles from "./case-study/casestudy.module.css";
 import ContentMarketingServices from "./contentmarketing/contentmarketingservices/ContentMarketingServices";
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 // Import `cn` if you need it for conditional class names
 // import cn from "classnames";
 
@@ -41,6 +44,33 @@ const Home = () => {
   const solutionsText = `What Makes`;
   const otherText = `Different?`;
 
+  // Register ScrollTrigger plugin with GSAP
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animation for the thirdheadingsection
+    if (document.querySelector(".thirdheadingsection")) {
+      gsap.fromTo(
+        ".thirdheadingsection",
+        {
+          opacity: 0,
+          y: 50, // Start the animation with a downward translation
+        },
+        {
+          opacity: 1,
+          y: 0, // End the animation by bringing it back to its original position
+          duration: 1.2, // Adjusted timing for a slower animation
+          scrollTrigger: {
+            trigger: ".thirdheadingsection",
+            start: "top 80%", // Trigger when 80% of the section is in view
+            end: "top 30%",
+            scrub: true, // Smooth animation that is tied to scroll position
+          },
+        }
+      );
+    }
+  }, []);
+
   return (
     <div className={styles.landingpagesection}>
       <Navbar />
@@ -54,11 +84,10 @@ const Home = () => {
       <section className={styles.VideoShowcasePage}>
         <div className={casestyles.thirdheadingsection}>
           <h2
-            className={`${casestyles.thirdsectionheader} ${"mt-6 text-[2.5rem] max-sm:text-[1.5rem] font-variable text-darkBlueText"}`}
+            className={`${casestyles.thirdsectionheader} mt-6 text-[2.5rem] max-sm:text-[1.5rem] font-variable text-darkBlueText`}
           >
-            {solutionsText}&nbsp;
-            <span className="font-custom text-btn">komosu</span>&nbsp;
-            {otherText}
+            What Makes <span className="font-custom text-btn">komosu</span>{" "}
+            Different?
           </h2>
           <p className={casestyles.solutionsParagraph}>
             At Komosu Network, we don’t just design websites, <br /> we craft

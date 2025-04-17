@@ -41,11 +41,6 @@ const WebDesignLandingpage = () => {
   const message = `    First Impression Matters, Make Your Website Count!`;
 
   return (
-<<<<<<< HEAD
-    <section className={webstyle.webdesignLandingPage}>
-      <div className={webstyle.vectorImagetop}>
-        <Image alt="image" src="/webdesign vector.png" fill />
-=======
     <section className={`${webstyle.webdesignLandingPage}${' dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] overflow-x-hidden flex flex-col mt-[2rem]'}`}>
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
@@ -69,7 +64,6 @@ const WebDesignLandingpage = () => {
     
       {/* <div className={webstyle.vectorImagetop}>
         <Image src="/webdesign vector.png" fill />
->>>>>>> 68dc92da58a029b000616bb9e1acd0bac2e0f1b1
       </div>
       <div className={webstyle.webdesignLandingPageContainer}>
         <div
@@ -78,7 +72,7 @@ const WebDesignLandingpage = () => {
         >
           <div className={webstyle.headerContent}>
             <div className={webstyle.headerimg}>
-              <Image alt="image" src="/Vector (5).png" fill />
+              <Image src="/Vector (5).png" fill />
             </div>
             <h4>WEB DESIGN</h4>
           </div>
@@ -100,27 +94,18 @@ const WebDesignLandingpage = () => {
         <ScrollParallax isAbsolutelyPositioned>
           <div className={webstyle.webdesignImageContainer} ref={parallaxRef}>
             <div className={webstyle.webimage}>
-              <Image alt="image" src="/Frame 126.png" fill />
+              <Image src="/Frame 126.png" fill />
             </div>
 
             <div className={webstyle.webimage2}>
-              <Image
-                alt="image"
-                src="/New Macbook Pro Mockup Front View.png"
-                fill
-              />
+              <Image src="/New Macbook Pro Mockup Front View.png" fill />
             </div>
           </div>
         </ScrollParallax>
       </div>
       <div className={webstyle.vectorImagebottom}>
-<<<<<<< HEAD
-        <Image alt="image" src="/webdesign vector.png" fill />
-      </div>
-=======
         <Image src="/webdesign vector.png" fill />
       </div> */}
->>>>>>> 68dc92da58a029b000616bb9e1acd0bac2e0f1b1
     </section>
   );
 };
