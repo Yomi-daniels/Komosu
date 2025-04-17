@@ -1,6 +1,5 @@
 .container {
   color: black;
-
   font-family: var(--text-Font-Regular);
 }
 
@@ -33,6 +32,7 @@
   border-radius: 36px;
   transition: 0.1s ease-in;
 } */
+
 .active::before {
   content: "";
   background-color: var(--btn);
@@ -44,6 +44,19 @@
   margin-top: 0.5rem;
   left: 0;
 }
+
+.subActive::before {
+  content: "";
+  background-color: var(--btn);
+  width: 8px;
+  height: 90%;
+  border-radius: 0px 20px 20px 0;
+  position: absolute;
+  top: -3px;
+  margin-top: 0.5rem;
+  right: 106%;
+}
+
 /* 
 .container:last-child:hover::after {
   content: "";

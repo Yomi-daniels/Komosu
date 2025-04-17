@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* app/globals.css or styles/globals.css */
+@import "./fonts.css";
 
 /* Custom font face declarations */
 @font-face {
@@ -11,6 +13,12 @@
 @font-face {
   font-family: "SatoshiBold";
   src: url("/fonts/Satoshi-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "satoshimedium";
+  src: url("/fonts/Satoshi-Medium.otf") format("opentype");
+  font-weight: 900;
 }
 
 @font-face {
@@ -40,6 +48,7 @@
   --text-Font-Bold: satoshibold;
   --text-Font-Regular: satoshiregular;
   --text-Font-Black: satoshiblack;
+  --text-Font-Medium: satoshimedium;
   --Hero-Header: koulen;
   --custom-Font: shadowsintolight;
   --bg: #fff;

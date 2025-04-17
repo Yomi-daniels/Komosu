@@ -71,13 +71,14 @@
 }
 
 .heroSubText {
-  color: #000000;
+  color: var(--blueText);
   text-align: center;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.9px;
+  font-family: var(--text-Font-Medium);
 }
 
 /* .herobg {
@@ -156,6 +157,11 @@
   transform: rotate(45deg);
   transition: 0.2s ease-in;
 }
+
+.servicesLastContentText:hover .buttonImage {
+  transform: rotate(45deg);
+  transition: 0.2s ease-in;
+}
 .headerGetStarted {
   min-width: 120px;
   position: relative;
@@ -213,7 +219,7 @@
   display: flex;
   align-items: flex-end;
   gap: 2em;
-  opacity: 0;
+  opacity: 0.7;
   transition: opacity 1s ease;
 }
 
@@ -321,14 +327,6 @@
   .heroImgBg {
     height: 400px;
   }
-
-  .heroHeader {
-    font-size: 50px !important;
-  }
-
-  .heroSpan {
-    font-size: 50px;
-  }
 }
 
 @media (max-width: 740px) {
@@ -342,13 +340,16 @@
     font-size: 0.8rem;
   }
   .heroHeader {
-    font-size: 40px;
     line-height: 1;
-    width: 600px;
+    width: 100%;
+  }
+
+  .heroHeader {
+    font-size: 45px !important;
   }
 
   .heroSpan {
-    font-size: 40px;
+    font-size: 45px;
   }
   .heroImgBg {
     height: 300px;
@@ -361,7 +362,6 @@
 @media (max-width: 556px) {
   .heroHeader {
     width: 100vw;
-    font-size: 35px;
   }
 
   .heroSubText {
@@ -386,13 +386,9 @@
   }
 
   .heroHeader {
-    width: 300px;
-    font-size: 40px !important;
+    width: 380px;
+    padding: 0 0.7rem;
     /* text-align: left; */
-  }
-
-  .heroSpan {
-    font-size: 40px;
   }
 
   .HeroTextContainer {
@@ -421,6 +417,10 @@
 
   .heroImgBg {
     width: 350px;
+  }
+
+  .heroSubText {
+    line-height: 20px;
   }
 }
 
@@ -457,8 +457,9 @@
 } */
 
 .serviceSection {
+  margin-inline: auto;
   position: relative;
-  width: 100%;
+  max-width: 926px;
   max-height: 30vh;
   background-color: #ffffff;
   color: #000000;
@@ -510,6 +511,13 @@
   font-family: var(--text-Font-Bold);
 }
 
+.servicesHeader h2 {
+  text-align: center;
+  margin-top: 0;
+  line-height: 120%;
+  letter-spacing: -4%;
+}
+
 .servicesSpan {
   color: var(--yellow);
   font-style: italic;
@@ -519,12 +527,13 @@
 .subContent {
   width: 50%;
   text-align: center;
-  line-height: 150%;
+  line-height: 26px;
+  letter-spacing: 0.9px;
   margin-top: 1.5rem;
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
-  font-family: var(--textFontRegular);
+  /* font-weight: 600; */
+  font-family: var(--text-Font-Regular);
 }
 
 .servicesContainer {
@@ -672,7 +681,7 @@
     padding: 0 2rem;
   }
   .servicesHeader h2 {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
   }
 
@@ -706,13 +715,16 @@
     padding: 0 2rem;
     text-align: center;
   }
+
   .subContent {
     width: 100%;
-    padding: 0 2rem;
+    padding: 0;
     font-size: 0.9rem;
+    line-height: 20px;
+    letter-spacing: 1.2px;
   }
   .servicesSpan {
-    font-size: 1.7rem;
+    font-size: 1.7rem !important;
   }
 
   .containerFlexp {
@@ -720,7 +732,7 @@
   }
 
   .serviceSection {
-    min-height: 50vh;
+    min-height: 40vh;
   }
 }
 
@@ -958,7 +970,7 @@
 }
 
 .whySpan {
-  font-size: 30px !important;
+  font-size: 2rem !important;
 }
 
 .testimonialSpan {
@@ -983,7 +995,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 1em;
-  margin-top: 2rem;
+  margin-top: 0rem;
   box-sizing: border-box;
 }
 
@@ -1143,7 +1155,7 @@
 .WebDesignBtn {
   display: flex;
   width: 184px;
-  height: 55px;
+  height: 45px;
   padding: 8px;
   justify-content: center;
   align-items: center;
@@ -1151,13 +1163,45 @@
   background-color: var(--btn);
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 130%; /* 23.4px */
   letter-spacing: 0.36px;
-  font-family: var(--text-Font-Bold);
+  font-family: var(--text-Font-Regular);
   border: none;
   color: #fff;
   margin-top: 1rem;
+}
+
+.WebDesignBtn {
+  min-width: 120px;
+  position: relative;
+  cursor: pointer;
+  padding: 12px 17px;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+
+  /* Updated background gradient with more vibrant colors */
+  background: radial-gradient(
+    ellipse at bottom,
+    #0066ff 0%,
+    /* Brighter blue */ #0056e6 45% /* Slightly darker blue */
+  );
+
+  color: rgb(255, 255, 255, 0.9); /* More visible white text */
+
+  /* Smooth and fast transition effect for hover */
+  transition: all 0.3s ease-in-out;
+}
+
+.WebDesignBtn:hover {
+  color: rgb(255, 255, 255, 1);
+  transform: scale(1.1) translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 8px 15px rgba(0, 102, 255, 0.3); /* Subtle shadow for depth */
+}
+
+.WebDesignBtn::before {
+  opacity: 1;
 }
 
 .WebBtnImg {
@@ -1377,12 +1421,11 @@
     padding-bottom: 3rem;
   }
   .OfferSection .offerHeader {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     padding: 0 0.7rem;
   }
-
   .servicesSpan {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .offerContainer {
@@ -1533,6 +1576,10 @@
     display: block;
   }
 
+  .offerSpan {
+    font-size: 30px;
+  }
+
   .webDesignContainer {
     padding: 0 1rem;
   }
@@ -1595,10 +1642,39 @@
   border: none;
   cursor: pointer;
   transition: 0.1s ease-in;
+  height: 45px;
+}
+
+.OfferHeaderButton {
+  min-width: 120px;
+  position: relative;
+  cursor: pointer;
+  padding: 12px 17px;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+
+  /* Updated background gradient with more vibrant colors */
+  background: radial-gradient(
+    ellipse at bottom,
+    #0066ff 0%,
+    /* Brighter blue */ #0056e6 45% /* Slightly darker blue */
+  );
+
+  color: rgb(255, 255, 255, 0.9); /* More visible white text */
+
+  /* Smooth and fast transition effect for hover */
+  transition: all 0.3s ease-in-out;
 }
 
 .OfferHeaderButton:hover {
-  box-shadow: var(--btn-Hover);
+  color: rgb(255, 255, 255, 1);
+  transform: scale(1.1) translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 8px 15px rgba(0, 102, 255, 0.3); /* Subtle shadow for depth */
+}
+
+.OfferHeaderButton::before {
+  opacity: 1;
 }
 
 .lineImg {
@@ -2234,6 +2310,10 @@
   margin-bottom: 40px;
 }
 
+.WhyHeader {
+  font-family: var(--text-Font-Black);
+}
+
 .offerSpan {
   font-family: var(--custom-Font);
 }
@@ -2357,7 +2437,7 @@
     margin-top: 2.5rem;
   }
   .offerHeader {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .avatar {

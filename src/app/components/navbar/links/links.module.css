@@ -35,7 +35,7 @@
 }
 
 .subLinks a:hover::after {
-  width: 140%;
+  width: 10%;
   transition: 0.3s;
 }
 
@@ -50,7 +50,7 @@
   width: 0;
   border-radius: 0;
   position: absolute;
-  top: -5px;
+  top: -15px;
   color: #fff;
   margin-top: 0.5rem;
   left: -18px;
@@ -132,6 +132,18 @@
   visibility: visible;
 }
 
+.customLinkItem:hover a::after {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+
+.customLinkItem a {
+  font-weight: 500;
+}
+/* .customLinkItem:hover a::before {
+  background-color: transparent;
+} */
 .subLinks a {
   padding: 0.5rem 1rem;
   text-decoration: none;

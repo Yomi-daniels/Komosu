@@ -7,17 +7,24 @@ const NavLink = ({ item, onClick }) => {
 
   const handleClick = (e) => {
     if (item.subLinks) {
-      e.preventDefault();
+      e.preventDefault(); // Prevent navigation for parent with subLinks
     }
     if (onClick) {
-      onClick(); // Close the menu if onClick is provided
+      onClick(); // Close menu if handler is provided
     }
   };
+
+  const isActive = pathName === item.path && !item.subLinks;
 
   return (
     <Link
       href={item.path}
-      className={`${styles.container} ${pathName === item.path && styles.active}`}
+      className={`
+  ${styles.container}
+  ${isActive ? styles.active : ""}
+  ${item.subLinks ? styles.servicesParentLink : ""}
+  ${item.subLinks && pathName === item.path ? styles.subActive : ""}
+`}
       onClick={handleClick}
     >
       {item.title}

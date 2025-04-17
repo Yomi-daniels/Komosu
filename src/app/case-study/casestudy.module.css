@@ -256,23 +256,25 @@
 /* THIRD HEADING SECTION */
 
 .thirdheadingsection {
+  max-width: 736px;
+  margin-inline: auto;
   margin-top: 6rem;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   /* background-color: var(--yellow); */
-  border: 10px solid rgba(255, 255, 255, 0.551);
+  /* border: 10px solid rgba(255, 255, 255, 0.551); */
   /* background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.24) -1.53%,
     rgba(0, 0, 0, 0.6) 93.64%
   ); */
-  box-shadow:
+  /* box-shadow:
     0px -287px 80px 0px rgba(28, 24, 251, 0),
     0px -184px 74px 0px rgba(28, 24, 251, 0.01),
     0px -103px 62px 0px rgba(28, 24, 251, 0.05),
     0px -46px 46px 0px rgba(28, 24, 251, 0.09),
     0px -11px 25px 0px rgba(28, 24, 251, 0.1);
   backdrop-filter: blur(50px);
-  border-radius: 10px;
+  border-radius: 10px; */
 
   /* gap: 5em; */
   padding: 0 2rem;
@@ -291,16 +293,16 @@
 .thirdsectionheader {
   color: var(--blueText);
   /* font-size: 24px; */
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 700;
   line-height: 150%; /* 36px */
   letter-spacing: 0.48px;
   text-transform: capitalize;
   font-family: var(--text-Font-Bold);
   text-align: center !important;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  /* align-items: center; */
+  /* display: flex; */
+  /* justify-content: center; */
   margin-inline: auto;
 }
 
@@ -310,9 +312,19 @@
   margin-inline: auto;
   font-size: 1.1rem;
   margin-top: 1rem;
-  font-family: var(--text-Font-Bold) !important;
+  font-family: var(--text-Font-Medium);
+  line-height: 26px;
+  letter-spacing: 0.9px;
+  font-weight: 500;
 }
 
+@media (max-width: 750px) {
+  .solutionsParagraph {
+    font-size: 1rem;
+    line-height: 20px;
+    max-width: 40ch;
+  }
+}
 .textWrapper {
   /* border: 2px solid red; */
   margin-top: 1.5rem;
@@ -418,6 +430,11 @@
   }
 }
 
+.headingsection h5 {
+  font-size: 1rem !important;
+  font-family: var(--text-Font-Bold) !important;
+}
+
 @media (max-width: 450px) {
   .DigitalTransformationSection {
     margin-top: 1.5rem;
@@ -446,7 +463,7 @@
     font-size: 14px;
   }
   .thirdheadingsection {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 
   .thirdsectionheader {

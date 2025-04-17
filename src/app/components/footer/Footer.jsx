@@ -38,8 +38,7 @@ const Footer = () => {
             <Link href="/dealership_hub" className={styles.footerLink}>
               Dealers Hub
             </Link>
-            {/* <Link href="/servicesLink">Services</Link> */}
-            {/* <Link href="/pricing">Pricing</Link> */}
+
             <Link href="/contact-us" className={styles.footerLink}>
               Contact Us
             </Link>
@@ -48,8 +47,8 @@ const Footer = () => {
             </Link>
           </div>
           <div className={styles.TermsCondition}>
-            <Link href="/Terms_condition">Terms & Condition</Link>
-            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/content/terms">Terms & Condition</Link>
+            <Link href="/content/privacy">Privacy Policy</Link>
           </div>
           <div className={styles.FooterSocialLink}>
             <p>Reach out on our Social handles</p>
