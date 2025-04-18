@@ -354,9 +354,15 @@ next-env.d.ts
 +        simply looking to stay informed about the industry.
 +      </p>
 +      <div className={styles.article}>
-+        <div className={styles.articleImg}>
-+          <Image src="/Rectangle 74.png" fill />
-+        </div>
++       <div className={styles.articleImg}>
+  <Image
+    src={blog.image || "/Rectangle 74.png"} // Use the image from metadata
+    alt="Blog Image"
+
+    fill
+
+  />
+</div>
 +        <div className={styles.blogTextWrapper}>
 +          <div className={styles.blogText}>
 +            <p>Industry News</p>
@@ -3047,7 +3053,7 @@ This will ensure that the `"use client";` directive is included and the necessar
 > 26█ </p>  
 > 27█ <div className={styles.article}>  
 > 28█ <div className={styles.articleImg}>  
-> 29█ <Image src="/Rectangle 74.png" fill />  
+> 29█ <Image src="/Rectangle 74.png" fill/>  
 > 30█ </div>  
 > 31█ <div className={styles.blogTextWrapper}>  
 > 32█ <div className={styles.blogText}>  
