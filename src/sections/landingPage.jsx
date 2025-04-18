@@ -62,8 +62,9 @@ const LandingPage = () => {
             </div>
             <div className={styles.HeaderContent} ref={heroSubTextRef}>
               <p className={styles.heroSubText}>
-                Our experts deliver tailored web design, AI solutions, and
-                impactful marketing to grow your business.
+                At Komosu Network, we are committed to revolutionizing the
+                automotive industry by digitizing processes typically done in
+                person.
               </p>
             </div>
             <div className={styles.landingBtns} ref={heroBtnRef}>

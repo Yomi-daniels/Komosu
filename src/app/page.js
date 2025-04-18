@@ -15,9 +15,10 @@ import { useRef } from "react";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 import casestyles from "./case-study/casestudy.module.css";
 import ContentMarketingServices from "./contentmarketing/contentmarketingservices/ContentMarketingServices";
-import { useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Services from "@/sections/services";
 // Import `cn` if you need it for conditional class names
 // import cn from "classnames";
 
@@ -42,35 +43,34 @@ const Home = () => {
   const words = `Why Content Marketing Matters for Dealerships?`;
   const challengesText = `In today’s digital landscape, Content marketing offers dealerships the opportunity to:`;
   const solutionsText = `What Makes`;
-  const otherText = `Different?`
+  const otherText = `Different?`;
 
-// Register ScrollTrigger plugin with GSAP
-useEffect(() => {
-  gsap.registerPlugin(ScrollTrigger);
+  // Register ScrollTrigger plugin with GSAP
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
 
-  // Animation for the thirdheadingsection
-  if (document.querySelector(".thirdheadingsection")) {
-    gsap.fromTo(
-      ".thirdheadingsection",
-      {
-        opacity: 0,
-        y: 50, // Start the animation with a downward translation
-      },
-      {
-        opacity: 1,
-        y: 0, // End the animation by bringing it back to its original position
-        duration: 1.2, // Adjusted timing for a slower animation
-        scrollTrigger: {
-          trigger: ".thirdheadingsection",
-          start: "top 80%", // Trigger when 80% of the section is in view
-          end: "top 30%",
-          scrub: true, // Smooth animation that is tied to scroll position
+    // Animation for the thirdheadingsection
+    if (document.querySelector(".thirdheadingsection")) {
+      gsap.fromTo(
+        ".thirdheadingsection",
+        {
+          opacity: 0,
+          y: 50, // Start the animation with a downward translation
         },
-      }
-    );
-  }
-}, []);
-
+        {
+          opacity: 1,
+          y: 0, // End the animation by bringing it back to its original position
+          duration: 1.2, // Adjusted timing for a slower animation
+          scrollTrigger: {
+            trigger: ".thirdheadingsection",
+            start: "top 80%", // Trigger when 80% of the section is in view
+            end: "top 30%",
+            scrub: true, // Smooth animation that is tied to scroll position
+          },
+        }
+      );
+    }
+  }, []);
 
   return (
     <div className={styles.landingpagesection}>
@@ -78,21 +78,23 @@ useEffect(() => {
       <section className={styles.landingPage}>
         <LandingPage />
       </section>
-      {/* <section className={styles.ServicesPage}>
+      <section className={styles.ServicesPage}>
         <Services />
         <section className={styles.Servisesflex}></section>
-      </section> */}
+      </section>
       <section className={styles.VideoShowcasePage}>
-      <div className={casestyles.thirdheadingsection}>
-      <h2
-        className={`${casestyles.thirdsectionheader} mt-6 text-[2.5rem] max-sm:text-[1.5rem] font-variable text-darkBlueText`}
-      >
-        What Makes <span className="font-custom text-btn">komosu</span> Different?
-      </h2>
-      <p className={casestyles.solutionsParagraph}>
-        At Komosu Network, we don’t just design websites, <br /> we craft digital experiences tailored to your dealership’s needs
-      </p>
-    </div>
+        <div className={casestyles.thirdheadingsection}>
+          <h2
+            className={`${casestyles.thirdsectionheader} mt-6 text-[2.5rem] max-sm:text-[1.5rem] font-variable text-darkBlueText`}
+          >
+            What Makes <span className="font-custom text-btn">komosu</span>{" "}
+            Different?
+          </h2>
+          <p className={casestyles.solutionsParagraph}>
+            At Komosu Network, we don’t just design websites, <br /> we craft
+            digital experiences tailored to your dealership’s needs
+          </p>
+        </div>
         <ContentMarketingServices />
       </section>
       <section className={styles.OfferPage}>
