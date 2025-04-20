@@ -7,15 +7,18 @@
 }
 
 .LeadingGenSection {
-  border-bottom: 1px solid var #fcf6d9;
-  background: linear-gradient(269deg, #fdf9e6 44.62%, #fff 91.54%);
+  /* border-bottom: 1px solid var #fcf6d9; */
+  /* background: linear-gradient(269deg, #fdf9e6 44.62%, #fff 91.54%); */
   position: relative;
   max-width: 100%;
-  min-height: 100vh;
+  height: 80vh;
   display: flex;
+  justify-content: center;
+  margin-inline: auto;
   /* justify-content: flex-end; */
-  align-items: flex-end;
-  background-color: var(--hover2);
+  align-items: center;
+
+  /* background-color: var(--hover2); */
 }
 
 .LeadGenContainer {
@@ -185,7 +188,7 @@
   .LeadingGenSection {
     border-bottom: 1px solid var(--foundation-yellow-light-hover, #fcf6d9);
     background: linear-gradient(4deg, #fdf9e6 18.66%, #fff 73.37%);
-    min-height: 100vh;
+    height: 70vh;
     align-items: center;
   }
 
