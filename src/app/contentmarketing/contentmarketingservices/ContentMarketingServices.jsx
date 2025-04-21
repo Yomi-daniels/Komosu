@@ -1,37 +1,50 @@
-'use client'
+"use client";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaTools, FaNetworkWired, FaUserShield, FaCogs, FaHandshake, FaChartBar } from "react-icons/fa";
+import {
+  FaTools,
+  FaNetworkWired,
+  FaUserShield,
+  FaCogs,
+  FaHandshake,
+  FaChartBar,
+} from "react-icons/fa";
+import Image from "next/image";
 
 const features = [
   {
     title: "Custom Solutions",
-    description: "Our Designs Reflect Your Unique Brand Identity While Integrating Cutting-Edge Features.",
+    description:
+      "Our Designs Reflect Your Unique Brand Identity While Integrating Cutting-Edge Features.",
     image: "/Custom Solution.png",
     pill: true,
   },
   {
     title: "Dealer Hub Integration",
-    description: "We Build A Social Media Hub Into Your Website, Offering Unparalleled Engagement Opportunities.",
+    description:
+      "We Build A Social Media Hub Into Your Website, Offering Unparalleled Engagement Opportunities.",
     image: "/Integration.png",
     pill: true,
   },
   {
     title: "Expert Support",
-    description: "From Content Creation To Advanced Functionality, We Ensure Your Site Is Both Stunning And Strategic.",
+    description:
+      "From Content Creation To Advanced Functionality, We Ensure Your Site Is Both Stunning And Strategic.",
     image: "/Support.png",
     pill: true,
   },
   {
     title: "All-In-One Solution",
-    description: "No Need For Multiple Tools — Manage Engagement, Leads, And Insights In One Place.",
+    description:
+      "No Need For Multiple Tools — Manage Engagement, Leads, And Insights In One Place.",
     image: "/Support.png",
     pillTop: true,
   },
   {
     title: "Trust & Credibility",
-    description: "With Secure Platforms, Real-Time Support, And A Proven Track Record, We Help You Convert Clicks Into Customers.",
+    description:
+      "With Secure Platforms, Real-Time Support, And A Proven Track Record, We Help You Convert Clicks Into Customers.",
     image: "/Trust.png",
     pillTop: true,
   },
@@ -87,9 +100,10 @@ const ContentMarketingServices = () => {
 
               {/* Image/Icon */}
               {feature.image ? (
-                <img
+                <Image
                   src={feature.image}
                   alt={feature.title}
+                  fill
                   className="w-10 h-10 mb-4 object-contain"
                 />
               ) : (
