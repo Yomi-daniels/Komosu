@@ -29,7 +29,6 @@ const ContactForm = () => {
   } = useForm({
     resolver: zodResolver(schema),
   });
-
   const onSubmit = async (formData) => {
     console.log("Form submitted with data:", formData);
     setIsSubmitting(true);
