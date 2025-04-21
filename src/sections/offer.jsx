@@ -269,7 +269,7 @@ const Offer = () => {
                     {/* <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image alt='image' src="/Vector (6).png" alt="offerImage" fill />
                         </div>
                       </div>
                       <p>Virtual showrooms to display your vehicle lineup.</p>
@@ -290,6 +290,7 @@ const Offer = () => {
                       src="/Frame 1618868652.png"
                       fill
                       objectFit="contain"
+                      alt="image"
                     />
                   </div>
                 </motion.div>
@@ -377,7 +378,7 @@ const Offer = () => {
                     {/* <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image alt='image' src="/Vector (6).png" alt="offerImage" fill />
                         </div>
                       </div>
                       <p>
@@ -396,7 +397,12 @@ const Offer = () => {
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
                   >
-                    <Image src="/webdevimg (2).png" fill objectFit="contain" />
+                    <Image
+                      alt="image"
+                      src="/webdevimg (2).png"
+                      fill
+                      objectFit="contain"
+                    />
                   </div>
                 </motion.div>
               </div>
@@ -484,7 +490,7 @@ const Offer = () => {
                     {/* <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image alt='image' src="/Vector (6).png" alt="offerImage" fill />
                         </div>
                       </div>
                       <p>
@@ -504,6 +510,7 @@ const Offer = () => {
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
                   >
                     <Image
+                      alt="image"
                       src="/content marketing girl.png"
                       fill
                       objectFit="contain"
@@ -615,11 +622,17 @@ const Offer = () => {
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard3}`}
                   >
-                    <Image src="/Frame 1618868694.png" fill objectFit="cover" />
+                    <Image
+                      alt="image"
+                      src="/Frame 1618868694.png"
+                      fill
+                      objectFit="cover"
+                    />
                     <Image
                       src="/Frame 1618868694.png"
                       fill
                       objectFit="contain"
+                      alt="image"
                     />
                   </div>
                 </motion.div>

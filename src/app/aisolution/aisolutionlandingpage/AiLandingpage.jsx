@@ -35,7 +35,7 @@ const AiLandingpage = () => {
   return (
     <section className={Aistyles.AiLandingPage}>
       <div className={Aistyles.vectorImgtop}>
-        <Image src="/yellow vector.png" fill />
+        <Image alt="image" src="/yellow vector.png" fill />
       </div>
       <div
         className={`${Aistyles.ailandingpageContainer} ${montserrat.className}`}
@@ -46,7 +46,7 @@ const AiLandingpage = () => {
         >
           <div className={Aistyles.AiLandingPageHeader}>
             <div className={Aistyles.aiheaderImg}>
-              <Image src="/ai vector.png" fill />
+              <Image alt="image" src="/ai vector.png" fill />
             </div>
             <h4>AI SOLUTIONS</h4>
           </div>
@@ -70,17 +70,22 @@ const AiLandingpage = () => {
         >
           <ScrollParallax isAbsolutelyPositioned>
             <div className={Aistyles.ailandingpageImagetop}>
-              <Image src="/Bot.png" fill objectFit="contain" />
+              <Image alt="image" src="/Bot.png" fill objectFit="contain" />
             </div>
           </ScrollParallax>
 
           <div className={Aistyles.aigirlImg}>
-            <Image src="/Ai girl.png" fill objectFit="contain" />
+            <Image alt="image" src="/Ai girl.png" fill objectFit="contain" />
           </div>
 
           <ScrollParallax isAbsolutelyPositioned>
             <div className={Aistyles.ailandingpageImagebottom}>
-              <Image src="/Frame 126 (1).png" fill objectFit="contain" />
+              <Image
+                alt="image"
+                src="/Frame 126 (1).png"
+                fill
+                objectFit="contain"
+              />
             </div>
           </ScrollParallax>
         </div>

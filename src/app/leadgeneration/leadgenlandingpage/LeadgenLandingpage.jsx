@@ -36,7 +36,7 @@ const LeadgenLandingpage = () => {
     <section className={leadStyles.LeadingGenSection}>
       <div className={leadStyles.LeadGenContainer}>
         {/* <div className={leadStyles.vectortopImg}>
-        <Image src="/yellow vector.png" fill/>
+        <Image alt='image' src="/yellow vector.png" fill/>
       </div> */}
         <div
           className={`${leadStyles.leadGenTextContainer} ${montserrat.className}`}
@@ -44,7 +44,7 @@ const LeadgenLandingpage = () => {
         >
           <div className={leadStyles.leadtextheader}>
             <div className={leadStyles.textheaderimg}>
-              <Image src="/Vector (5).png" fill />
+              <Image alt="image" src="/Vector (5).png" fill />
             </div>
             <h4>LEAD GENERATION</h4>
           </div>
@@ -62,15 +62,20 @@ const LeadgenLandingpage = () => {
         >
           <ScrollParallax isAbsolutelyPositioned>
             <div className={leadStyles.leadimgstat}>
-              <Image src="/Stat (4).png" fill objectFit="contain" />
+              <Image alt="image" src="/Stat (4).png" fill objectFit="contain" />
             </div>
           </ScrollParallax>
           <div className={leadStyles.leadmanImg}>
-            <Image src="/leadgen man.png" fill objectFit="contain" />
+            <Image
+              alt="image"
+              src="/leadgen man.png"
+              fill
+              objectFit="contain"
+            />
           </div>
           <ScrollParallax isAbsolutelyPositioned>
             <div className={leadStyles.leadimgstat2}>
-              <Image src="/Stat (3).png" fill objectFit="contain" />
+              <Image alt="image" src="/Stat (3).png" fill objectFit="contain" />
             </div>
           </ScrollParallax>
         </div>

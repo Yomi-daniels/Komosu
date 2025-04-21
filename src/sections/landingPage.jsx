@@ -75,7 +75,7 @@ const LandingPage = () => {
                   Learn More
                   <div className={styles.buttonImage}>
                     <Image src="/View plan button (4).png" alt="vector" fill />
-                    {/* <Image src="/top-right.png" alt="vector" fill className='' /> */}
+                    {/* <Image alt='image' src="/top-right.png" alt="vector" fill className='' /> */}
                   </div>
                 </button>
               </Link>

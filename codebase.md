@@ -355,7 +355,7 @@ next-env.d.ts
 +      </p>
 +      <div className={styles.article}>
 +        <div className={styles.articleImg}>
-+          <Image src="/Rectangle 74.png" fill />
++          <Image alt='image' src="/Rectangle 74.png" fill />
 +        </div>
 +        <div className={styles.blogTextWrapper}>
 +          <div className={styles.blogText}>
@@ -2823,7 +2823,7 @@ These changes will create a new blog page and add a link to it in the navigation
 
 #### <div className={styles.articleImg}>
 
-#### <Image src="/Rectangle 74.png" fill />
+#### <Image alt='image' src="/Rectangle 74.png" fill />
 
 #### </div>
 
@@ -2963,7 +2963,7 @@ simply looking to stay informed about the industry.
 </p>
 <div className={styles.article}>
 <div className={styles.articleImg}>
-<Image src="/Rectangle 74.png" fill />
+<Image alt='image' src="/Rectangle 74.png" fill />
 </div>
 <div className={styles.blogTextWrapper}>
 <div className={styles.blogText}>
@@ -3047,7 +3047,7 @@ This will ensure that the `"use client";` directive is included and the necessar
 > 26█ </p>  
 > 27█ <div className={styles.article}>  
 > 28█ <div className={styles.articleImg}>  
-> 29█ <Image src="/Rectangle 74.png" fill />  
+> 29█ <Image alt='image' src="/Rectangle 74.png" fill />  
 > 30█ </div>  
 > 31█ <div className={styles.blogTextWrapper}>  
 > 32█ <div className={styles.blogText}>  
@@ -4105,7 +4105,7 @@ const WebDesignLandingpage = () => {
   return (
     <section className={webstyle.webdesignLandingPage}>
       <div className={webstyle.vectorImagetop}>
-        <Image src="/webdesign vector.png" fill />
+        <Image alt="image" src="/webdesign vector.png" fill />
       </div>
       <div className={webstyle.webdesignLandingPageContainer}>
         <div
@@ -4113,7 +4113,7 @@ const WebDesignLandingpage = () => {
         >
           <div className={webstyle.headerContent}>
             <div className={webstyle.headerimg}>
-              <Image src="/Vector (5).png" fill />
+              <Image alt="image" src="/Vector (5).png" fill />
             </div>
             <h4>WEB DESIGN</h4>
           </div>
@@ -4133,17 +4133,21 @@ const WebDesignLandingpage = () => {
         <ScrollParallax isAbsolutelyPositioned>
           <div className={webstyle.webdesignImageContainer} ref={parallaxRef}>
             <div className={webstyle.webimage}>
-              <Image src="/Frame 126.png" fill />
+              <Image alt="image" src="/Frame 126.png" fill />
             </div>
 
             <div className={webstyle.webimage2}>
-              <Image src="/New Macbook Pro Mockup Front View.png" fill />
+              <Image
+                alt="image"
+                src="/New Macbook Pro Mockup Front View.png"
+                fill
+              />
             </div>
           </div>
         </ScrollParallax>
       </div>
       <div className={webstyle.vectorImagebottom}>
-        <Image src="/webdesign vector.png" fill />
+        <Image alt="image" src="/webdesign vector.png" fill />
       </div>
     </section>
   );
@@ -4190,13 +4194,18 @@ const VideoShowcase = () => {
           {!isPlaying ? (
             <div className={styles.playContainer}>
               <button onClick={handlePlay} className={styles.playButton}>
-                <Image src="/play-large-fill.svg" alt="Play" fill />
+                <Image alt="image" src="/play-large-fill.svg" alt="Play" fill />
               </button>
             </div>
           ) : (
             <div className={styles.resetContainer}>
               <button onClick={handleReset} className={styles.resetButton}>
-                <Image src="/pause-large-fill.svg" alt="Pause" fill />
+                <Image
+                  alt="image"
+                  src="/pause-large-fill.svg"
+                  alt="Pause"
+                  fill
+                />
               </button>
             </div>
           )}
@@ -4268,7 +4277,12 @@ const Testimonials = () => {
       >
         <div className={styles.testimonialContents}>
           <div className={styles.avatar}>
-            <Image src={avatar} alt={`${company} testimonial`} layout="fill" />
+            <Image
+              alt="image"
+              src={avatar}
+              alt={`${company} testimonial`}
+              layout="fill"
+            />
           </div>
           <div className={styles.testimonialTextContent}>
             <h2 className={styles.clientCompany}>{company}</h2>
@@ -4278,7 +4292,12 @@ const Testimonials = () => {
           </div>
         </div>
         <div className={styles.groupImg}>
-          <Image src="/triangle.png" alt="decorative" layout="fill" />
+          <Image
+            alt="image"
+            src="/triangle.png"
+            alt="decorative"
+            layout="fill"
+          />
         </div>
       </div>
       <div className={styles.testimonialButtonDirection}>
@@ -4437,7 +4456,12 @@ const Services = () => {
         </Link>
 
         <div className={styles.buttonImage}>
-          <Image src="/View plan button (4).png" alt="vector" fill />
+          <Image
+            alt="image"
+            src="/View plan button (4).png"
+            alt="vector"
+            fill
+          />
         </div>
       </div>
     </section>
@@ -6496,10 +6520,10 @@ const OfferAnimation = () => {
         </Link>
         <div className={styles.LineContainer}>
           <div className={styles.lineImg}>
-            <Image src="/Rectangle 3.png" alt="offerAnimImg" fill />
+            <Image alt="image" src="/Rectangle 3.png" alt="offerAnimImg" fill />
           </div>
           <div className={styles.lineImg2}>
-            <Image src="/Rectangle 4.png" alt="offerAnimImg" fill />
+            <Image alt="image" src="/Rectangle 4.png" alt="offerAnimImg" fill />
           </div>
         </div>
       </div>
@@ -6508,7 +6532,12 @@ const OfferAnimation = () => {
           <div className={styles.offerAnimTextContent}>
             <div className={styles.OfferAnimationContainerContentHeader}>
               <div className={styles.OfferAnimationContainerContentSmallImage}>
-                <Image src="/Vector (5).png" alt="offerAnimImg" fill />
+                <Image
+                  alt="image"
+                  src="/Vector (5).png"
+                  alt="offerAnimImg"
+                  fill
+                />
               </div>
               <h6 className={styles.offerH6}>PROMOTIONAL VIDEOS</h6>
             </div>
@@ -6521,7 +6550,12 @@ const OfferAnimation = () => {
             <div className={styles.offerFeaturesContent}>
               <div className={styles.offerFeaturesImgShadow}>
                 <div className={styles.offerFeaturesImg}>
-                  <Image src="/Vector (6).png" alt="offerAnimImg" fill />
+                  <Image
+                    alt="image"
+                    src="/Vector (6).png"
+                    alt="offerAnimImg"
+                    fill
+                  />
                 </div>
               </div>
               <p>
@@ -6532,7 +6566,12 @@ const OfferAnimation = () => {
             <div className={styles.offerFeaturesContent}>
               <div className={styles.offerFeaturesImgShadow}>
                 <div className={styles.offerFeaturesImg}>
-                  <Image src="/Vector (6).png" alt="offerAnimImg" fill />
+                  <Image
+                    alt="image"
+                    src="/Vector (6).png"
+                    alt="offerAnimImg"
+                    fill
+                  />
                 </div>
               </div>
               <p>
@@ -6558,7 +6597,12 @@ const OfferAnimation = () => {
           <div className={styles.offerAnimTextContent}>
             <div className={styles.OfferAnimationContainerContentHeader}>
               <div className={styles.OfferAnimationContainerContentSmallImage}>
-                <Image src="/Vector (7).png" alt="offerAnimImg" fill />
+                <Image
+                  alt="image"
+                  src="/Vector (7).png"
+                  alt="offerAnimImg"
+                  fill
+                />
               </div>
               <h6 className={styles.businessAnalytics}>BUSINESS ANALYTICS</h6>
             </div>
@@ -6571,7 +6615,12 @@ const OfferAnimation = () => {
             <div className={styles.offerFeaturesContent}>
               <div className={styles.offerFeaturesImgShadows}>
                 <div className={styles.offerFeaturesImg}>
-                  <Image src="/Vector (8).png" alt="offerAnimImg" fill />
+                  <Image
+                    alt="image"
+                    src="/Vector (8).png"
+                    alt="offerAnimImg"
+                    fill
+                  />
                 </div>
               </div>
               <p>
@@ -6582,7 +6631,12 @@ const OfferAnimation = () => {
             <div className={styles.offerFeaturesContent}>
               <div className={styles.offerFeaturesImgShadows}>
                 <div className={styles.offerFeaturesImg}>
-                  <Image src="/Vector (8).png" alt="offerAnimImg" fill />
+                  <Image
+                    alt="image"
+                    src="/Vector (8).png"
+                    alt="offerAnimImg"
+                    fill
+                  />
                 </div>
               </div>
               <p>
@@ -6596,14 +6650,24 @@ const OfferAnimation = () => {
               className={`${styles.OfferAnimationImageBoxContent} ${styles.OfferAnimationImageBoxContent2}`}
             >
               <div className={`${styles.ImageBox1} ${styles.ImageBoxsec}`}>
-                <Image src="/Group 6322.png" alt="offerAnimImg" fill />
+                <Image
+                  alt="image"
+                  src="/Group 6322.png"
+                  alt="offerAnimImg"
+                  fill
+                />
               </div>
             </div>
             <div
               className={`${styles.OfferAnimationImageBoxContent} ${styles.OfferAnimationImageBoxContent2}`}
             >
               <div className={`${styles.ImageBox2} ${styles.ImageBoxsec2}`}>
-                <Image src="/Group 6323.png" alt="offerAnimImg" fill />
+                <Image
+                  alt="image"
+                  src="/Group 6323.png"
+                  alt="offerAnimImg"
+                  fill
+                />
               </div>
             </div>
           </div>
@@ -6694,7 +6758,12 @@ const Offer = () => {
                   <div className={styles.webDesignHeader}>
                     <div className={styles.webHeaderImgBg}>
                       <div className={styles.webHeaderImg}>
-                        <Image src="/Vector (13).png" alt="offerImage" fill />
+                        <Image
+                          alt="image"
+                          src="/Vector (13).png"
+                          alt="offerImage"
+                          fill
+                        />
                       </div>
                     </div>
                     <h5>WEB DESIGN</h5>
@@ -6710,7 +6779,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6721,7 +6795,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6732,7 +6811,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6743,7 +6827,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6754,7 +6843,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>Virtual showrooms to display your vehicle lineup.</p>
@@ -6798,7 +6892,12 @@ const Offer = () => {
                   <div className={styles.webDesignHeader}>
                     <div className={styles.webHeaderImgBg}>
                       <div className={styles.webHeaderImg}>
-                        <Image src="/ai vector.png" alt="offerImage" fill />
+                        <Image
+                          alt="image"
+                          src="/ai vector.png"
+                          alt="offerImage"
+                          fill
+                        />
                       </div>
                     </div>
                     <h5>AI SOLUTIONS</h5>
@@ -6814,7 +6913,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6825,7 +6929,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6837,7 +6946,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6848,7 +6962,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6859,7 +6978,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6918,7 +7042,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6929,7 +7058,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6940,7 +7074,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6951,7 +7090,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -6962,7 +7106,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -7021,7 +7170,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -7032,7 +7186,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -7043,7 +7202,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -7054,7 +7218,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -7065,7 +7234,12 @@ const Offer = () => {
                     <div className={styles.WebDesignFeaturesContent}>
                       <div className={styles.webFeaturesImgShadow}>
                         <div className={styles.webFeaturesImg}>
-                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                          <Image
+                            alt="image"
+                            src="/Vector (6).png"
+                            alt="offerImage"
+                            fill
+                          />
                         </div>
                       </div>
                       <p>
@@ -7081,7 +7255,12 @@ const Offer = () => {
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard3}`}
                   >
-                    <Image src="/Frame 1618868694.png" fill objectFit="cover" />
+                    <Image
+                      alt="image"
+                      src="/Frame 1618868694.png"
+                      fill
+                      objectFit="cover"
+                    />
                     <Image
                       src="/Frame 1618868694.png"
                       fill
@@ -7158,7 +7337,7 @@ const LandingPage = () => {
   return (
     <section className={styles.heroSection}>
       <div className={styles.herobg}>
-        {/* <Image src="/landing image.png" layout="fill" objectFit="cover" /> */}
+        {/* <Image alt='image' src="/landing image.png" layout="fill" objectFit="cover" /> */}
         <video loop autoPlay muted>
           <source src="/Website Vid.mp4" type="video/mp4" />
         </video>
@@ -7178,7 +7357,12 @@ const LandingPage = () => {
               <button className={styles.headerbtn}>
                 Learn more
                 <div className={styles.buttonImage}>
-                  <Image src="/View plan button (4).png" alt="vector" fill />
+                  <Image
+                    alt="image"
+                    src="/View plan button (4).png"
+                    alt="vector"
+                    fill
+                  />
                 </div>
               </button>
             </Link>
@@ -7248,7 +7432,7 @@ const FAQ = () => {
       </div>
       <div className={styles.FAQContainer}>
         <div className={styles.FAQline}>
-          <Image src="/Group 2.png" alt="lines" fill />
+          <Image alt="image" src="/Group 2.png" alt="lines" fill />
         </div>
         {[...Array(3)].map((_, index) => (
           <div key={index} className={styles.FAQContainerContents}>
@@ -7258,7 +7442,7 @@ const FAQ = () => {
             >
               <h4>What Service Does Komosu Offer?</h4>
               <div className={styles.dropdownImg}>
-                <Image src="/Frame 39.png" alt="Faq image" fill />
+                <Image alt="image" src="/Frame 39.png" alt="Faq image" fill />
               </div>
             </div>
             <div
@@ -7269,7 +7453,7 @@ const FAQ = () => {
           </div>
         ))}
         <div className={styles.FAQline}>
-          <Image src="/Group 3.png" alt="lines" fill />
+          <Image alt="image" src="/Group 3.png" alt="lines" fill />
         </div>
       </div>
     </section>
@@ -8855,7 +9039,12 @@ const RequestDemoPages = () => {
           <div className={styles.textheader}>
             <div className={styles.headerimgbg}>
               <div className={styles.headerimg}>
-                <Image src="/Vector (5).png" fill alt="Header Image" />
+                <Image
+                  alt="image"
+                  src="/Vector (5).png"
+                  fill
+                  alt="Header Image"
+                />
               </div>
             </div>
             <h4>REQUEST DEMO</h4>
@@ -11219,29 +11408,34 @@ const WebDesignWorks = () => {
       <div className={webstyle.webWorksContainer}>
         <div className={webstyle.webWorksShowcase}>
           <div className={webstyle.webworkDesign1}>
-            <Image src="/Rectangle 61.png" fill />
+            <Image alt='image' src="/Rectangle 61.png" fill />
           </div>
           <div className={webstyle.webworkDesign2}>
-            <Image src="/Rectangle 62.png" fill />
+            <Image alt='image' src="/Rectangle 62.png" fill />
           </div>
         </div>
       </div>
       <div className={webstyle.webWorksShowcase2}>
         <div className={webstyle.webworkDesign3}>
-          <Image src="/Rectangle 30.png" fill />
+          <Image alt='image' src="/Rectangle 30.png" fill />
         </div>
         <div className={webstyle.webworkDesign4}>
-          <Image src="/Rectangle 29.png" fill />
+          <Image alt='image' src="/Rectangle 29.png" fill />
         </div>
         <div className={webstyle.webworkDesign5}>
-          <Image src="/Rectangle 30.png" fill />
+          <Image alt='image' src="/Rectangle 30.png" fill />
         </div>
       </div> */}
       <div className={webstyle.webdesignContentsContainer}>
         <div className={webstyle.webdesignContent2}>
           <div className={webstyle.webdesignimgContent}>
             <div className={webstyle.webdesignImg}>
-              <Image src="/Frame 1618868702.png" fill objectFit="contain" />
+              <Image
+                alt="image"
+                src="/Frame 1618868702.png"
+                fill
+                objectFit="contain"
+              />
             </div>
           </div>
           <div className={webstyle.webdesignTextContent2}>
@@ -11269,14 +11463,14 @@ const WebDesignWorks = () => {
           </div>
           <div className={webstyle.webdesignimgContent}>
             <div className={webstyle.webdesignImg}>
-              <Image src="/card.png" fill />
+              <Image alt="image" src="/card.png" fill />
             </div>
           </div>
         </div>
         <div className={webstyle.webdesignContent2}>
           <div className={webstyle.webdesignimgContent}>
             <div className={webstyle.webdesignImg}>
-              <Image src="/Frame 1618868705.png" fill />
+              <Image alt="image" src="/Frame 1618868705.png" fill />
             </div>
           </div>
           <div className={webstyle.webdesignTextContent2}>
@@ -11342,7 +11536,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Custom website design with up to 5 pages</p>
@@ -11350,7 +11544,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Responsive design for mobile and tablet</p>
@@ -11358,7 +11552,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Basic SEO setup</p>
@@ -11366,7 +11560,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Integration with a user-friendly CMS</p>
@@ -11374,7 +11568,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Basic training on how to update content</p>
@@ -11382,7 +11576,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>1-month post-launch support for bug fixes</p>
@@ -11406,7 +11600,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Custom website design with up to 20 pages</p>
@@ -11414,7 +11608,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Responsive design for mobile and tablet</p>
@@ -11422,7 +11616,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Comprehensive SEO setup and optimization</p>
@@ -11430,7 +11624,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Contact form and social media integration</p>
@@ -11438,7 +11632,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Blog setup with custom design</p>
@@ -11446,7 +11640,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>E-commerce functionality (up to 10 products)</p>
@@ -11454,7 +11648,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Integration with a user-friendly CMS</p>
@@ -11462,7 +11656,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>
@@ -11473,7 +11667,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Image gallery or portfolio</p>
@@ -11481,7 +11675,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Advanced analytics setup</p>
@@ -11489,7 +11683,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Newsletter signup integration</p>
@@ -11497,7 +11691,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>
@@ -11524,7 +11718,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Custom website design with up to 10 pages</p>
@@ -11532,7 +11726,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Responsive design for mobile and tablet</p>
@@ -11540,7 +11734,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Advanced SEO setup</p>
@@ -11548,7 +11742,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Contact form and social media integration</p>
@@ -11556,7 +11750,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Integration with a user-friendly CMS</p>
@@ -11564,7 +11758,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Comprehensive training on how to update content</p>
@@ -11572,7 +11766,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Image gallery or portfolio</p>
@@ -11580,7 +11774,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Basic Analytics setup (Google Analytics)</p>
@@ -11588,7 +11782,7 @@ const WebDesignPricingPlans = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.tickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>
@@ -11625,7 +11819,7 @@ const WebDesignLandingpage = () => {
   return (
     <section className={webstyle.webdesignLandingPage}>
       <div className={webstyle.vectorImagetop}>
-        <Image src="/webdesign vector.png" fill />
+        <Image alt="image" src="/webdesign vector.png" fill />
       </div>
       <div className={webstyle.webdesignLandingPageContainer}>
         <div
@@ -11633,7 +11827,7 @@ const WebDesignLandingpage = () => {
         >
           <div className={webstyle.headerContent}>
             <div className={webstyle.headerimg}>
-              <Image src="/Vector (5).png" fill />
+              <Image alt="image" src="/Vector (5).png" fill />
             </div>
             <h4>WEB DESIGN</h4>
           </div>
@@ -11653,17 +11847,21 @@ const WebDesignLandingpage = () => {
         <ScrollParallax isAbsolutelyPositioned>
           <div className={webstyle.webdesignImageContainer} ref={parallaxRef}>
             <div className={webstyle.webimage}>
-              <Image src="/Frame 126.png" fill />
+              <Image alt="image" src="/Frame 126.png" fill />
             </div>
 
             <div className={webstyle.webimage2}>
-              <Image src="/New Macbook Pro Mockup Front View.png" fill />
+              <Image
+                alt="image"
+                src="/New Macbook Pro Mockup Front View.png"
+                fill
+              />
             </div>
           </div>
         </ScrollParallax>
       </div>
       <div className={webstyle.vectorImagebottom}>
-        <Image src="/webdesign vector.png" fill />
+        <Image alt="image" src="/webdesign vector.png" fill />
       </div>
     </section>
   );
@@ -11682,7 +11880,7 @@ const Tickimg = () => {
   return (
     <div className={styles.offerFeaturesImgShadow}>
       <div className={styles.offerFeaturesImg}>
-        <Image src="/Vector (6).png" alt="offerAnimImg" fill />
+        <Image alt="image" src="/Vector (6).png" alt="offerAnimImg" fill />
       </div>
     </div>
   );
@@ -11709,7 +11907,7 @@ const LandingPageButtons = () => {
           Book a Demo
           <div className={webstyle.butttonBlue}>
             <div className={webstyle.buttonImg}>
-              <Image src="/Vector.png" fill />
+              <Image alt="image" src="/Vector.png" fill />
             </div>
           </div>
         </button>
@@ -11797,13 +11995,18 @@ const Pricing = () => {
                     className={`${pricingStyles.pricingContentImgBg} ${pricingStyles.pricingContentImgBgblue}`}
                   >
                     <div className={pricingStyles.pricingContentImg}>
-                      <Image src="/Vector.svg" fill objectFit="contain" />
+                      <Image
+                        alt="image"
+                        src="/Vector.svg"
+                        fill
+                        objectFit="contain"
+                      />
                     </div>
                   </div>
                   <div className={pricingStyles.arrowWrapper}>
                     <h4>WEB DESIGN</h4>
                     <div className={pricingStyles.arrowLeft}>
-                      <Image src="/Arrow 1.svg" fill />
+                      <Image alt="image" src="/Arrow 1.svg" fill />
                     </div>
                   </div>
                 </div>
@@ -11850,7 +12053,12 @@ const Pricing = () => {
                 <div className={pricingStyles.pricingContentHeader}>
                   <div className={pricingStyles.pricingContentImgBg}>
                     <div className={pricingStyles.pricingContentImg}>
-                      <Image src="/Vector (4).png" fill objectFit="contain" />
+                      <Image
+                        alt="image"
+                        src="/Vector (4).png"
+                        fill
+                        objectFit="contain"
+                      />
                     </div>
                   </div>
                   <div className={pricingStyles.arrowWrapper}>
@@ -11871,7 +12079,12 @@ const Pricing = () => {
                 <div className={pricingStyles.pricingContentHeader}>
                   <div className={pricingStyles.pricingContentImgBg}>
                     <div className={pricingStyles.pricingContentImg}>
-                      <Image src="/Vector (2).png" fill objectFit="contain" />
+                      <Image
+                        alt="image"
+                        src="/Vector (2).png"
+                        fill
+                        objectFit="contain"
+                      />
                     </div>
                   </div>
                   <div className={pricingStyles.arrowWrapper}>
@@ -11923,15 +12136,30 @@ const leadGenServices = () => {
           <div className={leadStyles.leadGenServicesContentImage}>
             <div className={leadStyles.leadImageWrapper}>
               <div className={leadStyles.leadImgabsolute}>
-                <Image src="/Stat (4).png" fill objectFit="contain" />
+                <Image
+                  alt="image"
+                  src="/Stat (4).png"
+                  fill
+                  objectFit="contain"
+                />
               </div>
 
               <div className={leadStyles.leadservicesImg}>
-                <Image src="/Rectangle 63 (2).png" fill objectFit="contain" />
+                <Image
+                  alt="image"
+                  src="/Rectangle 63 (2).png"
+                  fill
+                  objectFit="contain"
+                />
               </div>
               <ScrollParallax isAbsolutelyPositioned shouldPause>
                 <div className={leadStyles.leadImgabsolutebottom}>
-                  <Image src="/Frame 24.png" fill objectFit="contain" />
+                  <Image
+                    alt="image"
+                    src="/Frame 24.png"
+                    fill
+                    objectFit="contain"
+                  />
                 </div>
               </ScrollParallax>
             </div>
@@ -11940,7 +12168,12 @@ const leadGenServices = () => {
         <div className={leadStyles.leadGenServicesContent}>
           <div className={leadStyles.leadGenServicesContentImage}>
             <div className={leadStyles.leadservicesImg}>
-              <Image src="/Frame 1618868497.png" fill objectFit="contain" />
+              <Image
+                alt="image"
+                src="/Frame 1618868497.png"
+                fill
+                objectFit="contain"
+              />
             </div>
           </div>
           <div className={leadStyles.leadGenServicesContentText}>
@@ -11952,7 +12185,7 @@ const leadGenServices = () => {
       <section className={leadStyles.servicesContactSection}>
         <div className={leadStyles.servicesContactContainer}>
           <div className={leadStyles.servicesContactImgtop}>
-            <Image src="/Group 6327.svg" fill />
+            <Image alt="image" src="/Group 6327.svg" fill />
           </div>
           <h2>
             Transform Your Sales with Our Proven Lead Generation Solutions
@@ -11961,7 +12194,7 @@ const leadGenServices = () => {
             <button>Contact us</button>
           </Link>
           <div className={leadStyles.servicesContactImgbottom}>
-            <Image src="/Group 2.png" fill />
+            <Image alt="image" src="/Group 2.png" fill />
           </div>
         </div>
       </section>
@@ -11993,14 +12226,14 @@ const LeadgenLandingpage = () => {
     <section className={leadStyles.LeadingGenSection}>
       <div className={leadStyles.LeadGenContainer}>
         {/* <div className={leadStyles.vectortopImg}>
-        <Image src="/yellow vector.png" fill/>
+        <Image alt='image' src="/yellow vector.png" fill/>
       </div> */}
         <div
           className={`${leadStyles.leadGenTextContainer} ${montserrat.className}`}
         >
           <div className={leadStyles.leadtextheader}>
             <div className={leadStyles.textheaderimg}>
-              <Image src="/Vector (5).png" fill />
+              <Image alt="image" src="/Vector (5).png" fill />
             </div>
             <h4>LEAD GENERATION</h4>
           </div>
@@ -12013,15 +12246,20 @@ const LeadgenLandingpage = () => {
         <div className={leadStyles.leadGenaImageContainer}>
           <ScrollParallax isAbsolutelyPositioned>
             <div className={leadStyles.leadimgstat}>
-              <Image src="/Stat (4).png" fill objectFit="contain" />
+              <Image alt="image" src="/Stat (4).png" fill objectFit="contain" />
             </div>
           </ScrollParallax>
           <div className={leadStyles.leadmanImg}>
-            <Image src="/leadgen man.png" fill objectFit="contain" />
+            <Image
+              alt="image"
+              src="/leadgen man.png"
+              fill
+              objectFit="contain"
+            />
           </div>
           <ScrollParallax isAbsolutelyPositioned>
             <div className={leadStyles.leadimgstat2}>
-              <Image src="/Stat (3).png" fill objectFit="contain" />
+              <Image alt="image" src="/Stat (3).png" fill objectFit="contain" />
             </div>
           </ScrollParallax>
         </div>
@@ -12080,7 +12318,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Custom website design with up to 5 pages</p>
@@ -12088,7 +12326,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Responsive design for mobile and tablet</p>
@@ -12096,7 +12334,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Basic SEO setup</p>
@@ -12104,7 +12342,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Integration with a user-friendly CMS</p>
@@ -12112,7 +12350,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Basic training on how to update content</p>
@@ -12120,7 +12358,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>1-month post-launch support for bug fixes</p>
@@ -12144,7 +12382,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Custom website design with up to 20 pages</p>
@@ -12152,7 +12390,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Responsive design for mobile and tablet</p>
@@ -12160,7 +12398,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Comprehensive SEO setup and optimization</p>
@@ -12168,7 +12406,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Contact form and social media integration</p>
@@ -12176,7 +12414,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Blog setup with custom design</p>
@@ -12184,7 +12422,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>E-commerce functionality (up to 10 products)</p>
@@ -12192,7 +12430,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Integration with a user-friendly CMS</p>
@@ -12200,7 +12438,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>
@@ -12211,7 +12449,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Image gallery or portfolio</p>
@@ -12219,7 +12457,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Advanced analytics setup</p>
@@ -12227,7 +12465,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Newsletter signup integration</p>
@@ -12235,7 +12473,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>
@@ -12262,7 +12500,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Custom website design with up to 10 pages</p>
@@ -12270,7 +12508,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Responsive design for mobile and tablet</p>
@@ -12278,7 +12516,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Advanced SEO setup</p>
@@ -12286,7 +12524,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Contact form and social media integration</p>
@@ -12294,7 +12532,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Integration with a user-friendly CMS</p>
@@ -12302,7 +12540,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Comprehensive training on how to update content</p>
@@ -12310,7 +12548,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Image gallery or portfolio</p>
@@ -12318,7 +12556,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Basic Analytics setup (Google Analytics)</p>
@@ -12326,7 +12564,7 @@ const ContentPricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>
@@ -12370,14 +12608,19 @@ const ContentMarketingServices = () => {
             <GetStarted />
           </div>
           <div className={contentStyles.contentservicesImg}>
-            <Image src="/Group 6324.png" fill objectFit="contain" />
+            <Image alt="image" src="/Group 6324.png" fill objectFit="contain" />
           </div>
         </div>
         <div className={contentStyles.contentservicecontent}>
           <div
             className={`${contentStyles.contentservicesImg} ${contentStyles.contentservicesImg2}`}
           >
-            <Image src="/social campaign image.png" fill objectFit="contain" />
+            <Image
+              alt="image"
+              src="/social campaign image.png"
+              fill
+              objectFit="contain"
+            />
           </div>
           <div className={contentStyles.contentServiceText}>
             <h3>Social Media Campaigns</h3>
@@ -12435,7 +12678,7 @@ const ContentMarketingLandingPage = () => {
   return (
     <section className={contentStyles.contentSection}>
       {/* <div className={contentStyles.vectorbottom}>
-        <Image src="/triangle.png" layout="fill" alt="Triangle"/>
+        <Image alt='image' src="/triangle.png" layout="fill" alt="Triangle"/>
       </div> */}
       <div className={contentStyles.contentContainer}>
         <div className={`${contentStyles.contentText} ${montserrat.className}`}>
@@ -12672,7 +12915,7 @@ const CaseStudyContactLink = () => {
     <section className={casestyles.contactLinksection}>
       <div className={casestyles.contactLinkContainer}>
         <div className={casestyles.topimgabsolute}>
-          <Image src="/Group 2.png" fill />
+          <Image alt="image" src="/Group 2.png" fill />
         </div>
         <h4>
           Transform Your Sales with Our Proven Lead <br /> Generation Solutions
@@ -12681,7 +12924,7 @@ const CaseStudyContactLink = () => {
           <button>Get Started</button>
         </Link>
         <div className={casestyles.bottomimgabsolute}>
-          <Image src="/Group 2.png" fill />
+          <Image alt="image" src="/Group 2.png" fill />
         </div>
       </div>
     </section>
@@ -12873,7 +13116,7 @@ const Navbar = () => {
       <div className={NavBarstyles.container}>
         <Link href="/" className={NavBarstyles.logo}>
           <div className={NavBarstyles.logoContainer}>
-            <Image src="/logo.png" alt="logo" fill />
+            <Image alt="image" src="/logo.png" alt="logo" fill />
           </div>
         </Link>
         <div className={NavBarstyles.navbar}>
@@ -13846,7 +14089,7 @@ const landingPage = () => {
       </p>
       <div className={styles.article}>
         <div className={styles.articleImg}>
-          <Image src="/Rectangle 74.png" fill />
+          <Image alt="image" src="/Rectangle 74.png" fill />
         </div>
         <div className={styles.blogTextWrapper}>
           <div className={styles.blogText}>
@@ -13898,7 +14141,7 @@ const BlogPost = ({ image, description, updatedAt, tag, publishAt }) => {
   return (
     <article>
       {/* Image */}
-      <Image src={image} alt="blog image" />
+      <Image alt="image" src={image} alt="blog image" />
       {/* Text */}
       {/* uploadedAt + tag */}
       <div className={styles.blogText}>
@@ -14007,14 +14250,24 @@ const AisolutionServices = () => {
           </div>
           <div className={Aistyles.AisolutionServicesImage}>
             <div className={Aistyles.aiservicesImg}>
-              <Image src="/Frame 1618868477.png" fill objectFit="contain" />
+              <Image
+                alt="image"
+                src="/Frame 1618868477.png"
+                fill
+                objectFit="contain"
+              />
             </div>
           </div>
         </div>
         <div className={Aistyles.AisolutionServicesContent2}>
           <div className={Aistyles.AisolutionServicesImage}>
             <div className={Aistyles.aiservicesImg}>
-              <Image src="/Frame 1618868493.png" fill objectFit="contain" />
+              <Image
+                alt="image"
+                src="/Frame 1618868493.png"
+                fill
+                objectFit="contain"
+              />
             </div>
           </div>
           <div className={Aistyles.AisolutionServicesText}>
@@ -14032,7 +14285,12 @@ const AisolutionServices = () => {
           </div>
           <div className={Aistyles.AisolutionServicesImage}>
             <div className={Aistyles.aiservicesImg}>
-              <Image src="/Frame 1618868477.png" fill objectFit="contain" />
+              <Image
+                alt="image"
+                src="/Frame 1618868477.png"
+                fill
+                objectFit="contain"
+              />
             </div>
           </div>
         </div>
@@ -14088,7 +14346,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Custom website design with up to 5 pages</p>
@@ -14096,7 +14354,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Responsive design for mobile and tablet</p>
@@ -14104,7 +14362,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Basic SEO setup</p>
@@ -14112,7 +14370,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Integration with a user-friendly CMS</p>
@@ -14120,7 +14378,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Basic training on how to update content</p>
@@ -14128,7 +14386,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>1-month post-launch support for bug fixes</p>
@@ -14152,7 +14410,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Custom website design with up to 20 pages</p>
@@ -14160,7 +14418,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Responsive design for mobile and tablet</p>
@@ -14168,7 +14426,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Comprehensive SEO setup and optimization</p>
@@ -14176,7 +14434,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Contact form and social media integration</p>
@@ -14184,7 +14442,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Blog setup with custom design</p>
@@ -14192,7 +14450,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>E-commerce functionality (up to 10 products)</p>
@@ -14200,7 +14458,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Integration with a user-friendly CMS</p>
@@ -14208,7 +14466,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>
@@ -14219,7 +14477,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Image gallery or portfolio</p>
@@ -14227,7 +14485,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Advanced analytics setup</p>
@@ -14235,7 +14493,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Newsletter signup integration</p>
@@ -14243,7 +14501,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>
@@ -14270,7 +14528,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Custom website design with up to 10 pages</p>
@@ -14278,7 +14536,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Responsive design for mobile and tablet</p>
@@ -14286,7 +14544,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Advanced SEO setup</p>
@@ -14294,7 +14552,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Contact form and social media integration</p>
@@ -14302,7 +14560,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Integration with a user-friendly CMS</p>
@@ -14310,7 +14568,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Comprehensive training on how to update content</p>
@@ -14318,7 +14576,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Image gallery or portfolio</p>
@@ -14326,7 +14584,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>Basic Analytics setup (Google Analytics)</p>
@@ -14334,7 +14592,7 @@ const Aipricing = () => {
               <div className={webstyle.webbasicplanfeaturesContent}>
                 <div className={webstyle.tickImgBg}>
                   <div className={webstyle.TickImg}>
-                    <Image src="/Vector (6).png" fill />
+                    <Image alt="image" src="/Vector (6).png" fill />
                   </div>
                 </div>
                 <p>
@@ -14371,7 +14629,7 @@ const AiLandingpage = () => {
   return (
     <section className={Aistyles.AiLandingPage}>
       <div className={Aistyles.vectorImgtop}>
-        <Image src="/yellow vector.png" fill />
+        <Image alt="image" src="/yellow vector.png" fill />
       </div>
       <div
         className={`${Aistyles.ailandingpageContainer} ${montserrat.className}`}
@@ -14379,7 +14637,7 @@ const AiLandingpage = () => {
         <div className={Aistyles.ailandingpageContainerTextContent}>
           <div className={Aistyles.AiLandingPageHeader}>
             <div className={Aistyles.aiheaderImg}>
-              <Image src="/ai vector.png" fill />
+              <Image alt="image" src="/ai vector.png" fill />
             </div>
             <h4>AI SOLUTIONS</h4>
           </div>
@@ -14395,17 +14653,22 @@ const AiLandingpage = () => {
         <div className={Aistyles.ailandingpageImage}>
           <ScrollParallax isAbsolutelyPositioned>
             <div className={Aistyles.ailandingpageImagetop}>
-              <Image src="/Bot.png" fill objectFit="contain" />
+              <Image alt="image" src="/Bot.png" fill objectFit="contain" />
             </div>
           </ScrollParallax>
 
           <div className={Aistyles.aigirlImg}>
-            <Image src="/Ai girl.png" fill objectFit="contain" />
+            <Image alt="image" src="/Ai girl.png" fill objectFit="contain" />
           </div>
 
           <ScrollParallax isAbsolutelyPositioned>
             <div className={Aistyles.ailandingpageImagebottom}>
-              <Image src="/Frame 126 (1).png" fill objectFit="contain" />
+              <Image
+                alt="image"
+                src="/Frame 126 (1).png"
+                fill
+                objectFit="contain"
+              />
             </div>
           </ScrollParallax>
         </div>
@@ -14994,7 +15257,13 @@ const Links = () => {
         onClick={() => setOpen((prev) => !prev)}
         className={styles.menuButton}
       >
-        <Image src="/menu-3-fill.svg" alt="menu" width={24} height={24} />
+        <Image
+          alt="image"
+          src="/menu-3-fill.svg"
+          alt="menu"
+          width={24}
+          height={24}
+        />
       </button>
       {open && (
         <div className={styles.mobileContainer}>

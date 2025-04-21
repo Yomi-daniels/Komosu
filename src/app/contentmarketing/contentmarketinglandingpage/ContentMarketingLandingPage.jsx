@@ -39,7 +39,7 @@ const ContentMarketingLandingPage = () => {
   return (
     <section className={contentStyles.contentSection}>
       {/* <div className={contentStyles.vectorbottom}>
-        <Image src="/triangle.png" layout="fill" alt="Triangle"/>
+        <Image alt='image' src="/triangle.png" layout="fill" alt="Triangle"/>
       </div> */}
       <div className={contentStyles.contentContainer}>
         <div

@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import { useMDXComponent } from "next-contentlayer/hooks";
+import { useMDXComponent } from "next-contentlayer2/hooks";
 import Image from "next/image";
 
 const mdxComponents = {

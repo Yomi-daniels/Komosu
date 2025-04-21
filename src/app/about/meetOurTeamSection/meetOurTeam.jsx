@@ -29,6 +29,7 @@ const MeetOurTeamSection = () => {
                 fill
                 style={{ borderRadius: "10px" }}
                 objectFit="cover"
+                alt="image"
               />
             </div>
             <span className={`${aboutstyles.TeamRole} ${shadows.className}`}>
@@ -47,6 +48,7 @@ const MeetOurTeamSection = () => {
                 fill
                 style={{ borderRadius: "10px" }}
                 objectFit="cover"
+                alt="image"
               />
             </div>
             <span className={`${aboutstyles.TeamRole} ${shadows.className}`}>
@@ -65,6 +67,7 @@ const MeetOurTeamSection = () => {
                 fill
                 style={{ borderRadius: "10px" }}
                 objectFit="cover"
+                alt="image"
               />
             </div>
             <span className={`${aboutstyles.TeamRole} ${shadows.className}`}>
@@ -83,6 +86,7 @@ const MeetOurTeamSection = () => {
                 fill
                 style={{ borderRadius: "10px" }}
                 objectFit="cover"
+                alt="image"
               />
             </div>
             <span className={`${aboutstyles.TeamRole} ${shadows.className}`}>

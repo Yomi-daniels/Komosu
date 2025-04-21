@@ -123,15 +123,30 @@ const LeadGenServices = () => {
           >
             <div className={leadStyles.leadImageWrapper}>
               <div className={leadStyles.leadImgabsolute}>
-                <Image src="/Stat (4).png" fill objectFit="contain" />
+                <Image
+                  alt="image"
+                  src="/Stat (4).png"
+                  fill
+                  objectFit="contain"
+                />
               </div>
 
               <div className={leadStyles.leadservicesImg}>
-                <Image src="/Rectangle 63 (2).png" fill objectFit="contain" />
+                <Image
+                  alt="image"
+                  src="/Rectangle 63 (2).png"
+                  fill
+                  objectFit="contain"
+                />
               </div>
               <ScrollParallax isAbsolutelyPositioned shouldPause>
                 <div className={leadStyles.leadImgabsolutebottom}>
-                  <Image src="/Frame 24.png" fill objectFit="contain" />
+                  <Image
+                    alt="image"
+                    src="/Frame 24.png"
+                    fill
+                    objectFit="contain"
+                  />
                 </div>
               </ScrollParallax>
             </div>
@@ -143,7 +158,12 @@ const LeadGenServices = () => {
             ref={leadGenServicesContentImag2eRef}
           >
             <div className={leadStyles.leadservicesImg}>
-              <Image src="/Frame 1618868497.png" fill objectFit="contain" />
+              <Image
+                alt="image"
+                src="/Frame 1618868497.png"
+                fill
+                objectFit="contain"
+              />
             </div>
           </div>
           <div
@@ -163,7 +183,7 @@ const LeadGenServices = () => {
       >
         <div className={leadStyles.servicesContactContainer}>
           <div className={leadStyles.servicesContactImgtop}>
-            <Image src="/Group 6327.svg" fill />
+            <Image alt="image" src="/Group 6327.svg" fill />
           </div>
           <h2>
             Transform Your Sales with Our Proven Lead Generation Solutions
@@ -172,7 +192,7 @@ const LeadGenServices = () => {
             <button>Contact us</button>
           </Link>
           <div className={leadStyles.servicesContactImgbottom}>
-            <Image src="/Group 2.png" fill />
+            <Image alt="image" src="/Group 2.png" fill />
           </div>
         </div>
       </section>

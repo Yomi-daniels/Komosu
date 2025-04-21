@@ -131,7 +131,12 @@ const WebDesignWorks = () => {
         <div className={webstyle.webdesignContent2}>
           <div className={webstyle.webdesignimgContent}>
             <div className={webstyle.webdesignImg} ref={webdesignImg1Ref}>
-              <Image src="/Frame 1618868702.png" fill objectFit="contain" />
+              <Image
+                alt="image"
+                src="/Frame 1618868702.png"
+                fill
+                objectFit="contain"
+              />
             </div>
           </div>
           <div
@@ -154,14 +159,14 @@ const WebDesignWorks = () => {
           </div>
           <div className={webstyle.webdesignimgContent}>
             <div className={webstyle.webdesignImg} ref={webdesignImg2Ref}>
-              <Image src="/card.png" fill />
+              <Image alt="image" src="/card.png" fill />
             </div>
           </div>
         </div>
         <div className={webstyle.webdesignContent2}>
           <div className={webstyle.webdesignimgContent}>
             <div className={webstyle.webdesignImg} ref={webdesignImg3Ref}>
-              <Image src="/Frame 1618868705.png" fill />
+              <Image alt="image" src="/Frame 1618868705.png" fill />
             </div>
           </div>
           <div className={webstyle.webdesignTextContent2}>
@@ -183,7 +188,7 @@ const WebDesignWorks = () => {
           </div>
           <div className={webstyle.webdesignimgContent}>
             <div className={webstyle.webdesignImg} ref={webdesignImg2Ref}>
-              <Image src="/webdevimg (1).png" fill />
+              <Image alt='image' src="/webdevimg (1).png" fill />
             </div>
           </div>
         </div> */}

@@ -1,13 +1,13 @@
-// "use client";
+"use client";
 
-// import { useEffect, useRef } from "react";
-// import gsap from "gsap";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import Image from "next/image";
-// import Link from "next/link";
-// import styles from "./sections.module.css";
-// import { Shadows_Into_Light } from "next/font/google";
-// import { cn } from "@/lib/utils";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./sections.module.css";
+import { Shadows_Into_Light } from "next/font/google";
+import { cn } from "@/lib/utils";
 
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);

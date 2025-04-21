@@ -28,11 +28,9 @@ const CaseStudyContactLink = () => {
       className={casestyles.contactLinksection}
       ref={contactLinkSectionRef}
     >
-     <video loop autoPlay muted playsInline 
-       className={casestyles.PhotoShoot}>
-              <source src="/dealership_video.mp4" type="video/mp4" />
-              
-            </video>
+      <video loop autoPlay muted playsInline className={casestyles.PhotoShoot}>
+        <source src="/dealership_video.mp4" type="video/mp4" />
+      </video>
       {/* <Image
         src="/carDealership_img.jpg"
         alt="car image"

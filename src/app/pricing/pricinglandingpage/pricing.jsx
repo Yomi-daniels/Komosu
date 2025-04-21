@@ -35,13 +35,18 @@ const Pricing = () => {
                     className={`${pricingStyles.pricingContentImgBg} ${pricingStyles.pricingContentImgBgblue}`}
                   >
                     <div className={pricingStyles.pricingContentImg}>
-                      <Image src="/Vector.svg" fill objectFit="contain" />
+                      <Image
+                        alt="image"
+                        src="/Vector.svg"
+                        fill
+                        objectFit="contain"
+                      />
                     </div>
                   </div>
                   <div className={pricingStyles.arrowWrapper}>
                     <h4>WEB DESIGN</h4>
                     <div className={pricingStyles.arrowLeft}>
-                      <Image src="/Arrow 1.svg" fill />
+                      <Image alt="image" src="/Arrow 1.svg" fill />
                     </div>
                   </div>
                 </div>
@@ -63,6 +68,7 @@ const Pricing = () => {
                         src="/vector Ai big.png"
                         fill
                         objectFit="contain"
+                        alt="image"
                       />
                     </div>
                   </div>
@@ -88,7 +94,12 @@ const Pricing = () => {
                 <div className={pricingStyles.pricingContentHeader}>
                   <div className={pricingStyles.pricingContentImgBg}>
                     <div className={pricingStyles.pricingContentImg}>
-                      <Image src="/Vector (4).png" fill objectFit="contain" />
+                      <Image
+                        alt="image"
+                        src="/Vector (4).png"
+                        fill
+                        objectFit="contain"
+                      />
                     </div>
                   </div>
                   <div className={pricingStyles.arrowWrapper}>
@@ -109,7 +120,12 @@ const Pricing = () => {
                 <div className={pricingStyles.pricingContentHeader}>
                   <div className={pricingStyles.pricingContentImgBg}>
                     <div className={pricingStyles.pricingContentImg}>
-                      <Image src="/Vector (2).png" fill objectFit="contain" />
+                      <Image
+                        alt="image"
+                        src="/Vector (2).png"
+                        fill
+                        objectFit="contain"
+                      />
                     </div>
                   </div>
                   <div className={pricingStyles.arrowWrapper}>

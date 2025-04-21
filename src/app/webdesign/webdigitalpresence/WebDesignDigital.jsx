@@ -202,10 +202,12 @@ const WebDesignDigital = () => {
         </div>
       </div>
       <div className="mt-[5rem] relative ">
-      <Image src="/MF Product Image2 1.png" alt="different cars image"
-        width={1512}
-        height={925}
-      />
+        <Image
+          src="/MF Product Image2 1.png"
+          alt="different cars image"
+          width={1512}
+          height={925}
+        />
       </div>
     </section>
   );

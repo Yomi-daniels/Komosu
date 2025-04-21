@@ -135,7 +135,12 @@ const AisolutionServices = () => {
             ref={AisolutionServicesImage1Ref}
           >
             <div className={Aistyles.aiservicesImg}>
-              <Image src="/Frame 1618868477.png" fill objectFit="contain" />
+              <Image
+                alt="image"
+                src="/Frame 1618868477.png"
+                fill
+                objectFit="contain"
+              />
             </div>
           </div>
         </div>
@@ -145,7 +150,12 @@ const AisolutionServices = () => {
             ref={AisolutionServicesImage2Ref}
           >
             <div className={Aistyles.aiservicesImg}>
-              <Image src="/Frame 1618868493.png" fill objectFit="contain" />
+              <Image
+                alt="image"
+                src="/Frame 1618868493.png"
+                fill
+                objectFit="contain"
+              />
             </div>
           </div>
           <div
@@ -184,7 +194,12 @@ const AisolutionServices = () => {
             ref={AisolutionServicesImage3Ref}
           >
             <div className={Aistyles.aiservicesImg}>
-              <Image src="/Frame 1618868477.png" fill objectFit="contain" />
+              <Image
+                alt="image"
+                src="/Frame 1618868477.png"
+                fill
+                objectFit="contain"
+              />
             </div>
           </div>
         </div>

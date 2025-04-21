@@ -14,7 +14,7 @@ const WebDesignLandingpage = () => {
   return (
     <section className={webstyle.webdesignLandingPage}>
       <div className={webstyle.vectorImagetop}>
-        <Image src="/webdesign vector.png" fill />
+        <Image alt="image" src="/webdesign vector.png" fill />
       </div>
       <div className={webstyle.webdesignLandingPageContainer}>
         <div
@@ -22,7 +22,7 @@ const WebDesignLandingpage = () => {
         >
           <div className={webstyle.headerContent}>
             <div className={webstyle.headerimg}>
-              <Image src="/Vector (5).png" fill />
+              <Image alt="image" src="/Vector (5).png" fill />
             </div>
             <h4>WEB DESIGN</h4>
           </div>
@@ -42,17 +42,21 @@ const WebDesignLandingpage = () => {
         <ScrollParallax isAbsolutelyPositioned>
           <div className={webstyle.webdesignImageContainer} ref={parallaxRef}>
             <div className={webstyle.webimage}>
-              <Image src="/Frame 126.png" fill />
+              <Image alt="image" src="/Frame 126.png" fill />
             </div>
 
             <div className={webstyle.webimage2}>
-              <Image src="/New Macbook Pro Mockup Front View.png" fill />
+              <Image
+                alt="image"
+                src="/New Macbook Pro Mockup Front View.png"
+                fill
+              />
             </div>
           </div>
         </ScrollParallax>
       </div>
       <div className={webstyle.vectorImagebottom}>
-        <Image src="/webdesign vector.png" fill />
+        <Image alt="image" src="/webdesign vector.png" fill />
       </div>
     </section>
   );

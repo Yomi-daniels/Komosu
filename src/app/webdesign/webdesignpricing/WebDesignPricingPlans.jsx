@@ -43,7 +43,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Custom website design with up to 5 pages</p>
@@ -51,7 +51,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Responsive design for mobile and tablet</p>
@@ -59,7 +59,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Basic SEO setup</p>
@@ -67,7 +67,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Integration with a user-friendly CMS</p>
@@ -75,7 +75,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Basic training on how to update content</p>
@@ -83,7 +83,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>1-month post-launch support for bug fixes</p>
@@ -109,7 +109,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Custom website design with up to 20 pages</p>
@@ -117,7 +117,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Responsive design for mobile and tablet</p>
@@ -125,7 +125,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Comprehensive SEO setup and optimization</p>
@@ -133,7 +133,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Contact form and social media integration</p>
@@ -141,7 +141,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Blog setup with custom design</p>
@@ -149,7 +149,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>E-commerce functionality (up to 10 products)</p>
@@ -157,7 +157,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Integration with a user-friendly CMS</p>
@@ -165,7 +165,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>
@@ -176,7 +176,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Image gallery or portfolio</p>
@@ -184,7 +184,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Advanced analytics setup</p>
@@ -192,7 +192,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Newsletter signup integration</p>
@@ -200,7 +200,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>
@@ -229,7 +229,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Custom website design with up to 10 pages</p>
@@ -237,7 +237,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Responsive design for mobile and tablet</p>
@@ -245,7 +245,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Advanced SEO setup</p>
@@ -253,7 +253,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Contact form and social media integration</p>
@@ -261,7 +261,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Integration with a user-friendly CMS</p>
@@ -269,7 +269,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Comprehensive training on how to update content</p>
@@ -277,7 +277,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Image gallery or portfolio</p>
@@ -285,7 +285,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>Basic Analytics setup (Google Analytics)</p>
@@ -293,7 +293,7 @@ const WebDesignPricingPlans = () => {
     //           <div className={webstyle.webbasicplanfeaturesContent}>
     //             <div className={webstyle.tickImgBg}>
     //               <div className={webstyle.tickImg}>
-    //                 <Image src="/Vector (6).png" fill />
+    //                 <Image alt='image' src="/Vector (6).png" fill />
     //               </div>
     //             </div>
     //             <p>

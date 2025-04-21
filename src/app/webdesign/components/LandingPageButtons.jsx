@@ -13,7 +13,7 @@ const LandingPageButtons = () => {
           Book a Demo
           <div className={webstyle.butttonBlue}>
             <div className={webstyle.buttonImg}>
-              <Image src="/Vector.png" fill />
+              <Image alt="image" src="/Vector.png" fill />
             </div>
           </div>
         </button>

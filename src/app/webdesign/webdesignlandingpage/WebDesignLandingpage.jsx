@@ -41,29 +41,35 @@ const WebDesignLandingpage = () => {
   const message = `    First Impression Matters, Make Your Website Count!`;
 
   return (
-    <section className={`${webstyle.webdesignLandingPage}${' dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] overflow-x-hidden flex flex-col mt-[2rem]'}`}>
+    <section
+      className={`${webstyle.webdesignLandingPage}${" dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] overflow-x-hidden flex flex-col mt-[2rem]"}`}
+    >
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
-    <div className="max-w-[928px] h-[338px] text-center flex flex-col justify-center items-center gap-6 z-10">
-      <h1 className="font-bold leading-[120%]  text-[64px] tracking-[-4%] 
-        md:px-[2rem]">
-      <TextGenerateEffect
-              words={message}
-              messageClass=" max-sm:text-[40px] font-bold leading-[120%]  text-[64px] tracking-[-4%] max-md:text-[45px] sm:text-[50px] md:text-[60px] lg:text-[64px]" 
-            />
-          </h1>
+      <div className="max-w-[928px] h-[338px] text-center flex flex-col justify-center items-center gap-6 z-10">
+        <h1
+          className="font-bold leading-[120%]  text-[64px] tracking-[-4%] 
+        md:px-[2rem]"
+        >
+          <TextGenerateEffect
+            words={message}
+            messageClass=" max-sm:text-[40px] font-bold leading-[120%]  text-[64px] tracking-[-4%] max-md:text-[45px] sm:text-[50px] md:text-[60px] lg:text-[64px]"
+          />
+        </h1>
 
+        <p className="max-w-[733px] font-medium text-darkBlueText text-[18px] text-center md:w-[40ch] max-sm:text-[16px] ">
+          Your website is the digital storefront of your dealership. A sleek,
+          modern, and user-friendly design isn’t just about aesthetics—it’s
+          about building trust, engaging customers, and driving sales.
+        </p>
 
-      <p className="max-w-[733px] font-medium text-darkBlueText text-[18px] text-center md:w-[40ch] max-sm:text-[16px] ">Your website is the digital storefront of your dealership. A sleek, modern, and user-friendly design isn’t just about aesthetics—it’s about building trust, engaging customers, and driving sales.</p>
+        <Link href="/request-demo">
+          <button className={styles.headerGetStarted}>Get Started</button>
+        </Link>
+      </div>
 
-       <Link href="/request-demo">
-                      <button className={styles.headerGetStarted}>Get Started</button>
-                    </Link>
-    </div>
-   
-    
       {/* <div className={webstyle.vectorImagetop}>
-        <Image src="/webdesign vector.png" fill />
+        <Image alt='image' src="/webdesign vector.png" fill />
       </div>
       <div className={webstyle.webdesignLandingPageContainer}>
         <div
@@ -72,7 +78,7 @@ const WebDesignLandingpage = () => {
         >
           <div className={webstyle.headerContent}>
             <div className={webstyle.headerimg}>
-              <Image src="/Vector (5).png" fill />
+              <Image alt='image' src="/Vector (5).png" fill />
             </div>
             <h4>WEB DESIGN</h4>
           </div>
@@ -94,17 +100,17 @@ const WebDesignLandingpage = () => {
         <ScrollParallax isAbsolutelyPositioned>
           <div className={webstyle.webdesignImageContainer} ref={parallaxRef}>
             <div className={webstyle.webimage}>
-              <Image src="/Frame 126.png" fill />
+              <Image alt='image' src="/Frame 126.png" fill />
             </div>
 
             <div className={webstyle.webimage2}>
-              <Image src="/New Macbook Pro Mockup Front View.png" fill />
+              <Image alt='image' src="/New Macbook Pro Mockup Front View.png" fill />
             </div>
           </div>
         </ScrollParallax>
       </div>
       <div className={webstyle.vectorImagebottom}>
-        <Image src="/webdesign vector.png" fill />
+        <Image alt='image' src="/webdesign vector.png" fill />
       </div> */}
     </section>
   );
