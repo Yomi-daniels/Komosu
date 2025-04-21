@@ -12,10 +12,10 @@ import { cn } from "@/lib/utils";
 // Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
 
-// const shadows = Shadows_Into_Light({
-//   subsets: ["latin"],
-//   weight: ["400"],
-// });
+const shadows = Shadows_Into_Light({
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 const Services = () => {
   const sectionRef = useRef(null);
@@ -159,5 +159,4 @@ const Services = () => {
   );
 };
 
-// export default Services;
-// //
+export default Services;

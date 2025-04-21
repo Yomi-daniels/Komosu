@@ -2,10 +2,12 @@ import { useEffect, useRef } from "react";
 import casestyles from "../casestudy.module.css";
 import { Shadows_Into_Light } from "next/font/google";
 import gsap from "gsap";
+
 const shadowFont = Shadows_Into_Light({
   subsets: ["latin"],
   weight: ["400"],
 });
+
 const CaseStudyHeader = () => {
   const caseStudyHeaderRef = useRef(null);
 
@@ -19,7 +21,7 @@ const CaseStudyHeader = () => {
 
   return (
     <section
-      className={("pb-14 bg-red", $`{casestyles.CaseStudyHeader}`)}
+      className={`pb-14 bg-red ${casestyles.CaseStudyHeader}`}
       ref={caseStudyHeaderRef}
     >
       <h5>Case study</h5>

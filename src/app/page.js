@@ -18,6 +18,7 @@ import ContentMarketingServices from "./contentmarketing/contentmarketingservice
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Services from "@/sections/services";
 // Import `cn` if you need it for conditional class names
 // import cn from "classnames";
 
@@ -77,10 +78,10 @@ const Home = () => {
       <section className={styles.landingPage}>
         <LandingPage />
       </section>
-      {/* <section className={styles.ServicesPage}>
+      <section className={styles.ServicesPage}>
         <Services />
         <section className={styles.Servisesflex}></section>
-      </section> */}
+      </section>
       <section className={styles.VideoShowcasePage}>
         <div className={casestyles.thirdheadingsection}>
           <h2

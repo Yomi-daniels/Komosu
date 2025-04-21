@@ -100,7 +100,7 @@ const WebDesignDigital = () => {
       </p>
 
       {/* Desktop Grid */}
-      <div className="hidden md:flex flex-wrap justify-between gap-6 relative">
+      <div className="hidden md:flex flex-wrap justify-center gap-0 relative">
         {elevationFeatures
           .slice(currentIndex, currentIndex + itemsPerPage)
           .map((feature, index) => (

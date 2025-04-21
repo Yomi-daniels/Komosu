@@ -1,5 +1,6 @@
 // contentlayer.config.js
-import { makeSource, defineDocumentType } from "contentlayer2/source-files"; // Updated import
+import { makeSource, defineDocumentType } from "contentlayer/source-files";
+
 import readingTime from "reading-time";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
