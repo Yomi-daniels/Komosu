@@ -29,13 +29,13 @@ const ContactForm = () => {
   } = useForm({
     resolver: zodResolver(schema),
   });
-
   const onSubmit = async (formData) => {
+    console.log("Form submitted with data:", formData);
     setIsSubmitting(true);
     try {
       const { firstName, lastName, workEmail, phoneNumber, message } = formData;
 
-      const { error } = await supabase.from("contact_form").insert([
+      const { data, error } = await supabase.from("contact_form").insert([
         {
           first_name: firstName,
           last_name: lastName,
@@ -45,11 +45,16 @@ const ContactForm = () => {
         },
       ]);
 
-      if (error) throw error;
+      if (error) {
+        console.error("Supabase insert error:", error.message, error.details);
+        throw error;
+      }
 
+      console.log("Supabase insert success:", data);
       reset();
       setSubmissionStatus("success");
     } catch (error) {
+      console.error("Submission error:", error.message || error);
       setSubmissionStatus("error");
     } finally {
       setIsSubmitting(false);
