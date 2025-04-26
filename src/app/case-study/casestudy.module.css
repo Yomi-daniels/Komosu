@@ -3,14 +3,17 @@
 }
 
 .CaseStudyHeader {
-  max-width: 1216px;
+  max-width: 928px;
   /* border: 2px solid blue; */
   margin-inline: auto;
-  height: 100%;
+  min-height: 100vh;
   /* border: 2px solid red; */
-  margin-top: 131px;
-  padding-bottom: 1.5rem;
-  border-bottom: 2px solid var(--yellow);
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+  align-items: center;
 }
 
 .CaseStudyHeader h5 {
@@ -20,18 +23,7 @@
   line-height: normal;
   text-transform: uppercase;
   font-family: var(--text-Font-Bold);
-  color: var(--btn);
-}
-
-.CaseStudyHeader h1 {
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: -0.5px;
-  text-transform: capitalize;
-  color: var(--blueText);
-  font-family: var(--text-Font-Bold);
+  /* color: var(--btn); */
 }
 
 .casespan {

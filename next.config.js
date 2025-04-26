@@ -22,8 +22,6 @@ const nextConfig = {
   images: {
     domains: ["www.komosunetwork.com"], // Add domains for external images (e.g., your CDN)
 
-    domains: ["example.com"], // Add domains for external images (e.g., your CDN)
-
     deviceSizes: [640, 750, 828, 1080, 1200, 1920], // Optimize for common device widths
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384], // Optimize for common image sizes
     formats: ["image/avif", "image/webp"], // Use modern formats for better compression

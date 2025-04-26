@@ -1,20 +1,14 @@
 "use client";
-import Tickimg from "@/app/webdesign/components/Tickimg";
-import casestyles from "../case-study/casestudy.module.css";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
-import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 
-import pricingStyles from "../pricing/pricing.module.css";
-import Image from "next/image";
-import Testimonials from "@/sections/testimonials";
-import FAQ from "@/sections/faq";
-// import { Montserrat } from "next/font/google";
+import { AnimatePresence, motion } from "framer-motion";
+
+import { useRef, useState, useEffect } from "react";
+
+import styles from "@/sections/sections.module.css";
+import { Montserrat } from "next/font/google";
 import Link from "next/link";
 
-import StackedCard from "./StackedCard";
-import MeetOurTeamSection from "../about/meetOurTeamSection/meetOurTeam";
+import { useInView } from "framer-motion";
 
 // const montserrat = Montserrat({
 //   subsets: ["latin"],
@@ -22,257 +16,138 @@ import MeetOurTeamSection from "../about/meetOurTeamSection/meetOurTeam";
 // });
 
 const DealershipHubSection = () => {
-  const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: true }); // Trigger animations once when in view
+  const points = [
+    {
+      title: "Targeted Digital Advertising",
+      description:
+        "We help you run highly-focused campaigns on social platform that drives quality lead back to your dealership.",
+    },
+    {
+      title: "SEO-Optimized Landing Pages",
+      description:
+        "We build custom websites that is optimized for search engines and designed to convert visitors into leads.",
+    },
+    {
+      title: "Real-Time Lead Capture Tools",
+      description:
+        "We use interactive chatbots, trade in calculators to capture leads.",
+    },
+    {
+      title: "CRM Integration & Automated Follow-Ups",
+      description:
+        "Automated email and SMS sequences help turn interest into appointments and test drives.",
+    },
+  ];
 
-  // Animation variants
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true });
+
   const fadeInUp = {
-    hidden: { opacity: 0, y: 50 }, // Start with opacity 0 and translate down
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }, // Fade in and move up
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
   const staggerContainer = {
     visible: {
       transition: {
-        staggerChildren: 0.2, // Stagger animations
+        staggerChildren: 0.2,
       },
     },
   };
 
-  const words = `Why Dealers Love Dealer Hub`;
-  const challengesText = `Own Your Audience. Build Trust. \n Sell More Cars`;
-  const solutionsText = `YOUR DEALERSHIP'S SOCIAL MEDIA WEBSITE`;
+  const words = `Why Having A`;
+  const challengesText = ` is right for your business?`;
+  const solutionsText = `How We Elevate Your Digital Presence`;
 
-  const h4Texts = {
-    DealerHub1: "Leverage the Creator Economy",
-    DealerHub2: "Host Stunning Car Edits and Interactive Features",
-    DealerHub3: "Retain Control of Customer Data",
-    DealerHub4: "Reduce Ad Dependency",
-    DealerHub5: "Foster Loyalty and Repeat Visits",
+  // Image animation setup
+  const images = [
+    "/girlwithCarKey.png",
+    "/girlwithclient.png",
+    "/familyWithClient.png",
+    "/happyCouple.png",
+  ];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Define the animation variants
+  const cardVariants = {
+    enter: (custom) => ({
+      x: 500,
+      zIndex: 10 + custom,
+      transition: { duration: 0.5, ease: "easeOut" },
+    }),
+    center: (custom) => ({
+      x: custom * -20, // stack offset
+      zIndex: 10 - custom,
+      transition: { duration: 0.5, ease: "easeOut" },
+    }),
   };
 
   return (
     <section
-      className={casestyles.DigitalTransformationSection}
+      className="h-full container relative mt-[7rem] mx-auto"
       ref={sectionRef}
     >
-      <motion.div
-        className={casestyles.headingsection}
-        initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        variants={staggerContainer}
-      >
-        <motion.h5 variants={fadeInUp}>
-          <TextGenerateEffect words={isInView ? words : ""} />
-        </motion.h5>
-        <motion.p variants={fadeInUp}>
-          DealerHub is your all-in-one platform to <br /> engage customers and
-          build trust.
-        </motion.p>
-        <motion.p variants={fadeInUp}></motion.p>
-      </motion.div>
+      <div className="flex flex-col gap-6 items-center justify-center max-w-[736px] mx-auto max-md:px-[2rem] max-sm:px-[1rem] max-sm:max-w-[686px]">
+        <h1 className="font-bold text-darkBlueText text-[40px] mx-auto text-center leading-[120%] tracking-[-4%] max-md:text-[32px] max-sm:text-[24px]">
+          Why Having A <span className="font-custom text-btn">Dealership</span>{" "}
+          is right for your business
+        </h1>
+        <p className="tracking-[-2%] text-darkBlueText font-medium text-[18px] text-center max-sm:text-[16px]">
+          DealerHub is your all-in-one platform to engage customers and build
+          trust.
+        </p>
 
-      <motion.section className={`${casestyles.secondheadingsectionParent}`}>
-        <div className="max-w-[50ch]">
-          <motion.div
-            className={casestyles.secondheadingsection}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-            variants={staggerContainer}
-          >
-            <motion.h4 variants={fadeInUp} className="max-w-[30ch]">
-              <TextGenerateEffect words={isInView ? challengesText : ""} />
-            </motion.h4>
-            <motion.div
-              className={`${casestyles.challanges}${"w-[40ch]"}`}
-              variants={staggerContainer}
-            >
-              <motion.div
-                className={casestyles.challangescontent}
-                variants={fadeInUp}
-              >
-                <div className={casestyles.TickImg}>
-                  <Tickimg />
+        <Link href="/contact-us">
+          <button className={styles.headerGetStarted}>Contact Us</button>
+        </Link>
+      </div>
+
+      <div className="px-4 py-10 md:px-16 mt-[2rem] flex justify-center items-center">
+        <div className="flex flex-col md:flex-row items-center gap-10">
+          {/* Left Side: Text Points */}
+          <div className="flex-1 space-y-2 max-w-[448px] relative">
+            {points.map((point, index) => (
+              <div key={index} className="p-4 flex flex-col gap-4 items-start">
+                <div className="w-8 h-8 rounded-full border border-gray-400 flex items-center justify-center text-sm font-bold">
+                  {index + 1}
                 </div>
-                <p>
-                  Your Own Social Media Website Post videos,customer
-                  testimonials, and promotions directly on your platform—not
-                  just social media.
-                </p>
-              </motion.div>
-              <motion.div
-                className={casestyles.challangescontent}
-                variants={fadeInUp}
-              >
-                <div className={casestyles.TickImg}>
-                  <Tickimg />
+                <div>
+                  <h3 className="font-bold text-darkBlueText text-[24px] max-sm:text-[18px]">
+                    {point.title}
+                  </h3>
+                  <p className="text-[18px] text-darkBlueText font-medium max-sm:text-[14px]">
+                    {point.description}
+                  </p>
                 </div>
-                <p>
-                  Full Control Over Your Leads Customers sign up to comment and
-                  interact, giving you direct access to their emails and contact
-                  info.
-                </p>
-              </motion.div>
-              <motion.div
-                className={casestyles.challangescontent}
-                variants={fadeInUp}
-              >
-                <div className={casestyles.TickImg}>
-                  <Tickimg />
-                </div>
-                <p>
-                  Frictionless Buying Experience Shoppers can message your team,
-                  apply for financing, and even purchase vehicles without
-                  leaving your site.
-                </p>
-              </motion.div>
-              <motion.div
-                className={casestyles.challangescontent}
-                variants={fadeInUp}
-              >
-                <div className={casestyles.TickImg}>
-                  <Tickimg />
-                </div>
-                <p>
-                  More Visibility, Less Reliance on Third Parties Stop paying
-                  per lead on Cars.com or AutoTrader. Drive traffic to your own
-                  network and build customer relationships.
-                </p>
-              </motion.div>
-              <motion.div
-                className={casestyles.challangescontent}
-                variants={fadeInUp}
-              >
-                <div className={casestyles.TickImg}>
-                  <Tickimg />
-                </div>
-                <p>
-                  Works With Social Media, Not Against It Keep posting on
-                  Facebook, Instagram & TikTok—but redirect traffic to your
-                  website, where you control the experience.
-                </p>
-              </motion.div>
-            </motion.div>
-          </motion.div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex-1 flex justify-center items-center relative overflow-hidden w-[500px] h-[700px] max-sm:hidden rounded-lg">
+            {images.slice(0, currentImage + 1).map((img, index) => (
+              <motion.img
+                key={index}
+                src={img}
+                custom={currentImage - index}
+                variants={cardVariants}
+                initial="enter"
+                animate="center"
+                className="absolute w-full h-full object-cover rounded-xl"
+              />
+            ))}
+          </div>
         </div>
-
-        <Image
-          src="/contenthub.png"
-          alt="car"
-          width={500}
-          height={500}
-          className={`${casestyles.imageSectionImg} ${"max-sm:mt-[3rem]"}`}
-        />
-      </motion.section>
-
-      <StackedCard />
-
-      <div>
-        <section className={pricingStyles.pricingLandingPage}>
-          <div className={pricingStyles.pricingHeaderContent}>
-            <h1 className={` ${"text-center sm:text-xs max-md:text-xs"}`}>
-              The Komosu Advantage
-            </h1>
-          </div>
-          <div className={pricingStyles.pricingLandingPageContainer}>
-            <div className={pricingStyles.pricingLandingPageContainerContent}>
-              <div className={pricingStyles.pricingContentWrapper}>
-                <div className={pricingStyles.pricingContent}>
-                  <div className={pricingStyles.pricingContentHeader}>
-                    <div
-                      className={`${pricingStyles.pricingContentImgBg} ${pricingStyles.pricingContentImgBgblue}`}
-                    >
-                      <div className={pricingStyles.pricingContentImg}>
-                        <Image src="/contentImg.png" fill objectFit="contain"
-                        alt="content-img" />
-                      </div>
-                    </div>
-                    <div className={pricingStyles.arrowWrapper}>
-                      <h4>More Control, Less Dependence</h4>
-                      <div className={pricingStyles.arrowLeft}>
-                        <Image src="/Arrow 1.svg" fill 
-                          alt="arrow"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <h3>
-                    Reduce reliance on third-party ad platforms by hosting your
-                    own engaging content.
-                  </h3>
-                </div>
-
-                <div
-                  className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent2} ${"h-full"}`}
-                >
-                  <div className={pricingStyles.pricingContentHeader}>
-                    <div className={pricingStyles.pricingContentImgBg}>
-                      <div className={pricingStyles.pricingContentImg}>
-                        <Image src="/captureImg.png" fill objectFit="contain" 
-                          alt="content-img"
-                        />
-                      </div>
-                    </div>
-                    <div className={pricingStyles.arrowWrapper}>
-                      <h4> Customer Data & Insights</h4>
-                    </div>
-                  </div>
-                  <h3>
-                    Track visitor behavior and optimize marketing strategies.
-                  </h3>
-                </div>
-              </div>
-              <div
-                className={`${pricingStyles.pricingContentWrapper} ${pricingStyles.pricingContentWrapper2}`}
-              >
-                <div
-                  className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent3} ${"h-full"}`}
-                >
-                  <div className={pricingStyles.pricingContentHeader}>
-                    <div className={pricingStyles.pricingContentImgBg}>
-                      <div className={pricingStyles.pricingContentImg}>
-                        <Image src="/networkImg.png" fill objectFit="contain" 
-                          alt="content-img"
-                        />
-                      </div>
-                    </div>
-                    <div className={pricingStyles.arrowWrapper}>
-                      <h4>Long-Term Cost Efficiency</h4>
-                    </div>
-                  </div>
-                  <h3>
-                    A high-converting website means less ad spend, more organic
-                    leads.
-                  </h3>
-                </div>
-
-                <div
-                  className={` ${pricingStyles.pricingContent} ${pricingStyles.pricingContent2} ${"h-full"}`}
-                >
-                  <div className={pricingStyles.pricingContentHeader}>
-                    <div className={pricingStyles.pricingContentImgBg}>
-                      <div className={pricingStyles.pricingContentImg}>
-                        <Image src="/closeDeals.png" fill objectFit="contain" 
-                          alt="closeImg"
-                        />
-                      </div>
-                    </div>
-                    <div className={pricingStyles.arrowWrapper}>
-                      <h4>Future-Ready Features</h4>
-                    </div>
-                  </div>
-                  <h3>
-                    Stay ahead with adaptable technology & cutting-edge tools.
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* <Testimonials /> */}
-        </section>
       </div>
     </section>
   );
 };
-
 export default DealershipHubSection;

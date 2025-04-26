@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import Links from "./links/Links";
 import NavBarstyles from "./navbar.module.css";
+// import { Plus_Jakarta_Sans } from "next/font/google";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { gsap } from "gsap"; // Import gsap
 
@@ -32,7 +33,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
-  
 
   return (
     <div

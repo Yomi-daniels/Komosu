@@ -2,7 +2,7 @@ import webstyle from "../webdesign.module.css";
 import Link from "next/link";
 const GetStarted = () => {
   return (
-    <div className={webstyle.webdesignTextContent}>
+    <div className={`${webstyle.webdesignTextContent}${"font-bold"}`}>
       <Link href="/request-demo">
         <button>
           <span className={webstyle.text}>Get Started</span>

@@ -1,56 +1,35 @@
 "use client";
-import React from "react";
-import { useEffect, useRef } from "react";
-// import casestyles from "../casestudy.module.css";
+
+import styles from "@/sections/sections.module.css"
 import casestyles from "../case-study/casestudy.module.css";
-import { Shadows_Into_Light } from "next/font/google";
-import gsap from "gsap";
-import Image from "next/image";
-const shadowFont = Shadows_Into_Light({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+import Link from "next/link";
+import DealerHubHeaderDesign from "./DealerHubHeaderDesign";
+import { TextGenerateEffect } from "../components/ui/text-generate-effect";
+
+
 const DealershipHeader = () => {
-  const caseStudyHeaderRef = useRef(null);
+  const message = `Your Dealership Social Media \n Website`;
 
-  useEffect(() => {
-    gsap.fromTo(
-      caseStudyHeaderRef.current,
-      { x: -100, opacity: 0 },
-      { x: 0, opacity: 1, duration: 1 }
-    );
-  }, []);
 
-  return (
-    <section className={casestyles.CaseStudyHeader} ref={caseStudyHeaderRef}>
-      <div className="flex items-center gap-4">
-        <h5>Dealership Hub</h5>
-        <Image
-          src="/car_icon.png"
-          width={30}
-          height={30}
-          className="max-sm:w-[20px]"
-          alt="car-icon"
-        />
-      </div>
-      <div className="flex justify-between items-center max-sm:flex-col max-sm:w-[250px] max-sm:gap-8">
-        <h1>
-          Your {""}
-          <span className={`${casestyles.casespan} ${shadowFont.className}`}>
-            Dealership’s {""}
-          </span>
-          Social <br /> Media Website
-        </h1>
-        {/* <Image
-          src="/dealership_car.png"
-          width={300}
-          height={300}
-          alt="dealership img"
-          objectFit="contain"
-        /> */}
-      </div>
-    </section>
-  );
+  return <section className={`${casestyles.CaseStudyHeader}${"dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex flex-col mt-[3rem] max-sm:mt-[0rem] max-sm:h-full "}`}>
+   <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+   
+    <div className="w-full max-w-[928px] min-h-[338px] text-center flex flex-col justify-center items-center gap-6 z-10 relative px-4 mx-auto">
+      <h1 className="text-[64px] font-bold text-black leading-[120%] tracking-[-4%] ">
+      <TextGenerateEffect
+        words={message}
+            messageClass="font-bold leading-[120%] tracking-[-4%]
+        text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px]
+        max-w-full mx-auto"
+      />
+      </h1>
+      <p className="max-w-[733px] font-medium text-darkBlueText text-[14px] sm:text-[16px] md:text-[18px] text-center md:w-[50ch] ">Your all-in-one Platform to provide your potential clients all the information they need to get their dream car</p>
+      <Link href="/request-demo">
+                <button className={styles.headerGetStarted}>Get Started</button>
+              </Link>
+    </div>
+    <DealerHubHeaderDesign/>
+  </section>;
 };
 
 export default DealershipHeader;

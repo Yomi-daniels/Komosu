@@ -51,7 +51,7 @@ const LeadGenHub = () => {
   };
 
   const words = `Why should your`;
-  const challengesText = ` Trust our Service`;
+  const challengesText = ` performing website?`;
   const solutionsText = `How We Elevate Your Digital Presence`;
 
   // Image animation setup
@@ -95,7 +95,7 @@ const LeadGenHub = () => {
         <h1 className="font-bold text-darkBlueText text-[40px] mx-auto text-center leading-[120%] tracking-[-4%] max-md:text-[32px] max-sm:text-[24px]">
           Why should your{" "}
           <span className="font-custom text-btn">Dealership</span> Needs a high
-          Trust our Service
+          performing website?
         </h1>
         <p className="tracking-[-2%] text-darkBlueText font-medium text-[18px] text-center max-sm:text-[16px]">
           A high-performing website that turns visitors into buyers.
