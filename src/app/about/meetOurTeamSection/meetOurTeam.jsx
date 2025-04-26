@@ -1,10 +1,10 @@
 import aboutstyles from "../aboutSection.module.css";
-import { Shadows_Into_Light } from "next/font/google";
+// import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
-const shadows = Shadows_Into_Light({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+// const shadows = Shadows_Into_Light({
+//   subsets: ["latin"],
+//   weight: ["400"],
+// });
 const MeetOurTeamSection = () => {
   return (
     <section className={aboutstyles.MeetOurTeamSection}>
@@ -15,7 +15,7 @@ const MeetOurTeamSection = () => {
           <h2>
             {" "}
             Meet our{" "}
-            <span className={`${aboutstyles.aboutUsSpan} ${shadows.className}`}>
+            <span className={`${aboutstyles.aboutUsSpan} ${"font-custom"}`}>
               team
             </span>{" "}
           </h2>
@@ -49,7 +49,7 @@ const MeetOurTeamSection = () => {
                 objectFit="cover"
               />
             </div>
-            <span className={`${aboutstyles.TeamRole} ${shadows.className}`}>
+            <span className={`${aboutstyles.TeamRole} ${"font-custom"}`}>
               HEAD OF MARKETING
             </span>
             <p className={aboutstyles.teamcontent}>
@@ -67,7 +67,7 @@ const MeetOurTeamSection = () => {
                 objectFit="cover"
               />
             </div>
-            <span className={`${aboutstyles.TeamRole} ${shadows.className}`}>
+            <span className={`${aboutstyles.TeamRole} ${"font-custom"}`}>
               CEO + FOUNDER
             </span>
             <p className={aboutstyles.teamcontent}>
@@ -85,7 +85,7 @@ const MeetOurTeamSection = () => {
                 objectFit="cover"
               />
             </div>
-            <span className={`${aboutstyles.TeamRole} ${shadows.className}`}>
+            <span className={`${aboutstyles.TeamRole} ${"font-custom"}`}>
               CEO + FOUNDER
             </span>
             <p className={aboutstyles.teamcontent}>

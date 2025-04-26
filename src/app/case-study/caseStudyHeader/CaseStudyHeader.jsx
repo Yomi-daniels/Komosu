@@ -1,12 +1,12 @@
 import { useEffect, useRef } from "react";
 import casestyles from "../casestudy.module.css";
-import { Shadows_Into_Light } from "next/font/google";
+// import { Shadows_Into_Light } from "next/font/google";
 import gsap from "gsap";
 
-const shadowFont = Shadows_Into_Light({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+// const shadowFont = Shadows_Into_Light({
+//   subsets: ["latin"],
+//   weight: ["400"],
+// });
 
 const CaseStudyHeader = () => {
   const caseStudyHeaderRef = useRef(null);
@@ -27,7 +27,7 @@ const CaseStudyHeader = () => {
       <h5>Case study</h5>
       <h1>
         Digital Transformation with{" "}
-        <span className={`${casestyles.casespan} ${shadowFont.className}`}>
+        <span className={`${casestyles.casespan} ${"font-custom"}`}>
           Komosu Network
         </span>
       </h1>

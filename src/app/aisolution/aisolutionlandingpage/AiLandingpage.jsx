@@ -2,15 +2,15 @@
 import Aistyles from "../Aisolution.module.css";
 import Image from "next/image";
 import LandingPageButtons from "@/app/webdesign/components/LandingPageButtons";
-import { Montserrat } from "next/font/google";
+// import { Montserrat } from "next/font/google";
 import { ScrollParallax } from "react-just-parallax";
 import { useEffect, useRef } from "react";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 import gsap from "gsap";
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const montserrat = Montserrat({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 
 const AiLandingpage = () => {
   const ailandingpageContainerTextContentRef = useRef(null);
@@ -37,9 +37,7 @@ const AiLandingpage = () => {
       <div className={Aistyles.vectorImgtop}>
         <Image src="/yellow vector.png" fill />
       </div>
-      <div
-        className={`${Aistyles.ailandingpageContainer} ${montserrat.className}`}
-      >
+      <div className={`${Aistyles.ailandingpageContainer} `}>
         <div
           className={Aistyles.ailandingpageContainerTextContent}
           ref={ailandingpageContainerTextContentRef}
