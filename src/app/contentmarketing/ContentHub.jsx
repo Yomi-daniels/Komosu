@@ -8,12 +8,12 @@ import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 import pricingStyles from "../pricing/pricing.module.css";
 import Image from "next/image";
 
-import { Montserrat } from "next/font/google";
+// import { Montserrat } from "next/font/google";
 import Link from "next/link";
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const montserrat = Montserrat({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 
 const ContentHub = () => {
   const sectionRef = useRef(null);
@@ -150,11 +150,11 @@ const ContentHub = () => {
         >
           <TextGenerateEffect words={isInView ? solutionsText : ""} />
         </motion.h4>
-        <motion.p
-          className={casestyles.solutionsParagraph}
-          >
-            Sales reps & dealerships are using social media to reach buyers—but sending <br /> traffic away from their own brand. Why let third-party platforms control your audience?
-          </motion.p>
+        <motion.p className={casestyles.solutionsParagraph}>
+          Sales reps & dealerships are using social media to reach buyers—but
+          sending <br /> traffic away from their own brand. Why let third-party
+          platforms control your audience?
+        </motion.p>
       </motion.div>
       <div></div>
     </section>

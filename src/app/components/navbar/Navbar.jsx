@@ -8,10 +8,10 @@ import NavBarstyles from "./navbar.module.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { gsap } from "gsap"; // Import gsap
 
-const plus_Jakarta_Sans = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  weight: ["300"],
-});
+// const plus_Jakarta_Sans = Plus_Jakarta_Sans({
+//   subsets: ["latin"],
+//   weight: ["300"],
+// });
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -36,7 +36,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`${NavBarstyles.parentContainer} ${plus_Jakarta_Sans.className} ${
+      className={`${NavBarstyles.parentContainer} ${
         isVisible ? NavBarstyles.show : NavBarstyles.hide
       }`}
     >

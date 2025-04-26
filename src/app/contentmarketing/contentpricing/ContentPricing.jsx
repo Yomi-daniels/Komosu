@@ -1,15 +1,15 @@
 import contentStyles from "../contentmarketing.module.css";
 import Image from "next/image";
-import { Shadows_Into_Light } from "next/font/google";
+// import { Shadows_Into_Light } from "next/font/google";
 import AnnualLink from "@/app/webdesign/components/AnnualLink";
 import webstyle from "@/app/webdesign/webdesign.module.css";
 import Testimonials from "@/sections/testimonials";
 import Tickimg from "@/app/webdesign/components/Tickimg";
 import FAQ from "@/sections/faq";
-const shadowsFont = Shadows_Into_Light({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+// const shadowsFont = Shadows_Into_Light({
+//   subsets: ["latin"],
+//   weight: ["400"],
+// });
 
 const ContentPricing = () => {
   return (

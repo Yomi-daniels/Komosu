@@ -6,10 +6,10 @@ import { Shadows_Into_Light } from "next/font/google";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 
-const shadows = Shadows_Into_Light({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+// const shadows = Shadows_Into_Light({
+//   subsets: ["latin"],
+//   weight: ["400"],
+// });
 
 const ContactPage = () => {
   const contactTextRef = useRef(null);
@@ -39,7 +39,7 @@ const ContactPage = () => {
         <div className={styles.contactHeader}>
           <h2>
             Get in{" "}
-            <span className={`${styles.contactspan} ${shadows.className}`}>
+            <span className={`${styles.contactspan} ${"font-custom"}`}>
               Touch{" "}
             </span>
             with us

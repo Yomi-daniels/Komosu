@@ -2,16 +2,16 @@
 import contentStyles from "../contentmarketing.module.css";
 import Image from "next/image";
 import LandingPageButtons from "@/app/webdesign/components/LandingPageButtons";
-import { Montserrat } from "next/font/google";
+// import { Montserrat } from "next/font/google";
 import { ScrollParallax } from "react-just-parallax";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const montserrat = Montserrat({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 
 const ContentMarketingLandingPage = () => {
   const contentTextRef = useRef(null);
@@ -42,10 +42,7 @@ const ContentMarketingLandingPage = () => {
         <Image src="/triangle.png" layout="fill" alt="Triangle"/>
       </div> */}
       <div className={contentStyles.contentContainer}>
-        <div
-          className={`${contentStyles.contentText} ${montserrat.className}`}
-          ref={contentTextRef}
-        >
+        <div className={`${contentStyles.contentText}`} ref={contentTextRef}>
           <div className={contentStyles.contentheader}>
             <div className={contentStyles.contentheaderImg}>
               <Image
