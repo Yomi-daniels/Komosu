@@ -1,20 +1,16 @@
 "use client";
 import styles from "./request-demo.module.css";
 import Image from "next/image";
-import { Shadows_Into_Light, Montserrat } from "next/font/google";
+// import { Shadows_Into_Light, Montserrat } from "next/font/google";
 import TickImg from "../webdesign/components/Tickimg";
 import DemoForm from "../components/demoForm/demoForm";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["800", "600"],
-});
-const shadowsFont = Shadows_Into_Light({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+// const shadowsFont = Shadows_Into_Light({
+//   subsets: ["latin"],
+//   weight: ["400"],
+// });
 
 const RequestDemoPages = () => {
   const plans = ["Web Design", "AI Solutions", "Content Marketing"];
@@ -54,9 +50,9 @@ const RequestDemoPages = () => {
             <h4>REQUEST DEMO</h4>
           </div>
           <div className={styles.requestDemoTextcontainer}>
-            <h1 className={montserrat.className}>
+            <h1>
               Discover how <br />
-              <span className={`${styles.demospan} ${shadowsFont.className}`}>
+              <span className={`${styles.demospan} ${"font-custom"}`}>
                 Komosu
               </span>{" "}
               can accelerate your business

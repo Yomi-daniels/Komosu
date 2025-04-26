@@ -7,14 +7,14 @@ import { useRef, useState, useEffect } from "react";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 import pricingStyles from "../pricing/pricing.module.css";
 import styles from "@/sections/sections.module.css";
-import { Montserrat } from "next/font/google";
+// import { Montserrat } from "next/font/google";
 import Link from "next/link";
 import { title } from "@/utils/siteMetaData";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const montserrat = Montserrat({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 
 const WebdesignHub = () => {
   const points = [

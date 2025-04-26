@@ -2,17 +2,17 @@ import pricingStyles from "../pricing.module.css";
 import Image from "next/image";
 import Testimonials from "@/sections/testimonials";
 import FAQ from "@/sections/faq";
-import { Montserrat } from "next/font/google";
+// import { Montserrat } from "next/font/google";
 import Link from "next/link";
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const montserrat = Montserrat({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 const Pricing = () => {
   return (
     <section className={pricingStyles.pricingLandingPage}>
       <div className={pricingStyles.pricingHeaderContent}>
-        <h1 className={montserrat.className}>Komosu All-In-One Services</h1>
+        <h1>Komosu All-In-One Services</h1>
         <p>
           Get the best deal for your business with our all in one plan. Send us
           a message to get the best price

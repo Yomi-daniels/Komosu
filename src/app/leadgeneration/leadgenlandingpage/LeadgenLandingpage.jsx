@@ -2,7 +2,7 @@
 import leadStyles from "../leadgeneration.module.css";
 import Image from "next/image";
 import LandingPageButtons from "@/app/webdesign/components/LandingPageButtons";
-import { Montserrat } from "next/font/google";
+// import { Montserrat } from "next/font/google";
 import { ScrollParallax } from "react-just-parallax";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -10,10 +10,10 @@ import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 import Link from "next/link";
 import styles from "@/sections/sections.module.css";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const montserrat = Montserrat({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 const LeadgenLandingpage = () => {
   const webdesignTextContainerRef = useRef(null);
   const parallaxRef = useRef(null);
