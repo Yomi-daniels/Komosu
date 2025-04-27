@@ -1,6 +1,6 @@
 "use client";
 import webstyle from "../webdesign.module.css";
-import { Shadows_Into_Light } from "next/font/google";
+// import { Shadows_Into_Light } from "next/font/google";
 import Image from "next/image";
 import WebDesignPricingPlans from "../webdesignpricing/WebDesignPricingPlans";
 import GetStarted from "../components/GetStarted";
@@ -10,10 +10,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const shadowsFont = Shadows_Into_Light({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+// const shadowsFont = Shadows_Into_Light({
+//   subsets: ["latin"],
+//   weight: ["400"],
+// });
 
 const WebDesignWorks = () => {
   const textContent2Ref = useRef(null);

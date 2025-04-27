@@ -4,10 +4,10 @@ import AnnualLink from "../components/AnnualLink";
 import Image from "next/image";
 import Link from "next/link";
 
-const shadowsFont = Shadows_Into_Light({
-  subsets: ["latin"],
-  weight: ["400"],
-});
+// const shadowsFont = Shadows_Into_Light({
+//   subsets: ["latin"],
+//   weight: ["400"],
+// });
 const WebDesignPricingPlans = () => {
   return (
     <></>

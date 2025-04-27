@@ -4,7 +4,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 import Image from "next/image";
-import Tickimg from "@/app/webdesign/components/Tickimg";
+// import Tickimg from "@/app/webdesign/components/Tickimg";
 
 const OurSolutionSection = () => {
   const solutionRef = useRef(null);
@@ -37,8 +37,8 @@ const OurSolutionSection = () => {
           animate={isInView ? "visible" : "hidden"}
           variants={sectionVariants}
         >
-          Partner with Komosu Network and experience the future of <br />dealership
-          operations today.
+          Partner with Komosu Network and experience the future of <br />
+          dealership operations today.
         </motion.p>
 
         {/* <motion.div
