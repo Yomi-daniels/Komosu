@@ -7,10 +7,10 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
 
-  // Use Pages Router (already configured)
+  // Remove appDir and workers from experimental (appDir is enabled by default)
   experimental: {
-    appDir: false,
-    workers: 4, // Parallelize builds for faster compilation
+    // The appDir option is available by default, so you can safely remove it
+    // workers: 4, // Parallelize builds for faster compilation (remove or keep depending on your setup)
   },
 
   // Enable production optimizations
@@ -21,7 +21,6 @@ const nextConfig = {
   // Optimize images for production
   images: {
     domains: ["www.komosunetwork.com"], // Add domains for external images (e.g., your CDN)
-
     deviceSizes: [640, 750, 828, 1080, 1200, 1920], // Optimize for common device widths
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384], // Optimize for common image sizes
     formats: ["image/avif", "image/webp"], // Use modern formats for better compression
