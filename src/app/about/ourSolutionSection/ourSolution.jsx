@@ -2,6 +2,7 @@ import aboutstyles from "../aboutSection.module.css";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 // import Image from "next/image";
 // import Tickimg from "@/app/webdesign/components/Tickimg";

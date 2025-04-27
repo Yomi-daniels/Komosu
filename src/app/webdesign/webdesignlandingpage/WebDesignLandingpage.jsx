@@ -3,17 +3,17 @@ import webstyle from "../webdesign.module.css";
 import Image from "next/image";
 import LandingPageButtons from "../components/LandingPageButtons";
 import { ScrollParallax } from "react-just-parallax";
-import { Montserrat } from "next/font/google";
+// import { Montserrat } from "next/font/google";
 import { useEffect, useRef } from "react";
 import Magnet from "@/Magnet";
 import gsap from "gsap";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 import styles from "@/sections/sections.module.css";
 import Link from "next/link";
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const montserrat = Montserrat({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 
 const WebDesignLandingpage = () => {
   const webdesignTextContainerRef = useRef(null);
