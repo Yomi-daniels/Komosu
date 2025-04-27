@@ -1,5 +1,3 @@
-import { withContentlayer } from "next-contentlayer2";
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Linting: Ignore ESLint during builds for faster production builds
@@ -105,4 +103,4 @@ const nextConfig = {
   optimizeFonts: true,
 };
 
-export default withContentlayer(nextConfig);
+export default nextConfig;
