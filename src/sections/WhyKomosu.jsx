@@ -11,13 +11,13 @@ import pricingStyles from "../app/pricing/pricing.module.css";
 import Image from "next/image";
 import Testimonials from "@/sections/testimonials";
 import FAQ from "@/sections/faq";
-import { Montserrat } from "next/font/google";
+// import { Montserrat } from "next/font/google";
 import Link from "next/link";
 import BentoSection from "./BentoSection";
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["700"],
-});
+// const montserrat = Montserrat({
+//   subsets: ["latin"],
+//   weight: ["700"],
+// });
 
 const WhyKomosu = () => {
   const sectionRef = useRef(null);
