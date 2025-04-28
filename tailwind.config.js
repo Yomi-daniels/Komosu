@@ -80,10 +80,11 @@ module.exports = {
         blueText: "#0400BF",
         btnHover: "#ffffffa2",
         btn: "#0500ff",
-
+        foundationBlue: "#020059",
         lightText: "#ffffff",
         deepBlue: "#3af3ff",
         yellow: "#ecc601",
+        yellowLight: "#FDF9E6",
         hover1: "#dad9ff",
         hover2: "#f9edb0",
         hover3: "#534500",

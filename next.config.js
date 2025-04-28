@@ -72,6 +72,7 @@ const nextConfig = {
       test: /\.(ts|tsx|js|jsx)$/,
       exclude: [
         /node_modules/,
+        /codebase\.md/,
         /\.aider/, // Exclude .aider directories
         /\.aider.*$/, // Exclude files like .aider.config
         /aider\.log$/, // Exclude aider.log
