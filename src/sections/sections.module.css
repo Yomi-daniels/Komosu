@@ -1704,7 +1704,7 @@
   align-items: flex-start;
   justify-content: space-evenly;
   margin-top: 5rem;
-  /* padding-bottom: 3rem; */
+  padding-bottom: 3rem;
   max-width: 1120px;
   margin-inline: auto;
   min-height: 800px;
