@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const BlogPage = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white p-8 bg-black">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white p-8 bg-black">
       <motion.h1
         className="text-4xl md:text-6xl font-bold mb-6 text-center"
         initial={{ opacity: 0, y: -50 }}
