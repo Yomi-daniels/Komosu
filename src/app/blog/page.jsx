@@ -51,7 +51,7 @@ const BlogPage = () => {
           </div>
           <div className="w-full space-y-12">
             <div className="w-full h-96 relative bg-yellow rounded-3xl outline outline-1 outline-offset-[-1px] outline-yellowLight">
-              <div className="absolute outline outline-1 flex items-center gap-16">
+              <div className="justify-around flex items-center gap-16">
                 <div className="w-[472px] flex flex-col gap-2">
                   <div className="text-zinc-600 text-lg font-normal capitalize leading-relaxed tracking-tight">
                     April 13, 2025
