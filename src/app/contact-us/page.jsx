@@ -37,14 +37,16 @@ const ContactPage = () => {
     <section className={styles.contactSection}>
       <div className={styles.ContactText} ref={contactTextRef}>
         <div className={styles.contactHeader}>
-          <h2>
+          <h2 className="text-[64px] font-medium text-darkBlueText leading-[120px] tracking-[-4%]">
             Get in{" "}
             <span className={`${styles.contactspan} ${"font-custom"}`}>
               Touch{" "}
             </span>
             with us
           </h2>
-          <p>Say hello to us - Let us know how we can be of help</p>
+          <p className="text-[18px]">
+            Say hello to us - Let us know how we can be of help
+          </p>
         </div>
         <div className={styles.contactLocations}>
           <div className={styles.phone}>

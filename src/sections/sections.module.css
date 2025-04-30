@@ -1598,7 +1598,8 @@
 .OfferAnimationSection {
   background-color: var(--blueText);
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 100%;
   margin-top: 6rem;
 }
 

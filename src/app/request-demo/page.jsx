@@ -50,11 +50,9 @@ const RequestDemoPages = () => {
             <h4>REQUEST DEMO</h4>
           </div>
           <div className={styles.requestDemoTextcontainer}>
-            <h1>
-              Discover how <br />
-              <span className={`${styles.demospan} ${"font-custom"}`}>
-                Komosu
-              </span>{" "}
+            <h1 className="text-[50px] font-medium text-darkBlueText leading-[120%] tracking-[-3%]">
+              Discover how
+              <span className={`${styles.demospan} ${"font-custom"}`}> Komosu </span>{" "}
               can accelerate your business
             </h1>
             <div className={styles.demoFeaturesContainer}>
