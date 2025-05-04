@@ -24,13 +24,15 @@ const DealerHubHeaderDesign = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl max-sm:gap-16">
         {/* Card 1 */}
         <div className="p-6 rounded-[20px] shadow-md flex flex-col items-center text-center border-[4px] border-[#DAD9FF] w-[328px] h-[400px] overflow-hidden">
-          <h2 className="text-[24px] font-bold mb-2 text-darkBlueText">
-            Leads To Customers
-          </h2>
-          <p className="text-darkBlueText mb-4 text-[16px] leading-[150%] tracking-[2%] text-left font-regular">
-            We Turn Business Leads Into Paying Customers
-          </p>
-          <div className="flex items-center space-x-4 mt-auto  relative">
+          <div className="flex flex-col items-start">
+            <h2 className="text-[24px] font-bold mb-2 text-darkBlueText text-left ">
+              Leads To Customers
+            </h2>
+            <p className="text-darkBlueText mb-4 text-[16px] leading-[150%] tracking-[2%] text-left font-regular">
+              We Turn Business Leads Into Paying Customers
+            </p>
+          </div> 
+          <div className="flex items-center relative pb-3">
             <div className="bg-blue-600 text-white px-4 py-2 rounded-[12px] w-[155px] h-[162px] flex flex-col justify-center items-center rotate-[2deg]">
               <h1 className="text-[24px] font-bold ">LEADS</h1>
             </div>
@@ -48,7 +50,7 @@ const DealerHubHeaderDesign = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="relative bg-white rounded-lg overflow-hidden shadow-md">
+        <div className="relative bg-white rounded-lg overflow-hidden shadow-md h-[500px]">
           <video
             ref={videoRef}
             src="/DealerDesignVideo.mp4"
