@@ -80,13 +80,13 @@ const DealershipBentoGrid = () => {
             <Image src="/Star 1.png" alt='image' width={24} height={24} objectFit='contain' className='absolute left-[5.5rem] bottom-[9rem]'/>
           </div>
         </div>
-        <Image src="/Frame 1618870851.png" alt='image' width={252.883}  height={200} objectFit='cover'/>
+        <Image src="/congratulations.png" alt='image' width={252.883}  height={200} objectFit='cover'/>
     
       </div>
       </div>
       <div className='lg:w-[544px] md:w-full max-sm:w-full h-[350px] max-sm:h-full bg-[#F9F9F9]  rounded-[20px] flex flex-col items-center justify-center border border-[#CACACC] overflow-hidden'>
     
-      <div className='flex flex-col items-start p-[32px] gap-[12px] mt-6'>
+      <div className='flex flex-col items-start p-[32px] gap-[12px] mt-10'>
         <h4 className='text-darkBlueText text-[24px] font-medium leading-[130%] tracking-[-0.48px] '>
         More Visibility, Less Reliance on Third Parties </h4>
         <p className='text-[18px] font-regular leading-[150%] tracking-[0.36px] capitalize self-stretch text-darkBlueText'>
