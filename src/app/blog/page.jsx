@@ -48,14 +48,14 @@ const BlogPage = () => {
             <div className="flex-1 flex flex-col gap-4">
               <span className="text-[#585859] text-lg font-normal">April 13, 2025</span>
               <h3 className="text-darkBlueText text-2xl font-medium capitalize leading-[130%]">
-                Mindfulness and Meditation Techniques for Developers
+                Why Dealerships should start thinking like creators in 2025
               </h3>
               <p className="text-darkBlueText text-lg font-normal capitalize leading-[150%]">
-                Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task...
+                How digital communities and first-party data will define the next generation of automatotive brands...
               </p>
             </div>
-            <div className="w-full md:w-[528px] h-[300px] relative">
-              <Image src="/man_meditating.png" alt="image" fill className="object-cover rounded-lg" />
+            <div className="w-full md:w-[528px] h-[300px] relative ">
+              <Image src="/man_meditating.png" alt="image" fill className="object-cover rounded-lg object-right-top" />
             </div>
           </div>
 
@@ -82,7 +82,7 @@ const BlogPage = () => {
                       </p>
                     </div>
                     <h4 className="text-darkBlueText text-2xl font-medium capitalize leading-[130%] tracking-[-0.48px]">
-                    Best Practices for Writing Clean and Maintainable Code
+                    Your Websites is more than a Digital lot. it's a Community Engine
                     </h4>
                   </div>
                 </div>
@@ -110,8 +110,7 @@ const BlogPage = () => {
                       </p>
                     </div>
                     <h4 className="text-darkBlueText text-2xl font-medium capitalize leading-[130%] tracking-[-0.48px]">
-                      Automating Repetitive Tasks: Productivity Hacks for
-                      Developers
+                     Social Media is your Funnel. Community is the Destination.
                     </h4>
                   </div>
                 </div>
@@ -139,8 +138,7 @@ const BlogPage = () => {
                       </p>
                     </div>
                     <h4 className="text-darkBlueText text-2xl font-medium capitalize leading-[130%] tracking-[-0.48px]">
-                      Building Progressive Web Apps: Bridging the Gap Between
-                      Web and Mobile
+                    First-Party Data: The Foundation of the new Dealership Model.
                     </h4>
                   </div>
                 </div>
@@ -155,11 +153,11 @@ const BlogPage = () => {
                className="text-darkBlueText text-2xl font-medium capitalize leading-loose">
                 All Posts
               </h4>
-              <div className="w-96 h-10 px-4 py-2 bg-neutral-200 rounded-lg flex justify-start items-center gap-2">
+              {/* <div className="w-96 h-10 px-4 py-2 bg-neutral-200 rounded-lg flex justify-start items-center gap-2">
                 <div className="text-zinc-600 text-sm font-light leading-tight">
                   Search
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="flex justify-start items-center max-sm:justify-center  flex-wrap">
               <div className="px-6 py-2 border-b-2 border-blue-700 flex flex-col justify-center items-center gap-2">
@@ -207,7 +205,7 @@ const BlogPage = () => {
                       </p>
                     </div>
                     <h4 className="text-darkBlueText text-2xl font-medium capitalize leading-[130%] tracking-[-0.48px]">
-                    Best Practices for Writing Clean and Maintainable Code
+                    Turning Visitors into Members - and Members into Buyers
                     </h4>
                   </div>
                 </div>
@@ -235,8 +233,7 @@ const BlogPage = () => {
                       </p>
                     </div>
                     <h4 className="text-darkBlueText text-2xl font-medium capitalize leading-[130%] tracking-[-0.48px]">
-                      Automating Repetitive Tasks: Productivity Hacks for
-                      Developers
+                  Why This Stratey Works: The Business Case
                     </h4>
                   </div>
                 </div>
@@ -264,8 +261,7 @@ const BlogPage = () => {
                       </p>
                     </div>
                     <h4 className="text-darkBlueText text-2xl font-medium capitalize leading-[130%] tracking-[-0.48px]">
-                      Building Progressive Web Apps: Bridging the Gap Between
-                      Web and Mobile
+                      How to Get Started (No Giant Budget Needed)
                     </h4>
                   </div>
                 </div>
@@ -294,7 +290,7 @@ const BlogPage = () => {
                       </p>
                     </div>
                     <h4 className="text-darkBlueText text-2xl font-medium capitalize leading-[130%] tracking-[-0.48px]">
-                    Best Practices for Writing Clean and Maintainable Code
+                 Final Thought: The Dealership as a Digital Brand
                     </h4>
                   </div>
                 </div>
