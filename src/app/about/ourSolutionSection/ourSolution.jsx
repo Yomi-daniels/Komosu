@@ -31,7 +31,7 @@ const OurSolutionSection = () => {
         <h4>JOIN US ON OUR JOURNEY</h4>
         <h2>
           <TextGenerateEffect words={isInView ? solutionText : ""} />{" "}
-          {/* Pass as a string only if in view */}
+          {solutionText}
         </h2>
         <motion.p
           initial="hidden"
