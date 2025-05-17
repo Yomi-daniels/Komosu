@@ -69,8 +69,8 @@ const Blog = defineDocumentType(() => ({
                 flag?.length === 1
                   ? "one"
                   : flag?.length === 2
-                  ? "two"
-                  : "three",
+                    ? "two"
+                    : "three",
               text: content,
               slug: content ? slugger.slug(content) : undefined,
             };
@@ -91,7 +91,8 @@ const codeOptions = {
 export default makeSource({
   contentDirPath: "content", // Ensure 'content' folder is in the root
   documentTypes: [Blog],
-  mdx: { // For markdown files, ensure this part is configured correctly
+  mdx: {
+    // For markdown files, ensure this part is configured correctly
     rehypePlugins: [
       rehypeSlug,
       [
@@ -102,4 +103,3 @@ export default makeSource({
     ],
   },
 });
-npm run 
