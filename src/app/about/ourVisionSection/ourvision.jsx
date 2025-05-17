@@ -28,7 +28,7 @@ const OurvisionSection = () => {
         <h4>Our Vision</h4>
         <h2>
           <TextGenerateEffect words={isInView ? visionText : ""} />{" "}
-          {/* Pass as a string only if in view */}
+          {visionText}
         </h2>
         <motion.p
           initial="hidden"

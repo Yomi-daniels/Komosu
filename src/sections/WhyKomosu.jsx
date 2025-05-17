@@ -25,7 +25,7 @@ const WhyKomosu = () => {
 
   // Animation variants
   const fadeInUp = {
-    hidden: { opacity: 0, y: 50 }, // Start with opacity 0 and translate down
+    hidden: { opacity: 0, y: 80 }, // Start with opacity 0 and translate down
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }, // Fade in and move up
   };
 
@@ -84,7 +84,7 @@ const WhyKomosu = () => {
         variants={staggerContainer}
       >
         <motion.div className="max-h-full mx-auto flex flex-wrap items-start justify-center gap-8 p-4 ">
-          <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-md p-6 ">
+          <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-sm p-6 ">
             <Image
               src="/customSolution.jpg"
               alt="image"
@@ -107,7 +107,7 @@ const WhyKomosu = () => {
               </p>
             </motion.div>
           </div>
-          <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-md p-6 ">
+          <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-sm p-6 ">
             <Image
               src="/DealerIntegration.jpg"
               alt="image"
@@ -130,7 +130,7 @@ const WhyKomosu = () => {
               </p>
             </motion.div>
           </div>
-          <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-md p-6 ">
+          <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-sm p-6 ">
             <Image
               src="/ExpertSupport.jpg"
               alt="image"
@@ -153,7 +153,7 @@ const WhyKomosu = () => {
               </p>
             </motion.div>
           </div>
-          <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-md p-6 ">
+          <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-sm p-6 ">
             <Image
               src="/TrustCredible.jpg"
               alt="image"
@@ -177,7 +177,7 @@ const WhyKomosu = () => {
               </p>
             </motion.div>
           </div>
-          <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-md p-6 ">
+          <div className="max-w-[370px] border border-gray border-opacity-25 hover:shadow-sm p-6 ">
             <Image
               src="/DifferentiationCompetitor.jpg"
               alt="image"

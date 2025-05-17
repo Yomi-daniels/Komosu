@@ -14,18 +14,6 @@
   color: var(--yellow);
 }
 
-.contactHeader {
-  color: var(--blueText);
-}
-
-.contactHeader h2 {
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%; /* 76.8px */
-  letter-spacing: -0.64px;
-}
-
 .contactLocations {
   display: flex;
   flex-direction: column;

@@ -106,7 +106,7 @@ const LeadGenDigital = () => {
           .map((feature, index) => (
             <div
               key={index}
-              className="group w-[30%] border border-[#E6E6FF] p-6 text-left flex flex-col items-start py-12 transition-all duration-300 ease-in-out hover:bg-[#f5f5f5]"
+              className="group w-[30%] border border-[#E6E6FF] p-6 text-left flex flex-col items-start py-12 transition-all duration-300 ease-in-out hover:bg-[#f5f5f5] hover:transform hover:translate-y-[1px] group-hover:background-gradient"
             >
               <Image
                 src={feature.image}
@@ -118,10 +118,10 @@ const LeadGenDigital = () => {
               {feature.pill && (
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-tl-full rounded-tr-full shadow-sm transition-colors duration-300 group-hover:bg-btn" />
               )}
-              <h3 className="text-[20px] md:text-[22px] font-bold text-[#28282B] mb-2 transition-all duration-300 group-hover:text-[20.1px] group-hover:scale-105 text-left">
+              <h3 className="text-[20px] md:text-[22px] font-bold text-[#28282B] mb-2 transition-all duration-300 group-hover:text-[20.1px] group-hover:scale-105 text-left group-hover:translate-y-[-5px]">
                 {feature.title}
               </h3>
-              <p className="text-[#585859] font-medium text-[16px] md:text-[17px] text-left transition-all duration-300 group-hover:text-[16.1px] group-hover:scale-105">
+              <p className="text-[#585859] font-medium text-[16px] md:text-[17px] text-left transition-all duration-300 group-hover:text-[16.1px] group-hover:scale-105 group-hover:translate-y-[-5px]">
                 {feature.description}
               </p>
             </div>
@@ -154,7 +154,7 @@ const LeadGenDigital = () => {
 
       {/* Mobile Carousel */}
       <div className="md:hidden relative">
-        <div className="group relative border border-[#E6E6FF] p-6 text-left flex flex-col items-center py-12 transition-all duration-300 ease-in-out hover:bg-[#f5f5f5]">
+        <div className="group relative border border-[#E6E6FF] p-6 text-left flex flex-col items-center py-12 transition-all duration-300 ease-in-out hover:bg-[#f5f5f5] hover:transform hover:translate-y-[1px] group-hover:background-gradient">
           <Image
             src={elevationFeatures[currentIndex].image}
             alt={elevationFeatures[currentIndex].title}
@@ -167,10 +167,10 @@ const LeadGenDigital = () => {
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-tl-full rounded-tr-full shadow-sm transition-colors duration-300 group-hover:bg-btn" />
           )}
 
-          <h3 className="text-[20px] md:text-[22px] font-bold text-[#28282B] mb-2 transition-all duration-300 group-hover:text-[20.1px] group-hover:scale-100 text-center">
+          <h3 className="text-[20px] md:text-[22px] font-bold text-[#28282B] mb-2 transition-all duration-300 group-hover:text-[20.1px] group-hover:scale-100 text-center group-hover:translate-y-[-5px]">
             {elevationFeatures[currentIndex].title}
           </h3>
-          <p className="text-[#585859] font-medium text-[16px] md:text-[17px] text-center transition-all duration-300 group-hover:text-[16.1px] group-hover:scale-105">
+          <p className="text-[#585859] font-medium text-[16px] md:text-[17px] text-center transition-all duration-300 group-hover:text-[16.1px] group-hover:scale-105 group-hover:translate-y-[-5px]">
             {elevationFeatures[currentIndex].description}
           </p>
         </div>

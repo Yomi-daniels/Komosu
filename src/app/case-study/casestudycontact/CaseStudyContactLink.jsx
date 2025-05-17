@@ -43,7 +43,7 @@ const CaseStudyContactLink = () => {
         <div className={casestyles.topimgabsolute}>
           <Image src="/Group 2.png" fill alt="Top Image" />
         </div>
-        <h4>Get Started Today</h4>
+        <h4>Trust Us With Your Business. Get <br /> Started Today!</h4>
         <Link href="/request-demo">
           <button>Book a Demo</button>
         </Link>
