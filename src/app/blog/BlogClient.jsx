@@ -88,15 +88,19 @@ export default function BlogClient({ blogs }) {
       </div>
 
       {/* Category Filters */}
-      <div className="flex flex-col items-start max-w-[1120px] mx-auto mt-[4rem]  px-5 ">
+      <div className="flex flex-col items-start max-w-[1120px] mx-auto mt-[4rem]  px-5">
         <h3 className="text-darkBlueText text-2xl font-medium">All Posts</h3>
-        <div className="flex flex-wrap gap-4 mt-[2rem]">
-          {categories.map((category) => (
-            <button key={category.name} className={`px-4 py-2 rounded-md ${selectedCategory === category.name ? "bg-darkBlueText text-white" : "bg-gray-200"}`} onClick={() => setSelectedCategory(category.name)}>
-              {category.name}
-            </button>
-          ))}
-        </div>
+        <div className="relative flex max-sm:overflow-x-scroll mt-[2rem]  max-sm:whitespace-nowrap max-sm:scrollbar-thin max-sm:scrollbar-thumb-rounded scrollbar-thumb-gray-300 max-sm:w-full max-sm:gap-[1em]">
+  {categories.map((category) => (
+    <button
+      key={category.name}
+      className={`px-4 py-2 rounded-md inline-block ${selectedCategory === category.name ? "bg-darkBlueText text-white" : "bg-gray-200"}`}
+      onClick={() => setSelectedCategory(category.name)}
+    >
+      {category.name}
+    </button>
+  ))}
+</div>
       </div>
 
       {/* Blog Posts Grid */}

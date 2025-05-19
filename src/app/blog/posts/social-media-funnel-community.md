@@ -8,7 +8,6 @@ order: 6
 category: "Productivity"
 ---
 
-# 📣 Social Media Is Your Funnel. Community Is the Destination.
 
 Third-party platforms like Instagram, YouTube, TikTok, and Facebook remain incredibly powerful tools for reaching new audiences. However, they should not be the ultimate destination for your marketing efforts. Instead, social media should serve as a funnel — a way to amplify your message and bring people into your owned digital space: your website and community.
 

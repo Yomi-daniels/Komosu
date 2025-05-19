@@ -8,7 +8,6 @@ order: 3
 category: "Web Development"
 ---
 
-# Your Website Is More Than a Digital Lot. It’s a Community Engine.
 
 Most dealership websites today focus heavily on showcasing inventory — listing cars, prices, and features. But as we move deeper into 2025, the expectations for dealership websites are evolving dramatically.
 

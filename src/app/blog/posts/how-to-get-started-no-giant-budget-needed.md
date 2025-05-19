@@ -8,7 +8,6 @@ order: 5
 category: "Productivity"
 ---
 
-## How to Get Started (No Giant Budget Needed)
 
 Here’s a simple roadmap to transition your dealership into a modern digital community hub:
 
