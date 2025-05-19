@@ -103,31 +103,36 @@ export default function BlogClient({ blogs }) {
 </div>
       </div>
 
-      {/* Blog Posts Grid */}
-      <div className="relative mx-auto max-w-[1200px] mt-[3rem]">
-        <div className="flex flex-wrap gap-6">
-          {filteredBlogs.length > 0 ? (
-            filteredBlogs.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="block">
-                <div className="w-96 min-h-full p-4 border-x border-[#E6E6FF]">
-                  <div className="relative w-full h-40">
-                    <Image src={post.image || "/placeholder.png"} alt={post.title} fill className="object-cover object-top" />
-                  </div>
-                  <div className="flex justify-between items-center flex-wrap gap-4 mt-[1rem]">
-                    <div className={`px-2 py-1 rounded ${categories.find(cat => cat.name === post.category)?.color || "bg-gray-200"}`}>
-                      <p className="text-sm font-medium">{post.category}</p>
-                    </div>
-                    <p className="text-zinc-600 text-sm font-light">{post.date}</p>
-                  </div>
-                  <h3 className="text-2xl font-semibold text-darkBlueText leading-[130%] mt-[1rem]">{post.title}</h3>
-                </div>
-              </Link>
-            ))
-          ) : (
-            <p className="text-center text-gray-600">No posts available in this category.</p>
-          )}
-        </div>
-      </div>
+   
+<div className="relative mx-auto max-w-[1200px] mt-[3rem]">
+  <div className="flex flex-wrap gap-6">
+    {filteredBlogs.length > 0 ? (
+      filteredBlogs.map((post) => (
+        <Link key={post.slug} href={`/blog/${post.slug}`} className="block group">
+          <div className="w-96 min-h-full p-4 border-x border-[#E6E6FF]">
+            <div className="relative w-full h-40 overflow-hidden">
+              <Image
+                src={post.image || "/placeholder.png"}
+                alt={post.title}
+                fill
+                className="object-cover object-top transition-transform duration-300 ease-in-out group-hover:scale-105"
+              />
+            </div>
+            <div className="flex justify-between items-center flex-wrap gap-4 mt-[1rem]">
+              <div className={`px-2 py-1 rounded ${categories.find(cat => cat.name === post.category)?.color || "bg-gray-200"}`}>
+                <p className="text-sm font-medium">{post.category}</p>
+              </div>
+              <p className="text-zinc-600 text-sm font-light">{post.date}</p>
+            </div>
+            <h3 className="text-2xl font-semibold text-darkBlueText leading-[130%] mt-[1rem]">{post.title}</h3>
+          </div>
+        </Link>
+      ))
+    ) : (
+      <p className="text-center text-gray-600">No posts available in this category.</p>
+    )}
+  </div>
+</div>
     </section>
   );
 }
