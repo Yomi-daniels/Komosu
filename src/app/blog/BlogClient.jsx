@@ -79,7 +79,7 @@ export default function BlogClient({ blogs }) {
                 src={featuredPost.image || "/man_meditating.png"} 
                 alt={featuredPost.title} 
                 fill 
-                className="object-cover rounded-lg" 
+                className="object-cover rounded-lg " 
               />
             </div>
           </div>

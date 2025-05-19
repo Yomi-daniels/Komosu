@@ -12,12 +12,12 @@ category: "Productivity"
 
 Here’s what this strategy unlocks:
 
-- ✅ Higher conversion rates through personalized outreach  
-- ✅ More service bookings by staying top-of-mind  
-- ✅ Increased vehicle turnover through engaged audience interest  
-- ✅ More trade-in opportunities with ongoing relationship nurturing  
-- ✅ Better margins on upsells and extended warranties  
-- ✅ Brand lift — you become the dealership people talk about
+-  Higher conversion rates through personalized outreach  
+-  More service bookings by staying top-of-mind  
+- Increased vehicle turnover through engaged audience interest  
+-  More trade-in opportunities with ongoing relationship nurturing  
+-  Better margins on upsells and extended warranties  
+-  Brand lift — you become the dealership people talk about
 
 You’re no longer chasing the next customer — you’re building an ecosystem they don’t want to leave.
 

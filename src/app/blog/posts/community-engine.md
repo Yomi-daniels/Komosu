@@ -15,7 +15,7 @@ Websites should no longer be static catalogs. Instead, they should invite people
 
 ## What a Dealership Community Experience Could Look Like
 
-### 📧 Email Capture with Exclusive Offers and Newsletters
+### Email Capture with Exclusive Offers and Newsletters
 
 Instead of just listing cars, capture your visitors’ emails by offering exclusive deals or a monthly newsletter like a “Garage Journal.” This newsletter could include:
 
@@ -24,7 +24,7 @@ Instead of just listing cars, capture your visitors’ emails by offering exclus
 - Insider stories from your dealership team
 - Special promotions only available to subscribers
 
-### 🛠️ Behind-the-Scenes Content
+###  Behind-the-Scenes Content
 
 Give your audience a peek behind the curtain by sharing content about:
 
@@ -35,7 +35,7 @@ Give your audience a peek behind the curtain by sharing content about:
 
 This kind of content builds trust and keeps visitors interested.
 
-### 💬 Interactive Features on Listings
+### Interactive Features on Listings
 
 Allow users to comment on and “like” vehicle listings to create buzz and excitement. Features could include:
 
@@ -43,7 +43,7 @@ Allow users to comment on and “like” vehicle listings to create buzz and exc
 - Community Q&A sections
 - Polls about favorite cars or features
 
-### 💎 Member-Only Offers and VIP Events
+###  Member-Only Offers and VIP Events
 
 Create a sense of exclusivity with member-only offers, sneak peeks of new models, or invitations to VIP events like:
 
@@ -51,7 +51,7 @@ Create a sense of exclusivity with member-only offers, sneak peeks of new models
 - Service specials just for community members
 - Local meetups or car enthusiast events
 
-### 🔒 Logged-In Experience
+###  Logged-In Experience
 
 Encourage users to create accounts and log in to your site by offering:
 

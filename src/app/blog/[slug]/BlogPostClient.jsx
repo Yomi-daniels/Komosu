@@ -25,7 +25,10 @@ export default function BlogPostClient({ blog }) {
                <Image src={blog.image} alt={blog.title} width={1120}height={500} objectFit="cover" className="mt-[2rem]"/>
        </div>
    
-      <ReactMarkdown >{blog.content}</ReactMarkdown>
+     <div className="border-l relative flex flex-col gap-4 p-8 max-w-[900px] mx-auto prose prose-blue ">
+  <ReactMarkdown>{blog.content}</ReactMarkdown>
+</div>
+
     </div>
   );
 }
