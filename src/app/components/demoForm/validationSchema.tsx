@@ -8,7 +8,8 @@ export const schema = z.object({
   numberOfEmployees: z
     .string()
     .min(1, "Number of employees is required")
-    .refine((val) => !isNaN(null), "Must be a number"),
+ .refine((val) => !isNaN(Number(val)), "Must be a valid number"),
+
   workEmail: z
     .string()
     .min(0, "Work email is required")
