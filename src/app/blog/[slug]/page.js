@@ -1,7 +1,12 @@
-import React from "react";
+import { getBlogBySlug } from "@/app/blog/utils/blogUtils";
+import BlogPostClient from "./BlogPostClient";
 
-const BlogPostPage = () => {
-  return <div>BlogPostPage</div>;
-};
+export default function BlogPostPage({ params }) {
+  const blog = getBlogBySlug(params.slug);
 
-export default BlogPostPage;
+  if (!blog) {
+    return <div>Blog not found</div>;
+  }
+
+  return <BlogPostClient blog={blog} />;
+}

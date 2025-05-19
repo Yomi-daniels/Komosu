@@ -33,7 +33,8 @@
         "name": "next"
       }
     ],
-    "target": "ES2017"
+    "target": "ES2017",
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",
@@ -46,7 +47,5 @@
   ],
   "exclude": [
     "node_modules"
-  ],
-  
-  
+  ]
 }
