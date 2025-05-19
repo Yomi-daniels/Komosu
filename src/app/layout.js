@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import { Metadata } from "next";
+import "remixicon/fonts/remixicon.css";
 
 export const metadata = {
   title: "Komosu Network",

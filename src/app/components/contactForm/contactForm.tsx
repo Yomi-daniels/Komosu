@@ -13,7 +13,8 @@ import styles from "./contactForm.module.css";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submissionStatus, setSubmissionStatus] = useState(null);
+  const [submissionStatus, setSubmissionStatus] = useState<"success" | "error" | null>(null);
+
 
   // Intersection observer for animation when form comes into view
   const { ref: formRef, inView: formInView } = useInView({
@@ -114,7 +115,7 @@ const ContactForm = () => {
         <div className={styles.inputContainer}>
           <label htmlFor="message">Message *</label>
           <textarea
-            name="message"
+            // name="message"
             cols={30}
             rows={10}
             placeholder="Ask Your Question"

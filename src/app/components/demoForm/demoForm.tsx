@@ -12,7 +12,8 @@ import Modal from "../modal/modal";
 
 const DemoForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submissionStatus, setSubmissionStatus] = useState(null);
+  const [submissionStatus, setSubmissionStatus] = useState<"success" | "error" | null>(null);
+
 
   const {
     register,
@@ -60,7 +61,7 @@ const DemoForm = () => {
     } finally {
       setIsSubmitting(false);
       setTimeout(() => {
-        setSubmissionStatus("");
+        setSubmissionStatus(null);
       }, 2000);
     }
   };
