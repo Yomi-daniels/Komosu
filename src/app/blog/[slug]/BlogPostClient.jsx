@@ -21,7 +21,7 @@ export default function BlogPostClient({ blog }) {
       </div>
        <div>
          <p className="text-sm text-gray-500">{blog.date}</p>
-               <h1 className="text-[50px] font-bold text-darkBlueText w-[700px]">{blog.title}</h1>
+               <h1 className="text-[50px] max-sm:text-[30px] max-sm:w-[300px] font-bold text-darkBlueText w-[750px] capitalize">{blog.title}</h1>
                <Image src={blog.image} alt={blog.title} width={1120}height={500} objectFit="cover" className="mt-[2rem]"/>
        </div>
    

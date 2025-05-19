@@ -60,27 +60,35 @@ export default function BlogClient({ blogs }) {
         </div>
       </div>
 
-      {/* Featured Post Section */}
-      <div className="mx-auto w-[1064px] space-y-12 mt-[3rem]">
-        <h2 className="text-darkBlueText text-2xl font-medium">Featured Post</h2>
-        {featuredPost && (
-          <Link href={`/blog/${featuredPost.slug}`} className="block">
-            <div className="bg-[#FDF9E6] rounded-3xl p-6 flex gap-[24px] items-center">
-              <div className="flex-1">
-                <p className="text-[#585859]">April 13, 2025</p>
-                <h3 className="text-[24px] font-medium text-darkBlueText">Why Dealerships Should Start Thinking Like Creators in 2025</h3>
-                <p className="text-darkBlueText">How digital communities and first-party data will define the next generation of automotive brands</p>
-              </div>
-              <div className="relative w-[528px] h-[368px]">
-                <Image src={featuredPost.image || "/man_meditating.png"} alt={featuredPost.title} fill className="object-cover rounded-lg" />
-              </div>
+       <div className="mx-auto max-w-[1064px] space-y-12 mt-12 px-4">
+      <h2 className="text-darkBlueText text-2xl font-medium">Featured Post</h2>
+      {featuredPost && (
+        <Link href={`/blog/${featuredPost.slug}`} className="block">
+          <div className="relative bg-[#FDF9E6] rounded-3xl p-6 flex flex-col md:flex-row gap-6 items-center w-full">
+            <div className="flex flex-col gap-4 md:gap-6 md:flex-1">
+              <p className="text-[#585859] text-sm md:text-base">April 13, 2025</p>
+              <h3 className="text-lg md:text-2xl font-medium text-darkBlueText">
+                Why Dealerships Should Start Thinking Like Creators in 2025
+              </h3>
+              <p className="text-darkBlueText text-sm md:text-base leading-[150%] tracking-[0.36px]">
+                How digital communities and first-party data will define the next generation of automotive brands
+              </p>
             </div>
-          </Link>
+            <div className="relative w-full h-64 md:w-[528px] md:h-[368px]">
+              <Image 
+                src={featuredPost.image || "/man_meditating.png"} 
+                alt={featuredPost.title} 
+                fill 
+                className="object-cover rounded-lg" 
+              />
+            </div>
+          </div>
+        </Link>
         )}
       </div>
 
       {/* Category Filters */}
-      <div className="flex flex-col items-start max-w-[1120px] mx-auto mt-[4rem]">
+      <div className="flex flex-col items-start max-w-[1120px] mx-auto mt-[4rem]  px-5 ">
         <h3 className="text-darkBlueText text-2xl font-medium">All Posts</h3>
         <div className="flex flex-wrap gap-4 mt-[2rem]">
           {categories.map((category) => (
