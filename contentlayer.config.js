@@ -1,6 +1,5 @@
-// contentlayer.config.js
+// contentlayer.config.cjs
 import { makeSource, defineDocumentType } from "contentlayer2/source-files";
-
 import readingTime from "reading-time";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
@@ -9,8 +8,8 @@ import GithubSlugger from "github-slugger";
 
 const Blog = defineDocumentType(() => ({
   name: "Blog",
-  filePathPattern: "**/**/*.mdx",
-  contentType: "mdx",
+  filePathPattern: "**/**/*.md", // Make sure files are in .md format
+  contentType: "md", // For .md files, contentType should be "md"
   fields: {
     title: {
       type: "string",
@@ -28,7 +27,7 @@ const Blog = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
-    image: { type: "string" }, // Changed to string (see note below)
+    image: { type: "string" },
     isPublished: {
       type: "boolean",
       default: true,
@@ -51,16 +50,16 @@ const Blog = defineDocumentType(() => ({
       type: "json",
       resolve: (doc) => readingTime(doc.body.raw),
     },
-    iimagePath: {
+    imagePath: {
       type: "string",
       resolve: (doc) => doc.image || null,
     },
     toc: {
       type: "json",
       resolve: async (doc) => {
-        const regulrExp = /\n(?<flag>#{1,6})\s+(?<content>.+)/g; // Fixed typo: 'regulrExp' to 'regularExp'
+        const regularExp = /\n(?<flag>#{1,6})\s+(?<content>.+)/g;
         const slugger = new GithubSlugger();
-        const headings = Array.from(doc.body.raw.matchAll(regulrExp)).map(
+        const headings = Array.from(doc.body.raw.matchAll(regularExp)).map(
           ({ groups }) => {
             const flag = groups?.flag;
             const content = groups?.content;
@@ -70,8 +69,8 @@ const Blog = defineDocumentType(() => ({
                 flag?.length === 1
                   ? "one"
                   : flag?.length === 2
-                    ? "two"
-                    : "three",
+                  ? "two"
+                  : "three",
               text: content,
               slug: content ? slugger.slug(content) : undefined,
             };
@@ -90,14 +89,14 @@ const codeOptions = {
 };
 
 export default makeSource({
-  contentDirPath: "content",
+  contentDirPath: "content", // Ensure 'content' folder is in the root
   documentTypes: [Blog],
-  mdx: {
+  mdx: { // For markdown files, ensure this part is configured correctly
     rehypePlugins: [
       rehypeSlug,
       [
         rehypeAutolinkHeadings,
-        { behavior: "append", properties: { className: ["anchor"] } }, // Fixed 'classname' to 'className'
+        { behavior: "append", properties: { className: ["anchor"] } },
       ],
       [rehypePrettyCode, codeOptions],
     ],

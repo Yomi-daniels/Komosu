@@ -6,7 +6,9 @@ const Modal = ({ isSubmitting, submissionStatus }) => {
   return (
     <div className={styles.modal}>
       {isSubmitting ? (
-        <Loading className={styles.loading} />
+        <div className={styles.loadingContainer}>
+          <Loading />
+        </div>
       ) : (
         <div className={styles.message}>
           {submissionStatus === "success" && (

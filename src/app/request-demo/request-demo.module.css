@@ -5,7 +5,7 @@
 }
 
 .requestDemocontainer {
-  max-width: 1120px;
+  max-width: 1220px;
   height: 100%;
   margin: 5rem auto;
   display: flex;
@@ -47,13 +47,7 @@
 }
 
 .requestDemoTextcontainer h1 {
-  max-width: 90%;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%; /* 60px */
-  letter-spacing: -0.5px;
-  color: var(--blueText);
+  max-width: 100%;
 }
 
 .demospan {

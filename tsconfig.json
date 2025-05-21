@@ -41,7 +41,7 @@
     "**/*.ts",
     "**/*.tsx",
     "src",
-    "next.config.js",
+    "next.config.mjs",
     ".contentlayer/generated"
   ],
   "exclude": [

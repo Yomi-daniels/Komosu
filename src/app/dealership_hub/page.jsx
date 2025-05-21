@@ -4,6 +4,7 @@ import DealershipHubSection from "./DealershipHubSection";
 import casestyles from "../case-study/casestudy.module.css";
 import FAQ from "@/sections/faq";
 import DealerHubDigital from "./DealerHubDigital";
+import DealershipBentoGrid from "./DealershipBentoGrid";
 const Dealership_hub = () => {
   return (
     <section className={casestyles.CaseStudyPage}>
