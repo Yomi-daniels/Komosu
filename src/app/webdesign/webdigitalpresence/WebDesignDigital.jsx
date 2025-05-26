@@ -5,23 +5,23 @@ import Image from "next/image";
 const WebDesignDigital = () => {
   const elevationFeatures = [
     {
-      title: "Seamless Navigation",
+      title: "Effortless Browsing",
       description:
-        "Our Designs Reflect Your Unique Brand Identity While Integrating Cutting-Edge Features.",
+        " Smooth, intuitive navigation that keeps shoppers engaged and moving toward the sale.",
       image: "/Custom Solution.png",
       pill: true,
     },
     {
-      title: "Dealer Hub Integration",
+      title: "Built-In Buyer Hub",
       description:
-        "We Build A Social Media Hub Into Your Website, Offering Unparalleled Engagement Opportunities.",
+        " A social-style Dealer Hub on your site — where users can save vehicles, ask questions, and come back ready to buy.",
       image: "/Integration.png",
       pill: true,
     },
     {
-      title: "Custom Web Design",
+      title: "Custom Design That Converts",
       description:
-        "From Content Creation To Advanced Functionality, We Ensure Your Site Is Both Stunning And Strategic.",
+        " Every page is tailored to your brand — with features that not only look good, but drive leads, calls, and bookings.",
       image: "/Support.png",
       pill: true,
     },
@@ -96,7 +96,7 @@ const WebDesignDigital = () => {
         How We Elevate Your Digital Presence
       </h2>
       <p className="text-[18px] text-[#555] mb-10">
-        At Komosu, We Help You Turn Online Interactions Into Real World Sales
+ At Komosu, we turn online attention into in-store action.
       </p>
 
       {/* Desktop Grid */}

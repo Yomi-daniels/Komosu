@@ -169,13 +169,13 @@ const Offer = () => {
             className={activeSection === "webDesign" ? styles.active : ""}
             onClick={() => handleSectionClick("webDesign")}
           >
-            Web Design
+           Sales Websites
           </li>
           <li
             className={activeSection === "aiSolutions" ? styles.active : ""}
             onClick={() => handleSectionClick("aiSolutions")}
           >
-            Dealers Hub
+            Engagement Hub
           </li>
           <li
             className={
@@ -183,13 +183,13 @@ const Offer = () => {
             }
             onClick={() => handleSectionClick("contentMarketing")}
           >
-            Content Solution
+            Content Engine
           </li>
           <li
             className={activeSection === "leadGeneration" ? styles.active : ""}
             onClick={() => handleSectionClick("leadGeneration")}
           >
-            Lead Generation
+           Lead System
           </li>
         </div>
 
@@ -212,11 +212,10 @@ const Offer = () => {
                         <Image src="/Vector (13).png" alt="offerImage" fill />
                       </div>
                     </div>
-                    <h5>WEB DESIGN</h5>
+                    <h5> SALES WEBSITES</h5>
                   </div>
                   <h1 className={styles.webDesignh1}>
-                    Drive your automotive company forward with innovative and
-                    stunning web design
+                    Turn your site into a full-time sales rep, not just a digital brochure.
                   </h1>
                   <Link href="/webdesign">
                     <button className={styles.WebDesignBtn}>See More</button>
@@ -229,8 +228,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Seamless Navigation – Intuitive layouts that keep
-                        visitors engaged and exploring.
+                        Easy Navigation – Designed to guide visitors to the vehicles they want.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -240,8 +238,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        SEO-Optimized – Designed to rank higher and drive
-                        organic traffic.
+                       Search-Ready – SEO baked in to bring more traffic with less ad spend.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -251,8 +248,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Future-Ready Features – AI chat, VR showrooms, and other
-                        cutting-edge integrations.
+                       Future-Proof Tech – AI chat, virtual showrooms, and tools built for 2025.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -262,8 +258,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        High-Conversion Structure – Built to turn visitors into
-                        leads and sales.
+                        Built to Convert – Layouts designed to turn views into test drives.
                       </p>
                     </div>
                     {/* <div className={styles.WebDesignFeaturesContent}>
@@ -320,11 +315,10 @@ const Offer = () => {
                         />
                       </div>
                     </div>
-                    <h5>DEALERS HUB</h5>
+                    <h5>ENGAGEMENT HUB</h5>
                   </div>
                   <h1 className={styles.webDesignh1}>
-                    Your Own Social Media Platform – Host and control content
-                    reducing third-party reliance.
+                 The heartbeat of your platform — where leads connect and communities grow.
                   </h1>
                   <Link href="/dealership_hub">
                     <button className={styles.WebDesignBtn}>See More</button>
@@ -337,8 +331,8 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Customer Engagement – Built-in messaging, comments, and
-                        interactive content.
+                      Your Own Platform – Host your content. Own your audience.
+
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -348,8 +342,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Lead Capture & Nurturing – Collect emails, build
-                        relationships, and drive conversions.
+                  Built-In Messaging – Answer questions in real time, right on your site.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -359,8 +352,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Integrated Sales Tools – Customers can browse inventory,
-                        apply for financing, and buy online.
+                       Capture + Nurture – Sign-ups become leads. Engagement builds trust.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -370,8 +362,19 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Data & Insights – Gain valuable customer behavior
-                        insights to improve marketing.
+                      Buy Online Ready – Inventory browsing, financing, and deals — all in one place.
+
+                      </p>
+                    </div>
+                     <div className={styles.WebDesignFeaturesContent}>
+                      <div className={styles.webFeaturesImgShadow}>
+                        <div className={styles.webFeaturesImg}>
+                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                        </div>
+                      </div>
+                      <p>
+                Real-Time Data – Understand buyer behavior and follow up smarter.
+
                       </p>
                     </div>
                     {/* <div className={styles.WebDesignFeaturesContent}>
@@ -427,11 +430,10 @@ const Offer = () => {
                         />
                       </div>
                     </div>
-                    <h5>CONTENT SOLUTION</h5>
+                    <h5> CONTENT ENGINE</h5>
                   </div>
                   <h1 className={styles.webDesignh1}>
-                    Premium Video Production – High-quality content for
-                    websites, ads, and social media.
+                   Content that sells, builds trust, and keeps your brand top-of-mind.
                   </h1>
                   {/* <Link href="/contentmarketing">
                     <button className={styles.WebDesignBtn}>See More</button>
@@ -444,8 +446,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Ad Creative That Converts – Engaging assets optimized
-                        for maximum ROI.
+                        Premium Video – Professional shoots made for websites, ads, and social.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -455,8 +456,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Consistent Brand Messaging – Professional storytelling
-                        that builds trust and loyalty.
+                     Ad Creative That Works – Designed for clicks, calls, and conversions.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -466,8 +466,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Organic Growth Strategy – Content designed to attract
-                        and retain customers.
+                        Consistent Voice – Storytelling that builds loyalty and brand equity.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -477,8 +476,17 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Seamless Dealer Hub Integration – Host and showcase
-                        content directly on your platform.
+                       Organic Growth Plan – Attract real interest with the right content strategy.
+                      </p>
+                    </div>
+                      <div className={styles.WebDesignFeaturesContent}>
+                      <div className={styles.webFeaturesImgShadow}>
+                        <div className={styles.webFeaturesImg}>
+                          <Image src="/Vector (6).png" alt="offerImage" fill />
+                        </div>
+                      </div>
+                      <p>
+                  Hub-Ready – All content lives on your platform — not lost in the feed.
                       </p>
                     </div>
                     {/* <div className={styles.WebDesignFeaturesContent}>
@@ -538,11 +546,10 @@ const Offer = () => {
                         />
                       </div>
                     </div>
-                    <h5>LEAD GENERATION</h5>
+                    <h5>LEAD SYSTEM</h5>
                   </div>
                   <h1 className={styles.webDesignh1}>
-                    Amplify your sales pipeline with effective lead generation
-                    strategies
+               Generate, qualify, and convert — with less spend and more accuracy.
                   </h1>
                   <Link href="/leadgeneration">
                     <button className={styles.WebDesignBtn}>See More</button>
@@ -555,9 +562,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Drive Traffic from Ad Platforms – Use targeted ad
-                        campaigns to send high-quality leads directly to your
-                        social media website.
+                        Ad-Driven Traffic – Send high-intent users straight to your platform.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -567,8 +572,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        High-Intent Lead Capture – Distinguish serious prospects
-                        through platform sign-ups and engagement.
+                       Smart Lead Capture – Platform sign-ups that show real buying signals.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -578,8 +582,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Community Building – Build a loyal community around your
-                        brand, nurturing leads through authentic interactions.
+                        Community-Led Growth – Warm leads through trust and interaction.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -589,8 +592,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Platform-Specific Insights – Track and analyze sign-ups
-                        to identify and prioritize high-intent leads.
+                      Insight-Powered Sales – See who's ready, and when.
                       </p>
                     </div>
                     <div className={styles.WebDesignFeaturesContent}>
@@ -600,8 +602,7 @@ const Offer = () => {
                         </div>
                       </div>
                       <p>
-                        Seamless Lead Nurturing – Automate personalized
-                        follow-ups to maintain engagement and boost conversions.
+                        Automated Follow-Up – Keep leads engaged with personal, timely responses.
                       </p>
                     </div>
                   </div>

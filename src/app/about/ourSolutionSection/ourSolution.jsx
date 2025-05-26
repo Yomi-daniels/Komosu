@@ -18,7 +18,7 @@ const OurSolutionSection = () => {
   };
 
   const solutionText =
-    "As we continue to grow and innovate, we invite you to join us on our journey toward a more efficient, digital-first automotive industry";
+    "Build a brand, grow your pipeline, and control your digital future — all in one place.";
 
   return (
     <section className={aboutstyles.OurSolutionSection} ref={solutionRef}>
@@ -28,7 +28,7 @@ const OurSolutionSection = () => {
         animate={isInView ? "visible" : "hidden"} // Animate when in view
         variants={sectionVariants}
       >
-        <h4>JOIN US ON OUR JOURNEY</h4>
+        <h4>DRIVE WITH KOMOSU</h4>
         <h2>
           <TextGenerateEffect words={isInView ? solutionText : ""} />{" "}
           {solutionText}

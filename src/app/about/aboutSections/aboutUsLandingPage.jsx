@@ -29,12 +29,12 @@ const AboutUsLandingPage = () => {
         <h2>
           {" "}
           {/* Attach the ref here */}
-          Get to know us{" "}
+         Get to Know {" "}
           <span className={`${aboutstyles.aboutUsSpan} ${"font-custom"}`}>
-            Better
+            Komosu
           </span>
         </h2>
-        <p>We give your business the push it needs</p>
+        <p>We help dealerships grow with real digital tools — not just buzzwords.</p>
       </div>
     </section>
   );

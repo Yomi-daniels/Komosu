@@ -6,8 +6,7 @@ const OfferAnimation = () => {
     <section className={styles.OfferAnimationSection}>
       <div className={styles.offerAnimHeaderContent}>
         <h2 className={styles.offerAnimHeaderh2}>
-          Drive your automotive company forward with innovative and stunning web
-          design
+        Fuel your dealership’s growth with a high-converting website that sells — even when your showroom’s closed
         </h2>
         <Link href="/request-demo">
           <button className={styles.OfferHeaderButton}>Book a Demo</button>
@@ -31,8 +30,7 @@ const OfferAnimation = () => {
               <h6 className={styles.offerH6}>PROMOTIONAL VIDEOS</h6>
             </div>
             <h3>
-              Capture attention with high-quality visuals and engaging content
-              that keeps viewers interested.
+              Grab attention fast with scroll-stopping visuals and content that keeps buyers engaged.
             </h3>
           </div>
           <div className={styles.offerAnimationFeatures}>
@@ -42,7 +40,7 @@ const OfferAnimation = () => {
                   <Image src="/Vector (6).png" alt="offerAnimImg" fill />
                 </div>
               </div>
-              <p>host your best content on your website</p>
+              <p>Stop sending traffic away — host your best content on your own platform, not someone else’s.</p>
             </div>
             <div className={styles.offerFeaturesContent}>
               <div className={styles.offerFeaturesImgShadow}>
@@ -50,7 +48,7 @@ const OfferAnimation = () => {
                   <Image src="/Vector (6).png" alt="offerAnimImg" fill />
                 </div>
               </div>
-              <p>Build a strong community that goes beyond transactions</p>
+              <p>Create a loyal audience, not just one-time buyers — build trust that keeps them coming back.</p>
             </div>
           </div>
           <div className={styles.OfferAnimationImageBoxContainer}>
@@ -77,8 +75,7 @@ const OfferAnimation = () => {
               </h6>
             </div>
             <h3>
-              Transform your business with data-driven insight. Harness your
-              social power with in-depth knowledge.
+             Your next sale is hiding in your data. We help you find it — and act on it.
             </h3>
           </div>
           <div className={styles.offerAnimationFeatures}>
@@ -89,8 +86,9 @@ const OfferAnimation = () => {
                 </div>
               </div>
               <p>
-                Use data-driven recommendations to support strategic business
-                decisions.
+                Make sharper decisions, backed by real numbers.
+See which models drive the most interest, what content brings buyers in, and how your site turns traffic into real leads.
+
               </p>
             </div>
             <div className={styles.offerFeaturesContent}>
@@ -100,8 +98,9 @@ const OfferAnimation = () => {
                 </div>
               </div>
               <p>
-                Understand who your customers are with detailed website
-                analytics.
+               Turn every sale into a long-term customer.
+With the right data, you know when to offer service reminders, extended warranties, or that perfect trade-in pitch.
+
               </p>
             </div>
           </div>

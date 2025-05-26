@@ -53,18 +53,16 @@ const LandingPage = () => {
           <div className={styles.HeroTextContainer}>
             <div className={styles.HeroText} ref={heroHeaderRef}>
               <h1 className={styles.heroHeader}>
-                Transform your{" "}
+                Your Website Should Sell{" "}
                 <span className={`${styles.heroSpan} ${shadowFont.className}`}>
-                  dealership
+                 Cars
                 </span>{" "}
-                with Komosu Network
+                Not Just Show Them
               </h1>
             </div>
             <div className={styles.HeaderContent} ref={heroSubTextRef}>
               <p className={styles.heroSubText}>
-                At Komosu Network, we are committed to revolutionizing the
-                automotive industry by digitizing processes typically done in
-                person.
+               Komosu turns dealership websites into digital sales reps that work around the clock.
               </p>
             </div>
             <div className={styles.landingBtns} ref={heroBtnRef}>

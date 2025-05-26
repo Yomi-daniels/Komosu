@@ -6,38 +6,38 @@ import { FaTools, FaNetworkWired, FaUserShield, FaCogs, FaHandshake, FaChartBar 
 
 const features = [
   {
-    title: "Custom Solutions",
-    description: "Our Designs Reflect Your Unique Brand Identity While Integrating Cutting-Edge Features.",
+    title: "Tailored for Your Dealership",
+    description: "We don’t do templates. Your platform reflects your brand — and it’s built to convert browsers into buyers.",
     image: "/Custom Solution.png",
     pill: true,
   },
   {
-    title: "Dealer Hub Integration",
-    description: "We Build A Social Media Hub Into Your Website, Offering Unparalleled Engagement Opportunities.",
+    title: "Turn Your Site Into a Social Engine",
+    description: "We embed a full engagement layer into your website — think likes, saves, comments, and sign-ups — all on your turf.",
     image: "/Integration.png",
     pill: true,
   },
   {
-    title: "Expert Support",
-    description: "From Content Creation To Advanced Functionality, We Ensure Your Site Is Both Stunning And Strategic.",
+    title: "Real Help. Real Strategy.",
+    description: "From launch to scale, we back you with hands-on guidance, content help, and proven playbooks that drive results.",
     image: "/Support.png",
     pill: true,
   },
   {
-    title: "All-In-One Solution",
-    description: "No Need For Multiple Tools — Manage Engagement, Leads, And Insights In One Place.",
+    title: "Everything in One Dashboard",
+    description: "Engagement, leads, insights — no more jumping between tools. It’s all built into your site and easy to manage.",
     image: "/Support.png",
     pillTop: true,
   },
   {
-    title: "Trust & Credibility",
-    description: "With Secure Platforms, Real-Time Support, And A Proven Track Record, We Help You Convert Clicks Into Customers.",
+    title: "Built to Earn Buyer Confidence",
+    description: "Secure, mobile-first, and optimized for trust — we help you look great and sell better.",
     image: "/Trust.png",
     pillTop: true,
   },
   {
-    title: "Data-Driven Growth",
-    description: "Leverage Real-Time Insights To Optimize Marketing & Sales.",
+    title: "See What Buyers Want — Then Act On It",
+    description: " Track behavior in real time, score leads automatically, and fine-tune offers based on what actually works.",
     image: "/Data.png",
     pillTop: true,
   },
@@ -52,7 +52,7 @@ const ContentMarketingServices = () => {
     gsap.utils.toArray(".feature-card").forEach((card) => {
       gsap.fromTo(
         card,
-        { opacity: 0, y: 50 }, // Initial state
+        { opacity: 0.5, y: 80 }, // Initial state
         {
           opacity: 1,
           y: 0,
@@ -60,7 +60,7 @@ const ContentMarketingServices = () => {
           scrollTrigger: {
             trigger: card,
             start: "top 80%", // Start when the element is 80% from the top of the viewport
-            end: "bottom 30%",
+            end: "bottom 50%",
             scrub: true, // Smooth animation tied to scroll position
           },
         }

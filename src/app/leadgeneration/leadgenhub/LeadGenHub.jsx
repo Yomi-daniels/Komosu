@@ -13,25 +13,21 @@ import Link from "next/link";
 const LeadGenHub = () => {
   const points = [
     {
-      title: "Targeted Digital Advertising",
+      title: "First-Party Data That Drives Smarter Follow-Ups",
       description:
-        "We help you run highly-focused campaigns on social platform that drives quality lead back to your dealership.",
+        " See which cars buyers look at, what content they engage with, and how often they come back. Your team follows up with the right message at the right time.",
     },
     {
-      title: "SEO-Optimized Landing Pages",
+      title: "Content That Captures Intent",
       description:
-        "We build custom websites that is optimized for search engines and designed to convert visitors into leads.",
+        "  From service walkarounds to new arrivals, every video and article builds trust and moves buyers closer to action. More time on site = warmer, higher-quality leads.",
     },
     {
-      title: "Real-Time Lead Capture Tools",
+      title: "Smarter Lead Scoring with Real Behavior",
       description:
-        "We use interactive chatbots, trade in calculators to capture leads.",
+        "Know which visitors are just browsing — and which are ready to book a test drive. No more guessing. Your BDC team works smarter, not harder.",
     },
-    {
-      title: "CRM Integration & Automated Follow-Ups",
-      description:
-        "Automated email and SMS sequences help turn interest into appointments and test drives.",
-    },
+ 
   ];
 
   const sectionRef = useRef(null);
@@ -93,9 +89,8 @@ const LeadGenHub = () => {
     >
       <div className="flex flex-col gap-6 items-center justify-center max-w-[736px] mx-auto max-md:px-[2rem] max-sm:px-[1rem] max-sm:max-w-[686px]">
         <h1 className="font-bold text-darkBlueText text-[40px] mx-auto text-center leading-[120%] tracking-[-4%] max-md:text-[32px] max-sm:text-[24px]">
-          Why should your{" "}
-          <span className="font-custom text-btn">Dealership</span> Needs a high
-          performing website?
+         With Komosu, your website becomes more than a landing page. It becomes a{" "}
+          <span className="font-custom text-btn">data-driven sales engine.</span> 
         </h1>
         <p className="tracking-[-2%] text-darkBlueText font-medium text-[18px] text-center max-sm:text-[16px]">
           A high-performing website that turns visitors into buyers.

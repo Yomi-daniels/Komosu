@@ -46,11 +46,9 @@ const Servicesflex = () => {
                 objectFit="cover"
               />
             </div>
-            <h5 className={styles.containerFlexh5}>Web Design</h5>
+            <h5 className={styles.containerFlexh5}>Sell Smarter</h5>
             <p className={styles.containerFlexp}>
-              Elevate your dealership with sleek, modern web design that
-              enhances user experience, builds trust, and showcases your
-              inventory to drive sales and engagement
+              Get a site that looks sharp and drives leads — 24/7, like your best BDC rep.
             </p>
           </div>
           {/* Service 2 */}
@@ -63,11 +61,9 @@ const Servicesflex = () => {
                 objectFit="cover"
               />
             </div>
-            <h5 className={styles.containerFlexh5}>Content</h5>
+            <h5 className={styles.containerFlexh5}>Content That Converts</h5>
             <p className={styles.containerFlexp}>
-              Create high-quality, authentic content that boosts customer
-              engagement, reduces reliance on ads, and strengthens your
-              dealership’s brand through unique storytelling
+             Skip the generic ads. Use videos and visuals that build trust and drive test drives.
             </p>
           </div>
         </div>
@@ -82,11 +78,9 @@ const Servicesflex = () => {
                 objectFit="cover"
               />
             </div>
-            <h5 className={styles.containerFlexh5}>Dealer Hub</h5>
+            <h5 className={styles.containerFlexh5}>Keep Buyers Close</h5>
             <p className={styles.containerFlexp}>
-              Revolutionize your dealership’s website with an integrated Dealer
-              Hub—a social media hub that retains customer attention and
-              nurtures leads directly on your site
+             Turn your site into a social hub — where customers follow, engage, and return.
             </p>
           </div>
           {/* Service 4 */}
@@ -99,11 +93,10 @@ const Servicesflex = () => {
                 objectFit="cover"
               />
             </div>
-            <h5 className={styles.containerFlexh5}>More Control</h5>
+            <h5 className={styles.containerFlexh5}>Own the Journey
+</h5>
             <p className={styles.containerFlexp}>
-              Gain autonomy with a platform that centralizes your content,
-              captures valuable data, and reduces dependency on third-party
-              tools for sustained, cost-effective growth.
+           No more middlemen. Control your content, capture real data, and grow on your terms.
             </p>
           </div>
         </div>

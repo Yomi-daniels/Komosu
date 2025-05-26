@@ -26,10 +26,10 @@ const DealerHubHeaderDesign = () => {
         <div className="p-6 rounded-[20px] shadow-md flex flex-col items-center text-center border-[4px] border-[#DAD9FF] w-[328px] h-[400px] overflow-hidden">
           <div className="flex flex-col items-start">
             <h2 className="text-[24px] font-bold mb-2 text-darkBlueText text-left ">
-              Leads To Customers
+               Leads to Buyers
             </h2>
             <p className="text-darkBlueText mb-4 text-[16px] leading-[150%] tracking-[2%] text-left font-regular">
-              We Turn Business Leads Into Paying Customers
+             Turn site traffic into serious car buyers with tools built to convert — not just collect.
             </p>
           </div> 
           <div className="flex items-center relative pb-3">
@@ -77,8 +77,9 @@ const DealerHubHeaderDesign = () => {
             alt="car features"
             className="w-full h-[390px] object-cover rounded-[12px]"
           />
-          <div className="absolute top-[-40px] right-[-70px] bg-[#E6E6FF]  rounded-[12px] shadow-md w-[239px] h-[134px] p-4">
-            <p className="text-blueText text-[40px] font-black max-w-[207px] h-[54px]">
+          <div className="absolute top-[-40px] right-[-70px] bg-[#E6E6FF]  rounded-[12px] shadow-md w-[239px] h-[134px] p-4 max-sm:right-[-20px]
+          max-sm:w-[180px] max-sm:h-[180px]">
+            <p className="text-blueText text-[40px] font-black max-w-[207px] h-[54px] max-sm:-[140px] max-sm:text-[30px]">
               30%
             </p>
             <p className="text-[18px] text-darkBlueText ">

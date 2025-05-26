@@ -43,22 +43,22 @@ const FAQ = () => {
     {
       question: "What is Komosu's mission?",
       answer:
-        "Komosu aims to revolutionize digital services by offering innovative and tailored solutions to businesses of all sizes.",
+        " To help dealerships turn their websites into digital sales machines — platforms that capture leads, build loyalty, and drive sales 24/7.",
     },
     {
       question: "How can I get started with Komosu?",
       answer:
-        "Getting started is easy! Just sign up on our website, choose a plan that suits your needs, and start exploring our services.",
+        " It starts with a quick call. We’ll review your current setup, show you what’s possible, and map out how to turn your site into a high-performing sales platform.",
     },
     {
       question: "What support does Komosu offer?",
       answer:
-        "Komosu provides 24/7 customer support, with dedicated teams available to help you with any issues or questions you may have.",
+        "From onboarding and custom builds to content creation and performance updates — we offer hands-on support at every step. Think of us as your digital pit crew.",
     },
     {
       question: "What makes Komosu different from other service providers?",
       answer:
-        "Komosu stands out by offering personalized services, advanced technology integration, and a customer-centric approach that ensures satisfaction.",
+        "We don’t just give you a nice-looking site. We build a full platform — with integrated content, lead capture tools, community features, and first-party data — tailored to how dealerships actually sell.",
     },
   ];
 

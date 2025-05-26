@@ -87,12 +87,13 @@ const Home = () => {
           <h2
             className={`${casestyles.thirdsectionheader} mt-6 text-[2.5rem] max-sm:text-[1.5rem] font-variable text-darkBlueText`}
           >
-            What Makes <span className="font-custom text-btn">komosu</span>{" "}
-            Different?
+           Built for <span className="font-custom text-btn">Dealers</span>{" "}
+            Backed by Strategy
           </h2>
           <p className={casestyles.solutionsParagraph}>
-            At Komosu Network, we don’t just design websites, <br /> we craft
-            digital experiences tailored to your dealership’s needs
+         Most websites sit there. Ours sell 
+We help your <br /> dealership stand out, connect better, and close faster.
+
           </p>
         </div>
         <ContentMarketingServices />

@@ -5,42 +5,42 @@ import Image from "next/image";
 const DealerHubDigital = () => {
   const elevationFeatures = [
     {
-      title: "Customer Data & Insights",
-      description: "Track visitor behavior and optimize marketing strategies.",
+      title: " Sell Smarter with Data",
+      description: "See what shoppers do on your site — use that info to close more deals, faster.",
       image: "/Custom Solution.png",
       pill: true,
     },
     {
-      title: "Long-Term Cost Efficiency",
+      title: "Spend Less on Ads",
       description:
-        "A high-converting website means less ad spend, more organic leads.",
+        "Get more leads without buying clicks. Your site does the heavy lifting.",
       image: "/Integration.png",
       pill: true,
     },
     {
-      title: "Future-Ready Features",
-      description: "Stay ahead with adaptable technology & cutting-edge tools.",
+      title: "Maximize Your Content ROI",
+      description: "Turn videos, photos, and reviews into lead-generating assets that boost time-on-site and drive buyer action.",
       image: "/Support.png",
       pill: true,
     },
     {
-      title: "Mobile Optimization",
+      title: "Own Your Leads",
       description:
-        "Your Website Will Look Amazing On Any Device, Boosting User Experience & SEO.",
+        "No middlemen. Customers interact directly with your platform — you keep the data.",
       image: "/All-in-one.png",
       pill: true,
     },
     {
-      title: "Conversion Tracking",
+      title: " More Leads, More Sales",
       description:
-        "We Help You Monitor Leads And Sales With Integrated Analytics & Goal Tracking.",
+        "Your site is built to turn visitors into buyers — test drives, finance apps, and more.",
       image: "/Data.png",
       pill: true,
     },
     {
-      title: "Digital Marketing Ready",
+      title: " Built to Grow with You",
       description:
-        "Built-In SEO & Marketing Tools To Help Drive Traffic From Day One.",
+        "As your dealership scales, your site adapts. You’re always ready for what’s next.",
       image: "/Trust.png",
       pill: true,
     },

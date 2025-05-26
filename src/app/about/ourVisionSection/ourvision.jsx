@@ -15,7 +15,7 @@ const OurvisionSection = () => {
   };
 
   const visionText =
-    "We’re on a mission to revolutionize how the auto industry thinks about marketing.";
+    "We’re here to change how dealerships grow online.";
 
   return (
     <section className={aboutstyles.OurvisionSection} ref={visionRef}>
@@ -35,11 +35,10 @@ const OurvisionSection = () => {
           animate={isInView ? "visible" : "hidden"}
           variants={sectionVariants}
         >
-          Our goal is to build a powerful internal engine that dealerships can
-          leverage and control—helping them engage customers, strengthen their
-          brand, and drive long-term growth. With our tailored web solutions, we
-          empower dealerships to create meaningful digital experiences that
-          foster trust, loyalty, and success.
+         Our goal is simple:
+ Give dealerships their own digital engine — built to attract, engage, and convert customers without relying on third parties.
+We help you build a brand, grow trust, and create real long-term value through a platform you own and control.
+
         </motion.p>
       </motion.div>
     </section>

@@ -46,12 +46,11 @@ const DealershipHubSection = () => {
     >
       <div className="flex flex-col gap-6 items-center justify-center max-w-[736px] mx-auto max-md:px-[2rem] max-sm:px-[1rem] max-sm:max-w-[686px]">
         <h1 className="font-bold text-darkBlueText text-[40px] mx-auto text-center leading-[120%] tracking-[-4%] max-md:text-[32px] max-sm:text-[24px]">
-          Why Having A <span className="font-custom text-btn">Dealership</span>{" "}
-          is right for your business
+          Why <span className="font-custom text-btn">Dealership</span>{" "}
+       Is Built for Your Dealership
         </h1>
         <p className="tracking-[-2%] text-darkBlueText font-medium text-[18px] text-center max-sm:text-[16px]">
-          DealerHub is your all-in-one platform to engage customers and build
-          trust.
+          DealerHub gives you the tools to turn your website into <br /> a sales and engagement machine.
         </p>
 
         <Link href="/contact-us">

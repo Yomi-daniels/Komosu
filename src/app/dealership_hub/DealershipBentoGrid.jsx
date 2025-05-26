@@ -36,11 +36,11 @@ const DealershipBentoGrid = () => {
       </div> 
       <div className='lg:w-[448px] md:w-full max-sm:w-full h-[350px] max-sm:h-full bg-[#F9F9F9]  rounded-[20px] flex flex-col items-center justify-center border border-[#CACACC] overflow-hidden'>
       <div className='flex flex-col items-start p-[32px] gap-[12px]'>
-        <h4 className='text-darkBlueText text-[24px] font-medium leading-[130%] tracking-[-0.48px]'>
+        <h4 className='text-darkBlueText text-[24px] font-medium leading-[130%] tracking-[-0.48px] mt-8'>
         Full Control Over Your Leads               
         </h4>
         <p className='text-[18px] font-regular leading-[150%] tracking-[0.36px] capitalize self-stretch text-darkBlueText'>
-        Customers sign up to comment and interact, giving you direct access to their emails and contact info.</p>
+  DealerHub captures first-party data from every interaction—no gatekeepers, no data loss—giving you full control to nurture leads and close faster.</p>
       </div>
       <div className='flex flex-wrap'>
         <Image src="/Image container.png" alt='image' width={172.912}  height={200} objectFit='cover'/>
@@ -66,7 +66,7 @@ const DealershipBentoGrid = () => {
         <h4 className='text-darkBlueText text-[24px] font-medium leading-[130%] tracking-[-0.48px]'>
         Frictionless Buying Experience        </h4>
         <p className='text-[18px] font-regular leading-[150%] tracking-[0.36px] capitalize self-stretch text-darkBlueText'>
-        Shoppers can message your team, apply for financing, and even purchase vehicles without leaving your site. </p>
+ letting shoppers chat, get pre-approved, and buy directly, without third-party detours.</p>
       </div>
       <div className='flex max-md:flex-wrap'>
         <div className='flex  relative w-[190px] h-[190px]'>
@@ -88,9 +88,9 @@ const DealershipBentoGrid = () => {
     
       <div className='flex flex-col items-start p-[32px] gap-[12px] mt-10'>
         <h4 className='text-darkBlueText text-[24px] font-medium leading-[130%] tracking-[-0.48px] '>
-        More Visibility, Less Reliance on Third Parties </h4>
+    More Visibility. Higher ROI. </h4>
         <p className='text-[18px] font-regular leading-[150%] tracking-[0.36px] capitalize self-stretch text-darkBlueText'>
-        Stop paying per lead on Cars.com or AutoTrader. Drive traffic to your own network and build customer relationships.
+DealerHub drives traffic straight to your platform — so you own the customer journey from first click to final sale. Capture first-party data, reduce acquisition costs, and turn engagement into real revenue.
          </p>
       </div>
 

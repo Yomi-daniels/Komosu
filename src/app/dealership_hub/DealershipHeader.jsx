@@ -16,17 +16,16 @@ const DealershipHeader = () => {
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
       <div className="w-full max-w-[928px] min-h-[338px] text-center flex flex-col justify-center items-center gap-6 z-10 relative px-4 mx-auto">
-        <h1 className="text-[64px] font-bold text-black leading-[120%] tracking-[-4%] ">
+        <h1 className="text-[64px] font-bold text-black leading-[120%] tracking-[-4%] max-sm:text-[56px] ">
           <TextGenerateEffect
             words={message}
             messageClass="font-bold leading-[120%] tracking-[-4%]
-        text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px]
-        max-w-full mx-auto"
+        text-[64px]\ md:text-[52px] 
+        max-w-full mx-auto max-sm:text-[36px]"
           />
         </h1>
         <p className="max-w-[733px] font-medium text-darkBlueText text-[14px] sm:text-[16px] md:text-[18px] text-center md:w-[50ch] ">
-          Your all-in-one Platform to provide your potential clients all the
-          information they need to get their dream car
+        Your all-in-one Platform to provide your potential clients all the information they need to get their dream car
         </p>
         <Link href="/request-demo">
           <button className={styles.headerGetStarted}>Get Started</button>

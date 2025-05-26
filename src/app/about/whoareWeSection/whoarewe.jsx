@@ -72,7 +72,7 @@ const WhoareweSection = () => {
     };
   }, []);
 
-  const words = `Innovating the Auto Industry, One Dealership at a Time.`;
+  const words = `Digital partners for the modern dealership.`;
 
   return (
     <section className={aboutstyles.Whoarewesection}>
@@ -82,11 +82,9 @@ const WhoareweSection = () => {
           <TextGenerateEffect words={words} />
         </h2>
         <p ref={whoAreWeHeaderP}>
-          At Komosu, we don’t just follow industry trends—we create
-          opportunities for dealerships to thrive in the digital space. Our team
-          of passionate experts is committed to building lasting relationships,
-          understanding each dealership’s unique needs, and providing ongoing
-          support to help them focus on what matters most.
+          At Komosu, we go beyond basic websites and generic solutions. We build dealership platforms designed to bring in better leads, increase retention, and give your team the digital edge it needs.We work closely with each store — franchise, luxury, or EV — to understand how you sell, what your goals are, and how to turn your site into a sales engine that runs 24/7.
+No fluff. Just real strategies that move metal.
+
         </p>
       </div>
       <div

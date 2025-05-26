@@ -19,24 +19,24 @@ import { title } from "@/utils/siteMetaData";
 const WebdesignHub = () => {
   const points = [
     {
-      title: "Instill Trust & Credibility",
+      title: "Build Instant Trust",
       description:
-        "We provide you with a polished, professional design that signals reliability.",
+        " A clean, modern site gives customers confidence they’re dealing with a professional, reliable dealership.",
     },
     {
-      title: "Increase Conversion",
+      title: "Drive More Conversions",
       description:
-        "We guide visitors to schedule test drives, apply for financing, and contact sales reps with ease.",
+        " Make it easy for buyers to book test drives, apply for financing, and contact your team — right from your homepage.",
     },
     {
-      title: "Stand Out From Competitors",
+      title: "Leave Competitors Behind",
       description:
-        "We custom-built Dealer Hub offers features no standard template can match.",
+        " With your own Dealer Hub, you’ll offer features no cookie-cutter website can match — like buyer interaction, saved listings, and in-site messaging.",
     },
     {
-      title: "Future Proof Your Brand",
+      title: "Stay Ahead of the Curve",
       description:
-        "Adapt to emerging trends like VR showrooms & AI chat tools.",
+        " Your site will be ready for what’s next — with tools like VR showrooms, AI chat, and customer behavior tracking built in.",
     },
   ];
 
@@ -99,11 +99,11 @@ const WebdesignHub = () => {
     >
       <div className="flex flex-col gap-6 items-center justify-center max-w-[736px] mx-auto max-md:px-[2rem] max-sm:px-[1rem] max-sm:max-w-[686px]">
         <h1 className="font-bold text-darkBlueText text-[40px] mx-auto text-center leading-[120%] tracking-[-4%] max-md:text-[32px] max-sm:text-[24px]">
-          Why your <span className="font-custom text-btn">Dealership</span>{" "}
-          Needs a high performing website Different?
+          Upgrade to a Website That  <span className="font-custom text-btn">Sells</span>{" "}
+        
         </h1>
         <p className="tracking-[-2%] text-darkBlueText font-medium text-[18px] text-center max-sm:text-[16px]">
-          A high-performing website that turns visitors into buyers.
+        Turn traffic into test drives with a platform built to convert.
         </p>
 
         <Link href="/contact-us">

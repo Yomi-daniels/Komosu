@@ -96,8 +96,7 @@ const Services = () => {
       <div className={styles.ServicesTextContainer}>
         <div className={styles.servicesHeader}>
           <h2>
-            Komosu Network is a dynamic agency specializing in next-generation digital
-            solutions tailored for automotive dealerships
+           Komosu Network builds dealership<br /> websites  that actually move metal. 
           </h2>
         </div>
       </div>
@@ -106,13 +105,13 @@ const Services = () => {
       <div className="absolute left-0 top-0 space-y-6 md:block hidden">
         <div
           ref={(el) => (leftButtonsRef.current[0] = el)}
-          className="bg-gray-100 px-4 py-2 rounded-full shadow-lg absolute top-[-1em] left-[-8em] rotate-[-8deg] font-medium"
+          className="bg-gray-100 px-4 py-2 rounded-full w-[130px] h-22 shadow-lg absolute top-[-1em] left-[1em] rotate-[-8deg] font-medium"
         >
           Web Design
         </div>
         <div
           ref={(el) => (leftButtonsRef.current[1] = el)}
-          className="bg-gray-100 px-6 w-[150px] py-2 rounded-full shadow-lg absolute bottom-[-10em] left-[-8em] rotate-[-8deg] font-medium"
+          className="bg-gray-100 px-6 w-[150px] py-2 rounded-full shadow-lg absolute bottom-[-10em] left-[-1em] rotate-[-8deg] font-medium"
         >
           More Control
         </div>
@@ -122,13 +121,13 @@ const Services = () => {
       <div className="absolute right-2 top-20 space-y-6 md:block hidden">
         <div
           ref={(el) => (rightButtonsRef.current[0] = el)}
-          className="bg-gray-100 px-4 py-2 rounded-full shadow-lg absolute top-[-7em] right-[-8em] rotate-[8deg] font-medium"
+          className="bg-gray-100 px-4 py-2 rounded-full shadow-lg absolute top-[-7em] right-[3em] rotate-[8deg] font-medium"
         >
           Content
         </div>
         <div
           ref={(el) => (rightButtonsRef.current[1] = el)}
-          className="bg-gray-100 px-4 py-2 rounded-full shadow-lg absolute bottom-[-6em] right-[-8em] rotate-[8deg] font-medium"
+          className="bg-gray-100 px-4 py-2 rounded-full shadow-lg absolute bottom-[-4em] right-[1em] w-[130px] rotate-[8deg] font-medium"
         >
           Dealer Hub
         </div>

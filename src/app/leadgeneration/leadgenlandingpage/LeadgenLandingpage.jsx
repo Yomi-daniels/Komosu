@@ -51,7 +51,7 @@ const LeadgenLandingpage = () => {
 
   return (
     <section
-      className={`${leadStyles.LeadingGenSection} dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] overflow-x-hidden flex flex-col mt-[3rem] max-sm:mt-[1rem] relative`}
+      className={`${leadStyles.LeadingGenSection} dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] overflow-x-hidden flex flex-col mt-[3rem] relative max-sm:w-[386px] max-sm:mt-[5rem] `}
       style={{
         position: "relative", // Ensure parent is positioned correctly
       }}
@@ -61,18 +61,16 @@ const LeadgenLandingpage = () => {
       <div className="w-[1236px] min-h-[338px] text-center flex flex-col justify-center items-center gap-6 z-10 relative mb-8 px-4 ">
         <h1
           ref={headingRef}
-          className="w-full capitalize text-center font-bold leading-[120%] tracking-[-2.56px] text-[32px] sm:text-[40px] md:text-[56px] lg:text-[64px] mx-auto"
+          className="w-full capitalize text-center font-bold leading-[120%] tracking-[-2.56px] text-[32px] max-sm:text-[40px] md:text-[56px] lg:text-[64px] mx-auto max-sm:w-[13ch] max-sm:px-6"
         >
-          Drive more leads and grow your <br /> dealership with our expert solutions
+      Lead Generation That Works Harder
         </h1>
 
         <p
           ref={paragraphRef}
           className="max-w-[733px] font-medium text-darkBlueText text-[14px] sm:text-[16px] md:text-[18px] text-center md:w-[60ch]"
         >
-          Your website is the digital storefront of your dealership. A sleek,
-          modern, and user-friendly design isn’t just about aesthetics—it’s
-          about building trust, engaging customers, and driving sales.
+         Turn site traffic into real buyers — not just cold leads.
         </p>
 
         <Link href="/request-demo">

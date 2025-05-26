@@ -60,9 +60,9 @@ const WebDesignLandingpage = () => {
           ref={paragraphRef}
           className="max-w-[733px] font-medium text-darkBlueText text-[14px] sm:text-[16px] md:text-[18px] text-center md:w-[60ch]"
         >
-          Your website is the digital storefront of your dealership. A sleek,
-          modern, and user-friendly design isn’t just about aesthetics—it’s
-          about building trust, engaging customers, and driving sales.
+Your website is your first showroom.
+It should build trust, keep buyers engaged, and guide them straight to a sale — all before they ever call or walk in.
+
         </p>
 
         {/* Button with animation */}

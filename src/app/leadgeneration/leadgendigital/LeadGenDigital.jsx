@@ -5,23 +5,23 @@ import Image from "next/image";
 const LeadGenDigital = () => {
   const elevationFeatures = [
     {
-      title: "Seamless Navigation",
+      title: "Build Lasting Buyer Relationships",
       description:
-        "Our Designs Reflect Your Unique Brand Identity While Integrating Cutting-Edge Features.",
+        "You build long-term buyer relationships, not one-off leads.",
       image: "/Custom Solution.png",
       pill: true,
     },
     {
-      title: "Dealer Hub Integration",
+      title: "Close Deals Faster with Better Insights",
       description:
-        "We Build A Social Media Hub Into Your Website, Offering Unparalleled Engagement Opportunities.",
+        "Your sales team has the info they need to close faster.",
       image: "/Integration.png",
       pill: true,
     },
     {
-      title: "Custom Web Design",
+      title: "Own Your Audience and Data",
       description:
-        "From Content Creation To Advanced Functionality, We Ensure Your Site Is Both Stunning And Strategic.",
+        "You own your audience and their data — no middlemen",
       image: "/Support.png",
       pill: true,
     },
@@ -93,7 +93,7 @@ const LeadGenDigital = () => {
   return (
     <section className="py-12 px-4 max-w-6xl mx-auto text-center relative h-full w-full">
       <h2 className="text-[28px] md:text-[32px] font-bold text-[#1A1A1A] mb-2">
-        How We Elevate Your Digital Presence
+       What This Means for Your Dealership
       </h2>
       <p className="text-[18px] text-[#555] mb-10">
         At Komosu, We Help You Turn Online Interactions Into Real World Sales
