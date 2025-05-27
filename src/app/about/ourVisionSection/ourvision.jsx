@@ -35,7 +35,7 @@ const OurvisionSection = () => {
           animate={isInView ? "visible" : "hidden"}
           variants={sectionVariants}
         >
-         Our goal is simple:
+         <span className="font-bold">Our goal is simple:</span>
  Give dealerships their own digital engine — built to attract, engage, and convert customers without relying on third parties.
 We help you build a brand, grow trust, and create real long-term value through a platform you own and control.
 
