@@ -30,8 +30,8 @@ const OurSolutionSection = () => {
       >
         <h4>DRIVE WITH KOMOSU</h4>
         <h2>
-          <TextGenerateEffect words={isInView ? solutionText : ""} />{" "}
-          {solutionText}
+          <TextGenerateEffect words={solutionText} />{" "}
+        
         </h2>
         <motion.p
           initial="hidden"
