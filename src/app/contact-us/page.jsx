@@ -1,5 +1,5 @@
 "use client";
-import ContactForm from "../components/contactForm/contactForm";
+import ContactForm from "../components/contactForm/contactFormSql";
 import { supabase } from "../../lib/supabaseClient.js";
 import styles from "./contact.module.css";
 import { Shadows_Into_Light } from "next/font/google";
