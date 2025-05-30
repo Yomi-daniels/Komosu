@@ -42,25 +42,27 @@ const WebDesign = () => {
 
       {/* Vehicle Collection Section */}
       <div className="p-6 relative flex flex-col items-center mx-auto">
-        {/* Category Filter Buttons */}
-        <div className="flex flex-wrap gap-3 mb-6">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => {
-                setSelectedCategory(cat);
-                setShowAll(false); // reset showAll when category changes
-              }}
-              className={`px-4 py-2 rounded-full border-darkBlueText text-sm font-medium transition-all duration-200 ${
-                selectedCategory === cat
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-blue-100'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
+      <div className="w-full overflow-x-auto mb-6 scrollbar-hide">
+  <div className="flex flex-nowrap gap-3 px-2">
+    {categories.map((cat) => (
+      <button
+        key={cat}
+        onClick={() => {
+          setSelectedCategory(cat);
+          setShowAll(false); // reset showAll when category changes
+        }}
+        className={`flex-shrink-0 px-4 py-2 rounded-full border-darkBlueText text-sm font-medium transition-all duration-200 ${
+          selectedCategory === cat
+            ? 'bg-blue-600 text-white'
+            : 'bg-gray-100 text-gray-700 hover:bg-blue-100'
+        }`}
+      >
+        {cat}
+      </button>
+    ))}
+  </div>
+</div>
+
 
         {/* Vehicle Grid */}
         <div className="flex flex-wrap gap-6 justify-center items-center mx-auto max-w-[1200px]">
