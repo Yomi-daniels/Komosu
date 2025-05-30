@@ -41,9 +41,9 @@ const WebDesign = () => {
       <WebDesignDigital />
 
       {/* Vehicle Collection Section */}
-      <div className="p-6 relative flex flex-col items-center mx-auto">
-      <div className="w-[1100px] overflow-x-auto mx-auto  mb-6 scrollbar-hide">
-  <div className="flex flex-nowrap gap-3 px-2">
+      <div className="p-6 relative flex flex-col items-center mx-auto ">
+      <div className="w-full overflow-x-auto mx-auto  mb-6 scrollbar-hide  ">
+  <div className="flex flex-nowrap gap-3 px-2 mx-auto justify-start ml-52 max-sm:ml-0 max-md:ml-0">
     {categories.map((cat) => (
       <button
         key={cat}
@@ -53,7 +53,7 @@ const WebDesign = () => {
         }}
         className={`flex-shrink-0 px-4 py-2 rounded-full border border-darkBlueText text-sm font-medium transition-all duration-200 ${
           selectedCategory === cat
-            ? 'bg-darkBlueText text-white '
+            ? 'bg-darkBlueText text-white'
             : 'bg-gray-100 text-gray-700 hover:bg-blue-100'
         }`}
       >
