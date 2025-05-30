@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
+
 const WebDesignDigital = () => {
   const elevationFeatures = [
     {
@@ -201,14 +202,15 @@ const WebDesignDigital = () => {
           </button>
         </div>
       </div>
-      <div className="mt-[5rem] relative ">
+      {/* <div className="mt-[5rem] relative ">
         <Image
           src="/MF Product Image2 1.png"
           alt="different cars image"
           width={1512}
           height={925}
         />
-      </div>
+       
+      </div> */}
     </section>
   );
 };
