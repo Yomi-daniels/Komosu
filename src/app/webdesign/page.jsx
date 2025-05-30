@@ -51,9 +51,9 @@ const WebDesign = () => {
           setSelectedCategory(cat);
           setShowAll(false); // reset showAll when category changes
         }}
-        className={`flex-shrink-0 px-4 py-2 rounded-full border-darkBlueText text-sm font-medium transition-all duration-200 ${
+        className={`flex-shrink-0 px-4 py-2 rounded-full border border-darkBlueText text-sm font-medium transition-all duration-200 ${
           selectedCategory === cat
-            ? 'bg-blue-600 text-white'
+            ? 'bg-darkBlueText text-white '
             : 'bg-gray-100 text-gray-700 hover:bg-blue-100'
         }`}
       >
