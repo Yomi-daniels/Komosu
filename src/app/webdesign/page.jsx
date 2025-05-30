@@ -123,7 +123,7 @@ const WebDesign = () => {
 
               {/* Features List with animation */}
               <div
-                className={`transition-all min-h-[70%] duration-500 ease-in-out overflow-hidden absolute left-0 bottom-0 w-full bg-white text-sm text-gray-600 px-4 ${
+                className={`transition-all min-h-[300px] duration-[1s] ease-in-out overflow-hidden absolute left-0 bottom-0 w-full bg-white text-sm text-gray-600 px-4 border-[#D7D7D7] z-20 border-t-0 border-b border-l border-r border-[1px] rounded-lg ${
                   openIndex === i ? 'max-h-40 opacity-100 py-4' : 'max-h-0 opacity-0 py-0'
                 }`}
                 style={{ zIndex: 10 }}
