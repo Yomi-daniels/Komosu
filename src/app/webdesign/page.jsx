@@ -42,7 +42,7 @@ const WebDesign = () => {
 
       {/* Vehicle Collection Section */}
       <div className="p-6 relative flex flex-col items-center mx-auto">
-      <div className="w-full overflow-x-auto mb-6 scrollbar-hide">
+      <div className="w-[1100px] overflow-x-auto mx-auto  mb-6 scrollbar-hide">
   <div className="flex flex-nowrap gap-3 px-2">
     {categories.map((cat) => (
       <button
