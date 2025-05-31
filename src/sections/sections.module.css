@@ -254,6 +254,7 @@
   font-family: var(--text-Font-Bold);
   width: 928px;
   text-align: center;
+ 
 }
 
 .heroSpan {
@@ -265,15 +266,25 @@
   font-family: "Shadows Into Light", cursive;
 }
 
-@media (min-width: 1628px) {
+@media (max-width: 1280px) {
   /* .herobg {
     height: 100vh;
+    .
   } */
+   .heroHeader{
+    /* border: 2px solid red; */
+    font-size: 5rem !important;
+    margin-top: -3rem;
+   }
+ .heroImgBg{
+  margin-top: -2.5rem;
+ }
 }
 
 @media (max-width: 1039px) {
   .heroHeader {
     width: 600px;
+    ;
   }
 }
 

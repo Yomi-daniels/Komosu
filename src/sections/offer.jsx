@@ -309,7 +309,7 @@ const Offer = () => {
                     <div className={styles.webHeaderImgBg}>
                       <div className={styles.webHeaderImg}>
                         <Image
-                          src="/dealerHubCarIcon.png"
+                          src="/vector Ai big.png"
                           alt="offerImage"
                           fill
                         />
@@ -399,7 +399,7 @@ const Offer = () => {
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
                   >
-                    <Image src="/webdevimg (2).png" fill objectFit="contain" />
+                    <Image src="/Frame 1618868493.png" fill objectFit="contain" />
                   </div>
                 </motion.div>
               </div>
