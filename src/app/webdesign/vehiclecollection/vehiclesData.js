@@ -24,28 +24,31 @@ const vehicles = [
 
   },
   {
-    title: "Maxi Pickup Truck",
-    price: 23650,
-    image: "/vehicles/trucks/greenTruck.png",
-    hp: 450,
-    drive: "4WD",
-    color: "Neon Green",
-    colorCode: "#39FF14",
-    category: "Trucks",
-    description: "2023 Adventure Model - Designed for performance and rugged conditions.",
-    features:{
-  horsepower: 450,
-    seats: "Premium Leather Seats",
-    exhaust: "Dual Exhaust",
-    launchControl: "Launch Control",
-    carbonFiber: "Carbon Fiber Accents",
-    headlights: "LED Headlights",
-    trim: "Off-Road Trim",
-    towingPackage: "Towing Package",
-    range: " 420mi ",
-    driveType: "Full-time 4WD",
-    }
+    title: "Mitsubishi Xpander",
+    price: 30000,
+    image: "/vehicles/suvs/grayMitsubishiXpander.png",
+    hp: 400,
+    drive: "AWD",
+    color: "Grey",
+    colorCode: "#808080",
+    category: "SUVs",
+    description: "Dynamic design - Engineered for comfort and adaptability.",
+    features: 
+      {
+        horsepower: 400,
+        seats: "Premium Leather Seats",
+        exhaust: "Dual Exhaust",
+        launchControl: "Launch Control",
+        carbonFiber: "Carbon Fiber Accents",
+        headlights: "LED Headlights",
+        trim: "Adventure Trim",
+        towingPackage: "Towing Package",
+        range: "Est. range: 360 miles",
+        driveType: "Full-time AWD"
+      }
+    
   },
+
   {
     title: "Maxi Pickup Truck",
     price: 23650,
@@ -218,31 +221,7 @@ const vehicles = [
       }
     
   },
-  {
-    title: "Mitsubishi Xpander",
-    price: 30000,
-    image: "/vehicles/suvs/grayMitsubishiXpander.png",
-    hp: 400,
-    drive: "AWD",
-    color: "Grey",
-    colorCode: "#808080",
-    category: "SUVs",
-    description: "Dynamic design - Engineered for comfort and adaptability.",
-    features: 
-      {
-        horsepower: 400,
-        seats: "Premium Leather Seats",
-        exhaust: "Dual Exhaust",
-        launchControl: "Launch Control",
-        carbonFiber: "Carbon Fiber Accents",
-        headlights: "LED Headlights",
-        trim: "Adventure Trim",
-        towingPackage: "Towing Package",
-        range: "Est. range: 360 miles",
-        driveType: "Full-time AWD"
-      }
-    
-  },
+  
   {
     title: "Hyundai",
     price: 30000,
@@ -293,6 +272,29 @@ const vehicles = [
   }
     
     
+  },
+    {
+    title: "Maxi Pickup Truck",
+    price: 23650,
+    image: "/vehicles/trucks/greenTruck.png",
+    hp: 450,
+    drive: "4WD",
+    color: "Neon Green",
+    colorCode: "#39FF14",
+    category: "Trucks",
+    description: "2023 Adventure Model - Designed for performance and rugged conditions.",
+    features:{
+  horsepower: 450,
+    seats: "Premium Leather Seats",
+    exhaust: "Dual Exhaust",
+    launchControl: "Launch Control",
+    carbonFiber: "Carbon Fiber Accents",
+    headlights: "LED Headlights",
+    trim: "Off-Road Trim",
+    towingPackage: "Towing Package",
+    range: " 420mi ",
+    driveType: "Full-time 4WD",
+    }
   },
   {
     title: "Audi TT",

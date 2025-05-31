@@ -42,15 +42,15 @@ const WebDesignLandingpage = () => {
 
   return (
     <section
-      className={`${webstyle.webdesignLandingPage} dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] overflow-x-hidden flex flex-col mt-[3rem]`}
+      className={`${webstyle.webdesignLandingPage} dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] overflow-x-hidden flex flex-col mt-[1rem]`}
     >
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
-      <div className="max-w-[928px] min-h-[338px] text-center flex flex-col justify-center items-center gap-6 z-10 px-4">
+      <div className="max-w-[928px] min-h-[338px] text-center flex flex-col justify-center items-center gap-6 z-10 px-4 max-sm:mt-[3rem]">
         {/* Heading with animation */}
         <h1
           ref={headingRef}
-          className="w-full font-bold leading-tight tracking-tight text-[32px] sm:text-[40px] md:text-[56px] lg:text-[64px] max-w-[928px] mx-auto"
+          className="w-full font-bold leading-tight tracking-tight text-[32px] max-sm:text-[36px] md:text-[56px] lg:text-[64px] max-w-[928px] mx-auto"
         >
           {message}
         </h1>
@@ -60,8 +60,8 @@ const WebDesignLandingpage = () => {
           ref={paragraphRef}
           className="max-w-[733px] font-medium text-darkBlueText text-[14px] sm:text-[16px] md:text-[18px] text-center md:w-[60ch]"
         >
-Your website is your first showroom.
-It should build trust, keep buyers engaged, and guide them straight to a sale — all before they ever call or walk in.
+            Your website is your first showroom.
+              It should build trust, keep buyers engaged, and guide them straight to a sale all before they ever call or walk in.
 
         </p>
 

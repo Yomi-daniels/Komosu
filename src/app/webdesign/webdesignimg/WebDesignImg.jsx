@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WebDesignImg = () => {
   return (
-    <div className="flex flex-col mx-auto items-center justify-center md:px-[1.5rem] sm:px-[1rem] max-sm:px-[1rem] ">
+    <div className="flex flex-col mx-auto items-center justify-center md:px-[1.5rem] sm:px-[1rem] max-sm:px-[1rem] max-sm:mt-[2rem] ">
       <Image
         src="/MAYF Hero section 1.png"
         alt="webdesignImage"

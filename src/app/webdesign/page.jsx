@@ -65,7 +65,7 @@ const WebDesign = () => {
 
 
         {/* Vehicle Grid */}
-        <div className="flex flex-wrap gap-6 justify-center items-center mx-auto max-w-[1200px]">
+        <div className="flex flex-wrap gap-6 justify-center items-center mx-auto max-w-[1200px] max-sm:w-full">
           {vehiclesToShow.map((vehicle, i) => (
             <div
               key={i}
