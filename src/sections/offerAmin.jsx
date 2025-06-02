@@ -27,7 +27,7 @@ const OfferAnimation = () => {
               <div className={styles.OfferAnimationContainerContentSmallImage}>
                 <Image src="/Vector (5).png" alt="offerAnimImg" fill />
               </div>
-              <h6 className={styles.offerH6}>PROMOTIONAL VIDEOS</h6>
+              <h6 className={`${styles.offerH6} ${"font-bold"}`}>PROMOTIONAL VIDEOS</h6>
             </div>
             <h3>
               Grab attention fast with scroll-stopping visuals and content that keeps buyers engaged.
@@ -70,7 +70,7 @@ const OfferAnimation = () => {
               <div className={styles.OfferAnimationContainerContentSmallImage}>
                 <Image src="/Vector (7).png" alt="offerAnimImg" fill />
               </div>
-              <h6 className={`${styles.businessAnalytics} ${"font-black"}`}>
+              <h6 className={`${styles.businessAnalytics} ${"font-bold"}`}>
                 BUSINESS ANALYTICS
               </h6>
             </div>

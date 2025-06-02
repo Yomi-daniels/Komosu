@@ -215,7 +215,7 @@ const Offer = () => {
                     <h5> SALES WEBSITES</h5>
                   </div>
                   <h1 className={styles.webDesignh1}>
-                    Turn your site into a full-time sales rep, not just a digital brochure.
+                    Turn your site into a full-time sales rep, <br /> not just a digital brochure.
                   </h1>
                   <Link href="/webdesign">
                     <button className={styles.WebDesignBtn}>See More</button>
@@ -272,19 +272,20 @@ const Offer = () => {
                   </div>
                 </motion.div>
                 <motion.div
-                  className={`${styles.webDesignCardContainer} ${styles.webDesignCardContainer1}`}
+                  className=" w-[700px] h-[700px] relative max-sm:w-[500px]"
                   initial="hidden"
                   animate="visible"
                   variants={cardVariants1}
                   ref={cardRef}
                 >
                   <div
-                    className={`${styles.webDesignCard} ${styles.webDesignCardfirst}`}
+                    className="absolute top-[-25%] right-0 w-full h-full max-sm:right-[-14%]"
                   >
                     <Image
                       src="/Frame 1618868652.png"
                       fill
                       objectFit="contain"
+                      
                     />
                   </div>
                 </motion.div>
@@ -618,9 +619,9 @@ const Offer = () => {
                   >
                     <Image src="/Frame 1618868694.png" fill objectFit="cover" />
                     <Image
-                      src="/Frame 1618868694.png"
+                      src="/Frame 1618868652.png"
                       fill
-                      objectFit="contain"
+                      objectFit="cover"
                     />
                   </div>
                 </motion.div>

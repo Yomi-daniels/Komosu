@@ -1084,10 +1084,11 @@
 }
 
 .webDesignCardfirst {
-  width: 700px;
-  height: 579.555px;
+  width: 900px;
+  height: 779.555px;
   position: relative;
   margin-left: 3.5rem;
+  border: 2px solid red;
 }
 
 .webDesignCardfirst img {
@@ -1474,6 +1475,12 @@
     max-width: 90vw;
   }
 
+  .webDesignCardfirst{
+    width: 700px;
+    height: 579.555px;
+    position: relative;
+  }
+
   /* 
   .WebDesignFeaturesContent {
     align-items: center;
@@ -1815,7 +1822,7 @@
 .OfferAnimationContainerContentHeader .offerH6 {
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 28.08px; /* 156% */
   letter-spacing: 2px;
   text-transform: uppercase;

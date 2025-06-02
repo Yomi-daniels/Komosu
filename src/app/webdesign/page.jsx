@@ -71,7 +71,7 @@ const WebDesign = () => {
       {/* Vehicle Collection Section */}
       <div className="p-6 relative flex flex-col items-center mx-auto ">
         <div className="w-full overflow-x-auto mx-auto mb-6 scrollbar-hide ">
-          <div className="flex flex-nowrap gap-3 px-2 mx-auto justify-center  max-sm:ml-0 max-md:ml-0">
+          <div className="flex flex-nowrap gap-3 px-2 mx-auto justify-center max-sm:ml-0 max-md:ml-0 max-sm:justify-start">
             {categories.map((cat) => (
               <button
                 key={cat}
