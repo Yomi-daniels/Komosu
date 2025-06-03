@@ -157,7 +157,7 @@ const Offer = () => {
       <h2 className={styles.offerHeader} ref={offerheaderRef}>
         What We Offer Our{" "}
         <span
-          className={`${styles.offerSpan} ${shadowFont.className} ${"font-custom text-xl max-sm:-[18px]"}`}
+          className="font-custom text-[40px] max-sm:-[18px] text-accentDark italic leading-[120%] tracking-[1.8px]"
         >
           {" "}
           Clients
@@ -272,19 +272,20 @@ const Offer = () => {
                   </div>
                 </motion.div>
                 <motion.div
-                  className=" w-[700px] h-[700px] relative max-sm:w-[500px]"
+                  className=" w-[800px] h-[800px] relative max-sm:w-[500px]"
                   initial="hidden"
                   animate="visible"
                   variants={cardVariants1}
                   ref={cardRef}
                 >
                   <div
-                    className="absolute top-[-25%] right-0 w-full h-full max-sm:right-[-14%]"
+                    className="absolute top-[-25%] right-[-25%] w-full h-full max-sm:right-[-14%] "
                   >
                     <Image
                       src="/Frame 1618868652.png"
                       fill
                       objectFit="contain"
+                      alt="image"
                       
                     />
                   </div>
@@ -516,6 +517,7 @@ const Offer = () => {
                       src="/content marketing girl.png"
                       fill
                       objectFit="contain"
+                        alt="image"
                     />
                   </div>
                 </motion.div>
@@ -617,9 +619,12 @@ const Offer = () => {
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard3}`}
                   >
-                    <Image src="/Frame 1618868694.png" fill objectFit="cover" />
+                    <Image src="/Frame 1618868694.png" fill 
+                      alt="image"
+                    objectFit="cover" />
                     <Image
                       src="/Frame 1618868652.png"
+                        alt="image"
                       fill
                       objectFit="cover"
                     />

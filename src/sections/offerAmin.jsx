@@ -27,7 +27,7 @@ const OfferAnimation = () => {
               <div className={styles.OfferAnimationContainerContentSmallImage}>
                 <Image src="/Vector (5).png" alt="offerAnimImg" fill />
               </div>
-              <h6 className={`${styles.offerH6} ${"font-bold"}`}>PROMOTIONAL VIDEOS</h6>
+              <h6 className="font-black text-[18px]">PROMOTIONAL VIDEOS</h6>
             </div>
             <h3>
               Grab attention fast with scroll-stopping visuals and content that keeps buyers engaged.
@@ -40,7 +40,7 @@ const OfferAnimation = () => {
                   <Image src="/Vector (6).png" alt="offerAnimImg" fill />
                 </div>
               </div>
-              <p>Stop sending traffic away — host your best content on your own platform, not someone else’s.</p>
+              <p>Stop sending traffic away, host your best content on your own platform, not someone else’s.</p>
             </div>
             <div className={styles.offerFeaturesContent}>
               <div className={styles.offerFeaturesImgShadow}>
@@ -48,7 +48,7 @@ const OfferAnimation = () => {
                   <Image src="/Vector (6).png" alt="offerAnimImg" fill />
                 </div>
               </div>
-              <p>Create a loyal audience, not just one-time buyers — build trust that keeps them coming back.</p>
+              <p>Create a loyal audience, not just one-time buyers, build trust that keeps them coming back.</p>
             </div>
           </div>
           <div className={styles.OfferAnimationImageBoxContainer}>
@@ -70,12 +70,12 @@ const OfferAnimation = () => {
               <div className={styles.OfferAnimationContainerContentSmallImage}>
                 <Image src="/Vector (7).png" alt="offerAnimImg" fill />
               </div>
-              <h6 className={`${styles.businessAnalytics} ${"font-bold"}`}>
+              <h6 className="font-black text-[18px]">
                 BUSINESS ANALYTICS
               </h6>
             </div>
             <h3>
-             Your next sale is hiding in your data. We help you find it — and act on it.
+             Your next sale is hiding in your data. We help you find it, and act on it.
             </h3>
           </div>
           <div className={styles.offerAnimationFeatures}>
