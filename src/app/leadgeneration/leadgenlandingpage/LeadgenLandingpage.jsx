@@ -51,7 +51,7 @@ const LeadgenLandingpage = () => {
 
   return (
     <section
-      className={`${leadStyles.LeadingGenSection} dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] overflow-x-hidden flex flex-col mt-[2rem] relative max-sm:w-[386px] max-sm:mt-[3rem] `}
+      className={`${leadStyles.LeadingGenSection} dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] overflow-x-hidden flex flex-col mt-[2rem] relative max-sm:w-[386px] max-sm:mt-[3rem]`}
       style={{
         position: "relative", // Ensure parent is positioned correctly
       }}
