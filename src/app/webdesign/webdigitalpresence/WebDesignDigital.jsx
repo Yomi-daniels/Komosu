@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-
+import { Scale } from "lucide-react";
 
 const WebDesignDigital = () => {
   const elevationFeatures = [
@@ -92,41 +92,108 @@ const WebDesignDigital = () => {
   };
 
   return (
-    <section className="py-12 px-4 max-w-6xl mx-auto text-center relative h-full w-full">
+    <section className="py-12 px-4 max-w-6xl mx-auto text-center relative h-full w-full ">
       <h2 className="text-[28px] md:text-[32px] font-bold text-[#1A1A1A] mb-2">
         How We Elevate Your Digital Presence
       </h2>
       <p className="text-[18px] text-[#555] mb-10">
- At Komosu, we turn online attention into in-store action.
+        At Komosu, we turn online attention into in-store action.
       </p>
 
       {/* Desktop Grid */}
       <div className="hidden md:flex flex-wrap justify-center gap-0 relative">
         {elevationFeatures
           .slice(currentIndex, currentIndex + itemsPerPage)
-          .map((feature, index) => (
-            <div
-              key={index}
-              className="group w-[30%] border border-[#E6E6FF] p-6 text-left flex flex-col items-start py-12 transition-all duration-300 ease-in-out hover:bg-[#f5f5f5]"
-            >
-              <Image
-                src={feature.image}
-                alt={feature.title}
-                width={48}
-                height={48}
-                className="mb-4"
-              />
-              {feature.pill && (
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-tl-full rounded-tr-full shadow-sm transition-colors duration-300 group-hover:bg-btn" />
-              )}
-              <h3 className="text-[20px] md:text-[22px] font-bold text-[#28282B] mb-2 transition-all duration-300 group-hover:text-[20.1px] group-hover:scale-105 text-left">
-                {feature.title}
-              </h3>
-              <p className="text-[#585859] font-medium text-[16px] md:text-[17px] text-left transition-all duration-300 group-hover:text-[16.1px] group-hover:scale-105">
-                {feature.description}
-              </p>
-            </div>
-          ))}
+          .map((feature, index) => {
+            // Compose classes conditionally
+            const containerClasses = [
+              "group",
+              "w-[30%]",
+              
+              "border-[#E6E6FF]",
+              "p-6",
+              "text-left",
+              "flex",
+              "flex-col",
+              "items-start",
+              "py-12",
+              "transition-all",
+              "duration-300",
+              "ease-in-out",
+              
+              // add hover classes only if not mobile
+              !isMobile && "hover:bg-blue-200",
+              !isMobile && "hover:bg-opacity-15",
+            ]
+              .filter(Boolean)
+              .join(" ");
+
+            const pillClasses = [
+              "absolute",
+              "bottom-0",
+              "left-1/2",
+              "transform",
+              "-translate-x-1/2",
+              "w-12",
+              "h-3",
+              "bg-[#D9D9D9]",
+              "rounded-tl-full",
+              "rounded-tr-full",
+              "shadow-sm",
+             
+              !isMobile && "group-hover:bg-btn",
+              !isMobile && "transition-colors",
+              !isMobile && "duration-300",
+            ]
+              .filter(Boolean)
+              .join(" ");
+
+            const titleClasses = [
+              "text-[20px]",
+              "md:text-[22px]",
+              "font-bold",
+              "text-[#28282B]",
+              "mb-2",
+              "text-left",
+              "transition-all",
+              "duration-300",
+              
+              !isMobile && "group-hover:text-[20px]",
+              !isMobile && "group-hover:scale-105",
+            ]
+              .filter(Boolean)
+              .join(" ");
+
+            const descriptionClasses = [
+              "text-[#585859]",
+              "font-medium",
+              "text-[16px]",
+              "md:text-[16px]",
+              "text-left",
+              "transition-all",
+              "duration-300",
+              
+              !isMobile && "group-hover:mb-1",
+              !isMobile && "group-hover:scale-1",
+            ]
+              .filter(Boolean)
+              .join(" ");
+
+            return (
+              <div key={index} className={containerClasses}>
+                <Image
+                  src={feature.image}
+                  alt={feature.title}
+                  width={48}
+                  height={48}
+                  className="mb-4"
+                />
+                {feature.pill && <div className={pillClasses} />}
+                <h3 className={titleClasses}>{feature.title}</h3>
+                <p className={descriptionClasses}>{feature.description}</p>
+              </div>
+            );
+          })}
       </div>
 
       {/* Bottom Left Text + Buttons */}
@@ -159,7 +226,7 @@ const WebDesignDigital = () => {
 
       {/* Mobile Carousel */}
       <div className="md:hidden relative">
-        <div className="group relative border border-[#E6E6FF] p-6 text-left flex flex-col items-center py-12 transition-all duration-300 ease-in-out hover:bg-[#f5f5f5]">
+        <div className="relative border border-[#E6E6FF] p-6 text-left flex flex-col items-center py-12">
           <Image
             src={elevationFeatures[currentIndex].image}
             alt={elevationFeatures[currentIndex].title}
@@ -169,13 +236,13 @@ const WebDesignDigital = () => {
           />
 
           {elevationFeatures[currentIndex].pill && (
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-tl-full rounded-tr-full shadow-sm transition-colors duration-300 group-hover:bg-btn" />
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-tl-full rounded-tr-full shadow-sm" />
           )}
 
-          <h3 className="text-[20px] md:text-[22px] font-bold text-[#28282B] mb-2 transition-all duration-300 group-hover:text-[20.1px] group-hover:scale-100 text-center">
+          <h3 className="text-[20px] md:text-[22px] font-bold text-[#28282B] mb-2 text-center">
             {elevationFeatures[currentIndex].title}
           </h3>
-          <p className="text-[#585859] font-medium text-[16px] md:text-[17px] text-center transition-all duration-300 group-hover:text-[16.1px] group-hover:scale-105">
+          <p className="text-[#585859] font-medium text-[16px] md:text-[16px] text-center">
             {elevationFeatures[currentIndex].description}
           </p>
         </div>
@@ -202,15 +269,6 @@ const WebDesignDigital = () => {
           </button>
         </div>
       </div>
-      {/* <div className="mt-[5rem] relative ">
-        <Image
-          src="/MF Product Image2 1.png"
-          alt="different cars image"
-          width={1512}
-          height={925}
-        />
-       
-      </div> */}
     </section>
   );
 };

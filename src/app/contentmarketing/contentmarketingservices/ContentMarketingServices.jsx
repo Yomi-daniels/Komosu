@@ -36,7 +36,7 @@ const features = [
     pillTop: true,
   },
   {
-    title: "See What Buyers Want — Then Act On It",
+    title: "See What Buyers Want, Then Act On It",
     description: " Track behavior in real time, score leads automatically, and fine-tune offers based on what actually works.",
     image: "/Data.png",
     pillTop: true,
@@ -47,22 +47,49 @@ const ContentMarketingServices = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.fromTo(
-      ".features-wrapper",
-      { opacity: 0, y: 100 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".features-wrapper",
-          start: "top 80%",
-          end: "bottom 70%",
-          scrub: true,
-        },
-      }
-    );
+    const mm = gsap.matchMedia();
+
+    mm.add("(max-width: 768px)", () => {
+      gsap.fromTo(
+        ".feature-card",
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          ease: "power2.out",
+          stagger: 0.1,
+          scrollTrigger: {
+            trigger: ".features-wrapper",
+            start: "top 85%",
+            end: "bottom 70%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    });
+
+    mm.add("(min-width: 769px)", () => {
+      gsap.fromTo(
+        ".feature-card",
+        { opacity: 0, y: 80 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power2.out",
+          stagger: 0.15,
+          scrollTrigger: {
+            trigger: ".features-wrapper",
+            start: "top 80%",
+            end: "bottom 70%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    });
+
+    return () => mm.revert();
   }, []);
 
   return (
@@ -75,7 +102,7 @@ const ContentMarketingServices = () => {
           return (
             <div
               key={index}
-              className={`group relative w-full md:w-1/3 border border-[#E6E6FF] p-6 text-left ${removeTop} ${removeBottom} flex flex-col items-start py-12 transition-all duration-300 ease-in-out hover:bg-[#f5f5f5] feature-card`}
+              className={`group relative w-full md:w-1/3 border border-[#E6E6FF] p-6 text-left ${removeTop} ${removeBottom} flex flex-col items-start py-12 transition-all duration-300 ease-in-out md:hover:bg-[#f5f5f5] feature-card`}
             >
               {feature.pillTop && (
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-bl-full rounded-br-full shadow-sm transition-colors duration-300 group-hover:bg-btn" />
@@ -95,10 +122,10 @@ const ContentMarketingServices = () => {
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-tl-full rounded-tr-full shadow-sm transition-colors duration-300 group-hover:bg-btn" />
               )}
 
-              <h3 className="text-[24px] font-bold text-[#28282B] mb-2 transition-all duration-300 group-hover:text-[24.5px] group-hover:scale-105">
+              <h3 className="text-[24px] font-bold max-sm:text-[20px] text-[#28282B] mb-2 transition-all duration-300 md:group-hover:text-[24.5px] md:group-hover:scale-105">
                 {feature.title}
               </h3>
-              <p className="text-[#585859] font-medium text-[18px] transition-all duration-300 group-hover:text-[18.2px] group-hover:scale-105">
+              <p className="text-[#585859] font-medium text-[18px] transition-all duration-300 md:group-hover:text-[18.2px] md:group-hover:scale-105">
                 {feature.description}
               </p>
             </div>

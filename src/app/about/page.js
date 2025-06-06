@@ -8,6 +8,7 @@ import VideoShowcase from "../../sections/videoShowcase";
 import OurSolutionSection from "./ourSolutionSection/ourSolution";
 import ServicesFlex from "../../sections/servicesflex.jsx";
 import MeetOurTeam from "./meetOurTeamSection/meetOurTeam";
+// import DealershipGuru from "./dealershipguru/DealershipGuru";
 
 const AboutPage = () => {
   return (
@@ -18,6 +19,7 @@ const AboutPage = () => {
       <OurvisionSection />
       <VideoShowcase />
       <OurSolutionSection />
+      {/* <DealershipGuru/> */}
       <ServicesFlex />
       {/* <MeetOurTeam /> */}
     </section>

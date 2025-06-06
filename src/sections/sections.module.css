@@ -646,7 +646,7 @@
   margin-top: 1.5rem;
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-family: var(--textFontRegular);
 }
 .flexImgAbsolute {
@@ -1119,8 +1119,8 @@
   height: 563.915px;
   position: relative;
   margin-right: 40px;
-  /* scale: 1; */
-  /* border: 3px solid red; */
+  scale: 1.2;
+
 }
 
 /* .webDesignCardContainer1 .webDesignCard2::after {
@@ -1384,6 +1384,7 @@
 
   .webDesignCard3 {
     margin-right: 5px;
+ 
   }
   .webDesignCardfirst {
     width: 650px;
@@ -1541,6 +1542,8 @@
   .contentMarketingContainer .webDesignCard1 {
     max-width: 100%;
     height: 170px;
+    /* border: 2px solid red; */
+    scale: 1.1;
   }
 
   .webDesignCardContainer1 .webDesignCard1::after {
@@ -1584,6 +1587,7 @@
   .contentMarketingContainer .webDesignCard3 {
     width: 400px;
     height: 400px;
+    object-fit: contain;
   }
 
   .webDesignCard3 img:nth-child(1) {

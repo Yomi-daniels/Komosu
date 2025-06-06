@@ -157,7 +157,7 @@ const Offer = () => {
       <h2 className={styles.offerHeader} ref={offerheaderRef}>
         What We Offer Our{" "}
         <span
-          className="font-custom text-[40px] max-sm:-[18px] text-accentDark italic leading-[120%] tracking-[1.8px]"
+          className="font-custom text-[40px] max-sm:text-[25px] text-accentDark italic leading-[120%] tracking-[1.8px]"
         >
           {" "}
           Clients
@@ -272,19 +272,19 @@ const Offer = () => {
                   </div>
                 </motion.div>
                 <motion.div
-                  className=" w-[800px] h-[800px] relative max-sm:w-[500px]"
+                  className=" w-[800px] h-[600px] max-sm:h-[400px] relative max-sm:w-[500px]"
                   initial="hidden"
                   animate="visible"
                   variants={cardVariants1}
                   ref={cardRef}
                 >
                   <div
-                    className="absolute top-[-25%] right-[-25%] w-full h-full max-sm:right-[-14%] "
+                    className="absolute top-[-5%] right-[-25%] w-[500px] scale-[1.3] max-sm:scale-1 h-[500px] max-sm:right-[10%]  max-sm:w-[300px] max-sm:h-[300px] max-sm:top-3 "
                   >
                     <Image
                       src="/Frame 1618868652.png"
                       fill
-                      objectFit="contain"
+                      objectFit="cover"
                       alt="image"
                       
                     />
@@ -623,10 +623,10 @@ const Offer = () => {
                       alt="image"
                     objectFit="cover" />
                     <Image
-                      src="/Frame 1618868652.png"
+                      src="/Frame 1618868694.png"
                         alt="image"
                       fill
-                      objectFit="cover"
+                      objectFit="contain"
                     />
                   </div>
                 </motion.div>

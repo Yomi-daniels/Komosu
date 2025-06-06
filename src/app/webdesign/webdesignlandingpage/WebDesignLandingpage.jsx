@@ -32,7 +32,7 @@ const WebDesignLandingpage = () => {
       gsap.fromTo(
         buttonRef.current,
         { opacity: 0, scale: 0.8 },
-        { opacity: 1, scale: 1, duration: 1, delay: 0.6, ease: "back.out(1.7)" }
+        { opacity: 1, scale: 1, duration: 1, delay: 0.4, ease: "back.out(1.7)" }
       );
     }
   }, []);
