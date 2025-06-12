@@ -44,10 +44,10 @@ const OurSolutionSection = () => {
         </motion.p>
   <div className="w-[500px] h-full relative group max-sm:mt-[3rem]">
   {/* Background div that animates when image is hovered */}
-  <div className="w-[500px] h-[420px] bg-deepBlue rounded-lg transition-all duration-300 ease-in-out group-hover:-translate-y-[2px] group-hover:translate-x-[-4px] max-sm:w-[350px] max-sm:h-[300px]"></div>
+  <div className="w-[500px] h-[420px] bg-deepBlue rounded-lg transition-all duration-300 ease-in-out group-hover:-translate-y-[2px] group-hover:translate-x-[-4px] max-sm:w-[300px] max-sm:h-[300px]"></div>
 
   {/* Image triggers the hover, but no need for group class here */}
-  <div className="absolute w-[500px] h-[420px] max-sm:w-[350px] max-sm:h-[300px] rounded-lg mt-10 top-[-48px] left-[-12px]">
+  <div className="absolute w-[500px] h-[420px] max-sm:w-[300px] max-sm:h-[300px] rounded-lg mt-10 top-[-48px] left-[-12px]">
     <Image
       src="/komosu network 1 copy 2.png"
       alt="image"
