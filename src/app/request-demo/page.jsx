@@ -3,7 +3,7 @@ import styles from "./request-demo.module.css";
 import Image from "next/image";
 // import { Shadows_Into_Light, Montserrat } from "next/font/google";
 import TickImg from "../webdesign/components/Tickimg";
-import DemoForm from "../components/demoForm/demoForm";
+import DemoForm from "../components/demoForm/demoFormSql";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
@@ -52,7 +52,10 @@ const RequestDemoPages = () => {
           <div className={styles.requestDemoTextcontainer}>
             <h1 className="text-[50px] font-medium text-darkBlueText leading-[120%] tracking-[-3%]">
               Discover how
-              <span className={`${styles.demospan} ${"font-custom"}`}> Komosu </span>{" "}
+              <span className={`${styles.demospan} ${"font-custom"}`}>
+                {" "}
+                Komosu{" "}
+              </span>{" "}
               can accelerate your business
             </h1>
             <div className={styles.demoFeaturesContainer}>
