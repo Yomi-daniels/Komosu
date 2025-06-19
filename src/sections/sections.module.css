@@ -254,6 +254,7 @@
   font-family: var(--text-Font-Bold);
   width: 928px;
   text-align: center;
+ 
 }
 
 .heroSpan {
@@ -265,15 +266,25 @@
   font-family: "Shadows Into Light", cursive;
 }
 
-@media (min-width: 1628px) {
+@media (max-width: 1280px) {
   /* .herobg {
     height: 100vh;
+    .
   } */
+   .heroHeader{
+    /* border: 2px solid red; */
+    font-size: 5rem !important;
+    margin-top: -3rem;
+   }
+ .heroImgBg{
+  margin-top: -2.5rem;
+ }
 }
 
 @media (max-width: 1039px) {
   .heroHeader {
     width: 600px;
+    ;
   }
 }
 
@@ -635,7 +646,7 @@
   margin-top: 1.5rem;
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-family: var(--textFontRegular);
 }
 .flexImgAbsolute {
@@ -1073,10 +1084,11 @@
 }
 
 .webDesignCardfirst {
-  width: 700px;
-  height: 579.555px;
+  width: 900px;
+  height: 779.555px;
   position: relative;
   margin-left: 3.5rem;
+  border: 2px solid red;
 }
 
 .webDesignCardfirst img {
@@ -1107,8 +1119,8 @@
   height: 563.915px;
   position: relative;
   margin-right: 40px;
-  /* scale: 1; */
-  /* border: 3px solid red; */
+  scale: 1.2;
+
 }
 
 /* .webDesignCardContainer1 .webDesignCard2::after {
@@ -1372,6 +1384,7 @@
 
   .webDesignCard3 {
     margin-right: 5px;
+ 
   }
   .webDesignCardfirst {
     width: 650px;
@@ -1463,6 +1476,12 @@
     max-width: 90vw;
   }
 
+  .webDesignCardfirst{
+    width: 700px;
+    height: 579.555px;
+    position: relative;
+  }
+
   /* 
   .WebDesignFeaturesContent {
     align-items: center;
@@ -1523,6 +1542,8 @@
   .contentMarketingContainer .webDesignCard1 {
     max-width: 100%;
     height: 170px;
+    /* border: 2px solid red; */
+    scale: 1.1;
   }
 
   .webDesignCardContainer1 .webDesignCard1::after {
@@ -1566,6 +1587,7 @@
   .contentMarketingContainer .webDesignCard3 {
     width: 400px;
     height: 400px;
+    object-fit: contain;
   }
 
   .webDesignCard3 img:nth-child(1) {
@@ -1804,7 +1826,7 @@
 .OfferAnimationContainerContentHeader .offerH6 {
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 28.08px; /* 156% */
   letter-spacing: 2px;
   text-transform: uppercase;

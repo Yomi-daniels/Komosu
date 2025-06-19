@@ -157,7 +157,7 @@ const Offer = () => {
       <h2 className={styles.offerHeader} ref={offerheaderRef}>
         What We Offer Our{" "}
         <span
-          className={`${styles.offerSpan} ${shadowFont.className} ${"font-custom text-xl max-sm:-[18px]"}`}
+          className="font-custom text-[40px] max-sm:text-[25px] text-accentDark italic leading-[120%] tracking-[1.8px]"
         >
           {" "}
           Clients
@@ -215,7 +215,7 @@ const Offer = () => {
                     <h5> SALES WEBSITES</h5>
                   </div>
                   <h1 className={styles.webDesignh1}>
-                    Turn your site into a full-time sales rep, not just a digital brochure.
+                    Turn your site into a full-time sales rep, <br /> not just a digital brochure.
                   </h1>
                   <Link href="/webdesign">
                     <button className={styles.WebDesignBtn}>See More</button>
@@ -272,19 +272,21 @@ const Offer = () => {
                   </div>
                 </motion.div>
                 <motion.div
-                  className={`${styles.webDesignCardContainer} ${styles.webDesignCardContainer1}`}
+                  className=" w-[800px] h-[600px] max-sm:h-[400px] relative max-sm:w-[500px]"
                   initial="hidden"
                   animate="visible"
                   variants={cardVariants1}
                   ref={cardRef}
                 >
                   <div
-                    className={`${styles.webDesignCard} ${styles.webDesignCardfirst}`}
+                    className="absolute top-[-5%] right-[-25%] w-[500px] scale-[1.3] max-sm:scale-1 h-[500px] max-sm:right-[10%]  max-sm:w-[300px] max-sm:h-[300px] max-sm:top-3 "
                   >
                     <Image
                       src="/Frame 1618868652.png"
                       fill
-                      objectFit="contain"
+                      objectFit="cover"
+                      alt="image"
+                      
                     />
                   </div>
                 </motion.div>
@@ -309,7 +311,7 @@ const Offer = () => {
                     <div className={styles.webHeaderImgBg}>
                       <div className={styles.webHeaderImg}>
                         <Image
-                          src="/dealerHubCarIcon.png"
+                          src="/vector Ai big.png"
                           alt="offerImage"
                           fill
                         />
@@ -399,7 +401,7 @@ const Offer = () => {
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard1}`}
                   >
-                    <Image src="/webdevimg (2).png" fill objectFit="contain" />
+                    <Image src="/Frame 1618868493.png" fill objectFit="contain" />
                   </div>
                 </motion.div>
               </div>
@@ -515,6 +517,7 @@ const Offer = () => {
                       src="/content marketing girl.png"
                       fill
                       objectFit="contain"
+                        alt="image"
                     />
                   </div>
                 </motion.div>
@@ -616,9 +619,12 @@ const Offer = () => {
                   <div
                     className={`${styles.webDesignCard} ${styles.webDesignCard3}`}
                   >
-                    <Image src="/Frame 1618868694.png" fill objectFit="cover" />
+                    <Image src="/Frame 1618868694.png" fill 
+                      alt="image"
+                    objectFit="cover" />
                     <Image
                       src="/Frame 1618868694.png"
+                        alt="image"
                       fill
                       objectFit="contain"
                     />

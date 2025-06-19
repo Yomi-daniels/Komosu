@@ -289,6 +289,7 @@
   margin-inline: auto;
   margin-top: 3rem;
   margin-bottom: 5rem;
+
 }
 
 /* OUR SOLUTION SECTION MEDIA SCREEN*/
@@ -296,8 +297,18 @@
 @media (max-width: 1025px) {
   .OurSolutionSection {
     padding: 0 2rem;
+
   }
 }
+
+@media (max-width: 450px) {
+  .OurSolutionSection {
+    padding: 0 2rem;
+        height: 700px;
+    
+  }
+}
+
 
 /* MEET OUR TEAM SECTION */
 

@@ -17,7 +17,40 @@ const LandingPage = () => {
   const heroBtnRef = useRef(null);
   const videoRef = useRef(null);
 
-  useEffect(() => {
+useEffect(() => {
+  const mm = gsap.matchMedia();
+
+  mm.add("(max-width: 768px)", () => {
+    // Mobile Animation
+    const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+
+    tl.fromTo(
+      heroHeaderRef.current,
+      { y: 30, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.8 }
+    )
+      .fromTo(
+        heroSubTextRef.current,
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8 },
+        "-=0.6"
+      )
+      .fromTo(
+        heroBtnRef.current,
+        { y: 20, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8 },
+        "-=0.6"
+      )
+      .fromTo(
+        videoRef.current,
+        { scale: 1.05, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 1 },
+        "-=0.8"
+      );
+  });
+
+  mm.add("(min-width: 769px)", () => {
+    // Desktop Animation
     const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
     tl.fromTo(
@@ -43,7 +76,11 @@ const LandingPage = () => {
         { scale: 1, opacity: 1, duration: 1.2 },
         "-=0.9"
       );
-  }, []);
+  });
+
+  return () => mm.revert(); // Clean up
+}, []);
+
 
   return (
     <div className="min-h-screen w-full dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center overflow-x-hidden">

@@ -48,7 +48,7 @@ export default function BlogClient({ blogs }) {
             <div className="w-full md:w-80 h-12 px-4 py-2 bg-white rounded-lg flex items-center">
               <input
                 type="text"
-                placeholder="Subscribe to get up-to-date news & offers"
+                placeholder="Enter Email Address"
                 className="w-full bg-transparent text-zinc-800 text-sm outline-none border-none"
               />
             </div>
