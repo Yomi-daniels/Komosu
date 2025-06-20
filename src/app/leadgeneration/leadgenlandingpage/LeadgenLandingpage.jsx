@@ -51,7 +51,7 @@ const LeadgenLandingpage = () => {
 
   return (
     <section
-      className={`${leadStyles.LeadingGenSection} dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] overflow-x-hidden flex flex-col mt-[3rem] relative max-sm:w-[386px] max-sm:mt-[5rem] `}
+      className={`${leadStyles.LeadingGenSection} dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] overflow-x-hidden flex flex-col mt-[2rem] relative max-sm:w-[386px] max-sm:mt-[3rem]`}
       style={{
         position: "relative", // Ensure parent is positioned correctly
       }}
@@ -61,9 +61,9 @@ const LeadgenLandingpage = () => {
       <div className="w-[1236px] min-h-[338px] text-center flex flex-col justify-center items-center gap-6 z-10 relative mb-8 px-4 ">
         <h1
           ref={headingRef}
-          className="w-full capitalize text-center font-bold leading-[120%] tracking-[-2.56px] text-[32px] max-sm:text-[40px] md:text-[56px] lg:text-[64px] mx-auto max-sm:w-[13ch] max-sm:px-6"
+          className="w-full capitalize text-center font-bold leading-[120%] tracking-[-2.56px] text-[32px] max-sm:text-[36px] md:text-[56px] lg:text-[64px] mx-auto max-sm:w-[16ch] max-sm:px-8"
         >
-      Lead Generation That Works Harder
+      Lead Generation That <br /> Works Harder
         </h1>
 
         <p

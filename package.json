@@ -30,6 +30,7 @@
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.3",
     "gsap": "^3.12.5",
+    "lucide-react": "^0.513.0",
     "markdown-to-jsx": "^7.7.6",
     "markdown-wasm": "^1.2.0",
     "mini-svg-data-uri": "^1.4.4",
