@@ -81,7 +81,7 @@ useEffect(() => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-6 items-center justify-between max-w-[550px] flex-1">
+        <nav className="hidden lg:flex gap-6 items-center justify-between max-w-[550px] flex-1">
           {navLinks
             .filter((link) => link.title !== "Get Demo")
             .map((link) => {
@@ -155,17 +155,27 @@ useEffect(() => {
 
         {/* Right: Get Demo & Toggle Button */}
         <div className="flex items-center gap-4">
-          <div className="hidden md:inline-block">
-            <Link
-              href="/request-demo"
-              className={`${
-                pathname === "/request-demo" ? "bg-blue-800" : "bg-blue-600"
-              } flex items-center justify-center text-white w-[180px] py-2 rounded-full ${styles.headerGetStarted}`}
-            >
-              Get Demo
-            </Link>
-          </div>
-          <button className="md:hidden  md:absolute max-sm:absolute md:right-0 max-sm:right-[10%] " onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        <div className="hidden lg:inline-block relative group">
+
+  <Link
+    href="/request-demo"
+    onClick={() => setIsMobileMenuOpen(false)}
+    className={`relative z-10 flex items-center justify-center text-white w-[180px] py-2 rounded-full transition-all duration-300 transform
+      ${
+        pathname === "/request-demo"
+          ? "bg-blue-800 font-semibold shadow-md"
+          : "bg-blue-600 hover:bg-blue-700 hover:scale-105"
+      }
+    `}
+  >
+    Get Demo
+  </Link>
+
+  {/* Blurry blue glow on hover */}
+  <span className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-32 h-6 bg-blue-400 opacity-40 blur-md rounded-full z-0 transition-opacity duration-300 group-hover:opacity-100 pointer-events-none" />
+</div>
+
+          <button className="lg:hidden md:absolute max-sm:absolute md:right-[10%] max-sm:right-[10%] " onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             <Image
               src={isMobileMenuOpen ? "/closebtn.svg" : "/openbtn.svg"}
               alt="menu toggle"
@@ -177,87 +187,109 @@ useEffect(() => {
       </div>
 
       {/* Mobile Navigation */}
-     {isMobileMenuOpen && (
+   {isMobileMenuOpen && (
   <>
     {/* Overlay */}
     <div
-      className="fixed bg-opacity-40 z-30"
+      className="fixed  z-30"
       onClick={() => setIsMobileMenuOpen(false)}
     />
 
     {/* Mobile Menu */}
-  <div className={`md:hidden fixed top-full left-0 w-full h-[100vh] mt-4 bg-white shadow-lg z-40 px-6 py-6 transform transition-transform duration-500 ease-in-out ${
-  isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-}`}>
-
-      <ul className="flex flex-col gap-12 mt-0">
-        {navLinks.map((link) => {
-          const isActive = pathname === link.path;
-          const hasSubLinks = link.subLinks?.length > 0;
-
-          return (
-            <li key={link.title}>
-              {hasSubLinks ? (
-                <>
-                  <button
-                    onClick={() =>
-                      setIsMobileServicesOpen((prev) => !prev)
-                    }
-                    className="flex justify-between items-center w-full text-left font-medium text-gray-800"
-                  >
-                    {link.title}
-                    <Image
-                      src="/dropdown.svg"
-                      alt="toggle"
-                      width={16}
-                      height={16}
-                      className={`transition-transform duration-300 ${
-                        isMobileServicesOpen ? "rotate-180" : "rotate-0"
+    <div
+      className={`lg:hidden fixed top-full left-0 w-full h-[100vh] mt-4 bg-white shadow-lg z-40 px-6 py-6 transform transition-transform duration-500 ease-in-out ${
+        isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+      }`}
+    >
+      <div className="flex flex-col items-start">
+        <ul className="flex flex-col  gap-10 mt-0 w-full  relative">
+          {navLinks
+            .filter((link) => link.title !== "Get Demo") //  exclude it from loop
+            .map((link) => {
+              const isActive = pathname === link.path;
+              const hasSubLinks = link.subLinks?.length > 0;
+              return (
+                <li key={link.title}>
+                  {hasSubLinks ? (
+                    <>
+                      <button
+                        onClick={() =>
+                          setIsMobileServicesOpen((prev) => !prev)
+                        }
+                        className="flex justify-between items-center w-full text-left font-medium text-gray-800"
+                      >
+                        {link.title}
+                        <Image
+                          src="/dropdown.svg"
+                          alt="toggle"
+                          width={16}
+                          height={16}
+                          className={`transition-transform duration-300 ${
+                            isMobileServicesOpen ? "rotate-180" : "rotate-0"
+                          }`}
+                        />
+                      </button>
+                      {isMobileServicesOpen && (
+                        <ul className="mt-4 bg-blue-50 ml-4 space-y-2 flex p-4 rounded-lg flex-col gap-4">
+                          {link.subLinks.map((subLink) => (
+                            <li key={subLink.title}>
+                              <Link
+                                href={subLink.path}
+                                onClick={() => {
+                                  setIsMobileMenuOpen(false);
+                                  setIsMobileServicesOpen(false);
+                                }}
+                                className={`block text-gray-700 px-3 py-1 rounded mt-2 transition-colors duration-200 ${
+                                  pathname === subLink.path
+                                    ? " text-black font-bold"
+                                    : "hover:bg-blue-100"
+                                }`}
+                              >
+                                {subLink.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </>
+                  ) : (
+                    <Link
+                      href={link.path}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className={`block text-gray-800 font-medium hover:text-blue-600 ${
+                        isActive ? "text-blue-600" : ""
                       }`}
-                    />
-                  </button>
-                  {isMobileServicesOpen && (
-                    <ul className="mt-4 bg-blue-50 ml-4 space-y-2 flex p-6 rounded-lg flex-col gap-6">
-                      {link.subLinks.map((subLink) => (
-                        <li key={subLink.title}>
-                         <Link
-  href={subLink.path}
-  onClick={() => {
-    setIsMobileMenuOpen(false);
-    setIsMobileServicesOpen(false); // Optional: close submenu after click
-  }}
-  className={`block text-gray-700 px-3 py-1 rounded mt-4 transition-colors duration-200 ${
-    pathname === subLink.path
-      ? "bg-blue-600 text-white font-semibold"
-      : "hover:bg-blue-100"
+                    >
+                      {link.title}
+                    </Link>
+                  )}
+                </li>
+              );
+            })}
+      
+        </ul>
+            {/* Get Demo Button (Small & Clean) */}
+        <div className="mt-8">
+         <Link
+  href="/request-demo"
+  onClick={() => setIsMobileMenuOpen(false)}
+  className={`text-sm font-medium py-2 px-6 rounded-full text-center block w-fit mx-auto transition ${
+    pathname === "/request-demo"
+      ? "bg-darkBlueText text-white shadow"
+      : "bg-blue-600 text-white hover:bg-blue-700"
   }`}
 >
-  {subLink.title}
+  Get Demo
 </Link>
 
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </>
-              ) : (
-                <Link
-                  href={link.path}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block text-gray-800 font-medium hover:text-blue-600 ${
-                    isActive ? "text-blue-600" : ""
-                  }`}
-                >
-                  {link.title}
-                </Link>
-              )}
-            </li>
-          );
-        })}
-      </ul>
+        </div>
+      </div>
+
+    
     </div>
   </>
 )}
+
 
     </header>
   );
