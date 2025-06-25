@@ -8,12 +8,13 @@ import VideoShowcase from "../../sections/videoShowcase";
 import OurSolutionSection from "./ourSolutionSection/ourSolution";
 import ServicesFlex from "../../sections/servicesflex.jsx";
 import MeetOurTeam from "./meetOurTeamSection/meetOurTeam";
+import MainNavigation from "../components/navbar/component/MainNavigation.jsx";
 // import DealershipGuru from "./dealershipguru/DealershipGuru";
 
 const AboutPage = () => {
   return (
     <section className={aboutstyles.aboutUsLandingPage}>
-      <Navbar />
+      <MainNavigation />
       <AboutUsLandingPage />
       <WhoareweSection />
       <OurvisionSection />
