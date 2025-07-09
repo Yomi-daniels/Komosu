@@ -1,10 +1,11 @@
 // src/app/layout.js
 
 import "./globals.css";
-import Navbar from "./components/navbar/Navbar";
+// import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import { Metadata } from "next";
 import "remixicon/fonts/remixicon.css";
+import MainNavigation from "./components/navbar/component/MainNavigation.jsx";
 
 export const metadata = {
   title: "Komosu Network",
@@ -52,7 +53,7 @@ export default function RootLayout({ children }) {
       <head />
       <body className="light-theme">
         <div className="layout">
-          <Navbar />
+          <MainNavigation />
           <main className="content">{children}</main>
           <Footer />
         </div>

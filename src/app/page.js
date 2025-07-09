@@ -19,6 +19,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Services from "@/sections/services";
+import MainNavigation from "./components/navbar/component/MainNavigation.jsx";
 // Import `cn` if you need it for conditional class names
 // import cn from "classnames";
 
@@ -74,7 +75,7 @@ const Home = () => {
 
   return (
     <div className={styles.landingpagesection}>
-      <Navbar />
+      <MainNavigation />
       <section className={styles.landingPage}>
         <LandingPage />
       </section>

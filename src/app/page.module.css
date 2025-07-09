@@ -34,14 +34,24 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 25px;
-  height: 25px;
-  border: solid 2px var(--color);
+  width: 30px;
+  height: 30px;
+  border: 3px dashed var(--color); /* Dashed for tyre look */
   border-radius: 50%;
   margin: 0 10px;
   background-color: transparent;
-  animation: circle-keys var(--animation);
+  animation: spinTyre 1.2s linear infinite, circle-keys var(--animation);
 }
+
+@keyframes spinTyre {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .loader .circle .dot {
   position: absolute;
@@ -164,5 +174,39 @@
 @media (max-width: 450px) {
   .landingpagesection {
     overflow-x: hidden !important;
+  }
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.tyre {
+  width: 70px;
+  height: 70px;
+  animation: tyre-bounce 1s ease-in-out infinite;
+}
+
+.tyreIcon {
+  animation: tyre-roll 0.8s linear infinite;
+}
+
+@keyframes tyre-roll {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tyre-bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
   }
 }
