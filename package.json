@@ -54,6 +54,8 @@
     "remark-gfm": "^4.0.0",
     "remixicon": "^4.6.0",
     "shiki": "^1.12.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
     "swr": "^2.2.5",
     "tailwind-merge": "^2.5.2",
     "utf-8-validate": "^6.0.4",
