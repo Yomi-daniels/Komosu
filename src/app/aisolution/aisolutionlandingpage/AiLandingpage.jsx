@@ -1,132 +1,312 @@
 "use client";
 
-import Aistyles from "../Aisolution.module.css";
-import Image from "next/image";
-import { ScrollParallax } from "react-just-parallax";
-import { useEffect, useRef } from "react";
-import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
-import gsap from "gsap";
+import { motion } from "framer-motion";
+import { Target, CalendarCheck, Package, Focus, X, Check } from "lucide-react";
 
-const AiLandingpage = () => {
-  const containerTextRef = useRef(null);
-  const imageRef = useRef(null);
-  const headingRef = useRef(null);
-  const subheadingRef = useRef(null);
+const targetAudience = [
+  {
+    icon: Target,
+    title: "Run paid ads",
+    description: "Maximize your ad spend with AI-powered lead qualification",
+    gradient: "linear-gradient(135deg, #f43f5e, #ec4899, #a855f7)",
+  },
+  {
+    icon: CalendarCheck,
+    title: "Want faster test-drive bookings",
+    description: "Automate scheduling and reduce time-to-appointment",
+    gradient: "linear-gradient(135deg, #10b981, #14b8a6, #06b6d4)",
+  },
+  {
+    icon: Package,
+    title: "Are willing to prioritise inventory",
+    description: "Let AI match buyers with the right vehicles instantly",
+    gradient: "linear-gradient(135deg, #f59e0b, #f97316, #ef4444)",
+  },
+  {
+    icon: Focus,
+    title: "Value focus over flexibility",
+    description: "Purpose-built for dealerships, not a one-size-fits-all tool",
+    gradient: "linear-gradient(135deg, #3b82f6, #6366f1, #8b5cf6)",
+  },
+];
 
-  useEffect(() => {
-    const tl = gsap.timeline({ defaults: { duration: 1.2, ease: "power3.out" } });
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15, delayChildren: 0.2 },
+  },
+};
 
-    tl.fromTo(
-      containerTextRef.current,
-      { x: -300, opacity: 0 },
-      { x: 0, opacity: 1 }
-    )
-      .fromTo(
-        headingRef.current,
-        { y: 50, opacity: 0 },
-        { y: 0, opacity: 1 },
-        "-=1"
-      )
-      .fromTo(
-        subheadingRef.current,
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1 },
-        "-=1"
-      );
+const itemVariants = {
+  hidden: { opacity: 0, y: 30, scale: 0.95 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+  },
+};
 
-    gsap.fromTo(
-      imageRef.current,
-      { y: 300, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1.2, ease: "power3.out" }
-    );
-  }, []);
-
-  const headertext = `Who CarMosu Is For`;
-  const subheading = `CarMosu is built for dealerships that:`;
-
-  const features = [
-    { text: "run paid ads" },
-    { text: "want faster test-drive bookings" },
-    { text: "are willing to prioritise inventory" },
-    { text: "value focus over flexibility" },
-    {
-      text: "If you're looking for a website redesign, CarMosu is not for you.",
-      isNegative: true,
-    },
-  ];
-
+const WhoItsFor = () => {
   return (
-    <section className={Aistyles.AiLandingPage}>
-      <div className={Aistyles.vectorImgtop}>
-        <Image src="/yellow vector.png" fill alt="decorative top vector" />
-      </div>
+    <section style={styles.section}>
+      {/* Background blurs */}
+      <div style={styles.bgBlur1} />
+      <div style={styles.bgBlur2} />
+      <div style={styles.bgBlur3} />
 
-      {/* Responsive Container */}
-      <div
-        className={`${Aistyles.ailandingpageContainer} flex flex-col lg:flex-row items-center gap-12 lg:gap-0`}
-      >
-        {/* Text Side */}
-        <div
-          className={`${Aistyles.ailandingpageContainerTextContent} w-full lg:w-1/2 text-center lg:text-left`}
-          ref={containerTextRef}
+      <div style={styles.container}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          style={styles.header}
         >
-          <div>
-            <h2 ref={headingRef}>
-              <TextGenerateEffect
-                words={headertext}
-                messageClass="text-[28px] sm:text-[34px] md:text-[40px] lg:text-[48px] leading-tight"
-              />
-            </h2>
-          </div>
-
-          <p
-            ref={subheadingRef}
-            className="mt-4 text-sm sm:text-base"
-          >
-            {subheading}
+          {/* <span style={styles.badge}>
+            <span style={styles.badgeDot} />
+            Perfect Fit
+          </span> */}
+         <h2 className="font-bold text-darkBlueText text-[64px] mx-auto text-center leading-[120%] tracking-[-4%] max-md:text-[32px] max-sm:text-[24px]">
+            Who <span className="font-custom text-btn">CarMosu</span> Is For
+          </h2>
+        
+          <p className="tracking-[-2%] text-darkBlueText font-medium text-[18px] text-center max-sm:text-[16px]">
+            Built for dealerships that demand <strong>more leads</strong>,{" "}
+            <strong>faster bookings</strong>, and <strong>smarter automation</strong>
           </p>
+        </motion.div>
 
-          {/* Feature List */}
-          <div className="flex flex-col gap-4 mt-6 max-w-md mx-auto lg:mx-0">
-            {features.map((feature, index) => (
-              <div key={index} className="flex items-start gap-4">
-                <div
-                  className={`flex-shrink-0 w-8 h-8 rounded-full border-2 ${
-                    feature.isNegative
-                      ? "border-red-400 text-red-400"
-                      : "border-yellow-400 text-yellow-400"
-                  } flex items-center justify-center font-bold`}
-                >
-                  {index + 1}
-                </div>
-
-                <p className="text-gray-800 font-medium flex-1 pt-0.5 text-sm sm:text-base">
-                  {feature.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Image Side */}
-        <div
-          className={`${Aistyles.ailandingpageImage} w-full lg:w-1/2 flex justify-center`}
-          ref={imageRef}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          style={styles.grid}
         >
-          <div
-            className={`${Aistyles.aigirlImg} relative w-[260px] sm:w-[320px] md:w-[380px] lg:w-full h-[320px] sm:h-[380px] md:h-[420px] lg:h-full`}
-          >
-            <Image
-              src="/Ai girl.png"
-              fill
-              className="object-contain"
-              alt="AI Assistant"
-            />
+          {targetAudience.map((item, index) => (
+            <motion.div key={item.title} variants={itemVariants} style={styles.cardWrapper}>
+              <div style={styles.card}>
+                <div style={{ ...styles.iconBox, background: item.gradient }}>
+                  <item.icon size={28} color="#fff" strokeWidth={2} />
+                </div>
+                <div style={styles.checkBox}>
+                  <Check size={16} color="#16a34a" />
+                </div>
+                <h3 style={styles.cardTitle}>{item.title}</h3>
+                <p style={styles.cardDesc}>{item.description}</p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Exclusion */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          style={styles.exclusionWrapper}
+        >
+          <div style={styles.exclusion}>
+            <div style={styles.xBox}>
+              <X size={20} color="#94a3b8" />
+            </div>
+            <div>
+              <p style={styles.exclusionSmall}>Looking for a website redesign?</p>
+              <p style={styles.exclusionBold}>CarMosu is not for you</p>
+            </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
 };
 
-export default AiLandingpage;
+const styles = {
+  section: {
+    position: "relative",
+    overflow: "hidden",
+    background: "white",
+    padding: "46px 16px",
+  },
+  // bgBlur1: {
+  //   position: "absolute",
+  //   top: "-160px",
+  //   right: "-160px",
+  //   width: "600px",
+  //   height: "600px",
+  //   borderRadius: "50%",
+  //   background: "linear-gradient(135deg, rgba(244,63,94,0.15), rgba(168,85,247,0.1))",
+  //   filter: "blur(80px)",
+  //   pointerEvents: "none",
+  // },
+  // bgBlur2: {
+  //   position: "absolute",
+  //   bottom: "0",
+  //   left: "-160px",
+  //   width: "500px",
+  //   height: "500px",
+  //   borderRadius: "50%",
+  //   background: "linear-gradient(135deg, rgba(16,185,129,0.15), rgba(6,182,212,0.1))",
+  //   filter: "blur(80px)",
+  //   pointerEvents: "none",
+  // },
+  // bgBlur3: {
+  //   position: "absolute",
+  //   top: "50%",
+  //   left: "50%",
+  //   transform: "translate(-50%, -50%)",
+  //   width: "400px",
+  //   height: "400px",
+  //   borderRadius: "50%",
+  //   background: "rgba(251,191,36,0.08)",
+  //   filter: "blur(80px)",
+  //   pointerEvents: "none",
+  // },
+  container: {
+    position: "relative",
+    zIndex: 10,
+    maxWidth: "1200px",
+    margin: "0 auto",
+  },
+  header: {
+    textAlign: "center",
+    marginBottom: "64px",
+  },
+  badge: {
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "8px",
+    padding: "8px 20px",
+    borderRadius: "9999px",
+    background: "rgba(239,68,68,0.1)",
+    color: "#ef4444",
+    fontSize: "14px",
+    fontWeight: 600,
+    border: "1px solid rgba(239,68,68,0.2)",
+    marginBottom: "24px",
+  },
+  badgeDot: {
+    width: "8px",
+    height: "8px",
+    borderRadius: "50%",
+    background: "#ef4444",
+    animation: "pulse 2s infinite",
+  },
+  title: {
+    fontFamily: "'Space Grotesk', sans-serif",
+    fontSize: "clamp(32px, 5vw, 56px)",
+    fontWeight: 700,
+    color: "#1e293b",
+    margin: 0,
+  },
+  gradientText: {
+    background: "linear-gradient(135deg, #ef4444, #dc2626)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent",
+    backgroundClip: "text",
+  },
+  subtitle: {
+    marginTop: "24px",
+    fontSize: "18px",
+    color: "#64748b",
+    maxWidth: "560px",
+    marginLeft: "auto",
+    marginRight: "auto",
+    lineHeight: 1.6,
+  },
+  grid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+    gap: "24px",
+  },
+  cardWrapper: {
+    position: "relative",
+  },
+  card: {
+    position: "relative",
+    background: "rgba(255,255,255,0.9)",
+    backdropFilter: "blur(12px)",
+    border: "1px solid rgba(226,232,240,0.8)",
+    borderRadius: "24px",
+    padding: "32px",
+    transition: "all 0.3s ease",
+    cursor: "pointer",
+  },
+  iconBox: {
+    width: "56px",
+    height: "56px",
+    borderRadius: "16px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: "20px",
+    boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
+  },
+  checkBox: {
+    position: "absolute",
+    top: "32px",
+    right: "32px",
+    width: "32px",
+    height: "32px",
+    borderRadius: "50%",
+    background: "rgba(22,163,74,0.1)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  cardTitle: {
+    fontFamily: "'Space Grotesk', sans-serif",
+    fontSize: "22px",
+    fontWeight: 700,
+    color: "#1e293b",
+    margin: "0 0 12px 0",
+  },
+  cardDesc: {
+    fontSize: "15px",
+    color: "#64748b",
+    lineHeight: 1.6,
+    margin: 0,
+  },
+  exclusionWrapper: {
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "64px",
+  },
+  exclusion: {
+    display: "flex",
+    alignItems: "center",
+    gap: "16px",
+    padding: "16px 24px",
+    borderRadius: "16px",
+    background: "rgba(255,255,255,0.6)",
+    backdropFilter: "blur(12px)",
+    border: "1px solid #e2e8f0",
+  },
+  xBox: {
+    width: "40px",
+    height: "40px",
+    borderRadius: "12px",
+    background: "linear-gradient(135deg, #f1f5f9, #f8fafc)",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    border: "1px solid #e2e8f0",
+  },
+  exclusionSmall: {
+    fontSize: "14px",
+    color: "#64748b",
+    margin: 0,
+  },
+  exclusionBold: {
+    fontSize: "16px",
+    fontWeight: 600,
+    color: "#1e293b",
+    margin: 0,
+    fontFamily: "'Space Grotesk', sans-serif",
+  },
+};
+
+export default WhoItsFor;

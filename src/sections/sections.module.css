@@ -113,7 +113,7 @@
   overflow: hidden;
 }
 
-.heroImgBg video {
+.heroImgBg img {
   width: 1300px;
   height: 100%;
   object-fit: cover;
@@ -365,7 +365,7 @@
   .heroImgBg {
     height: 300px;
   }
-  .heroImgBg video {
+  .heroImgBg img {
     height: 100%;
   }
 }
@@ -471,11 +471,11 @@
   margin-inline: auto;
   position: relative;
   max-width: 926px;
-  max-height: 30vh;
+  max-height: 1vh;
   background-color: #ffffff;
   color: #000000;
   /* margin-top: 4rem; */
-  /* border: 3px solid red; */
+
 }
 
 .ServicesTextContainer {
@@ -520,6 +520,7 @@
   text-transform: capitalize;
   margin-top: 1.2rem;
   font-family: var(--text-Font-Bold);
+ 
 }
 
 .servicesHeader h2 {
@@ -689,7 +690,7 @@
 
 @media (max-width: 1025px) {
   .serviceSection {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
   .servicesHeader h2 {
     font-size: 35px;
@@ -723,7 +724,7 @@
   }
   .servicesHeader h2 {
     font-size: 1.5rem;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     text-align: center;
   }
 
@@ -743,7 +744,7 @@
   }
 
   .serviceSection {
-    min-height: 40vh;
+    min-height: 20vh;
   }
 }
 
@@ -769,7 +770,7 @@
 
   .serviceSection {
     margin-top: 0rem;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
     margin-bottom: 3rem;
   }
 

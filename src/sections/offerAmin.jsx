@@ -8,9 +8,9 @@ const OfferAnimation = () => {
         <h2 className={styles.offerAnimHeaderh2}>
         Fuel your dealership’s growth with a high-converting website that sells — even when your showroom’s closed
         </h2>
-        <Link href="/request-demo">
+        {/* <Link href="/request-demo">
           <button className={styles.OfferHeaderButton}>Book a Demo</button>
-        </Link>
+        </Link> */}
         <div className={styles.LineContainer}>
           <div className={styles.lineImg}>
             <Image src="/Rectangle 3.png" alt="offerAnimImg" fill />

@@ -103,7 +103,7 @@ const Services = () => {
   return (
     <section
       ref={sectionRef}
-      className={cn(styles.serviceSection, "relative pb-48")}
+      className={cn(styles.serviceSection, "relative pb-24")}
     >
       {/* TEXT CONTENT */}
       <div ref={textRef} className={styles.ServicesTextContainer}>
@@ -117,7 +117,7 @@ const Services = () => {
       </div>
 
       {/* LEFT FLOATING LABELS */}
-      <div className="absolute left-0 top-0 md:block hidden">
+      {/* <div className="absolute left-0 top-0 md:block hidden">
         <div
           ref={(el) => (leftButtonsRef.current[0] = el)}
           className="bg-gray-100/90 backdrop-blur-sm px-6 py-2 rounded-full shadow-lg 
@@ -135,10 +135,10 @@ const Services = () => {
         >
           More Control
         </div>
-      </div>
+      </div> */}
 
       {/* RIGHT FLOATING LABELS */}
-      <div className="absolute right-2 top-20 md:block hidden">
+      {/* <div className="absolute right-2 top-20 md:block hidden">
         <div
           ref={(el) => (rightButtonsRef.current[0] = el)}
           className="bg-gray-100/90 backdrop-blur-sm px-6 py-2 rounded-full shadow-lg 
@@ -156,23 +156,10 @@ const Services = () => {
         >
           Dealer Hub
         </div>
-      </div>
+      </div> */}
 
       {/* CTA */}
-      <div
-        className={cn(
-          styles.servicesLastContentText,
-          "hover:scale-105 transition-transform duration-300"
-        )}
-      >
-        {/* <Link href="/about">
-          <p>Learn more about Komosu</p>
-        </Link> */}
-
-        {/* <div className={styles.buttonImage}>
-          <Image src="/View plan button (4).png" alt="vector" fill />
-        </div> */}
-      </div>
+     
     </section>
   );
 };

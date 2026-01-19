@@ -51,17 +51,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head />
       <body className="light-theme">
-        <div className="layout">
-          <MainNavigation />
-          <main className="content"><RequestAccessProvider>
-  {children}
-  <GlobalRequestAccessModal />
-</RequestAccessProvider>
-</main>
-          <Footer />
-        </div>
+        <RequestAccessProvider>
+          <div className="layout">
+            <MainNavigation />
+
+            <main className="content">
+              {children}
+            </main>
+
+            <Footer />
+
+            {/* Must be inside provider */}
+            <GlobalRequestAccessModal />
+          </div>
+        </RequestAccessProvider>
       </body>
     </html>
   );

@@ -102,11 +102,11 @@ const Home = () => {
         </section>
         <section className={styles.ServicesPage} id="about">
           <Services />
-          <section className={styles.Servisesflex}></section>
+         
         </section>
-        <section>
+        {/* <section>
           <SecondSection />
-        </section>
+        </section> */}
         <section>
           <CaseStudyContactLink/>
         </section>
@@ -143,9 +143,9 @@ const Home = () => {
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />
-        <section className={styles.OfferPage}>
+        {/* <section className={styles.OfferPage}>
           <Offer />
-        </section>
+        </section> */}
 
         <section className={styles.OfferAnimationPage}>
           <OfferAnimation />
@@ -153,9 +153,9 @@ const Home = () => {
         {/* <section className={styles.OfferAnimationPage}>
           <WhyKomosu />
         </section> */}
-        <section className={styles.TestimonialPage} id="testimonials">
+        {/* <section className={styles.TestimonialPage} id="testimonials">
           <Testimonials />
-        </section>
+        </section> */}
         <section className={`${styles.FAQPage} ${styles.page}`} id="faq">
           <FAQ />
         </section>

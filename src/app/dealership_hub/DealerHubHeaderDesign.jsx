@@ -26,15 +26,18 @@ const DealerHubHeaderDesign = () => {
         <div className="p-6 rounded-[20px] shadow-md flex flex-col items-center text-center border-[4px] border-[#DAD9FF] w-[328px] h-[400px] overflow-hidden">
           <div className="flex flex-col items-start">
             <h2 className="text-[24px] font-bold mb-2 text-darkBlueText text-left ">
-               Leads to Buyers
+           Licensed. Exclusive. Controlled.
             </h2>
             <p className="text-darkBlueText mb-4 text-[16px] leading-[150%] tracking-[2%] text-left font-regular">
-             Turn site traffic into serious car buyers with tools built to convert, not just collect.
+            We do not build custom versions. <br />
+We do not alter the format. <br />
+The system stays consistent so performance compounds. <br />
+
             </p>
           </div> 
           <div className="flex items-center relative pb-3">
-            <div className="bg-blue-600 text-white px-4 py-2 rounded-[12px] w-[155px] h-[162px] flex flex-col justify-center items-center rotate-[2deg]">
-              <h1 className="text-[24px] font-bold ">LEADS</h1>
+            <div className="bg-blue-600 text-white px-4 py-2 rounded-[12px] w-[155px] h-[162px] flex flex-col justify-center items-center rotate-[12deg]">
+              <h1 className="text-[20px] font-bold ">lICENSED</h1>
             </div>
             <img
               src="/VVImg.png"
@@ -42,8 +45,8 @@ const DealerHubHeaderDesign = () => {
               className="w-[48px] h-[48px] object-cover absolute left-[37%] z-10"
             />
             <div className="bg-accentDark text-black px-4 py-2 rounded-[12px] w-[156px] h-[162px] flex flex-col justify-center items-center rotate-[-4deg]">
-              <h1 className="text-[24px] font-bold text-darkBlueText text-left">
-                BUYING CUSTOMER
+              <h1 className="text-[20px] font-bold text-darkBlueText text-left">
+                NOT CUSTOMIZED
               </h1>
             </div>
           </div>

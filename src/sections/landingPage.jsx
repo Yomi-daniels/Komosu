@@ -118,28 +118,13 @@ const { openModal } = useRequestAccess();
   Request Access
 </button>
 
-         {/* Request Access modal */}
-              {/* <MainNavigation onRequestAccessClick={() => setIsModalOpen(true)} /> */}
-              {/* <RequestAccessModal
-                isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)}
-                onRequestAccessClick={() => setIsModalOpen(true)}
-              /> */}
-              {/* <Link href="#what-we-offer">
-                <button className={styles.headerbtn}>
-                  Learn More
-                  <div className={styles.buttonImage}>
-                    <Image src="/View plan button (4).png" alt="vector" fill />
-                  
-                  </div>
-                </button>
-              </Link> */}
             </div>
           </div>
           <div className={styles.heroImgBg} ref={videoRef}>
-            <video loop autoPlay muted playsInline>
+            {/* <video loop autoPlay muted playsInline>
               <source src="/Hero video.mp4" type="video/mp4" />
-            </video>
+            </video> */}
+            <img src="/carmosu_hero.jpg" alt="Hero video" fill />
           </div>
         </div>
       </section>

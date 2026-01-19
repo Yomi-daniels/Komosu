@@ -41,22 +41,22 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is Komosu's mission?",
+      question: "What is Carmosu's mission?",
       answer:
         " To help dealerships turn their websites into digital sales machines — platforms that capture leads, build loyalty, and drive sales 24/7.",
     },
     {
-      question: "How can I get started with Komosu?",
+      question: "How can I get started with Carmosu?",
       answer:
         " It starts with a quick call. We’ll review your current setup, show you what’s possible, and map out how to turn your site into a high-performing sales platform.",
     },
     {
-      question: "What support does Komosu offer?",
+      question: "What support does Carmosu offer?",
       answer:
         "From onboarding and custom builds to content creation and performance updates — we offer hands-on support at every step. Think of us as your digital pit crew.",
     },
     {
-      question: "What makes Komosu different from other service providers?",
+      question: "What makes Carmosu different from other service providers?",
       answer:
         "We don’t just give you a nice-looking site. We build a full platform — with integrated content, lead capture tools, community features, and first-party data — tailored to how dealerships actually sell.",
     },
