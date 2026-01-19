@@ -59,7 +59,7 @@ const SecondSection = () => {
           <button className={styles.headerGetStarted}>Contact Us</button>
         </Link> */}
       </div>
-      <div className="mx-auto flex  items-center justify-center mt-[4rem]"><SecondSectionGrid/></div>
+      <div className="mx-auto flex  items-center justify-center mt-[rem]"><SecondSectionGrid/></div>
     </section>
   );
 };
