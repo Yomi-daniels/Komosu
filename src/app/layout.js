@@ -6,13 +6,14 @@ import Footer from "./components/footer/Footer";
 import { Metadata } from "next";
 import "remixicon/fonts/remixicon.css";
 import MainNavigation from "./components/navbar/component/MainNavigation.jsx";
-
+import { RequestAccessProvider } from "@/app/context/RequestAccessContext";
+import GlobalRequestAccessModal from "./components/GlobalRequestAccessModal";
 export const metadata = {
-  title: "Komosu Network",
+  title: "Carmosu",
   description:
     "Expert marketing and technology solutions to grow your dealership in the digital space. Learn more today!",
   openGraph: {
-    title: "Komosu Network",
+    title: "Carmosu",
     description:
       "Creating opportunities for dealerships to thrive in the digital space.",
     url: "https://komosunetwork.com/",
@@ -30,7 +31,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Komosu Network",
+    title: "Carmosu",
     description:
       "Creating opportunities for dealerships to thrive in the digital space.",
     images: [
@@ -54,7 +55,11 @@ export default function RootLayout({ children }) {
       <body className="light-theme">
         <div className="layout">
           <MainNavigation />
-          <main className="content">{children}</main>
+          <main className="content"><RequestAccessProvider>
+  {children}
+  <GlobalRequestAccessModal />
+</RequestAccessProvider>
+</main>
           <Footer />
         </div>
       </body>

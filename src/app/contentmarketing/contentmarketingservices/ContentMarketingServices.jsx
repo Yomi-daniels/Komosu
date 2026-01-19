@@ -1,49 +1,41 @@
-'use client'
+"use client";
+
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaTools, FaNetworkWired, FaUserShield, FaCogs, FaHandshake, FaChartBar } from "react-icons/fa";
 
 const features = [
   {
-    title: "Tailored for Your Dealership",
-    description: "We don’t do templates. Your platform reflects your brand — and it’s built to convert browsers into buyers.",
+    title: "Prioritizes a Small Set of Vehicles",
+    description:
+      "Focus buyers on the cars that matter most, instead of overwhelming them with endless options.",
     image: "/Custom Solution.png",
     pill: true,
   },
   {
-    title: "Turn Your Site Into a Social Engine",
-    description: "We embed a full engagement layer into your website — think likes, saves, comments, and sign-ups — all on your turf.",
+    title: "Visual-First Presentation",
+    description:
+      "Use images, videos, and clean layouts to showcase vehicles clearly and drive engagement.",
     image: "/Integration.png",
     pill: true,
   },
   {
-    title: "Real Help. Real Strategy.",
-    description: "From launch to scale, we back you with hands-on guidance, content help, and proven playbooks that drive results.",
+    title: "Limits Choices Intentionally",
+    description:
+      "Reduce friction and distractions so buyers can take the next step with confidence.",
     image: "/Support.png",
     pill: true,
   },
   {
-    title: "Everything in One Dashboard",
-    description: "Engagement, leads, insights — no more jumping between tools. It’s all built into your site and easy to manage.",
+    title: "Guides Buyers Toward Action",
+    description:
+      "Every element is designed to move visitors from browsing to booking a test drive or contacting sales.",
     image: "/Support.png",
-    pillTop: true,
-  },
-  {
-    title: "Built to Earn Buyer Confidence",
-    description: "Secure, mobile-first, and optimized for trust — we help you look great and sell better.",
-    image: "/Trust.png",
-    pillTop: true,
-  },
-  {
-    title: "See What Buyers Want, Then Act On It",
-    description: " Track behavior in real time, score leads automatically, and fine-tune offers based on what actually works.",
-    image: "/Data.png",
     pillTop: true,
   },
 ];
 
-const ContentMarketingServices = () => {
+const CategoryDefinitionSection = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -94,28 +86,43 @@ const ContentMarketingServices = () => {
 
   return (
     <section className="py-12 px-4 max-w-6xl mx-auto text-left">
-      <div className="features-wrapper flex flex-wrap relative">
+      {/* Section Heading */}
+      {/* <div className="text-center mb-12">
+        <span className="uppercase tracking-[0.2em] text-sm text-btn font-medium">
+          Section 4 — Category Definition
+        </span>
+        <h2 className="text-darkBlueText text-[36px] font-bold leading-[120%] mt-4 max-sm:text-[28px]">
+          A Sales Surface, Not a Page
+        </h2>
+        <p className="mt-3 text-[#585859] text-[18px] max-w-[700px] mx-auto leading-[160%]">
+          CarMosu sits between your ads and your showroom. It’s a fast, focused
+          surface that prioritizes a small set of vehicles, uses visual-first
+          presentation, limits choices intentionally, and guides buyers toward action.
+        </p>
+      </div> */}
+
+      {/* Feature Grid */}
+      <div className="features-wrapper flex flex-wrap justify-center relative gap-0">
         {features.map((feature, index) => {
-          const removeTop = index < 3 ? "border-t-0" : "";
-          const removeBottom = index >= 3 ? "border-b-0" : "";
+          const isLast = index === features.length - 1;
 
           return (
             <div
               key={index}
-              className={`group relative w-full md:w-1/3 border border-[#E6E6FF] p-6 text-left ${removeTop} ${removeBottom} flex flex-col items-start py-12 transition-all duration-300 ease-in-out md:hover:bg-[#f5f5f5] feature-card`}
+              className={`group relative w-full md:w-1/2 lg:w-1/3 border border-[#E6E6FF] p-6 text-left flex flex-col items-start py-12 transition-all duration-300 ease-in-out md:hover:bg-[#f5f5f5] feature-card ${
+                isLast ? "mx-auto" : ""
+              }`}
             >
               {feature.pillTop && (
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-bl-full rounded-br-full shadow-sm transition-colors duration-300 group-hover:bg-btn" />
               )}
 
-              {feature.image ? (
+              {feature.image && (
                 <img
                   src={feature.image}
                   alt={feature.title}
                   className="w-10 h-10 mb-4 object-contain"
                 />
-              ) : (
-                <feature.icon className="text-3xl text-blue-500 mb-4" />
               )}
 
               {feature.pill && (
@@ -125,7 +132,7 @@ const ContentMarketingServices = () => {
               <h3 className="text-[24px] font-bold max-sm:text-[20px] text-[#28282B] mb-2 transition-all duration-300 md:group-hover:text-[24.5px] md:group-hover:scale-105">
                 {feature.title}
               </h3>
-              <p className="text-[#585859] font-medium text-[18px] transition-all duration-300 md:group-hover:text-[18.2px] md:group-hover:scale-105">
+              <p className="text-[#585859] font-medium text-[16px] transition-all duration-300 md:group-hover:text-[16.2px] md:group-hover:scale-105">
                 {feature.description}
               </p>
             </div>
@@ -136,4 +143,4 @@ const ContentMarketingServices = () => {
   );
 };
 
-export default ContentMarketingServices;
+export default CategoryDefinitionSection;

@@ -1,16 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
 
-const DealershipBentoGrid = () => {
+const SecondSectionGrid = () => {
   return (
     <div className='flex flex-wrap gap-[32px] max-w-[100%] px-6 mx-auto justify-center'>
       <div className='lg:w-[640px] md:w-full max-sm:w-full h-[350px] max-sm:h-full bg-[#F9F9F9]  border-[rgb(202,202,204)] rounded-[20px] flex flex-col items-start  border overflow-hidden'>
       <div className='flex flex-col items-start p-[32px] gap-[12px]'>
         <h4 className='text-darkBlueText text-[24px] font-medium leading-[130%] tracking-[-0.48px]'>
-        Your Own Leads to Buyers Website                  
+        Your Own Social Media Website                  
         </h4>
         <p className='text-[18px] font-regular leading-[150%] tracking-[0.36px] capitalize self-stretch text-darkBlueText'>
-        Post videos, customer testimonials, and promotions <br /> directly on your platform—not just social media.
+Share content on your platform, not just social media, and keep buyers focused.
         </p>
       </div>
       <div className='relative flex gap-[2rem]'>
@@ -40,7 +40,7 @@ const DealershipBentoGrid = () => {
         Full Control Over Your Leads               
         </h4>
         <p className='text-[18px] font-regular leading-[150%] tracking-[0.36px] capitalize self-stretch text-darkBlueText'>
-  DealerHub captures first-party data from every interaction—no gatekeepers, no data loss—giving you full control to nurture leads and close faster.</p>
+ Traditional sites lose data. DealerHub captures every interaction to convert more buyers.</p>
       </div>
       <div className='flex flex-wrap'>
         <Image src="/Image container.png" alt='image' width={172.912}  height={200} objectFit='cover'/>
@@ -66,7 +66,7 @@ const DealershipBentoGrid = () => {
         <h4 className='text-darkBlueText text-[24px] font-medium leading-[130%] tracking-[-0.48px]'>
         Frictionless Buying Experience        </h4>
         <p className='text-[18px] font-regular leading-[150%] tracking-[0.36px] capitalize self-stretch text-darkBlueText'>
- letting shoppers chat, get pre-approved, and buy directly, without third-party detours.</p>
+Let buyers chat, get pre-approved, and purchase directly, no detours, no friction.</p>
       </div>
       <div className='flex max-md:flex-wrap'>
         <div className='flex  relative w-[190px] h-[190px]'>
@@ -90,7 +90,7 @@ const DealershipBentoGrid = () => {
         <h4 className='text-darkBlueText text-[24px] font-medium leading-[130%] tracking-[-0.48px] '>
     More Visibility. Higher ROI. </h4>
         <p className='text-[18px] font-regular leading-[150%] tracking-[0.36px] capitalize self-stretch text-darkBlueText'>
-DealerHub drives traffic straight to your platform — so you own the customer journey from first click to final sale. Capture first-party data, reduce acquisition costs, and turn engagement into real revenue.
+Paid traffic needs direction. DealerHub drives buyers straight to action and boosts ROI.
          </p>
       </div>
 
@@ -114,4 +114,4 @@ DealerHub drives traffic straight to your platform — so you own the customer j
   )
 }
 
-export default DealershipBentoGrid
+export default SecondSectionGrid

@@ -29,7 +29,7 @@ const DealerHubHeaderDesign = () => {
                Leads to Buyers
             </h2>
             <p className="text-darkBlueText mb-4 text-[16px] leading-[150%] tracking-[2%] text-left font-regular">
-             Turn site traffic into serious car buyers with tools built to convert — not just collect.
+             Turn site traffic into serious car buyers with tools built to convert, not just collect.
             </p>
           </div> 
           <div className="flex items-center relative pb-3">

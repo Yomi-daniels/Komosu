@@ -2,7 +2,6 @@
 
 import Aistyles from "../Aisolution.module.css";
 import Image from "next/image";
-import LandingPageButtons from "@/app/webdesign/components/LandingPageButtons";
 import { ScrollParallax } from "react-just-parallax";
 import { useEffect, useRef } from "react";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
@@ -13,7 +12,6 @@ const AiLandingpage = () => {
   const imageRef = useRef(null);
   const headingRef = useRef(null);
   const subheadingRef = useRef(null);
-  const buttonRef = useRef(null);
 
   useEffect(() => {
     const tl = gsap.timeline({ defaults: { duration: 1.2, ease: "power3.out" } });
@@ -34,12 +32,6 @@ const AiLandingpage = () => {
         { y: 30, opacity: 0 },
         { y: 0, opacity: 1 },
         "-=1"
-      )
-      .fromTo(
-        buttonRef.current,
-        { scale: 0.8, opacity: 0 },
-        { scale: 1, opacity: 1 },
-        "-=0.8"
       );
 
     gsap.fromTo(
@@ -49,60 +41,88 @@ const AiLandingpage = () => {
     );
   }, []);
 
-  const headertext = `Drive More Leads, \n Close More Sales`;
-  const subheading = `Komosu Network blends AI and automation to supercharge your dealership — engage better, respond faster, and sell smarter.`;
+  const headertext = `Who CarMosu Is For`;
+  const subheading = `CarMosu is built for dealerships that:`;
+
+  const features = [
+    { text: "run paid ads" },
+    { text: "want faster test-drive bookings" },
+    { text: "are willing to prioritise inventory" },
+    { text: "value focus over flexibility" },
+    {
+      text: "If you're looking for a website redesign, CarMosu is not for you.",
+      isNegative: true,
+    },
+  ];
 
   return (
     <section className={Aistyles.AiLandingPage}>
       <div className={Aistyles.vectorImgtop}>
         <Image src="/yellow vector.png" fill alt="decorative top vector" />
       </div>
-      <div className={Aistyles.ailandingpageContainer}>
+
+      {/* Responsive Container */}
+      <div
+        className={`${Aistyles.ailandingpageContainer} flex flex-col lg:flex-row items-center gap-12 lg:gap-0`}
+      >
+        {/* Text Side */}
         <div
-          className={Aistyles.ailandingpageContainerTextContent}
+          className={`${Aistyles.ailandingpageContainerTextContent} w-full lg:w-1/2 text-center lg:text-left`}
           ref={containerTextRef}
         >
-          <div className={Aistyles.AiLandingPageHeader}>
-            <div className={Aistyles.aiheaderImg}>
-              <Image src="/ai vector.png" fill alt="AI badge" />
-            </div>
-            <h4>AI SOLUTIONS</h4>
-          </div>
-<div>
-  
-            <h2 className="text-sm" ref={headingRef}>
+          <div>
+            <h2 ref={headingRef}>
               <TextGenerateEffect
                 words={headertext}
-                messageClass="text-[48px] max-sm:text-[35px]"
+                messageClass="text-[28px] sm:text-[34px] md:text-[40px] lg:text-[48px] leading-tight"
               />
-        
-
             </h2>
-</div>
+          </div>
 
-          <p ref={subheadingRef}>{subheading}</p>
+          <p
+            ref={subheadingRef}
+            className="mt-4 text-sm sm:text-base"
+          >
+            {subheading}
+          </p>
 
-          <div ref={buttonRef}>
-            <LandingPageButtons />
+          {/* Feature List */}
+          <div className="flex flex-col gap-4 mt-6 max-w-md mx-auto lg:mx-0">
+            {features.map((feature, index) => (
+              <div key={index} className="flex items-start gap-4">
+                <div
+                  className={`flex-shrink-0 w-8 h-8 rounded-full border-2 ${
+                    feature.isNegative
+                      ? "border-red-400 text-red-400"
+                      : "border-yellow-400 text-yellow-400"
+                  } flex items-center justify-center font-bold`}
+                >
+                  {index + 1}
+                </div>
+
+                <p className="text-gray-800 font-medium flex-1 pt-0.5 text-sm sm:text-base">
+                  {feature.text}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
 
-        <div className={Aistyles.ailandingpageImage} ref={imageRef}>
-          <ScrollParallax isAbsolutelyPositioned>
-            <div className={Aistyles.ailandingpageImagetop}>
-              <Image src="/Bot.png" fill objectFit="contain" alt="AI Bot" />
-            </div>
-          </ScrollParallax>
-
-          <div className={Aistyles.aigirlImg}>
-            <Image src="/Ai girl.png" fill objectFit="contain" alt="AI Assistant" />
+        {/* Image Side */}
+        <div
+          className={`${Aistyles.ailandingpageImage} w-full lg:w-1/2 flex justify-center`}
+          ref={imageRef}
+        >
+          <div
+            className={`${Aistyles.aigirlImg} relative w-[260px] sm:w-[320px] md:w-[380px] lg:w-full h-[320px] sm:h-[380px] md:h-[420px] lg:h-full`}
+          >
+            <Image
+              src="/Ai girl.png"
+              fill
+              className="object-contain"
+              alt="AI Assistant"
+            />
           </div>
-
-          <ScrollParallax isAbsolutelyPositioned>
-            <div className={Aistyles.ailandingpageImagebottom}>
-              <Image src="/Frame 126 (1).png" fill objectFit="contain" alt="abstract design" />
-            </div>
-          </ScrollParallax>
         </div>
       </div>
     </section>

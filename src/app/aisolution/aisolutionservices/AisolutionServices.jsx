@@ -12,24 +12,24 @@ gsap.registerPlugin(ScrollTrigger);
 const services = [
   {
     id: 1,
-    title: "AI-Powered Scheduling",
-    text: `Let our AI chatbots handle appointments, customer chats, and sales—all day, every day.`,
+    title: "Run Paid Ads",
+    text: "CarMosu works for dealerships running paid traffic campaigns to drive more test-drive bookings.",
     image: "/Frame 1618868477.png",
     textFrom: "left",
     imageFrom: "right",
   },
   {
     id: 2,
-    title: "Seamless Transactions",
-    text: `Accept payments, send forms, and manage updates with AI-driven automation.`,
+    title: "Prioritize Inventory",
+    text: "Focus on key vehicles — CarMosu surfaces what matters most to buyers, increasing conversions.",
     image: "/Frame 1618868493.png",
     textFrom: "right",
     imageFrom: "left",
   },
   {
     id: 3,
-    title: "Smart Copywriting",
-    text: `Boost conversions with chatbots that upsell services and recommend vehicles.`,
+    title: "Value Focus Over Flexibility",
+    text: "CarMosu is designed to guide intent. If you want a flexible website redesign, this isn’t for you.",
     image: "/Frame 1618868477.png",
     textFrom: "left",
     imageFrom: "right",
@@ -45,7 +45,6 @@ const AisolutionServices = () => {
       const textDirection = service.textFrom === "left" ? -300 : 300;
       const imageDirection = service.imageFrom === "left" ? -300 : 300;
 
-      // Animate text
       gsap.fromTo(
         textRefs.current[index],
         { x: textDirection, opacity: 0 },
@@ -62,7 +61,6 @@ const AisolutionServices = () => {
         }
       );
 
-      // Animate image
       gsap.fromTo(
         imageRefs.current[index],
         { x: imageDirection, opacity: 0 },

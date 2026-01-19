@@ -3,6 +3,11 @@
 @tailwind utilities;
 /* app/globals.css or styles/globals.css */
 
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* Custom font face declarations */
 @font-face {

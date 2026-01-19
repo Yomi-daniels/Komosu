@@ -7,8 +7,8 @@ const Aisolution = () => {
   return (
     <section className={Aistyles.AiSolutionSection}>
       <AiLandingpage />
-      <AisolutionServices />
-      <Aipricing />
+      {/* <AisolutionServices /> */}
+   
     </section>
   );
 };

@@ -1,21 +1,26 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./sections.module.css";
 import { Shadows_Into_Light } from "next/font/google";
+import RequestAccessModal from "./RequestAccessModal";
+import MainNavigation from "@/app/components/navbar/component/MainNavigation";
+import { useRequestAccess } from "@/app/context/RequestAccessContext";
+
 
 const shadowFont = Shadows_Into_Light({
   subsets: ["latin"],
   weight: ["400"],
 });
 
-const LandingPage = () => {
+const LandingPage = ({ onRequestAccessClick }) => {
   const heroHeaderRef = useRef(null);
   const heroSubTextRef = useRef(null);
   const heroBtnRef = useRef(null);
   const videoRef = useRef(null);
+   const [isModalOpen, setIsModalOpen] = useState(false);
 
 useEffect(() => {
   const mm = gsap.matchMedia();
@@ -80,6 +85,8 @@ useEffect(() => {
 
   return () => mm.revert(); // Clean up
 }, []);
+const { openModal } = useRequestAccess();
+
 
 
   return (
@@ -90,31 +97,43 @@ useEffect(() => {
           <div className={styles.HeroTextContainer}>
             <div className={styles.HeroText} ref={heroHeaderRef}>
               <h1 className={styles.heroHeader}>
-                Your Website Should Sell{" "}
+               Turn Ad Clicks Into Real{" "}
                 <span className={`${styles.heroSpan} ${shadowFont.className}`}>
-                 Cars
+               Showroom
                 </span>{" "}
-                Not Just Show Them
+                Visits
               </h1>
             </div>
             <div className={styles.HeaderContent} ref={heroSubTextRef}>
               <p className={styles.heroSubText}>
-               Komosu turns dealership websites into digital sales reps that work around the clock.
+               CarMosu is a high-intent sales surface designed to convert paid traffic into booked test drives, without clutter, comparison, or wasted attention.
               </p>
             </div>
             <div className={styles.landingBtns} ref={heroBtnRef}>
-              <Link href="/request-demo">
-                <button className={styles.headerGetStarted}>Book a Demo</button>
-              </Link>
-              <Link href="/about">
+              {/* Button triggers modal */}
+       <button
+  className={styles.headerGetStarted}
+  onClick={openModal}
+>
+  Request Access
+</button>
+
+         {/* Request Access modal */}
+              {/* <MainNavigation onRequestAccessClick={() => setIsModalOpen(true)} /> */}
+              {/* <RequestAccessModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                onRequestAccessClick={() => setIsModalOpen(true)}
+              /> */}
+              {/* <Link href="#what-we-offer">
                 <button className={styles.headerbtn}>
                   Learn More
                   <div className={styles.buttonImage}>
                     <Image src="/View plan button (4).png" alt="vector" fill />
-                    {/* <Image src="/top-right.png" alt="vector" fill className='' /> */}
+                  
                   </div>
                 </button>
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className={styles.heroImgBg} ref={videoRef}>

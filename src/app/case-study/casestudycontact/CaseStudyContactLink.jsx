@@ -43,10 +43,14 @@ const CaseStudyContactLink = () => {
         <div className={casestyles.topimgabsolute}>
           <Image src="/Group 2.png" fill alt="Top Image" />
         </div>
-        <h4>Trust Us With Your Business. Get <br /> Started Today!</h4>
-        <Link href="/request-demo">
+        <h4>The Moment Between the Ad and the <br /> Showroom Matters Most
+</h4>
+        {/* <Link href="/request-demo">
           <button>Book a Demo</button>
-        </Link>
+        </Link> */}
+
+        <p className="text-white text-center">CarMosu controls that moment by removing distraction <br /> and focusing attention on one outcome:
+book a test drive or speak to the team.</p>
         <div className={casestyles.bottomimgabsolute}>
           <Image src="/Group 2.png" fill alt="Bottom Image" />
         </div>

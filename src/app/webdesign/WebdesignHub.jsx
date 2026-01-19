@@ -1,4 +1,5 @@
 "use client";
+
 import Tickimg from "@/app/webdesign/components/Tickimg";
 import casestyles from "../case-study/casestudy.module.css";
 import { AnimatePresence, motion } from "framer-motion";
@@ -13,24 +14,19 @@ import { title } from "@/utils/siteMetaData";
 const WebdesignHub = () => {
   const points = [
     {
-      title: "Build Instant Trust",
+      title: "Select Priority Vehicles",
       description:
-        " A clean, modern site gives customers confidence they’re dealing with a professional, reliable dealership.",
+        "Choose up to 24 vehicles to feature, no clutter, just focused inventory built to convert.",
     },
     {
-      title: "Drive More Conversions",
+      title: "Send Paid Traffic to CarMosu",
       description:
-        " Make it easy for buyers to book test drives, apply for financing, and contact your team — right from your homepage.",
+        "Direct ads to a fast, focused sales surface instead of a traditional inventory website.",
     },
     {
-      title: "Leave Competitors Behind",
+      title: "Turn Interest Into Action",
       description:
-        " With your own Dealer Hub, you’ll offer features no cookie-cutter website can match — like buyer interaction, saved listings, and in-site messaging.",
-    },
-    {
-      title: "Stay Ahead of the Curve",
-      description:
-        " Your site will be ready for what’s next — with tools like VR showrooms, AI chat, and customer behavior tracking built in.",
+        "Guide buyers toward booking showroom visits, test drives, and real conversations.",
     },
   ];
 
@@ -91,20 +87,19 @@ const WebdesignHub = () => {
     >
       <div className="flex flex-col gap-6 items-center justify-center max-w-[736px] mx-auto max-md:px-[2rem] max-sm:px-[1rem] max-sm:max-w-[686px]">
         <h1 className="font-bold text-darkBlueText text-[40px] mx-auto text-center leading-[120%] tracking-[-4%] max-md:text-[32px] max-sm:text-[24px]">
-          Upgrade to a Website That{" "}
-          <span className="font-custom text-btn">Sells</span>
+          How Dealers Use <span className="font-custom text-btn">CarMosu</span>
         </h1>
         <p className="tracking-[-2%] text-darkBlueText font-medium text-[18px] text-center max-sm:text-[16px]">
-          Turn traffic into test drives with a platform built to convert.
+          A simple flow that turns paid traffic into real showroom visits.
         </p>
 
-        <Link href="/contact-us">
+        {/* <Link href="/contact-us">
           <button className={styles.headerGetStarted}>Contact Us</button>
-        </Link>
+        </Link> */}
       </div>
 
       <div className="px-4 py-10 md:px-16 mt-[2rem] flex justify-center items-center">
-        <div className="flex flex-col md:flex-row items-center gap-10">
+        <div className="flex flex-col md:flex-row items-start gap-10">
           {/* Left Side: Animated Text Points */}
           <motion.div
             className="flex-1 space-y-2 max-w-[448px] relative"

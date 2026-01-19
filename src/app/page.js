@@ -11,7 +11,7 @@ import Navbar from "./components/navbar/Navbar";
 import WhyKomosu from "@/sections/WhyKomosu";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { TextGenerateEffect } from "@/app/components/ui/text-generate-effect";
 import casestyles from "./case-study/casestudy.module.css";
 import ContentMarketingServices from "./contentmarketing/contentmarketingservices/ContentMarketingServices";
@@ -20,12 +20,24 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Services from "@/sections/services";
 import MainNavigation from "./components/navbar/component/MainNavigation.jsx";
-// Import `cn` if you need it for conditional class names
-// import cn from "classnames";
+import Loading from "./loading";
+import RequestAccessModal from "./components/requestAccessModal/RequestAccessModal";
+import DealershipHubSection from "./dealership_hub/DealershipHubSection";
+// import SecondSection from "@/sections/secondSection";
+import SecondSection from "@/sections/secondSection";
+import CaseStudyContactLink from "./case-study/casestudycontact/CaseStudyContactLink";
+import WebdesignHub from "./webdesign/WebdesignHub";
+import Constrains from "@/sections/constrainsSections";
+import AiSolution from "./servicesLink/ServicesSubLink/AiSolution/pages";
+import Aisolution from "./aisolution/page";
+import DealershipHeader from "./dealership_hub/DealershipHeader";
+import DealerHubDigital from "./dealership_hub/DealerHubDigital";
 
 const Home = () => {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, { once: true }); // Trigger animations once when in view
+  const [isLoading, setIsLoading] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Animation variants
   const fadeInUp = {
@@ -45,7 +57,14 @@ const Home = () => {
   const challengesText = `In today’s digital landscape, Content marketing offers dealerships the opportunity to:`;
   const solutionsText = `What Makes`;
   const otherText = `Different?`;
+  // Loading timeout
+  useEffect(() => {
+    const loadingTimer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
 
+    return () => clearTimeout(loadingTimer);
+  }, []);
   // Register ScrollTrigger plugin with GSAP
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -75,46 +94,75 @@ const Home = () => {
 
   return (
     <div className={styles.landingpagesection}>
-      <MainNavigation />
-      <section className={styles.landingPage}>
-        <LandingPage />
-      </section>
-      <section className={styles.ServicesPage}>
-        <Services />
-        <section className={styles.Servisesflex}></section>
-      </section>
-      <section className={styles.VideoShowcasePage}>
-        <div className={casestyles.thirdheadingsection}>
-          <h2
-            className={`${casestyles.thirdsectionheader} mt-6 text-[2.5rem] font-bold max-sm:text-[1.5rem] font-variable text-darkBlueText`}
-          >
-           Built for <span className="font-custom text-btn">Dealers</span>{" "}
-            Backed by Strategy
-          </h2>
-          <p className={casestyles.solutionsParagraph}>
-         Most websites sit there. Ours sell 
-We help your <br /> dealership stand out, connect better, and close faster.
+      {isLoading && <Loading />}
+      <div style={{ display: isLoading ? "none" : "block" }}>
+        <MainNavigation onRequestAccessClick={() => setIsModalOpen(true)} />
+        <section className={styles.landingPage} id="home">
+          <LandingPage />
+        </section>
+        <section className={styles.ServicesPage} id="about">
+          <Services />
+          <section className={styles.Servisesflex}></section>
+        </section>
+        <section>
+          <SecondSection />
+        </section>
+        <section>
+          <CaseStudyContactLink/>
+        </section>
+        <section className={styles.VideoShowcasePage} id="what-we-offer">
+          <div className={casestyles.thirdheadingsection}>
+            <h2
+              className={`${casestyles.thirdsectionheader} mt-6 text-[2.5rem] font-bold max-sm:text-[1.5rem] font-variable text-darkBlueText`}
+            >
+            A Sales <span className="font-custom text-btn">Surface</span>{" "}
+              , Not a Page
 
-          </p>
-        </div>
-        <ContentMarketingServices />
-      </section>
-      <section className={styles.OfferPage}>
-        <Offer />
-      </section>
+            </h2>
+            <p className={casestyles.solutionsParagraph}>
+         CarMosu sits between your ads and your showroom.
 
-      <section className={styles.OfferAnimationPage}>
-        <OfferAnimation />
-      </section>
-      {/* <section className={styles.OfferAnimationPage}>
-        <WhyKomosu />
-      </section> */}
-      <section className={styles.TestimonialPage}>
-        <Testimonials />
-      </section>
-      <section className={`${styles.FAQPage} ${styles.page}`}>
-        <FAQ />
-      </section>
+            </p>
+          </div>
+          <ContentMarketingServices />
+        </section>
+         <section >
+          <WebdesignHub />
+        </section>
+           <section >
+          <Constrains />
+        </section>
+           <section >
+          <Aisolution />
+        </section>
+     
+         <DealershipHeader onRequestAccessClick={() => setIsModalOpen(true)} />
+
+      {/* Request Access modal */}
+      <RequestAccessModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
+        <section className={styles.OfferPage}>
+          <Offer />
+        </section>
+
+        <section className={styles.OfferAnimationPage}>
+          <OfferAnimation />
+        </section>
+        {/* <section className={styles.OfferAnimationPage}>
+          <WhyKomosu />
+        </section> */}
+        <section className={styles.TestimonialPage} id="testimonials">
+          <Testimonials />
+        </section>
+        <section className={`${styles.FAQPage} ${styles.page}`} id="faq">
+          <FAQ />
+        </section>
+        <section id="contact-us">
+          {/* Contact section content */}
+        </section>
+      </div>
     </div>
   );
 };
