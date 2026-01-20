@@ -80,7 +80,7 @@ The system stays consistent so performance compounds. <br />
             alt="car features"
             className="w-full h-[390px] object-cover rounded-[12px]"
           />
-          <div className="absolute top-[-40px] right-[-70px] bg-[#E6E6FF]  rounded-[12px] shadow-md w-[239px] h-[134px] p-4 max-sm:right-[-20px]
+          {/* <div className="absolute top-[-40px] right-[-70px] bg-[#E6E6FF]  rounded-[12px] shadow-md w-[239px] h-[134px] p-4 max-sm:right-[-20px]
           max-sm:w-[180px] max-sm:h-[180px]">
             <p className="text-blueText text-[40px] font-black max-w-[207px] h-[54px] max-sm:-[140px] max-sm:text-[30px]">
               30%
@@ -90,7 +90,7 @@ The system stays consistent so performance compounds. <br />
               <br />
               This Car In April
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

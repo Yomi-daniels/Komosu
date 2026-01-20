@@ -37,10 +37,10 @@ const RequestAccessModal = ({ isOpen, onClose }) => {
       />
 
       {/* Modal */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto max-h-[90vh] overflow-y-auto rounded-2xl">
+      <div className="relative z-10 w-full max-w-5xl mx-auto max-h-[90vh] overflow-y-auto rounded-2xl ">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 bg-white/90 hover:bg-white text-black w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition"
+          className="absolute top-4 right-4 z-20 bg-white/90  text-black w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition cursor-pointer hover:bg-blue-100 hover:text-darkBlueText"
         >
           ✕
         </button>

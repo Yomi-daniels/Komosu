@@ -7,28 +7,29 @@ const targetAudience = [
   {
     icon: Target,
     title: "Run paid ads",
-    description: "Maximize your ad spend with AI-powered lead qualification",
+    description: "Maximize your ad spend with better lead filtering and conversion-focused campaigns",
     gradient: "linear-gradient(135deg, #f43f5e, #ec4899, #a855f7)",
   },
   {
     icon: CalendarCheck,
     title: "Want faster test-drive bookings",
-    description: "Automate scheduling and reduce time-to-appointment",
+    description: "Streamline scheduling and reduce delays between inquiry and appointment",
     gradient: "linear-gradient(135deg, #10b981, #14b8a6, #06b6d4)",
   },
   {
     icon: Package,
     title: "Are willing to prioritise inventory",
-    description: "Let AI match buyers with the right vehicles instantly",
+    description: "Show buyers the vehicles that matter most to drive quicker decisions",
     gradient: "linear-gradient(135deg, #f59e0b, #f97316, #ef4444)",
   },
   {
     icon: Focus,
     title: "Value focus over flexibility",
-    description: "Purpose-built for dealerships, not a one-size-fits-all tool",
+    description: "Built specifically for dealerships, not a generic website solution",
     gradient: "linear-gradient(135deg, #3b82f6, #6366f1, #8b5cf6)",
   },
 ];
+
 
 const containerVariants = {
   hidden: { opacity: 0 },

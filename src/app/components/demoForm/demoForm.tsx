@@ -79,10 +79,10 @@ const DemoForm = () => {
       <div className="max-w-3xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 bg-yellow-100 border border-yellow-300 rounded-full px-4 py-2 mb-4">
-            <span className="text-sm font-semibold text-yellow-800">Get Started Today</span>
+          <div className="inline-flex items-center gap-2 bg-btn border border-darkBlueText rounded-full px-4 py-2 mb-4">
+            <span className="text-sm font-semibold text-white">Get Started Today</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-darkBlueText mb-4">
             Request a Demo
           </h2>
           <p className="text-lg text-slate-600">
@@ -172,7 +172,7 @@ const DemoForm = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-btn font-semibold text-lg py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              className="w-full bg-darkBlueText from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-white font-semibold text-lg py-4 px-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {isSubmitting ? (
                 <span className="flex items-center justify-center gap-2">
@@ -196,7 +196,7 @@ const DemoForm = () => {
 
         {/* Bottom Text */}
         <div className="text-center mt-8 text-slate-600">
-          <p>Have questions? Email us at <a href="mailto:support@carmosu.com" className="text-yellow-600 hover:text-yellow-700 font-medium">support@carmosu.com</a></p>
+          <p>Have questions? Email us at <a href="mailto:info@carmosu.com" className="text-yellow-600 hover:text-yellow-700 font-medium">info@carmosu.com</a></p>
         </div>
       </div>
     </div>
