@@ -6,34 +6,40 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const features = [
   {
+    id: "top",
     title: "Prioritizes a Small Set of Vehicles",
     description:
       "Focus buyers on the cars that matter most, instead of overwhelming them with endless options.",
     image: "/Custom Solution.png",
-    pill: true,
   },
   {
+    id: "left",
     title: "Visual-First Presentation",
     description:
       "Use images, videos, and clean layouts to showcase vehicles clearly and drive engagement.",
     image: "/Integration.png",
-    pill: true,
   },
   {
+    id: "center",
+    isCenter: true,
+    logo: "/CarMosu_logo.png",
+  },
+  {
+    id: "right",
     title: "Limits Choices Intentionally",
     description:
       "Reduce friction and distractions so buyers can take the next step with confidence.",
     image: "/Support.png",
-    pill: true,
   },
   {
+    id: "bottom",
     title: "Guides Buyers Toward Action",
     description:
       "Every element is designed to move visitors from browsing to booking a test drive or contacting sales.",
     image: "/Support.png",
-    pillTop: true,
   },
 ];
+
 
 const CategoryDefinitionSection = () => {
   useEffect(() => {
@@ -102,42 +108,75 @@ const CategoryDefinitionSection = () => {
       </div> */}
 
       {/* Feature Grid */}
-      <div className="features-wrapper flex flex-wrap justify-center relative gap-0">
-        {features.map((feature, index) => {
-          const isLast = index === features.length - 1;
+     <div className="features-wrapper grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-0 relative">
+{features.map((feature) => {
+  if (feature.isCenter) {
+    return (
+      <div
+  key="center"
+  className="feature-card relative flex items-center justify-center
+             border border-[#E6E6FF] bg-white p-12
+             md:col-start-2 md:row-start-2"
+>
+  {/* Glow */}
+  <div className="absolute inset-0 rounded-full bg-btn opacity-20 blur-3xl" />
 
-          return (
-            <div
-              key={index}
-              className={`group relative w-full md:w-1/2 lg:w-1/3 border border-[#E6E6FF] p-6 text-left flex flex-col items-start py-12 transition-all duration-300 ease-in-out md:hover:bg-[#f5f5f5] feature-card ${
-                isLast ? "mx-auto" : ""
-              }`}
-            >
-              {feature.pillTop && (
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-bl-full rounded-br-full shadow-sm transition-colors duration-300 group-hover:bg-btn" />
-              )}
+  <img
+    src="/CarMosu_logo.png"
+    alt="Carmosu logo"
+    className="relative w-34 h-34 object-contain z-10"
+  />
+</div>
 
-              {feature.image && (
-                <img
-                  src={feature.image}
-                  alt={feature.title}
-                  className="w-10 h-10 mb-4 object-contain"
-                />
-              )}
+    );
+  }
 
-              {feature.pill && (
-                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-3 bg-[#D9D9D9] rounded-tl-full rounded-tr-full shadow-sm transition-colors duration-300 group-hover:bg-btn" />
-              )}
+  const positionMap = {
+    top: "md:col-start-2 md:row-start-1",
+    left: "md:col-start-1 md:row-start-2",
+    right: "md:col-start-3 md:row-start-2",
+    bottom: "md:col-start-2 md:row-start-3",
+  };
 
-              <h3 className="text-[24px] font-bold max-sm:text-[20px] text-[#28282B] mb-2 transition-all duration-300 md:group-hover:text-[24.5px] md:group-hover:scale-105">
-                {feature.title}
-              </h3>
-              <p className="text-[#585859] font-medium text-[16px] transition-all duration-300 md:group-hover:text-[16.2px] md:group-hover:scale-105">
-                {feature.description}
-              </p>
-            </div>
-          );
-        })}
+  return (
+    <div
+  key={feature.id}
+  className={`feature-card group relative border border-[#E6E6FF] p-6 py-12
+              flex flex-col items-start bg-white
+              transition-all duration-300 ease-out
+              hover:-translate-y-2 hover:shadow-xl
+              ${positionMap[feature.id]}`}
+>
+  {/* Top pill */}
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-3 
+                  bg-[#D9D9FF] rounded-b-full
+                  transition-colors duration-300 group-hover:bg-btn" />
+
+  <img
+    src={feature.image}
+    alt={feature.title}
+    className="w-10 h-10 mb-4 object-contain"
+  />
+
+  <h3 className="text-[24px] font-bold text-[#28282B] mb-2
+                 transition-transform duration-300 group-hover:scale-[1.01]">
+    {feature.title}
+  </h3>
+
+  <p className="text-[#585859] font-medium text-[16px]
+                transition-opacity duration-300 group-hover:opacity-90">
+    {feature.description}
+  </p>
+
+  {/* Bottom pill */}
+  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-12 h-3
+                  bg-[#D9D9FF] rounded-t-full
+                  transition-colors duration-300 group-hover:bg-btn" />
+</div>
+
+  );
+})}
+
       </div>
     </section>
   );
