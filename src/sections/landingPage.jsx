@@ -124,7 +124,7 @@ const { openModal } = useRequestAccess();
             {/* <video loop autoPlay muted playsInline>
               <source src="/Hero video.mp4" type="video/mp4" />
             </video> */}
-            <img src="/carmosu_hero.jpg" alt="Hero video" fill />
+            <img src="/car_hero (1).jpg" alt="Hero video" fill />
           </div>
         </div>
       </section>
