@@ -80,7 +80,7 @@ const MainNavigation = () => {
           <Link
             href="/"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="relative w-[100px] h-[100px] max-sm:absolute left-0"
+            className="relative w-[100px] h-[100px] max-sm:absolute left-0 max-sm:left-[20px]"
           >
             <Image
               src="/CarMosu_logo.png"
