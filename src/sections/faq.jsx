@@ -43,7 +43,7 @@ const FAQ = () => {
     {
       question: "What is Carmosu's mission?",
       answer:
-        " To help dealerships turn their websites into digital sales machines — platforms that capture leads, build loyalty, and drive sales 24/7.",
+        "CarMosu is licensed. Start with a short qualification call to confirm fit and availability in your metro area.",
     },
     {
       question: "How can I get started with Carmosu?",
@@ -53,12 +53,12 @@ const FAQ = () => {
     {
       question: "What support does Carmosu offer?",
       answer:
-        "From onboarding and custom builds to content creation and performance updates — we offer hands-on support at every step. Think of us as your digital pit crew.",
+        "System setup, activation, and ongoing performance monitoring CarMosu does not provide customization or website redesigns.",
     },
     {
       question: "What makes Carmosu different from other service providers?",
       answer:
-        "We don’t just give you a nice-looking site. We build a full platform — with integrated content, lead capture tools, community features, and first-party data — tailored to how dealerships actually sell.",
+        "CarMosu doesn’t compete with websites, agencies, or CRMs.Websites inform. Agencies optimize campaigns. CRMs manage leads. CarMosu controls the destination — shaping intent before a lead exists.",
     },
   ];
 

@@ -243,12 +243,12 @@
     padding: 24px;
   }
 
-  .footerBtn button {
+  /* .footerBtn button {
     width: 90vw;
     align-self: stretch;
     font-size: 24px;
     font-weight: 500;
-  }
+  } */
 
   .footerBtn .footerbtn2 {
     gap: 1em;
@@ -309,12 +309,12 @@
     width: 100%;
     padding: 24px;
   }
-  .footerBtn button {
+  /* .footerBtn button {
     width: 90vw;
     align-self: stretch;
     font-size: 16px;
     font-weight: 500;
-  }
+  } */
 
   .footerBtn .footerbtn2 {
     gap: 1em;

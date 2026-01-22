@@ -10,8 +10,9 @@ const navLinks = [
   { title: "Home", path: "#home" },
   { title: "About", path: "#about" },
   { title: "Services", path: "#what-we-offer" },
-  { title: "Contact", path: "#contact-us" },
+  { title: "Contact", path: "#contact-us", modal: true },
 ];
+
 
 const MainNavigation = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -94,13 +95,19 @@ const MainNavigation = () => {
           <nav className="hidden lg:flex items-center justify-center gap-16 max-w-[550px] flex-1">
             {navLinks.map((link) => (
               <div key={link.title} className="relative group flex flex-col items-center">
-                <Link
-                  href={link.path}
-                  onClick={(e) => handleSmoothScroll(e, link.path)}
-                  className={`hover:text-darkBlueText transition relative z-10 ${
-                    pathname === link.path ? "font-bold" : ""
-                  }`}
-                >
+              <Link
+  href={link.path}
+  onClick={(e) => {
+    if (link.modal) {
+      e.preventDefault();
+      setIsRequestOpen(true);
+    } else {
+      handleSmoothScroll(e, link.path);
+    }
+  }}
+  className="hover:text-darkBlueText transition relative z-10"
+>
+
                   {link.title}
                 </Link>
                 <span
@@ -156,13 +163,20 @@ const MainNavigation = () => {
                 <ul className="flex flex-col gap-10 mt-0 w-full relative">
                   {navLinks.map((link) => (
                     <li key={link.title}>
-                      <Link
-                        href={link.path}
-                        onClick={(e) => handleSmoothScroll(e, link.path)}
-                        className={`block text-gray-800 font-medium hover:text-blue-600 ${
-                          pathname === link.path ? "text-blue-600" : ""
-                        }`}
-                      >
+                     <Link
+  href={link.path}
+  onClick={(e) => {
+    if (link.modal) {
+      e.preventDefault();
+      setIsRequestOpen(true);
+      setIsMobileMenuOpen(false);
+    } else {
+      handleSmoothScroll(e, link.path);
+    }
+  }}
+  className="block text-gray-800 font-medium hover:text-blue-600"
+>
+
                         {link.title}
                       </Link>
                     </li>

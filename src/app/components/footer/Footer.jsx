@@ -31,27 +31,18 @@ const Footer = () => {
           <h1>Ready to scale up your business growth?</h1>
           <div className={styles.footerBtn}>
            
-           <button
-  className={styles.footerbtn1}
+         <button
   onClick={openModal}
+  className={cn(
+    styles.footerbtn1,
+    "mx-auto max-sm:mx-auto max-sm:w-fit max-sm:px-6 max-sm:py-2 max-sm:text-sm"
+  )}
 >
   Request Access
 </button>
 
-{/*            
-            <Link href="/about">
-              <button className={styles.footerbtn2}>
-                Learn more
-                <div className={styles.buttonImage}>
-                  <Image
-                    src="/View plan button (4).png"
-                    alt="vector"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              </button>
-            </Link> */}
+
+
           </div>
         </div>
       </div>

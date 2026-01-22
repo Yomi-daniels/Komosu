@@ -6,26 +6,26 @@ import { Target, CalendarCheck, Package, Focus, X, Check } from "lucide-react";
 const targetAudience = [
   {
     icon: Target,
-    title: "Run paid ads",
-    description: "Maximize your ad spend with better lead filtering and conversion-focused campaigns",
+    title: "Run Paid Ads at Scale",
+    description: "You invest seriously in search and social ads and expect those clicks to turn into real visits.",
     gradient: "linear-gradient(135deg, #f43f5e, #ec4899, #a855f7)",
   },
   {
     icon: CalendarCheck,
-    title: "Want faster test-drive bookings",
-    description: "Streamline scheduling and reduce delays between inquiry and appointment",
+    title: "Need Faster Test-Drive Bookings",
+    description: "Your ads generate interest, but too many buyers stall before booking a test drive.",
     gradient: "linear-gradient(135deg, #10b981, #14b8a6, #06b6d4)",
   },
   {
     icon: Package,
-    title: "Are willing to prioritise inventory",
-    description: "Show buyers the vehicles that matter most to drive quicker decisions",
+    title: " Prioritise What Actually Moves",
+    description: "You want to decide which vehicles sell now instead of showing everything and hoping for the best.",
     gradient: "linear-gradient(135deg, #f59e0b, #f97316, #ef4444)",
   },
   {
     icon: Focus,
     title: "Value focus over flexibility",
-    description: "Built specifically for dealerships, not a generic website solution",
+    description: "You’re willing to trade choice and customization for speed, clarity, and action.",
     gradient: "linear-gradient(135deg, #3b82f6, #6366f1, #8b5cf6)",
   },
 ];
@@ -74,8 +74,7 @@ const WhoItsFor = () => {
           </h2>
         
           <p className="tracking-[-2%] text-darkBlueText font-medium text-[18px] text-center max-sm:text-[16px]">
-            Built for dealerships that demand <strong>more leads</strong>,{" "}
-            <strong>faster bookings</strong>, and <strong>smarter automation</strong>
+            Built for dealerships that run ads but want more showroom visits, <br /> not more browsing
           </p>
         </motion.div>
 
