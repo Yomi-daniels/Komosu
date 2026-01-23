@@ -3,16 +3,16 @@ export default function TermsPage() {
     <div className="text-darkBlueText relative">
     <div className="flex flex-col gap-[16px] relative h-full">
       <h5 className="text-gray font-medium text-lg m-0 ">Terms of Service</h5>
-        <h1 className="text-[40px] font-bold m-0 md:text-[30px] sm:text-[30px] max-sm:text-[27px]">Komosu Terms of Service</h1>
+        <h1 className="text-[40px] font-bold m-0 md:text-[30px] sm:text-[30px] max-sm:text-[27px]">Carmosu Terms of Service</h1>
         <p className="font-bold text-darkBlueText">Effective Date: 11th April, 2024</p>
         <p className="font-bold text-darkBlueText">Updated 9th April, 2024</p>
     </div>
     <div>
-      <p className="text-[18px] font-regular leading-[150%] tracking-[2%] mt-[24px]">Welcome to Komosu Network (“Company”, “we”, “our”, or “us”). By accessing or using our services, you (“Client”, “you”, or “your”) agree to be bound by the following Terms of Service (“Terms”). If you do not agree with these Terms, please do not use our services.</p>
+      <p className="text-[18px] font-regular leading-[150%] tracking-[2%] mt-[24px]">Welcome to carmosu Network (“Company”, “we”, “our”, or “us”). By accessing or using our services, you (“Client”, “you”, or “your”) agree to be bound by the following Terms of Service (“Terms”). If you do not agree with these Terms, please do not use our services.</p>
       <div className="mt-[24px] text-[18px] relative">
         <h5 className="font-bold ">Who We Are</h5>
      
-        <p>Komosu Network is a digital innovation studio providing advanced website solutions, content platforms, and AI tools tailored for the automotive dealership industry.</p>
+        <p>carmosu Network is a digital innovation studio providing advanced website solutions, content platforms, and AI tools tailored for the automotive dealership industry.</p>
         </div>
 
         <div className="mt-[24px] text-[18px] relative">
@@ -67,7 +67,7 @@ export default function TermsPage() {
         
           
             <li>Ownership: Upon full payment, the final website design or lead generation assets become your property.</li>
-            <li>Preliminary Work: Concepts, mockups, and drafts not chosen remain the intellectual property of Komosu Network.</li>
+            <li>Preliminary Work: Concepts, mockups, and drafts not chosen remain the intellectual property of carmosu Network.</li>
             <li>Third-Party Materials: You are responsible for obtaining licenses or rights for any third-party content you request us to use (e.g., images, fonts, plugins).</li>
         </div>
         
@@ -83,7 +83,7 @@ export default function TermsPage() {
         <p>This states that:</p>
         
           
-            <li>Komosu Network delivers leads based on the agreed-upon criteria (e.g., industry, location, target audience).</li>
+            <li>carmosu Network delivers leads based on the agreed-upon criteria (e.g., industry, location, target audience).</li>
             <li>While we aim to generate high-quality leads, we do not guarantee conversions or sales outcomes.</li>
             <li>It is your responsibility to follow up with leads and close sales.</li>
         </div>
@@ -94,8 +94,8 @@ export default function TermsPage() {
         <div className="mt-[7px] font-regular">
        
 
-            <li>Komosu Network delivers leads based on the agreed-upon criteria (e.g., industry, location, target audience).</li>
-            <li>In the event of termination, all completed work up to that point must be paid for, and Komosu Network retains rights to any unpaid deliverables.</li>
+            <li>carmosu Network delivers leads based on the agreed-upon criteria (e.g., industry, location, target audience).</li>
+            <li>In the event of termination, all completed work up to that point must be paid for, and carmosu Network retains rights to any unpaid deliverables.</li>
            
         </div>
         
@@ -123,9 +123,9 @@ export default function TermsPage() {
         <h5 className="font-bold ">Contact Us</h5>
      
         <p>If you have any questions or concerns about these Terms, please reach out:</p>
-        <p>Komosu Network</p>
+        <p>carmosu Network</p>
         <div className="flex flex-col gap-[8px]">
-          <a href="mailto:komosunetwork@gmail.com" className="font-medium text-blueText">komosunetwork@gmail.com</a>
+          <a href="mailto:carmosunetwork@gmail.com" className="font-medium text-blueText">carmosunetwork@gmail.com</a>
           <a href="tel:+44-234-23-4568">+44-234-23-4568</a>
           <address>230 Pine View, Birmingham. UK</address>
         </div>

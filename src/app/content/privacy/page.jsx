@@ -4,7 +4,7 @@ export default function PrivacyPage() {
       <div className="flex flex-col gap-[16px] relative h-full">
         <h5 className="text-gray font-medium text-lg m-0 ">Privacy Policy</h5>
         <h1 className="text-[40px] font-bold m-0 md:text-[30px] sm:text-[30px] max-sm:text-[27px]">
-          Komosu Privacy Policy
+          Carmosu Privacy Policy
         </h1>
       </div>
       <div>
@@ -55,15 +55,15 @@ export default function PrivacyPage() {
         <div className="mt-[24px] text-[18px] relative">
           <p>
             For more information or questions about this privacy policy, please
-            contact us at komosu@gmail.com.
+            contact us at carmosu@gmail.com.
           </p>
 
           <div className="flex flex-col gap-[8px]">
             <a
-              href="mailto:komosunetwork@gmail.com"
+              href="mailto:carmosunetwork@gmail.com"
               className="font-medium text-blueText"
             >
-              komosunetwork@gmail.com
+              carmosunetwork@gmail.com
             </a>
           </div>
         </div>
