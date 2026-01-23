@@ -8,11 +8,11 @@ export default function TermsPage() {
         <p className="font-bold text-darkBlueText">Updated 9th April, 2024</p>
     </div>
     <div>
-      <p className="text-[18px] font-regular leading-[150%] tracking-[2%] mt-[24px]">Welcome to carmosu Network (“Company”, “we”, “our”, or “us”). By accessing or using our services, you (“Client”, “you”, or “your”) agree to be bound by the following Terms of Service (“Terms”). If you do not agree with these Terms, please do not use our services.</p>
+      <p className="text-[18px] font-regular leading-[150%] tracking-[2%] mt-[24px]">Welcome to carmosu (“Company”, “we”, “our”, or “us”). By accessing or using our services, you (“Client”, “you”, or “your”) agree to be bound by the following Terms of Service (“Terms”). If you do not agree with these Terms, please do not use our services.</p>
       <div className="mt-[24px] text-[18px] relative">
         <h5 className="font-bold ">Who We Are</h5>
      
-        <p>carmosu Network is a digital innovation studio providing advanced website solutions, content platforms, and AI tools tailored for the automotive dealership industry.</p>
+        <p>carmosu  is a digital innovation studio providing advanced website solutions, content platforms, and AI tools tailored for the automotive dealership industry.</p>
         </div>
 
         <div className="mt-[24px] text-[18px] relative">
@@ -67,7 +67,7 @@ export default function TermsPage() {
         
           
             <li>Ownership: Upon full payment, the final website design or lead generation assets become your property.</li>
-            <li>Preliminary Work: Concepts, mockups, and drafts not chosen remain the intellectual property of carmosu Network.</li>
+            <li>Preliminary Work: Concepts, mockups, and drafts not chosen remain the intellectual property of carmosu .</li>
             <li>Third-Party Materials: You are responsible for obtaining licenses or rights for any third-party content you request us to use (e.g., images, fonts, plugins).</li>
         </div>
         
@@ -83,7 +83,7 @@ export default function TermsPage() {
         <p>This states that:</p>
         
           
-            <li>carmosu Network delivers leads based on the agreed-upon criteria (e.g., industry, location, target audience).</li>
+            <li>carmosu  delivers leads based on the agreed-upon criteria (e.g., industry, location, target audience).</li>
             <li>While we aim to generate high-quality leads, we do not guarantee conversions or sales outcomes.</li>
             <li>It is your responsibility to follow up with leads and close sales.</li>
         </div>
@@ -94,8 +94,8 @@ export default function TermsPage() {
         <div className="mt-[7px] font-regular">
        
 
-            <li>carmosu Network delivers leads based on the agreed-upon criteria (e.g., industry, location, target audience).</li>
-            <li>In the event of termination, all completed work up to that point must be paid for, and carmosu Network retains rights to any unpaid deliverables.</li>
+            <li>carmosu  delivers leads based on the agreed-upon criteria (e.g., industry, location, target audience).</li>
+            <li>In the event of termination, all completed work up to that point must be paid for, and carmosu  retains rights to any unpaid deliverables.</li>
            
         </div>
         
@@ -123,9 +123,9 @@ export default function TermsPage() {
         <h5 className="font-bold ">Contact Us</h5>
      
         <p>If you have any questions or concerns about these Terms, please reach out:</p>
-        <p>carmosu Network</p>
+        <p>carmosu </p>
         <div className="flex flex-col gap-[8px]">
-          <a href="mailto:carmosunetwork@gmail.com" className="font-medium text-blueText">carmosunetwork@gmail.com</a>
+          <a href="mailto:info@carmosu.com" className="font-medium text-blueText">info@carmosu.com</a>
           <a href="tel:+44-234-23-4568">+44-234-23-4568</a>
           <address>230 Pine View, Birmingham. UK</address>
         </div>
