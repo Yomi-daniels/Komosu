@@ -10,8 +10,8 @@ const Loading = ({ className }) => {
       <Image
         src="/mdi--tyre.svg" // make sure this file exists in /public
         alt="Loading Tyre"
-        width={40}
-        height={40}
+        width={140}
+        height={140}
         className={styles.tyreIcon}
       />
     </div>

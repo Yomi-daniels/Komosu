@@ -119,7 +119,7 @@ const CategoryDefinitionSection = () => {
              md:col-start-2 md:row-start-2"
 >
   {/* Glow */}
-  <div className="absolute inset-0 rounded-full bg-btn opacity-20 blur-3xl" />
+  <div className="absolute inset-0 rounded-full bg-blue-500 opacity-10 animate-pulse blur-3xl" />
 
   <img
     src="/CarMosu_logo.png"
