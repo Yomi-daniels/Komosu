@@ -8,7 +8,7 @@ import { TextGenerateEffect } from "../components/ui/text-generate-effect";
 import { useRequestAccess } from "@/app/context/RequestAccessContext";
 
 const DealershipHeader = ({ onRequestAccessClick }) => {
-  const message = `CarMosu is licensed on a limited \n territory-exclusive basis.`;
+  const message = `CarMosu is licensed on a limited, \n territory-exclusive basis.`;
 const { openModal } = useRequestAccess();
   return (
     <section
@@ -26,7 +26,7 @@ const { openModal } = useRequestAccess();
           />
         </h1>
         <p className="max-w-[733px] font-medium text-darkBlueText text-[14px] sm:text-[16px] md:text-[18px] text-center md:w-[50ch] ">
-        If you’d like to see whether your dealership is a fit, request access below.
+        Request access if your dealership accepts the constraints described above.
 
         </p>
      {/* Button triggers modal */}

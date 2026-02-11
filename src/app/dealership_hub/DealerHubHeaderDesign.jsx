@@ -26,12 +26,13 @@ const DealerHubHeaderDesign = () => {
         <div className="p-6 rounded-[20px] shadow-md flex flex-col items-center text-center border-[4px] border-[#DAD9FF] w-[328px] h-[400px] overflow-hidden">
           <div className="flex flex-col items-start">
             <h2 className="text-[24px] font-bold mb-2 text-darkBlueText text-left ">
-           Licensed. Exclusive. Controlled.
+           LICENSING & EXCLUSIVITY
             </h2>
             <p className="text-darkBlueText mb-4 text-[16px] leading-[150%] tracking-[2%] text-left font-regular">
-            We do not build custom versions. <br />
-We do not alter the format. <br />
-The system stays consistent so performance compounds. <br />
+      licensed access to the system <br />
+exclusivity within their metropolitan area <br />
+continued access while the license remains active <br />
+
 
             </p>
           </div> 

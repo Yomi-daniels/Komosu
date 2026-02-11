@@ -7,19 +7,19 @@ const Constrains = () => {
       number: "01",
       title: "Fixed Format",
       description:
-        "A locked structure removes distraction. Buyers move forward instead of wandering.",
+        "The structure does not change. \n No elements are added or rearranged.",
     },
     {
       number: "02",
       title: "Limited Inventory",
       description:
-        "Capped batches prevent overload and make every vehicle feel intentional.",
+        "Inventory is capped. \n Anything outside the batch is inaccessible.",
     },
     {
       number: "03",
       title: "Consistent Layout",
       description:
-        "Predictability builds trust. Buyers convert faster when the system feels controlled.",
+        "The surface behaves the same every time. \n There are no variations or optimisations.",
     },
   ];
 
@@ -32,8 +32,7 @@ const Constrains = () => {
             Constraints Are the Feature
           </h2>
           <p className="text-[19px] text-gray-600 leading-relaxed">
-            CarMosu is intentionally limited. These constraints preserve focus,
-            increase confidence, and keep intent moving forward.
+            CarMosu is intentionally limited. The system works only because these limits are enforced.
           </p>
         </div>
 
@@ -46,7 +45,7 @@ const Constrains = () => {
             >
               {/* Number with border */}
               <div className="col-span-12 md:col-span-2 flex justify-center md:justify-start">
-                <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-gray-300 text-gray-500 font-regular text-lg border-darkBlueText text-darkBlueText ">
+                <span className="flex items-center justify-center w-9 h-9 rounded-full border-2 border-gray-300 text-gray-500 font-regular text-md font-bold border-darkBlueText text-darkBlueText ">
                   {item.number}
                 </span>
               </div>
@@ -63,7 +62,7 @@ const Constrains = () => {
               {/* Description */}
               <div className="col-span-12 md:col-span-6 flex flex-col justify-center relative">
                 {/* Thin line connecting number */}
-                <div className="hidden md:block absolute left-0 top-1/2 w-4 border-t border-gray-300 -translate-y-1/2"></div>
+                {/* <div className="hidden md:block absolute left-0 top-1/2 w-4 border-t border-gray-300 -translate-y-1/2"></div> */}
                 <p className="text-[18px] text-gray-600 leading-relaxed">
                   {item.description}
                 </p>

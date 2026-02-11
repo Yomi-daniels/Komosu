@@ -7,16 +7,16 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const features = [
   {
     id: "top",
-    title: "Prioritizes a Small Set of Vehicles",
+    title: "Inventory Cap",
     description:
-      "Focus buyers on the cars that matter most, instead of overwhelming them with endless options.",
+      "A fixed number of cars displayed",
     image: "/Custom Solution.png",
   },
   {
     id: "left",
-    title: "Visual-First Presentation",
+    title: "No Narrative",
     description:
-      "Use images, videos, and clean layouts to showcase vehicles clearly and drive engagement.",
+      " Visual presentation without explanation",
     image: "/Integration.png",
   },
   {
@@ -26,16 +26,16 @@ const features = [
   },
   {
     id: "right",
-    title: "Limits Choices Intentionally",
+    title: "No Browsing",
     description:
-      "Reduce friction and distractions so buyers can take the next step with confidence.",
+      "No browsing paths or optional routes",
     image: "/Support.png",
   },
   {
     id: "bottom",
-    title: "Guides Buyers Toward Action",
+    title: "Binary Outcome",
     description:
-      "Every element is designed to move visitors from browsing to booking a test drive or contacting sales.",
+      "A single outcome: book a test drive",
     image: "/Support.png",
   },
 ];
@@ -91,7 +91,7 @@ const CategoryDefinitionSection = () => {
   }, []);
 
   return (
-    <section className="py-12 px-4 max-w-6xl mx-auto text-left">
+    <section className="py-12 px-4 max-w-6xl mx-auto text-center">
       {/* Section Heading */}
       {/* <div className="text-center mb-12">
         <span className="uppercase tracking-[0.2em] text-sm text-btn font-medium">
@@ -142,7 +142,7 @@ const CategoryDefinitionSection = () => {
     <div
   key={feature.id}
   className={`feature-card group relative border border-[#E6E6FF] p-6 py-12
-              flex flex-col items-start bg-white
+              flex flex-col items-center justify-center bg-white
               transition-all duration-300 ease-out
               hover:-translate-y-2 hover:shadow-xl
               ${positionMap[feature.id]}`}

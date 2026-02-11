@@ -6,7 +6,7 @@ const OfferAnimation = () => {
     <section className={styles.OfferAnimationSection}>
       <div className={styles.offerAnimHeaderContent}>
         <h2 className={styles.offerAnimHeaderh2}>
-       What CarMosu Controls
+      What Carmosu Controls
         </h2>
         {/* <Link href="/request-demo">
           <button className={styles.OfferHeaderButton}>Book a Demo</button>
@@ -27,23 +27,23 @@ const OfferAnimation = () => {
               <div className={styles.OfferAnimationContainerContentSmallImage}>
                 <Image src="/Vector (5).png" alt="offerAnimImg" fill />
               </div>
-              <h6 className="font-black text-[18px] uppercase">The Destination
-Headline</h6>
+              <h6 className="font-black text-[18px] uppercase"> Operational Effects</h6>
             </div>
             <h3>
-           A destination built for paid traffic
+        Less Wasted Sales Time
+
 
             </h3>
           </div>
           <div className={styles.offerAnimationFeatures}>
-            {/* <div className={styles.offerFeaturesContent}>
+            <div className={styles.offerFeaturesContent}>
               <div className={styles.offerFeaturesImgShadow}>
                 <div className={styles.offerFeaturesImg}>
                   <Image src="/Vector (6).png" alt="offerAnimImg" fill />
                 </div>
               </div>
-              <p>Stop sending traffic away, host your best content on your own platform, not someone else’s.</p>
-            </div> */}
+              <p>Fewer appointments that never happen</p>
+            </div>
             <div className={styles.offerFeaturesContent}>
               <div className={styles.offerFeaturesImgShadow}>
                 <div className={styles.offerFeaturesImg}>
@@ -51,7 +51,16 @@ Headline</h6>
                 </div>
               </div>
               <p>
-CarMosu replaces cluttered landing paths with a single sales surface designed to move buyers from ad click to test-drive booking without browsing, comparison, or distraction.</p>
+Less follow-up chasing uncommitted buyers</p>
+            </div>
+              <div className={styles.offerFeaturesContent}>
+              <div className={styles.offerFeaturesImgShadow}>
+                <div className={styles.offerFeaturesImg}>
+                  <Image src="/Vector (6).png" alt="offerAnimImg" fill />
+                </div>
+              </div>
+              <p>
+More time spent with people who actually arrive</p>
             </div>
           </div>
           <div className={styles.OfferAnimationImageBoxContainer}>
@@ -78,22 +87,11 @@ CarMosu replaces cluttered landing paths with a single sales surface designed to
               </h6>
             </div>
             <h3>
-           Focus creates action. Proof sustains it.
+           Lower Internal Friction
+
             </h3>
           </div>
           <div className={styles.offerAnimationFeatures}>
-            {/* <div className={styles.offerFeaturesContent}>
-              <div className={styles.offerFeaturesImgShadows}>
-                <div className={styles.offerFeaturesImg}>
-                  <Image src="/Vector (8).png" alt="offerAnimImg" fill />
-                </div>
-              </div>
-              <p>
-                Make sharper decisions, backed by real numbers.
-See which models drive the most interest, what content brings buyers in, and how your site turns traffic into real leads.
-
-              </p>
-            </div> */}
             <div className={styles.offerFeaturesContent}>
               <div className={styles.offerFeaturesImgShadows}>
                 <div className={styles.offerFeaturesImg}>
@@ -101,7 +99,29 @@ See which models drive the most interest, what content brings buyers in, and how
                 </div>
               </div>
               <p>
-             Instead of showing everything, CarMosu surfaces a curated batch of priority vehicles and keeps sold inventory visible creating momentum, urgency, and clear proof that buyers are acting.
+                Fewer arguments about lead quality
+
+              </p>
+            </div>
+            <div className={styles.offerFeaturesContent}>
+              <div className={styles.offerFeaturesImgShadows}>
+                <div className={styles.offerFeaturesImg}>
+                  <Image src="/Vector (8).png" alt="offerAnimImg" fill />
+                </div>
+              </div>
+              <p>
+           Clearer boundaries between marketing and sales
+              </p>
+            </div>
+            <div className={styles.offerFeaturesContent}>
+              <div className={styles.offerFeaturesImgShadows}>
+                <div className={styles.offerFeaturesImg}>
+                  <Image src="/Vector (8).png" alt="offerAnimImg" fill />
+                </div>
+              </div>
+              <p>
+           Less day-to-day firefighting by managers
+
               </p>
             </div>
           </div>
@@ -110,16 +130,16 @@ See which models drive the most interest, what content brings buyers in, and how
               className={`${styles.OfferAnimationImageBoxContent} ${styles.OfferAnimationImageBoxContent2}`}
             >
               <div className={`${styles.ImageBox1} ${styles.ImageBoxsec}`}>
-                <Image src="/Group 6322.png" alt="offerAnimImg" fill />
+                <Image src="/MAYF Hero section 1.png" alt="offerAnimImg" fill />
               </div>
             </div>
-            <div
+            {/* <div
               className={`${styles.OfferAnimationImageBoxContent} ${styles.OfferAnimationImageBoxContent2}`}
             >
               <div className={`${styles.ImageBox2} ${styles.ImageBoxsec2}`}>
                 <Image src="/Group 6323.png" alt="offerAnimImg" fill />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

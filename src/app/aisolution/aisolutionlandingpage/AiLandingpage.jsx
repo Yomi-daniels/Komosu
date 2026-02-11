@@ -4,28 +4,33 @@ import { motion } from "framer-motion";
 import { Target, CalendarCheck, Package, Focus, X, Check } from "lucide-react";
 
 const targetAudience = [
+   
+  
+ 
+ 
+
   {
     icon: Target,
-    title: "Run Paid Ads at Scale",
-    description: "You invest seriously in search and social ads and expect those clicks to turn into real visits.",
+    title: "Zero Tolerance for Waste",
+    description: " You invest heavily in search and social ads and are no longer willing to fund clicks that never result in a real showroom visit.",
     gradient: "linear-gradient(135deg, #f43f5e, #ec4899, #a855f7)",
   },
   {
     icon: CalendarCheck,
-    title: "Need Faster Test-Drive Bookings",
-    description: "Your ads generate interest, but too many buyers stall before booking a test drive.",
+    title: "Fewer Bookings, Real Show-Ups",
+    description: "You’re willing to see booking volume drop if it removes no-shows and wasted follow-up.",
     gradient: "linear-gradient(135deg, #10b981, #14b8a6, #06b6d4)",
   },
   {
     icon: Package,
-    title: " Prioritise What Actually Moves",
-    description: "You want to decide which vehicles sell now instead of showing everything and hoping for the best.",
+    title: " Operational Discipline",
+    description: "You want tighter internal priorities Fewer vehicles pushed at once, fewer debates about what to sell, and less time wasted handling exceptions.",
     gradient: "linear-gradient(135deg, #f59e0b, #f97316, #ef4444)",
   },
   {
     icon: Focus,
-    title: "Value focus over flexibility",
-    description: "You’re willing to trade choice and customization for speed, clarity, and action.",
+    title: "Constraint Over Complexity",
+    description: "You want fewer systems, fewer configurations, and less manual oversight even if that means giving up flexibility and customization.",
     gradient: "linear-gradient(135deg, #3b82f6, #6366f1, #8b5cf6)",
   },
 ];
@@ -74,7 +79,8 @@ const WhoItsFor = () => {
           </h2>
         
           <p className="tracking-[-2%] text-darkBlueText font-medium text-[18px] text-center max-sm:text-[16px]">
-            Built for dealerships that run ads but want more showroom visits, <br /> not more browsing
+          Built for dealerships that run ads and are tired of paying for browsing.
+
           </p>
         </motion.div>
 
@@ -114,7 +120,7 @@ const WhoItsFor = () => {
               <X size={20} color="#94a3b8" />
             </div>
             <div>
-              <p style={styles.exclusionSmall}>Looking for a website redesign?</p>
+              <p style={styles.exclusionSmall}>If you want a website or landing page</p>
               <p style={styles.exclusionBold}>CarMosu is not for you</p>
             </div>
           </div>

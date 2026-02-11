@@ -14,19 +14,19 @@ import { title } from "@/utils/siteMetaData";
 const WebdesignHub = () => {
   const points = [
     {
-      title: "Select Priority Vehicles",
+      title: "Define the Batch",
       description:
-        "Choose up to 24 vehicles to feature, no clutter, just focused inventory built to convert.",
+        "Select up to 24 vehicles to be shown. Everything else stays out of the surface.",
     },
     {
-      title: "Send Paid Traffic to CarMosu",
+      title: "Route Paid Traffic",
       description:
-        "Direct ads to a fast, focused sales surface instead of a traditional inventory website.",
+        "Send all paid ads to the CarMosu surface. No alternative destinations.",
     },
     {
-      title: "Turn Interest Into Action",
+      title: "Let the Boundary Work",
       description:
-        "Guide buyers toward booking showroom visits, test drives, and real conversations.",
+        "Undecided traffic exits early. Only buyers willing to show up book a test drive.",
     },
   ];
 
@@ -90,7 +90,7 @@ const WebdesignHub = () => {
           How Dealers Use <span className="font-custom text-btn">CarMosu</span>
         </h1>
         <p className="tracking-[-2%] text-darkBlueText font-medium text-[18px] text-center max-sm:text-[16px]">
-          A simple flow that turns paid traffic into real showroom visits.
+         A fixed system dealers deploy once and leave alone.
         </p>
 
         {/* <Link href="/contact-us">

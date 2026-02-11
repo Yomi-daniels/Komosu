@@ -115,12 +115,12 @@ const Home = () => {
             <h2
               className={`${casestyles.thirdsectionheader} mt-6 text-[2.5rem] font-bold max-sm:text-[1.5rem] font-variable text-darkBlueText`}
             >
-            A Sales <span className="font-custom text-btn">Surface</span>{" "}
-              , Not a Page
+           This Is Not a  <span className="font-custom text-btn">Page</span>{" "}
+             
 
             </h2>
             <p className={casestyles.solutionsParagraph}>
-         CarMosu sits between your ads and your showroom.
+        CarMosu sits between your ads and your showroom. 
 
             </p>
           </div>

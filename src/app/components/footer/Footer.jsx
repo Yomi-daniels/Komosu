@@ -28,7 +28,7 @@ const Footer = () => {
     <section className={styles.FooterSection}>
       <div className={styles.footerHeaderContainer}>
         <div className={styles.footerHeader}>
-          <h1>Ready to scale up your business growth?</h1>
+          <h1>Ready to remove wasted demand?</h1>
           <div className={styles.footerBtn}>
            
          <button
@@ -49,7 +49,10 @@ const Footer = () => {
 
       <div className={styles.FooterContainer}>
         <div className={styles.footerContentContainer}>
-          <h1 className="text-lg font-black">CARMOSU</h1>
+          <div className="flex flex-col items-start gap-2">
+            <h1 className="text-lg font-black">CARMOSU</h1>
+            <p className="text-sm">A Komosu Company <br />London, United Kingdom</p>
+          </div>
 
           {/* NAV-LIKE FOOTER LINKS (SCROLL, NOT ROUTE) */}
           <div className={cn(styles.footerLinks, "group")}>

@@ -43,14 +43,16 @@ const CaseStudyContactLink = () => {
         <div className={casestyles.topimgabsolute}>
           <Image src="/Group 2.png" fill alt="Top Image" />
         </div>
-        <h4>The Moment Between the Ad and the <br /> Showroom Matters Most
+        <h4>The Click Isn't the Problem. <br /> What Comes After Is.
 </h4>
         {/* <Link href="/request-demo">
           <button>Book a Demo</button>
         </Link> */}
 
-        <p className="text-white text-center">CarMosu controls that moment by removing distraction <br /> and focusing attention on one outcome:
-book a test drive or speak to the team.</p>
+        <p className="text-white text-center">When someone clicks an ad, they’re not looking to browse.
+ They’re deciding whether to show up. <br />
+CarMosu removes choice at that point so undecided traffic exits early and only buyers willing to show
+.</p>
         <div className={casestyles.bottomimgabsolute}>
           <Image src="/Group 2.png" fill alt="Bottom Image" />
         </div>

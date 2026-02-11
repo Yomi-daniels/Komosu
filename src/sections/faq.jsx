@@ -43,22 +43,22 @@ const FAQ = () => {
     {
       question: "What is Carmosu's mission?",
       answer:
-        "CarMosu is licensed. Start with a short qualification call to confirm fit and availability in your metro area.",
+        "To prevent uncommitted demand from reaching the showroom.",
     },
     {
       question: "How can I get started with Carmosu?",
       answer:
-        " It starts with a quick call. We’ll review your current setup, show you what’s possible, and map out how to turn your site into a high-performing sales platform.",
+        " It starts with a short qualification call. We confirm ad spend, tolerance for fewer bookings, and territory availability.If there’s alignment, we walk through the surface and activate the license.",
     },
     {
       question: "What support does Carmosu offer?",
       answer:
-        "System setup, activation, and ongoing performance monitoring CarMosu does not provide customization or website redesigns.",
+        "Operational support only. We ensure the surface is deployed correctly and functioning as designed.",
     },
     {
       question: "What makes Carmosu different from other service providers?",
       answer:
-        "CarMosu doesn’t compete with websites, agencies, or CRMs.Websites inform. Agencies optimize campaigns. CRMs manage leads. CarMosu controls the destination — shaping intent before a lead exists.",
+        "CarMosu doesn’t compete with websites, agencies, or CRMs. Websites inform. Agencies generate activity. CRMs manage leads. CarMosu controls the destination—filtering undecided traffic before a lead exists.",
     },
   ];
 

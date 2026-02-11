@@ -109,9 +109,9 @@ const Services = () => {
       <div ref={textRef} className={styles.ServicesTextContainer}>
         <div className={styles.servicesHeader}>
           <h2 className={shadows.className}>
-          Not a website. Not a marketplace. 
+        Not a website. Not a marketplace.
             <br />
-           A controlled sales surface.
+          Not a landing page.
           </h2>
         </div>
       </div>

@@ -97,16 +97,17 @@ const { openModal } = useRequestAccess();
           <div className={styles.HeroTextContainer}>
             <div className={styles.HeroText} ref={heroHeaderRef}>
               <h1 className={styles.heroHeader}>
-               Turn Ad Clicks Into Real{" "}
+               Stop Paying for Traffic That {" "}  
+
                 <span className={`${styles.heroSpan} ${shadowFont.className}`}>
-               Showroom
+              Never
                 </span>{" "}
-                Visits
+               Shows Up
               </h1>
             </div>
             <div className={styles.HeaderContent} ref={heroSubTextRef}>
               <p className={styles.heroSubText}>
-               CarMosu is a high-intent sales surface designed to convert paid traffic into booked test drives, without clutter, comparison, or wasted attention.
+              CarMosu is a controlled sales surface that filters paid traffic so only buyers willing to show up reach your showroom.
               </p>
             </div>
             <div className={styles.landingBtns} ref={heroBtnRef}>
