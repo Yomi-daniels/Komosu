@@ -41,6 +41,6 @@ const { openModal } = useRequestAccess();
       <DealerHubHeaderDesign />
     </section>
   );
-};
+}; 
 
 export default DealershipHeader;

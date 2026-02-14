@@ -1978,6 +1978,8 @@
     height: 4px;
   }
 
+
+
   .offerAnimHeaderh2 {
     font-size: 24px;
     width: 398px;
@@ -1989,6 +1991,8 @@
     top: 20%;
     left: 0;
   }
+
+  
 
   .OfferAnimationSection {
     margin-top: 2rem;
@@ -2070,6 +2074,13 @@
     left: 5%;
     width: 187.817px;
     height: 164.897px;
+  }
+
+  .ImageBoxsec {
+    width: 235px;
+    height: 210px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

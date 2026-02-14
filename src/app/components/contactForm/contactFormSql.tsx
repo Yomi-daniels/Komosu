@@ -48,6 +48,7 @@ const ContactForm = () => {
       reset();
       setSubmissionStatus("success");
     } catch (error) {
+      
       console.error("Submission error:", error.message || error);
       setSubmissionStatus("error");
     } finally {

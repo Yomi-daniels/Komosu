@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRef, useState } from "react";
 
 const DealerHubHeaderDesign = () => {
@@ -20,33 +21,29 @@ const DealerHubHeaderDesign = () => {
   };
 
   return (
-    <div className="h-[80vh] md:[100vh] max-sm:h-[100%] bg-gray-100 flex items-center justify-center p-8 py-3 z-10  pt-[4rem] px-[2rem]">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl max-sm:gap-16">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center py-10 px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full max-w-6xl">
         {/* Card 1 */}
-        <div className="p-6 rounded-[20px] shadow-md flex flex-col items-center text-center border-[4px] border-[#DAD9FF] w-[328px] h-[400px] overflow-hidden">
+        <div className="w-full max-w-[420px] mx-auto rounded-[20px] shadow-md flex flex-col border-[4px] border-[#DAD9FF] bg-white p-5 sm:p-6 min-h-[420px]">
           <div className="flex flex-col items-start">
-            <h2 className="text-[24px] font-bold mb-2 text-darkBlueText text-left ">
-           LICENSING & EXCLUSIVITY
+            <h2 className="text-[22px] sm:text-[24px] font-bold mb-2 text-darkBlueText text-left">
+              LICENSING & EXCLUSIVITY
             </h2>
-            <p className="text-darkBlueText mb-4 text-[16px] leading-[150%] tracking-[2%] text-left font-regular">
-      licensed access to the system <br />
-exclusivity within their metropolitan area <br />
-continued access while the license remains active <br />
-
-
+            <p className="text-darkBlueText mb-5 text-[15px] sm:text-[16px] leading-[150%] text-left">
+              licensed access to the system <br />
+              exclusivity within their metropolitan area <br />
+              continued access while the license remains active <br />
             </p>
-          </div> 
-          <div className="flex items-center relative pb-3">
-            <div className="bg-blue-600 text-white px-4 py-2 rounded-[12px] w-[155px] h-[162px] flex flex-col justify-center items-center rotate-[12deg]">
-              <h1 className="text-[20px] font-bold ">lICENSED</h1>
+          </div>
+          <div className="relative mt-auto h-[210px] sm:h-[230px] w-full max-w-[280px] self-center">
+            <div className="absolute top-4 left-2 sm:left-4 bg-blue-600 text-white rounded-[12px] w-[140px] h-[145px] sm:w-[155px] sm:h-[162px] flex flex-col justify-center items-center rotate-[10deg]">
+              <h1 className="text-[18px] sm:text-[20px] font-bold">LICENSED</h1>
             </div>
-            <img
-              src="/VVImg.png"
-              alt="vvimg"
-              className="w-[48px] h-[48px] object-cover absolute left-[37%] z-10"
-            />
-            <div className="bg-accentDark text-black px-4 py-2 rounded-[12px] w-[156px] h-[162px] flex flex-col justify-center items-center rotate-[-4deg]">
-              <h1 className="text-[20px] font-bold text-darkBlueText text-left">
+            <div className="absolute top-11 left-24 sm:left-32 z-10 w-12 h-12">
+              <Image fill src="/VVImg.png" alt="vvimg" className="object-cover" />
+            </div>
+            <div className="absolute top-10 right-2 sm:right-4 bg-accentDark text-black rounded-[12px] w-[140px] h-[145px] sm:w-[156px] sm:h-[162px] flex flex-col justify-center items-center rotate-[-4deg]">
+              <h1 className="text-[18px] sm:text-[20px] font-bold text-darkBlueText text-left">
                 NOT CUSTOMIZED
               </h1>
             </div>
@@ -54,11 +51,11 @@ continued access while the license remains active <br />
         </div>
 
         {/* Card 2 */}
-        <div className="relative bg-white rounded-lg overflow-hidden shadow-md h-[500px]">
+        <div className="relative bg-white rounded-lg overflow-hidden shadow-md w-full max-w-[420px] mx-auto h-[420px] sm:h-[500px]">
           <video
             ref={videoRef}
             src="/DealerDesignVideo.mp4"
-            className="w-[400px] h-[500px] object-cover"
+            className="w-full h-full object-cover"
             autoPlay
             loop
             muted
@@ -69,17 +66,18 @@ continued access while the license remains active <br />
               onClick={togglePlay}
               className="bg-[#605E5E] bg-opacity-50 text-white p-2 rounded-full w-[48px] h-[48px] flex items-center justify-center text-xl"
             >
-              {isPlaying ? "❚❚" : "▶"}
+              {isPlaying ? "\u275A\u275A" : "\u25B6"}
             </button>
           </div>
         </div>
 
         {/* Card 3 */}
-        <div className="relative h-[390px] py-4">
-          <img
-            src="/Product.png"
+        <div className="relative w-full rounded-full max-w-[420px] mx-auto h-[320px] sm:h-[390px] py-2 sm:py-4">
+          <Image
+            fill
+            src="/DealerDesignVehicle.png"
             alt="car features"
-            className="w-full h-[390px] object-cover rounded-[12px]"
+            className="object-cover rounded-[12px]"
           />
           {/* <div className="absolute top-[-40px] right-[-70px] bg-[#E6E6FF]  rounded-[12px] shadow-md w-[239px] h-[134px] p-4 max-sm:right-[-20px]
           max-sm:w-[180px] max-sm:h-[180px]">
@@ -99,3 +97,4 @@ continued access while the license remains active <br />
 };
 
 export default DealerHubHeaderDesign;
+
